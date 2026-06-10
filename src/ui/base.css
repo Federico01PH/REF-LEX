@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--sfondo); color: var(--testo);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px; line-height: 1.5; }
+main { max-width: 480px; margin: 0 auto; padding: 16px; min-height: 100vh; }
+h1, h2, h3 { line-height: 1.25; }
+a { color: var(--blu); }
+:focus-visible { outline: 3px solid var(--viola); outline-offset: 2px; border-radius: 4px; }
+
+.card { background: var(--superficie); border-radius: var(--raggio);
+  padding: 16px; box-shadow: var(--ombra); }
+.btn { display: block; width: 100%; min-height: 48px; padding: 12px 20px;
+  border: none; border-radius: var(--raggio-pillola); cursor: pointer;
+  font-size: 17px; font-weight: 800; color: #fff; background: var(--grad-azione); }
+.btn-secondario { background: none; border: 2px solid var(--blu);
+  color: var(--blu); font-weight: 700; }
+.btn-pericolo { background: var(--rosso); }
+.pill { display: inline-block; min-height: 44px; padding: 10px 16px; margin: 4px;
+  border-radius: var(--raggio-pillola); border: 1.5px solid var(--bordo);
+  background: var(--superficie); color: var(--testo); font-size: 16px; cursor: pointer; }
+.pill[aria-pressed='true'] { background: var(--blu); border-color: var(--blu); color: #fff; }
+.badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px;
+  border-radius: var(--raggio-pillola); font-size: 13px; font-weight: 800; }
+.badge-certa { background: #E4F8EF; color: #066B45; }
+.badge-probabile { background: #FBF3D7; color: #6B5200; }
+.badge-dipende { background: #FFEDDD; color: #9A4A00; }
+[data-theme='dark'] .badge-certa { background: #0E3A2A; color: #7BE6BB; }
+[data-theme='dark'] .badge-probabile { background: #3A330E; color: #E6D77B; }
+[data-theme='dark'] .badge-dipende { background: #3F2A14; color: #FFC08A; }
+.progress { display: flex; gap: 4px; margin: 12px 0; }
+.progress > span { flex: 1; height: 6px; border-radius: 3px; background: var(--bordo); }
+.progress > span.fatto { background: var(--verde); }
+.progress > span.attuale { background: var(--viola); }
+.riquadro-numero { border-radius: 12px; padding: 12px; text-align: center; color: #fff; }
+.riquadro-numero .numero { font-size: 28px; font-weight: 900; }
+.positivo { background: var(--grad-positivo); }
+.incerto { background: var(--grad-incerto); }
+.negativo { background: var(--rosso); }
+.testo-piccolo { font-size: 13px; color: var(--testo-2); }
+.spazio { margin-top: 16px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

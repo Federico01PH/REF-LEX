@@ -1,0 +1,22 @@
+:root {
+  --blu: #1A3A8F; --blu-scuro: #16265C; --viola: #6C4BFF;
+  --verde: #0BBF7D; --teal: #06A8C9; --arancio: #FF8A3D; --arancio-chiaro: #FFB547;
+  --rosso: #D63B4A; --giallo: #E0A800;
+  --sfondo: #F2F5FB; --superficie: #FFFFFF; --superficie-2: #EEF1FA;
+  --testo: #16265C; --testo-2: #5A6694; --bordo: #D4D9EC;
+  --grad-azione: linear-gradient(135deg, #1A3A8F, #6C4BFF);
+  --grad-positivo: linear-gradient(135deg, #0BBF7D, #06A8C9);
+  --grad-incerto: linear-gradient(135deg, #FFB547, #FF8A3D);
+  --ombra: 0 4px 16px rgba(26, 58, 143, 0.10);
+  --raggio: 16px; --raggio-pillola: 999px;
+}
+[data-theme='dark'] {
+  --sfondo: #10162E; --superficie: #1A2342; --superficie-2: #232E55;
+  --testo: #FFFFFF; --testo-2: #9AA6D6; --bordo: #2C3866;
+  --blu: #4F74FF; --viola: #9B7BFF;
+  --grad-azione: linear-gradient(135deg, #4F74FF, #9B7BFF);
+  --ombra: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
