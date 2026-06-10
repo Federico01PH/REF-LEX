@@ -1,0 +1,41 @@
+import type { Profilo } from '../engine/types';
+
+const CHIAVE = 'reflex.profilo.v1';
+
+export function storageDisponibile(): boolean {
+  try {
+    localStorage.setItem('reflex.test', '1');
+    localStorage.removeItem('reflex.test');
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function caricaProfilo(): Profilo | null {
+  try {
+    const grezzo = localStorage.getItem(CHIAVE);
+    if (!grezzo) return null;
+    const dati = JSON.parse(grezzo) as Profilo;
+    if (dati.schemaVersion !== 1 || typeof dati.eta !== 'number') {
+      localStorage.removeItem(CHIAVE);
+      return null;
+    }
+    return dati;
+  } catch {
+    try { localStorage.removeItem(CHIAVE); } catch { /* storage non disponibile */ }
+    return null;
+  }
+}
+
+export function salvaProfilo(profilo: Profilo): void {
+  try { localStorage.setItem(CHIAVE, JSON.stringify(profilo)); } catch { /* modalità solo-sessione */ }
+}
+
+export function cancellaTutto(): void {
+  try {
+    for (const chiave of Object.keys(localStorage)) {
+      if (chiave.startsWith('reflex.')) localStorage.removeItem(chiave);
+    }
+  } catch { /* storage non disponibile */ }
+}
