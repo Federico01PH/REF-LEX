@@ -36,7 +36,7 @@ function regolaFascia(
     effetto: { tipo: 'economico', importoMese: { min, max }, descrizione, direzione: 'positivo' },
     timeline: TIMELINE_STRUTTURALE,
     confidenza: 'certa',
-    noteConfidenza: 'Misura resa strutturale dalla legge di bilancio 2025; il valore esatto dipende dal tuo reddito preciso dentro la fascia. Calcolo "a parita di leggi future".',
+    noteConfidenza: 'Misura resa strutturale dalla legge di bilancio 2025; il valore esatto dipende dal tuo reddito preciso dentro la fascia. Calcolo "a parità di leggi future".',
     fonteRegola: FONTE
   };
 }

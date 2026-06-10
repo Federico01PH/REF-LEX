@@ -26,7 +26,7 @@ export const salarioMinimo: Legge = {
   ambito: 'fisco-lavoro',
   fonti: [FONTE_LEGGE, FONTE_AC],
   verificataIl: '2026-06-10',
-  riassunto: 'La legge e in vigore dal ottobre 2025, ma non ha fissato il minimo a 9 euro/ora come chiedevano le opposizioni. Invece, delega il Governo a stabilire per legge i minimi salariali dei contratti collettivi piu diffusi. Bisogna ancora aspettare i decreti attuativi per sapere chi guadagnera di piu.',
+  riassunto: 'La legge è in vigore dal ottobre 2025, ma non ha fissato il minimo a 9 euro/ora come chiedevano le opposizioni. Invece, delega il Governo a stabilire per legge i minimi salariali dei contratti collettivi più diffusi. Bisogna ancora aspettare i decreti attuativi per sapere chi guadagnerà di più.',
   regole: [
     {
       id: 'salario-minimo-bassi-redditi',
@@ -37,12 +37,12 @@ export const salarioMinimo: Legge = {
       campiNecessari: ['condizioneLavorativa', 'fasciaReddito'],
       effetto: {
         tipo: 'economico',
-        descrizione: 'Se il tuo CCNL non e tra quelli "maggiormente applicati", o se il tuo contratto prevede paghe sotto il minimo che il Governo stabilira, potresti ricevere un aumento. L\'importo dipende dal tuo contratto collettivo attuale.',
+        descrizione: 'Se il tuo CCNL non è tra quelli "maggiormente applicati", o se il tuo contratto prevede paghe sotto il minimo che il Governo stabilirà, potresti ricevere un aumento. L\'importo dipende dal tuo contratto collettivo attuale.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'attivo', anno10: 'attivo' },
       confidenza: 'dipende',
-      noteConfidenza: 'La legge delega e in vigore, ma i decreti attuativi non sono ancora stati adottati (verifica: 2026-06-10). L\'effetto concreto dipende dal contratto collettivo applicato al tuo settore e dalla paga oraria attuale.',
+      noteConfidenza: 'La legge delega è in vigore, ma i decreti attuativi non sono ancora stati adottati (verifica: 2026-06-10). L\'effetto concreto dipende dal contratto collettivo applicato al tuo settore e dalla paga oraria attuale.',
       fonteRegola: { etichetta: 'L. 144/2025, art. 1', url: 'https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Alegge%3A2025%3B144=' }
     }
   ]

@@ -51,7 +51,7 @@ export const PERSONAGGI: Personaggio[] = [
   {
     id: 'giulia',
     nome: 'Giulia, 38 anni',
-    descrizione: 'Impiegata, famiglia monoreddito con tre figli, casa di proprieta col mutuo',
+    descrizione: 'Impiegata, famiglia monoreddito con tre figli, casa di proprietà col mutuo',
     profilo: {
       ...base, eta: 38, genere: 'donna',
       condizioneLavorativa: 'dipendente-privato',
@@ -64,7 +64,7 @@ export const PERSONAGGI: Personaggio[] = [
   {
     id: 'marco',
     nome: 'Marco, 52 anni',
-    descrizione: 'Operaio con disabilita motoria, lavora a tempo pieno',
+    descrizione: 'Operaio con disabilità motoria, lavora a tempo pieno',
     profilo: {
       ...base, eta: 52, genere: 'uomo',
       condizioneLavorativa: 'dipendente-privato',
@@ -76,7 +76,7 @@ export const PERSONAGGI: Personaggio[] = [
   {
     id: 'sara',
     nome: 'Sara, 29 anni',
-    descrizione: 'Neoassunta in citta, single, in affitto, convive con la fibromialgia',
+    descrizione: 'Neoassunta in città, single, in affitto, convive con la fibromialgia',
     profilo: {
       ...base, eta: 29, genere: 'donna',
       condizioneLavorativa: 'dipendente-privato',
@@ -102,7 +102,7 @@ export const PERSONAGGI: Personaggio[] = [
   {
     id: 'pavel',
     nome: 'Pavel, 35 anni',
-    descrizione: 'Caregiver: assiste la madre non autosufficiente, lavora poco e quando puo',
+    descrizione: 'Caregiver: assiste la madre non autosufficiente, lavora poco e quando può',
     profilo: {
       ...base, eta: 35, genere: 'uomo',
       condizioneLavorativa: 'caregiver',

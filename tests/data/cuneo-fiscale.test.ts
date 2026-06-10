@@ -42,3 +42,18 @@ test('dipendente senza fascia reddito: effetto non calcolabile', () => {
   expect(r.nonCalcolabili.length).toBeGreaterThan(0);
   expect(r.nonCalcolabili[0].campiMancanti).toContain('fasciaReddito');
 });
+
+test('tutte le fasce hanno gli intervalli verificati sulla legge', () => {
+  const attese: Record<string, { min: number; max: number }> = {
+    'cuneo-fino9k': { min: 0, max: 50 },
+    'cuneo-9-15k': { min: 40, max: 66 },
+    'cuneo-15-20k': { min: 60, max: 80 },
+    'cuneo-20-28k': { min: 83, max: 83 },
+    'cuneo-28-35k': { min: 52, max: 83 },
+    'cuneo-35-50k': { min: 0, max: 52 }
+  };
+  for (const regola of cuneoFiscale.regole) {
+    expect(regola.effetto.importoMese).toEqual(attese[regola.id]);
+  }
+  expect(cuneoFiscale.regole).toHaveLength(6);
+});
