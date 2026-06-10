@@ -26,3 +26,45 @@ test('rifiuta regola economica senza importo coerente (min > max)', () => {
   rotta.regole[0].effetto = { tipo: 'economico', importoMese: { min: 10, max: 5 }, descrizione: 'd', direzione: 'positivo' } as never;
   expect(SchemaLegge.safeParse(rotta).success).toBe(false);
 });
+
+test('rifiuta condizione con campo sconosciuto', () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'condizioneLavoratva', op: 'eq', valore: 'studente' }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test("rifiuta op 'in' con valore non-array", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'condizioneLavorativa', op: 'in', valore: 'studente' }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test("rifiuta 'almeno' su campo non ordinale", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'abitazione', op: 'almeno', valore: 'affitto' }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test("rifiuta 'eq' sul campo lista disabilita", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'disabilita', op: 'eq', valore: 'motoria' }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test('rifiuta importoMese su effetto non economico', () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].effetto = { tipo: 'diritto', importoMese: { min: 1, max: 2 }, descrizione: 'd', direzione: 'positivo' } as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test('rifiuta importoMese con direzione mista o neutra', () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].effetto = { tipo: 'economico', importoMese: { min: 1, max: 2 }, descrizione: 'd', direzione: 'misto' } as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test('accetta effetto economico senza importo (qualitativo, es. confidenza dipende)', () => {
+  const ok = structuredClone(leggeValida);
+  ok.regole[0].effetto = { tipo: 'economico', descrizione: 'd', direzione: 'positivo' } as never;
+  expect(SchemaLegge.safeParse(ok).success).toBe(true);
+});

@@ -24,6 +24,7 @@ export function simula(profilo: Profilo, legge: Legge): RisultatoSimulazione {
   for (const orizzonte of ORIZZONTI) {
     for (const regola of risultato.effetti) {
       if (regola.confidenza === 'dipende') continue;
+      if (regola.effetto.direzione !== 'positivo' && regola.effetto.direzione !== 'negativo') continue;
       if (regola.timeline[orizzonte] !== 'attivo') continue;
       const importo = regola.effetto.importoMese;
       if (!importo) continue;

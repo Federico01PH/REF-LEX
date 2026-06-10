@@ -65,3 +65,17 @@ test('rilevanza: alta con effetti certi/probabili, media con soli dipende o non 
   const fuori: Profilo = { schemaVersion: 1, eta: 70, condizioneLavorativa: 'pensionato', fasciaReddito: 'da9a15k', fasciaIsee: 'oltre40k' };
   expect(rilevanza(fuori, legge)).toBe('bassa');
 });
+
+test('effetti misti o neutri con importo non entrano mai nei totali (difesa in profondità)', () => {
+  const conMisto: Legge = {
+    ...legge,
+    regole: [
+      { ...regolaBase, id: 'r-misto', confidenza: 'certa',
+        condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'dipendente-privato' }],
+        effetto: { tipo: 'economico', importoMese: { min: 30, max: 50 }, descrizione: 'Misto', direzione: 'misto' } }
+    ]
+  };
+  const r = simula(dipendente, conMisto);
+  expect(r.effetti).toHaveLength(1);               // l'effetto si vede
+  expect(r.totaleMese.anno1).toEqual({ min: 0, max: 0 }); // ma non somma
+});
