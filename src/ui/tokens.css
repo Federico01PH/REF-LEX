@@ -13,7 +13,8 @@
 [data-theme='dark'] {
   --sfondo: #10162E; --superficie: #1A2342; --superficie-2: #232E55;
   --testo: #FFFFFF; --testo-2: #9AA6D6; --bordo: #2C3866;
-  --blu: #4F74FF; --viola: #9B7BFF;
+  --blu: #6E8FFF; --viola: #9B7BFF;
+  --verde: #2FD89A; --rosso: #FF7B88; --teal: #2FC4E0; --arancio: #FFA868;
   --grad-azione: linear-gradient(135deg, #4F74FF, #9B7BFF);
   --ombra: 0 4px 16px rgba(0, 0, 0, 0.35);
 }

@@ -19,6 +19,8 @@ a { color: var(--blu); }
   border-radius: var(--raggio-pillola); border: 1.5px solid var(--bordo);
   background: var(--superficie); color: var(--testo); font-size: 16px; cursor: pointer; }
 .pill[aria-pressed='true'] { background: var(--blu); border-color: var(--blu); color: #fff; }
+[data-theme='dark'] .pill[aria-pressed='true'] { background: #2B52E0; border-color: #2B52E0; }
+[data-theme='dark'] .btn-secondario { color: #8FAAFF; border-color: #8FAAFF; }
 .badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px;
   border-radius: var(--raggio-pillola); font-size: 13px; font-weight: 800; }
 .badge-certa { background: #E4F8EF; color: #066B45; }
@@ -32,6 +34,7 @@ a { color: var(--blu); }
 .progress > span.fatto { background: var(--verde); }
 .progress > span.attuale { background: var(--viola); }
 .riquadro-numero { border-radius: 12px; padding: 12px; text-align: center; color: #fff; }
+.riquadro-numero.positivo, .riquadro-numero.incerto { color: #0E2433; }
 .riquadro-numero .numero { font-size: 28px; font-weight: 900; }
 .positivo { background: var(--grad-positivo); }
 .incerto { background: var(--grad-incerto); }

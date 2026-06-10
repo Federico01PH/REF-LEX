@@ -1,4 +1,4 @@
-const TRACCIATI: Record<string, string> = {
+const TRACCIATI = {
   lucchetto: 'M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5Zm-3 8V7a3 3 0 0 1 6 0v3H9Z',
   info: 'M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1 7h2v2h-2V9Zm0 4h2v6h-2v-6Z',
   freccia: 'M5 12h12m0 0-5-5m5 5-5 5',
@@ -11,8 +11,10 @@ const TRACCIATI: Record<string, string> = {
   documento: 'M6 2h9l5 5v15H6V2Zm8 1v5h5'
 };
 
+export type NomeIcona = keyof typeof TRACCIATI;
+
 export function Icona({ nome, etichetta, dimensione = 20 }:
-  { nome: keyof typeof TRACCIATI | string; etichetta?: string; dimensione?: number }) {
+  { nome: NomeIcona; etichetta?: string; dimensione?: number }) {
   return (
     <svg data-testid={`icona-${nome}`} width={dimensione} height={dimensione}
       viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
