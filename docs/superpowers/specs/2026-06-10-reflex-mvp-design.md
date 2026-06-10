@@ -103,10 +103,10 @@ Lista di effetti applicabili ordinati per rilevanza + lista di "effetti non calc
 ## 5. Motore di simulazione e onestà
 
 - Funzione pura e deterministica: stesso profilo + stessa legge → stesso risultato.
-- Tre livelli di confidenza, sempre visibili con colore + parola + spiegazione:
-  - 🟢 **Certo** — scritto nella legge (aliquote, importi, scadenze).
-  - 🟡 **Probabile** — stima su dati ufficiali (ISTAT, relazioni tecniche MEF) con ipotesi esplicitate nel report.
-  - 🟠 **Dipende** — rimanda a decreti attuativi o la legge è ancora in discussione: si mostrano gli scenari possibili, mai un numero unico finto.
+- Tre livelli di confidenza, sempre visibili con colore + icona + parola + spiegazione:
+  - **Certo** (verde) — scritto nella legge (aliquote, importi, scadenze).
+  - **Probabile** (giallo) — stima su dati ufficiali (ISTAT, relazioni tecniche MEF) con ipotesi esplicitate nel report.
+  - **Dipende** (arancio) — rimanda a decreti attuativi o la legge è ancora in discussione: si mostrano gli scenari possibili, mai un numero unico finto.
 - Per le leggi non in vigore (discussione/bozza/referendum) il report apre con un avviso chiaro: "Questa legge NON è ancora in vigore: ecco cosa succederebbe SE venisse approvata nel testo attuale".
 - Ogni numero è tracciabile: regola → fonte puntuale (articolo, comma) → link ufficiale.
 
@@ -139,7 +139,7 @@ Ogni legge entra nel catalogo solo con: fonti verificate, regole modellate, casi
 2. **Wizard profilo** — una domanda per schermata, risposte a "pillole" toccabili grandi, barra di progresso, "perché lo chiediamo" su ogni dato sensibile, possibilità di saltare i campi facoltativi.
 3. **Catalogo** — card per legge con stato a colore semaforico (verde=vigore, giallo=discussione, viola=referendum, azzurro=appena approvata, grigio=bozza), badge di rilevanza personale ("Ti riguarda quasi sicuramente / Potrebbe riguardarti / Non ti tocca direttamente") calcolato dal motore, filtri per ambito, tempo di lettura dichiarato.
 4. **Report** — il numero/verdetto principale subito in alto (ricompensa immediata), timeline 1/2/5/10 anni navigabile, dettagli e fonti in sezioni espandibili (divulgazione progressiva), badge di confidenza su ogni effetto, avviso per leggi non in vigore, "catalogo aggiornato al [data]", CTA "E per gli altri?".
-5. **E per gli altri?** — carosello degli 8 personaggi con nome, volto (emoji/illustrazione) ed esito a confronto; insight finale in una frase ("Questa legge aiuta i dipendenti, ma non tocca pensionati e autonomi"); bottone "Crea un profilo ipotetico" (modalità esploratore, wizard riusato, profilo personale intatto).
+5. **E per gli altri?** — carosello degli 8 personaggi con nome, avatar illustrato (SVG) ed esito a confronto; insight finale in una frase ("Questa legge aiuta i dipendenti, ma non tocca pensionati e autonomi"); bottone "Crea un profilo ipotetico" (modalità esploratore, wizard riusato, profilo personale intatto).
 
 ### Design system "Civico energetico" (approvato su mockup)
 
@@ -147,6 +147,7 @@ Ogni legge entra nel catalogo solo con: fonti verificate, regole modellate, casi
 - Energia: gradienti per i numeri e le CTA — verde→teal (`#0BBF7D→#06A8C9`) per effetti positivi, arancio (`#FFB547→#FF8A3D`) per incertezza/attenzione, blu→viola (`#1A3A8F→#6C4BFF`) per le azioni principali a pillola. Rosso riservato agli effetti negativi.
 - Tema chiaro predefinito + tema scuro opzionale (e rispetto di `prefers-color-scheme`).
 - Tipografia: font sans leggibile self-hosted, corpo ≥16px, numeri del report grandi e in grassetto.
+- **Niente emoji nell'interfaccia:** tutte le icone, gli avatar dei personaggi e i simboli di stato sono SVG disegnati in modo coerente col design system.
 
 ### Principi di psicologia applicati (requisiti, non decorazione)
 
@@ -165,7 +166,7 @@ Ogni legge entra nel catalogo solo con: fonti verificate, regole modellate, casi
 - Screen reader: etichette ARIA dove serve, annunci di cambio schermata nel wizard, testi alternativi; i numeri del report letti con contesto ("più 86 euro al mese dal primo anno, fonte certa").
 - Contrasto ≥4.5:1 in entrambi i temi; informazione mai affidata al solo colore (stato legge = colore + simbolo + parola).
 - Target tattili ≥44px; layout a una colonna su mobile; testo ridimensionabile fino al 200% senza rotture; rispetto di `prefers-reduced-motion`.
-- Linguaggio semplice ovunque; glossario inline per i termini tecnici inevitabili (es. "ISEE: ⓘ").
+- Linguaggio semplice ovunque; glossario inline per i termini tecnici inevitabili (icona informativa SVG accanto al termine, es. "ISEE").
 
 ## 9. Privacy e sicurezza
 
