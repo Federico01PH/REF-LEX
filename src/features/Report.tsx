@@ -88,21 +88,26 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
         </div>
       ) : (
         <>
-          <div role="tablist" aria-label="Orizzonte temporale" className="spazio">
+          <div role="group" aria-label="Orizzonte temporale" className="spazio">
             {ORIZZONTI.map((o) => (
-              <button key={o} role="tab" className="pill" aria-selected={orizzonte === o}
+              <button key={o} className="pill" aria-pressed={orizzonte === o}
                 onClick={() => setOrizzonte(o)}>
                 {orizzonteEtichetta(o)}
               </button>
             ))}
           </div>
           {haTotale && (
-            <div className={`riquadro-numero spazio ${totale.min + totale.max >= 0 ? 'positivo' : 'negativo'}`}>
+            <div className={`riquadro-numero spazio ${totale.min >= 0 ? 'positivo' : totale.max <= 0 ? 'negativo' : 'incerto'}`}>
               <div className="numero">{formattaIntervallo(totale.min, totale.max)}</div>
               <div>al mese tra {orizzonteEtichetta(orizzonte)} (effetti certi e probabili)</div>
             </div>
           )}
           {r.effetti.map((regola) => <RigaEffetto key={regola.id} regola={regola} />)}
+          {r.effetti.some((e) => e.timeline[orizzonte] === 'incerto') && (
+            <p className="card spazio testo-piccolo" style={{ borderLeft: '4px solid var(--arancio)' }}>
+              Alcuni effetti sono incerti in questo orizzonte temporale: non li contiamo nel totale finché non ci sono dati certi.
+            </p>
+          )}
           {[...new Map(r.nonCalcolabili.map((nc) => [nc.campiMancanti.join('|'), nc.campiMancanti])).values()].map((campi) => (
             <div key={campi.join('|')} className="card spazio" style={{ borderLeft: '4px solid var(--arancio)' }}>
               <p style={{ margin: 0 }}>
