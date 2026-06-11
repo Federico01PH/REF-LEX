@@ -6,8 +6,9 @@ import { assegnoInclusione } from './assegno-inclusione';
 import { caseGreen } from './case-green';
 import { bonusEdilizi } from './bonus-edilizi';
 import { riformaDisabilita } from './riforma-disabilita';
+import { fibromialgiaLea } from './fibromialgia-lea';
 
 export const CATALOGO: Legge[] = [
   cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione,
-  caseGreen, bonusEdilizi, riformaDisabilita
+  caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea
 ];
