@@ -14,7 +14,7 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
 
   function avanza(prossimaBozza: Partial<Profilo>) {
     if (indice + 1 >= DOMANDE.length) onFine(prossimaBozza as Profilo);
-    else { setBozza(prossimaBozza); setIndice(indice + 1); }
+    else { setBozza(prossimaBozza); setIndice((i) => i + 1); }
   }
 
   function seleziona(v: unknown) {
@@ -42,7 +42,7 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
       <div className="card">
         <h1 style={{ fontSize: 22, marginTop: 0 }}>{domanda.titolo}</h1>
         {domanda.tipo === 'numero' && (
-          <input type="number" inputMode="numeric" min={13} max={120} className="pill"
+          <input type="number" inputMode="numeric" min={13} max={120} step={1} className="pill"
             style={{ width: '100%', fontSize: 20 }}
             aria-label={domanda.titolo}
             value={typeof valore === 'number' ? valore : ''}

@@ -80,10 +80,10 @@ export const DOMANDE: Domanda[] = [
     opzioni: [
       { valore: 'donna', etichetta: 'Donna' }, { valore: 'uomo', etichetta: 'Uomo' },
       { valore: 'non-binario', etichetta: 'Non binario' }, { valore: 'preferisco-non-dirlo', etichetta: 'Preferisco non dirlo' }] },
-  { campo: 'identitaGenere', titolo: 'La tua identità di genere corrisponde al sesso assegnato alla nascita?', tipo: 'scelta',
-    perche: 'Esistono leggi su documenti, transizione e antidiscriminazione che riguardano le persone trans.',
+  { campo: 'identitaGenere', titolo: 'Sei una persona transgender?', tipo: 'scelta',
+    perche: 'Transgender vuol dire sentirsi di un genere diverso da quello scritto sui documenti alla nascita. Esistono leggi su documenti, transizione e antidiscriminazione che riguardano le persone trans.',
     opzioni: [
-      { valore: 'cisgender', etichetta: 'Sì' }, { valore: 'transgender', etichetta: 'No' },
+      { valore: 'transgender', etichetta: 'Sì' }, { valore: 'cisgender', etichetta: 'No' },
       { valore: 'preferisco-non-dirlo', etichetta: 'Preferisco non dirlo' }] },
   { campo: 'orientamento', titolo: 'Qual è il tuo orientamento sentimentale?', tipo: 'scelta',
     perche: 'Unioni civili, adozioni e leggi antidiscriminazione hanno effetti diversi a seconda dell\'orientamento.',
