@@ -42,7 +42,8 @@ export default function App() {
     return () => { attivo = false; };
   }, []);
 
-  const legge = (id: string) => catalogo.find((l) => l.id === id)!;
+  // se il catalogo remoto arriva mentre l'utente è su un report, l'id potrebbe non esserci più: fallback al catalogo incorporato
+  const legge = (id: string) => catalogo.find((l) => l.id === id) ?? CATALOGO.find((l) => l.id === id)!;
 
   return (
     <main>

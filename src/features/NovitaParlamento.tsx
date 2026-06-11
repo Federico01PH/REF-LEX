@@ -1,5 +1,6 @@
 import type { NovitaFile } from '../engine/novita';
 import type { StatoLegge } from '../engine/types';
+import { dataLeggibile } from '../ui/formato';
 
 const STATI: Record<StatoLegge, { etichetta: string; colore: string }> = {
   vigore: { etichetta: 'In vigore', colore: 'var(--verde)' },
@@ -14,7 +15,7 @@ export function NovitaParlamento({ novita }: { novita: NovitaFile }) {
     <section aria-label="Novità dal Parlamento" className="spazio">
       <h2 style={{ fontSize: 19, marginBottom: 2 }}>Novità dal Parlamento</h2>
       <p className="testo-piccolo" style={{ marginTop: 0 }}>
-        Dalle fonti ufficiali, aggiornato al {novita.generatoIl}. Non sono ancora simulabili: le stiamo verificando.
+        Dalle fonti ufficiali, aggiornato al {dataLeggibile(novita.generatoIl)}. Non sono ancora simulabili: le stiamo verificando.
       </p>
       {novita.voci.map((voce) => {
         const stato = STATI[voce.stato];
@@ -22,9 +23,10 @@ export function NovitaParlamento({ novita }: { novita: NovitaFile }) {
           <article key={voce.id} className="card spazio" style={{ borderLeft: `4px solid ${stato.colore}`, padding: 12 }}>
             <span className="testo-piccolo" style={{ fontWeight: 800, color: stato.colore }}>{stato.etichetta}</span>
             <span style={{ display: 'block', fontWeight: 700 }}>{voce.titolo}</span>
-            <span className="testo-piccolo">{voce.data} · <span className="badge badge-dipende">Simulazione in preparazione</span></span>
+            <span className="testo-piccolo">{dataLeggibile(voce.data)} · <span className="badge badge-dipende">Simulazione in preparazione</span></span>
             <a className="testo-piccolo" style={{ display: 'block', marginTop: 4 }}
-              href={voce.url} target="_blank" rel="noopener noreferrer">
+              href={voce.url} target="_blank" rel="noopener noreferrer"
+              aria-label={`Leggi il testo ufficiale: ${voce.titolo}`}>
               Leggi il testo ufficiale
             </a>
           </article>

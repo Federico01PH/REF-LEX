@@ -4,6 +4,7 @@ import { rilevanza } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
 import type { NovitaFile } from '../engine/novita';
 import { NovitaParlamento } from './NovitaParlamento';
+import { dataLeggibile } from '../ui/formato';
 
 const STATI: Record<StatoLegge, { etichetta: string; colore: string }> = {
   vigore: { etichetta: 'In vigore', colore: 'var(--verde)' },
@@ -72,8 +73,8 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
         )}
       </div>
       <p className="testo-piccolo spazio">
-        {infoCatalogo.fonte === 'remoto'
-          ? `Catalogo aggiornato automaticamente al ${infoCatalogo.generatoIl}.`
+        {infoCatalogo.fonte === 'remoto' && infoCatalogo.generatoIl
+          ? `Catalogo aggiornato automaticamente al ${dataLeggibile(infoCatalogo.generatoIl)}.`
           : 'Catalogo locale incluso nell\'app: si aggiorna da solo quando sei online.'}
       </p>
       <div className="spazio" style={{ display: 'flex', gap: 8 }}>

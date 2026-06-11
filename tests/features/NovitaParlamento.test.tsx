@@ -13,7 +13,7 @@ const novita: NovitaFile = {
 test('mostra titolo sezione, data aggiornamento e voci con stato', () => {
   render(<NovitaParlamento novita={novita} />);
   expect(screen.getByRole('heading', { name: /novità dal parlamento/i })).toBeInTheDocument();
-  expect(screen.getByText(/aggiornato al 2026-06-11/i)).toBeInTheDocument();
+  expect(screen.getByText(/aggiornato al 11 giugno 2026/i)).toBeInTheDocument();
   expect(screen.getByText(/nuova legge sulla scuola/i)).toBeInTheDocument();
   expect(screen.getByText(/appena approvata/i)).toBeInTheDocument();
   expect(screen.getByText(/in discussione/i)).toBeInTheDocument();
