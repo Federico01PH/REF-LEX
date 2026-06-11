@@ -36,12 +36,12 @@ export function Privacy({ tema, onCambiaTema, onCancellaTutto, onIndietro }: {
           </button>
         ) : (
           <>
-            <p><b>Sicuro/a?</b> Il profilo verr&agrave; eliminato per sempre da questo dispositivo.</p>
+            <p><b>Sicuro/a?</b> Il profilo verrà eliminato per sempre da questo dispositivo.</p>
             <div style={{ display: 'flex', gap: 8 }}>
               <button className="btn btn-secondario" style={{ flex: 1 }} onClick={() => setConferma(false)}>No, tienili</button>
               <button className="btn btn-pericolo" style={{ flex: 1 }}
                 onClick={() => { cancellaTutto(); onCancellaTutto(); }}>
-                S&igrave;, cancella
+                Sì, cancella
               </button>
             </div>
           </>
