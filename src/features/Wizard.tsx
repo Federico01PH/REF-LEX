@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { Profilo } from '../engine/types';
 import { DOMANDE } from '../data/wizard';
 import { Icona } from '../ui/Icona';
@@ -10,6 +10,14 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
   const [indice, setIndice] = useState(0);
   const [bozza, setBozza] = useState<Partial<Profilo>>(iniziale ?? { schemaVersion: 1 });
   const domanda = DOMANDE[indice];
+
+  const titoloRef = useRef<HTMLHeadingElement>(null);
+  const primoRender = useRef(true);
+
+  useEffect(() => {
+    if (primoRender.current) { primoRender.current = false; return; }
+    titoloRef.current?.focus();
+  }, [indice]);
   const valore = bozza[domanda.campo];
 
   function avanza(prossimaBozza: Partial<Profilo>) {
@@ -40,7 +48,7 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
         ))}
       </div>
       <div className="card">
-        <h1 style={{ fontSize: 22, marginTop: 0 }}>{domanda.titolo}</h1>
+        <h1 ref={titoloRef} tabIndex={-1} style={{ fontSize: 22, marginTop: 0 }}>{domanda.titolo}</h1>
         {domanda.tipo === 'numero' && (
           <input type="number" inputMode="numeric" min={13} max={120} step={1} className="pill"
             style={{ width: '100%', fontSize: 20 }}

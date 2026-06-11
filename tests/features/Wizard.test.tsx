@@ -37,3 +37,10 @@ test('mostra il "perché lo chiediamo" e la barra di progresso', () => {
   expect(screen.getByText(/perché lo chiediamo/i)).toBeInTheDocument();
   expect(screen.getByRole('progressbar')).toBeInTheDocument();
 });
+
+test('avanzando, il focus va sul titolo della nuova domanda', async () => {
+  render(<Wizard iniziale={null} esploratore={false} onFine={vi.fn()} onAnnulla={vi.fn()} />);
+  await userEvent.type(screen.getByRole('spinbutton'), '34');
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  expect(screen.getByRole('heading', { name: /di cosa ti occupi/i })).toHaveFocus();
+});
