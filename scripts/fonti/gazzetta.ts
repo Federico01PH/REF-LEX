@@ -22,9 +22,17 @@ function parsePubDate(pubDate: string): string | null {
 }
 
 /**
+ * Atti normativi primari ammessi nel feed novita.
+ * Esclude atti amministrativi: decreti ministeriali, comunicati,
+ * determine, ordinanze, provvedimenti.
+ */
+const ATTO_NORMATIVO = /\b(LEGGE|DECRETO-LEGGE|DECRETO LEGISLATIVO|TESTO COORDINATO|DECRETO DEL PRESIDENTE DELLA REPUBBLICA)\b/i;
+
+/**
  * Analizza il feed RSS della Gazzetta Ufficiale Serie Generale.
  * Lancia un errore descrittivo se l'XML non contiene la struttura attesa.
  * Ogni voce passa da SchemaNovita.parse() — se invalida, lancia.
+ * Solo gli atti normativi primari (LEGGE, DECRETO-LEGGE, ecc.) passano il filtro.
  */
 export function analizzaGazzetta(xml: string): Novita[] {
   const parser = new XMLParser({
@@ -68,6 +76,10 @@ export function analizzaGazzetta(xml: string): Novita[] {
 
   for (const item of listaItem) {
     const titoloRaw = String(item['title'] ?? '').trim();
+
+    // Filtra: solo atti normativi primari (leggi, decreti-legge, d.lgs., DPR)
+    if (!ATTO_NORMATIVO.test(titoloRaw)) continue;
+
     const link = String(item['link'] ?? '').trim();
     const pubDate = String(item['pubDate'] ?? '').trim();
 

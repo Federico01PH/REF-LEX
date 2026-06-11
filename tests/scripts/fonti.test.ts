@@ -20,6 +20,13 @@ test('gazzetta: estrae voci valide', () => {
   }
 });
 
+test('gazzetta: esclude gli atti non normativi (comunicati, determine, decreti ministeriali)', () => {
+  const voci = analizzaGazzetta(fixture('gazzetta.xml'));
+  for (const v of voci) {
+    expect(v.titolo).toMatch(/\b(LEGGE|DECRETO-LEGGE|DECRETO LEGISLATIVO|TESTO COORDINATO|DECRETO DEL PRESIDENTE DELLA REPUBBLICA)\b/i);
+  }
+});
+
 test('camera: estrae voci valide', () => {
   const voci = analizzaCamera(JSON.parse(fixture('camera.json')));
   expect(voci.length).toBeGreaterThan(0);

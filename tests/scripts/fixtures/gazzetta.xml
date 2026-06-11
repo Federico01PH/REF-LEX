@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Fixture costruita con voci reali dalla Gazzetta Ufficiale.
+     Atti normativi (devono passare il filtro):
+       - LEGGE 9 maggio 2026, n. 71  (ELI 26G00092, GU n. 106 del 09-05-2026)
+       - LEGGE 9 maggio 2026, n. 70  (ELI 26G00091, GU n. 106 del 09-05-2026)
+       - DECRETO LEGISLATIVO 8 aprile 2026, n. 78  (ELI 26G00093, GU n. 111 del 15-05-2026)
+     Atti amministrativi (devono essere esclusi dal filtro):
+       - DECRETO ministeriale (MASE, 13 maggio 2026)
+       - COMUNICATO (AIFA)
+     Fonte: Normattiva + feed RSS GU SG del 10-06-2026.
+-->
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Gazzetta Ufficiale - Serie Generale - Sommario</title>
-    <link>http://www.gazzettaufficiale.it/eli/gu/2026/06/10/132/SG/html</link>
-    <description>Gazzetta Ufficiale - Serie Generale n. 132 del 10-06-2026</description>
+    <link>http://www.gazzettaufficiale.it/eli/gu/2026/05/09/106/SG/html</link>
+    <description>Gazzetta Ufficiale - Serie Generale n. 106 del 09-05-2026</description>
     <language>it</language>
+    <item>
+      <title>LEGGE 9 maggio 2026, n. 71</title>
+      <link>http://www.gazzettaufficiale.it/eli/id/2026/05/09/26G00092/SG</link>
+      <content:encoded>Conversione in legge, con modificazioni, del decreto-legge 11 marzo 2026, n. 32, recante disposizioni urgenti in materia di commissari straordinari e concessioni. (26G00092)</content:encoded>
+      <pubDate>Sat, 09 May 2026 17:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>LEGGE 9 maggio 2026, n. 70</title>
+      <link>http://www.gazzettaufficiale.it/eli/id/2026/05/09/26G00091/SG</link>
+      <content:encoded>Valorizzazione della risorsa mare. (26G00091)</content:encoded>
+      <pubDate>Sat, 09 May 2026 17:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>DECRETO LEGISLATIVO 8 aprile 2026, n. 78</title>
+      <link>http://www.gazzettaufficiale.it/eli/id/2026/05/15/26G00093/SG</link>
+      <content:encoded>Adeguamento della normativa nazionale alle disposizioni del regolamento (UE) 2023/988 del Parlamento europeo e del Consiglio, del 10 maggio 2023, sulla sicurezza generale dei prodotti. (26G00093)</content:encoded>
+      <pubDate>Thu, 15 May 2026 17:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 13 maggio 2026</title>
       <link>http://www.gazzettaufficiale.it/eli/id/2026/06/10/26A02867/SG</link>
-      <content:encoded>Approvazione degli Standard Value per le produzioni vegetali applicabili per la determinazione del valore della produzione media annua e dei valori massimi assicurabili al mercato agevolato, nonche' per la determinazione della quota massima di adesione alla copertura mutualistica dei Fondi di mutualita', annualita' 2024, 2025 e 2026 e rideterminazione dello Standard Value per il prodotto M32 - Mais da granella per farine da polenta e del gruppo di appartenenza di talune uve da vino DOP (H80) e IGP (H81) per l'annualita' 2026. (26A02867)</content:encoded>
+      <content:encoded>Approvazione degli Standard Value per le produzioni vegetali applicabili per la determinazione del valore della produzione media annua e dei valori massimi assicurabili al mercato agevolato. (26A02867)</content:encoded>
       <pubDate>Wed, 10 Jun 2026 17:01:02 GMT</pubDate>
     </item>
     <item>
-      <title>MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 27 maggio 2026</title>
-      <link>http://www.gazzettaufficiale.it/eli/id/2026/06/10/26A02798/SG</link>
-      <content:encoded>Dichiarazione dell'esistenza del carattere di eccezionalita' degli eventi meteorologici che, a partire dal giorno 18 gennaio 2026, hanno colpito il territorio della Regione Sicilia. (26A02798)</content:encoded>
-      <pubDate>Wed, 10 Jun 2026 17:01:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>MINISTERO DELLA DIFESA - DECRETO 4 giugno 2026</title>
-      <link>http://www.gazzettaufficiale.it/eli/id/2026/06/10/26A02906/SG</link>
-      <content:encoded>Approvazione del nuovo elenco dei materiali d'armamento da comprendere nelle categorie previste dall'articolo 2, comma 2, della legge 9 luglio 1990, n. 185, in attuazione della direttiva delegata (UE) 2026/325. (26A02906)</content:encoded>
-      <pubDate>Wed, 10 Jun 2026 17:01:06 GMT</pubDate>
-    </item>
-    <item>
-      <title>MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 22 maggio 2026</title>
-      <link>http://www.gazzettaufficiale.it/eli/id/2026/06/10/26A02776/SG</link>
-      <content:encoded>Liquidazione coatta amministrativa della &laquo;AAA Attesor cooperativa sociale&raquo;, in Monza e nomina del commissario liquidatore. (26A02776)</content:encoded>
-      <pubDate>Wed, 10 Jun 2026 17:00:57 GMT</pubDate>
-    </item>
-    <item>
-      <title>REGIONE PUGLIA - COMUNICATO</title>
-      <link>http://www.gazzettaufficiale.it/eli/id/2026/06/10/26A02801/SG</link>
-      <content:encoded>Misure per la copertura del disavanzo del Servizio sanitario regionale risultante dal conto economico al quarto trimestre 2025. Rideterminazione delle aliquote dell'addizionale regionale all'imposta sul reddito delle persone fisiche (IRPEF). (26A02801)</content:encoded>
-      <pubDate>Wed, 10 Jun 2026 17:01:01 GMT</pubDate>
+      <title>AGENZIA ITALIANA DEL FARMACO - COMUNICATO</title>
+      <link>http://www.gazzettaufficiale.it/eli/id/2026/06/10/26A02622/SG</link>
+      <content:encoded>Autorizzazione all&apos;importazione parallela del medicinale per uso umano &laquo;Meclon&raquo;. (26A02622)</content:encoded>
+      <pubDate>Wed, 10 Jun 2026 17:00:56 GMT</pubDate>
     </item>
   </channel>
 </rss>
