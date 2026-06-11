@@ -1,0 +1,27 @@
+name: Aggiorna dati da fonti ufficiali
+on:
+  schedule:
+    - cron: '0 3 * * *'   # ogni notte alle 03:00 UTC
+  workflow_dispatch: {}    # eseguibile anche a mano
+permissions:
+  contents: write
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run aggiorna-dati
+      - name: Commit e push se ci sono novità
+        run: |
+          git config user.name "ref-lex-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if ! git diff --quiet public/dati; then
+            git add public/dati
+            git commit -m "Aggiornamento automatico dati dalle fonti ufficiali"
+            git push
+          fi
