@@ -1,7 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from '../src/App';
 
-beforeEach(() => localStorage.clear());
+beforeEach(() => {
+  localStorage.clear();
+  vi.stubGlobal('fetch', vi.fn(async () => { throw new Error('niente rete nei test'); }) as unknown as typeof fetch);
+});
+afterEach(() => vi.unstubAllGlobals());
 
 test('senza profilo salvato parte dal benvenuto', () => {
   render(<App />);

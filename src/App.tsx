@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
-import type { Profilo } from './engine/types';
+import type { Legge, Profilo } from './engine/types';
+import type { NovitaFile } from './engine/novita';
 import { CATALOGO } from './data/laws';
+import { VERSIONE_CATALOGO } from './data/laws/versione';
+import { caricaCatalogoRemoto, caricaNovita } from './storage/datiRemoti';
 import { caricaProfilo, caricaTema, salvaProfilo, salvaTema } from './storage/profilo';
 import { Benvenuto } from './features/Benvenuto';
 import { Wizard } from './features/Wizard';
@@ -20,13 +23,26 @@ export default function App() {
   const [vista, setVista] = useState<Vista>(() => (caricaProfilo() ? { nome: 'catalogo' } : { nome: 'benvenuto' }));
   const [tema, setTema] = useState<string>(() => caricaTema());
 
+  const [catalogo, setCatalogo] = useState<Legge[]>(CATALOGO);
+  const [infoCatalogo, setInfoCatalogo] = useState<{ fonte: 'locale' | 'remoto'; generatoIl?: string }>({ fonte: 'locale' });
+  const [novita, setNovita] = useState<NovitaFile | null>(null);
+
   useEffect(() => {
     const scuroSistema = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
     const scuro = tema === 'dark' || (tema === 'auto' && scuroSistema);
     document.documentElement.dataset.theme = scuro ? 'dark' : 'light';
   }, [tema]);
 
-  const legge = (id: string) => CATALOGO.find((l) => l.id === id)!;
+  useEffect(() => {
+    let attivo = true;
+    caricaCatalogoRemoto(VERSIONE_CATALOGO).then((r) => {
+      if (attivo && r) { setCatalogo(r.leggi); setInfoCatalogo({ fonte: 'remoto', generatoIl: r.generatoIl }); }
+    });
+    caricaNovita().then((n) => { if (attivo) setNovita(n); });
+    return () => { attivo = false; };
+  }, []);
+
+  const legge = (id: string) => catalogo.find((l) => l.id === id)!;
 
   return (
     <main>
@@ -48,6 +64,9 @@ export default function App() {
       {vista.nome === 'catalogo' && (profilo || profiloEsploratore) && (
         <Catalogo profilo={profiloEsploratore ?? profilo!}
           esploratore={profiloEsploratore !== null}
+          leggi={catalogo}
+          novita={novita}
+          infoCatalogo={infoCatalogo}
           onScegli={(leggeId) => setVista({ nome: 'report', leggeId })}
           onModificaProfilo={() => setVista({ nome: 'wizard', esploratore: profiloEsploratore !== null })}
           onPrivacy={() => setVista({ nome: 'privacy' })}

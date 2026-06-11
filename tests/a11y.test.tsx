@@ -7,6 +7,7 @@ import { Report } from '../src/features/Report';
 import { Empatia } from '../src/features/Empatia';
 import { Privacy } from '../src/features/Privacy';
 import { cuneoFiscale } from '../src/data/laws/cuneo-fiscale';
+import { CATALOGO } from '../src/data/laws';
 import type { Profilo } from '../src/engine/types';
 
 const profilo: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'da15a20k' };
@@ -23,7 +24,8 @@ test('Benvenuto è accessibile', () =>
 test('Wizard è accessibile', () =>
   verificaAccessibilita(<Wizard iniziale={null} esploratore={false} onFine={() => {}} onAnnulla={() => {}} />, 'Wizard'), { timeout: 15000 });
 test('Catalogo è accessibile', () =>
-  verificaAccessibilita(<Catalogo profilo={profilo} esploratore={false} onScegli={() => {}}
+  verificaAccessibilita(<Catalogo profilo={profilo} esploratore={false} leggi={CATALOGO} novita={null}
+    infoCatalogo={{ fonte: 'locale' }} onScegli={() => {}}
     onModificaProfilo={() => {}} onPrivacy={() => {}} onEsciEsploratore={() => {}} />, 'Catalogo'), { timeout: 15000 });
 test('Report è accessibile', () =>
   verificaAccessibilita(<Report profilo={profilo} legge={cuneoFiscale} esploratore={false}
