@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import type { Ambito, Profilo, StatoLegge } from '../engine/types';
-import { CATALOGO } from '../data/laws';
+import type { Ambito, Legge, Profilo, StatoLegge } from '../engine/types';
 import { rilevanza } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
+import type { NovitaFile } from '../engine/novita';
+import { NovitaParlamento } from './NovitaParlamento';
+import { dataLeggibile } from '../ui/formato';
 
 const STATI: Record<StatoLegge, { etichetta: string; colore: string }> = {
   vigore: { etichetta: 'In vigore', colore: 'var(--verde)' },
@@ -26,12 +28,13 @@ const RILEVANZA = {
   bassa: 'Non ti tocca direttamente'
 };
 
-export function Catalogo({ profilo, esploratore, onScegli, onModificaProfilo, onPrivacy, onEsciEsploratore }: {
-  profilo: Profilo; esploratore: boolean; onScegli: (id: string) => void;
-  onModificaProfilo: () => void; onPrivacy: () => void; onEsciEsploratore: () => void;
+export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, onScegli, onModificaProfilo, onPrivacy, onEsciEsploratore }: {
+  profilo: Profilo; esploratore: boolean; leggi: Legge[]; novita: NovitaFile | null;
+  infoCatalogo: { fonte: 'locale' | 'remoto'; generatoIl?: string };
+  onScegli: (id: string) => void; onModificaProfilo: () => void; onPrivacy: () => void; onEsciEsploratore: () => void;
 }) {
   const [ambito, setAmbito] = useState<Ambito | 'tutte'>('tutte');
-  const visibili = CATALOGO.filter((l) => ambito === 'tutte' || l.ambito === ambito);
+  const visibili = leggi.filter((l) => ambito === 'tutte' || l.ambito === ambito);
 
   return (
     <div>
@@ -44,6 +47,7 @@ export function Catalogo({ profilo, esploratore, onScegli, onModificaProfilo, on
           </button>
         </p>
       )}
+      {novita && novita.voci.length > 0 && <NovitaParlamento novita={novita} />}
       <div role="group" aria-label="Filtra per argomento">
         {AMBITI.map((a) => (
           <button key={a.valore} className="pill" aria-pressed={ambito === a.valore}
@@ -68,6 +72,11 @@ export function Catalogo({ profilo, esploratore, onScegli, onModificaProfilo, on
           <p className="card spazio">Per questo argomento non abbiamo ancora leggi nel catalogo: stanno arrivando.</p>
         )}
       </div>
+      <p className="testo-piccolo spazio">
+        {infoCatalogo.fonte === 'remoto' && infoCatalogo.generatoIl
+          ? `Catalogo aggiornato automaticamente al ${dataLeggibile(infoCatalogo.generatoIl)}.`
+          : 'Catalogo locale incluso nell\'app: si aggiorna da solo quando sei online.'}
+      </p>
       <div className="spazio" style={{ display: 'flex', gap: 8 }}>
         <button className="btn btn-secondario" style={{ flex: 1 }} onClick={onModificaProfilo}>
           <Icona nome="persona" dimensione={16} /> Modifica profilo

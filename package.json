@@ -8,9 +8,12 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "genera-catalogo": "tsx scripts/genera-catalogo.ts",
+    "aggiorna-dati": "tsx scripts/aggiorna-dati.ts"
   },
   "dependencies": {
+    "@fontsource-variable/fraunces": "^5.2.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "zod": "^3.23.8"
@@ -19,11 +22,14 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^25.9.3",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "axe-core": "^4.10.2",
+    "fast-xml-parser": "^5.8.0",
     "jsdom": "^25.0.1",
+    "tsx": "^4.22.4",
     "typescript": "~5.6.3",
     "vite": "^6.0.3",
     "vite-plugin-pwa": "^0.21.1",

@@ -10,7 +10,10 @@ const CAMPI_ORDINALI: readonly string[] = ['eta', 'fasciaReddito', 'fasciaIsee',
 // campi il cui valore nel profilo è un array: gli autori devono usare 'in', mai 'eq'
 const CAMPI_ARRAY: readonly string[] = ['disabilita'];
 
-const SchemaFonte = z.object({ etichetta: z.string().min(1), url: z.string().url() });
+// solo http/https: z.url() da solo accetterebbe anche schemi pericolosi come javascript:
+export const SchemaUrlSicuro = z.string().url().refine((u) => /^https?:\/\//i.test(u), 'solo URL http o https');
+
+const SchemaFonte = z.object({ etichetta: z.string().min(1), url: SchemaUrlSicuro });
 
 const SchemaCondizione = z.object({
   campo: z.enum(CAMPI_PROFILO),
