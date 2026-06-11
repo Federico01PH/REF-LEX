@@ -8,8 +8,9 @@ import { bonusEdilizi } from './bonus-edilizi';
 import { riformaDisabilita } from './riforma-disabilita';
 import { fibromialgiaLea } from './fibromialgia-lea';
 import { aiAct } from './ai-act';
+import { decretoSicurezza } from './decreto-sicurezza';
 
 export const CATALOGO: Legge[] = [
   cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione,
-  caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea, aiAct
+  caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea, aiAct, decretoSicurezza
 ];
