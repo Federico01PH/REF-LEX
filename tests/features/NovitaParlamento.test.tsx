@@ -19,9 +19,9 @@ test('mostra titolo sezione, data aggiornamento e voci con stato', () => {
   expect(screen.getByText(/in discussione/i)).toBeInTheDocument();
 });
 
-test('ogni voce ha badge "simulazione in preparazione" e link al testo ufficiale sicuro', () => {
+test('ogni voce dice chiaramente che non è ancora simulabile e ha il link al testo ufficiale sicuro', () => {
   render(<NovitaParlamento novita={novita} />);
-  expect(screen.getAllByText(/simulazione in preparazione/i)).toHaveLength(2);
+  expect(screen.getAllByText(/non ancora simulabile/i)).toHaveLength(2);
   const link = screen.getAllByRole('link', { name: /leggi il testo ufficiale/i });
   expect(link).toHaveLength(2);
   expect(link[0]).toHaveAttribute('rel', 'noopener noreferrer');

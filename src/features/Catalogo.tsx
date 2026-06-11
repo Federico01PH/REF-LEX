@@ -34,7 +34,9 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
   onScegli: (id: string) => void; onModificaProfilo: () => void; onPrivacy: () => void; onEsciEsploratore: () => void;
 }) {
   const [ambito, setAmbito] = useState<Ambito | 'tutte'>('tutte');
+  const [sceltaId, setSceltaId] = useState('');
   const visibili = leggi.filter((l) => ambito === 'tutte' || l.ambito === ambito);
+  const scelta = visibili.find((l) => l.id === sceltaId) ?? null;
 
   return (
     <div>
@@ -47,41 +49,57 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
           </button>
         </p>
       )}
-      {novita && novita.voci.length > 0 && <NovitaParlamento novita={novita} />}
       <div role="group" aria-label="Filtra per argomento">
         {AMBITI.map((a) => (
           <button key={a.valore} className="pill" aria-pressed={ambito === a.valore}
-            onClick={() => setAmbito(a.valore)}>{a.etichetta}</button>
+            onClick={() => { setAmbito(a.valore); setSceltaId(''); }}>{a.etichetta}</button>
         ))}
       </div>
-      <div className="spazio">
-        {visibili.map((legge) => {
-          const stato = STATI[legge.stato];
-          const r = rilevanza(profilo, legge);
-          return (
-            <button key={legge.id} className="card spazio" onClick={() => onScegli(legge.id)}
-              style={{ display: 'block', width: '100%', textAlign: 'left', border: 'none',
-                borderLeft: `4px solid ${stato.colore}`, cursor: 'pointer', font: 'inherit', color: 'inherit' }}>
-              <span className="testo-piccolo" style={{ fontWeight: 800, color: stato.colore }}>{stato.etichetta}</span>
-              <span style={{ display: 'block', fontWeight: 800, fontSize: 17 }}>{legge.titoloDivulgativo}</span>
-              <span className="testo-piccolo">{RILEVANZA[r]} · 2 min</span>
-            </button>
-          );
-        })}
+      <div className="card spazio">
+        <label htmlFor="scelta-legge" style={{ display: 'block', fontWeight: 800, marginBottom: 8 }}>
+          Scegli la legge da simulare
+        </label>
+        <select id="scelta-legge" className="tendina" value={sceltaId}
+          onChange={(e) => setSceltaId(e.target.value)}>
+          <option value="">Apri l'elenco e scegli…</option>
+          {visibili.map((l) => (
+            <option key={l.id} value={l.id}>{l.titoloDivulgativo} — {STATI[l.stato].etichetta}</option>
+          ))}
+        </select>
         {visibili.length === 0 && (
-          <p className="card spazio">Per questo argomento non abbiamo ancora leggi nel catalogo: stanno arrivando.</p>
+          <p className="testo-piccolo" style={{ marginBottom: 0 }}>
+            Per questo argomento non abbiamo ancora leggi nel catalogo: stanno arrivando.
+          </p>
+        )}
+        {!scelta && visibili.length > 0 && (
+          <p className="testo-piccolo" style={{ marginBottom: 0 }}>
+            I titoli sono scritti in parole semplici: scegline uno e ti mostriamo anche il nome ufficiale e cosa prevede.
+          </p>
         )}
       </div>
+      {scelta && (
+        <article className="card spazio" style={{ borderLeft: `4px solid ${STATI[scelta.stato].colore}` }}>
+          <span className="testo-piccolo" style={{ fontWeight: 800, color: STATI[scelta.stato].colore }}>
+            {STATI[scelta.stato].etichetta}
+          </span>
+          <h2 style={{ fontSize: 20, margin: '4px 0' }}>{scelta.titoloDivulgativo}</h2>
+          <p className="testo-piccolo" style={{ marginTop: 0 }}>Nome ufficiale: {scelta.titoloUfficiale}</p>
+          <p style={{ marginTop: 8 }}>{scelta.riassunto}</p>
+          <p className="testo-piccolo">{RILEVANZA[rilevanza(profilo, scelta)]} · il report richiede 2 minuti</p>
+          <button className="btn" onClick={() => onScegli(scelta.id)}>Vedi come ti tocca</button>
+        </article>
+      )}
+      {novita && novita.voci.length > 0 && <NovitaParlamento novita={novita} />}
       <p className="testo-piccolo spazio">
         {infoCatalogo.fonte === 'remoto' && infoCatalogo.generatoIl
           ? `Catalogo aggiornato automaticamente al ${dataLeggibile(infoCatalogo.generatoIl)}.`
           : 'Catalogo locale incluso nell\'app: si aggiorna da solo quando sei online.'}
       </p>
-      <div className="spazio" style={{ display: 'flex', gap: 8 }}>
-        <button className="btn btn-secondario" style={{ flex: 1 }} onClick={onModificaProfilo}>
+      <div className="spazio riga-azioni">
+        <button className="btn btn-secondario" onClick={onModificaProfilo}>
           <Icona nome="persona" dimensione={16} /> Modifica profilo
         </button>
-        <button className="btn btn-secondario" style={{ flex: 1 }} onClick={onPrivacy}>
+        <button className="btn btn-secondario" onClick={onPrivacy}>
           <Icona nome="lucchetto" dimensione={16} /> I tuoi dati
         </button>
       </div>

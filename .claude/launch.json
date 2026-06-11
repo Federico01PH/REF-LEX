@@ -4,8 +4,8 @@
     {
       "name": "reflex-preview",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "preview"],
-      "port": 4173
+      "runtimeArgs": ["run", "preview", "--", "--port", "4180", "--strictPort"],
+      "port": 4180
     }
   ]
 }
