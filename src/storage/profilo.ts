@@ -32,6 +32,16 @@ export function salvaProfilo(profilo: Profilo): void {
   try { localStorage.setItem(CHIAVE, JSON.stringify(profilo)); } catch { /* modalità solo-sessione */ }
 }
 
+const CHIAVE_TEMA = 'reflex.tema';
+
+export function caricaTema(): string {
+  try { return localStorage.getItem(CHIAVE_TEMA) ?? 'auto'; } catch { return 'auto'; }
+}
+
+export function salvaTema(tema: string): void {
+  try { localStorage.setItem(CHIAVE_TEMA, tema); } catch { /* modalità solo-sessione */ }
+}
+
 export function cancellaTutto(): void {
   try {
     for (const chiave of Object.keys(localStorage)) {

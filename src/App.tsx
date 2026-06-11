@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Profilo } from './engine/types';
 import { CATALOGO } from './data/laws';
-import { caricaProfilo, salvaProfilo } from './storage/profilo';
+import { caricaProfilo, caricaTema, salvaProfilo, salvaTema } from './storage/profilo';
 import { Benvenuto } from './features/Benvenuto';
 import { Wizard } from './features/Wizard';
 import { Catalogo } from './features/Catalogo';
@@ -18,7 +18,7 @@ export default function App() {
   const [profilo, setProfilo] = useState<Profilo | null>(() => caricaProfilo());
   const [profiloEsploratore, setProfiloEsploratore] = useState<Profilo | null>(null);
   const [vista, setVista] = useState<Vista>(() => (caricaProfilo() ? { nome: 'catalogo' } : { nome: 'benvenuto' }));
-  const [tema, setTema] = useState<string>(() => localStorage.getItem('reflex.tema') ?? 'auto');
+  const [tema, setTema] = useState<string>(() => caricaTema());
 
   useEffect(() => {
     const scuroSistema = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
@@ -66,7 +66,7 @@ export default function App() {
       )}
       {vista.nome === 'privacy' && (
         <Privacy tema={tema}
-          onCambiaTema={(t) => { setTema(t); localStorage.setItem('reflex.tema', t); }}
+          onCambiaTema={(t) => { setTema(t); salvaTema(t); }}
           onCancellaTutto={() => { setProfilo(null); setProfiloEsploratore(null); setVista({ nome: 'benvenuto' }); }}
           onIndietro={() => setVista(profilo ? { nome: 'catalogo' } : { nome: 'benvenuto' })} />
       )}

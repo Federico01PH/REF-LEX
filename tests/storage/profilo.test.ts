@@ -1,4 +1,4 @@
-import { caricaProfilo, salvaProfilo, cancellaTutto, storageDisponibile } from '../../src/storage/profilo';
+import { caricaProfilo, caricaTema, salvaProfilo, salvaTema, cancellaTutto, storageDisponibile } from '../../src/storage/profilo';
 import type { Profilo } from '../../src/engine/types';
 
 const profilo: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: 'studente' };
@@ -8,6 +8,13 @@ beforeEach(() => localStorage.clear());
 test('salva e ricarica il profilo', () => {
   salvaProfilo(profilo);
   expect(caricaProfilo()).toEqual(profilo);
+});
+
+test('il tema si salva, si ricarica e di default è auto', () => {
+  expect(caricaTema()).toBe('auto');
+  salvaTema('dark');
+  expect(caricaTema()).toBe('dark');
+  expect(localStorage.getItem('reflex.tema')).toBe('dark');
 });
 
 test('restituisce null se non c\'è nulla', () => {
