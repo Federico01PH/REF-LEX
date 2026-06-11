@@ -10,9 +10,10 @@ import { fibromialgiaLea } from './fibromialgia-lea';
 import { aiAct } from './ai-act';
 import { decretoSicurezza } from './decreto-sicurezza';
 import { codiceStrada } from './codice-strada';
+import { iusItaliae } from './ius-italiae';
 
 export const CATALOGO: Legge[] = [
   cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione,
   caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea, aiAct, decretoSicurezza,
-  codiceStrada
+  codiceStrada, iusItaliae
 ];
