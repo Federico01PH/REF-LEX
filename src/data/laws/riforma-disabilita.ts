@@ -1,0 +1,88 @@
+import type { Legge } from '../../engine/types';
+
+// Verified from: D.Lgs. 62/2024 (attuazione L. delega 227/2021) + disabilita.governo.it.
+// Verification date: 2026-06-11
+//
+// La riforma: accertamento unico INPS con certificato medico introduttivo (una sola visita,
+// meno burocrazia), valutazione multidimensionale, Progetto di vita personalizzato con
+// budget di progetto. Sperimentazione: 9 province dal 2025, +11 dal 30/9/2025,
+// +40 dal 1/3/2026 (totale 60). Entrata in vigore in tutta Italia: 1 gennaio 2027
+// (gia' rinviata una volta: era prevista per il 2026).
+
+const FONTE = {
+  etichetta: 'D.Lgs. 27 maggio 2024, n. 62 (Normattiva)',
+  url: 'https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62'
+};
+
+const FONTE_GOVERNO = {
+  etichetta: 'Ministero per le disabilità — sperimentazione estesa a 40 nuove province',
+  url: 'https://disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/'
+};
+
+export const riformaDisabilita: Legge = {
+  id: 'riforma-disabilita-2024',
+  titoloDivulgativo: 'Riforma della disabilità: una sola visita e un progetto di vita',
+  titoloUfficiale: 'Decreto legislativo 3 maggio 2024, n. 62 (attuazione della legge delega 227/2021)',
+  stato: 'approvata',
+  ambito: 'diritti-salute',
+  fonti: [FONTE, FONTE_GOVERNO],
+  verificataIl: '2026-06-11',
+  riassunto: 'Cambia il modo di riconoscere la disabilità: una sola visita INPS al posto delle tante commissioni, un certificato del proprio medico per avviare tutto, e il diritto a un "progetto di vita" costruito sulla persona, con un budget dedicato. Nel 2026 vale in 60 province di prova; dal 1° gennaio 2027 dovrebbe valere in tutta Italia.',
+  regole: [
+    {
+      id: 'disabilita-accertamento-unico',
+      campiNecessari: ['disabilita'],
+      condizioni: [{ campo: 'disabilita', op: 'in', valore: ['motoria', 'visiva', 'uditiva', 'intellettiva', 'malattia-cronica'] }],
+      effetto: {
+        tipo: 'servizio',
+        descrizione: 'Meno burocrazia: una sola visita INPS per il riconoscimento, avviata dal certificato del tuo medico, al posto delle vecchie commissioni multiple e delle visite di rinnovo ripetute.',
+        direzione: 'positivo'
+      },
+      timeline: { anno1: 'incerto', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
+      confidenza: 'probabile',
+      noteConfidenza: 'Nel 2026 il nuovo sistema vale solo in 60 province di sperimentazione: se la tua non è tra queste, per ora resta la vecchia procedura. L\'avvio nazionale del 1° gennaio 2027 è già stato rinviato una volta e potrebbe slittare ancora.',
+      fonteRegola: FONTE_GOVERNO
+    },
+    {
+      id: 'disabilita-progetto-di-vita',
+      campiNecessari: ['disabilita'],
+      condizioni: [{ campo: 'disabilita', op: 'in', valore: ['motoria', 'visiva', 'uditiva', 'intellettiva', 'malattia-cronica'] }],
+      effetto: {
+        tipo: 'diritto',
+        descrizione: 'Diritto al "progetto di vita": un piano costruito con te (scuola, lavoro, casa, tempo libero) con un budget di progetto che puoi contribuire a gestire.',
+        direzione: 'positivo'
+      },
+      timeline: { anno1: 'incerto', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
+      confidenza: 'probabile',
+      noteConfidenza: 'Vale dove la sperimentazione è attiva (60 province nel 2026), poi in tutta Italia dal 2027. Le risorse del budget di progetto dipendono dai servizi del tuo territorio.',
+      fonteRegola: FONTE
+    },
+    {
+      id: 'disabilita-condizione-non-riconosciuta',
+      campiNecessari: ['disabilita'],
+      condizioni: [{ campo: 'disabilita', op: 'in', valore: ['condizione-non-riconosciuta'] }],
+      effetto: {
+        tipo: 'servizio',
+        descrizione: 'La riforma cambia il come si accerta la disabilità, non l\'elenco delle condizioni riconosciute: se la tua condizione (per esempio la fibromialgia) non è riconosciuta, questa legge da sola non basta. Se ne occupa la proposta sulla fibromialgia, che trovi in questo catalogo.',
+        direzione: 'neutro'
+      },
+      timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
+      confidenza: 'certa',
+      fonteRegola: FONTE
+    },
+    {
+      id: 'disabilita-caregiver',
+      campiNecessari: ['condizioneLavorativa'],
+      condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'caregiver' }],
+      effetto: {
+        tipo: 'qualita-vita',
+        descrizione: 'Se assisti una persona con disabilità, il progetto di vita coinvolge anche la famiglia: la valutazione considera i bisogni di chi assiste e coordina i servizi in un piano unico.',
+        direzione: 'positivo'
+      },
+      timeline: { anno1: 'incerto', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
+      confidenza: 'probabile',
+      noteConfidenza: 'Anche per te dipende dalla provincia fino a fine 2026; il sostegno concreto dipende dai servizi del territorio.',
+      fonteRegola: FONTE
+    }
+  ]
+};

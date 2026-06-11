@@ -5,5 +5,9 @@ import { pensioniRequisiti } from './pensioni-requisiti';
 import { assegnoInclusione } from './assegno-inclusione';
 import { caseGreen } from './case-green';
 import { bonusEdilizi } from './bonus-edilizi';
+import { riformaDisabilita } from './riforma-disabilita';
 
-export const CATALOGO: Legge[] = [cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione, caseGreen, bonusEdilizi];
+export const CATALOGO: Legge[] = [
+  cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione,
+  caseGreen, bonusEdilizi, riformaDisabilita
+];
