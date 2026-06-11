@@ -2,12 +2,12 @@
   --blu: #1A3A8F; --blu-scuro: #16265C; --viola: #6C4BFF;
   --verde: #0BBF7D; --teal: #06A8C9; --arancio: #FF8A3D; --arancio-chiaro: #FFB547;
   --rosso: #D63B4A; --giallo: #E0A800;
-  --sfondo: #F2F5FB; --superficie: #FFFFFF; --superficie-2: #EEF1FA;
+  --sfondo: #FFFFFF; --superficie: #FFFFFF; --superficie-2: #F2F5FB;
   --testo: #16265C; --testo-2: #5A6694; --bordo: #D4D9EC;
   --grad-azione: linear-gradient(135deg, #1A3A8F, #6C4BFF);
   --grad-positivo: linear-gradient(135deg, #0BBF7D, #06A8C9);
   --grad-incerto: linear-gradient(135deg, #FFB547, #FF8A3D);
-  --ombra: 0 4px 16px rgba(26, 58, 143, 0.10);
+  --ombra: 0 2px 10px rgba(22, 38, 92, 0.06);
   --raggio: 16px; --raggio-pillola: 999px;
 }
 [data-theme='dark'] {
