@@ -1,0 +1,345 @@
+{
+  "versione": 1,
+  "generatoIl": "2026-06-11",
+  "leggi": [
+    {
+      "id": "cuneo-fiscale-2025",
+      "titoloDivulgativo": "Taglio del cuneo fiscale per i dipendenti",
+      "titoloUfficiale": "Legge 30 dicembre 2024, n. 207, art. 1, commi 4-9 (Bilancio 2025)",
+      "stato": "vigore",
+      "ambito": "fisco-lavoro",
+      "fonti": [
+        {
+          "etichetta": "L. 207/2024, art. 1, commi 4-9 (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207"
+        },
+        {
+          "etichetta": "Scheda Camera dei deputati",
+          "url": "https://temi.camera.it/leg19/temi/il-taglio-del-cuneo-fiscale.html"
+        }
+      ],
+      "verificataIl": "2026-06-10",
+      "riassunto": "Chi lavora come dipendente paga meno tasse sullo stipendio: fino a 20.000 di reddito arriva una somma extra in busta paga (dal 4,8% al 7,1% del reddito); tra 20.000 e 32.000 euro una detrazione di 1.000 euro l'anno, che si riduce fino a sparire a 40.000 euro.",
+      "regole": [
+        {
+          "id": "cuneo-fino9k",
+          "campiNecessari": [
+            "condizioneLavorativa",
+            "fasciaReddito"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico"
+              ]
+            },
+            {
+              "campo": "fasciaReddito",
+              "op": "eq",
+              "valore": "fino9k"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 0,
+              "max": 50
+            },
+            "descrizione": "Somma extra in busta paga: 7,1% del reddito fino a 8.500 euro, poi 5,3% fino a 9.000 euro.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Misura resa strutturale dalla legge di bilancio 2025; il valore esatto dipende dal tuo reddito preciso dentro la fascia. Calcolo \"a parità di leggi future\".",
+          "fonteRegola": {
+            "etichetta": "L. 207/2024, art. 1, commi 4-9 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207"
+          }
+        },
+        {
+          "id": "cuneo-9-15k",
+          "campiNecessari": [
+            "condizioneLavorativa",
+            "fasciaReddito"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico"
+              ]
+            },
+            {
+              "campo": "fasciaReddito",
+              "op": "eq",
+              "valore": "da9a15k"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 40,
+              "max": 66
+            },
+            "descrizione": "Somma extra in busta paga: 5,3% del reddito (9.000-15.000 euro).",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Misura resa strutturale dalla legge di bilancio 2025; il valore esatto dipende dal tuo reddito preciso dentro la fascia. Calcolo \"a parità di leggi future\".",
+          "fonteRegola": {
+            "etichetta": "L. 207/2024, art. 1, commi 4-9 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207"
+          }
+        },
+        {
+          "id": "cuneo-15-20k",
+          "campiNecessari": [
+            "condizioneLavorativa",
+            "fasciaReddito"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico"
+              ]
+            },
+            {
+              "campo": "fasciaReddito",
+              "op": "eq",
+              "valore": "da15a20k"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 60,
+              "max": 80
+            },
+            "descrizione": "Somma extra in busta paga: 4,8% del reddito (15.000-20.000 euro).",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Misura resa strutturale dalla legge di bilancio 2025; il valore esatto dipende dal tuo reddito preciso dentro la fascia. Calcolo \"a parità di leggi future\".",
+          "fonteRegola": {
+            "etichetta": "L. 207/2024, art. 1, commi 4-9 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207"
+          }
+        },
+        {
+          "id": "cuneo-20-28k",
+          "campiNecessari": [
+            "condizioneLavorativa",
+            "fasciaReddito"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico"
+              ]
+            },
+            {
+              "campo": "fasciaReddito",
+              "op": "eq",
+              "valore": "da20a28k"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 83,
+              "max": 83
+            },
+            "descrizione": "Detrazione fissa di 1.000 euro l'anno sull'IRPEF.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Misura resa strutturale dalla legge di bilancio 2025; il valore esatto dipende dal tuo reddito preciso dentro la fascia. Calcolo \"a parità di leggi future\".",
+          "fonteRegola": {
+            "etichetta": "L. 207/2024, art. 1, commi 4-9 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207"
+          }
+        },
+        {
+          "id": "cuneo-28-35k",
+          "campiNecessari": [
+            "condizioneLavorativa",
+            "fasciaReddito"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico"
+              ]
+            },
+            {
+              "campo": "fasciaReddito",
+              "op": "eq",
+              "valore": "da28a35k"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 52,
+              "max": 83
+            },
+            "descrizione": "Detrazione piena di 1.000 euro/anno fino a 32.000 euro, poi in riduzione (formula: 1.000 × (40.000 - reddito) / 8.000).",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Misura resa strutturale dalla legge di bilancio 2025; il valore esatto dipende dal tuo reddito preciso dentro la fascia. Calcolo \"a parità di leggi future\".",
+          "fonteRegola": {
+            "etichetta": "L. 207/2024, art. 1, commi 4-9 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207"
+          }
+        },
+        {
+          "id": "cuneo-35-50k",
+          "campiNecessari": [
+            "condizioneLavorativa",
+            "fasciaReddito"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico"
+              ]
+            },
+            {
+              "campo": "fasciaReddito",
+              "op": "eq",
+              "valore": "da35a50k"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 0,
+              "max": 52
+            },
+            "descrizione": "Detrazione residua in riduzione: da circa 52 euro/mese a 35.000 euro fino a zero a 40.000 euro; oltre, nessun beneficio.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Misura resa strutturale dalla legge di bilancio 2025; il valore esatto dipende dal tuo reddito preciso dentro la fascia. Calcolo \"a parità di leggi future\".",
+          "fonteRegola": {
+            "etichetta": "L. 207/2024, art. 1, commi 4-9 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207"
+          }
+        }
+      ]
+    },
+    {
+      "id": "salario-minimo-l144-2025",
+      "titoloDivulgativo": "Salario minimo: la legge delega sui contratti collettivi",
+      "titoloUfficiale": "Legge 26 settembre 2025, n. 144 — Delega al Governo in materia di retribuzione dei lavoratori e di contrattazione collettiva",
+      "stato": "approvata",
+      "ambito": "fisco-lavoro",
+      "fonti": [
+        {
+          "etichetta": "Legge 26 settembre 2025, n. 144 (GU n. 230/2025)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Alegge%3A2025%3B144="
+        },
+        {
+          "etichetta": "Proposta di legge AC 1275 (Camera dei deputati)",
+          "url": "https://www.camera.it/leg19/126?tab=&leg=19&idDocumento=1275"
+        }
+      ],
+      "verificataIl": "2026-06-10",
+      "riassunto": "La legge è in vigore dall'ottobre 2025, ma non ha fissato il minimo a 9 euro/ora come chiedevano le opposizioni. Invece, delega il Governo a stabilire per legge i minimi salariali dei contratti collettivi più diffusi. Bisogna ancora aspettare i decreti attuativi per sapere chi guadagnerà di più.",
+      "regole": [
+        {
+          "id": "salario-minimo-bassi-redditi",
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico"
+              ]
+            },
+            {
+              "campo": "fasciaReddito",
+              "op": "alPiu",
+              "valore": "da9a15k"
+            }
+          ],
+          "campiNecessari": [
+            "condizioneLavorativa",
+            "fasciaReddito"
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "descrizione": "Se il tuo CCNL non è tra quelli \"maggiormente applicati\", o se il tuo contratto prevede paghe sotto il minimo che il Governo stabilirà, potresti ricevere un aumento. L'importo dipende dal tuo contratto collettivo attuale.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "La legge delega è in vigore, ma i decreti attuativi non sono ancora stati adottati (verifica: 2026-06-10). L'effetto concreto dipende dal contratto collettivo applicato al tuo settore e dalla paga oraria attuale.",
+          "fonteRegola": {
+            "etichetta": "L. 144/2025, art. 1",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Alegge%3A2025%3B144="
+          }
+        }
+      ]
+    }
+  ]
+}
