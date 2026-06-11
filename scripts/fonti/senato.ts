@@ -1,4 +1,5 @@
 import { SchemaNovita, type Novita } from '../../src/engine/novita';
+import { tronca } from './testo';
 
 // Query SPARQL verificata live su dati.senato.it/sparql (2026-06-11).
 // Seleziona i disegni di legge della legislatura 19 ordinati per
@@ -33,6 +34,7 @@ function estraiIdDdl(uri: string): string | null {
 /**
  * Analizza il risultato SPARQL JSON del Senato.
  * Lancia un errore descrittivo se la struttura non e quella attesa.
+ * Lancia se bindings e vuoto (deriva di ontologia) o se nessun DDL e estraibile.
  * Ogni voce passa da SchemaNovita.parse() — se invalida, lancia.
  */
 export function analizzaSenato(jsonSparql: unknown): Novita[] {
@@ -57,6 +59,11 @@ export function analizzaSenato(jsonSparql: unknown): Novita[] {
   }
 
   const bindings = (results as Record<string, unknown>)['bindings'] as unknown[];
+
+  if (bindings.length === 0) {
+    throw new Error('Senato: la query SPARQL non ha restituito alcun atto — probabile cambiamento dell\'ontologia, verificare la query');
+  }
+
   const voci: Novita[] = [];
 
   for (const binding of bindings) {
@@ -75,9 +82,7 @@ export function analizzaSenato(jsonSparql: unknown): Novita[] {
     const id = estraiIdDdl(ddlUri);
     if (!id) continue;
 
-    const troncato = titoloRaw.length > 160
-      ? titoloRaw.slice(0, 160) + '…'
-      : titoloRaw;
+    const troncato = tronca(titoloRaw);
 
     // dati.senato.it fornisce un URI RDF. Con schema https il server
     // reindirizza a una pagina HTML leggibile sul sito istituzionale.
@@ -91,6 +96,10 @@ export function analizzaSenato(jsonSparql: unknown): Novita[] {
       data: dataPresentazione,
       url,
     }));
+  }
+
+  if (voci.length === 0) {
+    throw new Error('Senato: nessun DDL valido estratto dai bindings — i campi attesi potrebbero essere cambiati nell\'ontologia');
   }
 
   return voci;

@@ -8,9 +8,15 @@ import { analizzaCamera, URL_FONTE as URL_CAMERA } from './fonti/camera';
 import { analizzaSenato, URL_FONTE as URL_SENATO } from './fonti/senato';
 
 async function scarica(url: string, accept: string): Promise<string> {
-  const risposta = await fetch(url, {
-    headers: { accept, 'user-agent': 'REF-LEX aggiorna-dati/1.0' },
-  });
+  let risposta: Response;
+  try {
+    risposta = await fetch(url, {
+      headers: { accept, 'user-agent': 'REF-LEX aggiorna-dati/1.0' },
+      signal: AbortSignal.timeout(30000),
+    });
+  } catch (e) {
+    throw new Error(`Fonte ${url}: ${(e as Error).message}`);
+  }
   if (!risposta.ok) throw new Error(`Fonte ${url}: HTTP ${risposta.status}`);
   return risposta.text();
 }

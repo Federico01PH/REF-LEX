@@ -1,4 +1,5 @@
 import { SchemaNovita, type Novita } from '../../src/engine/novita';
+import { decodificaEntita, tronca } from './testo';
 
 // Query SPARQL verificata live su dati.camera.it/sparql (2026-06-11).
 // Seleziona gli atti della legislatura 19 ordinati per data di ultima modifica
@@ -28,67 +29,6 @@ export const URL_FONTE =
   '&format=application%2Fsparql-results%2Bjson';
 
 /**
- * Decodifica le entita HTML numeriche e nominali tipiche dei titoli Camera.
- * Poi rimuove eventuali tag residui come <em>, </em>.
- */
-function decodificaEntita(testo: string): string {
-  return testo
-    // entita numeriche decimali &#160; &#233; ecc.
-    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
-    // entita numeriche esadecimali &#x00E0; ecc.
-    .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCharCode(parseInt(h, 16)))
-    // entita nominali frequenti nei titoli Camera
-    .replace(/&rsquo;/g, '’')
-    .replace(/&lsquo;/g, '‘')
-    .replace(/&rdquo;/g, '”')
-    .replace(/&ldquo;/g, '“')
-    .replace(/&agrave;/g, 'à')
-    .replace(/&egrave;/g, 'è')
-    .replace(/&eacute;/g, 'é')
-    .replace(/&igrave;/g, 'ì')
-    .replace(/&ograve;/g, 'ò')
-    .replace(/&ugrave;/g, 'ù')
-    .replace(/&aacute;/g, 'á')
-    .replace(/&oacute;/g, 'ó')
-    .replace(/&uacute;/g, 'ú')
-    .replace(/&iacute;/g, 'í')
-    .replace(/&ntilde;/g, 'ñ')
-    .replace(/&ccedil;/g, 'ç')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&ldquo;/g, '“')
-    .replace(/&rdquo;/g, '”')
-    .replace(/&laquo;/g, '«')
-    .replace(/&raquo;/g, '»')
-    .replace(/&ndash;/g, '–')
-    .replace(/&mdash;/g, '—')
-    .replace(/&hellip;/g, '…')
-    .replace(/&ecirc;/g, 'ê')
-    .replace(/&ocirc;/g, 'ô')
-    .replace(/&icirc;/g, 'î')
-    .replace(/&ucirc;/g, 'û')
-    .replace(/&auml;/g, 'ä')
-    .replace(/&euml;/g, 'ë')
-    .replace(/&iuml;/g, 'ï')
-    .replace(/&ouml;/g, 'ö')
-    .replace(/&uuml;/g, 'ü')
-    .replace(/&Agrave;/g, 'À')
-    .replace(/&Egrave;/g, 'È')
-    .replace(/&Eacute;/g, 'É')
-    .replace(/&Igrave;/g, 'Ì')
-    .replace(/&Ograve;/g, 'Ò')
-    .replace(/&Ugrave;/g, 'Ù')
-    .replace(/&apos;/g, "'")
-    // rimuove tag HTML residui come <em>, </em>, <strong> ecc.
-    .replace(/<[^>]+>/g, '')
-    .replace(/\s{2,}/g, ' ')
-    .trim();
-}
-
-/**
  * Converte una data in vari formati in yyyy-mm-dd.
  * Formati supportati:
  *   - yyyymmdd (dal fixture: "20260609")
@@ -109,6 +49,7 @@ function convertiData(raw: string): string | null {
 /**
  * Analizza il risultato SPARQL JSON della Camera dei Deputati.
  * Lancia un errore descrittivo se la struttura non e quella attesa.
+ * Lancia se bindings e vuoto (deriva di ontologia) o se nessun atto e estraibile.
  * Ogni voce passa da SchemaNovita.parse() — se invalida, lancia.
  */
 export function analizzaCamera(jsonSparql: unknown): Novita[] {
@@ -133,6 +74,11 @@ export function analizzaCamera(jsonSparql: unknown): Novita[] {
   }
 
   const bindings = (results as Record<string, unknown>)['bindings'] as unknown[];
+
+  if (bindings.length === 0) {
+    throw new Error('Camera: la query SPARQL non ha restituito alcun atto — probabile cambiamento dell\'ontologia, verificare la query');
+  }
+
   const voci: Novita[] = [];
   const visti = new Set<string>();
 
@@ -161,9 +107,7 @@ export function analizzaCamera(jsonSparql: unknown): Novita[] {
 
     if (!titoloNetto) continue;
 
-    const troncato = titoloNetto.length > 160
-      ? titoloNetto.slice(0, 160) + '…'
-      : titoloNetto;
+    const troncato = tronca(titoloNetto);
 
     const url = `https://www.camera.it/leg19/126?leg=19&idDocumento=${encodeURIComponent(numeroRaw)}`;
 
@@ -175,6 +119,10 @@ export function analizzaCamera(jsonSparql: unknown): Novita[] {
       data,
       url,
     }));
+  }
+
+  if (voci.length === 0) {
+    throw new Error('Camera: nessun atto valido estratto dai bindings — i campi attesi potrebbero essere cambiati nell\'ontologia');
   }
 
   return voci;

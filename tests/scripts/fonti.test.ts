@@ -37,3 +37,9 @@ test('input malformato: i parser lanciano (mai dati parziali silenziosi)', () =>
   expect(() => analizzaCamera({ qualcosa: 'altro' })).toThrow();
   expect(() => analizzaSenato({ qualcosa: 'altro' })).toThrow();
 });
+
+test('bindings vuoti: i parser SPARQL lanciano (deriva di ontologia)', () => {
+  const vuoto = { results: { bindings: [] } };
+  expect(() => analizzaCamera(vuoto)).toThrow();
+  expect(() => analizzaSenato(vuoto)).toThrow();
+});

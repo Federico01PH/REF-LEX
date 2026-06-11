@@ -1,11 +1,15 @@
 import { XMLParser } from 'fast-xml-parser';
 import { SchemaNovita, type Novita } from '../../src/engine/novita';
+import { decodificaEntita, tronca } from './testo';
 
 export const URL_FONTE = 'https://www.gazzettaufficiale.it/rss/SG';
 
 /**
  * Converte una data RFC 822 (pubDate dell'RSS) in formato yyyy-mm-dd.
- * Esempi: "Wed, 10 Jun 2026 17:01:02 GMT" → "2026-06-10"
+ * Esempi: "Wed, 10 Jun 2026 17:01:02 GMT" => "2026-06-10"
+ * Nota: la data viene calcolata sull'istante GMT. La GU pubblica tipicamente
+ * nel pomeriggio (Europe/Rome), quindi non si sposta oltre mezzanotte GMT; in
+ * caso contrario la data potrebbe risultare sfasata di un giorno.
  */
 function parsePubDate(pubDate: string): string | null {
   try {
@@ -15,21 +19,6 @@ function parsePubDate(pubDate: string): string | null {
   } catch {
     return null;
   }
-}
-
-/**
- * Decodifica le entità HTML di base presenti nei titoli della GU.
- */
-function decodificaEntita(testo: string): string {
-  return testo
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .replace(/&laquo;/g, '«')
-    .replace(/&raquo;/g, '»')
-    .replace(/&amp;amp;/g, '&');
 }
 
 /**
@@ -69,7 +58,7 @@ export function analizzaGazzetta(xml: string): Novita[] {
 
   const items = channel['item'];
   if (!items) {
-    // Nessun item — potrebbe essere un numero vuoto; non è malformato
+    // Nessun item — potrebbe essere un numero vuoto; non e malformato
     return [];
   }
 
@@ -90,7 +79,7 @@ export function analizzaGazzetta(xml: string): Novita[] {
     if (!data) continue;
 
     // Titolo: usiamo content:encoded se presente, altrimenti title
-    // fast-xml-parser trasforma "content:encoded" in una proprietà con il nome letterale
+    // fast-xml-parser trasforma "content:encoded" in una proprieta con il nome letterale
     const contenuto = String(
       (item as Record<string, unknown>)['content:encoded'] ?? titoloRaw
     ).trim();
@@ -114,9 +103,7 @@ export function analizzaGazzetta(xml: string): Novita[] {
     const matchEli = urlFinal.match(/eli\/id\/[\d/]+\/([A-Z0-9]+)\/SG/);
     const codice = matchEli ? matchEli[1] : urlFinal.split('/').filter(Boolean).pop() ?? 'sconosciuto';
 
-    const troncato = titoloCompleto.length > 160
-      ? titoloCompleto.slice(0, 160) + '…'
-      : titoloCompleto;
+    const troncato = tronca(titoloCompleto);
 
     voci.push(SchemaNovita.parse({
       id: `gazzetta-${codice}`,
