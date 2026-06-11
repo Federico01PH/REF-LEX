@@ -21,6 +21,11 @@ test('rifiuta legge senza fonti', () => {
   expect(SchemaLegge.safeParse({ ...leggeValida, fonti: [] }).success).toBe(false);
 });
 
+test('rifiuta fonti con url a schema pericoloso (solo http/https)', () => {
+  const rotta = { ...leggeValida, fonti: [{ etichetta: 'x', url: 'javascript:alert(1)' }] };
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
 test('rifiuta regola economica senza importo coerente (min > max)', () => {
   const rotta = structuredClone(leggeValida);
   rotta.regole[0].effetto = { tipo: 'economico', importoMese: { min: 10, max: 5 }, descrizione: 'd', direzione: 'positivo' } as never;

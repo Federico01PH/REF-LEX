@@ -23,6 +23,12 @@ test('rifiuta voce con tipo sconosciuto o url non valido', () => {
   expect(SchemaNovitaFile.safeParse(rotta2).success).toBe(false);
 });
 
+test('rifiuta url con schemi pericolosi (solo http/https)', () => {
+  const rotta = structuredClone(novitaValida);
+  rotta.voci[0].url = 'javascript:alert(1)';
+  expect(SchemaNovitaFile.safeParse(rotta).success).toBe(false);
+});
+
 test('rifiuta più di 20 voci', () => {
   const troppe = { ...novitaValida, voci: Array.from({ length: 21 }, (_, i) => ({ ...novitaValida.voci[0], id: `v${i}` })) };
   expect(SchemaNovitaFile.safeParse(troppe).success).toBe(false);

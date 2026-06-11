@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { SchemaLegge } from './schema';
+import { SchemaLegge, SchemaUrlSicuro } from './schema';
 
 export const SchemaNovita = z.object({
   id: z.string().min(1),
@@ -7,7 +7,7 @@ export const SchemaNovita = z.object({
   tipo: z.enum(['gazzetta', 'camera', 'senato']),
   stato: z.enum(['vigore', 'approvata', 'discussione', 'bozza', 'referendum']),
   data: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-  url: z.string().url()
+  url: SchemaUrlSicuro
 });
 export type Novita = z.infer<typeof SchemaNovita>;
 
