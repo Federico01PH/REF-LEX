@@ -3,6 +3,12 @@ import { PERSONAGGI } from '../data/personas';
 import { simula } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
 
+const CONFIDENZA = {
+  certa: { classe: 'badge-certa', parola: 'Certo' },
+  probabile: { classe: 'badge-probabile', parola: 'Probabile' },
+  dipende: { classe: 'badge-dipende', parola: 'Dipende' }
+} as const;
+
 export function Empatia({ legge, onCreaIpotetico, onIndietro }: {
   legge: Legge; onCreaIpotetico: () => void; onIndietro: () => void;
 }) {
@@ -33,10 +39,18 @@ export function Empatia({ legge, onCreaIpotetico, onIndietro }: {
               <p style={{ fontWeight: 900, fontSize: 20, margin: 0, color: coloreImporto }}>
                 {totale.min === totale.max
                   ? `${totale.min > 0 ? '+' : ''}${totale.min} €`
-                  : `da ${totale.min > 0 ? '+' : ''}${totale.min} a ${totale.max > 0 ? '+' : ''}${totale.max} €`} al mese
+                  : `da ${totale.min > 0 ? '+' : ''}${totale.min} a ${totale.max > 0 ? '+' : ''}${totale.max} €`} al mese{' '}
+                <span className="testo-piccolo" style={{ fontWeight: 600 }}>(stima al 1° anno)</span>
               </p>
             ) : haAltro ? (
-              <p style={{ fontWeight: 700, margin: 0 }}>{r.effetti[0].effetto.descrizione}</p>
+              <div>
+                {r.effetti.map((e) => (
+                  <p key={e.id} style={{ fontWeight: 700, margin: '4px 0 0' }}>
+                    <span className={`badge ${CONFIDENZA[e.confidenza].classe}`}>{CONFIDENZA[e.confidenza].parola}</span>{' '}
+                    {e.effetto.descrizione}
+                  </p>
+                ))}
+              </div>
             ) : (
               <p style={{ fontWeight: 700, margin: 0, color: 'var(--testo-2)' }}>Nessun effetto per questa persona.</p>
             )}

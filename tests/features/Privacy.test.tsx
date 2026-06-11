@@ -8,6 +8,12 @@ test('spiega dove sono i dati e cosa non facciamo', () => {
   expect(screen.getByText(/non li vendiamo/i)).toBeInTheDocument();
 });
 
+test('alla richiesta di conferma il focus va sull\'opzione sicura', async () => {
+  render(<Privacy tema="auto" onCambiaTema={vi.fn()} onCancellaTutto={vi.fn()} onIndietro={vi.fn()} />);
+  await userEvent.click(screen.getByRole('button', { name: /cancella tutti i miei dati/i }));
+  expect(screen.getByRole('button', { name: /no, tienili/i })).toHaveFocus();
+});
+
 test('cancella tutto chiede conferma e poi svuota lo storage', async () => {
   localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 34 }));
   const onCancella = vi.fn();

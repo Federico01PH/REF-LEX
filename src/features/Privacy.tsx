@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { cancellaTutto } from '../storage/profilo';
 import { Icona } from '../ui/Icona';
 
@@ -7,6 +7,11 @@ export function Privacy({ tema, onCambiaTema, onCancellaTutto, onIndietro }: {
   onCancellaTutto: () => void; onIndietro: () => void;
 }) {
   const [conferma, setConferma] = useState(false);
+  const bottoneTienili = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (conferma) bottoneTienili.current?.focus();
+  }, [conferma]);
   return (
     <div>
       <button className="btn btn-secondario" onClick={onIndietro} style={{ width: 'auto', display: 'inline-flex', gap: 6 }}>
@@ -38,7 +43,7 @@ export function Privacy({ tema, onCambiaTema, onCancellaTutto, onIndietro }: {
           <>
             <p><b>Sicuro/a?</b> Il profilo verrà eliminato per sempre da questo dispositivo.</p>
             <div style={{ display: 'flex', gap: 8 }}>
-              <button className="btn btn-secondario" style={{ flex: 1 }} onClick={() => setConferma(false)}>No, tienili</button>
+              <button ref={bottoneTienili} className="btn btn-secondario" style={{ flex: 1 }} onClick={() => setConferma(false)}>No, tienili</button>
               <button className="btn btn-pericolo" style={{ flex: 1 }}
                 onClick={() => { cancellaTutto(); onCancellaTutto(); }}>
                 Sì, cancella
