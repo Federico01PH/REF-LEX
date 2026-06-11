@@ -1,5 +1,5 @@
 {
-  "versione": 1,
+  "versione": 2,
   "generatoIl": "2026-06-11",
   "leggi": [
     {
@@ -337,6 +337,1362 @@
           "fonteRegola": {
             "etichetta": "L. 144/2025, art. 1",
             "url": "https://www.normattiva.it/uri-res/N2Ls?urn%3Anir%3Astato%3Alegge%3A2025%3B144="
+          }
+        }
+      ]
+    },
+    {
+      "id": "pensioni-requisiti-2026",
+      "titoloDivulgativo": "Quando potrai andare in pensione: i requisiti aggiornati",
+      "titoloUfficiale": "Legge 30 dicembre 2025, n. 199 (Bilancio 2026), disposizioni su requisiti pensionistici e Ape sociale",
+      "stato": "vigore",
+      "ambito": "pensioni-welfare",
+      "fonti": [
+        {
+          "etichetta": "L. 199/2025 (Bilancio 2026) e circolare INPS 19/2026",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;199"
+        },
+        {
+          "etichetta": "INPS — Legge di bilancio 2026: le novità sulle pensioni",
+          "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.legge-di-bilancio-2026-le-novit-sulle-pensioni.html"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "Nel 2026 si va in pensione di vecchiaia a 67 anni con 20 di contributi. Dal 2027 l'età sale di 1 mese e dal 2028 di altri 2 (67 anni e 3 mesi), tranne per i lavori pesanti. L'Ape sociale (uscita a 63 anni e 5 mesi per disoccupati, caregiver e invalidi) è prorogata solo per il 2026. Opzione donna e Quota 103 sono finite.",
+      "regole": [
+        {
+          "id": "pensioni-gia-pensionato",
+          "campiNecessari": [
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "eq",
+              "valore": "pensionato"
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Sei già in pensione: i nuovi requisiti non ti toccano. La tua pensione non cambia per effetto di questa legge.",
+            "direzione": "neutro"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "fonteRegola": {
+            "etichetta": "L. 199/2025 (Bilancio 2026) e circolare INPS 19/2026",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;199"
+          }
+        },
+        {
+          "id": "pensioni-adeguamento-speranza-vita",
+          "campiNecessari": [
+            "eta",
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico",
+                "autonomo-ordinario",
+                "forfettario",
+                "imprenditore",
+                "disoccupato",
+                "caregiver",
+                "casalingo",
+                "altro"
+              ]
+            },
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 66
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "L'età della pensione di vecchiaia sale: +1 mese dal 2027 e altri +2 mesi dal 2028 (in totale 67 anni e 3 mesi). Lavorerai fino a 3 mesi in più rispetto alle regole del 2026. Sono esclusi i lavori gravosi e usuranti.",
+            "direzione": "negativo"
+          },
+          "timeline": {
+            "anno1": "nullo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "L'aumento è scritto nella legge di bilancio 2026. Calcolo \"a parità di leggi future\": un nuovo adeguamento biennale potrà scattare dal 2029.",
+          "fonteRegola": {
+            "etichetta": "L. 199/2025 (Bilancio 2026) e circolare INPS 19/2026",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;199"
+          }
+        },
+        {
+          "id": "pensioni-ape-sociale",
+          "campiNecessari": [
+            "eta",
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 63
+            },
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "disoccupato",
+                "caregiver"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Con l'Ape sociale puoi chiedere un'indennità ponte e uscire dal lavoro a 63 anni e 5 mesi, prima della pensione di vecchiaia.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Servono almeno 30 anni di contributi (un dato che non ti chiediamo) e la proroga vale solo fino al 31 dicembre 2026: per gli anni dopo servirà una nuova legge.",
+          "fonteRegola": {
+            "etichetta": "L. 199/2025 (Bilancio 2026) e circolare INPS 19/2026",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;199"
+          }
+        },
+        {
+          "id": "pensioni-vecchiaia-66",
+          "campiNecessari": [
+            "eta",
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico",
+                "autonomo-ordinario",
+                "forfettario",
+                "imprenditore",
+                "disoccupato",
+                "caregiver",
+                "casalingo",
+                "altro"
+              ]
+            },
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 66
+            },
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 120
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Hai già raggiunto (o stai per raggiungere) i 67 anni: se hai almeno 20 anni di contributi, la pensione di vecchiaia è a portata di mano.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Per la pensione di vecchiaia servono anche almeno 20 anni di contributi versati, un dato che non ti chiediamo: la data esatta dipende dalla tua storia contributiva.",
+          "fonteRegola": {
+            "etichetta": "L. 199/2025 (Bilancio 2026) e circolare INPS 19/2026",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;199"
+          }
+        },
+        {
+          "id": "pensioni-vecchiaia-62-65",
+          "campiNecessari": [
+            "eta",
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico",
+                "autonomo-ordinario",
+                "forfettario",
+                "imprenditore",
+                "disoccupato",
+                "caregiver",
+                "casalingo",
+                "altro"
+              ]
+            },
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 62
+            },
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 65
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Raggiungerai l'età della pensione di vecchiaia (67 anni e 3 mesi dal 2028) entro i prossimi 5 anni.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "nullo",
+            "anno2": "nullo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Per la pensione di vecchiaia servono anche almeno 20 anni di contributi versati, un dato che non ti chiediamo: la data esatta dipende dalla tua storia contributiva.",
+          "fonteRegola": {
+            "etichetta": "L. 199/2025 (Bilancio 2026) e circolare INPS 19/2026",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;199"
+          }
+        },
+        {
+          "id": "pensioni-vecchiaia-57-61",
+          "campiNecessari": [
+            "eta",
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico",
+                "autonomo-ordinario",
+                "forfettario",
+                "imprenditore",
+                "disoccupato",
+                "caregiver",
+                "casalingo",
+                "altro"
+              ]
+            },
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 57
+            },
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 61
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Raggiungerai l'età della pensione di vecchiaia (67 anni e 3 mesi dal 2028) entro i prossimi 10 anni.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "nullo",
+            "anno2": "nullo",
+            "anno5": "nullo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Per la pensione di vecchiaia servono anche almeno 20 anni di contributi versati, un dato che non ti chiediamo: la data esatta dipende dalla tua storia contributiva.",
+          "fonteRegola": {
+            "etichetta": "L. 199/2025 (Bilancio 2026) e circolare INPS 19/2026",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;199"
+          }
+        }
+      ]
+    },
+    {
+      "id": "assegno-inclusione-2026",
+      "titoloDivulgativo": "Assegno di inclusione: il sostegno per le famiglie con pochi soldi",
+      "titoloUfficiale": "Decreto-legge 4 maggio 2023, n. 48, artt. 1-13 (convertito in L. 85/2023), aggiornato dalla L. 199/2025",
+      "stato": "vigore",
+      "ambito": "pensioni-welfare",
+      "fonti": [
+        {
+          "etichetta": "DL 48/2023, art. 1-13 (conv. L. 85/2023) e L. 199/2025 (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-05-04;48"
+        },
+        {
+          "etichetta": "INPS — Assegno di Inclusione: le novità 2026",
+          "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.assegno-di-inclusione-le-novit-2026.html"
+        },
+        {
+          "etichetta": "Ministero del Lavoro — Assegno di inclusione",
+          "url": "https://www.lavoro.gov.it/temi-e-priorita/decreto-lavoro/Pagine/assegno-di-inclusione"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "Un aiuto economico mensile per le famiglie con ISEE fino a 10.140 euro in cui vive un minorenne, una persona con disabilità, una persona con almeno 60 anni o una persona in svantaggio certificato. Vale fino a circa 542 euro al mese (di più per famiglie numerose), più un contributo per l'affitto fino a 303 euro. Dura 18 mesi e si rinnova; dal 2026 senza più il mese di pausa.",
+      "regole": [
+        {
+          "id": "adi-isee-figli",
+          "campiNecessari": [
+            "fasciaIsee",
+            "figli"
+          ],
+          "condizioni": [
+            {
+              "campo": "fasciaIsee",
+              "op": "eq",
+              "valore": "fino9360"
+            },
+            {
+              "campo": "figli",
+              "op": "almeno",
+              "valore": 1
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 0,
+              "max": 845
+            },
+            "descrizione": "Con un ISEE sotto i 9.360 euro e figli nel nucleo puoi chiedere l'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Serve che almeno un figlio sia minorenne (o che nel nucleo ci sia un'altra persona tra quelle previste). L'importo esatto dipende dal reddito familiare e dalla composizione del nucleo (scala di equivalenza), dati che non ti chiediamo. Contano anche i requisiti su casa e risparmi (patrimonio immobiliare e mobiliare).",
+          "fonteRegola": {
+            "etichetta": "DL 48/2023, art. 1-13 (conv. L. 85/2023) e L. 199/2025 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-05-04;48"
+          }
+        },
+        {
+          "id": "adi-isee-over60",
+          "campiNecessari": [
+            "fasciaIsee",
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "fasciaIsee",
+              "op": "eq",
+              "valore": "fino9360"
+            },
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 60
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 0,
+              "max": 845
+            },
+            "descrizione": "Con un ISEE sotto i 9.360 euro e almeno 60 anni puoi chiedere l'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Il requisito dell'età (60 anni) è soddisfatto dal tuo profilo. L'importo esatto dipende dal reddito familiare e dalla composizione del nucleo (scala di equivalenza), dati che non ti chiediamo. Contano anche i requisiti su casa e risparmi (patrimonio immobiliare e mobiliare).",
+          "fonteRegola": {
+            "etichetta": "DL 48/2023, art. 1-13 (conv. L. 85/2023) e L. 199/2025 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-05-04;48"
+          }
+        },
+        {
+          "id": "adi-isee-disabilita",
+          "campiNecessari": [
+            "fasciaIsee",
+            "disabilita"
+          ],
+          "condizioni": [
+            {
+              "campo": "fasciaIsee",
+              "op": "eq",
+              "valore": "fino9360"
+            },
+            {
+              "campo": "disabilita",
+              "op": "in",
+              "valore": [
+                "motoria",
+                "visiva",
+                "uditiva",
+                "intellettiva",
+                "malattia-cronica"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 0,
+              "max": 845
+            },
+            "descrizione": "Con un ISEE sotto i 9.360 euro e una disabilità o malattia cronica certificata puoi chiedere l'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Serve che la disabilità sia certificata dalle commissioni mediche; le condizioni non ancora riconosciute (come la fibromialgia) purtroppo non bastano. L'importo esatto dipende dal reddito familiare e dalla composizione del nucleo (scala di equivalenza), dati che non ti chiediamo. Contano anche i requisiti su casa e risparmi (patrimonio immobiliare e mobiliare).",
+          "fonteRegola": {
+            "etichetta": "DL 48/2023, art. 1-13 (conv. L. 85/2023) e L. 199/2025 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-05-04;48"
+          }
+        },
+        {
+          "id": "adi-soglia-vicina",
+          "campiNecessari": [
+            "fasciaIsee"
+          ],
+          "condizioni": [
+            {
+              "campo": "fasciaIsee",
+              "op": "eq",
+              "valore": "da9360a15k"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 0,
+              "max": 845
+            },
+            "descrizione": "La soglia ISEE per l'Assegno di inclusione è 10.140 euro: se il tuo ISEE è tra 9.360 e 10.140 puoi rientrare; sopra, no.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Il tuo ISEE è nella fascia 9.360-15.000: solo la parte fino a 10.140 dà diritto all'assegno, e serve comunque un minorenne, una persona con disabilità o un over 60 nel nucleo. L'importo esatto dipende dal reddito familiare e dalla composizione del nucleo (scala di equivalenza), dati che non ti chiediamo. Contano anche i requisiti su casa e risparmi (patrimonio immobiliare e mobiliare).",
+          "fonteRegola": {
+            "etichetta": "DL 48/2023, art. 1-13 (conv. L. 85/2023) e L. 199/2025 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-05-04;48"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case-green-epbd",
+      "titoloDivulgativo": "Case green: le regole europee sull'efficienza delle case",
+      "titoloUfficiale": "Direttiva (UE) 2024/1275 sulla prestazione energetica nell'edilizia (EPBD IV)",
+      "stato": "approvata",
+      "ambito": "casa",
+      "fonti": [
+        {
+          "etichetta": "Direttiva (UE) 2024/1275 (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024L1275"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "L'Europa chiede che le case italiane, in media, consumino il 16% in meno entro il 2030 e il 20-22% in meno entro il 2035. Non c'è un obbligo per la singola casa: toccherà allo Stato decidere come arrivarci, ma l'Italia è in ritardo nel tradurre la direttiva in legge. Una cosa è già attiva: niente più bonus per le caldaie solo a gas o gasolio.",
+      "regole": [
+        {
+          "id": "epbd-caldaia-incentivi",
+          "campiNecessari": [
+            "abitazione"
+          ],
+          "condizioni": [
+            {
+              "campo": "abitazione",
+              "op": "eq",
+              "valore": "proprieta"
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se devi sostituire la caldaia, quelle solo a gas o gasolio non hanno più nessun bonus statale dal 2025: la paghi a prezzo pieno. Gli incentivi restano per pompe di calore e sistemi ibridi.",
+            "direzione": "negativo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Divieto di incentivi già operativo in Italia (Ecobonus escluso per caldaie solo fossili dal 2025; Conto Termico 3.0 solo per ibridi).",
+          "fonteRegola": {
+            "etichetta": "Direttiva (UE) 2024/1275 (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024L1275"
+          }
+        },
+        {
+          "id": "epbd-requisiti-proprietari",
+          "campiNecessari": [
+            "abitazione"
+          ],
+          "condizioni": [
+            {
+              "campo": "abitazione",
+              "op": "eq",
+              "valore": "proprieta"
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "In futuro potrebbero arrivare requisiti o spinte a ristrutturare le case che consumano di più (e chi ristruttura risparmia in bolletta e rivaluta la casa). Ma oggi non esiste nessun obbligo per la tua singola casa.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "nullo",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "L'Italia non ha ancora recepito la direttiva (scadenza del 29 maggio 2026 mancata): quali case e quali obblighi dipenderà dal decreto di recepimento e dal piano nazionale di ristrutturazione.",
+          "fonteRegola": {
+            "etichetta": "Direttiva (UE) 2024/1275 (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024L1275"
+          }
+        },
+        {
+          "id": "epbd-affitto",
+          "campiNecessari": [
+            "abitazione"
+          ],
+          "condizioni": [
+            {
+              "campo": "abitazione",
+              "op": "eq",
+              "valore": "affitto"
+            }
+          ],
+          "effetto": {
+            "tipo": "qualita-vita",
+            "descrizione": "Se la casa che affitti verrà ristrutturata, pagherai meno di bolletta e vivrai meglio; ma i lavori potrebbero riflettersi sul canone. Dipende dalle scelte del proprietario e dalle regole italiane in arrivo.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "nullo",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Nessun obbligo individuale è ancora legge in Italia: l'effetto su chi è in affitto dipenderà dal recepimento.",
+          "fonteRegola": {
+            "etichetta": "Direttiva (UE) 2024/1275 (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024L1275"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bonus-edilizi-2026",
+      "titoloDivulgativo": "Bonus ristrutturazioni: metà dei lavori di casa scaricata dalle tasse",
+      "titoloUfficiale": "Art. 16-bis del TUIR (DPR 917/1986), aggiornato dalla L. 207/2024 e dalla L. 199/2025",
+      "stato": "vigore",
+      "ambito": "casa",
+      "fonti": [
+        {
+          "etichetta": "Art. 16-bis TUIR e L. 199/2025; guida Agenzia delle Entrate (febbraio 2026)",
+          "url": "https://www.agenziaentrate.gov.it/portale/web/guest/aree-tematiche/casa/agevolazioni/ristrutturazioni-edilizie"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "Chi fa lavori in casa nel 2026 recupera dalle tasse il 50% della spesa se è l'abitazione principale (36% per le altre case), fino a 96.000 euro di lavori, restituiti in 10 anni. Vale anche per inquilini e comodatari che pagano i lavori. Le caldaie solo a gas o gasolio sono escluse. Dal 2027 le percentuali scendono, salvo proroghe.",
+      "regole": [
+        {
+          "id": "bonus-edilizi-proprietario",
+          "campiNecessari": [
+            "abitazione"
+          ],
+          "condizioni": [
+            {
+              "campo": "abitazione",
+              "op": "eq",
+              "valore": "proprieta"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 0,
+              "max": 400
+            },
+            "descrizione": "Se ristrutturi casa tua nel 2026 recuperi il 50% della spesa in 10 anni: fino a 400 euro al mese di tasse in meno (con il tetto massimo di 96.000 euro di lavori sull'abitazione principale).",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "La detrazione esiste di sicuro per le spese 2026; dal 2027 le aliquote scendono (36% prima casa, 30% altre) salvo nuove proroghe. Quanto recuperi dipende da quanto spendi: il massimo è su 96.000 euro di lavori, rimborsati in 10 anni.",
+          "fonteRegola": {
+            "etichetta": "Art. 16-bis TUIR e L. 199/2025; guida Agenzia delle Entrate (febbraio 2026)",
+            "url": "https://www.agenziaentrate.gov.it/portale/web/guest/aree-tematiche/casa/agevolazioni/ristrutturazioni-edilizie"
+          }
+        },
+        {
+          "id": "bonus-edilizi-inquilino",
+          "campiNecessari": [
+            "abitazione"
+          ],
+          "condizioni": [
+            {
+              "campo": "abitazione",
+              "op": "in",
+              "valore": [
+                "affitto",
+                "comodato"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "importoMese": {
+              "min": 0,
+              "max": 400
+            },
+            "descrizione": "Anche chi è in affitto o in comodato può usare il bonus, se paga i lavori con il consenso del proprietario: 50% di detrazione se è la tua abitazione principale.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "La detrazione esiste di sicuro per le spese 2026; dal 2027 le aliquote scendono (36% prima casa, 30% altre) salvo nuove proroghe. Quanto recuperi dipende da quanto spendi: il massimo è su 96.000 euro di lavori, rimborsati in 10 anni.",
+          "fonteRegola": {
+            "etichetta": "Art. 16-bis TUIR e L. 199/2025; guida Agenzia delle Entrate (febbraio 2026)",
+            "url": "https://www.agenziaentrate.gov.it/portale/web/guest/aree-tematiche/casa/agevolazioni/ristrutturazioni-edilizie"
+          }
+        }
+      ]
+    },
+    {
+      "id": "riforma-disabilita-2024",
+      "titoloDivulgativo": "Riforma della disabilità: una sola visita e un progetto di vita",
+      "titoloUfficiale": "Decreto legislativo 3 maggio 2024, n. 62 (attuazione della legge delega 227/2021)",
+      "stato": "approvata",
+      "ambito": "diritti-salute",
+      "fonti": [
+        {
+          "etichetta": "D.Lgs. 27 maggio 2024, n. 62 (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62"
+        },
+        {
+          "etichetta": "Ministero per le disabilità — sperimentazione estesa a 40 nuove province",
+          "url": "https://disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "Cambia il modo di riconoscere la disabilità: una sola visita INPS al posto delle tante commissioni, un certificato del proprio medico per avviare tutto, e il diritto a un \"progetto di vita\" costruito sulla persona, con un budget dedicato. Nel 2026 vale in 60 province di prova; dal 1° gennaio 2027 dovrebbe valere in tutta Italia.",
+      "regole": [
+        {
+          "id": "disabilita-accertamento-unico",
+          "campiNecessari": [
+            "disabilita"
+          ],
+          "condizioni": [
+            {
+              "campo": "disabilita",
+              "op": "in",
+              "valore": [
+                "motoria",
+                "visiva",
+                "uditiva",
+                "intellettiva",
+                "malattia-cronica"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Meno burocrazia: una sola visita INPS per il riconoscimento, avviata dal certificato del tuo medico, al posto delle vecchie commissioni multiple e delle visite di rinnovo ripetute.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Nel 2026 il nuovo sistema vale solo in 60 province di sperimentazione: se la tua non è tra queste, per ora resta la vecchia procedura. L'avvio nazionale del 1° gennaio 2027 è già stato rinviato una volta e potrebbe slittare ancora.",
+          "fonteRegola": {
+            "etichetta": "Ministero per le disabilità — sperimentazione estesa a 40 nuove province",
+            "url": "https://disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/"
+          }
+        },
+        {
+          "id": "disabilita-progetto-di-vita",
+          "campiNecessari": [
+            "disabilita"
+          ],
+          "condizioni": [
+            {
+              "campo": "disabilita",
+              "op": "in",
+              "valore": [
+                "motoria",
+                "visiva",
+                "uditiva",
+                "intellettiva",
+                "malattia-cronica"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Diritto al \"progetto di vita\": un piano costruito con te (scuola, lavoro, casa, tempo libero) con un budget di progetto che puoi contribuire a gestire.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Vale dove la sperimentazione è attiva (60 province nel 2026), poi in tutta Italia dal 2027. Le risorse del budget di progetto dipendono dai servizi del tuo territorio.",
+          "fonteRegola": {
+            "etichetta": "D.Lgs. 27 maggio 2024, n. 62 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62"
+          }
+        },
+        {
+          "id": "disabilita-condizione-non-riconosciuta",
+          "campiNecessari": [
+            "disabilita"
+          ],
+          "condizioni": [
+            {
+              "campo": "disabilita",
+              "op": "in",
+              "valore": [
+                "condizione-non-riconosciuta"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "La riforma cambia il come si accerta la disabilità, non l'elenco delle condizioni riconosciute: se la tua condizione (per esempio la fibromialgia) non è riconosciuta, questa legge da sola non basta. Se ne occupa la proposta sulla fibromialgia, che trovi in questo catalogo.",
+            "direzione": "neutro"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "fonteRegola": {
+            "etichetta": "D.Lgs. 27 maggio 2024, n. 62 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62"
+          }
+        },
+        {
+          "id": "disabilita-caregiver",
+          "campiNecessari": [
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "eq",
+              "valore": "caregiver"
+            }
+          ],
+          "effetto": {
+            "tipo": "qualita-vita",
+            "descrizione": "Se assisti una persona con disabilità, il progetto di vita coinvolge anche la famiglia: la valutazione considera i bisogni di chi assiste e coordina i servizi in un piano unico.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Anche per te dipende dalla provincia fino a fine 2026; il sostegno concreto dipende dai servizi del territorio.",
+          "fonteRegola": {
+            "etichetta": "D.Lgs. 27 maggio 2024, n. 62 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fibromialgia-lea-2026",
+      "titoloDivulgativo": "Fibromialgia riconosciuta dal servizio sanitario: cure senza ticket",
+      "titoloUfficiale": "Schema di DPCM di aggiornamento dei Livelli essenziali di assistenza (Atto del Governo n. 370)",
+      "stato": "discussione",
+      "ambito": "diritti-salute",
+      "fonti": [
+        {
+          "etichetta": "Schema DPCM aggiornamento LEA (Atto Governo 370) — Camera dei deputati",
+          "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0370.pdf"
+        },
+        {
+          "etichetta": "Ministero della Salute — Livelli essenziali di assistenza",
+          "url": "https://www.salute.gov.it/portale/lea/menuContenutoLea.jsp?lingua=italiano&area=Lea"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "Per la prima volta lo Stato riconosce la fibromialgia tra le malattie croniche del servizio sanitario: esenzione dal ticket, visite specialistiche e 10 sedute riabilitative. Ma attenzione: vale solo per le forme molto gravi (punteggio FIQR sopra 82) e il decreto non è ancora stato pubblicato, quindi oggi non è ancora operativo.",
+      "regole": [
+        {
+          "id": "fibromialgia-esenzione",
+          "campiNecessari": [
+            "disabilita"
+          ],
+          "condizioni": [
+            {
+              "campo": "disabilita",
+              "op": "in",
+              "valore": [
+                "condizione-non-riconosciuta"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Se la tua condizione è la fibromialgia in forma molto severa, avrai un codice di esenzione dal ticket (valido almeno 2 anni), una visita specialistica, 10 sedute riabilitative e una visita psichiatrica a carico del servizio sanitario.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Due incertezze oneste: 1) il decreto LEA non è ancora pubblicato in Gazzetta Ufficiale, quindi non è in vigore; 2) anche quando lo sarà, varrà solo per le forme molto severe (punteggio FIQR sopra 82), non per tutte le persone con fibromialgia.",
+          "fonteRegola": {
+            "etichetta": "Schema DPCM aggiornamento LEA (Atto Governo 370) — Camera dei deputati",
+            "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0370.pdf"
+          }
+        },
+        {
+          "id": "fibromialgia-forme-lievi",
+          "campiNecessari": [
+            "disabilita"
+          ],
+          "condizioni": [
+            {
+              "campo": "disabilita",
+              "op": "in",
+              "valore": [
+                "condizione-non-riconosciuta"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se la tua forma non è classificata come molto severa, questo aggiornamento non ti dà ancora esenzioni: il riconoscimento pieno della fibromialgia resta affidato ai disegni di legge in discussione al Senato.",
+            "direzione": "neutro"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "È il limite dichiarato dello schema di decreto: l'esenzione riguarda solo i casi con punteggio FIQR sopra 82.",
+          "fonteRegola": {
+            "etichetta": "Schema DPCM aggiornamento LEA (Atto Governo 370) — Camera dei deputati",
+            "url": "https://documenti.camera.it/apps/nuovosito/attigoverno/Schedalavori/getTesto.ashx?file=0370.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ai-act-2024",
+      "titoloDivulgativo": "AI Act: le regole europee che ti proteggono dall'intelligenza artificiale",
+      "titoloUfficiale": "Regolamento (UE) 2024/1689 che stabilisce regole armonizzate sull'intelligenza artificiale",
+      "stato": "approvata",
+      "ambito": "sicurezza-privacy",
+      "fonti": [
+        {
+          "etichetta": "Regolamento (UE) 2024/1689 — AI Act (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "L'Europa ha messo dei paletti all'intelligenza artificiale. Già vietati: il punteggio sociale, il riconoscimento delle emozioni a scuola e al lavoro, gli inganni costruiti con l'IA. Dal 2 agosto 2026 scattano le tutele piene quando un'IA decide su di te (assunzioni, prestiti, scuola): supervisione umana e diritto di sapere e reclamare. Chatbot e deepfake devono dichiararsi.",
+      "regole": [
+        {
+          "id": "ai-act-divieti",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 13
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Nessuno può usare l'IA per darti un \"punteggio sociale\", leggerti le emozioni a scuola o al lavoro, o manipolarti con tecniche ingannevoli: sono pratiche vietate in tutta Europa, con multe fino a 35 milioni di euro.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "I divieti sono operativi dal 2 febbraio 2025 in tutti i paesi UE, Italia compresa, senza bisogno di leggi nazionali.",
+          "fonteRegola": {
+            "etichetta": "Regolamento (UE) 2024/1689 — AI Act (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689"
+          }
+        },
+        {
+          "id": "ai-act-trasparenza",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 13
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Quando parli con un'IA (chatbot) deve dirtelo, e le immagini o i video creati dall'IA (deepfake) devono essere dichiarati come tali.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "fonteRegola": {
+            "etichetta": "Regolamento (UE) 2024/1689 — AI Act (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689"
+          }
+        },
+        {
+          "id": "ai-act-alto-rischio-lavoro",
+          "campiNecessari": [
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico",
+                "disoccupato",
+                "studente"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Se un'IA viene usata per decidere su di te — selezionarti per un lavoro, valutarti a scuola, concederti un prestito — dal 2 agosto 2026 servono supervisione umana, dati di qualità e hai diritto a una spiegazione e al reclamo.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "La data del 2 agosto 2026 è scritta nel regolamento, ma a Bruxelles si discute una proposta (\"digital omnibus\") che potrebbe rinviare una parte di questi obblighi: per questo segniamo \"probabile\" e non \"certo\".",
+          "fonteRegola": {
+            "etichetta": "Regolamento (UE) 2024/1689 — AI Act (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689"
+          }
+        }
+      ]
+    },
+    {
+      "id": "decreto-sicurezza-2025",
+      "titoloDivulgativo": "Decreto sicurezza: nuovi reati, sgomberi rapidi e telecamere",
+      "titoloUfficiale": "Legge 9 giugno 2025, n. 80 — Disposizioni urgenti in materia di sicurezza pubblica",
+      "stato": "vigore",
+      "ambito": "sicurezza-privacy",
+      "fonti": [
+        {
+          "etichetta": "L. 80/2025, conversione del DL sicurezza (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-06-09;80"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "Una legge con 14 nuovi reati e 9 aggravanti. Chi occupa abusivamente la casa di qualcuno commette un reato e lo sgombero diventa più rapido. Le truffe agli anziani sono punite più duramente. Le forze dell'ordine avranno bodycam e più telecamere nelle città. Bloccare una strada durante una protesta diventa reato.",
+      "regole": [
+        {
+          "id": "sicurezza-occupazione-casa",
+          "campiNecessari": [
+            "abitazione"
+          ],
+          "condizioni": [
+            {
+              "campo": "abitazione",
+              "op": "eq",
+              "valore": "proprieta"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Se qualcuno occupa abusivamente la tua casa, ora è un reato specifico (fino a 7 anni se è il tuo domicilio) e c'è una procedura veloce per farti riavere l'immobile.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "fonteRegola": {
+            "etichetta": "L. 80/2025, conversione del DL sicurezza (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-06-09;80"
+          }
+        },
+        {
+          "id": "sicurezza-truffe-anziani",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 65
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Le truffe contro le persone anziane sono punite più severamente: una tutela in più contro raggiri al telefono, alla porta o online.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "fonteRegola": {
+            "etichetta": "L. 80/2025, conversione del DL sicurezza (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-06-09;80"
+          }
+        },
+        {
+          "id": "sicurezza-videosorveglianza",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 13
+            }
+          ],
+          "effetto": {
+            "tipo": "qualita-vita",
+            "descrizione": "Più telecamere nelle città e bodycam addosso agli agenti: più protezione negli spazi pubblici, ma anche più occhi puntati sulla vita di tutti. Le immagini sono comunque soggette alle regole sulla privacy.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "fonteRegola": {
+            "etichetta": "L. 80/2025, conversione del DL sicurezza (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-06-09;80"
+          }
+        },
+        {
+          "id": "sicurezza-proteste",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 13
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "Bloccare una strada o una ferrovia durante una manifestazione è diventato reato (prima era una multa): se partecipi a proteste, il rischio legale è più alto.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Vale per i blocchi con il proprio corpo o con ostacoli; manifestare resta un diritto costituzionale, cambia cosa succede se si blocca la circolazione.",
+          "fonteRegola": {
+            "etichetta": "L. 80/2025, conversione del DL sicurezza (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-06-09;80"
+          }
+        }
+      ]
+    },
+    {
+      "id": "codice-strada-2024",
+      "titoloDivulgativo": "Nuovo Codice della strada: multe più dure e regole nuove",
+      "titoloUfficiale": "Legge 25 novembre 2024, n. 177 — Interventi in materia di sicurezza stradale e delega per la revisione del Codice della strada",
+      "stato": "vigore",
+      "ambito": "doveri",
+      "fonti": [
+        {
+          "etichetta": "L. 177/2024, revisione del Codice della strada (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-11-25;177"
+        },
+        {
+          "etichetta": "Governo — La revisione del Codice della strada",
+          "url": "https://www.programmagoverno.gov.it/it/notizie/la-revisione-del-codice-della-strada-entra-in-vigore-il-14-dicembre-2024/"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "Dal dicembre 2024 chi guida col cellulare in mano rischia multe fino a 1.500 euro e la sospensione della patente. Chi viene trovato con troppo alcol ha il divieto di bere prima di guidare per 2-3 anni e l'obbligo dell'alcolock. I neopatentati hanno zero alcol e limiti di potenza per 3 anni. Sui monopattini serve il casco.",
+      "regole": [
+        {
+          "id": "strada-cellulare-alcol",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "Se guidi: cellulare in mano = multa da 250 a 1.500 euro, fino a 10 punti e sospensione della patente; con tasso alcolico oltre 0,8 scatta il divieto assoluto di alcol alla guida per 2-3 anni con obbligo di alcolock. In cambio, strade più sicure per tutti.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "fonteRegola": {
+            "etichetta": "L. 177/2024, revisione del Codice della strada (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-11-25;177"
+          }
+        },
+        {
+          "id": "strada-neopatentati",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            },
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 25
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "Per chi ha la patente da meno di 3 anni: zero alcol assoluto alla guida e limiti sulla potenza delle auto estesi a 3 anni.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Vale solo se hai preso la patente da meno di 3 anni, un dato che non ti chiediamo: l'età da sola non basta a dirlo.",
+          "fonteRegola": {
+            "etichetta": "L. 177/2024, revisione del Codice della strada (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-11-25;177"
+          }
+        },
+        {
+          "id": "strada-monopattini",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 14
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "Se usi un monopattino elettrico: casco obbligatorio per tutti, si circola solo su strade urbane fino a 50 km/h, e sono in arrivo targa e assicurazione obbligatorie.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "L'obbligo del casco è già in vigore; targa e assicurazione partono con i decreti attuativi, non ancora completati al giugno 2026.",
+          "fonteRegola": {
+            "etichetta": "L. 177/2024, revisione del Codice della strada (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-11-25;177"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ius-italiae-2026",
+      "titoloDivulgativo": "Ius Italiae: la cittadinanza per chi cresce a scuola in Italia",
+      "titoloUfficiale": "Proposta di legge \"Ius Italiae\" — nuove norme sull'acquisto della cittadinanza italiana (XIX legislatura)",
+      "stato": "discussione",
+      "ambito": "doveri",
+      "fonti": [
+        {
+          "etichetta": "Camera dei deputati — proposte di legge sulla cittadinanza (XIX legislatura)",
+          "url": "https://www.camera.it/leg19/126?tab=1&leg=19&idDocumento=cittadinanza"
+        }
+      ],
+      "verificataIl": "2026-06-11",
+      "riassunto": "Una proposta di legge (non ancora votata) per dare la cittadinanza italiana a 16 anni ai ragazzi nati in Italia o arrivati da piccoli, se hanno studiato qui per almeno 10 anni completando il percorso scolastico. Il referendum del 2025 sullo stesso tema è fallito per mancanza di quorum; ora la discussione riparte dal Parlamento, ma i partiti sono divisi e non c'è una data.",
+      "regole": [
+        {
+          "id": "ius-italiae-figli",
+          "campiNecessari": [
+            "cittadinanza",
+            "figli"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            },
+            {
+              "campo": "figli",
+              "op": "almeno",
+              "valore": 1
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "SE la proposta venisse approvata: i tuoi figli nati in Italia (o arrivati entro i 5 anni) potrebbero diventare cittadini italiani a 16 anni dopo aver completato 10 anni di scuola qui.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "La legge non esiste ancora: è una proposta non calendarizzata e i partiti sono divisi. Dipende anche dal percorso scolastico effettivo dei tuoi figli, che non ti chiediamo.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati — proposte di legge sulla cittadinanza (XIX legislatura)",
+            "url": "https://www.camera.it/leg19/126?tab=1&leg=19&idDocumento=cittadinanza"
+          }
+        },
+        {
+          "id": "ius-italiae-giovani",
+          "campiNecessari": [
+            "cittadinanza",
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            },
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 25
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "SE la proposta venisse approvata e sei cresciuto a scuola in Italia: percorso più chiaro verso la cittadinanza, senza aspettare i 18 anni con la trafila attuale.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Vale per chi è nato in Italia o arrivato entro i 5 anni, con 10 anni di scuola completati: dati che non ti chiediamo. E la proposta deve ancora essere votata.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati — proposte di legge sulla cittadinanza (XIX legislatura)",
+            "url": "https://www.camera.it/leg19/126?tab=1&leg=19&idDocumento=cittadinanza"
           }
         }
       ]

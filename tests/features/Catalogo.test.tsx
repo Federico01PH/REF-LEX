@@ -44,7 +44,7 @@ test('cambiare ambito chiude la scheda della legge non più visibile', async () 
   renderCatalogo();
   await userEvent.selectOptions(screen.getByRole('combobox', { name: /scegli la legge/i }), 'cuneo-fiscale-2025');
   await userEvent.click(screen.getByRole('button', { name: /^casa$/i }));
-  expect(screen.queryByText(/nome ufficiale/i)).not.toBeInTheDocument();
+  expect(screen.queryByText(/nome ufficiale:/i)).not.toBeInTheDocument();
 });
 
 test('mostra la nota sulla fonte del catalogo', () => {
