@@ -22,6 +22,7 @@ export const caseGreen: Legge = {
   titoloUfficiale: 'Direttiva (UE) 2024/1275 sulla prestazione energetica nell\'edilizia (EPBD IV)',
   stato: 'approvata',
   ambito: 'casa',
+  origine: 'europea',
   fonti: [FONTE],
   verificataIl: '2026-06-11',
   riassunto: 'L\'Europa chiede che le case italiane, in media, consumino il 16% in meno entro il 2030 e il 20-22% in meno entro il 2035. Non c\'è un obbligo per la singola casa: toccherà allo Stato decidere come arrivarci, ma l\'Italia è in ritardo nel tradurre la direttiva in legge. Una cosa è già attiva: niente più bonus per le caldaie solo a gas o gasolio.',

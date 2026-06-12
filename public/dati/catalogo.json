@@ -1,5 +1,5 @@
 {
-  "versione": 2,
+  "versione": 3,
   "generatoIl": "2026-06-11",
   "leggi": [
     {
@@ -820,6 +820,7 @@
       "titoloUfficiale": "Direttiva (UE) 2024/1275 sulla prestazione energetica nell'edilizia (EPBD IV)",
       "stato": "approvata",
       "ambito": "casa",
+      "origine": "europea",
       "fonti": [
         {
           "etichetta": "Direttiva (UE) 2024/1275 (EUR-Lex)",
@@ -1254,6 +1255,7 @@
       "titoloUfficiale": "Regolamento (UE) 2024/1689 che stabilisce regole armonizzate sull'intelligenza artificiale",
       "stato": "approvata",
       "ambito": "sicurezza-privacy",
+      "origine": "europea",
       "fonti": [
         {
           "etichetta": "Regolamento (UE) 2024/1689 — AI Act (EUR-Lex)",

@@ -4,6 +4,9 @@ import { rilevanza } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
 import type { NovitaFile } from '../engine/novita';
 import { NovitaParlamento } from './NovitaParlamento';
+import { Richieste } from './Richieste';
+import { Segnalazione } from './Segnalazione';
+import { aggiungiRichiesta, caricaRichieste, rimuoviRichiesta } from '../storage/richieste';
 import { dataLeggibile } from '../ui/formato';
 
 const STATI: Record<StatoLegge, { etichetta: string; colore: string }> = {
@@ -35,12 +38,20 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
 }) {
   const [ambito, setAmbito] = useState<Ambito | 'tutte'>('tutte');
   const [sceltaId, setSceltaId] = useState('');
+  const [richieste, setRichieste] = useState(() => caricaRichieste());
   const visibili = leggi.filter((l) => ambito === 'tutte' || l.ambito === ambito);
   const scelta = visibili.find((l) => l.id === sceltaId) ?? null;
 
   return (
     <div>
-      <h1 style={{ fontSize: 24 }}>Scegli una legge</h1>
+      <header>
+        <h1 className="marchio">REF-LEX</h1>
+        <p className="motto">
+          Le leggi decidono stipendio, casa, salute e diritti, ma sono scritte in un linguaggio
+          per pochi. Qui le trovi tradotte in parole semplici: scegline una e in 2 minuti scopri
+          cosa cambia nella tua vita.
+        </p>
+      </header>
       {esploratore && (
         <p className="badge badge-dipende">
           Profilo ipotetico attivo —{' '}
@@ -82,6 +93,9 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
           <span className="testo-piccolo" style={{ fontWeight: 800, color: STATI[scelta.stato].colore }}>
             {STATI[scelta.stato].etichetta}
           </span>
+          {scelta.origine === 'europea' && (
+            <span className="badge badge-europea" style={{ marginLeft: 8 }}>Norma europea — vale anche in Italia</span>
+          )}
           <h2 style={{ fontSize: 20, margin: '4px 0' }}>{scelta.titoloDivulgativo}</h2>
           <p className="testo-piccolo" style={{ marginTop: 0 }}>Nome ufficiale: {scelta.titoloUfficiale}</p>
           <p style={{ marginTop: 8 }}>{scelta.riassunto}</p>
@@ -89,7 +103,16 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
           <button className="btn" onClick={() => onScegli(scelta.id)}>Vedi come ti tocca</button>
         </article>
       )}
-      {novita && novita.voci.length > 0 && <NovitaParlamento novita={novita} />}
+      {novita && novita.voci.length > 0 && (
+        <NovitaParlamento novita={novita}
+          onRichiedi={(titolo, url) => setRichieste(aggiungiRichiesta(titolo, url))} />
+      )}
+      <div className="griglia-due spazio">
+        <Richieste richieste={richieste}
+          onAggiungi={(titolo) => setRichieste(aggiungiRichiesta(titolo))}
+          onRimuovi={(id) => setRichieste(rimuoviRichiesta(id))} />
+        <Segnalazione />
+      </div>
       <p className="testo-piccolo spazio">
         {infoCatalogo.fonte === 'remoto' && infoCatalogo.generatoIl
           ? `Catalogo aggiornato automaticamente al ${dataLeggibile(infoCatalogo.generatoIl)}.`

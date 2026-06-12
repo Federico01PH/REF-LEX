@@ -6,6 +6,8 @@ import type { Profilo } from '../../src/engine/types';
 
 const dipendente: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'da15a20k' };
 
+beforeEach(() => localStorage.clear());
+
 function renderCatalogo(extra: Partial<Parameters<typeof Catalogo>[0]> = {}) {
   return render(<Catalogo profilo={dipendente} esploratore={false} leggi={CATALOGO} novita={null}
     infoCatalogo={{ fonte: 'locale' }} onScegli={vi.fn()}
@@ -50,4 +52,41 @@ test('cambiare ambito chiude la scheda della legge non più visibile', async () 
 test('mostra la nota sulla fonte del catalogo', () => {
   renderCatalogo();
   expect(screen.getByText(/catalogo locale/i)).toBeInTheDocument();
+});
+
+test('in cima ci sono il titolo dell\'app e la missione', () => {
+  renderCatalogo();
+  expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/ref-lex/i);
+  expect(screen.getByText(/tradotte in parole semplici/i)).toBeInTheDocument();
+});
+
+test('le norme europee sono etichettate nella scheda', async () => {
+  renderCatalogo();
+  await userEvent.selectOptions(screen.getByRole('combobox', { name: /scegli la legge/i }), 'case-green-epbd');
+  expect(screen.getByText(/norma europea — vale anche in italia/i)).toBeInTheDocument();
+});
+
+test('le leggi italiane non hanno l\'etichetta europea', async () => {
+  renderCatalogo();
+  await userEvent.selectOptions(screen.getByRole('combobox', { name: /scegli la legge/i }), 'cuneo-fiscale-2025');
+  expect(screen.queryByText(/norma europea/i)).not.toBeInTheDocument();
+});
+
+test('dalla novità si chiede la simulazione e la richiesta finisce nella lista', async () => {
+  renderCatalogo({
+    novita: {
+      generatoIl: '2026-06-11',
+      voci: [{ id: 'gazzetta-1', titolo: 'Nuova legge sulla scuola', tipo: 'gazzetta', stato: 'approvata', data: '2026-06-10', url: 'https://www.gazzettaufficiale.it/x' }]
+    }
+  });
+  await userEvent.click(screen.getByRole('button', { name: /chiedila in simulazione/i }));
+  const lista = screen.getByRole('list', { name: /le tue richieste/i });
+  expect(within(lista).getByText('Nuova legge sulla scuola')).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: /invia la richiesta/i })).toBeInTheDocument();
+});
+
+test('le sezioni per chiedere simulazioni e segnalare problemi ci sono sempre', () => {
+  renderCatalogo();
+  expect(screen.getByRole('heading', { name: /chiedi una simulazione/i })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: /qualcosa non va/i })).toBeInTheDocument();
 });
