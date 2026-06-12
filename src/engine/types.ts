@@ -14,6 +14,9 @@ export type Disabilita =
   | 'nessuna' | 'motoria' | 'visiva' | 'uditiva' | 'intellettiva'
   | 'malattia-cronica' | 'condizione-non-riconosciuta';
 
+// ordinale: ogni titolo include quelli precedenti (chi è laureato ha anche il diploma)
+export type TitoloStudio = 'nessuno' | 'medie' | 'diploma' | 'laurea';
+
 export interface Profilo {
   schemaVersion: 1;
   eta: number;
@@ -27,8 +30,11 @@ export interface Profilo {
   fasciaIsee?: FasciaIsee;
   figli?: 0 | 1 | 2 | 3; // 3 = tre o più
   abitazione?: 'proprieta' | 'affitto' | 'comodato' | 'altro';
+  numeroProprieta?: 0 | 1 | 2 | 3; // immobili posseduti, 3 = tre o più
+  titoloStudio?: TitoloStudio;
   disabilita?: Disabilita[];
   cittadinanza?: 'italiana' | 'ue' | 'extra-ue';
+  permessoSoggiorno?: 'si' | 'no' | 'preferisco-non-dirlo'; // chiesto solo con cittadinanza extra-ue
   religione?: 'nessuna' | 'cattolica' | 'altra-cristiana' | 'musulmana' | 'ebraica' | 'altra' | 'preferisco-non-dirlo';
 }
 
@@ -45,6 +51,7 @@ export interface Effetto {
   importoMese?: { min: number; max: number }; // € al mese, solo tipo economico
   descrizione: string;
   direzione: 'positivo' | 'negativo' | 'neutro' | 'misto';
+  indiretto?: boolean; // la legge non parla di te, ma ti tocca di riflesso
 }
 
 export interface Regola {

@@ -3,10 +3,10 @@ import { z } from 'zod';
 const CAMPI_PROFILO = [
   'eta', 'genere', 'identitaGenere', 'orientamento', 'statoCivile', 'regione',
   'condizioneLavorativa', 'fasciaReddito', 'fasciaIsee', 'figli', 'abitazione',
-  'disabilita', 'cittadinanza', 'religione'
+  'numeroProprieta', 'titoloStudio', 'disabilita', 'cittadinanza', 'permessoSoggiorno', 'religione'
 ] as const;
 // campi su cui hanno senso i confronti ordinali (almeno/alPiu)
-const CAMPI_ORDINALI: readonly string[] = ['eta', 'fasciaReddito', 'fasciaIsee', 'figli'];
+const CAMPI_ORDINALI: readonly string[] = ['eta', 'fasciaReddito', 'fasciaIsee', 'figli', 'numeroProprieta', 'titoloStudio'];
 // campi il cui valore nel profilo è un array: gli autori devono usare 'in', mai 'eq'
 const CAMPI_ARRAY: readonly string[] = ['disabilita'];
 
@@ -36,7 +36,8 @@ const SchemaEffetto = z.object({
   importoMese: z.object({ min: z.number(), max: z.number() })
     .refine((i) => i.min <= i.max, 'min deve essere <= max').optional(),
   descrizione: z.string().min(1),
-  direzione: z.enum(['positivo', 'negativo', 'neutro', 'misto'])
+  direzione: z.enum(['positivo', 'negativo', 'neutro', 'misto']),
+  indiretto: z.boolean().optional()
 }).superRefine((e, ctx) => {
   if (e.importoMese && e.tipo !== 'economico') {
     ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'importoMese è consentito solo per effetti di tipo economico' });

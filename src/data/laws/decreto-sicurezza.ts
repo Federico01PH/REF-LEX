@@ -8,7 +8,13 @@ import type { Legge } from '../../engine/types';
 // - aggravante per le truffe agli anziani;
 // - bodycam alle forze di polizia e fondi per videosorveglianza (20+ milioni in 3 anni);
 // - blocco stradale durante le proteste diventa reato;
-// - pene piu' severe per lesioni e resistenza a pubblico ufficiale.
+// - pene piu' severe per lesioni e resistenza a pubblico ufficiale;
+// - SIM (art. 32, modifica l'art. 98 del Codice comunicazioni elettroniche): chi e' extra-UE
+//   deve mostrare un documento di riconoscimento valido. La proposta iniziale chiedeva il
+//   permesso di soggiorno: requisito ELIMINATO nella versione definitiva (verificato 12/06/2026).
+// - L'obbligo per universita' e PA di collaborare con i servizi segreti (art. 31 del ddl
+//   originale) e' SPARITO dal decreto in vigore: l'art. 31 attuale riguarda solo i poteri
+//   operativi dei servizi. Non va modellato finche' non torna in una legge vera.
 
 const FONTE = {
   etichetta: 'L. 80/2025, conversione del DL sicurezza (Normattiva)',
@@ -76,6 +82,21 @@ export const decretoSicurezza: Legge = {
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
       confidenza: 'certa',
       noteConfidenza: 'Vale per i blocchi con il proprio corpo o con ostacoli; manifestare resta un diritto costituzionale, cambia cosa succede se si blocca la circolazione.',
+      fonteRegola: FONTE
+    },
+    {
+      id: 'sicurezza-sim-documento',
+      campiNecessari: ['cittadinanza'],
+      condizioni: [{ campo: 'cittadinanza', op: 'eq', valore: 'extra-ue' }],
+      effetto: {
+        tipo: 'dovere',
+        descrizione: 'Per comprare una SIM telefonica devi mostrare un documento di riconoscimento valido (passaporto, carta d\'identità o documento equipollente). Il permesso di soggiorno NON è richiesto: era nella proposta iniziale, ma è stato tolto dalla legge definitiva. Se un negozio te lo chiede come obbligo, sta sbagliando.',
+        direzione: 'misto',
+        indiretto: true
+      },
+      timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
+      confidenza: 'certa',
+      noteConfidenza: 'Art. 32 della legge, che modifica l\'art. 98 del Codice delle comunicazioni elettroniche. Il negozio che vende SIM senza verificare il documento rischia la chiusura da 5 a 30 giorni; usare il documento di un\'altra persona è reato.',
       fonteRegola: FONTE
     }
   ]

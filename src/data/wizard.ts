@@ -8,6 +8,7 @@ export interface Domanda {
   tipo: 'numero' | 'scelta' | 'multi';
   obbligatoria?: boolean;   // solo eta
   opzioni?: Opzione[];
+  mostraSe?: (bozza: Partial<Profilo>) => boolean; // domanda visibile solo se vera
 }
 
 export const DOMANDE: Domanda[] = [
@@ -27,6 +28,13 @@ export const DOMANDE: Domanda[] = [
       { valore: 'caregiver', etichetta: 'Mi prendo cura di un familiare' },
       { valore: 'casalingo', etichetta: 'Mi occupo della casa' },
       { valore: 'altro', etichetta: 'Altro' }] },
+  { campo: 'titoloStudio', titolo: 'Qual è il tuo titolo di studio più alto?', tipo: 'scelta',
+    perche: 'Alcune leggi su lavoro, concorsi e contratti valgono solo per chi ha certi titoli. Indica solo il più alto: la laurea include il diploma e la licenza media.',
+    opzioni: [
+      { valore: 'nessuno', etichetta: 'Nessun titolo / licenza elementare' },
+      { valore: 'medie', etichetta: 'Licenza media' },
+      { valore: 'diploma', etichetta: 'Diploma o qualifica professionale' },
+      { valore: 'laurea', etichetta: 'Laurea o titolo superiore' }] },
   { campo: 'fasciaReddito', titolo: "Quanto guadagni all'anno, più o meno?", tipo: 'scelta',
     perche: 'Serve per calcolare tasse e bonus. Basta la fascia: non chiediamo la cifra esatta.',
     opzioni: [
@@ -56,6 +64,11 @@ export const DOMANDE: Domanda[] = [
     opzioni: [
       { valore: 'proprieta', etichetta: 'Casa di proprietà' }, { valore: 'affitto', etichetta: 'In affitto' },
       { valore: 'comodato', etichetta: 'Ospite / comodato (es. dai genitori)' }, { valore: 'altro', etichetta: 'Altro' }] },
+  { campo: 'numeroProprieta', titolo: 'Possiedi immobili (case, box, terreni)?', tipo: 'scelta',
+    perche: 'Tasse sulla casa, obblighi di ristrutturazione e regole sugli affitti dipendono da quanti immobili possiedi, non solo da dove vivi.',
+    opzioni: [
+      { valore: 0, etichetta: 'No, nessuno' }, { valore: 1, etichetta: 'Uno' },
+      { valore: 2, etichetta: 'Due' }, { valore: 3, etichetta: 'Tre o più' }] },
   { campo: 'regione', titolo: 'In che regione vivi?', tipo: 'scelta',
     perche: 'Alcune leggi e aiuti valgono solo in certe regioni.',
     opzioni: ['Abruzzo', 'Basilicata', 'Calabria', 'Campania', 'Emilia-Romagna', 'Friuli-Venezia Giulia', 'Lazio',
@@ -75,6 +88,12 @@ export const DOMANDE: Domanda[] = [
     opzioni: [
       { valore: 'italiana', etichetta: 'Italiana' }, { valore: 'ue', etichetta: 'Di un Paese UE' },
       { valore: 'extra-ue', etichetta: "Di un Paese fuori dall'UE" }] },
+  { campo: 'permessoSoggiorno', titolo: 'Hai un permesso di soggiorno valido?', tipo: 'scelta',
+    mostraSe: (bozza) => bozza.cittadinanza === 'extra-ue',
+    perche: 'Per chi viene da fuori l\'UE, diritti e regole (lavoro, sicurezza, servizi) cambiano molto tra chi ha un permesso valido e chi non ce l\'ha. Come tutto il resto, la risposta non lascia mai il tuo dispositivo.',
+    opzioni: [
+      { valore: 'si', etichetta: 'Sì' }, { valore: 'no', etichetta: 'No' },
+      { valore: 'preferisco-non-dirlo', etichetta: 'Preferisco non dirlo' }] },
   { campo: 'genere', titolo: 'In quale genere ti riconosci?', tipo: 'scelta',
     perche: 'Alcune leggi (pensioni, congedi, tutele) trattano diversamente uomini e donne.',
     opzioni: [

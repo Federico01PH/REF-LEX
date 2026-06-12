@@ -5,7 +5,7 @@ import { CATALOGO } from './data/laws';
 import { VERSIONE_CATALOGO } from './data/laws/versione';
 import { caricaCatalogoRemoto, caricaNovita } from './storage/datiRemoti';
 import { caricaProfilo, caricaTema, salvaProfilo, salvaTema } from './storage/profilo';
-import { Benvenuto } from './features/Benvenuto';
+import { Home } from './features/Home';
 import { Wizard } from './features/Wizard';
 import { Catalogo } from './features/Catalogo';
 import { Report } from './features/Report';
@@ -13,14 +13,15 @@ import { Empatia } from './features/Empatia';
 import { Privacy } from './features/Privacy';
 
 type Vista =
-  | { nome: 'benvenuto' } | { nome: 'wizard'; esploratore: boolean }
+  | { nome: 'home' } | { nome: 'wizard'; esploratore: boolean }
   | { nome: 'catalogo' } | { nome: 'report'; leggeId: string }
   | { nome: 'empatia'; leggeId: string } | { nome: 'privacy' };
 
 export default function App() {
   const [profilo, setProfilo] = useState<Profilo | null>(() => caricaProfilo());
   const [profiloEsploratore, setProfiloEsploratore] = useState<Profilo | null>(null);
-  const [vista, setVista] = useState<Vista>(() => (caricaProfilo() ? { nome: 'catalogo' } : { nome: 'benvenuto' }));
+  // l'app si apre sempre dalla home: il marchio e la missione, poi un bottone porta alle simulazioni
+  const [vista, setVista] = useState<Vista>({ nome: 'home' });
   const [tema, setTema] = useState<string>(() => caricaTema());
 
   const [catalogo, setCatalogo] = useState<Legge[]>(CATALOGO);
@@ -47,8 +48,9 @@ export default function App() {
 
   return (
     <main>
-      {vista.nome === 'benvenuto' && (
-        <Benvenuto onInizia={() => setVista({ nome: 'wizard', esploratore: false })}
+      {vista.nome === 'home' && (
+        <Home haProfilo={profilo !== null}
+          onAvanti={() => setVista(profilo ? { nome: 'catalogo' } : { nome: 'wizard', esploratore: false })}
           onPrivacy={() => setVista({ nome: 'privacy' })} />
       )}
       {vista.nome === 'wizard' && (
@@ -60,7 +62,7 @@ export default function App() {
             else { setProfilo(p); salvaProfilo(p); setProfiloEsploratore(null); }
             setVista({ nome: 'catalogo' });
           }}
-          onAnnulla={() => setVista(profilo ? { nome: 'catalogo' } : { nome: 'benvenuto' })} />
+          onAnnulla={() => setVista(profilo ? { nome: 'catalogo' } : { nome: 'home' })} />
       )}
       {vista.nome === 'catalogo' && (profilo || profiloEsploratore) && (
         <Catalogo profilo={profiloEsploratore ?? profilo!}
@@ -71,6 +73,7 @@ export default function App() {
           onScegli={(leggeId) => setVista({ nome: 'report', leggeId })}
           onModificaProfilo={() => setVista({ nome: 'wizard', esploratore: profiloEsploratore !== null })}
           onPrivacy={() => setVista({ nome: 'privacy' })}
+          onHome={() => setVista({ nome: 'home' })}
           onEsciEsploratore={() => setProfiloEsploratore(null)} />
       )}
       {vista.nome === 'report' && (profilo || profiloEsploratore) && (
@@ -87,8 +90,8 @@ export default function App() {
       {vista.nome === 'privacy' && (
         <Privacy tema={tema}
           onCambiaTema={(t) => { setTema(t); salvaTema(t); }}
-          onCancellaTutto={() => { setProfilo(null); setProfiloEsploratore(null); setVista({ nome: 'benvenuto' }); }}
-          onIndietro={() => setVista(profilo ? { nome: 'catalogo' } : { nome: 'benvenuto' })} />
+          onCancellaTutto={() => { setProfilo(null); setProfiloEsploratore(null); setVista({ nome: 'home' }); }}
+          onIndietro={() => setVista(profilo ? { nome: 'catalogo' } : { nome: 'home' })} />
       )}
     </main>
   );

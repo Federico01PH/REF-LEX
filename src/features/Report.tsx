@@ -6,7 +6,9 @@ import { Icona } from '../ui/Icona';
 
 const ETICHETTA_CAMPO: Partial<Record<keyof Profilo, string>> = {
   fasciaReddito: 'il tuo reddito', fasciaIsee: 'il tuo ISEE', figli: 'quanti figli hai',
-  abitazione: 'dove vivi', regione: 'la tua regione', condizioneLavorativa: 'di cosa ti occupi'
+  abitazione: 'dove vivi', regione: 'la tua regione', condizioneLavorativa: 'di cosa ti occupi',
+  titoloStudio: 'il tuo titolo di studio', numeroProprieta: 'quanti immobili possiedi',
+  cittadinanza: 'la tua cittadinanza', permessoSoggiorno: 'se hai il permesso di soggiorno'
 };
 const CONFIDENZA = {
   certa: { classe: 'badge-certa', parola: 'Certo' },
@@ -102,7 +104,16 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
               <div>al mese tra {orizzonteEtichetta(orizzonte)} (effetti certi e probabili)</div>
             </div>
           )}
-          {r.effetti.map((regola) => <RigaEffetto key={regola.id} regola={regola} />)}
+          {r.effetti.filter((e) => !e.effetto.indiretto).map((regola) => <RigaEffetto key={regola.id} regola={regola} />)}
+          {r.effetti.some((e) => e.effetto.indiretto) && (
+            <section aria-label="Effetti indiretti" className="spazio">
+              <h2 style={{ fontSize: 19, marginBottom: 2 }}>Effetti indiretti</h2>
+              <p className="testo-piccolo" style={{ marginTop: 0 }}>
+                Qui la legge non parla di te, ma ti tocca di riflesso: di solito è la parte che nessuno racconta.
+              </p>
+              {r.effetti.filter((e) => e.effetto.indiretto).map((regola) => <RigaEffetto key={regola.id} regola={regola} />)}
+            </section>
+          )}
           {r.effetti.some((e) => e.timeline[orizzonte] === 'incerto') && (
             <p className="card spazio testo-piccolo" style={{ borderLeft: '4px solid var(--arancio)' }}>
               Alcuni effetti sono incerti in questo orizzonte temporale: non li contiamo nel totale finché non ci sono dati certi.

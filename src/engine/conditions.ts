@@ -1,14 +1,16 @@
-import type { Profilo, Condizione, FasciaReddito, FasciaIsee } from './types';
+import type { Profilo, Condizione, FasciaReddito, FasciaIsee, TitoloStudio } from './types';
 
 const ORDINE_REDDITO: FasciaReddito[] = [
   'nessuno', 'fino9k', 'da9a15k', 'da15a20k', 'da20a28k', 'da28a35k', 'da35a50k', 'oltre50k'
 ];
 const ORDINE_ISEE: FasciaIsee[] = ['fino9360', 'da9360a15k', 'da15a25k', 'da25a40k', 'oltre40k'];
+const ORDINE_TITOLO: TitoloStudio[] = ['nessuno', 'medie', 'diploma', 'laurea'];
 
 function ordinale(campo: keyof Profilo, valore: unknown): number {
   if (typeof valore === 'number') return valore;
   if (campo === 'fasciaReddito') return ORDINE_REDDITO.indexOf(valore as FasciaReddito);
   if (campo === 'fasciaIsee') return ORDINE_ISEE.indexOf(valore as FasciaIsee);
+  if (campo === 'titoloStudio') return ORDINE_TITOLO.indexOf(valore as TitoloStudio);
   return NaN;
 }
 

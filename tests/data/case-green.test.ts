@@ -29,6 +29,17 @@ test('chi è in affitto: solo l\'effetto indiretto, misto e dipende', () => {
   expect(r.effetti[0].effetto.direzione).toBe('misto');
 });
 
+test('chi possiede almeno due immobili: effetto indiretto in più, dipende dal recepimento', () => {
+  const p: Profilo = { schemaVersion: 1, eta: 50, abitazione: 'proprieta', numeroProprieta: 2 };
+  const r = simula(p, caseGreen);
+  const multi = r.effetti.find((e) => e.id === 'epbd-piu-immobili');
+  expect(multi).toBeDefined();
+  expect(multi!.confidenza).toBe('dipende');
+  expect(multi!.effetto.indiretto).toBe(true);
+  const unaCasa: Profilo = { schemaVersion: 1, eta: 50, abitazione: 'proprieta', numeroProprieta: 1 };
+  expect(simula(unaCasa, caseGreen).effetti.map((e) => e.id)).not.toContain('epbd-piu-immobili');
+});
+
 test('senza dato abitazione: effetto non calcolabile', () => {
   const p: Profilo = { schemaVersion: 1, eta: 30 };
   const r = simula(p, caseGreen);

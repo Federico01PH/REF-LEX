@@ -8,6 +8,7 @@ import { Richieste } from './Richieste';
 import { Segnalazione } from './Segnalazione';
 import { aggiungiRichiesta, caricaRichieste, rimuoviRichiesta } from '../storage/richieste';
 import { dataLeggibile } from '../ui/formato';
+import { Marchio } from '../ui/Marchio';
 
 const STATI: Record<StatoLegge, { etichetta: string; colore: string }> = {
   vigore: { etichetta: 'In vigore', colore: 'var(--verde)' },
@@ -31,10 +32,11 @@ const RILEVANZA = {
   bassa: 'Non ti tocca direttamente'
 };
 
-export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, onScegli, onModificaProfilo, onPrivacy, onEsciEsploratore }: {
+export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, onScegli, onModificaProfilo, onPrivacy, onHome, onEsciEsploratore }: {
   profilo: Profilo; esploratore: boolean; leggi: Legge[]; novita: NovitaFile | null;
   infoCatalogo: { fonte: 'locale' | 'remoto'; generatoIl?: string };
-  onScegli: (id: string) => void; onModificaProfilo: () => void; onPrivacy: () => void; onEsciEsploratore: () => void;
+  onScegli: (id: string) => void; onModificaProfilo: () => void; onPrivacy: () => void;
+  onHome: () => void; onEsciEsploratore: () => void;
 }) {
   const [ambito, setAmbito] = useState<Ambito | 'tutte'>('tutte');
   const [sceltaId, setSceltaId] = useState('');
@@ -44,13 +46,12 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
 
   return (
     <div>
-      <header>
-        <h1 className="marchio">REF-LEX</h1>
-        <p className="motto">
-          Le leggi decidono stipendio, casa, salute e diritti, ma sono scritte in un linguaggio
-          per pochi. Qui le trovi tradotte in parole semplici: scegline una e in 2 minuti scopri
-          cosa cambia nella tua vita.
-        </p>
+      <header className="riga-testata">
+        <h1 className="marchio-riga"><Marchio /></h1>
+        <button className="btn btn-secondario" onClick={onHome}
+          style={{ width: 'auto', display: 'inline-flex', gap: 6, alignItems: 'center' }}>
+          <Icona nome="indietro" dimensione={16} /> Home
+        </button>
       </header>
       {esploratore && (
         <p className="badge badge-dipende">

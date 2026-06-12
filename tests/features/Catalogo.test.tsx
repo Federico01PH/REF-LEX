@@ -11,7 +11,7 @@ beforeEach(() => localStorage.clear());
 function renderCatalogo(extra: Partial<Parameters<typeof Catalogo>[0]> = {}) {
   return render(<Catalogo profilo={dipendente} esploratore={false} leggi={CATALOGO} novita={null}
     infoCatalogo={{ fonte: 'locale' }} onScegli={vi.fn()}
-    onModificaProfilo={vi.fn()} onPrivacy={vi.fn()} onEsciEsploratore={vi.fn()} {...extra} />);
+    onModificaProfilo={vi.fn()} onPrivacy={vi.fn()} onHome={vi.fn()} onEsciEsploratore={vi.fn()} {...extra} />);
 }
 
 test('le leggi stanno in un menu a tendina, con titolo semplice e stato', () => {
@@ -54,10 +54,12 @@ test('mostra la nota sulla fonte del catalogo', () => {
   expect(screen.getByText(/catalogo locale/i)).toBeInTheDocument();
 });
 
-test('in cima ci sono il titolo dell\'app e la missione', () => {
-  renderCatalogo();
+test('in cima ci sono il marchio e il bottone per tornare alla home', async () => {
+  const onHome = vi.fn();
+  renderCatalogo({ onHome });
   expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/ref-lex/i);
-  expect(screen.getByText(/tradotte in parole semplici/i)).toBeInTheDocument();
+  await userEvent.click(screen.getByRole('button', { name: /^home$/i }));
+  expect(onHome).toHaveBeenCalled();
 });
 
 test('le norme europee sono etichettate nella scheda', async () => {
