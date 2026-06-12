@@ -58,7 +58,31 @@ a { color: var(--blu); }
   font-size: 32px; font-weight: 900; letter-spacing: -0.01em; margin: 0;
   background: var(--grad-azione); -webkit-background-clip: text; background-clip: text;
   color: transparent; width: fit-content; }
+.marchio-riga { display: flex; align-items: center; gap: 10px; margin: 0; }
+.marchio-logo { display: inline-flex; align-items: center; justify-content: center;
+  width: 42px; height: 42px; border-radius: 13px; flex: none;
+  background: var(--grad-azione); color: #fff; box-shadow: var(--ombra); }
+.marchio-logo svg { width: 64%; height: 64%; }
+.riga-testata { display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
 .motto { margin: 2px 0 0; font-size: 16px; color: var(--testo-2); max-width: 720px; }
+/* home: il marchio e la missione occupano la pagina, tutto il resto sta dietro un bottone */
+.home { min-height: 84vh; max-width: 760px; margin: 0 auto;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; gap: 6px; }
+.home .marchio-riga { flex-direction: column; gap: 18px; }
+.home .marchio-logo { width: 92px; height: 92px; border-radius: 26px; }
+.home .marchio { font-size: clamp(44px, 11vw, 64px); line-height: 1.05; }
+.home .motto { font-size: 17px; }
+.home .btn { max-width: 420px; margin-top: 22px; }
+.motto-grande { margin: 14px 0 0; font-size: clamp(19px, 3.4vw, 24px);
+  font-weight: 800; max-width: 640px; line-height: 1.35;
+  font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif; }
+.lista-novita { display: grid; gap: 8px; margin-top: 10px; }
+.voce-novita { background: var(--superficie); border: 1px solid var(--bordo);
+  border-radius: var(--raggio); padding: 8px 12px; box-shadow: var(--ombra); }
+.collegamento { background: none; border: none; padding: 0; cursor: pointer;
+  font: inherit; color: var(--blu); text-decoration: underline; }
 .campo-testo { display: block; width: 100%; min-height: 48px; padding: 10px 12px;
   font-size: 16px; font-family: inherit; color: var(--testo);
   background: var(--superficie); border: 2px solid var(--bordo);

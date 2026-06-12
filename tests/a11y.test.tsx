@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import axe from 'axe-core';
-import { Benvenuto } from '../src/features/Benvenuto';
+import { Home } from '../src/features/Home';
 import { Wizard } from '../src/features/Wizard';
 import { Catalogo } from '../src/features/Catalogo';
 import { Report } from '../src/features/Report';
@@ -19,14 +19,14 @@ async function verificaAccessibilita(elemento: React.ReactElement, nome: string)
   expect(violazioni).toEqual([]);
 }
 
-test('Benvenuto è accessibile', () =>
-  verificaAccessibilita(<Benvenuto onInizia={() => {}} onPrivacy={() => {}} />, 'Benvenuto'), { timeout: 15000 });
+test('Home è accessibile', () =>
+  verificaAccessibilita(<Home haProfilo={false} onAvanti={() => {}} onPrivacy={() => {}} />, 'Home'), { timeout: 15000 });
 test('Wizard è accessibile', () =>
   verificaAccessibilita(<Wizard iniziale={null} esploratore={false} onFine={() => {}} onAnnulla={() => {}} />, 'Wizard'), { timeout: 15000 });
 test('Catalogo è accessibile', () =>
   verificaAccessibilita(<Catalogo profilo={profilo} esploratore={false} leggi={CATALOGO} novita={null}
     infoCatalogo={{ fonte: 'locale' }} onScegli={() => {}}
-    onModificaProfilo={() => {}} onPrivacy={() => {}} onEsciEsploratore={() => {}} />, 'Catalogo'), { timeout: 15000 });
+    onModificaProfilo={() => {}} onPrivacy={() => {}} onHome={() => {}} onEsciEsploratore={() => {}} />, 'Catalogo'), { timeout: 15000 });
 test('Report è accessibile', () =>
   verificaAccessibilita(<Report profilo={profilo} legge={cuneoFiscale} esploratore={false}
     onAltri={() => {}} onIndietro={() => {}} />, 'Report'), { timeout: 15000 });
