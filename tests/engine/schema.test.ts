@@ -68,6 +68,17 @@ test('rifiuta importoMese con direzione mista o neutra', () => {
   expect(SchemaLegge.safeParse(rotta).success).toBe(false);
 });
 
+test('accetta condizioni sui nuovi campi (titoloStudio ordinale, permessoSoggiorno, effetto indiretto)', () => {
+  const ok = structuredClone(leggeValida);
+  ok.regole[0].condizioni = [
+    { campo: 'titoloStudio', op: 'almeno', valore: 'diploma' },
+    { campo: 'numeroProprieta', op: 'almeno', valore: 2 },
+    { campo: 'permessoSoggiorno', op: 'eq', valore: 'no' }
+  ] as never;
+  ok.regole[0].effetto = { tipo: 'dovere', descrizione: 'd', direzione: 'misto', indiretto: true } as never;
+  expect(SchemaLegge.safeParse(ok).success).toBe(true);
+});
+
 test('accetta effetto economico senza importo (qualitativo, es. confidenza dipende)', () => {
   const ok = structuredClone(leggeValida);
   ok.regole[0].effetto = { tipo: 'economico', descrizione: 'd', direzione: 'positivo' } as never;

@@ -62,11 +62,27 @@ export const caseGreen: Legge = {
       effetto: {
         tipo: 'qualita-vita',
         descrizione: 'Se la casa che affitti verrà ristrutturata, pagherai meno di bolletta e vivrai meglio; ma i lavori potrebbero riflettersi sul canone. Dipende dalle scelte del proprietario e dalle regole italiane in arrivo.',
-        direzione: 'misto'
+        direzione: 'misto',
+        indiretto: true
       },
       timeline: { anno1: 'nullo', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
       confidenza: 'dipende',
       noteConfidenza: 'Nessun obbligo individuale è ancora legge in Italia: l\'effetto su chi è in affitto dipenderà dal recepimento.',
+      fonteRegola: FONTE
+    },
+    {
+      id: 'epbd-piu-immobili',
+      campiNecessari: ['numeroProprieta'],
+      condizioni: [{ campo: 'numeroProprieta', op: 'almeno', valore: 2 }],
+      effetto: {
+        tipo: 'economico',
+        descrizione: 'Possiedi più di un immobile: se l\'Italia introdurrà requisiti o incentivi per ristrutturare, ogni immobile in più è un possibile cantiere (e una spesa) in più, ma anche un valore che sale dopo i lavori. Le case più energivore, spesso quelle affittate, potrebbero essere le prime chiamate in causa.',
+        direzione: 'misto',
+        indiretto: true
+      },
+      timeline: { anno1: 'nullo', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
+      confidenza: 'dipende',
+      noteConfidenza: 'Vale lo stesso discorso del recepimento: l\'Italia non ha ancora tradotto la direttiva in obblighi concreti, quindi tempi e regole per chi ha più immobili non sono ancora scritti.',
       fonteRegola: FONTE
     }
   ]

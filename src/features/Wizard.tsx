@@ -9,7 +9,9 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
 }) {
   const [indice, setIndice] = useState(0);
   const [bozza, setBozza] = useState<Partial<Profilo>>(iniziale ?? { schemaVersion: 1 });
-  const domanda = DOMANDE[indice];
+  // le domande condizionali (es. permesso di soggiorno) compaiono o spariscono in base alle risposte
+  const domande = DOMANDE.filter((d) => !d.mostraSe || d.mostraSe(bozza));
+  const domanda = domande[indice];
 
   const titoloRef = useRef<HTMLHeadingElement>(null);
   const primoRender = useRef(true);
@@ -21,7 +23,8 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
   const valore = bozza[domanda.campo];
 
   function avanza(prossimaBozza: Partial<Profilo>) {
-    if (indice + 1 >= DOMANDE.length) onFine(prossimaBozza as Profilo);
+    const prossime = DOMANDE.filter((d) => !d.mostraSe || d.mostraSe(prossimaBozza));
+    if (indice + 1 >= prossime.length) onFine(prossimaBozza as Profilo);
     else { setBozza(prossimaBozza); setIndice((i) => i + 1); }
   }
 
@@ -32,7 +35,10 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
         : v === 'nessuna' ? ['nessuna'] : [...attuale.filter((x) => x !== 'nessuna'), v];
       setBozza({ ...bozza, [domanda.campo]: nuovo });
     } else {
-      setBozza({ ...bozza, [domanda.campo]: v });
+      const nuova: Partial<Profilo> = { ...bozza, [domanda.campo]: v };
+      // se la cittadinanza non è più extra-UE, la risposta sul permesso di soggiorno non ha più senso
+      if (domanda.campo === 'cittadinanza' && v !== 'extra-ue') delete nuova.permessoSoggiorno;
+      setBozza(nuova);
     }
   }
 
@@ -41,9 +47,9 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
   return (
     <div>
       {esploratore && <p className="badge badge-dipende">Modalità esploratore: stai creando un profilo ipotetico</p>}
-      <div className="progress" role="progressbar" aria-valuemin={1} aria-valuemax={DOMANDE.length}
-        aria-valuenow={indice + 1} aria-label={`Domanda ${indice + 1} di ${DOMANDE.length}`}>
-        {DOMANDE.map((d, i) => (
+      <div className="progress" role="progressbar" aria-valuemin={1} aria-valuemax={domande.length}
+        aria-valuenow={indice + 1} aria-label={`Domanda ${indice + 1} di ${domande.length}`}>
+        {domande.map((d, i) => (
           <span key={d.campo} className={i < indice ? 'fatto' : i === indice ? 'attuale' : ''} />
         ))}
       </div>
@@ -87,7 +93,7 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
           </button>
         )}
         <button className="btn" style={{ flex: 1 }} disabled={!etaValida} onClick={() => avanza(bozza)}>
-          {indice + 1 >= DOMANDE.length ? 'Fine' : 'Avanti'}
+          {indice + 1 >= domande.length ? 'Fine' : 'Avanti'}
         </button>
       </div>
     </div>

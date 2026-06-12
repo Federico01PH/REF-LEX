@@ -3,7 +3,8 @@ import type { Profilo, Condizione } from '../../src/engine/types';
 
 const profilo: Profilo = {
   schemaVersion: 1, eta: 34, condizioneLavorativa: 'dipendente-privato',
-  fasciaReddito: 'da15a20k', disabilita: ['nessuna']
+  fasciaReddito: 'da15a20k', disabilita: ['nessuna'],
+  titoloStudio: 'laurea', numeroProprieta: 2
 };
 
 test('eq vale per valore uguale', () => {
@@ -24,6 +25,16 @@ test('almeno/alPiu funzionano sui numeri (età)', () => {
 test('almeno/alPiu funzionano sulle fasce di reddito (ordinali)', () => {
   expect(valutaCondizioni(profilo, [{ campo: 'fasciaReddito', op: 'alPiu', valore: 'da20a28k' }])).toBe(true);
   expect(valutaCondizioni(profilo, [{ campo: 'fasciaReddito', op: 'almeno', valore: 'da28a35k' }])).toBe(false);
+});
+
+test('almeno sul titolo di studio: la laurea include i titoli precedenti', () => {
+  expect(valutaCondizioni(profilo, [{ campo: 'titoloStudio', op: 'almeno', valore: 'diploma' }])).toBe(true);
+  expect(valutaCondizioni({ ...profilo, titoloStudio: 'medie' }, [{ campo: 'titoloStudio', op: 'almeno', valore: 'diploma' }])).toBe(false);
+});
+
+test('almeno/alPiu funzionano sul numero di proprietà', () => {
+  expect(valutaCondizioni(profilo, [{ campo: 'numeroProprieta', op: 'almeno', valore: 2 }])).toBe(true);
+  expect(valutaCondizioni(profilo, [{ campo: 'numeroProprieta', op: 'alPiu', valore: 1 }])).toBe(false);
 });
 
 test('in su campo array (disabilita) vale se almeno un elemento coincide', () => {
