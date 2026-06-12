@@ -11,12 +11,13 @@
   --raggio: 16px; --raggio-pillola: 999px;
 }
 [data-theme='dark'] {
-  --sfondo: #10162E; --superficie: #1A2342; --superficie-2: #232E55;
-  --testo: #FFFFFF; --testo-2: #9AA6D6; --bordo: #2C3866;
-  --blu: #6E8FFF; --viola: #9B7BFF;
-  --verde: #2FD89A; --rosso: #FF7B88; --teal: #2FC4E0; --arancio: #FFA868;
+  /* tonalità di nero neutre: il colore resta solo su bottoni, bordi e accenti */
+  --sfondo: #0A0A0C; --superficie: #161618; --superficie-2: #1F1F23;
+  --testo: #F5F5F7; --testo-2: #A6A8B4; --bordo: #2C2C33;
+  --blu: #7C9BFF; --viola: #A98BFF;
+  --verde: #2FD89A; --rosso: #FF7B88; --teal: #2FC4E0; --arancio: #FFA868; --giallo: #E8C24A;
   --grad-azione: linear-gradient(135deg, #4F74FF, #9B7BFF);
-  --ombra: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --ombra: 0 4px 16px rgba(0, 0, 0, 0.55);
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }

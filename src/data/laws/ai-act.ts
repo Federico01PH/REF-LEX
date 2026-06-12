@@ -23,6 +23,7 @@ export const aiAct: Legge = {
   titoloUfficiale: 'Regolamento (UE) 2024/1689 che stabilisce regole armonizzate sull\'intelligenza artificiale',
   stato: 'approvata',
   ambito: 'sicurezza-privacy',
+  origine: 'europea',
   fonti: [FONTE],
   verificataIl: '2026-06-11',
   riassunto: 'L\'Europa ha messo dei paletti all\'intelligenza artificiale. Già vietati: il punteggio sociale, il riconoscimento delle emozioni a scuola e al lavoro, gli inganni costruiti con l\'IA. Dal 2 agosto 2026 scattano le tutele piene quando un\'IA decide su di te (assunzioni, prestiti, scuola): supervisione umana e diritto di sapere e reclamare. Chatbot e deepfake devono dichiararsi.',

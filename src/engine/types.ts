@@ -69,6 +69,7 @@ export interface Legge {
   titoloUfficiale: string;
   stato: StatoLegge;
   ambito: Ambito;
+  origine?: 'italiana' | 'europea'; // assente = italiana
   fonti: { etichetta: string; url: string }[];
   verificataIl: string; // ISO yyyy-mm-dd
   riassunto: string;    // max ~80 parole, linguaggio terza media

@@ -4,8 +4,13 @@ export function Benvenuto({ onInizia, onPrivacy }: { onInizia: () => void; onPri
   return (
     <div>
       <div className="card" style={{ background: 'var(--grad-azione)', color: '#fff' }}>
-        <h1 style={{ margin: 0, fontSize: 26 }}>Scopri come le leggi cambiano la TUA vita</h1>
-        <p style={{ opacity: 0.9 }}>2 minuti, in forma anonima. Niente nome, niente account.</p>
+        <h1 style={{ margin: 0, fontSize: 30 }}>REF-LEX</h1>
+        <p style={{ margin: '8px 0 0', fontSize: 19, fontWeight: 700 }}>
+          La politica sembra lontana e le leggi sembrano scritte per pochi.
+          Qui le trovi tradotte in parole semplici, per scoprire cosa cambiano nella TUA vita:
+          stipendio, casa, salute, diritti.
+        </p>
+        <p style={{ opacity: 0.9, marginBottom: 0 }}>2 minuti, in forma anonima. Niente nome, niente account.</p>
       </div>
       <div className="card spazio">
         <p style={{ margin: 0, fontWeight: 700, display: 'flex', gap: 8, alignItems: 'center' }}>
