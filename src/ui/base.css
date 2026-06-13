@@ -5,23 +5,23 @@ body { margin: 0; background: var(--sfondo); color: var(--testo);
 main { width: 100%; margin: 0; padding: 20px clamp(16px, 4vw, 56px) 40px; min-height: 100vh; }
 h1, h2, h3 { line-height: 1.25; }
 h1, h2 { font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif; letter-spacing: -0.01em; }
-a { color: var(--blu); }
-:focus-visible { outline: 3px solid var(--viola); outline-offset: 2px; border-radius: 4px; }
+a { color: var(--accento); }
+:focus-visible { outline: 3px solid var(--accento-2); outline-offset: 2px; border-radius: 4px; }
 
 .card { background: var(--superficie); border-radius: var(--raggio);
   padding: 16px; box-shadow: var(--ombra); border: 1px solid var(--bordo); }
 .btn { display: block; width: 100%; min-height: 48px; padding: 12px 20px;
   border: none; border-radius: var(--raggio-pillola); cursor: pointer;
   font-size: 17px; font-weight: 800; color: #fff; background: var(--grad-azione); }
-.btn-secondario { background: none; border: 2px solid var(--blu);
-  color: var(--blu); font-weight: 700; }
-.btn-pericolo { background: var(--rosso); }
+.btn-secondario { background: none; border: 2px solid var(--accento);
+  color: var(--accento); font-weight: 700; }
+.btn-pericolo { background: var(--rosso); color: #fff; }
 .pill { display: inline-block; min-height: 44px; padding: 10px 16px; margin: 4px;
   border-radius: var(--raggio-pillola); border: 1.5px solid var(--bordo);
   background: var(--superficie); color: var(--testo); font-size: 16px; cursor: pointer; }
-.pill[aria-pressed='true'] { background: var(--blu); border-color: var(--blu); color: #fff; }
-[data-theme='dark'] .pill[aria-pressed='true'] { background: #2B52E0; border-color: #4F74FF; }
-[data-theme='dark'] .btn-secondario { color: var(--blu); border-color: var(--blu); }
+.pill[aria-pressed='true'] { background: var(--accento); border-color: var(--accento); color: #fff; }
+[data-theme='dark'] .pill[aria-pressed='true'] { background: var(--accento); border-color: var(--accento); color: #0E2433; }
+[data-theme='dark'] .btn-secondario { color: var(--accento); border-color: var(--accento); }
 .badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px;
   border-radius: var(--raggio-pillola); font-size: 13px; font-weight: 800; }
 .badge-certa { background: #E4F8EF; color: #066B45; }
@@ -30,12 +30,12 @@ a { color: var(--blu); }
 [data-theme='dark'] .badge-certa { background: #0E3A2A; color: #7BE6BB; }
 [data-theme='dark'] .badge-probabile { background: #3A330E; color: #E6D77B; }
 [data-theme='dark'] .badge-dipende { background: #3F2A14; color: #FFC08A; }
-.badge-europea { background: #E7ECFF; color: #1A3A8F; }
-[data-theme='dark'] .badge-europea { background: #1F2A55; color: #AABCFF; }
+.badge-europea { background: #E2EAF5; color: #14304F; }
+[data-theme='dark'] .badge-europea { background: #1C2A3D; color: #8FB4E6; }
 .progress { display: flex; gap: 4px; margin: 12px 0; }
 .progress > span { flex: 1; height: 6px; border-radius: 3px; background: var(--bordo); }
 .progress > span.fatto { background: var(--verde); }
-.progress > span.attuale { background: var(--viola); }
+.progress > span.attuale { background: var(--accento-2); }
 .riquadro-numero { border-radius: 12px; padding: 12px; text-align: center; color: #fff; }
 .riquadro-numero.positivo, .riquadro-numero.incerto { color: #0E2433; }
 .riquadro-numero .numero { font-size: 28px; font-weight: 900; }
@@ -44,9 +44,9 @@ a { color: var(--blu); }
 .negativo { background: var(--rosso); }
 .tendina { display: block; width: 100%; min-height: 48px; padding: 10px 12px;
   font-size: 17px; font-family: inherit; color: var(--testo);
-  background: var(--superficie); border: 2px solid var(--blu);
+  background: var(--superficie); border: 2px solid var(--accento);
   border-radius: var(--raggio); cursor: pointer; }
-[data-theme='dark'] .tendina { border-color: var(--blu); }
+[data-theme='dark'] .tendina { border-color: var(--accento); }
 .griglia-novita { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
 .riga-azioni { display: flex; gap: 8px; flex-wrap: wrap; }
 .riga-azioni > .btn { flex: 1; min-width: 200px; }
@@ -55,13 +55,13 @@ a { color: var(--blu); }
   .btn { max-width: 560px; }
 }
 .marchio { font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
-  font-size: 32px; font-weight: 900; letter-spacing: -0.01em; margin: 0;
-  background: var(--grad-azione); -webkit-background-clip: text; background-clip: text;
-  color: transparent; width: fit-content; }
+  font-size: 32px; font-weight: 600; letter-spacing: -0.01em; margin: 0;
+  color: var(--testo); width: fit-content; }
+.marchio-trattino { color: var(--oro); }
 .marchio-riga { display: flex; align-items: center; gap: 10px; margin: 0; }
 .marchio-logo { display: inline-flex; align-items: center; justify-content: center;
   width: 42px; height: 42px; border-radius: 13px; flex: none;
-  background: var(--grad-azione); color: #fff; box-shadow: var(--ombra); }
+  background: var(--grad-marchio); color: var(--oro); box-shadow: var(--ombra); }
 .marchio-logo svg { width: 64%; height: 64%; }
 .riga-testata { display: flex; align-items: center; justify-content: space-between;
   gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
@@ -82,12 +82,12 @@ a { color: var(--blu); }
 .voce-novita { background: var(--superficie); border: 1px solid var(--bordo);
   border-radius: var(--raggio); padding: 8px 12px; box-shadow: var(--ombra); }
 .collegamento { background: none; border: none; padding: 0; cursor: pointer;
-  font: inherit; color: var(--blu); text-decoration: underline; }
+  font: inherit; color: var(--accento); text-decoration: underline; }
 .campo-testo { display: block; width: 100%; min-height: 48px; padding: 10px 12px;
   font-size: 16px; font-family: inherit; color: var(--testo);
   background: var(--superficie); border: 2px solid var(--bordo);
   border-radius: var(--raggio); }
-.campo-testo:focus { border-color: var(--blu); outline: none; }
+.campo-testo:focus { border-color: var(--accento); outline: none; }
 .griglia-due { display: grid; grid-template-columns: 1fr; gap: 12px; }
 @media (min-width: 900px) { .griglia-due { grid-template-columns: 1fr 1fr; } }
 .testo-piccolo { font-size: 13px; color: var(--testo-2); }
