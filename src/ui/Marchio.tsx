@@ -12,7 +12,7 @@ export function Marchio() {
           <path d="M19 7l-2.6 5.6a2.9 2.9 0 0 0 5.2 0L19 7Z" />
         </svg>
       </span>
-      <span className="marchio">REF-LEX</span>
+      <span className="marchio">REF<span className="marchio-trattino">-</span>LEX</span>
     </>
   );
 }

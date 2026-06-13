@@ -37,7 +37,7 @@ function RigaEffetto({ regola }: { regola: Regola }) {
         </p>
       )}
       <button className="testo-piccolo" onClick={() => setAperta(!aperta)} aria-expanded={aperta}
-        style={{ background: 'none', border: 'none', textDecoration: 'underline', color: 'var(--blu)', cursor: 'pointer', padding: 0 }}>
+        style={{ background: 'none', border: 'none', textDecoration: 'underline', color: 'var(--accento)', cursor: 'pointer', padding: 0 }}>
         {aperta ? 'Nascondi dettagli' : 'Dettagli e fonte'}
       </button>
       {aperta && (
