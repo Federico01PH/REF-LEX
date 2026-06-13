@@ -68,8 +68,11 @@ a { color: var(--accento); }
   color: var(--testo); width: fit-content; }
 .marchio-trattino { color: var(--oro); }
 .marchio-riga { display: flex; align-items: center; gap: 10px; margin: 0; }
+/* item 1: tessera navy piena; ritaglio del keyline chiaro del PNG (in tema scuro sembrava un bordo bianco) */
 .marchio-logo { width: 42px; height: 42px; flex: none; display: block;
-  object-fit: contain; border-radius: 23%; box-shadow: var(--ombra); }
+  border-radius: 23%; overflow: hidden; box-shadow: var(--ombra); }
+.marchio-logo img { width: 100%; height: 100%; display: block;
+  object-fit: cover; transform: scale(1.13); }
 .riga-testata { display: flex; align-items: center; justify-content: space-between;
   gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
 .motto { margin: 2px 0 0; font-size: 16px; color: var(--testo-2); max-width: 720px; }
@@ -108,6 +111,15 @@ a { color: var(--accento); }
 .griglia-due { display: grid; grid-template-columns: 1fr; gap: 12px; }
 @media (min-width: 900px) { .griglia-due { grid-template-columns: 1fr 1fr; } }
 .testo-piccolo { font-size: 13px; color: var(--testo-2); }
+/* item 4: rende chiaro che le pillole filtrano (la gente le ignorava) */
+.etichetta-filtri { font-weight: 800; margin: 0 0 6px; }
+/* item 7: il bottone "per gli altri" si stacca dal resto del report */
+.invito-altri { padding-top: 16px; border-top: 1px solid var(--bordo); }
+/* item 3: disclaimer AI breve, si espande al clic */
+.disclaimer-ai { font-size: 13px; color: var(--testo-2); border: 1px solid var(--bordo);
+  border-radius: 12px; padding: 10px 12px; background: var(--superficie); }
+.disclaimer-ai > summary { cursor: pointer; font-weight: 600; color: var(--testo); }
+.disclaimer-ai > p { margin: 8px 0 0; }
 .spazio { margin-top: 16px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

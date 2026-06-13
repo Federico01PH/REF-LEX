@@ -75,11 +75,14 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
           </button>
         </div>
       </section>
-      <div role="group" aria-label="Filtra per argomento" className="spazio">
-        {AMBITI.map((a) => (
-          <button key={a.valore} className="pill" aria-pressed={ambito === a.valore}
-            onClick={() => { setAmbito(a.valore); setSceltaId(''); }}>{a.etichetta}</button>
-        ))}
+      <div className="spazio">
+        <p className="etichetta-filtri">Filtra per argomento, poi scegli la legge qui sotto:</p>
+        <div role="group" aria-label="Filtra per argomento">
+          {AMBITI.map((a) => (
+            <button key={a.valore} className="pill" aria-pressed={ambito === a.valore}
+              onClick={() => { setAmbito(a.valore); setSceltaId(''); }}>{a.etichetta}</button>
+          ))}
+        </div>
       </div>
       <div className="card spazio">
         <label htmlFor="scelta-legge" style={{ display: 'block', fontWeight: 800, marginBottom: 8 }}>

@@ -157,7 +157,28 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
           <span key={f.url}>{i > 0 && ' · '}<a href={f.url} target="_blank" rel="noopener noreferrer">{f.etichetta}</a></span>
         ))}
       </p>
-      <button className="btn spazio" onClick={onAltri}>E per gli altri?</button>
+      <div className="invito-altri spazio">
+        <p style={{ margin: '0 0 10px', fontWeight: 700 }}>
+          Questa legge non tocca tutti allo stesso modo.
+        </p>
+        <button className="btn" onClick={onAltri}
+          style={{ display: 'inline-flex', width: 'auto', gap: 8, alignItems: 'center' }}>
+          <Icona nome="persone" dimensione={18} /> Vedi com'è per gli altri
+        </button>
+      </div>
+
+      <details className="disclaimer-ai spazio">
+        <summary>
+          Risultati generati dall'intelligenza artificiale, non ancora verificati riga per riga da una persona.
+        </summary>
+        <p style={{ marginBottom: 0 }}>
+          REF-LEX legge i testi ufficiali delle leggi e calcola gli effetti con un modello di
+          intelligenza artificiale. Una persona ha scritto le regole su come leggere quei testi e
+          come fare le simulazioni, ma non ha ancora ricontrollato a mano ogni singolo risultato.
+          Per questo possono esserci errori o semplificazioni: prima di prendere decisioni
+          importanti, controlla sempre le fonti ufficiali qui sopra o chiedi a una persona esperta.
+        </p>
+      </details>
     </div>
   );
 }

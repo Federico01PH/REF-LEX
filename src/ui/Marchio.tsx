@@ -3,7 +3,9 @@
 export function Marchio() {
   return (
     <>
-      <img className="marchio-logo" src={`${import.meta.env.BASE_URL}icona-512.png`} alt="" aria-hidden="true" width={512} height={512} />
+      <span className="marchio-logo" aria-hidden="true">
+        <img src={`${import.meta.env.BASE_URL}icona-512.png`} alt="" width={512} height={512} />
+      </span>
       <span className="marchio">REF<span className="marchio-trattino">-</span>LEX</span>
     </>
   );
