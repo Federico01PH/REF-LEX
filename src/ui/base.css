@@ -59,7 +59,8 @@ a { color: var(--accento); }
   color: var(--testo); width: fit-content; }
 .marchio-trattino { color: var(--oro); }
 .marchio-riga { display: flex; align-items: center; gap: 10px; margin: 0; }
-.marchio-logo { width: 42px; height: 42px; flex: none; display: block; object-fit: contain; }
+.marchio-logo { width: 42px; height: 42px; flex: none; display: block;
+  object-fit: contain; border-radius: 23%; box-shadow: var(--ombra); }
 .riga-testata { display: flex; align-items: center; justify-content: space-between;
   gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
 .motto { margin: 2px 0 0; font-size: 16px; color: var(--testo-2); max-width: 720px; }
