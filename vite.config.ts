@@ -3,7 +3,11 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-export default defineConfig({
+// base solo in build di produzione = sottocartella su GitHub Pages:
+// https://<utente>.github.io/ref-lex/ . In dev (npm run dev) resta '/'.
+// Se il repo avrà un nome diverso da "ref-lex", cambiare qui.
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/ref-lex/' : '/',
   plugins: [
     react(),
     VitePWA({
@@ -30,4 +34,4 @@ export default defineConfig({
     globals: true,
     setupFiles: ['tests/setup.ts']
   }
-});
+}));
