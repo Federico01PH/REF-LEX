@@ -3,11 +3,9 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-// base solo in build di produzione = sottocartella su GitHub Pages:
-// https://<utente>.github.io/ref-lex/ . In dev (npm run dev) resta '/'.
-// Se il repo avrà un nome diverso da "ref-lex", cambiare qui.
-export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/ref-lex/' : '/',
+// Sito servito nella radice del dominio (Netlify: ref-lex.netlify.app).
+export default defineConfig({
+  base: '/',
   plugins: [
     react(),
     VitePWA({
@@ -34,4 +32,4 @@ export default defineConfig(({ mode }) => ({
     globals: true,
     setupFiles: ['tests/setup.ts']
   }
-}));
+});
