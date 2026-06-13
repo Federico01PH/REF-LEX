@@ -31,19 +31,31 @@ const SchemaCondizione = z.object({
   }
 });
 
+const SchemaDirittoToccato = z.object({
+  carta: z.string().min(1),
+  articolo: z.string().min(1),
+  diritto: z.string().min(1),
+  intensita: z.enum(['lieve', 'sensibile', 'grave']),
+  url: SchemaUrlSicuro.optional()
+});
+
 const SchemaEffetto = z.object({
   tipo: z.enum(['economico', 'diritto', 'dovere', 'servizio', 'qualita-vita']),
   importoMese: z.object({ min: z.number(), max: z.number() })
     .refine((i) => i.min <= i.max, 'min deve essere <= max').optional(),
   descrizione: z.string().min(1),
   direzione: z.enum(['positivo', 'negativo', 'neutro', 'misto']),
-  indiretto: z.boolean().optional()
+  indiretto: z.boolean().optional(),
+  dirittoToccato: SchemaDirittoToccato.optional()
 }).superRefine((e, ctx) => {
   if (e.importoMese && e.tipo !== 'economico') {
     ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'importoMese è consentito solo per effetti di tipo economico' });
   }
   if (e.importoMese && e.direzione !== 'positivo' && e.direzione !== 'negativo') {
     ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'un effetto con importoMese deve avere direzione positivo o negativo (gli importi misti/neutri non entrano nei totali)' });
+  }
+  if (e.dirittoToccato && e.indiretto !== true) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, message: 'dirittoToccato vive tra gli effetti indiretti: serve indiretto: true' });
   }
 });
 

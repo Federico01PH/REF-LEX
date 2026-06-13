@@ -74,6 +74,28 @@ export const codiceStrada: Legge = {
       confidenza: 'probabile',
       noteConfidenza: 'L\'obbligo del casco è già in vigore; targa e assicurazione partono con i decreti attuativi, non ancora completati al giugno 2026.',
       fonteRegola: FONTE
+    },
+    {
+      id: 'strada-positivita-liberta-personale',
+      campiNecessari: ['eta'],
+      condizioni: [{ campo: 'eta', op: 'almeno', valore: 18 }],
+      effetto: {
+        tipo: 'diritto',
+        descrizione: 'Effetto indiretto sulla libertà personale: la nuova norma sulle droghe punisce la semplice positività al test, anche senza guida alterata. Significa che puoi perdere la patente per una sostanza assunta giorni prima, quando non eri più sotto effetto. Tocca soprattutto chi usa cannabis terapeutica o ha consumato nel tempo libero lontano dalla guida.',
+        direzione: 'negativo',
+        indiretto: true,
+        dirittoToccato: {
+          carta: 'Costituzione italiana',
+          articolo: 'artt. 13 e 27',
+          diritto: 'libertà personale e presunzione di non colpevolezza',
+          intensita: 'sensibile',
+          url: 'https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-13'
+        }
+      },
+      timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
+      confidenza: 'probabile',
+      noteConfidenza: 'Punire la positività e non lo stato di alterazione sposta la sanzione da "guidavi pericolosamente" a "hai quella sostanza nel sangue": diversi giuristi la ritengono in tensione con la libertà personale (art. 13 Cost.) e la presunzione di non colpevolezza (art. 27 Cost.). Sono attese pronunce e circolari chiarificatrici, per questo è "probabile" e non "certa".',
+      fonteRegola: FONTE
     }
   ]
 };

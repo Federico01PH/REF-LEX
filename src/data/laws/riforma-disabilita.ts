@@ -83,6 +83,28 @@ export const riformaDisabilita: Legge = {
       confidenza: 'probabile',
       noteConfidenza: 'Anche per te dipende dalla provincia fino a fine 2026; il sostegno concreto dipende dai servizi del territorio.',
       fonteRegola: FONTE
+    },
+    {
+      id: 'disabilita-dati-sanitari',
+      campiNecessari: ['disabilita'],
+      condizioni: [{ campo: 'disabilita', op: 'in', valore: ['motoria', 'visiva', 'uditiva', 'intellettiva', 'malattia-cronica'] }],
+      effetto: {
+        tipo: 'diritto',
+        descrizione: 'Effetto indiretto sui tuoi dati sanitari: la valutazione unica e il "progetto di vita" raccolgono in un solo fascicolo digitale, gestito dall\'INPS e condiviso tra i servizi, informazioni molto intime sulla tua salute, autonomia e vita quotidiana. È più comodo (una visita sola), ma concentra dati sensibili che prima erano sparsi, aumentando il peso di un eventuale uso improprio o di un accesso non autorizzato.',
+        direzione: 'misto',
+        indiretto: true,
+        dirittoToccato: {
+          carta: 'Carta UE dei diritti fondamentali',
+          articolo: 'art. 8',
+          diritto: 'protezione dei dati sanitari',
+          intensita: 'lieve',
+          url: 'https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:12012P/TXT'
+        }
+      },
+      timeline: { anno1: 'incerto', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
+      confidenza: 'probabile',
+      noteConfidenza: 'I dati sulla salute sono una "categoria particolare" protetta dal GDPR (art. 9) e dall\'art. 8 della Carta UE; il diritto alla salute è tutelato dall\'art. 32 della Costituzione. Intensità "lieve": la riforma serve ad aiutarti e il trattamento è regolato, ma concentrare dati sensibili in un unico fascicolo è di per sé un rischio in più.',
+      fonteRegola: FONTE
     }
   ]
 };

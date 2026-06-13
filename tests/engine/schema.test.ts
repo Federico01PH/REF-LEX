@@ -84,3 +84,30 @@ test('accetta effetto economico senza importo (qualitativo, es. confidenza dipen
   ok.regole[0].effetto = { tipo: 'economico', descrizione: 'd', direzione: 'positivo' } as never;
   expect(SchemaLegge.safeParse(ok).success).toBe(true);
 });
+
+test('accetta effetto indiretto con dirittoToccato ancorato a una carta', () => {
+  const ok = structuredClone(leggeValida);
+  ok.regole[0].effetto = {
+    tipo: 'diritto', descrizione: 'd', direzione: 'negativo', indiretto: true,
+    dirittoToccato: { carta: 'Costituzione italiana', articolo: 'art. 17', diritto: 'libertà di riunione', intensita: 'sensibile', url: 'https://www.normattiva.it' }
+  } as never;
+  expect(SchemaLegge.safeParse(ok).success).toBe(true);
+});
+
+test('rifiuta dirittoToccato su effetto non indiretto (deve stare tra gli effetti indiretti)', () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].effetto = {
+    tipo: 'diritto', descrizione: 'd', direzione: 'negativo',
+    dirittoToccato: { carta: 'CEDU', articolo: 'art. 8', diritto: 'vita privata', intensita: 'lieve' }
+  } as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test('rifiuta dirittoToccato con intensita fuori scala', () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].effetto = {
+    tipo: 'diritto', descrizione: 'd', direzione: 'negativo', indiretto: true,
+    dirittoToccato: { carta: 'CEDU', articolo: 'art. 8', diritto: 'vita privata', intensita: 'enorme' }
+  } as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});

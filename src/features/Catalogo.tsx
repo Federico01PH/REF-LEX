@@ -61,7 +61,21 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
           </button>
         </p>
       )}
-      <div role="group" aria-label="Filtra per argomento">
+      <section aria-label="Profilo e dati" className="card spazio">
+        <h2 style={{ fontSize: 17, marginTop: 0, marginBottom: 2 }}>I tuoi dati</h2>
+        <p className="testo-piccolo" style={{ marginTop: 0 }}>
+          Le simulazioni partono dal tuo profilo. Resta sul tuo dispositivo: puoi cambiarlo o cancellarlo quando vuoi.
+        </p>
+        <div className="riga-azioni">
+          <button className="btn btn-secondario" onClick={onModificaProfilo}>
+            <Icona nome="persona" dimensione={16} /> Modifica profilo
+          </button>
+          <button className="btn btn-secondario" onClick={onPrivacy}>
+            <Icona nome="lucchetto" dimensione={16} /> Privacy e cancellazione
+          </button>
+        </div>
+      </section>
+      <div role="group" aria-label="Filtra per argomento" className="spazio">
         {AMBITI.map((a) => (
           <button key={a.valore} className="pill" aria-pressed={ambito === a.valore}
             onClick={() => { setAmbito(a.valore); setSceltaId(''); }}>{a.etichetta}</button>
@@ -105,28 +119,28 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
         </article>
       )}
       {novita && novita.voci.length > 0 && (
-        <NovitaParlamento novita={novita}
-          onRichiedi={(titolo, url) => setRichieste(aggiungiRichiesta(titolo, url))} />
+        <div className="sezione-novita">
+          <NovitaParlamento novita={novita}
+            onRichiedi={(titolo, url) => setRichieste(aggiungiRichiesta(titolo, url))} />
+        </div>
       )}
-      <div className="griglia-due spazio">
-        <Richieste richieste={richieste}
-          onAggiungi={(titolo) => setRichieste(aggiungiRichiesta(titolo))}
-          onRimuovi={(id) => setRichieste(rimuoviRichiesta(id))} />
-        <Segnalazione />
+      <div className="sezione-minore">
+        <hr className="divisore" />
+        <p className="testo-piccolo" style={{ marginTop: 14, marginBottom: 0 }}>
+          Aiutaci a migliorare REF-LEX:
+        </p>
+        <div className="griglia-due spazio">
+          <Richieste richieste={richieste}
+            onAggiungi={(titolo) => setRichieste(aggiungiRichiesta(titolo))}
+            onRimuovi={(id) => setRichieste(rimuoviRichiesta(id))} />
+          <Segnalazione />
+        </div>
       </div>
       <p className="testo-piccolo spazio">
         {infoCatalogo.fonte === 'remoto' && infoCatalogo.generatoIl
           ? `Catalogo aggiornato automaticamente al ${dataLeggibile(infoCatalogo.generatoIl)}.`
           : 'Catalogo locale incluso nell\'app: si aggiorna da solo quando sei online.'}
       </p>
-      <div className="spazio riga-azioni">
-        <button className="btn btn-secondario" onClick={onModificaProfilo}>
-          <Icona nome="persona" dimensione={16} /> Modifica profilo
-        </button>
-        <button className="btn btn-secondario" onClick={onPrivacy}>
-          <Icona nome="lucchetto" dimensione={16} /> I tuoi dati
-        </button>
-      </div>
     </div>
   );
 }

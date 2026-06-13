@@ -32,6 +32,15 @@ a { color: var(--accento); }
 [data-theme='dark'] .badge-dipende { background: #3F2A14; color: #FFC08A; }
 .badge-europea { background: #E2EAF5; color: #14304F; }
 [data-theme='dark'] .badge-europea { background: #1C2A3D; color: #8FB4E6; }
+.badge-lieve { background: #FBF3D7; color: #6B5200; }
+.badge-sensibile { background: #FFEDDD; color: #9A4A00; }
+.badge-grave { background: #FBE0E0; color: #9A0007; }
+[data-theme='dark'] .badge-lieve { background: #3A330E; color: #E6D77B; }
+[data-theme='dark'] .badge-sensibile { background: #3F2A14; color: #FFC08A; }
+[data-theme='dark'] .badge-grave { background: #3F1414; color: #FF9A9E; }
+.diritto-toccato { display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin: 8px 0; padding: 8px 10px; border-radius: 10px; font-size: 14px;
+  background: var(--superficie); border: 1px solid var(--bordo); }
 .progress { display: flex; gap: 4px; margin: 12px 0; }
 .progress > span { flex: 1; height: 6px; border-radius: 3px; background: var(--bordo); }
 .progress > span.fatto { background: var(--verde); }
@@ -76,6 +85,16 @@ a { color: var(--accento); }
 .motto-grande { margin: 14px 0 0; font-size: clamp(19px, 3.4vw, 24px);
   font-weight: 800; max-width: 640px; line-height: 1.35;
   font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif; }
+/* nuove leggi: sezione visibilmente staccata dalla scelta delle leggi */
+.sezione-novita { margin-top: 28px; padding: 18px 16px; border-radius: var(--raggio);
+  border: 1px solid var(--bordo); border-top: 4px solid var(--accento); background: var(--superficie); }
+.sezione-novita > section { margin-top: 0; }
+/* richieste e segnalazioni: parte di servizio, più piccola e ben separata */
+.divisore { border: none; border-top: 1px solid var(--bordo); margin: 0; }
+.sezione-minore { margin-top: 32px; }
+.sezione-minore h2 { font-size: 16px; }
+.sezione-minore .card { padding: 12px; }
+.sezione-minore .testo-piccolo { font-size: 12px; }
 .lista-novita { display: grid; gap: 8px; margin-top: 10px; }
 .voce-novita { background: var(--superficie); border: 1px solid var(--bordo);
   border-radius: var(--raggio); padding: 8px 12px; box-shadow: var(--ombra); }

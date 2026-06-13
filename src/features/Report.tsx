@@ -15,6 +15,11 @@ const CONFIDENZA = {
   probabile: { classe: 'badge-probabile', parola: 'Probabile' },
   dipende: { classe: 'badge-dipende', parola: 'Dipende' }
 } as const;
+const INTENSITA = {
+  lieve: { classe: 'badge-lieve', parola: 'Compressione lieve' },
+  sensibile: { classe: 'badge-sensibile', parola: 'Compressione sensibile' },
+  grave: { classe: 'badge-grave', parola: 'Compressione grave' }
+} as const;
 
 function formattaIntervallo(min: number, max: number): string {
   const segno = (n: number) => (n > 0 ? `+${n}` : `${n}`);
@@ -36,6 +41,21 @@ function RigaEffetto({ regola }: { regola: Regola }) {
           )} al mese
         </p>
       )}
+      {regola.effetto.dirittoToccato && (() => {
+        const d = regola.effetto.dirittoToccato;
+        const ref = `${d.carta}, ${d.articolo}`;
+        return (
+          <div className="diritto-toccato">
+            <span className={`badge ${INTENSITA[d.intensita].classe}`}>{INTENSITA[d.intensita].parola}</span>
+            <span>
+              Diritto toccato: <b>{d.diritto}</b> —{' '}
+              {d.url
+                ? <a href={d.url} target="_blank" rel="noopener noreferrer">{ref}</a>
+                : ref}
+            </span>
+          </div>
+        );
+      })()}
       <button className="testo-piccolo" onClick={() => setAperta(!aperta)} aria-expanded={aperta}
         style={{ background: 'none', border: 'none', textDecoration: 'underline', color: 'var(--accento)', cursor: 'pointer', padding: 0 }}>
         {aperta ? 'Nascondi dettagli' : 'Dettagli e fonte'}

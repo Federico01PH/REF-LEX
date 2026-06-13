@@ -46,12 +46,23 @@ export type Orizzonte = 'anno1' | 'anno2' | 'anno5' | 'anno10';
 export const ORIZZONTI: Orizzonte[] = ['anno1', 'anno2', 'anno5', 'anno10'];
 export type StatoOrizzonte = 'attivo' | 'nullo' | 'incerto';
 
+// quanto una libertà/diritto è compressa, ancorata a una carta dei diritti reale
+export type IntensitaDiritto = 'lieve' | 'sensibile' | 'grave';
+export interface DirittoToccato {
+  carta: string;     // es. 'Costituzione italiana', 'CEDU', 'Carta UE dei diritti fondamentali'
+  articolo: string;  // es. 'art. 17'
+  diritto: string;   // es. 'libertà di riunione'
+  intensita: IntensitaDiritto;
+  url?: string;      // link all'articolo o alla carta
+}
+
 export interface Effetto {
   tipo: 'economico' | 'diritto' | 'dovere' | 'servizio' | 'qualita-vita';
   importoMese?: { min: number; max: number }; // € al mese, solo tipo economico
   descrizione: string;
   direzione: 'positivo' | 'negativo' | 'neutro' | 'misto';
   indiretto?: boolean; // la legge non parla di te, ma ti tocca di riflesso
+  dirittoToccato?: DirittoToccato; // rischio indiretto su un diritto/libertà; richiede indiretto: true
 }
 
 export interface Regola {

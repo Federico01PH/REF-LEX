@@ -97,6 +97,28 @@ export const assegnoInclusione: Legge = {
       [{ campo: 'fasciaIsee', op: 'eq', valore: 'da9360a15k' }],
       'La soglia ISEE per l\'Assegno di inclusione è 10.140 euro: se il tuo ISEE è tra 9.360 e 10.140 puoi rientrare; sopra, no.',
       'Il tuo ISEE è nella fascia 9.360-15.000: solo la parte fino a 10.140 dà diritto all\'assegno, e serve comunque un minorenne, una persona con disabilità o un over 60 nel nucleo.'
-    )
+    ),
+    {
+      id: 'adi-dati-condizionalita',
+      campiNecessari: ['fasciaIsee'],
+      condizioni: [{ campo: 'fasciaIsee', op: 'in', valore: ['fino9360', 'da9360a15k'] }],
+      effetto: {
+        tipo: 'diritto',
+        descrizione: 'Effetto indiretto sui tuoi dati: per ricevere l\'assegno devi consegnare allo Stato un quadro molto dettagliato della tua vita (reddito, patrimonio, immobili, conti, composizione del nucleo) e iscriverti alla piattaforma SIISL, firmando un patto di attivazione con controlli e obblighi periodici. Sono dati sensibili sulla tua condizione economica concentrati in mano pubblica, con il rischio che servano anche a profilarti o a incrociare informazioni.',
+        direzione: 'misto',
+        indiretto: true,
+        dirittoToccato: {
+          carta: 'Carta UE dei diritti fondamentali',
+          articolo: 'art. 8',
+          diritto: 'protezione dei dati personali',
+          intensita: 'lieve',
+          url: 'https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:12012P/TXT'
+        }
+      },
+      timeline: TIMELINE_STRUTTURALE,
+      confidenza: 'probabile',
+      noteConfidenza: 'È il prezzo "informativo" di quasi ogni sussidio: i dati sono trattati secondo il GDPR e devono servire solo a erogare e controllare l\'assegno (art. 8 della Carta UE dei diritti fondamentali). Intensità "lieve" perché la raccolta è prevista dalla legge e finalizzata, ma la condizionalità e i controlli restano un occhio costante sulla tua vita.',
+      fonteRegola: FONTE
+    }
   ]
 };

@@ -31,6 +31,14 @@ test('14enne: solo la regola monopattini (non può guidare auto)', () => {
   expect(r.effetti.map((e) => e.id)).toEqual(['strada-monopattini']);
 });
 
-test('i doveri sono dichiarati misti: niente finta positività', () => {
-  expect(codiceStrada.regole.every((r) => r.effetto.direzione === 'misto')).toBe(true);
+test('i doveri diretti sono dichiarati misti: niente finta positività', () => {
+  const diretti = codiceStrada.regole.filter((r) => !r.effetto.indiretto);
+  expect(diretti.every((r) => r.effetto.direzione === 'misto')).toBe(true);
+});
+
+test('include un effetto indiretto sulla libertà personale (positività droghe)', () => {
+  const ind = codiceStrada.regole.find((r) => r.id === 'strada-positivita-liberta-personale');
+  expect(ind?.effetto.indiretto).toBe(true);
+  expect(ind?.effetto.direzione).toBe('negativo');
+  expect(ind?.effetto.dirittoToccato?.intensita).toBe('sensibile');
 });

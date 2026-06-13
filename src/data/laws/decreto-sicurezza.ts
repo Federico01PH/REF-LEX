@@ -98,6 +98,50 @@ export const decretoSicurezza: Legge = {
       confidenza: 'certa',
       noteConfidenza: 'Art. 32 della legge, che modifica l\'art. 98 del Codice delle comunicazioni elettroniche. Il negozio che vende SIM senza verificare il documento rischia la chiusura da 5 a 30 giorni; usare il documento di un\'altra persona è reato.',
       fonteRegola: FONTE
+    },
+    {
+      id: 'sicurezza-liberta-manifestazione',
+      campiNecessari: ['eta'],
+      condizioni: [{ campo: 'eta', op: 'almeno', valore: 13 }],
+      effetto: {
+        tipo: 'diritto',
+        descrizione: 'Effetto indiretto sulla tua libertà di protesta: trasformare in reato il blocco stradale o ferroviario (prima era un illecito amministrativo) alza il rischio penale di forme di protesta finora tollerate, come i sit-in sulla strada. Anche se non hai mai manifestato, è il margine della libertà di tutti che si restringe: chi protesta tende ad autocensurarsi per paura della fedina penale.',
+        direzione: 'negativo',
+        indiretto: true,
+        dirittoToccato: {
+          carta: 'Costituzione italiana',
+          articolo: 'art. 17',
+          diritto: 'libertà di riunione e di manifestazione',
+          intensita: 'sensibile',
+          url: 'https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-17'
+        }
+      },
+      timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
+      confidenza: 'certa',
+      noteConfidenza: 'Manifestare resta un diritto costituzionale (art. 17 Cost.; art. 11 CEDU; art. 12 della Carta UE dei diritti fondamentali). Cambia il prezzo del dissenso: ciò che era una multa può diventare reato. Intensità "sensibile" perché colpisce una forma specifica di protesta, non il diritto di riunirsi in sé.',
+      fonteRegola: FONTE
+    },
+    {
+      id: 'sicurezza-sorveglianza-privacy',
+      campiNecessari: ['eta'],
+      condizioni: [{ campo: 'eta', op: 'almeno', valore: 13 }],
+      effetto: {
+        tipo: 'diritto',
+        descrizione: 'Effetto indiretto sulla tua riservatezza: più telecamere in città e bodycam sugli agenti significano più momenti della tua giornata ripresi e archiviati, anche se non hai fatto nulla. È una protezione in più contro i reati, ma anche più dati sui movimenti di tutti in mani pubbliche, con il rischio che vengano usati per scopi diversi da quelli iniziali.',
+        direzione: 'misto',
+        indiretto: true,
+        dirittoToccato: {
+          carta: 'Costituzione italiana',
+          articolo: 'artt. 14-15',
+          diritto: 'riservatezza e libertà delle comunicazioni',
+          intensita: 'lieve',
+          url: 'https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-14'
+        }
+      },
+      timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
+      confidenza: 'certa',
+      noteConfidenza: 'Le immagini restano soggette al GDPR e alle regole del Garante privacy (art. 8 CEDU; artt. 7-8 della Carta UE dei diritti fondamentali). Intensità "lieve": la sorveglianza degli spazi pubblici è ammessa se proporzionata, ma più dispositivi significano più dati e più possibili usi futuri.',
+      fonteRegola: FONTE
     }
   ]
 };

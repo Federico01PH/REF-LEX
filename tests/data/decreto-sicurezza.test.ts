@@ -49,3 +49,14 @@ test('le regole su sorveglianza e proteste sono dichiarate "misto", non vendute 
   expect(sorveglianza.effetto.direzione).toBe('misto');
   expect(proteste.effetto.direzione).toBe('misto');
 });
+
+test('effetto indiretto sulla libertà di manifestazione, ancorato all\'art. 17 Cost.', () => {
+  const p: Profilo = { schemaVersion: 1, eta: 30 };
+  const r = simula(p, decretoSicurezza);
+  const lib = r.effetti.find((e) => e.id === 'sicurezza-liberta-manifestazione');
+  expect(lib).toBeDefined();
+  expect(lib!.effetto.indiretto).toBe(true);
+  expect(lib!.effetto.direzione).toBe('negativo');
+  expect(lib!.effetto.dirittoToccato?.articolo).toBe('art. 17');
+  expect(lib!.effetto.dirittoToccato?.intensita).toBe('sensibile');
+});
