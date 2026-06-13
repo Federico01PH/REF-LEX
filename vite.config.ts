@@ -8,16 +8,20 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icon.svg'],
+      includeAssets: ['favicon.png', 'apple-touch-icon.png'],
       manifest: {
         name: 'REF-LEX — Le leggi e la tua vita',
         short_name: 'REF-LEX',
         description: 'Scopri come le leggi cambiano la tua vita. Anonimo, i dati restano sul tuo dispositivo.',
         lang: 'it',
-        theme_color: '#1A3A8F',
-        background_color: '#F2F5FB',
+        theme_color: '#0E2433',
+        background_color: '#FFFFFF',
         display: 'standalone',
-        icons: [{ src: 'icon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any maskable' }]
+        icons: [
+          { src: 'icona-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: 'icona-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+          { src: 'icona-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
+        ]
       }
     })
   ],
