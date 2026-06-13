@@ -1,5 +1,5 @@
 {
-  "versione": 6,
+  "versione": 7,
   "generatoIl": "2026-06-13",
   "leggi": [
     {
@@ -2199,6 +2199,176 @@
           "fonteRegola": {
             "etichetta": "DL 30 aprile 2026, n. 62 - Decreto Lavoro \"salario giusto\" (Normattiva)",
             "url": "https://www.normattiva.it/eli/id/2026/04/30/26G00082/ORIGINAL"
+          }
+        }
+      ]
+    },
+    {
+      "id": "legge-elettorale-2026",
+      "titoloDivulgativo": "Nuova legge elettorale: proporzionale con premio di maggioranza",
+      "titoloUfficiale": "Proposta di legge A.C. 2822 (Bignami) - Disposizioni in materia di elezione della Camera dei deputati e del Senato della Repubblica (\"Bignami bis\"/\"Stabilicum\")",
+      "stato": "discussione",
+      "ambito": "doveri",
+      "fonti": [
+        {
+          "etichetta": "Camera dei deputati - A.C. 2822 (Bignami), iter e testo",
+          "url": "https://www.camera.it/leg19/126?idDocumento=2822&leg=19"
+        }
+      ],
+      "verificataIl": "2026-06-13",
+      "riassunto": "Una proposta di legge (non ancora approvata) per cambiare come si vota in Italia. Spariscono i collegi uninominali: si torna a un sistema proporzionale, senza voto di preferenza. Chi arriva primo, se supera il 42% in entrambe le Camere, riceve un premio di seggi (70 alla Camera, 35 al Senato) per avere una maggioranza stabile, con un tetto di circa il 60%. Le coalizioni indicano il nome del candidato premier. In discussione alla Camera dal 26 giugno 2026.",
+      "regole": [
+        {
+          "id": "elettorale-come-voti",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Se la proposta diventa legge, cambia come voti: niente più collegi uninominali (non scegli più un singolo candidato del tuo territorio), torna il sistema proporzionale e non ci sono voti di preferenza, quindi scegli la lista ma non la persona. Le coalizioni devono indicare in anticipo il nome che propongono come Presidente del Consiglio.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "È una proposta (A.C. 2822, testo base \"Bignami bis\"), non ancora legge: in discussione alla Camera dal 26 giugno 2026 e modificabile con gli emendamenti. Resta la soglia di sbarramento del 3% per entrare in Parlamento.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati - A.C. 2822 (Bignami), iter e testo",
+            "url": "https://www.camera.it/leg19/126?idDocumento=2822&leg=19"
+          }
+        },
+        {
+          "id": "elettorale-premio-governabilita",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto indiretto sul peso del tuo voto: il \"premio di governabilità\" assegna 70 seggi in più alla Camera e 35 al Senato alla coalizione che arriva prima, se supera il 42% dei voti in entrambe le Camere. Serve a dare governi più stabili, ma vuol dire che chi vince ottiene molti più seggi della sua percentuale di voti, e chi vota per gli altri pesa di meno. C'è un tetto: la maggioranza non può superare circa il 60% dei seggi.",
+            "direzione": "misto",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 48",
+              "diritto": "eguaglianza del voto",
+              "intensita": "sensibile",
+              "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-iv/articolo-48"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "La Corte costituzionale ha già bocciato premi di maggioranza troppo sproporzionati: sentenza 1/2014 sul \"Porcellum\" e 35/2017 sull'\"Italicum\". Qui una soglia (42%) e un tetto ai seggi sono pensati per rispettarle, ma l'eguaglianza del voto (art. 48 Cost.) resta al centro del dibattito; inoltre parte degli eletti col premio (\"listone\") potrebbe non essere riconoscibile sulla scheda. Proposta non ancora approvata.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati - A.C. 2822 (Bignami), iter e testo",
+            "url": "https://www.camera.it/leg19/126?idDocumento=2822&leg=19"
+          }
+        }
+      ]
+    },
+    {
+      "id": "premierato-2026",
+      "titoloDivulgativo": "Premierato: l'elezione diretta del Presidente del Consiglio",
+      "titoloUfficiale": "Disegno di legge costituzionale S. 935 (C. 1921) - Modifiche alla parte seconda della Costituzione per l'elezione diretta del Presidente del Consiglio dei ministri",
+      "stato": "discussione",
+      "ambito": "doveri",
+      "fonti": [
+        {
+          "etichetta": "Senato della Repubblica - DDL costituzionale S. 935 (premierato), scheda e iter",
+          "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=57694"
+        }
+      ],
+      "verificataIl": "2026-06-13",
+      "riassunto": "Una riforma della Costituzione (non ancora definitiva) per far eleggere direttamente dai cittadini il Presidente del Consiglio, insieme al Parlamento, con un mandato di 5 anni. Oggi invece il Presidente del Consiglio è nominato dal Presidente della Repubblica dopo le elezioni. La riforma rafforza la stabilità del governo e abolisce i senatori a vita nominati dal Capo dello Stato. Il Senato l'ha approvata il 18 giugno 2024; ora è alla Camera. Per diventare legge servirà un referendum.",
+      "regole": [
+        {
+          "id": "premierato-elezione-diretta",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Se la riforma viene approvata e confermata dal referendum, potrai eleggere direttamente il Presidente del Consiglio insieme alle Camere, con un mandato di 5 anni. Oggi invece il Presidente del Consiglio non lo scegli col voto: lo nomina il Presidente della Repubblica dopo le elezioni. Avresti quindi più voce diretta su chi guida il governo.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Riforma costituzionale (DDL S. 935): approvata dal Senato il 18 giugno 2024, ora all'esame della Camera (C. 1921). Per le riforme costituzionali serve la doppia approvazione conforme di entrambe le Camere e poi, di norma, un referendum confermativo, che NON ha bisogno di quorum.",
+          "fonteRegola": {
+            "etichetta": "Senato della Repubblica - DDL costituzionale S. 935 (premierato), scheda e iter",
+            "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=57694"
+          }
+        },
+        {
+          "id": "premierato-equilibrio-poteri",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto indiretto sulle garanzie costituzionali: insieme all'elezione diretta, la riforma dà al premier una maggioranza garantita, riduce i poteri del Presidente della Repubblica (per esempio sullo scioglimento delle Camere e sulla nomina del governo) e abolisce i senatori a vita di nomina presidenziale. Per chi la sostiene è più stabilità e una scelta più chiara; per chi la critica sono meno contrappesi a chi governa.",
+            "direzione": "misto",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 1",
+              "diritto": "sovranità popolare ed equilibrio tra i poteri",
+              "intensita": "sensibile",
+              "url": "https://www.senato.it/istituzione/la-costituzione/principi-fondamentali/articolo-1"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "La riforma modifica gli artt. 59, 88, 92 e 94 della Costituzione. Il punto più discusso è l'equilibrio tra i poteri: meno margini per il Presidente della Repubblica come garante e una maggioranza assicurata al governo. È un giudizio politico, non tecnico: REF-LEX ti segnala il tema, non ti dice come votare. Riforma non ancora definitiva: servirà il referendum.",
+          "fonteRegola": {
+            "etichetta": "Senato della Repubblica - DDL costituzionale S. 935 (premierato), scheda e iter",
+            "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=57694"
           }
         }
       ]
