@@ -11,9 +11,10 @@ import { aiAct } from './ai-act';
 import { decretoSicurezza } from './decreto-sicurezza';
 import { codiceStrada } from './codice-strada';
 import { iusItaliae } from './ius-italiae';
+import { decretoLavoro } from './decreto-lavoro-2026';
 
 export const CATALOGO: Legge[] = [
   cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione,
   caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea, aiAct, decretoSicurezza,
-  codiceStrada, iusItaliae
+  codiceStrada, iusItaliae, decretoLavoro
 ];
