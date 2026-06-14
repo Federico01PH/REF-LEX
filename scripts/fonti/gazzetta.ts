@@ -1,6 +1,6 @@
 import { XMLParser } from 'fast-xml-parser';
 import { SchemaNovita, type Novita } from '../../src/engine/novita';
-import { decodificaEntita, tronca } from './testo';
+import { decodificaEntita } from './testo';
 
 export const URL_FONTE = 'https://www.gazzettaufficiale.it/rss/SG';
 
@@ -115,11 +115,11 @@ export function analizzaGazzetta(xml: string): Novita[] {
     const matchEli = urlFinal.match(/eli\/id\/[\d/]+\/([A-Z0-9]+)\/SG/);
     const codice = matchEli ? matchEli[1] : urlFinal.split('/').filter(Boolean).pop() ?? 'sconosciuto';
 
-    const troncato = tronca(titoloCompleto);
-
+    // titolo intero: l'accorciamento avviene a video (titoloNovitaBreve), col testo
+    // completo nella tendina. Salvarlo troncato perdeva pezzi di titolo (come camera/senato).
     voci.push(SchemaNovita.parse({
       id: `gazzetta-${codice}`,
-      titolo: troncato,
+      titolo: titoloCompleto,
       tipo: 'gazzetta',
       stato: 'approvata',
       data,

@@ -27,6 +27,15 @@ test('gazzetta: esclude gli atti non normativi (comunicati, determine, decreti m
   }
 });
 
+test('gazzetta: salva i titoli interi senza troncarli', () => {
+  const voci = analizzaGazzetta(fixture('gazzetta.xml'));
+  for (const v of voci) {
+    expect(v.titolo.endsWith('…')).toBe(false);
+  }
+  // la fixture contiene un atto con descrizione lunga (>160 char): deve restare intero
+  expect(voci.some((v) => v.titolo.length > 160)).toBe(true);
+});
+
 test('camera: estrae voci valide', () => {
   const voci = analizzaCamera(JSON.parse(fixture('camera.json')));
   expect(voci.length).toBeGreaterThan(0);
