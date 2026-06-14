@@ -9,6 +9,7 @@ import { Segnalazione } from './Segnalazione';
 import { aggiungiRichiesta, caricaRichieste, rimuoviRichiesta } from '../storage/richieste';
 import { dataLeggibile } from '../ui/formato';
 import { Marchio } from '../ui/Marchio';
+import { ComboboxLeggi } from '../ui/ComboboxLeggi';
 
 const STATI: Record<StatoLegge, { etichetta: string; colore: string }> = {
   vigore: { etichetta: 'In vigore', colore: 'var(--verde)' },
@@ -86,16 +87,12 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
         </div>
       </div>
       <div className="card spazio">
-        <label htmlFor="scelta-legge" style={{ display: 'block', fontWeight: 800, marginBottom: 8 }}>
-          Scegli la legge da simulare
-        </label>
-        <select id="scelta-legge" className="tendina" value={sceltaId}
-          onChange={(e) => setSceltaId(e.target.value)}>
-          <option value="">Apri l'elenco e scegli…</option>
-          {visibili.map((l) => (
-            <option key={l.id} value={l.id}>{l.titoloDivulgativo} — {STATI[l.stato].etichetta}</option>
-          ))}
-        </select>
+        <ComboboxLeggi
+          leggi={visibili}
+          valoreId={sceltaId}
+          onScegli={(id) => setSceltaId(id)}
+          etichettaStato={(l) => STATI[l.stato].etichetta}
+        />
         {visibili.length === 0 && (
           <p className="testo-piccolo" style={{ marginBottom: 0 }}>
             Per questo argomento non abbiamo ancora leggi nel catalogo: stanno arrivando.

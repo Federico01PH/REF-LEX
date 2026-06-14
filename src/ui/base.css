@@ -56,6 +56,17 @@ a { color: var(--accento); }
   background: var(--superficie); border: 2px solid var(--accento);
   border-radius: var(--raggio); cursor: pointer; }
 [data-theme='dark'] .tendina { border-color: var(--accento); }
+/* item 5: tendina ricercabile (combobox con typeahead) */
+.combobox { position: relative; }
+.combobox-lista { position: absolute; z-index: 20; left: 0; right: 0; margin: 4px 0 0;
+  list-style: none; padding: 4px; max-height: 320px; overflow-y: auto;
+  background: var(--superficie); border: 2px solid var(--accento);
+  border-radius: var(--raggio); box-shadow: var(--ombra); }
+.combobox-opt { padding: 10px 12px; border-radius: 10px; cursor: pointer; font-size: 16px; }
+.combobox-opt.attivo { background: var(--superficie-2); }
+.combobox-opt[aria-selected='true'] { font-weight: 700; }
+.combobox-stato { color: var(--testo-2); font-size: 14px; }
+.combobox-vuoto { padding: 10px 12px; color: var(--testo-2); }
 .griglia-novita { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 12px; }
 .riga-azioni { display: flex; gap: 8px; flex-wrap: wrap; }
 .riga-azioni > .btn { flex: 1; min-width: 200px; }
