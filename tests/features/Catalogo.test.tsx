@@ -23,6 +23,11 @@ async function scegliLegge(nome: RegExp) {
   await userEvent.click(screen.getByRole('option', { name: nome }));
 }
 
+test('la scelta della legge ha un titolo in evidenza che la fa risaltare', () => {
+  renderCatalogo();
+  expect(screen.getByRole('heading', { name: /quale legge vuoi capire/i })).toBeInTheDocument();
+});
+
 test('aprendo la tendina ricercabile si vedono i titoli semplici con lo stato', async () => {
   renderCatalogo();
   await apriElenco();

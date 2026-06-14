@@ -113,6 +113,12 @@ a { color: var(--accento); }
 .motto-grande { margin: 14px 0 0; font-size: clamp(19px, 3.4vw, 24px);
   font-weight: 800; max-width: 640px; line-height: 1.35;
   font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif; }
+/* scelta legge: e' l'azione principale, deve saltare all'occhio piu' del resto */
+.scelta-legge { padding: 22px 20px; border-radius: var(--raggio);
+  border: 2px solid var(--accento); background: var(--superficie-2); box-shadow: var(--ombra); }
+.scelta-legge-titolo { font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  font-size: 26px; line-height: 1.2; margin: 0 0 12px; color: var(--testo); }
+.scelta-legge-campo { margin-top: 14px; }
 /* nuove leggi: sezione visibilmente staccata dalla scelta delle leggi */
 .sezione-novita { margin-top: 28px; padding: 18px 16px; border-radius: var(--raggio);
   border: 1px solid var(--bordo); border-top: 4px solid var(--accento); background: var(--superficie); }

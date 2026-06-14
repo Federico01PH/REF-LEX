@@ -84,28 +84,29 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
           </button>
         </div>
       </section>
-      <div className="spazio">
-        <p className="etichetta-filtri">Filtra per argomento, poi scegli la legge qui sotto:</p>
+      <section className="scelta-legge spazio" aria-label="Scegli una legge da simulare">
+        <h2 className="scelta-legge-titolo">Quale legge vuoi capire?</h2>
+        <p className="etichetta-filtri">Filtra per argomento, poi scegli la legge:</p>
         <div role="group" aria-label="Filtra per argomento">
           {AMBITI.map((a) => (
             <button key={a.valore} className="pill" aria-pressed={ambito === a.valore}
               onClick={() => { setAmbito(a.valore); setSceltaId(''); }}>{a.etichetta}</button>
           ))}
         </div>
-      </div>
-      <div className="card spazio">
-        <ComboboxLeggi
-          leggi={visibili}
-          valoreId={sceltaId}
-          onScegli={(id) => setSceltaId(id)}
-          etichettaStato={(l) => STATI[l.stato].etichetta}
-        />
-        {visibili.length === 0 && (
-          <p className="testo-piccolo" style={{ marginBottom: 0 }}>
-            Per questo argomento non abbiamo ancora leggi nel catalogo: stanno arrivando.
-          </p>
-        )}
-      </div>
+        <div className="scelta-legge-campo">
+          <ComboboxLeggi
+            leggi={visibili}
+            valoreId={sceltaId}
+            onScegli={(id) => setSceltaId(id)}
+            etichettaStato={(l) => STATI[l.stato].etichetta}
+          />
+          {visibili.length === 0 && (
+            <p className="testo-piccolo" style={{ marginBottom: 0 }}>
+              Per questo argomento non abbiamo ancora leggi nel catalogo: stanno arrivando.
+            </p>
+          )}
+        </div>
+      </section>
       {scelta && (
         <article className="card spazio" style={{ borderLeft: `4px solid ${STATI[scelta.stato].colore}` }}>
           <span className="testo-piccolo" style={{ fontWeight: 800, color: STATI[scelta.stato].colore }}>
