@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ref-lex.netlify.app/sitemap.xml
+Sitemap: https://ref-lex.vercel.app/sitemap.xml

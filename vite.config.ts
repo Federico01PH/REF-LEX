@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-// Sito servito nella radice del dominio (Netlify: ref-lex.netlify.app).
+// Sito servito nella radice del dominio (Vercel: ref-lex.vercel.app).
 export default defineConfig({
   base: '/',
   plugins: [
