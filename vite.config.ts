@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: 'prompt',
       includeAssets: ['favicon.png', 'apple-touch-icon.png'],
       manifest: {
         name: 'REF-LEX — Le leggi e la tua vita',

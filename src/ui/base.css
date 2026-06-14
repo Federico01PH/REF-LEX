@@ -157,3 +157,9 @@ a { color: var(--accento); }
 .spazio { margin-top: 16px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+/* bugfix #3: avvisa quando il service worker ha pronta una nuova versione */
+.banner-aggiornamento { position: sticky; top: 0; z-index: 10;
+  display: flex; gap: 12px; align-items: center; justify-content: center; flex-wrap: wrap;
+  padding: 10px 16px; margin: 0 0 12px; background: var(--superficie);
+  border: 1px solid var(--bordo); border-radius: var(--raggio); box-shadow: var(--ombra); }
+.btn-piccolo { width: auto; min-height: 40px; padding: 8px 16px; font-size: 15px; }

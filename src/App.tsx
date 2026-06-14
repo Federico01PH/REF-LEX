@@ -12,6 +12,8 @@ import { Report } from './features/Report';
 import { Empatia } from './features/Empatia';
 import { Privacy } from './features/Privacy';
 import { AvvisoLeggeMancante } from './ui/AvvisoLeggeMancante';
+import { BannerAggiornamento } from './ui/BannerAggiornamento';
+import { useAggiornamentoPwa } from './pwa/useAggiornamentoPwa';
 
 type Vista =
   | { nome: 'home' } | { nome: 'wizard'; esploratore: boolean }
@@ -24,6 +26,8 @@ export default function App() {
   // l'app si apre sempre dalla home: il marchio e la missione, poi un bottone porta alle simulazioni
   const [vista, setVista] = useState<Vista>({ nome: 'home' });
   const [tema, setTema] = useState<string>(() => caricaTema());
+
+  const aggiornamento = useAggiornamentoPwa();
 
   const [catalogo, setCatalogo] = useState<Legge[]>(CATALOGO);
   const [infoCatalogo, setInfoCatalogo] = useState<{ fonte: 'locale' | 'remoto'; generatoIl?: string }>({ fonte: 'locale' });
@@ -50,6 +54,7 @@ export default function App() {
 
   return (
     <main>
+      <BannerAggiornamento pronto={aggiornamento.pronto} onAggiorna={aggiornamento.aggiorna} />
       {vista.nome === 'home' && (
         <Home haProfilo={profilo !== null} nome={profilo?.nome}
           onAvanti={() => setVista(profilo ? { nome: 'catalogo' } : { nome: 'wizard', esploratore: false })}
