@@ -1,29 +1,53 @@
 {
-  "generatoIl": "2026-06-11",
+  "generatoIl": "2026-06-14",
   "voci": [
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e…",
-      "tipo": "camera",
+      "id": "senato-60214",
+      "titolo": "Conversione in legge del decreto-legge 12 giugno 2026, n. 100, recante misure urgenti in materia di giustizia per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
+      "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-06-11",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
-    },
-    {
-      "id": "camera-1624",
-      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo…",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-06-11",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+      "data": "2026-06-12",
+      "url": "https://dati.senato.it/ddl/60214"
     },
     {
       "id": "senato-60201",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 aprile 2026, n. 62, recante disposizioni urgenti in materia di salario giusto, di incentivi…",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 aprile 2026, n. 62, recante disposizioni urgenti in materia di salario giusto, di incentivi all'occupazione e di contrasto del caporalato digitale",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-06-11",
       "url": "https://dati.senato.it/ddl/60201"
+    },
+    {
+      "id": "senato-60202",
+      "titolo": "Istituzione delle sezioni specializzate in materia digitale e modifiche al decreto legislativo 27 giugno 2003, n. 168",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-11",
+      "url": "https://dati.senato.it/ddl/60202"
+    },
+    {
+      "id": "senato-60204",
+      "titolo": "Disciplina dell'educazione permanente e della formazione degli adulti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-11",
+      "url": "https://dati.senato.it/ddl/60204"
+    },
+    {
+      "id": "senato-60205",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 aprile 2026, n. 63, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della crisi dei mercati internazionali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-11",
+      "url": "https://dati.senato.it/ddl/60205"
+    },
+    {
+      "id": "senato-60207",
+      "titolo": "Ratifica ed esecuzione della Dichiarazione congiunta relativa all'Accordo di cooperazione nel settore della difesa tra il Governo della Repubblica Italiana e il Governo della Repubblica Algerina Democratica e Popolare, fatto a Roma il 15 maggio 2003, fatta a Roma il 23 luglio 2025",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-11",
+      "url": "https://dati.senato.it/ddl/60207"
     },
     {
       "id": "senato-60199",
@@ -34,108 +58,68 @@
       "url": "https://dati.senato.it/ddl/60199"
     },
     {
+      "id": "senato-60206",
+      "titolo": "Disposizioni in materia di corresponsione della retribuzione su conto corrente intestato al lavoratore",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-10",
+      "url": "https://dati.senato.it/ddl/60206"
+    },
+    {
+      "id": "senato-60209",
+      "titolo": "Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica italiana e il Governo dello Stato del Kuwait sulla cooperazione nel settore della difesa, fatto a Roma il 13 gennaio 2026",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-10",
+      "url": "https://dati.senato.it/ddl/60209"
+    },
+    {
+      "id": "senato-60212",
+      "titolo": "Ratifica ed esecuzione dello Scambio di Note verbali, fatto al Cairo il 3 agosto ed il 10 settembre 2025, concernenti la proroga di validità del Memorandum d'intesa tra il Ministero della difesa della Repubblica italiana ed il Ministero della difesa della Repubblica Araba d'Egitto sulla cooperazione nel settore della difesa, fatto a Roma il 23 marzo 1998",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-10",
+      "url": "https://dati.senato.it/ddl/60212"
+    },
+    {
+      "id": "senato-60213",
+      "titolo": "Disposizioni in materia di detenzione domiciliare per il recupero dei detenuti tossicodipendenti o alcoldipendenti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-10",
+      "url": "https://dati.senato.it/ddl/60213"
+    },
+    {
+      "id": "senato-60210",
+      "titolo": "Ratifica ed esecuzione dei Trattati di estradizione, trasferimento delle persone condannate e assistenza giudiziaria in materia penale tra la Repubblica italiana e la Repubblica Socialista del Vietnam, fatti a Roma il 18 e il 26 luglio 2023",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-10",
+      "url": "https://dati.senato.it/ddl/60210"
+    },
+    {
+      "id": "senato-60208",
+      "titolo": "Ratifica ed esecuzione dell'Accordo di partenariato economico interinale tra la Costa D'Avorio, da una parte, e la Comunità europea e i suoi Stati membri, dall'altra, con Allegati, fatto ad Abidjan, il ventisei novembre 2008, e a Bruxelles, il ventidue gennaio 2009, rispettivamente",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-10",
+      "url": "https://dati.senato.it/ddl/60208"
+    },
+    {
+      "id": "senato-60211",
+      "titolo": "Ratifica ed esecuzione del Trattato sul trasferimento delle persone condannate tra la Repubblica italiana e la Repubblica del Paraguay, fatto ad Assunzione il 7 luglio 2023",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-10",
+      "url": "https://dati.senato.it/ddl/60211"
+    },
+    {
       "id": "senato-60200",
-      "titolo": "Modifiche alla legge 4 agosto 1984, n. 464, concernenti l'obbligo di trasmissione delle informazioni e della documentazione relative a cavità sotterranee…",
+      "titolo": "Modifiche alla legge 4 agosto 1984, n. 464, concernenti l'obbligo di trasmissione delle informazioni e della documentazione relative a cavità sotterranee naturali o artificiali all'Istituto superiore per la protezione e la ricerca ambientale",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-06-09",
       "url": "https://dati.senato.it/ddl/60200"
-    },
-    {
-      "id": "senato-60195",
-      "titolo": "Disposizioni per garantire identità documentale, continuità amministrativa, mobilità essenziale e continuità del soggiorno dei minori in affidamento familiare…",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-09",
-      "url": "https://dati.senato.it/ddl/60195"
-    },
-    {
-      "id": "senato-60194",
-      "titolo": "Disposizioni in materia di welfare aziendale e asili nido",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-09",
-      "url": "https://dati.senato.it/ddl/60194"
-    },
-    {
-      "id": "senato-60196",
-      "titolo": "Disposizione per la ricerca delle persone scomparse e il diritto all'identità dei cadaveri senza nome",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-09",
-      "url": "https://dati.senato.it/ddl/60196"
-    },
-    {
-      "id": "senato-60197",
-      "titolo": "Istituzione dei \"Distretti Termali\" quali Zone Franche Urbane nei territori a vocazione termale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-09",
-      "url": "https://dati.senato.it/ddl/60197"
-    },
-    {
-      "id": "senato-60198",
-      "titolo": "Disposizioni per la promozione della comunità educante quale strumento di partecipazione civile, inclusione e socialità dei giovani",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-09",
-      "url": "https://dati.senato.it/ddl/60198"
-    },
-    {
-      "id": "senato-60187",
-      "titolo": "Delega al Governo in materia di energia nucleare sostenibile",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-08",
-      "url": "https://dati.senato.it/ddl/60187"
-    },
-    {
-      "id": "senato-60191",
-      "titolo": "Introduzione dell'articolo 148-bis del codice dei beni culturali e del paesaggio, di cui al decreto legislativo 22 gennaio 2004, n. 42, concernente l'obbligo…",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-08",
-      "url": "https://dati.senato.it/ddl/60191"
-    },
-    {
-      "id": "senato-60193",
-      "titolo": "Riconoscimento del carattere usurante del lavoro degli internavigatori ai fini del pensionamento anticipato. Modifica all'articolo 1, comma 1, lettera d), del…",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-08",
-      "url": "https://dati.senato.it/ddl/60193"
-    },
-    {
-      "id": "senato-60188",
-      "titolo": "Modifiche al decreto legislativo 8 giugno 2001, n. 231, in materia di responsabilità delle persone giuridiche, delle società e delle associazioni, anche prive…",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-05",
-      "url": "https://dati.senato.it/ddl/60188"
-    },
-    {
-      "id": "senato-60182",
-      "titolo": "Ratifica ed esecuzione dei Trattati di estradizione, di mutua assistenza in materia penale e sul trasferimento delle persone condannate tra la Repubblica…",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-05",
-      "url": "https://dati.senato.it/ddl/60182"
-    },
-    {
-      "id": "senato-60190",
-      "titolo": "Riconoscimento del carattere usurante del lavoro degli internavigatori ai fini del pensionamento anticipato. Modifica all'articolo 1, comma 1, lettera d), del…",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-05",
-      "url": "https://dati.senato.it/ddl/60190"
-    },
-    {
-      "id": "senato-60180",
-      "titolo": "Disposizioni per il sostegno delle microimprese e delle imprese artigiane nella transizione verso il salario minimo legale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-04",
-      "url": "https://dati.senato.it/ddl/60180"
     }
   ]
 }

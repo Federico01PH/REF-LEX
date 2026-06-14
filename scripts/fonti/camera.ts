@@ -1,5 +1,5 @@
 import { SchemaNovita, type Novita } from '../../src/engine/novita';
-import { decodificaEntita, tronca } from './testo';
+import { decodificaEntita } from './testo';
 
 // Query SPARQL verificata live su dati.camera.it/sparql (2026-06-11).
 // Seleziona gli atti della legislatura 19 ordinati per data di ultima modifica
@@ -107,13 +107,13 @@ export function analizzaCamera(jsonSparql: unknown): Novita[] {
 
     if (!titoloNetto) continue;
 
-    const troncato = tronca(titoloNetto);
-
     const url = `https://www.camera.it/leg19/126?leg=19&idDocumento=${encodeURIComponent(numeroRaw)}`;
 
     voci.push(SchemaNovita.parse({
       id: `camera-${numeroRaw}`,
-      titolo: troncato,
+      // titolo intero: l'accorciamento avviene a video (titoloNovitaBreve), col testo
+      // completo nella tendina. Salvarlo troncato perdeva pezzi di titolo.
+      titolo: titoloNetto,
       tipo: 'camera',
       stato: 'discussione',
       data,

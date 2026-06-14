@@ -33,21 +33,34 @@ async function main() {
   const radice = join(dirname(fileURLToPath(import.meta.url)), '..');
   const cartella = join(radice, 'public', 'dati');
 
-  // Tutte le fonti devono riuscire: un fallimento blocca la pubblicazione
-  // (mai dati parziali silenziosi).
-  const [gazzetta, camera, senato] = await Promise.all([
-    scarica(URL_GAZZETTA, 'application/rss+xml, application/xml, */*')
-      .then(analizzaGazzetta),
-    scarica(URL_CAMERA, 'application/sparql-results+json')
-      .then((t) => analizzaCamera(JSON.parse(t))),
-    scarica(URL_SENATO, 'application/sparql-results+json')
-      .then((t) => analizzaSenato(JSON.parse(t))),
-  ]);
+  // Resiliente: se una fonte non e disponibile (es. la Camera blocca spesso il
+  // fetch automatico con una pagina anti-bot) la SALTIAMO con un avviso rumoroso,
+  // invece di bloccare l'intero aggiornamento. Cosi il feed resta fresco con le
+  // fonti che rispondono. Serve pero' almeno una fonte: mai un feed vuoto silenzioso.
+  async function provaFonte(nome: string, fn: () => Promise<Novita[]>): Promise<Novita[]> {
+    try {
+      const voci = await fn();
+      console.log(`${nome}: ${voci.length} voci`);
+      return voci;
+    } catch (e) {
+      console.warn(`AVVISO — fonte "${nome}" non disponibile, la salto: ${(e as Error).message}`);
+      return [];
+    }
+  }
 
-  const file = SchemaNovitaFile.parse({
-    generatoIl: oggi,
-    voci: unisci(gazzetta, camera, senato),
-  });
+  const gazzetta = await provaFonte('gazzetta', () =>
+    scarica(URL_GAZZETTA, 'application/rss+xml, application/xml, */*').then(analizzaGazzetta));
+  const camera = await provaFonte('camera', () =>
+    scarica(URL_CAMERA, 'application/sparql-results+json').then((t) => analizzaCamera(JSON.parse(t))));
+  const senato = await provaFonte('senato', () =>
+    scarica(URL_SENATO, 'application/sparql-results+json').then((t) => analizzaSenato(JSON.parse(t))));
+
+  const voci = unisci(gazzetta, camera, senato);
+  if (voci.length === 0) {
+    throw new Error('Nessuna fonte disponibile: feed non aggiornato (tutte le fonti hanno fallito).');
+  }
+
+  const file = SchemaNovitaFile.parse({ generatoIl: oggi, voci });
 
   mkdirSync(cartella, { recursive: true });
   writeFileSync(join(cartella, 'novita.json'), JSON.stringify(file, null, 2), 'utf8');

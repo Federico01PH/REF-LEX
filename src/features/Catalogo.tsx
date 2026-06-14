@@ -123,7 +123,7 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
       )}
       {novita && novita.voci.length > 0 && (
         <div className="sezione-novita">
-          <NovitaParlamento novita={novita}
+          <NovitaParlamento novita={novita} ambito={ambito}
             onRichiedi={(titolo, url) => setRichieste(aggiungiRichiesta(titolo, url))} />
         </div>
       )}

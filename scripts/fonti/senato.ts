@@ -1,5 +1,4 @@
 import { SchemaNovita, type Novita } from '../../src/engine/novita';
-import { tronca } from './testo';
 
 // Query SPARQL verificata live su dati.senato.it/sparql (2026-06-11).
 // Seleziona i disegni di legge della legislatura 19 ordinati per
@@ -82,15 +81,15 @@ export function analizzaSenato(jsonSparql: unknown): Novita[] {
     const id = estraiIdDdl(ddlUri);
     if (!id) continue;
 
-    const troncato = tronca(titoloRaw);
-
     // dati.senato.it fornisce un URI RDF. Con schema https il server
     // reindirizza a una pagina HTML leggibile sul sito istituzionale.
     const url = ddlUri.replace(/^http:\/\//, 'https://');
 
     voci.push(SchemaNovita.parse({
       id: `senato-${id}`,
-      titolo: troncato,
+      // titolo intero: l'accorciamento avviene a video (titoloNovitaBreve), col testo
+      // completo nella tendina. Salvarlo troncato perdeva pezzi di titolo.
+      titolo: titoloRaw,
       tipo: 'senato',
       stato: 'discussione',
       data: dataPresentazione,

@@ -1,4 +1,4 @@
-import { SchemaNovitaFile, SchemaCatalogoRemoto } from '../../src/engine/novita';
+import { SchemaNovitaFile, SchemaCatalogoRemoto, ambitiNovita } from '../../src/engine/novita';
 import { CATALOGO } from '../../src/data/laws';
 import { VERSIONE_CATALOGO } from '../../src/data/laws/versione';
 
@@ -32,6 +32,15 @@ test('rifiuta url con schemi pericolosi (solo http/https)', () => {
 test('rifiuta più di 20 voci', () => {
   const troppe = { ...novitaValida, voci: Array.from({ length: 21 }, (_, i) => ({ ...novitaValida.voci[0], id: `v${i}` })) };
   expect(SchemaNovitaFile.safeParse(troppe).success).toBe(false);
+});
+
+test('ambitiNovita classifica il titolo dal contenuto (parole chiave)', () => {
+  expect(ambitiNovita('Disposizioni in materia di welfare aziendale e asili nido')).toContain('pensioni-welfare');
+  expect(ambitiNovita('Delega al Governo in materia di energia nucleare sostenibile')).toContain('ambiente');
+  expect(ambitiNovita('Istituzione dei "Distretti Termali" quali Zone Franche Urbane')).toContain('turismo');
+  expect(ambitiNovita('Introduzione dell\'articolo 148-bis del codice dei beni culturali e del paesaggio')).toContain('arte');
+  // un titolo generico che non tocca nessun argomento noto resta senza ambiti (solo "Tutte")
+  expect(ambitiNovita('Disposizioni varie e finali')).toHaveLength(0);
 });
 
 test('il catalogo incorporato serializzato rispetta SchemaCatalogoRemoto', () => {

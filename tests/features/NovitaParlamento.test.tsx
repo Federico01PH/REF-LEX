@@ -45,6 +45,17 @@ test('con tante voci ne mostra solo 3 e un bottone per vederle tutte', async () 
   expect(screen.getAllByRole('article')).toHaveLength(3);
 });
 
+test('filtrando per argomento restano solo le novità di quell\'ambito', () => {
+  render(<NovitaParlamento novita={novita} ambito="scuola-universita-ricerca" />);
+  expect(screen.getByText(/nuova legge sulla scuola/i)).toBeInTheDocument();
+  expect(screen.queryByText(/proposta sul lavoro agile/i)).not.toBeInTheDocument();
+});
+
+test('un argomento senza novità mostra un messaggio chiaro', () => {
+  render(<NovitaParlamento novita={novita} ambito="turismo" />);
+  expect(screen.getByText(/non ci sono novità in arrivo/i)).toBeInTheDocument();
+});
+
 test('il bottone di richiesta passa titolo e url della voce', async () => {
   const onRichiedi = vi.fn();
   render(<NovitaParlamento novita={novita} onRichiedi={onRichiedi} />);
