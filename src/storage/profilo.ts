@@ -1,4 +1,5 @@
 import type { Profilo } from '../engine/types';
+import { SchemaProfilo } from '../engine/schema';
 
 const CHIAVE = 'reflex.profilo.v1';
 
@@ -16,12 +17,12 @@ export function caricaProfilo(): Profilo | null {
   try {
     const grezzo = localStorage.getItem(CHIAVE);
     if (!grezzo) return null;
-    const dati = JSON.parse(grezzo) as Profilo;
-    if (dati.schemaVersion !== 1 || typeof dati.eta !== 'number') {
+    const esito = SchemaProfilo.safeParse(JSON.parse(grezzo));
+    if (!esito.success) {
       localStorage.removeItem(CHIAVE);
       return null;
     }
-    return dati;
+    return esito.data as Profilo;
   } catch {
     try { localStorage.removeItem(CHIAVE); } catch { /* storage non disponibile */ }
     return null;

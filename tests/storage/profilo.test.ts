@@ -32,6 +32,33 @@ test('restituisce null se schemaVersion è sconosciuta', () => {
   expect(caricaProfilo()).toBeNull();
 });
 
+test('restituisce null e pulisce se eta non è un numero', () => {
+  localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 'trenta' }));
+  expect(caricaProfilo()).toBeNull();
+  expect(localStorage.getItem('reflex.profilo.v1')).toBeNull();
+});
+
+test('restituisce null se un campo enum ha un valore non valido', () => {
+  localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 30, genere: 'extraterrestre' }));
+  expect(caricaProfilo()).toBeNull();
+});
+
+test('restituisce null se un campo lista contiene un valore non valido', () => {
+  localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 30, disabilita: ['volante'] }));
+  expect(caricaProfilo()).toBeNull();
+});
+
+test('accetta un profilo completo con campi validi', () => {
+  const completo: Profilo = {
+    schemaVersion: 1, nome: 'Ada', eta: 41, genere: 'donna', condizioneLavorativa: 'dipendente-privato',
+    fasciaReddito: 'da28a35k', fasciaIsee: 'da15a25k', figli: 2, abitazione: 'affitto',
+    numeroProprieta: 0, titoloStudio: 'laurea', disabilita: ['nessuna'], cittadinanza: 'italiana',
+    religione: 'nessuna'
+  };
+  salvaProfilo(completo);
+  expect(caricaProfilo()).toEqual(completo);
+});
+
 test('cancellaTutto rimuove ogni chiave reflex', () => {
   salvaProfilo(profilo);
   localStorage.setItem('reflex.tema', 'dark');
