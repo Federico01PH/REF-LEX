@@ -95,7 +95,12 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
         </p>
       </div>
       <div className="spazio" style={{ display: 'flex', gap: 8 }}>
-        <button className="btn btn-secondario" style={{ flex: 1 }} onClick={onAnnulla}>Annulla</button>
+        {indice === 0 ? (
+          <button className="btn btn-secondario" style={{ flex: 1 }} onClick={onAnnulla}>Annulla</button>
+        ) : (
+          // si torna alla domanda precedente: la bozza è conservata, quindi le risposte restano
+          <button className="btn btn-secondario" style={{ flex: 1 }} onClick={() => setIndice((i) => Math.max(i - 1, 0))}>Indietro</button>
+        )}
         {!domanda.obbligatoria && (
           <button className="btn btn-secondario" style={{ flex: 1 }}
             onClick={() => {

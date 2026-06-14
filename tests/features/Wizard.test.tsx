@@ -72,6 +72,22 @@ test('la domanda sul permesso di soggiorno compare solo con cittadinanza fuori d
   expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ cittadinanza: 'extra-ue', permessoSoggiorno: 'no' }));
 });
 
+test('si può tornare indietro alla domanda precedente senza perdere le risposte', async () => {
+  render(<Wizard iniziale={null} esploratore={false} onFine={vi.fn()} onAnnulla={vi.fn()} />);
+  await userEvent.type(screen.getByRole('textbox'), 'Marco');
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  expect(screen.getByRole('heading', { name: /quanti anni hai/i })).toBeInTheDocument();
+  await userEvent.click(screen.getByRole('button', { name: /indietro/i }));
+  expect(screen.getByRole('heading', { name: /come ti chiami/i })).toBeInTheDocument();
+  expect(screen.getByRole('textbox')).toHaveValue('Marco');
+});
+
+test('alla prima domanda c\'è Annulla e non Indietro', () => {
+  render(<Wizard iniziale={null} esploratore={false} onFine={vi.fn()} onAnnulla={vi.fn()} />);
+  expect(screen.getByRole('button', { name: /annulla/i })).toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: /indietro/i })).not.toBeInTheDocument();
+});
+
 test('mostra il "perché lo chiediamo" e la barra di progresso', () => {
   render(<Wizard iniziale={null} esploratore={false} onFine={vi.fn()} onAnnulla={vi.fn()} />);
   expect(screen.getByText(/perché lo chiediamo/i)).toBeInTheDocument();
