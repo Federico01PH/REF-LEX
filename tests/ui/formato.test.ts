@@ -8,15 +8,17 @@ test('input non riconosciuto: restituito intatto', () => {
   expect(dataLeggibile('boh')).toBe('boh');
 });
 
-test('accorcia un decreto-legge a nome e numero', () => {
-  expect(titoloNovitaBreve('Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti')).toBe('DL n. 19/2024');
+test('conversione di un decreto-legge: mostra numero del decreto e oggetto, non il boilerplate', () => {
+  expect(titoloNovitaBreve('Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l\'attuazione del PNRR'))
+    .toBe('DL 19/2024: Ulteriori disposizioni urgenti per l\'attuazione del PNRR');
 });
 
-test('tiene l\'identificativo dell\'atto parlamentare in testa', () => {
-  expect(titoloNovitaBreve('S. 936. - Conversione in legge del decreto-legge 15 novembre 2023, n. 161')).toBe('S. 936');
-  expect(titoloNovitaBreve('A.C. 2822 (Bignami) - Disposizioni in materia di elezione')).toBe('A.C. 2822');
+test('un numero di legge citato nel testo NON sostituisce il titolo descrittivo', () => {
+  const t = 'Modifiche alla legge 4 agosto 1984, n. 464, concernenti l\'obbligo di trasmissione';
+  expect(titoloNovitaBreve(t)).toBe(t);
 });
 
-test('titolo già corto: restituito intatto (niente tendina)', () => {
-  expect(titoloNovitaBreve('Nuova legge sulla scuola')).toBe('Nuova legge sulla scuola');
+test('titolo già descrittivo: restituito intatto (niente tendina)', () => {
+  const t = 'Disposizioni in materia di welfare aziendale e asili nido';
+  expect(titoloNovitaBreve(t)).toBe(t);
 });

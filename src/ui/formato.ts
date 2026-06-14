@@ -1,23 +1,24 @@
-// Accorcia il titolo lungo di una novità (es. "Conversione in legge del decreto-legge
-// 2 marzo 2024, n. 19, recante...") al solo nome+numero (es. "DL n. 19/2024"). Per gli
-// atti parlamentari in testa (S. 936, A.C. 2822) tiene l'identificativo. Se non riesce a
-// estrarre nulla di sensato, restituisce il titolo intero (così il chiamante non mostra la tendina).
+// Accorcia SOLO il titolo "boilerplate" delle conversioni in legge, del tipo
+// "Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante <oggetto>",
+// tenendo l'oggetto (la parte che dice di cosa parla) ed eventualmente il numero del
+// decreto: -> "DL 19/2024: <oggetto>". I titoli del feed che sono GIÀ una descrizione
+// (es. "Disposizioni in materia di welfare aziendale e asili nido", o "Modifiche alla
+// legge ..., n. 464, concernenti ...") vengono lasciati intatti: un numero di legge
+// CITATO nel testo non deve mai sostituire il titolo. Se non si accorcia nulla viene
+// restituito il titolo identico, così il chiamante non mostra la tendina.
 export function titoloNovitaBreve(titolo: string): string {
-  const t = titolo.trim();
-  // atto parlamentare in testa: "S. 936", "C. 1921", "A.C. 2822", "A.S. 935"
-  const atto = t.match(/^(A\.\s*[CS]\.|[CS]\.)\s*(\d+)/i);
-  if (atto) return `${atto[1].replace(/\s+/g, '').toUpperCase()} ${atto[2]}`;
-  let tipo = '';
-  if (/decreto[-\s]legge/i.test(t)) tipo = 'DL';
-  else if (/decreto\s+legislativo/i.test(t)) tipo = 'D.Lgs.';
-  else if (/disegno di legge/i.test(t)) tipo = 'DDL';
-  else if (/proposta di legge/i.test(t)) tipo = 'PDL';
-  else if (/\blegge\b/i.test(t)) tipo = 'L.';
-  const num = t.match(/n\.\s*(\d+)/i);
-  const anno = t.match(/\b(?:19|20)\d{2}\b/);
-  if (tipo && num && anno) return `${tipo} n. ${num[1]}/${anno[0]}`;
-  if (tipo && num) return `${tipo} n. ${num[1]}`;
-  return t;
+  const t = titolo.trim().replace(/^["“”']+/, '').trim();
+  if (/conversione in legge/i.test(t)) {
+    const recante = t.match(/\brecante\s+(.+?)[…\s]*$/i);
+    if (recante) {
+      const oggetto = recante[1].trim().replace(/[.,;:]+$/, '');
+      const oggettoMaiusc = oggetto.charAt(0).toUpperCase() + oggetto.slice(1);
+      const num = t.match(/decreto[-\s]legge[^,]*,\s*n\.\s*(\d+)/i);
+      const anno = t.match(/\b(?:19|20)\d{2}\b/);
+      return num && anno ? `DL ${num[1]}/${anno[0]}: ${oggettoMaiusc}` : oggettoMaiusc;
+    }
+  }
+  return titolo;
 }
 
 // Converte una data ISO (yyyy-mm-dd) in italiano leggibile, senza sorprese di fuso orario.
