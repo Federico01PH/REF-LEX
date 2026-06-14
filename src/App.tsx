@@ -14,6 +14,7 @@ import { Privacy } from './features/Privacy';
 import { AvvisoLeggeMancante } from './ui/AvvisoLeggeMancante';
 import { BannerAggiornamento } from './ui/BannerAggiornamento';
 import { useAggiornamentoPwa } from './pwa/useAggiornamentoPwa';
+import { risolviTema } from './ui/temaIniziale';
 
 type Vista =
   | { nome: 'home' } | { nome: 'wizard'; esploratore: boolean }
@@ -34,9 +35,8 @@ export default function App() {
   const [novita, setNovita] = useState<NovitaFile | null>(null);
 
   useEffect(() => {
-    const scuroSistema = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
-    const scuro = tema === 'dark' || (tema === 'auto' && scuroSistema);
-    document.documentElement.dataset.theme = scuro ? 'dark' : 'light';
+    const scuroSistema = window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false;
+    document.documentElement.dataset.theme = risolviTema(tema, scuroSistema);
   }, [tema]);
 
   useEffect(() => {
