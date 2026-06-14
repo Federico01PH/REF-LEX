@@ -29,7 +29,7 @@ export const SchemaCatalogoRemoto = z.object({
 // può rispondere agli stessi filtri della scelta legge. Una voce può finire in più
 // ambiti; se non corrisponde a nessuno, comparirà solo sotto "Tutte".
 const PAROLE_AMBITO: { ambito: Ambito; re: RegExp }[] = [
-  { ambito: 'fisco-lavoro', re: /lavor|salari|retribuzion|occupazion|contratt|\bimpres|artigian|fiscal|tribut|\btass|irpef|\biva\b|caporalato|partita iva|microimpres/i },
+  { ambito: 'fisco-lavoro', re: /lavor|salari|retribuzion|occupazion|contrattazion|contratt[oi] (di lavoro|collettiv|a tempo|di apprendistat)|\bimpres|artigian|fiscal|tribut|\btass|irpef|\biva\b|caporalato|partita iva|microimpres/i },
   { ambito: 'pensioni-welfare', re: /pension|previdenz|welfare|assegn|inclusion|asili nido|reddito di|invalidit|non autosufficien|usurant/i },
   { ambito: 'casa', re: /\bcasa\b|abitazion|affitt|edilizi|immobil|locazion|\bmutu[oi]\b|condomin/i },
   { ambito: 'diritti-salute', re: /salut|sanit|malatti|disabilit|\bLEA\b|\bcure\b|ospedal|farmac|cadaveri|scompars|affidamento famil|\bminori\b/i },

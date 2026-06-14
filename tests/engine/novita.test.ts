@@ -43,6 +43,16 @@ test('ambitiNovita classifica il titolo dal contenuto (parole chiave)', () => {
   expect(ambitiNovita('Disposizioni varie e finali')).toHaveLength(0);
 });
 
+test('non confonde "contratto di affidamento fiduciario" con il lavoro', () => {
+  // "contratt" generico pescava fisco-lavoro a sproposito
+  expect(ambitiNovita('Disciplina del contratto di affidamento fiduciario')).not.toContain('fisco-lavoro');
+});
+
+test('riconosce comunque i contratti di lavoro e la contrattazione collettiva', () => {
+  expect(ambitiNovita('Tutele del contratto di lavoro a tempo determinato')).toContain('fisco-lavoro');
+  expect(ambitiNovita('Norme sulla contrattazione collettiva nazionale')).toContain('fisco-lavoro');
+});
+
 test('il catalogo incorporato serializzato rispetta SchemaCatalogoRemoto', () => {
   const file = { versione: VERSIONE_CATALOGO, generatoIl: '2026-06-11', leggi: CATALOGO };
   const esito = SchemaCatalogoRemoto.safeParse(JSON.parse(JSON.stringify(file)));
