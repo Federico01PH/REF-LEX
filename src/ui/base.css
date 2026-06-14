@@ -126,6 +126,8 @@ a { color: var(--accento); }
 .lista-novita { display: grid; gap: 8px; margin-top: 10px; }
 .voce-novita { background: var(--superficie); border: 1px solid var(--bordo);
   border-radius: var(--raggio); padding: 8px 12px; box-shadow: var(--ombra); }
+.novita-titolo > summary { cursor: pointer; font-weight: 700; }
+.novita-titolo > span { display: block; margin-top: 4px; }
 .collegamento { background: none; border: none; padding: 0; cursor: pointer;
   font: inherit; color: var(--accento); text-decoration: underline; }
 .campo-testo { display: block; width: 100%; min-height: 48px; padding: 10px 12px;
@@ -141,10 +143,13 @@ a { color: var(--accento); }
 /* item 7: il bottone "per gli altri" si stacca dal resto del report */
 .invito-altri { padding-top: 16px; border-top: 1px solid var(--bordo); }
 /* item 3: disclaimer AI breve, si espande al clic */
-.disclaimer-ai { font-size: 13px; color: var(--testo-2); border: 1px solid var(--bordo);
+.disclaimer-ai { font-size: 13px; color: var(--testo-2); border: 1.5px solid var(--rosso);
   border-radius: 12px; padding: 10px 12px; background: var(--superficie); }
-.disclaimer-ai > summary { cursor: pointer; font-weight: 600; color: var(--testo); }
+.disclaimer-ai > summary { cursor: pointer; font-weight: 700; color: var(--rosso); }
 .disclaimer-ai > p { margin: 8px 0 0; }
+/* legenda dei badge di confidenza nel report */
+.legenda { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 8px; font-size: 14px; }
+.legenda > li { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
 /* item 8: sezioni del report che si aprono a tendina per accorciare la lettura */
 .dettaglio-sezione > summary { cursor: pointer; font-weight: 700; color: var(--testo);
   font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif; font-size: 18px; }

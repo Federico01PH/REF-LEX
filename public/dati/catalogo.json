@@ -1,5 +1,5 @@
 {
-  "versione": 8,
+  "versione": 9,
   "generatoIl": "2026-06-14",
   "leggi": [
     {
@@ -869,7 +869,8 @@
       "titoloUfficiale": "Direttiva (UE) 2024/1275 sulla prestazione energetica nell'edilizia (EPBD IV)",
       "stato": "approvata",
       "ambiti": [
-        "casa"
+        "casa",
+        "ambiente"
       ],
       "origine": "europea",
       "fonti": [
@@ -1941,7 +1942,8 @@
       "stato": "discussione",
       "ambiti": [
         "doveri",
-        "scuola-universita-ricerca"
+        "scuola-universita-ricerca",
+        "politica-voto"
       ],
       "fonti": [
         {
@@ -2238,7 +2240,7 @@
       "titoloUfficiale": "Proposta di legge A.C. 2822 (Bignami) - Disposizioni in materia di elezione della Camera dei deputati e del Senato della Repubblica (\"Bignami bis\"/\"Stabilicum\")",
       "stato": "discussione",
       "ambiti": [
-        "doveri"
+        "politica-voto"
       ],
       "fonti": [
         {
@@ -2325,7 +2327,7 @@
       "titoloUfficiale": "Disegno di legge costituzionale S. 935 (C. 1921) - Modifiche alla parte seconda della Costituzione per l'elezione diretta del Presidente del Consiglio dei ministri",
       "stato": "discussione",
       "ambiti": [
-        "doveri"
+        "politica-voto"
       ],
       "fonti": [
         {

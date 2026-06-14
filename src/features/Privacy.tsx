@@ -21,7 +21,7 @@ export function Privacy({ tema, onCambiaTema, onCancellaTutto, onIndietro }: {
         <Icona nome="lucchetto" dimensione={24} /> I tuoi dati
       </h1>
       <div className="card">
-        <p><b>I tuoi dati restano solo su questo dispositivo.</b> Non chiediamo nome né cognome, non creiamo account, non usiamo cookie né tracker.</p>
+        <p><b>I tuoi dati restano solo su questo dispositivo.</b> Non chiediamo il cognome, non creiamo account, non usiamo cookie né tracker. Il nome o nickname che scegli serve solo per rivolgerci a te e resta qui con il resto.</p>
         <p>Non inviamo i tuoi dati a nessuno, non li vendiamo e non li vediamo nemmeno noi: l&apos;app funziona tutta sul tuo telefono o computer.</p>
         <p className="testo-piccolo">Se cancelli i dati o disinstalli l&apos;app, spariscono per sempre: non ne esiste nessuna copia altrove.</p>
       </div>

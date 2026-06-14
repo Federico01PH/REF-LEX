@@ -11,28 +11,33 @@ const CONFIDENZA = {
 } as const;
 
 // il report del singolo profilo, mostrato solo quando si apre la sua scheda
-function DettaglioPersona({ r }: { r: RisultatoSimulazione }) {
+function DettaglioPersona({ r, legge }: { r: RisultatoSimulazione; legge: Legge }) {
   const totale = r.totaleMese.anno1;
   const haEconomico = r.effetti.some((e) => e.confidenza !== 'dipende' && e.effetto.importoMese);
   const coloreImporto = totale.min >= 0 ? 'var(--verde)' : totale.max <= 0 ? 'var(--rosso)' : 'var(--arancio)';
-  if (haEconomico) {
-    return (
-      <p style={{ fontWeight: 900, fontSize: 20, margin: '8px 0 0', color: coloreImporto }}>
-        {totale.min === totale.max
-          ? `${totale.min > 0 ? '+' : ''}${totale.min} €`
-          : `da ${totale.min > 0 ? '+' : ''}${totale.min} a ${totale.max > 0 ? '+' : ''}${totale.max} €`} al mese{' '}
-        <span className="testo-piccolo" style={{ fontWeight: 600 }}>(stima al 1° anno)</span>
-      </p>
-    );
-  }
   return (
     <div>
-      {r.effetti.map((e) => (
-        <p key={e.id} style={{ fontWeight: 700, margin: '8px 0 0' }}>
-          <span className={`badge ${CONFIDENZA[e.confidenza].classe}`}>{CONFIDENZA[e.confidenza].parola}</span>{' '}
-          {e.effetto.descrizione}
+      {haEconomico ? (
+        <p style={{ fontWeight: 900, fontSize: 20, margin: '8px 0 0', color: coloreImporto }}>
+          {totale.min === totale.max
+            ? `${totale.min > 0 ? '+' : ''}${totale.min} €`
+            : `da ${totale.min > 0 ? '+' : ''}${totale.min} a ${totale.max > 0 ? '+' : ''}${totale.max} €`} al mese{' '}
+          <span className="testo-piccolo" style={{ fontWeight: 600 }}>(stima al 1° anno)</span>
         </p>
-      ))}
+      ) : (
+        r.effetti.map((e) => (
+          <p key={e.id} style={{ fontWeight: 700, margin: '8px 0 0' }}>
+            <span className={`badge ${CONFIDENZA[e.confidenza].classe}`}>{CONFIDENZA[e.confidenza].parola}</span>{' '}
+            {e.effetto.descrizione}
+          </p>
+        ))
+      )}
+      <p className="testo-piccolo" style={{ margin: '8px 0 0' }}>
+        Fonti:{' '}
+        {legge.fonti.map((f, i) => (
+          <span key={f.url}>{i > 0 && ' · '}<a href={f.url} target="_blank" rel="noopener noreferrer">{f.etichetta}</a></span>
+        ))}
+      </p>
     </div>
   );
 }
@@ -71,7 +76,7 @@ export function Empatia({ legge, onCreaIpotetico, onIndietro }: {
                     </span>
                     <span className="profilo-freccia" aria-hidden="true"><Icona nome="freccia" dimensione={18} /></span>
                   </button>
-                  {espanso && <DettaglioPersona r={r} />}
+                  {espanso && <DettaglioPersona r={r} legge={legge} />}
                 </li>
               );
             })}

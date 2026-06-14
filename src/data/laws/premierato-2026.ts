@@ -33,7 +33,7 @@ export const premierato: Legge = {
   titoloDivulgativo: 'Premierato: l\'elezione diretta del Presidente del Consiglio',
   titoloUfficiale: 'Disegno di legge costituzionale S. 935 (C. 1921) - Modifiche alla parte seconda della Costituzione per l\'elezione diretta del Presidente del Consiglio dei ministri',
   stato: 'discussione',
-  ambiti: ['doveri'],
+  ambiti: ['politica-voto'],
   fonti: [FONTE],
   verificataIl: '2026-06-13',
   riassunto: 'Una riforma della Costituzione (non ancora definitiva) per far eleggere direttamente dai cittadini il Presidente del Consiglio, insieme al Parlamento, con un mandato di 5 anni. Oggi invece il Presidente del Consiglio è nominato dal Presidente della Repubblica dopo le elezioni. La riforma rafforza la stabilità del governo e abolisce i senatori a vita nominati dal Capo dello Stato. Il Senato l\'ha approvata il 18 giugno 2024; ora è alla Camera. Per diventare legge servirà un referendum.',

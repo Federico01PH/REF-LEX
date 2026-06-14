@@ -138,6 +138,15 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
               <div>al mese{evoluzioneTemporale ? ` tra ${orizzonteEtichetta(orizzonte)}` : ''} (effetti certi e probabili)</div>
             </div>
           )}
+          <details className="dettaglio-sezione spazio">
+            <summary>Cosa vogliono dire le etichette</summary>
+            <ul className="legenda">
+              <li><span className="badge badge-certa">Certo</span> L'effetto è scritto chiaro nella legge già in vigore.</li>
+              <li><span className="badge badge-probabile">Probabile</span> Molto verosimile, ma manca ancora un passaggio (decreti o conferme).</li>
+              <li><span className="badge badge-dipende">Dipende</span> Cambia in base alla tua situazione o a scelte ancora aperte.</li>
+              <li><span className="badge badge-sensibile">Compressione</span> Quanto la legge limita un tuo diritto: lieve, sensibile o grave.</li>
+            </ul>
+          </details>
           {r.effetti.filter((e) => !e.effetto.indiretto).map((regola) => <RigaEffetto key={regola.id} regola={regola} />)}
           {r.effetti.some((e) => e.effetto.indiretto) && (
             <section aria-label="Effetti indiretti" className="spazio">

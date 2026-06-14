@@ -21,7 +21,7 @@ export const caseGreen: Legge = {
   titoloDivulgativo: 'Case green: le regole europee sull\'efficienza delle case',
   titoloUfficiale: 'Direttiva (UE) 2024/1275 sulla prestazione energetica nell\'edilizia (EPBD IV)',
   stato: 'approvata',
-  ambiti: ['casa'],
+  ambiti: ['casa', 'ambiente'],
   origine: 'europea',
   fonti: [FONTE],
   verificataIl: '2026-06-11',

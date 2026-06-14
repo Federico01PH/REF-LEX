@@ -26,7 +26,11 @@ const AMBITI: { valore: Ambito | 'tutte'; etichetta: string }[] = [
   { valore: 'diritti-salute', etichetta: 'Diritti e salute' },
   { valore: 'sicurezza-privacy', etichetta: 'Sicurezza e privacy' },
   { valore: 'doveri', etichetta: 'Doveri e obblighi' },
-  { valore: 'scuola-universita-ricerca', etichetta: 'Scuola, università e ricerca' }
+  { valore: 'scuola-universita-ricerca', etichetta: 'Scuola, università e ricerca' },
+  { valore: 'politica-voto', etichetta: 'Politica e voto' },
+  { valore: 'ambiente', etichetta: 'Ambiente' },
+  { valore: 'turismo', etichetta: 'Turismo' },
+  { valore: 'arte', etichetta: 'Arte e cultura' }
 ];
 const RILEVANZA = {
   alta: 'Ti riguarda quasi sicuramente',
@@ -99,11 +103,6 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
         {visibili.length === 0 && (
           <p className="testo-piccolo" style={{ marginBottom: 0 }}>
             Per questo argomento non abbiamo ancora leggi nel catalogo: stanno arrivando.
-          </p>
-        )}
-        {!scelta && visibili.length > 0 && (
-          <p className="testo-piccolo" style={{ marginBottom: 0 }}>
-            I titoli sono scritti in parole semplici: scegline uno e ti mostriamo anche il nome ufficiale e cosa prevede.
           </p>
         )}
       </div>

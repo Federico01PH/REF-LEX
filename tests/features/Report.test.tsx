@@ -13,7 +13,7 @@ test('mostra il totale del primo anno, il badge di confidenza e la fonte', () =>
   render(<Report profilo={dipendente} legge={cuneoFiscale} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
   // l'intervallo compare sia nel totale sia nella riga effetto
   expect(screen.getAllByText(/da \+60 a \+80 €/i).length).toBeGreaterThan(0);
-  expect(screen.getByText(/^certo$/i)).toBeInTheDocument();
+  expect(screen.getAllByText(/^certo$/i).length).toBeGreaterThan(0);
   expect(screen.getByRole('link', { name: /normattiva/i })).toBeInTheDocument();
   expect(screen.getByText(/a parità di tutte le altre leggi/i)).toBeInTheDocument();
 });

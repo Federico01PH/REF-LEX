@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { NovitaFile } from '../engine/novita';
 import type { StatoLegge } from '../engine/types';
-import { dataLeggibile } from '../ui/formato';
+import { dataLeggibile, titoloNovitaBreve } from '../ui/formato';
 
 const STATI: Record<StatoLegge, { etichetta: string; colore: string }> = {
   vigore: { etichetta: 'In vigore', colore: 'var(--verde)' },
@@ -33,9 +33,18 @@ export function NovitaParlamento({ novita, onRichiedi }: {
       <div className="lista-novita">
         {voci.map((voce) => {
           const stato = STATI[voce.stato];
+          const breve = titoloNovitaBreve(voce.titolo);
+          const haDettaglio = breve !== voce.titolo;
           return (
             <article key={voce.id} className="voce-novita" style={{ borderLeft: `3px solid ${stato.colore}` }}>
-              <span style={{ fontWeight: 700 }}>{voce.titolo}</span>
+              {haDettaglio ? (
+                <details className="novita-titolo">
+                  <summary><b>{breve}</b></summary>
+                  <span className="testo-piccolo">{voce.titolo}</span>
+                </details>
+              ) : (
+                <span style={{ fontWeight: 700 }}>{breve}</span>
+              )}
               <span className="testo-piccolo" style={{ display: 'block', marginTop: 2 }}>
                 <span style={{ fontWeight: 800, color: stato.colore }}>{stato.etichetta}</span>
                 {' '}· {dataLeggibile(voce.data)} · Non ancora simulabile

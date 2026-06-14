@@ -81,7 +81,8 @@ export type StatoLegge = 'vigore' | 'approvata' | 'discussione' | 'bozza' | 'ref
 export type Ambito =
   | 'fisco-lavoro' | 'pensioni-welfare' | 'casa'
   | 'diritti-salute' | 'sicurezza-privacy' | 'doveri'
-  | 'scuola-universita-ricerca';
+  | 'scuola-universita-ricerca' | 'politica-voto'
+  | 'ambiente' | 'turismo' | 'arte';
 
 export interface Legge {
   id: string;
