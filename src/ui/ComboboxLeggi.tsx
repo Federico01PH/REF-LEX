@@ -20,6 +20,7 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
   const [aperta, setAperta] = useState(false);
   const [attivo, setAttivo] = useState(0); // indice evidenziato per la tastiera
   const boxRef = useRef<HTMLDivElement>(null);
+  const listaRef = useRef<HTMLUListElement>(null);
 
   const sceltaCorrente = leggi.find((l) => l.id === valoreId) ?? null;
   // mentre l'utente scrive si filtra; appena scelta, l'input mostra il titolo scelto
@@ -32,6 +33,13 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
   useEffect(() => {
     if (!aperta) setTesto(sceltaCorrente ? sceltaCorrente.titoloDivulgativo : '');
   }, [valoreId, aperta, sceltaCorrente]);
+
+  // tiene l'opzione evidenziata dentro la vista mentre si scorre con la tastiera
+  useEffect(() => {
+    if (!aperta) return;
+    const opt = listaRef.current?.querySelector('.combobox-opt.attivo');
+    (opt as HTMLElement | null)?.scrollIntoView?.({ block: 'nearest' });
+  }, [attivo, aperta]);
 
   // clic fuori: chiude
   useEffect(() => {
@@ -62,6 +70,10 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       setAttivo((i) => Math.max(i - 1, 0));
+    } else if (e.key === 'Home') {
+      if (aperta) { e.preventDefault(); setAttivo(0); }
+    } else if (e.key === 'End') {
+      if (aperta) { e.preventDefault(); setAttivo(filtrate.length - 1); }
     } else if (e.key === 'Enter') {
       if (aperta && filtrate[attivo]) { e.preventDefault(); scegli(filtrate[attivo]); }
     } else if (e.key === 'Escape') {
@@ -89,9 +101,10 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
         onFocus={apri}
         onClick={apri}
         onKeyDown={suTasto}
+        onBlur={() => setAperta(false)}
       />
       {aperta && (
-        <ul className="combobox-lista" id={listaId} role="listbox" aria-labelledby={labelId}>
+        <ul className="combobox-lista" id={listaId} role="listbox" aria-labelledby={labelId} ref={listaRef}>
           {filtrate.length === 0 ? (
             <li className="combobox-vuoto" role="option" aria-selected={false} aria-disabled="true">
               Nessuna legge con queste lettere.

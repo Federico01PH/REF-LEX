@@ -61,3 +61,38 @@ test('con la tastiera si scorre e si sceglie con Invio', async () => {
   await userEvent.keyboard('{ArrowDown}{Enter}'); // dalla prima (indice 0) alla seconda
   expect(onScegli).toHaveBeenCalledWith('b');
 });
+
+test('End salta all\'ultima opzione', async () => {
+  const onScegli = rendi();
+  await userEvent.click(screen.getByRole('combobox'));
+  await userEvent.keyboard('{End}{Enter}');
+  expect(onScegli).toHaveBeenCalledWith('c');
+});
+
+test('Home torna alla prima opzione', async () => {
+  const onScegli = rendi();
+  await userEvent.click(screen.getByRole('combobox'));
+  await userEvent.keyboard('{ArrowDown}{ArrowDown}{Home}{Enter}');
+  expect(onScegli).toHaveBeenCalledWith('a');
+});
+
+test('Tab chiude l\'elenco', async () => {
+  rendi();
+  await userEvent.click(screen.getByRole('combobox'));
+  expect(screen.getByRole('listbox')).toBeInTheDocument();
+  await userEvent.tab();
+  expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
+});
+
+test('scorrendo con le frecce l\'opzione attiva entra nella vista', async () => {
+  const spy = vi.fn();
+  Element.prototype.scrollIntoView = spy; // jsdom non lo implementa
+  try {
+    rendi();
+    await userEvent.click(screen.getByRole('combobox'));
+    await userEvent.keyboard('{ArrowDown}');
+    expect(spy).toHaveBeenCalled();
+  } finally {
+    delete (Element.prototype as { scrollIntoView?: unknown }).scrollIntoView;
+  }
+});
