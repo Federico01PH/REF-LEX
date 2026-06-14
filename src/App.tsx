@@ -11,6 +11,7 @@ import { Catalogo } from './features/Catalogo';
 import { Report } from './features/Report';
 import { Empatia } from './features/Empatia';
 import { Privacy } from './features/Privacy';
+import { AvvisoLeggeMancante } from './ui/AvvisoLeggeMancante';
 
 type Vista =
   | { nome: 'home' } | { nome: 'wizard'; esploratore: boolean }
@@ -43,8 +44,9 @@ export default function App() {
     return () => { attivo = false; };
   }, []);
 
-  // se il catalogo remoto arriva mentre l'utente è su un report, l'id potrebbe non esserci più: fallback al catalogo incorporato
-  const legge = (id: string) => catalogo.find((l) => l.id === id) ?? CATALOGO.find((l) => l.id === id)!;
+  // se il catalogo remoto arriva mentre l'utente è su un report, l'id potrebbe non esserci più:
+  // prima fallback al catalogo incorporato, e se nemmeno lì esiste si torna al catalogo con un avviso (niente crash)
+  const legge = (id: string): Legge | undefined => catalogo.find((l) => l.id === id) ?? CATALOGO.find((l) => l.id === id);
 
   return (
     <main>
@@ -76,17 +78,23 @@ export default function App() {
           onHome={() => setVista({ nome: 'home' })}
           onEsciEsploratore={() => setProfiloEsploratore(null)} />
       )}
-      {vista.nome === 'report' && (profilo || profiloEsploratore) && (
-        <Report profilo={profiloEsploratore ?? profilo!} legge={legge(vista.leggeId)}
-          esploratore={profiloEsploratore !== null}
-          onAltri={() => setVista({ nome: 'empatia', leggeId: vista.leggeId })}
-          onIndietro={() => setVista({ nome: 'catalogo' })} />
-      )}
-      {vista.nome === 'empatia' && (
-        <Empatia legge={legge(vista.leggeId)}
-          onCreaIpotetico={() => setVista({ nome: 'wizard', esploratore: true })}
-          onIndietro={() => setVista({ nome: 'report', leggeId: vista.leggeId })} />
-      )}
+      {vista.nome === 'report' && (profilo || profiloEsploratore) && (() => {
+        const l = legge(vista.leggeId);
+        return l ? (
+          <Report profilo={profiloEsploratore ?? profilo!} legge={l}
+            esploratore={profiloEsploratore !== null}
+            onAltri={() => setVista({ nome: 'empatia', leggeId: vista.leggeId })}
+            onIndietro={() => setVista({ nome: 'catalogo' })} />
+        ) : <AvvisoLeggeMancante onIndietro={() => setVista({ nome: 'catalogo' })} />;
+      })()}
+      {vista.nome === 'empatia' && (() => {
+        const l = legge(vista.leggeId);
+        return l ? (
+          <Empatia legge={l}
+            onCreaIpotetico={() => setVista({ nome: 'wizard', esploratore: true })}
+            onIndietro={() => setVista({ nome: 'report', leggeId: vista.leggeId })} />
+        ) : <AvvisoLeggeMancante onIndietro={() => setVista({ nome: 'catalogo' })} />;
+      })()}
       {vista.nome === 'privacy' && (
         <Privacy tema={tema}
           onCambiaTema={(t) => { setTema(t); salvaTema(t); }}
