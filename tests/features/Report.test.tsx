@@ -4,6 +4,7 @@ import { Report } from '../../src/features/Report';
 import { cuneoFiscale } from '../../src/data/laws/cuneo-fiscale';
 import { salarioMinimo } from '../../src/data/laws/salario-minimo';
 import { decretoSicurezza } from '../../src/data/laws/decreto-sicurezza';
+import { decretoLavoro } from '../../src/data/laws/decreto-lavoro-2026';
 import type { Profilo } from '../../src/engine/types';
 
 const dipendente: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'da15a20k' };
@@ -17,10 +18,16 @@ test('mostra il totale del primo anno, il badge di confidenza e la fonte', () =>
   expect(screen.getByText(/a parità di tutte le altre leggi/i)).toBeInTheDocument();
 });
 
-test('la timeline cambia orizzonte', async () => {
-  render(<Report profilo={dipendente} legge={cuneoFiscale} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
+test('quando la legge evolve nel tempo la timeline c\'è e cambia orizzonte', async () => {
+  const p: Profilo = { schemaVersion: 1, eta: 28, condizioneLavorativa: 'disoccupato' };
+  render(<Report profilo={p} legge={decretoLavoro} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
   await userEvent.click(screen.getByRole('button', { name: /10 anni/i }));
   expect(screen.getByRole('button', { name: /10 anni/i })).toHaveAttribute('aria-pressed', 'true');
+});
+
+test('senza evoluzione nel tempo la timeline non compare', () => {
+  render(<Report profilo={dipendente} legge={cuneoFiscale} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
+  expect(screen.queryByRole('button', { name: /10 anni/i })).not.toBeInTheDocument();
 });
 
 test('legge non in vigore (delega in attuazione): avviso ben visibile', () => {

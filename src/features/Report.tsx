@@ -85,6 +85,10 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
   const nonInVigore = legge.stato !== 'vigore';
   const nessunEffetto = r.effetti.length === 0 && r.nonCalcolabili.length === 0;
   const haTotale = r.effetti.some((e) => e.confidenza !== 'dipende' && e.effetto.importoMese);
+  // la timeline serve solo se gli effetti cambiano davvero negli anni: o il totale, o lo stato di una regola
+  const evoluzioneTemporale =
+    ORIZZONTI.some((o) => r.totaleMese[o].min !== r.totaleMese.anno1.min || r.totaleMese[o].max !== r.totaleMese.anno1.max) ||
+    r.effetti.some((e) => ORIZZONTI.some((o) => e.timeline[o] !== e.timeline.anno1));
 
   return (
     <div>
@@ -110,18 +114,25 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
         </div>
       ) : (
         <>
-          <div role="group" aria-label="Orizzonte temporale" className="spazio">
-            {ORIZZONTI.map((o) => (
-              <button key={o} className="pill" aria-pressed={orizzonte === o}
-                onClick={() => setOrizzonte(o)}>
-                {orizzonteEtichetta(o)}
-              </button>
-            ))}
-          </div>
+          {evoluzioneTemporale && (
+            <div className="spazio">
+              <p className="testo-piccolo" style={{ margin: '0 0 6px' }}>
+                Questa legge cambia nel tempo: tocca un anno per vedere com'è dopo 2, 5 o 10 anni.
+              </p>
+              <div role="group" aria-label="Orizzonte temporale">
+                {ORIZZONTI.map((o) => (
+                  <button key={o} className="pill" aria-pressed={orizzonte === o}
+                    onClick={() => setOrizzonte(o)}>
+                    {orizzonteEtichetta(o)}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
           {haTotale && (
             <div className={`riquadro-numero spazio ${totale.min >= 0 ? 'positivo' : totale.max <= 0 ? 'negativo' : 'incerto'}`}>
               <div className="numero">{formattaIntervallo(totale.min, totale.max)}</div>
-              <div>al mese tra {orizzonteEtichetta(orizzonte)} (effetti certi e probabili)</div>
+              <div>al mese{evoluzioneTemporale ? ` tra ${orizzonteEtichetta(orizzonte)}` : ''} (effetti certi e probabili)</div>
             </div>
           )}
           {r.effetti.filter((e) => !e.effetto.indiretto).map((regola) => <RigaEffetto key={regola.id} regola={regola} />)}
