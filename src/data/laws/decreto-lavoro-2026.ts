@@ -45,7 +45,7 @@ export const decretoLavoro: Legge = {
   titoloDivulgativo: 'Decreto Lavoro "salario giusto": bonus assunzioni e tutele per chi lavora con le app',
   titoloUfficiale: 'Decreto-legge 30 aprile 2026, n. 62 - Disposizioni urgenti in materia di salario giusto, di incentivi all\'occupazione e di contrasto del caporalato digitale',
   stato: 'vigore',
-  ambito: 'fisco-lavoro',
+  ambiti: ['fisco-lavoro'],
   fonti: [FONTE, FONTE_GU, FONTE_SALARIO],
   verificataIl: '2026-06-13',
   riassunto: 'Un decreto in vigore dal 1° maggio 2026 su lavoro e stipendi. Chi assume a tempo indeterminato giovani under 35 o donne disoccupate non paga i contributi per due anni (di più al Sud). Introduce il "salario giusto": per avere quei bonus l\'azienda deve pagarti almeno quanto previsto dal contratto collettivo del settore. Per chi lavora con le app (rider e simili) arrivano più tutele, ma anche più controllo da parte degli algoritmi. È un decreto-legge: va convertito entro fine giugno 2026.',

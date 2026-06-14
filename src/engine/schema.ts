@@ -79,7 +79,7 @@ export const SchemaLegge = z.object({
   titoloDivulgativo: z.string().min(1),
   titoloUfficiale: z.string().min(1),
   stato: z.enum(['vigore', 'approvata', 'discussione', 'bozza', 'referendum']),
-  ambito: z.enum(['fisco-lavoro', 'pensioni-welfare', 'casa', 'diritti-salute', 'sicurezza-privacy', 'doveri']),
+  ambiti: z.array(z.enum(['fisco-lavoro', 'pensioni-welfare', 'casa', 'diritti-salute', 'sicurezza-privacy', 'doveri', 'scuola-universita-ricerca'])).min(1),
   origine: z.enum(['italiana', 'europea']).optional(),
   fonti: z.array(SchemaFonte).min(1),
   verificataIl: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),

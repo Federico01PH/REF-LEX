@@ -26,7 +26,7 @@ export const decretoSicurezza: Legge = {
   titoloDivulgativo: 'Decreto sicurezza: nuovi reati, sgomberi rapidi e telecamere',
   titoloUfficiale: 'Legge 9 giugno 2025, n. 80 — Disposizioni urgenti in materia di sicurezza pubblica',
   stato: 'vigore',
-  ambito: 'sicurezza-privacy',
+  ambiti: ['sicurezza-privacy'],
   fonti: [FONTE],
   verificataIl: '2026-06-11',
   riassunto: 'Una legge con 14 nuovi reati e 9 aggravanti. Chi occupa abusivamente la casa di qualcuno commette un reato e lo sgombero diventa più rapido. Le truffe agli anziani sono punite più duramente. Le forze dell\'ordine avranno bodycam e più telecamere nelle città. Bloccare una strada durante una protesta diventa reato.',

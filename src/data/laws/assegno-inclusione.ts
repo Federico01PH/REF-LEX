@@ -46,7 +46,7 @@ export const assegnoInclusione: Legge = {
   titoloDivulgativo: 'Assegno di inclusione: il sostegno per le famiglie con pochi soldi',
   titoloUfficiale: 'Decreto-legge 4 maggio 2023, n. 48, artt. 1-13 (convertito in L. 85/2023), aggiornato dalla L. 199/2025',
   stato: 'vigore',
-  ambito: 'pensioni-welfare',
+  ambiti: ['pensioni-welfare'],
   fonti: [
     FONTE,
     {

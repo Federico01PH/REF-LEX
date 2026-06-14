@@ -1,7 +1,7 @@
 import { SchemaLegge } from '../../src/engine/schema';
 
 const leggeValida = {
-  id: 'x', titoloDivulgativo: 'X', titoloUfficiale: 'X', stato: 'vigore', ambito: 'casa',
+  id: 'x', titoloDivulgativo: 'X', titoloUfficiale: 'X', stato: 'vigore', ambiti: ['casa'],
   fonti: [{ etichetta: 'Normattiva', url: 'https://www.normattiva.it' }],
   verificataIl: '2026-06-10', riassunto: 'Breve riassunto di prova.',
   regole: [{

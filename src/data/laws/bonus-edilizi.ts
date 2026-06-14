@@ -25,7 +25,7 @@ export const bonusEdilizi: Legge = {
   titoloDivulgativo: 'Bonus ristrutturazioni: metà dei lavori di casa scaricata dalle tasse',
   titoloUfficiale: 'Art. 16-bis del TUIR (DPR 917/1986), aggiornato dalla L. 207/2024 e dalla L. 199/2025',
   stato: 'vigore',
-  ambito: 'casa',
+  ambiti: ['casa'],
   fonti: [FONTE],
   verificataIl: '2026-06-11',
   riassunto: 'Chi fa lavori in casa nel 2026 recupera dalle tasse il 50% della spesa se è l\'abitazione principale (36% per le altre case), fino a 96.000 euro di lavori, restituiti in 10 anni. Vale anche per inquilini e comodatari che pagano i lavori. Le caldaie solo a gas o gasolio sono escluse. Dal 2027 le percentuali scendono, salvo proroghe.',

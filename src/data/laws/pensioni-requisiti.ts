@@ -47,7 +47,7 @@ export const pensioniRequisiti: Legge = {
   titoloDivulgativo: 'Quando potrai andare in pensione: i requisiti aggiornati',
   titoloUfficiale: 'Legge 30 dicembre 2025, n. 199 (Bilancio 2026), disposizioni su requisiti pensionistici e Ape sociale',
   stato: 'vigore',
-  ambito: 'pensioni-welfare',
+  ambiti: ['pensioni-welfare'],
   fonti: [
     FONTE,
     {

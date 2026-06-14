@@ -20,7 +20,7 @@ export const codiceStrada: Legge = {
   titoloDivulgativo: 'Nuovo Codice della strada: multe più dure e regole nuove',
   titoloUfficiale: 'Legge 25 novembre 2024, n. 177 — Interventi in materia di sicurezza stradale e delega per la revisione del Codice della strada',
   stato: 'vigore',
-  ambito: 'doveri',
+  ambiti: ['doveri'],
   fonti: [
     FONTE,
     {

@@ -32,7 +32,7 @@ export const leggeElettorale: Legge = {
   titoloDivulgativo: 'Nuova legge elettorale: proporzionale con premio di maggioranza',
   titoloUfficiale: 'Proposta di legge A.C. 2822 (Bignami) - Disposizioni in materia di elezione della Camera dei deputati e del Senato della Repubblica ("Bignami bis"/"Stabilicum")',
   stato: 'discussione',
-  ambito: 'doveri',
+  ambiti: ['doveri'],
   fonti: [FONTE],
   verificataIl: '2026-06-13',
   riassunto: 'Una proposta di legge (non ancora approvata) per cambiare come si vota in Italia. Spariscono i collegi uninominali: si torna a un sistema proporzionale, senza voto di preferenza. Chi arriva primo, se supera il 42% in entrambe le Camere, riceve un premio di seggi (70 alla Camera, 35 al Senato) per avere una maggioranza stabile, con un tetto di circa il 60%. Le coalizioni indicano il nome del candidato premier. In discussione alla Camera dal 26 giugno 2026.',

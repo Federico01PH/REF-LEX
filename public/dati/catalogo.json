@@ -1,13 +1,15 @@
 {
-  "versione": 7,
-  "generatoIl": "2026-06-13",
+  "versione": 8,
+  "generatoIl": "2026-06-14",
   "leggi": [
     {
       "id": "cuneo-fiscale-2025",
       "titoloDivulgativo": "Taglio del cuneo fiscale per i dipendenti",
       "titoloUfficiale": "Legge 30 dicembre 2024, n. 207, art. 1, commi 4-9 (Bilancio 2025)",
       "stato": "vigore",
-      "ambito": "fisco-lavoro",
+      "ambiti": [
+        "fisco-lavoro"
+      ],
       "fonti": [
         {
           "etichetta": "L. 207/2024, art. 1, commi 4-9 (Normattiva)",
@@ -286,7 +288,9 @@
       "titoloDivulgativo": "Salario minimo: la legge delega sui contratti collettivi",
       "titoloUfficiale": "Legge 26 settembre 2025, n. 144 — Delega al Governo in materia di retribuzione dei lavoratori e di contrattazione collettiva",
       "stato": "approvata",
-      "ambito": "fisco-lavoro",
+      "ambiti": [
+        "fisco-lavoro"
+      ],
       "fonti": [
         {
           "etichetta": "Legge 26 settembre 2025, n. 144 (GU n. 230/2025)",
@@ -346,7 +350,9 @@
       "titoloDivulgativo": "Quando potrai andare in pensione: i requisiti aggiornati",
       "titoloUfficiale": "Legge 30 dicembre 2025, n. 199 (Bilancio 2026), disposizioni su requisiti pensionistici e Ape sociale",
       "stato": "vigore",
-      "ambito": "pensioni-welfare",
+      "ambiti": [
+        "pensioni-welfare"
+      ],
       "fonti": [
         {
           "etichetta": "L. 199/2025 (Bilancio 2026) e circolare INPS 19/2026",
@@ -634,7 +640,9 @@
       "titoloDivulgativo": "Assegno di inclusione: il sostegno per le famiglie con pochi soldi",
       "titoloUfficiale": "Decreto-legge 4 maggio 2023, n. 48, artt. 1-13 (convertito in L. 85/2023), aggiornato dalla L. 199/2025",
       "stato": "vigore",
-      "ambito": "pensioni-welfare",
+      "ambiti": [
+        "pensioni-welfare"
+      ],
       "fonti": [
         {
           "etichetta": "DL 48/2023, art. 1-13 (conv. L. 85/2023) e L. 199/2025 (Normattiva)",
@@ -860,7 +868,9 @@
       "titoloDivulgativo": "Case green: le regole europee sull'efficienza delle case",
       "titoloUfficiale": "Direttiva (UE) 2024/1275 sulla prestazione energetica nell'edilizia (EPBD IV)",
       "stato": "approvata",
-      "ambito": "casa",
+      "ambiti": [
+        "casa"
+      ],
       "origine": "europea",
       "fonti": [
         {
@@ -1000,7 +1010,9 @@
       "titoloDivulgativo": "Bonus ristrutturazioni: metà dei lavori di casa scaricata dalle tasse",
       "titoloUfficiale": "Art. 16-bis del TUIR (DPR 917/1986), aggiornato dalla L. 207/2024 e dalla L. 199/2025",
       "stato": "vigore",
-      "ambito": "casa",
+      "ambiti": [
+        "casa"
+      ],
       "fonti": [
         {
           "etichetta": "Art. 16-bis TUIR e L. 199/2025; guida Agenzia delle Entrate (febbraio 2026)",
@@ -1088,7 +1100,10 @@
       "titoloDivulgativo": "Riforma della disabilità: una sola visita e un progetto di vita",
       "titoloUfficiale": "Decreto legislativo 3 maggio 2024, n. 62 (attuazione della legge delega 227/2021)",
       "stato": "approvata",
-      "ambito": "diritti-salute",
+      "ambiti": [
+        "diritti-salute",
+        "scuola-universita-ricerca"
+      ],
       "fonti": [
         {
           "etichetta": "D.Lgs. 27 maggio 2024, n. 62 (Normattiva)",
@@ -1286,7 +1301,9 @@
       "titoloDivulgativo": "Fibromialgia riconosciuta dal servizio sanitario: cure senza ticket",
       "titoloUfficiale": "Schema di DPCM di aggiornamento dei Livelli essenziali di assistenza (Atto del Governo n. 370)",
       "stato": "discussione",
-      "ambito": "diritti-salute",
+      "ambiti": [
+        "diritti-salute"
+      ],
       "fonti": [
         {
           "etichetta": "Schema DPCM aggiornamento LEA (Atto Governo 370) — Camera dei deputati",
@@ -1371,7 +1388,10 @@
       "titoloDivulgativo": "AI Act: le regole europee che ti proteggono dall'intelligenza artificiale",
       "titoloUfficiale": "Regolamento (UE) 2024/1689 che stabilisce regole armonizzate sull'intelligenza artificiale",
       "stato": "approvata",
-      "ambito": "sicurezza-privacy",
+      "ambiti": [
+        "sicurezza-privacy",
+        "scuola-universita-ricerca"
+      ],
       "origine": "europea",
       "fonti": [
         {
@@ -1521,7 +1541,9 @@
       "titoloDivulgativo": "Decreto sicurezza: nuovi reati, sgomberi rapidi e telecamere",
       "titoloUfficiale": "Legge 9 giugno 2025, n. 80 — Disposizioni urgenti in materia di sicurezza pubblica",
       "stato": "vigore",
-      "ambito": "sicurezza-privacy",
+      "ambiti": [
+        "sicurezza-privacy"
+      ],
       "fonti": [
         {
           "etichetta": "L. 80/2025, conversione del DL sicurezza (Normattiva)",
@@ -1762,7 +1784,9 @@
       "titoloDivulgativo": "Nuovo Codice della strada: multe più dure e regole nuove",
       "titoloUfficiale": "Legge 25 novembre 2024, n. 177 — Interventi in materia di sicurezza stradale e delega per la revisione del Codice della strada",
       "stato": "vigore",
-      "ambito": "doveri",
+      "ambiti": [
+        "doveri"
+      ],
       "fonti": [
         {
           "etichetta": "L. 177/2024, revisione del Codice della strada (Normattiva)",
@@ -1915,7 +1939,10 @@
       "titoloDivulgativo": "Ius Italiae: la cittadinanza per chi cresce a scuola in Italia",
       "titoloUfficiale": "Proposta di legge \"Ius Italiae\" — nuove norme sull'acquisto della cittadinanza italiana (XIX legislatura)",
       "stato": "discussione",
-      "ambito": "doveri",
+      "ambiti": [
+        "doveri",
+        "scuola-universita-ricerca"
+      ],
       "fonti": [
         {
           "etichetta": "Camera dei deputati — proposte di legge sulla cittadinanza (XIX legislatura)",
@@ -2004,7 +2031,9 @@
       "titoloDivulgativo": "Decreto Lavoro \"salario giusto\": bonus assunzioni e tutele per chi lavora con le app",
       "titoloUfficiale": "Decreto-legge 30 aprile 2026, n. 62 - Disposizioni urgenti in materia di salario giusto, di incentivi all'occupazione e di contrasto del caporalato digitale",
       "stato": "vigore",
-      "ambito": "fisco-lavoro",
+      "ambiti": [
+        "fisco-lavoro"
+      ],
       "fonti": [
         {
           "etichetta": "DL 30 aprile 2026, n. 62 - Decreto Lavoro \"salario giusto\" (Normattiva)",
@@ -2208,7 +2237,9 @@
       "titoloDivulgativo": "Nuova legge elettorale: proporzionale con premio di maggioranza",
       "titoloUfficiale": "Proposta di legge A.C. 2822 (Bignami) - Disposizioni in materia di elezione della Camera dei deputati e del Senato della Repubblica (\"Bignami bis\"/\"Stabilicum\")",
       "stato": "discussione",
-      "ambito": "doveri",
+      "ambiti": [
+        "doveri"
+      ],
       "fonti": [
         {
           "etichetta": "Camera dei deputati - A.C. 2822 (Bignami), iter e testo",
@@ -2293,7 +2324,9 @@
       "titoloDivulgativo": "Premierato: l'elezione diretta del Presidente del Consiglio",
       "titoloUfficiale": "Disegno di legge costituzionale S. 935 (C. 1921) - Modifiche alla parte seconda della Costituzione per l'elezione diretta del Presidente del Consiglio dei ministri",
       "stato": "discussione",
-      "ambito": "doveri",
+      "ambiti": [
+        "doveri"
+      ],
       "fonti": [
         {
           "etichetta": "Senato della Repubblica - DDL costituzionale S. 935 (premierato), scheda e iter",

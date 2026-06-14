@@ -79,14 +79,15 @@ export interface Regola {
 export type StatoLegge = 'vigore' | 'approvata' | 'discussione' | 'bozza' | 'referendum';
 export type Ambito =
   | 'fisco-lavoro' | 'pensioni-welfare' | 'casa'
-  | 'diritti-salute' | 'sicurezza-privacy' | 'doveri';
+  | 'diritti-salute' | 'sicurezza-privacy' | 'doveri'
+  | 'scuola-universita-ricerca';
 
 export interface Legge {
   id: string;
   titoloDivulgativo: string;
   titoloUfficiale: string;
   stato: StatoLegge;
-  ambito: Ambito;
+  ambiti: Ambito[]; // una legge può toccare più argomenti (almeno uno)
   origine?: 'italiana' | 'europea'; // assente = italiana
   fonti: { etichetta: string; url: string }[];
   verificataIl: string; // ISO yyyy-mm-dd

@@ -42,6 +42,15 @@ test('il filtro per ambito toglie dalla tendina le leggi degli altri ambiti', as
   expect(screen.queryByRole('option', { name: /taglio del cuneo/i })).not.toBeInTheDocument();
 });
 
+test('il filtro "Scuola, università e ricerca" mostra le leggi con quell\'ambito e nasconde le altre', async () => {
+  renderCatalogo();
+  await userEvent.click(screen.getByRole('button', { name: /scuola, università e ricerca/i }));
+  // l'AI Act ha più ambiti, compreso scuola: resta
+  expect(screen.getByRole('option', { name: /intelligenza artificiale/i })).toBeInTheDocument();
+  // il cuneo è solo fisco-lavoro: sparisce
+  expect(screen.queryByRole('option', { name: /taglio del cuneo/i })).not.toBeInTheDocument();
+});
+
 test('cambiare ambito chiude la scheda della legge non più visibile', async () => {
   renderCatalogo();
   await userEvent.selectOptions(screen.getByRole('combobox', { name: /scegli la legge/i }), 'cuneo-fiscale-2025');

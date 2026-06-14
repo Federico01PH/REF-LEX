@@ -24,7 +24,8 @@ const AMBITI: { valore: Ambito | 'tutte'; etichetta: string }[] = [
   { valore: 'casa', etichetta: 'Casa' },
   { valore: 'diritti-salute', etichetta: 'Diritti e salute' },
   { valore: 'sicurezza-privacy', etichetta: 'Sicurezza e privacy' },
-  { valore: 'doveri', etichetta: 'Doveri e obblighi' }
+  { valore: 'doveri', etichetta: 'Doveri e obblighi' },
+  { valore: 'scuola-universita-ricerca', etichetta: 'Scuola, università e ricerca' }
 ];
 const RILEVANZA = {
   alta: 'Ti riguarda quasi sicuramente',
@@ -41,7 +42,7 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
   const [ambito, setAmbito] = useState<Ambito | 'tutte'>('tutte');
   const [sceltaId, setSceltaId] = useState('');
   const [richieste, setRichieste] = useState(() => caricaRichieste());
-  const visibili = leggi.filter((l) => ambito === 'tutte' || l.ambito === ambito);
+  const visibili = leggi.filter((l) => ambito === 'tutte' || l.ambiti.includes(ambito));
   const scelta = visibili.find((l) => l.id === sceltaId) ?? null;
 
   return (

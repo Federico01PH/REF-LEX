@@ -9,7 +9,7 @@ const regolaBase: Omit<Regola, 'id' | 'condizioni' | 'effetto' | 'confidenza'> =
 
 const legge: Legge = {
   id: 'test-legge', titoloDivulgativo: 'Test', titoloUfficiale: 'Test',
-  stato: 'vigore', ambito: 'fisco-lavoro',
+  stato: 'vigore', ambiti: ['fisco-lavoro'],
   fonti: [{ etichetta: 'test', url: 'https://example.org' }],
   verificataIl: '2026-06-10', riassunto: 'Legge di prova.',
   regole: [

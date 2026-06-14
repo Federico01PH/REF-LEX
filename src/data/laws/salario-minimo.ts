@@ -23,7 +23,7 @@ export const salarioMinimo: Legge = {
   titoloDivulgativo: 'Salario minimo: la legge delega sui contratti collettivi',
   titoloUfficiale: 'Legge 26 settembre 2025, n. 144 — Delega al Governo in materia di retribuzione dei lavoratori e di contrattazione collettiva',
   stato: 'approvata',
-  ambito: 'fisco-lavoro',
+  ambiti: ['fisco-lavoro'],
   fonti: [FONTE_LEGGE, FONTE_AC],
   verificataIl: '2026-06-10',
   riassunto: 'La legge è in vigore dall\'ottobre 2025, ma non ha fissato il minimo a 9 euro/ora come chiedevano le opposizioni. Invece, delega il Governo a stabilire per legge i minimi salariali dei contratti collettivi più diffusi. Bisogna ancora aspettare i decreti attuativi per sapere chi guadagnerà di più.',

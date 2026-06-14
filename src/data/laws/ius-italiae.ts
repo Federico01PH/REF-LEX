@@ -20,7 +20,7 @@ export const iusItaliae: Legge = {
   titoloDivulgativo: 'Ius Italiae: la cittadinanza per chi cresce a scuola in Italia',
   titoloUfficiale: 'Proposta di legge "Ius Italiae" — nuove norme sull\'acquisto della cittadinanza italiana (XIX legislatura)',
   stato: 'discussione',
-  ambito: 'doveri',
+  ambiti: ['doveri', 'scuola-universita-ricerca'],
   fonti: [FONTE],
   verificataIl: '2026-06-11',
   riassunto: 'Una proposta di legge (non ancora votata) per dare la cittadinanza italiana a 16 anni ai ragazzi nati in Italia o arrivati da piccoli, se hanno studiato qui per almeno 10 anni completando il percorso scolastico. Il referendum del 2025 sullo stesso tema è fallito per mancanza di quorum; ora la discussione riparte dal Parlamento, ma i partiti sono divisi e non c\'è una data.',

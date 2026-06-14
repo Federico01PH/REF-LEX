@@ -19,7 +19,7 @@ export const fibromialgiaLea: Legge = {
   titoloDivulgativo: 'Fibromialgia riconosciuta dal servizio sanitario: cure senza ticket',
   titoloUfficiale: 'Schema di DPCM di aggiornamento dei Livelli essenziali di assistenza (Atto del Governo n. 370)',
   stato: 'discussione',
-  ambito: 'diritti-salute',
+  ambiti: ['diritti-salute'],
   fonti: [
     FONTE,
     {

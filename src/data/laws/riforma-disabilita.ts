@@ -24,7 +24,7 @@ export const riformaDisabilita: Legge = {
   titoloDivulgativo: 'Riforma della disabilità: una sola visita e un progetto di vita',
   titoloUfficiale: 'Decreto legislativo 3 maggio 2024, n. 62 (attuazione della legge delega 227/2021)',
   stato: 'approvata',
-  ambito: 'diritti-salute',
+  ambiti: ['diritti-salute', 'scuola-universita-ricerca'],
   fonti: [FONTE, FONTE_GOVERNO],
   verificataIl: '2026-06-11',
   riassunto: 'Cambia il modo di riconoscere la disabilità: una sola visita INPS al posto delle tante commissioni, un certificato del proprio medico per avviare tutto, e il diritto a un "progetto di vita" costruito sulla persona, con un budget dedicato. Nel 2026 vale in 60 province di prova; dal 1° gennaio 2027 dovrebbe valere in tutta Italia.',

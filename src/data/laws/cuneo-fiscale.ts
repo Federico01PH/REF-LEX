@@ -46,7 +46,7 @@ export const cuneoFiscale: Legge = {
   titoloDivulgativo: 'Taglio del cuneo fiscale per i dipendenti',
   titoloUfficiale: 'Legge 30 dicembre 2024, n. 207, art. 1, commi 4-9 (Bilancio 2025)',
   stato: 'vigore',
-  ambito: 'fisco-lavoro',
+  ambiti: ['fisco-lavoro'],
   fonti: [
     FONTE,
     {
