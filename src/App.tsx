@@ -49,7 +49,7 @@ export default function App() {
   return (
     <main>
       {vista.nome === 'home' && (
-        <Home haProfilo={profilo !== null}
+        <Home haProfilo={profilo !== null} nome={profilo?.nome}
           onAvanti={() => setVista(profilo ? { nome: 'catalogo' } : { nome: 'wizard', esploratore: false })}
           onPrivacy={() => setVista({ nome: 'privacy' })} />
       )}

@@ -23,6 +23,12 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
   const valore = bozza[domanda.campo];
 
   function avanza(prossimaBozza: Partial<Profilo>) {
+    // il nome è facoltativo: gli spazi a vuoto non valgono come nome
+    if (typeof prossimaBozza.nome === 'string') {
+      const pulito = prossimaBozza.nome.trim();
+      if (pulito) prossimaBozza = { ...prossimaBozza, nome: pulito };
+      else { const { nome: _v, ...resto } = prossimaBozza; prossimaBozza = resto; }
+    }
     const prossime = DOMANDE.filter((d) => !d.mostraSe || d.mostraSe(prossimaBozza));
     if (indice + 1 >= prossime.length) onFine(prossimaBozza as Profilo);
     else { setBozza(prossimaBozza); setIndice((i) => i + 1); }
@@ -61,6 +67,13 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
             aria-label={domanda.titolo}
             value={typeof valore === 'number' ? valore : ''}
             onChange={(e) => setBozza({ ...bozza, [domanda.campo]: e.target.value === '' ? undefined : Number(e.target.value) })} />
+        )}
+        {domanda.tipo === 'testo' && (
+          <input type="text" className="pill" maxLength={40} autoComplete="off"
+            style={{ width: '100%', fontSize: 20 }}
+            aria-label={domanda.titolo}
+            value={typeof valore === 'string' ? valore : ''}
+            onChange={(e) => setBozza({ ...bozza, [domanda.campo]: e.target.value })} />
         )}
         {(domanda.tipo === 'scelta' || domanda.tipo === 'multi') && (
           <div role="group" aria-label={domanda.titolo}>

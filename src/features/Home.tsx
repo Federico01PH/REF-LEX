@@ -3,12 +3,13 @@ import { Icona } from '../ui/Icona';
 
 // La home è solo il marchio, la missione e un bottone: tutto il resto
 // (catalogo, novità, richieste, segnalazioni) vive nella pagina delle simulazioni.
-export function Home({ haProfilo, onAvanti, onPrivacy }: {
-  haProfilo: boolean; onAvanti: () => void; onPrivacy: () => void;
+export function Home({ haProfilo, nome, onAvanti, onPrivacy }: {
+  haProfilo: boolean; nome?: string; onAvanti: () => void; onPrivacy: () => void;
 }) {
   return (
     <div className="home">
       <h1 className="marchio-riga"><Marchio /></h1>
+      {haProfilo && nome && <p className="saluto">Ciao, {nome}.</p>}
       <p className="motto-grande">
         Le leggi decidono stipendio, casa, salute e diritti.
         Ma sono scritte in un linguaggio per pochi.

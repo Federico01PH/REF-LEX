@@ -2,27 +2,44 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Wizard } from '../../src/features/Wizard';
 
-test('percorso minimo: età obbligatoria, poi salto delle facoltative fino alla fine', async () => {
+test('percorso minimo: si salta il nome, l\'età è obbligatoria, poi si saltano le facoltative', async () => {
   const onFine = vi.fn();
   render(<Wizard iniziale={null} esploratore={false} onFine={onFine} onAnnulla={vi.fn()} />);
 
+  // la prima domanda è il nome (facoltativo): si può saltare
+  expect(screen.getByRole('heading', { name: /come ti chiami/i })).toBeInTheDocument();
+  await userEvent.click(screen.getByRole('button', { name: /salta/i }));
+
+  // poi l'età: obbligatoria, niente "Salta"
   expect(screen.getByRole('heading', { name: /quanti anni hai/i })).toBeInTheDocument();
-  // senza età non si avanza: la domanda obbligatoria non ha "Salta"
   expect(screen.queryByRole('button', { name: /salta/i })).not.toBeInTheDocument();
   await userEvent.type(screen.getByRole('spinbutton'), '34');
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
 
-  // tutte le successive sono facoltative: si possono saltare (15 domande;
-  // quella sul permesso di soggiorno non compare senza cittadinanza extra-UE)
+  // 15 domande facoltative dopo l'età (il permesso di soggiorno non compare senza cittadinanza extra-UE)
   for (let i = 0; i < 15; i++) {
     await userEvent.click(screen.getByRole('button', { name: /salta/i }));
   }
   expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ schemaVersion: 1, eta: 34 }));
 });
 
+test('il nome (o nickname) scelto finisce nel profilo', async () => {
+  const onFine = vi.fn();
+  render(<Wizard iniziale={null} esploratore={false} onFine={onFine} onAnnulla={vi.fn()} />);
+  await userEvent.type(screen.getByRole('textbox'), 'Giulia');
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  await userEvent.type(screen.getByRole('spinbutton'), '40');
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  for (let i = 0; i < 15; i++) {
+    await userEvent.click(screen.getByRole('button', { name: /salta/i }));
+  }
+  expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ nome: 'Giulia', eta: 40 }));
+});
+
 test('risposta a scelta: la pillola selezionata finisce nel profilo', async () => {
   const onFine = vi.fn();
   render(<Wizard iniziale={null} esploratore={false} onFine={onFine} onAnnulla={vi.fn()} />);
+  await userEvent.click(screen.getByRole('button', { name: /salta/i })); // salto il nome
   await userEvent.type(screen.getByRole('spinbutton'), '70');
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
   await userEvent.click(screen.getByRole('button', { name: /in pensione/i }));
@@ -36,6 +53,7 @@ test('risposta a scelta: la pillola selezionata finisce nel profilo', async () =
 test('la domanda sul permesso di soggiorno compare solo con cittadinanza fuori dall\'UE', async () => {
   const onFine = vi.fn();
   render(<Wizard iniziale={null} esploratore={false} onFine={onFine} onAnnulla={vi.fn()} />);
+  await userEvent.click(screen.getByRole('button', { name: /salta/i })); // salto il nome
   await userEvent.type(screen.getByRole('spinbutton'), '30');
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
   // salto fino alla domanda sulla cittadinanza
@@ -62,6 +80,7 @@ test('mostra il "perché lo chiediamo" e la barra di progresso', () => {
 
 test('avanzando, il focus va sul titolo della nuova domanda', async () => {
   render(<Wizard iniziale={null} esploratore={false} onFine={vi.fn()} onAnnulla={vi.fn()} />);
+  await userEvent.click(screen.getByRole('button', { name: /salta/i })); // salto il nome
   await userEvent.type(screen.getByRole('spinbutton'), '34');
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
   expect(screen.getByRole('heading', { name: /di cosa ti occupi/i })).toHaveFocus();

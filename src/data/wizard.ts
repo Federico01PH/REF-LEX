@@ -5,13 +5,15 @@ export interface Domanda {
   campo: keyof Profilo;
   titolo: string;
   perche: string;           // "Perché lo chiediamo"
-  tipo: 'numero' | 'scelta' | 'multi';
+  tipo: 'numero' | 'scelta' | 'multi' | 'testo';
   obbligatoria?: boolean;   // solo eta
   opzioni?: Opzione[];
   mostraSe?: (bozza: Partial<Profilo>) => boolean; // domanda visibile solo se vera
 }
 
 export const DOMANDE: Domanda[] = [
+  { campo: 'nome', titolo: 'Come ti chiami?', tipo: 'testo',
+    perche: 'Solo per darti del tu e rivolgerci a te per nome. Va bene anche un nome di fantasia o un soprannome, e puoi saltare questa domanda. Come tutto il resto, resta sul tuo dispositivo.' },
   { campo: 'eta', titolo: 'Quanti anni hai?', tipo: 'numero', obbligatoria: true,
     perche: 'Molte leggi valgono solo per certe età: pensioni, scuola, patente, agevolazioni giovani.' },
   { campo: 'condizioneLavorativa', titolo: 'Di cosa ti occupi?', tipo: 'scelta',

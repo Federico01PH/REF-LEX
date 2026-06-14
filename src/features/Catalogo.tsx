@@ -55,6 +55,9 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
           <Icona nome="indietro" dimensione={16} /> Home
         </button>
       </header>
+      {profilo.nome && !esploratore && (
+        <p className="saluto">Ciao, {profilo.nome}.</p>
+      )}
       {esploratore && (
         <p className="badge badge-dipende">
           Profilo ipotetico attivo —{' '}

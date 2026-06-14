@@ -17,7 +17,7 @@ test('si apre sempre dalla home: marchio e bottone di ingresso', () => {
 test('senza profilo il bottone della home apre il wizard', async () => {
   render(<App />);
   await userEvent.click(screen.getByRole('button', { name: /inizia/i }));
-  expect(screen.getByRole('heading', { name: /quanti anni hai/i })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: /come ti chiami/i })).toBeInTheDocument();
 });
 
 test('con profilo salvato il bottone della home porta alle simulazioni', async () => {

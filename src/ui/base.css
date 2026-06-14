@@ -87,6 +87,9 @@ a { color: var(--accento); }
 .riga-testata { display: flex; align-items: center; justify-content: space-between;
   gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
 .motto { margin: 2px 0 0; font-size: 16px; color: var(--testo-2); max-width: 720px; }
+/* item 11: saluto per nome (la persona ha scelto un nome o nickname nel wizard) */
+.saluto { font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  font-size: 20px; font-weight: 600; color: var(--testo); margin: 0 0 6px; }
 /* home: il marchio e la missione occupano la pagina, tutto il resto sta dietro un bottone */
 .home { min-height: 84vh; max-width: 760px; margin: 0 auto;
   display: flex; flex-direction: column; justify-content: center; align-items: center;

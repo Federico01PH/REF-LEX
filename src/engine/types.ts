@@ -19,6 +19,7 @@ export type TitoloStudio = 'nessuno' | 'medie' | 'diploma' | 'laurea';
 
 export interface Profilo {
   schemaVersion: 1;
+  nome?: string; // nome o nickname scelto dall'utente, solo per rivolgersi a lui; resta sul dispositivo
   eta: number;
   genere?: 'donna' | 'uomo' | 'non-binario' | 'preferisco-non-dirlo';
   identitaGenere?: 'cisgender' | 'transgender' | 'preferisco-non-dirlo';
