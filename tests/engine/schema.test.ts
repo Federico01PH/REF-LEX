@@ -103,6 +103,48 @@ test('rifiuta dirittoToccato su effetto non indiretto (deve stare tra gli effett
   expect(SchemaLegge.safeParse(rotta).success).toBe(false);
 });
 
+test("rifiuta 'eq' con valore fuori dall'enum del campo (typo nella fascia)", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'fasciaReddito', op: 'eq', valore: 'da100k' }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test("accetta 'eq' con valore valido dell'enum del campo", () => {
+  const ok = structuredClone(leggeValida);
+  ok.regole[0].condizioni = [{ campo: 'fasciaReddito', op: 'eq', valore: 'oltre50k' }] as never;
+  expect(SchemaLegge.safeParse(ok).success).toBe(true);
+});
+
+test("rifiuta 'in' con un valore non appartenente all'enum del campo", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'condizioneLavorativa', op: 'in', valore: ['studente', 'precario'] }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test("accetta 'in' con valori tutti validi dell'enum del campo", () => {
+  const ok = structuredClone(leggeValida);
+  ok.regole[0].condizioni = [{ campo: 'condizioneLavorativa', op: 'in', valore: ['studente', 'pensionato'] }] as never;
+  expect(SchemaLegge.safeParse(ok).success).toBe(true);
+});
+
+test("rifiuta valore non numerico su campo numerico (almeno eta 'diciotto')", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'eta', op: 'almeno', valore: 'diciotto' }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test("rifiuta 'almeno' su titoloStudio con valore fuori scala (typo)", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'titoloStudio', op: 'almeno', valore: 'dottorato' }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test('accetta valore stringa libera su campo testuale (regione)', () => {
+  const ok = structuredClone(leggeValida);
+  ok.regole[0].condizioni = [{ campo: 'regione', op: 'eq', valore: 'Lombardia' }] as never;
+  expect(SchemaLegge.safeParse(ok).success).toBe(true);
+});
+
 test('rifiuta dirittoToccato con intensita fuori scala', () => {
   const rotta = structuredClone(leggeValida);
   rotta.regole[0].effetto = {

@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { ORDINE_REDDITO, ORDINE_ISEE, ORDINE_TITOLO } from './conditions';
 
 const CAMPI_PROFILO = [
   'eta', 'genere', 'identitaGenere', 'orientamento', 'statoCivile', 'regione',
@@ -9,6 +10,53 @@ const CAMPI_PROFILO = [
 const CAMPI_ORDINALI: readonly string[] = ['eta', 'fasciaReddito', 'fasciaIsee', 'figli', 'numeroProprieta', 'titoloStudio'];
 // campi il cui valore nel profilo è un array: gli autori devono usare 'in', mai 'eq'
 const CAMPI_ARRAY: readonly string[] = ['disabilita'];
+// campi a testo libero: il valore è una stringa qualsiasi (nessun enum da validare)
+const CAMPI_TESTO: readonly string[] = ['regione'];
+// campi numerici: il valore deve essere un numero (eta è libera; figli/numeroProprieta hanno anche un dominio sotto)
+const CAMPI_NUMERICI: readonly string[] = ['eta', 'figli', 'numeroProprieta'];
+
+// dominio completo dei valori ammessi per ogni campo (deve combaciare con i tipi in types.ts).
+// Serve a intercettare i typo dell'autore (fascia/voce inesistente) invece di applicare la regola in silenzio.
+const VALORI_CAMPO: Record<string, readonly (string | number)[]> = {
+  genere: ['donna', 'uomo', 'non-binario', 'preferisco-non-dirlo'],
+  identitaGenere: ['cisgender', 'transgender', 'preferisco-non-dirlo'],
+  orientamento: ['eterosessuale', 'omosessuale', 'bisessuale', 'altro', 'preferisco-non-dirlo'],
+  statoCivile: ['non-sposato', 'sposato', 'unione-civile', 'separato', 'vedovo'],
+  condizioneLavorativa: ['dipendente-privato', 'dipendente-pubblico', 'autonomo-ordinario', 'forfettario', 'imprenditore', 'studente', 'pensionato', 'disoccupato', 'caregiver', 'casalingo', 'altro'],
+  fasciaReddito: ORDINE_REDDITO,
+  fasciaIsee: [...ORDINE_ISEE, 'nonLoSo'],
+  figli: [0, 1, 2, 3],
+  abitazione: ['proprieta', 'affitto', 'comodato', 'altro'],
+  numeroProprieta: [0, 1, 2, 3],
+  titoloStudio: ORDINE_TITOLO,
+  disabilita: ['nessuna', 'motoria', 'visiva', 'uditiva', 'intellettiva', 'malattia-cronica', 'condizione-non-riconosciuta'],
+  cittadinanza: ['italiana', 'ue', 'extra-ue'],
+  permessoSoggiorno: ['si', 'no', 'preferisco-non-dirlo'],
+  religione: ['nessuna', 'cattolica', 'altra-cristiana', 'musulmana', 'ebraica', 'altra', 'preferisco-non-dirlo']
+};
+// per i confronti ordinali su stringhe il valore deve stare nell'elenco ORDINATO,
+// altrimenti conditions.ts ordinale() darebbe indexOf -1 e la regola si applicherebbe a casaccio
+const ORDINE_CAMPO: Record<string, readonly (string | number)[]> = {
+  fasciaReddito: ORDINE_REDDITO,
+  fasciaIsee: ORDINE_ISEE,
+  titoloStudio: ORDINE_TITOLO
+};
+
+// valida un singolo valore (di un 'eq', 'almeno', 'alPiu', o un elemento di 'in') contro il dominio del campo
+function valoreNonValido(campo: string, op: string, v: unknown): string | null {
+  if (CAMPI_TESTO.includes(campo)) {
+    return typeof v === 'string' && v.length > 0 ? null : `il campo ${campo} vuole una stringa di testo`;
+  }
+  if (CAMPI_NUMERICI.includes(campo)) {
+    if (typeof v !== 'number') return `il campo ${campo} vuole un numero, non ${JSON.stringify(v)}`;
+    const dominio = VALORI_CAMPO[campo];
+    return !dominio || dominio.includes(v) ? null : `valore ${v} fuori dai valori ammessi per ${campo} (${dominio.join(', ')})`;
+  }
+  // campi a enum: per almeno/alPiu il valore deve stare nell'elenco ordinato
+  const dominio = (op === 'almeno' || op === 'alPiu') && ORDINE_CAMPO[campo] ? ORDINE_CAMPO[campo] : VALORI_CAMPO[campo];
+  if (!dominio) return null;
+  return dominio.includes(v as string) ? null : `valore ${JSON.stringify(v)} non valido per ${campo} (ammessi: ${dominio.join(', ')})`;
+}
 
 // solo http/https: z.url() da solo accetterebbe anche schemi pericolosi come javascript:
 export const SchemaUrlSicuro = z.string().url().refine((u) => /^https?:\/\//i.test(u), 'solo URL http o https');
@@ -28,6 +76,18 @@ const SchemaCondizione = z.object({
   }
   if (c.op === 'eq' && CAMPI_ARRAY.includes(c.campo)) {
     ctx.addIssue({ code: z.ZodIssueCode.custom, message: `il campo ${c.campo} è una lista: usa l'operatore 'in' invece di 'eq'` });
+  }
+  // valida il valore contro il dominio del campo (intercetta i typo)
+  if (c.op === 'in') {
+    if (Array.isArray(c.valore)) {
+      for (const x of c.valore) {
+        const errore = valoreNonValido(c.campo, c.op, x);
+        if (errore) ctx.addIssue({ code: z.ZodIssueCode.custom, message: errore });
+      }
+    }
+  } else {
+    const errore = valoreNonValido(c.campo, c.op, c.valore);
+    if (errore) ctx.addIssue({ code: z.ZodIssueCode.custom, message: errore });
   }
 });
 
