@@ -85,7 +85,7 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
         </div>
       </section>
       <section className="scelta-legge spazio" aria-label="Scegli una legge da simulare">
-        <h2 className="scelta-legge-titolo">Quale legge vuoi capire?</h2>
+        <h2 className="scelta-legge-titolo">Scegli la legge e misura l'impatto sulla tua vita</h2>
         <p className="etichetta-filtri">Filtra per argomento, poi scegli la legge:</p>
         <div role="group" aria-label="Filtra per argomento">
           {AMBITI.map((a) => (
