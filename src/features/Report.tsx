@@ -101,11 +101,14 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
         <p className="card" style={{ borderLeft: '4px solid var(--arancio)' }}>
           <b>Attenzione: effetti non ancora attivi.</b>{' '}
           {legge.stato === 'approvata'
-            ? 'Questa legge è stata approvata ma i suoi effetti concreti dipendono dai passi successivi (per esempio i decreti attuativi).'
-            : 'Questa legge NON è ancora in vigore: ti mostriamo cosa succederebbe SE venisse approvata nel testo attuale.'}
+            ? 'Approvata, ma gli effetti concreti dipendono dai prossimi passi (i decreti attuativi).'
+            : 'Non è ancora in vigore: vedi cosa succederebbe se passasse il testo di oggi.'}
         </p>
       )}
-      <p>{legge.riassunto}</p>
+      <details className="dettaglio-sezione spazio">
+        <summary>Cosa prevede questa legge</summary>
+        <p style={{ margin: '8px 0 0' }}>{legge.riassunto}</p>
+      </details>
 
       {nessunEffetto ? (
         <div className="card">

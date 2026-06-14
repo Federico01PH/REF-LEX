@@ -145,6 +145,9 @@ a { color: var(--accento); }
   border-radius: 12px; padding: 10px 12px; background: var(--superficie); }
 .disclaimer-ai > summary { cursor: pointer; font-weight: 600; color: var(--testo); }
 .disclaimer-ai > p { margin: 8px 0 0; }
+/* item 8: sezioni del report che si aprono a tendina per accorciare la lettura */
+.dettaglio-sezione > summary { cursor: pointer; font-weight: 700; color: var(--testo);
+  font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif; font-size: 18px; }
 .spazio { margin-top: 16px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
