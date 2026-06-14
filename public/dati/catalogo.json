@@ -1,5 +1,5 @@
 {
-  "versione": 9,
+  "versione": 11,
   "generatoIl": "2026-06-14",
   "leggi": [
     {
@@ -2404,6 +2404,466 @@
           "fonteRegola": {
             "etichetta": "Senato della Repubblica - DDL costituzionale S. 935 (premierato), scheda e iter",
             "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=57694"
+          }
+        }
+      ]
+    },
+    {
+      "id": "remigrazione-riconquista-2026",
+      "titoloDivulgativo": "Remigrazione e Riconquista: la proposta di legge popolare sui migranti",
+      "titoloUfficiale": "Proposta di legge di iniziativa popolare \"Remigrazione e Riconquista\" — Disposizioni in materia di governo dei flussi migratori, programma nazionale di Remigrazione e Fondo per la Natalità italiana",
+      "stato": "discussione",
+      "ambiti": [
+        "sicurezza-privacy",
+        "politica-voto",
+        "fisco-lavoro",
+        "pensioni-welfare"
+      ],
+      "fonti": [
+        {
+          "etichetta": "Ministero della Giustizia — raccolta firme per referendum e iniziative popolari",
+          "url": "https://firmereferendum.giustizia.it/referendum/open"
+        },
+        {
+          "etichetta": "Camera dei deputati — proposte di legge di iniziativa popolare",
+          "url": "https://www.camera.it/leg19/1334"
+        }
+      ],
+      "verificataIl": "2026-06-15",
+      "riassunto": "Una proposta di legge di iniziativa popolare (promossa da CasaPound, Rete dei Patrioti e altri gruppi) che in poche ore ha superato le 50.000 firme necessarie per arrivare in Parlamento. Non è un referendum e non è ancora legge: dovrà essere discussa e votata. Prevede un programma di \"remigrazione\" per il rientro degli stranieri, lo stop al decreto flussi, espulsioni e revoca della cittadinanza per chi commette reati, una tassa sulle rimesse inviate all'estero e un fondo per la natalità riservato in via prioritaria alle famiglie italiane.",
+      "regole": [
+        {
+          "id": "remigrazione-ingresso-flussi",
+          "campiNecessari": [
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "SE la proposta diventasse legge: viene abrogato il \"decreto flussi\", cioè la programmazione annuale degli ingressi per lavoro. L'ingresso di lavoratori extra-UE sarebbe consentito solo in casi \"residuali\" e documentati, con priorità ai lavoratori europei. Per chi è extra-UE diventerebbe più difficile entrare per lavoro o far entrare familiari dall'estero.",
+            "direzione": "negativo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "È una proposta non ancora discussa né votata. L'abrogazione del decreto flussi (art. 3 del d.lgs. 286/1998) e le regole sull'ingresso dipendono anche dal rispetto del diritto dell'Unione europea sulla libera circolazione e sui ricongiungimenti.",
+          "fonteRegola": {
+            "etichetta": "Ministero della Giustizia — raccolta firme per referendum e iniziative popolari",
+            "url": "https://firmereferendum.giustizia.it/referendum/open"
+          }
+        },
+        {
+          "id": "remigrazione-programma-rientro",
+          "campiNecessari": [
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "SE la proposta diventasse legge: nasce un programma di \"remigrazione\", cioè rientro volontario assistito nel Paese di origine, con un incentivo economico, formazione e supporto. In cambio si firma un \"Patto\" che vieta di rientrare in Italia (salvo permessi temporanei) e prevede la restituzione dei fondi e sanzioni penali in caso di rientro non autorizzato. Per chi la sostiene è un aiuto a chi vuole tornare; per chi la critica è una spinta a far andare via gli stranieri.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "L'adesione sarebbe volontaria e aperta agli extracomunitari regolari da almeno 12 mesi, ai richiedenti asilo che rinunciano alla domanda e ai titolari di permessi in scadenza. La proposta deve ancora essere votata.",
+          "fonteRegola": {
+            "etichetta": "Ministero della Giustizia — raccolta firme per referendum e iniziative popolari",
+            "url": "https://firmereferendum.giustizia.it/referendum/open"
+          }
+        },
+        {
+          "id": "remigrazione-tassa-rimesse",
+          "campiNecessari": [
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "descrizione": "SE la proposta diventasse legge: chi invia denaro (rimesse) verso l'estero pagherebbe una tassa del 3% su quanto manda, per finanziare il Fondo per la Remigrazione. Se mandi soldi alla tua famiglia nel Paese di origine, ti costerebbe il 3% in più ogni volta.",
+            "direzione": "negativo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Quanto pesa dipende da quanto denaro invii all'estero, dato che non ti chiediamo. Una tassa applicata solo alle rimesse potrebbe inoltre essere contestata come discriminatoria: la proposta deve ancora essere discussa.",
+          "fonteRegola": {
+            "etichetta": "Ministero della Giustizia — raccolta firme per referendum e iniziative popolari",
+            "url": "https://firmereferendum.giustizia.it/referendum/open"
+          }
+        },
+        {
+          "id": "remigrazione-asilo-famiglia",
+          "campiNecessari": [
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto indiretto sul diritto d'asilo e sulla vita familiare: la proposta abolisce la \"protezione speciale\" (un permesso per chi non può essere rimpatriato senza rischi) e restringe il ricongiungimento familiare, escludendo chi si è regolarizzato con una sanatoria e introducendo nuove verifiche. Per chi è extra-UE significa meno strade per restare in Italia o per ricongiungersi con i familiari.",
+            "direzione": "negativo",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 10",
+              "diritto": "diritto d'asilo e protezione di chi fugge da Paesi non sicuri",
+              "intensita": "grave",
+              "url": "https://www.senato.it/istituzione/la-costituzione/principi-fondamentali/articolo-10"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Tocca anche l'art. 8 della CEDU (rispetto della vita privata e familiare) e gli artt. 29-31 della Costituzione sulla famiglia. Intensità \"grave\" perché rimuove un canale di protezione oggi esistente; ma è solo una proposta, non ancora votata, e dovrebbe comunque rispettare gli obblighi internazionali inderogabili.",
+          "fonteRegola": {
+            "etichetta": "Ministero della Giustizia — raccolta firme per referendum e iniziative popolari",
+            "url": "https://firmereferendum.giustizia.it/referendum/open"
+          }
+        },
+        {
+          "id": "remigrazione-revoca-cittadinanza",
+          "campiNecessari": [
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto indiretto sul diritto alla cittadinanza: se in futuro ottenessi la cittadinanza italiana per naturalizzazione, la proposta prevede che possa esserti revocata in caso di condanna definitiva per reati gravi (terrorismo, criminalità organizzata, reati puniti fino a 5 anni o più), con espulsione e divieto di rientro. La cittadinanza acquisita diventerebbe quindi più \"fragile\" di quella di chi è italiano dalla nascita.",
+            "direzione": "negativo",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 22",
+              "diritto": "nessuno può essere privato della cittadinanza",
+              "intensita": "grave",
+              "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-22"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Riguarda solo la cittadinanza ottenuta per naturalizzazione, non quella dalla nascita: un dato che non ti chiediamo. La revoca solleva il tema del rischio di apolidia (restare senza nessuna cittadinanza), vietato dalle convenzioni internazionali. Intensità \"grave\" per la gravità della conseguenza; resta una proposta da votare.",
+          "fonteRegola": {
+            "etichetta": "Ministero della Giustizia — raccolta firme per referendum e iniziative popolari",
+            "url": "https://firmereferendum.giustizia.it/referendum/open"
+          }
+        },
+        {
+          "id": "remigrazione-uguaglianza",
+          "campiNecessari": [
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto indiretto sull'uguaglianza di trattamento: diverse misure distinguono in base alla nazionalità. La tassa del 3% colpisce solo le rimesse verso l'estero; il bonus nascita, gli asili nido gratuiti e gli aiuti per la casa del Fondo Natalità sono riservati in via prioritaria alle famiglie con genitori entrambi italiani. Per chi è straniero significa contribuire alle tasse ma con meno accesso ad alcuni aiuti.",
+            "direzione": "negativo",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 3",
+              "diritto": "uguaglianza e pari dignità senza distinzioni",
+              "intensita": "sensibile",
+              "url": "https://www.senato.it/istituzione/la-costituzione/principi-fondamentali/articolo-3"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Trattamenti diversi su base di nazionalità possono entrare in tensione con l'art. 3 della Costituzione e con il divieto di discriminazione dell'Unione europea. È un giudizio che spetterebbe poi ai giudici; intanto è solo una proposta da discutere.",
+          "fonteRegola": {
+            "etichetta": "Ministero della Giustizia — raccolta firme per referendum e iniziative popolari",
+            "url": "https://firmereferendum.giustizia.it/referendum/open"
+          }
+        },
+        {
+          "id": "remigrazione-fondo-natalita",
+          "campiNecessari": [
+            "cittadinanza",
+            "figli"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "italiana"
+            },
+            {
+              "campo": "figli",
+              "op": "almeno",
+              "valore": 1
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "descrizione": "SE la proposta diventasse legge: nasce il Fondo per la Natalità Italiana, con bonus nascita fino a 3.000 euro per figlio, contributi fino a 10.000 euro dal terzo figlio in poi, asili nido gratuiti e mutui o affitti calmierati, riservati in via prioritaria alle famiglie con genitori entrambi cittadini italiani. Se hai (o avrai) figli, potresti riceverne un aiuto economico.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Il Fondo parte solo dall'anno successivo a quando la remigrazione avrà prodotto almeno 500 milioni di risparmi pubblici certificati: un effetto quindi doppiamente incerto, perché la legge non esiste ancora e perché i fondi dipendono da risultati futuri. Gli aiuti spettano se entrambi i genitori sono italiani.",
+          "fonteRegola": {
+            "etichetta": "Ministero della Giustizia — raccolta firme per referendum e iniziative popolari",
+            "url": "https://firmereferendum.giustizia.it/referendum/open"
+          }
+        },
+        {
+          "id": "remigrazione-imprese",
+          "campiNecessari": [
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "eq",
+              "valore": "imprenditore"
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "SE la proposta diventasse legge: per le imprese aumentano molto i rischi se impiegano lavoratori stranieri irregolari (reclusione, multe fino a 1 milione, confisca dei beni, blocco dei conti, revoca delle licenze). Allo stesso tempo sono previsti incentivi e premi per le aziende che assumono solo lavoratori regolari. Se hai dipendenti, conviene avere tutto in regola.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Impiegare lavoratori irregolari è già oggi sanzionato; la proposta inasprisce le pene e aggiunge confische e premi. È comunque una proposta non ancora votata.",
+          "fonteRegola": {
+            "etichetta": "Ministero della Giustizia — raccolta firme per referendum e iniziative popolari",
+            "url": "https://firmereferendum.giustizia.it/referendum/open"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dl-migrazione-asilo-2026",
+      "titoloDivulgativo": "Decreto giustizia e migrazione: asilo alla frontiera e nuovo esame da avvocato",
+      "titoloUfficiale": "Decreto-legge 12 giugno 2026, n. 100 — Misure urgenti in materia di giustizia e per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
+      "stato": "vigore",
+      "ambiti": [
+        "sicurezza-privacy",
+        "scuola-universita-ricerca"
+      ],
+      "fonti": [
+        {
+          "etichetta": "DL 12 giugno 2026, n. 100 (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-06-12;100"
+        },
+        {
+          "etichetta": "Gazzetta Ufficiale — DL 100/2026 (GU n. 134 del 12/6/2026)",
+          "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/12/26G00119/sg"
+        },
+        {
+          "etichetta": "Senato della Repubblica — DDL di conversione del DL 100/2026",
+          "url": "https://dati.senato.it/ddl/60214"
+        }
+      ],
+      "verificataIl": "2026-06-15",
+      "riassunto": "Un decreto-legge in vigore dal 12 giugno 2026 che fa due cose diverse. Sul fronte migrazione attua il Patto europeo su migrazione e asilo: procedure di asilo accelerate alla frontiera (massimo 12 settimane), controlli e identificazione all'arrivo, banca dati europea Eurodac con impronte e foto. Sul fronte giustizia cambia l'esame di Stato per diventare avvocato: una sola sessione l'anno, due prove scritte e un orale. È un decreto-legge: per restare in vigore va convertito in legge dal Parlamento entro circa due mesi.",
+      "regole": [
+        {
+          "id": "dl100-procedura-frontiera",
+          "campiNecessari": [
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se sei (o se in futuro fossi) un cittadino extra-UE che chiede asilo in Italia, cambia la procedura: per molti casi la domanda viene esaminata direttamente alla frontiera, con una decisione più rapida (entro 12 settimane al massimo) e con un primo controllo di identificazione all'arrivo. Durante la procedura ti può essere chiesto di restare in un luogo specifico. Più veloce, ma con più vincoli su dove stai mentre aspetti la risposta.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Attua i Regolamenti UE 2024/1348 e 2024/1356. La procedura di frontiera si applica soprattutto a chi proviene da Paesi considerati sicuri o con basso tasso di riconoscimento della protezione, o in caso di documenti falsi. È un decreto-legge da convertire entro circa due mesi: alcuni dettagli possono cambiare.",
+          "fonteRegola": {
+            "etichetta": "DL 12 giugno 2026, n. 100 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-06-12;100"
+          }
+        },
+        {
+          "id": "dl100-asilo-diritto",
+          "campiNecessari": [
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto indiretto sul diritto d'asilo: decisioni più rapide alla frontiera, con la possibilità di doverti trattenere in un luogo determinato durante l'esame, comprimono i tempi e i margini per preparare la tua domanda e per fare ricorso. Per chi lo sostiene è un modo per gestire meglio gli arrivi; per chi lo critica è il rischio che la protezione di chi fugge davvero diventi più difficile da ottenere.",
+            "direzione": "negativo",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 10",
+              "diritto": "diritto d'asilo per chi fugge da Paesi non liberi",
+              "intensita": "sensibile",
+              "url": "https://www.senato.it/istituzione/la-costituzione/principi-fondamentali/articolo-10"
+            }
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Il diritto d'asilo resta garantito dall'art. 10 della Costituzione, dalla Convenzione di Ginevra e dal diritto UE, con possibilità di ricorso al giudice. Intensità \"sensibile\": cambiano tempi e modalità della procedura, non l'esistenza del diritto. Decreto-legge da convertire.",
+          "fonteRegola": {
+            "etichetta": "DL 12 giugno 2026, n. 100 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-06-12;100"
+          }
+        },
+        {
+          "id": "dl100-eurodac-dati",
+          "campiNecessari": [
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "extra-ue"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto indiretto sui tuoi dati: il decreto attiva il nuovo Eurodac, la banca dati europea che raccoglie dati biometrici (impronte digitali e immagine del volto) di chi chiede asilo o si trova in posizione irregolare. Questi dati possono essere confrontati anche dalle forze di polizia e da Europol. Più strumenti di identificazione e controllo, ma anche una traccia biometrica di te conservata e condivisa tra più Paesi.",
+            "direzione": "misto",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Carta UE dei diritti fondamentali",
+              "articolo": "art. 8",
+              "diritto": "protezione dei dati personali",
+              "intensita": "sensibile",
+              "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:12012P/TXT"
+            }
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Attua il Regolamento UE 2024/1358 (Eurodac). I dati biometrici restano soggetti al GDPR e alle garanzie UE, con limiti d'uso e tempi di conservazione. Intensità \"sensibile\" perché si tratta di dati biometrici accessibili anche a fini di contrasto. Decreto-legge da convertire.",
+          "fonteRegola": {
+            "etichetta": "DL 12 giugno 2026, n. 100 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-06-12;100"
+          }
+        },
+        {
+          "id": "dl100-esame-avvocato",
+          "campiNecessari": [
+            "titoloStudio"
+          ],
+          "condizioni": [
+            {
+              "campo": "titoloStudio",
+              "op": "eq",
+              "valore": "laurea"
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se sei laureato in giurisprudenza e punti a diventare avvocato, cambia l'esame di Stato: una sola sessione all'anno, due prove scritte (un parere e un atto, su una materia che scegli tra civile, penale e amministrativo) da svolgere in presenza con i soli codici annotati e senza strumenti elettronici, più una prova orale. La tassa d'esame è di 62 euro; per chi ha un disturbo specifico dell'apprendimento sono previsti strumenti e tempi aggiuntivi.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Vale solo se sei laureato in giurisprudenza e intendi sostenere l'esame di abilitazione forense: un dato che non ti chiediamo, per questo la mostriamo a chi ha una laurea. Le nuove regole (art. 1 del decreto) si applicano dalla prima sessione dopo l'entrata in vigore e abrogano gli artt. 46, 47 e 49 della L. 247/2012. Decreto-legge da convertire.",
+          "fonteRegola": {
+            "etichetta": "DL 12 giugno 2026, n. 100 (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-06-12;100"
           }
         }
       ]
