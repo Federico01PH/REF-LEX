@@ -1,8 +1,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
-import { SchemaNovitaFile, type Novita } from '../src/engine/novita';
-import { scriviCatalogo } from './genera-catalogo';
+import { SchemaNovitaFile, type Novita, type NovitaFile } from '../src/engine/novita';
 import { analizzaGazzetta, URL_FONTE as URL_GAZZETTA } from './fonti/gazzetta';
 import { analizzaCamera, URL_FONTE as URL_CAMERA } from './fonti/camera';
 import { analizzaSenato, URL_FONTE as URL_SENATO } from './fonti/senato';
@@ -26,6 +25,15 @@ export function unisci(...gruppi: Novita[][]): Novita[] {
     .flat()
     .sort((a, b) => b.data.localeCompare(a.data))
     .slice(0, 20);
+}
+
+// Il job notturno aggiorna SOLO il feed delle novita (novita.json).
+// catalogo.json NON va rigenerato ogni notte: cambierebbe solo il campo generatoIl,
+// producendo commit e deploy inutili. Lo si rigenera a mano con `npm run genera-catalogo`
+// quando si bumpa VERSIONE_CATALOGO (vedi flusso di deploy).
+export function scriviDati(cartella: string, file: NovitaFile): void {
+  mkdirSync(cartella, { recursive: true });
+  writeFileSync(join(cartella, 'novita.json'), JSON.stringify(file, null, 2), 'utf8');
 }
 
 async function main() {
@@ -62,14 +70,11 @@ async function main() {
 
   const file = SchemaNovitaFile.parse({ generatoIl: oggi, voci });
 
-  mkdirSync(cartella, { recursive: true });
-  writeFileSync(join(cartella, 'novita.json'), JSON.stringify(file, null, 2), 'utf8');
-  scriviCatalogo(cartella, oggi);
+  scriviDati(cartella, file);
 
   console.log(
     `novita.json: ${file.voci.length} voci` +
-    ` (gazzetta: ${gazzetta.length}, camera: ${camera.length}, senato: ${senato.length})` +
-    ` · catalogo.json rigenerato`
+    ` (gazzetta: ${gazzetta.length}, camera: ${camera.length}, senato: ${senato.length})`
   );
 }
 

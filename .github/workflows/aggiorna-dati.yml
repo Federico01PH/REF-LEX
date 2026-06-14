@@ -16,12 +16,15 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run aggiorna-dati
+      # Solo il feed novita.json viene aggiornato di notte. catalogo.json NON va
+      # toccato qui (cambierebbe solo generatoIl = deploy inutili): lo si rigenera
+      # a mano con `npm run genera-catalogo` quando si bumpa VERSIONE_CATALOGO.
       - name: Commit e push se ci sono novità
         run: |
           git config user.name "ref-lex-bot"
           git config user.email "bot@users.noreply.github.com"
-          if ! git diff --quiet public/dati; then
-            git add public/dati
-            git commit -m "Aggiornamento automatico dati dalle fonti ufficiali"
+          if ! git diff --quiet public/dati/novita.json; then
+            git add public/dati/novita.json
+            git commit -m "Aggiornamento automatico novità dalle fonti ufficiali"
             git push
           fi
