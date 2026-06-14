@@ -22,7 +22,7 @@ export function Home({ haProfilo, nome, onAvanti, onPrivacy }: {
         {haProfilo ? 'Vai alle simulazioni' : 'Inizia: 2 minuti, niente account'}
       </button>
       <p className="testo-piccolo" style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
-        <Icona nome="lucchetto" dimensione={16} /> Zero dati inviati: tutto resta sul tuo dispositivo.{' '}
+        <Icona nome="lucchetto" dimensione={16} /> Nessun tuo dato personale viene inviato: il profilo resta sul tuo dispositivo.{' '}
         <button className="collegamento testo-piccolo" onClick={onPrivacy}>Come funziona la privacy</button>
       </p>
     </div>
