@@ -26,13 +26,24 @@ function formattaIntervallo(min: number, max: number): string {
   return min === max ? `${segno(min)} €` : `da ${segno(min)} a ${segno(max)} €`;
 }
 
+// Alleggerisce il testo: niente più paragrafi interamente in grassetto. Se l'osservazione
+// inizia con un "titolo:" breve (il modo in cui le regole introducono la parte chiave),
+// resta in grassetto solo quello; il resto torna a peso normale di lettura.
+function descrizioneConEnfasi(testo: string) {
+  const duePunti = testo.indexOf(':');
+  if (duePunti > 0 && duePunti <= 60 && duePunti < testo.length - 1) {
+    return <><strong style={{ fontWeight: 600 }}>{testo.slice(0, duePunti + 1)}</strong>{testo.slice(duePunti + 1)}</>;
+  }
+  return <>{testo}</>;
+}
+
 function RigaEffetto({ regola }: { regola: Regola }) {
   const [aperta, setAperta] = useState(false);
   const conf = CONFIDENZA[regola.confidenza];
   return (
     <div className="card spazio">
       <span className={`badge ${conf.classe}`}>{conf.parola}</span>
-      <p style={{ margin: '8px 0', fontWeight: 600 }}>{regola.effetto.descrizione}</p>
+      <p style={{ margin: '8px 0' }}>{descrizioneConEnfasi(regola.effetto.descrizione)}</p>
       {regola.effetto.importoMese && (
         <p style={{ margin: '4px 0', fontWeight: 900, fontSize: 20 }}>
           {formattaIntervallo(
