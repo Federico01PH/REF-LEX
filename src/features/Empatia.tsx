@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Legge, RisultatoSimulazione } from '../engine/types';
+import type { Legge, Profilo, RisultatoSimulazione } from '../engine/types';
 import { PERSONAGGI } from '../data/personas';
 import { simula } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
@@ -43,13 +43,22 @@ function DettaglioPersona({ r, legge }: { r: RisultatoSimulazione; legge: Legge 
   );
 }
 
-export function Empatia({ legge, onCreaIpotetico, onIndietro }: {
-  legge: Legge; onCreaIpotetico: () => void; onIndietro: () => void;
+// firma degli effetti: l'insieme delle regole che scattano. Due profili con la stessa firma
+// vedono lo stesso identico report (gli effetti sono fissi per regola), quindi è inutile
+// mostrarli entrambi: "E per gli altri?" serve a far vedere chi cambia in modo DIVERSO.
+function firmaEffetti(r: RisultatoSimulazione): string {
+  return r.effetti.map((e) => e.id).sort().join('|');
+}
+
+export function Empatia({ profilo, legge, onCreaIpotetico, onIndietro }: {
+  profilo?: Profilo; legge: Legge; onCreaIpotetico: () => void; onIndietro: () => void;
 }) {
-  // solo i profili a cui questa legge cambia davvero qualcosa: niente schede vuote
+  // a chi fa la simulazione mostriamo solo gli ALTRI casi: profili a cui questa legge cambia
+  // qualcosa (niente schede vuote) e in modo diverso da come cambia a lui (niente doppioni).
+  const miaFirma = profilo ? firmaEffetti(simula(profilo, legge)) : null;
   const rilevanti = PERSONAGGI
     .map((p) => ({ p, r: simula(p.profilo, legge) }))
-    .filter((x) => x.r.effetti.length > 0);
+    .filter((x) => x.r.effetti.length > 0 && (miaFirma === null || firmaEffetti(x.r) !== miaFirma));
   const [aperto, setAperto] = useState<string | null>(null);
 
   return (
@@ -59,10 +68,18 @@ export function Empatia({ legge, onCreaIpotetico, onIndietro }: {
       </button>
       <h1 style={{ fontSize: 24 }}>E per gli altri?</h1>
       {rilevanti.length === 0 ? (
-        <p>Questa legge non cambia nulla nemmeno per i profili di esempio. Prova a creare un profilo ipotetico.</p>
+        <p>
+          {miaFirma === null
+            ? 'Questa legge non cambia nulla nemmeno per i profili di esempio. Prova a creare un profilo ipotetico.'
+            : 'Tra i profili di esempio non ce n\'è nessuno a cui questa legge cambi le cose in modo diverso da te. Prova a creare un profilo ipotetico.'}
+        </p>
       ) : (
         <>
-          <p>Le persone a cui questa legge cambia qualcosa. Tocca un profilo per vedere il suo report.</p>
+          <p>
+            {miaFirma === null
+              ? 'Le persone a cui questa legge cambia qualcosa. Tocca un profilo per vedere il suo report.'
+              : 'Persone a cui questa legge cambia le cose in modo diverso da te. Tocca un profilo per vedere il suo report.'}
+          </p>
           <ul className="lista-profili">
             {rilevanti.map(({ p, r }) => {
               const espanso = aperto === p.id;

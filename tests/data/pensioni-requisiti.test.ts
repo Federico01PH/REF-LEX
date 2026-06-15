@@ -21,17 +21,16 @@ test('dipendente di 34 anni: adeguamento speranza di vita negativo dal 2° anno'
   expect(adeguamento!.confidenza).toBe('certa');
 });
 
-test('pensionato: solo la regola neutra "non ti tocca"', () => {
+test('pensionato: non è soggetto di questa legge, nessun effetto (parla dei requisiti futuri)', () => {
   const p: Profilo = { schemaVersion: 1, eta: 72, condizioneLavorativa: ['pensionato'] };
   const r = simula(p, pensioniRequisiti);
-  expect(r.effetti.map((e) => e.id)).toEqual(['pensioni-gia-pensionato']);
-  expect(r.effetti[0].effetto.direzione).toBe('neutro');
+  expect(r.effetti).toHaveLength(0);
 });
 
-test('pensionato che lavora ancora (più occupazioni): solo "già pensionato", niente regole sull\'età futura', () => {
+test('pensionato che lavora ancora (più occupazioni): comunque nessuna regola sull\'età futura', () => {
   const p: Profilo = { schemaVersion: 1, eta: 64, condizioneLavorativa: ['pensionato', 'dipendente-privato'] };
   const r = simula(p, pensioniRequisiti);
-  expect(r.effetti.map((e) => e.id)).toEqual(['pensioni-gia-pensionato']);
+  expect(r.effetti).toHaveLength(0);
 });
 
 // Verified from L. 199/2025: Ape sociale 63 anni e 5 mesi, prorogata SOLO per il 2026 → anno2+ incerto

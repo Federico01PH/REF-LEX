@@ -1,5 +1,5 @@
 {
-  "versione": 16,
+  "versione": 17,
   "generatoIl": "2026-06-15",
   "leggi": [
     {
@@ -369,37 +369,6 @@
       "verificataIl": "2026-06-11",
       "riassunto": "Nel 2026 si va in pensione di vecchiaia a 67 anni con 20 di contributi. Dal 2027 l'età sale di 1 mese e dal 2028 di altri 2 (67 anni e 3 mesi), tranne per i lavori pesanti. L'Ape sociale (uscita a 63 anni e 5 mesi per disoccupati, caregiver e invalidi) è prorogata solo per il 2026. Opzione donna e Quota 103 sono finite.",
       "regole": [
-        {
-          "id": "pensioni-gia-pensionato",
-          "campiNecessari": [
-            "condizioneLavorativa"
-          ],
-          "condizioni": [
-            {
-              "campo": "condizioneLavorativa",
-              "op": "in",
-              "valore": [
-                "pensionato"
-              ]
-            }
-          ],
-          "effetto": {
-            "tipo": "servizio",
-            "descrizione": "Sei già in pensione: i nuovi requisiti non ti toccano. La tua pensione non cambia per effetto di questa legge.",
-            "direzione": "neutro"
-          },
-          "timeline": {
-            "anno1": "attivo",
-            "anno2": "attivo",
-            "anno5": "attivo",
-            "anno10": "attivo"
-          },
-          "confidenza": "certa",
-          "fonteRegola": {
-            "etichetta": "L. 199/2025 (Bilancio 2026) e circolare INPS 19/2026",
-            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;199"
-          }
-        },
         {
           "id": "pensioni-adeguamento-speranza-vita",
           "campiNecessari": [

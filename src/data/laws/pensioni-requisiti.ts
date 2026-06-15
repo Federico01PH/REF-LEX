@@ -63,20 +63,11 @@ export const pensioniRequisiti: Legge = {
   ],
   verificataIl: '2026-06-11',
   riassunto: 'Nel 2026 si va in pensione di vecchiaia a 67 anni con 20 di contributi. Dal 2027 l\'età sale di 1 mese e dal 2028 di altri 2 (67 anni e 3 mesi), tranne per i lavori pesanti. L\'Ape sociale (uscita a 63 anni e 5 mesi per disoccupati, caregiver e invalidi) è prorogata solo per il 2026. Opzione donna e Quota 103 sono finite.',
+  // Chi è GIÀ in pensione non è soggetto di questa legge: parla dei requisiti FUTURI per
+  // andarci, e lui ci è già. Non compare quindi tra le persone "toccate" (né nel suo report,
+  // dove esce "non cambia nulla per te", né nella sezione "E per gli altri?"). L'esclusione è
+  // affidata a NON_PENSIONATO su tutte le regole: nessuna regola dedicata al già pensionato.
   regole: [
-    {
-      id: 'pensioni-gia-pensionato',
-      campiNecessari: ['condizioneLavorativa'],
-      condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['pensionato'] }],
-      effetto: {
-        tipo: 'servizio',
-        descrizione: 'Sei già in pensione: i nuovi requisiti non ti toccano. La tua pensione non cambia per effetto di questa legge.',
-        direzione: 'neutro'
-      },
-      timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
-      confidenza: 'certa',
-      fonteRegola: FONTE
-    },
     {
       id: 'pensioni-adeguamento-speranza-vita',
       campiNecessari: ['eta', 'condizioneLavorativa'],

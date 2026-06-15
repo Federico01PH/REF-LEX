@@ -95,7 +95,7 @@ export default function App() {
       {vista.nome === 'empatia' && (() => {
         const l = legge(vista.leggeId);
         return l ? (
-          <Empatia legge={l}
+          <Empatia legge={l} profilo={profiloEsploratore ?? profilo ?? undefined}
             onCreaIpotetico={() => setVista({ nome: 'wizard', esploratore: true })}
             onIndietro={() => setVista({ nome: 'report', leggeId: vista.leggeId })} />
         ) : <AvvisoLeggeMancante onIndietro={() => setVista({ nome: 'catalogo' })} />;
