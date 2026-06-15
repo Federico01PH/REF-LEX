@@ -61,6 +61,7 @@ export const decretoLavoro: Legge = {
       effetto: {
         tipo: 'qualita-vita',
         descrizione: 'Hai meno di 35 anni e cerchi lavoro: chi ti assume a tempo indeterminato non paga i contributi (esonero fino a 500 euro al mese per 24 mesi, 650 al Sud). Non sono soldi in busta paga per te, ma ti rendono molto più conveniente da assumere stabilmente.',
+        breve: 'Under 35 in cerca di lavoro: chi ti assume stabile non paga i contributi, così sei più conveniente da assumere.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'nullo', anno10: 'nullo' },
@@ -78,6 +79,7 @@ export const decretoLavoro: Legge = {
       effetto: {
         tipo: 'qualita-vita',
         descrizione: 'Sei una donna in cerca di lavoro: se sei disoccupata da molto tempo o in una categoria svantaggiata, chi ti assume ha l\'esonero totale dei contributi fino a 650 euro al mese per 24 mesi (800 nelle Zone Economiche Speciali del Sud). Un incentivo pensato per farti assumere prima.',
+        breve: 'Donna in cerca di lavoro: chi ti assume ha l\'esonero totale dei contributi, un incentivo per farti assumere prima.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'nullo', anno10: 'nullo' },
@@ -92,6 +94,7 @@ export const decretoLavoro: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Arriva il principio del "salario giusto": per ottenere i bonus, la tua azienda deve pagarti almeno quanto prevede il contratto collettivo del tuo settore (il trattamento economico complessivo). I contratti "pirata" che pagano meno perdono gli incentivi: una spinta verso stipendi più equi, soprattutto se oggi sei sotto i minimi dei contratti maggiori.',
+        breve: '"Salario giusto": per avere i bonus l\'azienda deve pagarti almeno il contratto del settore, stop ai contratti pirata.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -106,6 +109,7 @@ export const decretoLavoro: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Se lavori tramite piattaforme digitali (rider, consegne, lavoretti gestiti da un\'app): quando è l\'algoritmo a comandare scatta la presunzione che tu sia un lavoratore subordinato (con le relative tutele), hai diritto a una spiegazione delle decisioni automatizzate che ti riguardano, a una formazione sulla sicurezza entro 30 giorni e a un account protetto con SPID o CIE.',
+        breve: 'Lavori con un\'app (rider, consegne): se comanda l\'algoritmo sei presunto dipendente, con le relative tutele.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -120,6 +124,7 @@ export const decretoLavoro: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sui tuoi dati: la stessa legge che ti tutela impone alle piattaforme di conservare per 5 anni ogni tuo accesso, incarico, rifiuto e compenso, e regola la gestione fatta dall\'algoritmo. Più trasparenza, sì, ma anche un registro dettagliato e duraturo del tuo comportamento lavorativo in mano all\'azienda, e una vita lavorativa governata da un software.',
+        breve: 'Effetto indiretto: più trasparenza, ma la piattaforma tiene 5 anni di accessi, incarichi, rifiuti e compensi.',
         direzione: 'misto',
         indiretto: true,
         dirittoToccato: {

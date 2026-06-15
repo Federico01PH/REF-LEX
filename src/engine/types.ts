@@ -67,6 +67,7 @@ export interface Effetto {
   tipo: 'economico' | 'diritto' | 'dovere' | 'servizio' | 'qualita-vita';
   importoMese?: { min: number; max: number }; // € al mese, solo tipo economico
   descrizione: string;
+  breve?: string; // frase corta sull'impatto reale: mostrata in "E per gli altri?" (scansione veloce); cliccando si apre la descrizione completa. Se assente, lì si mostra direttamente la descrizione.
   direzione: 'positivo' | 'negativo' | 'neutro' | 'misto';
   indiretto?: boolean; // la legge non parla di te, ma ti tocca di riflesso
   dirittoToccato?: DirittoToccato; // rischio indiretto su un diritto/libertà; richiede indiretto: true

@@ -37,6 +37,7 @@ export const riformaDisabilita: Legge = {
       effetto: {
         tipo: 'servizio',
         descrizione: 'Meno burocrazia: una sola visita INPS per il riconoscimento, avviata dal certificato del tuo medico, al posto delle vecchie commissioni multiple e delle visite di rinnovo ripetute.',
+        breve: 'Meno burocrazia: una sola visita INPS per il riconoscimento, al posto delle vecchie commissioni e dei rinnovi.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'incerto', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -51,6 +52,7 @@ export const riformaDisabilita: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Diritto al "progetto di vita": un piano costruito con te (scuola, lavoro, casa, tempo libero) con un budget di progetto che puoi contribuire a gestire.',
+        breve: 'Diritto al "progetto di vita": un piano costruito con te su scuola, lavoro e casa, con un budget dedicato.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'incerto', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -65,6 +67,7 @@ export const riformaDisabilita: Legge = {
       effetto: {
         tipo: 'servizio',
         descrizione: 'La riforma cambia il come si accerta la disabilità, non l\'elenco delle condizioni riconosciute: se la tua condizione non è ancora riconosciuta, questa legge da sola non basta. Se nel catalogo c\'è una proposta dedicata alla tua condizione, la trovi tra le leggi su salute e diritti.',
+        breve: 'Cambia come si accerta la disabilità, non l\'elenco delle condizioni: se la tua non è riconosciuta, non basta.',
         direzione: 'neutro'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -78,6 +81,7 @@ export const riformaDisabilita: Legge = {
       effetto: {
         tipo: 'qualita-vita',
         descrizione: 'Se assisti una persona con disabilità, il progetto di vita coinvolge anche la famiglia: la valutazione considera i bisogni di chi assiste e coordina i servizi in un piano unico.',
+        breve: 'Se sei caregiver, il progetto di vita considera anche i tuoi bisogni e coordina i servizi in un piano unico.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'incerto', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -92,6 +96,7 @@ export const riformaDisabilita: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sui tuoi dati sanitari: la valutazione unica e il "progetto di vita" raccolgono in un solo fascicolo digitale, gestito dall\'INPS e condiviso tra i servizi, informazioni molto intime sulla tua salute, autonomia e vita quotidiana. È più comodo (una visita sola), ma concentra dati sensibili che prima erano sparsi, aumentando il peso di un eventuale uso improprio o di un accesso non autorizzato.',
+        breve: 'Effetto indiretto: dati intimi su salute e autonomia concentrati in un solo fascicolo digitale gestito dall\'INPS.',
         direzione: 'misto',
         indiretto: true,
         dirittoToccato: {

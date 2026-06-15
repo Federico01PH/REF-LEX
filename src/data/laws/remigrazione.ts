@@ -58,6 +58,7 @@ export const remigrazione: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'SE la proposta diventasse legge: viene abrogato il "decreto flussi", cioè la programmazione annuale degli ingressi per lavoro. L\'ingresso di lavoratori extra-UE sarebbe consentito solo in casi "residuali" e documentati, con priorità ai lavoratori europei. Per chi è extra-UE diventerebbe più difficile entrare per lavoro o far entrare familiari dall\'estero.',
+        breve: 'Stop al decreto flussi: per gli extra-UE entrare per lavoro o far venire la famiglia diventa molto più difficile.',
         direzione: 'negativo'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -75,6 +76,7 @@ export const remigrazione: Legge = {
       effetto: {
         tipo: 'servizio',
         descrizione: 'SE la proposta diventasse legge: per chi è in Italia regolarmente nasce un programma di "remigrazione", cioè rientro volontario assistito nel Paese di origine, con un incentivo economico, formazione e supporto. In cambio si firma un "Patto" che vieta di rientrare in Italia (salvo permessi temporanei) e prevede la restituzione dei fondi e sanzioni penali in caso di rientro non autorizzato. Per chi la sostiene è un aiuto a chi vuole tornare; per chi la critica è una spinta a far andare via gli stranieri.',
+        breve: 'Rientro volontario nel Paese d\'origine con un incentivo, ma legato a un "Patto" che vieta di tornare in Italia.',
         direzione: 'misto'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -92,6 +94,7 @@ export const remigrazione: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'SE la proposta diventasse legge: chi è in Italia senza un permesso di soggiorno valido sarebbe nella posizione più esposta. La proposta chiude le vie per mettersi in regola — stop al "decreto flussi", abolizione della protezione speciale, esclusione di chi si era regolarizzato con una sanatoria — e il programma di rientro volontario con incentivo è riservato a chi è regolare. Resterebbe quindi soggetto al rimpatrio, senza un percorso assistito né l\'incentivo economico.',
+        breve: 'Chi è senza permesso resta esposto al rimpatrio: niente incentivo al rientro e vie per regolarizzarsi chiuse.',
         direzione: 'negativo'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -106,6 +109,7 @@ export const remigrazione: Legge = {
       effetto: {
         tipo: 'economico',
         descrizione: 'SE la proposta diventasse legge: chi invia denaro (rimesse) verso l\'estero pagherebbe una tassa del 3% su quanto manda, per finanziare il Fondo per la Remigrazione. Se mandi soldi alla tua famiglia nel Paese di origine, ti costerebbe il 3% in più ogni volta.',
+        breve: 'Una tassa del 3% su ogni invio di denaro all\'estero: mandare soldi alla famiglia costerebbe di più.',
         direzione: 'negativo'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -120,6 +124,7 @@ export const remigrazione: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sul diritto d\'asilo e sulla vita familiare: la proposta abolisce la "protezione speciale" (un permesso per chi non può essere rimpatriato senza rischi) e restringe il ricongiungimento familiare, escludendo chi si è regolarizzato con una sanatoria e introducendo nuove verifiche. Per chi è extra-UE significa meno strade per restare in Italia o per ricongiungersi con i familiari.',
+        breve: 'Effetto indiretto: niente più protezione speciale, ricongiungimento ristretto, meno vie per restare in Italia.',
         direzione: 'negativo',
         indiretto: true,
         dirittoToccato: {
@@ -142,6 +147,7 @@ export const remigrazione: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sul diritto alla cittadinanza: se in futuro ottenessi la cittadinanza italiana per naturalizzazione, la proposta prevede che possa esserti revocata in caso di condanna definitiva per reati gravi (terrorismo, criminalità organizzata, reati puniti fino a 5 anni o più), con espulsione e divieto di rientro. La cittadinanza acquisita diventerebbe quindi più "fragile" di quella di chi è italiano dalla nascita.',
+        breve: 'Effetto indiretto: la cittadinanza presa da adulto potrebbe essere revocata dopo condanne gravi, con espulsione.',
         direzione: 'negativo',
         indiretto: true,
         dirittoToccato: {
@@ -164,6 +170,7 @@ export const remigrazione: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sull\'uguaglianza di trattamento: diverse misure distinguono in base alla nazionalità. La tassa del 3% colpisce solo le rimesse verso l\'estero; il bonus nascita, gli asili nido gratuiti e gli aiuti per la casa del Fondo Natalità sono riservati in via prioritaria alle famiglie con genitori entrambi italiani. Per chi è straniero significa contribuire alle tasse ma con meno accesso ad alcuni aiuti.',
+        breve: 'Effetto indiretto: più misure distinguono per nazionalità, così lo straniero paga le tasse ma accede a meno aiuti.',
         direzione: 'negativo',
         indiretto: true,
         dirittoToccato: {
@@ -189,6 +196,7 @@ export const remigrazione: Legge = {
       effetto: {
         tipo: 'economico',
         descrizione: 'SE la proposta diventasse legge: nasce il Fondo per la Natalità Italiana, con bonus nascita fino a 3.000 euro per figlio, contributi fino a 10.000 euro dal terzo figlio in poi, asili nido gratuiti e mutui o affitti calmierati, riservati in via prioritaria alle famiglie con genitori entrambi cittadini italiani. Se hai (o avrai) figli, potresti riceverne un aiuto economico.',
+        breve: 'Bonus nascita, asili gratis e aiuti casa per le famiglie con entrambi i genitori italiani (se i fondi arriveranno).',
         direzione: 'positivo'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -203,6 +211,7 @@ export const remigrazione: Legge = {
       effetto: {
         tipo: 'dovere',
         descrizione: 'SE la proposta diventasse legge: per le imprese aumentano molto i rischi se impiegano lavoratori stranieri irregolari (reclusione, multe fino a 1 milione, confisca dei beni, blocco dei conti, revoca delle licenze). Allo stesso tempo sono previsti incentivi e premi per le aziende che assumono solo lavoratori regolari. Se hai dipendenti, conviene avere tutto in regola.',
+        breve: 'Per le imprese: pene durissime per chi impiega irregolari, premi a chi assume solo lavoratori in regola.',
         direzione: 'misto'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },

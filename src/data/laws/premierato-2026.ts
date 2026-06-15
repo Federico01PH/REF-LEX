@@ -45,6 +45,7 @@ export const premierato: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Se la riforma viene approvata e confermata dal referendum, potrai eleggere direttamente il Presidente del Consiglio insieme alle Camere, con un mandato di 5 anni. Oggi invece il Presidente del Consiglio non lo scegli col voto: lo nomina il Presidente della Repubblica dopo le elezioni. Avresti quindi più voce diretta su chi guida il governo.',
+        breve: 'Potresti eleggere direttamente il Presidente del Consiglio: più voce diretta su chi guida il governo.',
         direzione: 'misto'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -59,6 +60,7 @@ export const premierato: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sulle garanzie costituzionali: insieme all\'elezione diretta, la riforma dà al premier una maggioranza garantita, riduce i poteri del Presidente della Repubblica (per esempio sullo scioglimento delle Camere e sulla nomina del governo) e abolisce i senatori a vita di nomina presidenziale. Per chi la sostiene è più stabilità e una scelta più chiara; per chi la critica sono meno contrappesi a chi governa.',
+        breve: 'Effetto indiretto: più potere al premier e meno al Presidente della Repubblica: per i critici, meno contrappesi.',
         direzione: 'misto',
         indiretto: true,
         dirittoToccato: {

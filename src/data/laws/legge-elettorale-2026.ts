@@ -44,6 +44,7 @@ export const leggeElettorale: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Se la proposta diventa legge, cambia come voti: niente più collegi uninominali (non scegli più un singolo candidato del tuo territorio), torna il sistema proporzionale e non ci sono voti di preferenza, quindi scegli la lista ma non la persona. Le coalizioni devono indicare in anticipo il nome che propongono come Presidente del Consiglio.',
+        breve: 'Cambia come voti: sistema proporzionale, niente preferenze (scegli la lista, non la persona) né collegi uninominali.',
         direzione: 'misto'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -58,6 +59,7 @@ export const leggeElettorale: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sul peso del tuo voto: il "premio di governabilità" assegna 70 seggi in più alla Camera e 35 al Senato alla coalizione che arriva prima, se supera il 42% dei voti in entrambe le Camere. Serve a dare governi più stabili, ma vuol dire che chi vince ottiene molti più seggi della sua percentuale di voti, e chi vota per gli altri pesa di meno. C\'è un tetto: la maggioranza non può superare circa il 60% dei seggi.',
+        breve: 'Effetto indiretto: il premio di governabilità dà più seggi a chi vince, così il voto per gli altri pesa di meno.',
         direzione: 'misto',
         indiretto: true,
         dirittoToccato: {

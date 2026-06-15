@@ -35,6 +35,7 @@ export const iusItaliae: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'SE la proposta venisse approvata: i tuoi figli nati in Italia (o arrivati entro i 5 anni) potrebbero diventare cittadini italiani a 16 anni dopo aver completato 10 anni di scuola qui.',
+        breve: 'I tuoi figli cresciuti e scolarizzati in Italia potrebbero diventare cittadini a 16 anni, dopo 10 anni di scuola.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -52,6 +53,7 @@ export const iusItaliae: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'SE la proposta venisse approvata e sei cresciuto a scuola in Italia: percorso più chiaro verso la cittadinanza, senza aspettare i 18 anni con la trafila attuale.',
+        breve: 'Se sei cresciuto a scuola in Italia: via più chiara alla cittadinanza, senza aspettare i 18 anni.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },

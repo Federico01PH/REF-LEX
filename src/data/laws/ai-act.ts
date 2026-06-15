@@ -36,6 +36,7 @@ export const aiAct: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Nessuno può usare l\'IA per darti un "punteggio sociale", leggerti le emozioni a scuola o al lavoro, o manipolarti con tecniche ingannevoli: sono pratiche vietate in tutta Europa, con multe fino a 35 milioni di euro.',
+        breve: 'Vietati in Europa il "punteggio sociale", il riconoscimento delle emozioni a scuola o al lavoro e l\'IA manipolatoria.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -50,6 +51,7 @@ export const aiAct: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Quando parli con un\'IA (chatbot) deve dirtelo, e le immagini o i video creati dall\'IA (deepfake) devono essere dichiarati come tali.',
+        breve: 'I chatbot devono dichiararsi e i contenuti creati dall\'IA (deepfake) vanno segnalati come tali.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -66,6 +68,7 @@ export const aiAct: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Se un\'IA viene usata per decidere su di te — selezionarti per un lavoro, valutarti a scuola, concederti un prestito — dal 2 agosto 2026 servono supervisione umana, dati di qualità e hai diritto a una spiegazione e al reclamo.',
+        breve: 'Se un\'IA decide su lavoro, scuola o prestiti, dal 2 agosto 2026 hai diritto a controllo umano, spiegazione e reclamo.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -80,6 +83,7 @@ export const aiAct: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sulla tua privacy: l\'AI Act ti protegge, ma lascia delle porte aperte. Il riconoscimento facciale in tempo reale negli spazi pubblici resta vietato "salvo eccezioni" per le forze dell\'ordine, e le autorità pubbliche possono comunque usare sistemi che ti profilano. In più, la proposta "digital omnibus" potrebbe rinviare alcune tutele: la rete di protezione c\'è, ma con maglie più larghe di quanto sembri.',
+        breve: 'Effetto indiretto: tutele sulla privacy, ma con eccezioni per il volto in pubblico e la profilazione pubblica.',
         direzione: 'misto',
         indiretto: true,
         dirittoToccato: {

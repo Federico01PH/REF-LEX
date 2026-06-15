@@ -35,6 +35,7 @@ export const caseGreen: Legge = {
       effetto: {
         tipo: 'servizio',
         descrizione: 'Se devi sostituire la caldaia, quelle solo a gas o gasolio non hanno più nessun bonus statale dal 2025: la paghi a prezzo pieno. Gli incentivi restano per pompe di calore e sistemi ibridi.',
+        breve: 'Le caldaie solo a gas o gasolio non hanno più bonus: le paghi piene. Incentivi solo per pompe di calore e ibridi.',
         direzione: 'negativo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -49,6 +50,7 @@ export const caseGreen: Legge = {
       effetto: {
         tipo: 'dovere',
         descrizione: 'In futuro potrebbero arrivare requisiti o spinte a ristrutturare le case che consumano di più (e chi ristruttura risparmia in bolletta e rivaluta la casa). Ma oggi non esiste nessun obbligo per la tua singola casa.',
+        breve: 'Oggi nessun obbligo sulla tua casa; in futuro potrebbero arrivare spinte a ristrutturare quelle più energivore.',
         direzione: 'misto'
       },
       timeline: { anno1: 'nullo', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -63,6 +65,7 @@ export const caseGreen: Legge = {
       effetto: {
         tipo: 'qualita-vita',
         descrizione: 'Se la casa che affitti verrà ristrutturata, pagherai meno di bolletta e vivrai meglio; ma i lavori potrebbero riflettersi sul canone. Dipende dalle scelte del proprietario e dalle regole italiane in arrivo.',
+        breve: 'Effetto indiretto: se la casa in affitto viene ristrutturata, meno bolletta ma forse un canone più alto.',
         direzione: 'misto',
         indiretto: true
       },
@@ -78,6 +81,7 @@ export const caseGreen: Legge = {
       effetto: {
         tipo: 'economico',
         descrizione: 'Possiedi più di un immobile: se l\'Italia introdurrà requisiti o incentivi per ristrutturare, ogni immobile in più è un possibile cantiere (e una spesa) in più, ma anche un valore che sale dopo i lavori. Le case più energivore, spesso quelle affittate, potrebbero essere le prime chiamate in causa.',
+        breve: 'Effetto indiretto: con più immobili, ogni casa energivora è un possibile cantiere in più, ma anche valore che sale.',
         direzione: 'misto',
         indiretto: true
       },

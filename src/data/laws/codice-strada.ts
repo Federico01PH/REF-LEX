@@ -39,6 +39,7 @@ export const codiceStrada: Legge = {
       effetto: {
         tipo: 'dovere',
         descrizione: 'Se guidi: cellulare in mano = multa da 250 a 1.500 euro, fino a 10 punti e sospensione della patente; con tasso alcolico oltre 0,8 scatta il divieto assoluto di alcol alla guida per 2-3 anni con obbligo di alcolock. In cambio, strade più sicure per tutti.',
+        breve: 'Pene più dure per cellulare alla guida e alcol; in cambio, strade più sicure per tutti.',
         direzione: 'misto'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -55,6 +56,7 @@ export const codiceStrada: Legge = {
       effetto: {
         tipo: 'dovere',
         descrizione: 'Per chi ha la patente da meno di 3 anni: zero alcol assoluto alla guida e limiti sulla potenza delle auto estesi a 3 anni.',
+        breve: 'Neopatentati: zero alcol assoluto e limiti sulla potenza dell\'auto estesi a 3 anni.',
         direzione: 'misto'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -69,6 +71,7 @@ export const codiceStrada: Legge = {
       effetto: {
         tipo: 'dovere',
         descrizione: 'Se usi un monopattino elettrico: casco obbligatorio per tutti, si circola solo su strade urbane fino a 50 km/h, e sono in arrivo targa e assicurazione obbligatorie.',
+        breve: 'Monopattini elettrici: casco obbligatorio e, in arrivo, targa e assicurazione.',
         direzione: 'misto'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -83,6 +86,7 @@ export const codiceStrada: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sulla libertà personale: la nuova norma sulle droghe punisce la semplice positività al test, anche senza guida alterata. Significa che puoi perdere la patente per una sostanza assunta giorni prima, quando non eri più sotto effetto. Tocca soprattutto chi usa cannabis terapeutica o ha consumato nel tempo libero lontano dalla guida.',
+        breve: 'Effetto indiretto: puoi perdere la patente per la sola positività al test, anche senza aver guidato alterato.',
         direzione: 'negativo',
         indiretto: true,
         dirittoToccato: {

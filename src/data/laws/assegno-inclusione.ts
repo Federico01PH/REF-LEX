@@ -23,7 +23,7 @@ const TIMELINE_STRUTTURALE: Record<Orizzonte, StatoOrizzonte> = {
 const NOTA_COMUNE =
   'L\'importo esatto dipende dal reddito familiare e dalla composizione del nucleo (scala di equivalenza), dati che non ti chiediamo. Contano anche i requisiti su casa e risparmi (patrimonio immobiliare e mobiliare).';
 
-function regolaAdi(id: string, campiNecessari: Regola['campiNecessari'], condizioni: Regola['condizioni'], descrizione: string, nota: string): Regola {
+function regolaAdi(id: string, campiNecessari: Regola['campiNecessari'], condizioni: Regola['condizioni'], descrizione: string, nota: string, breve: string): Regola {
   return {
     id,
     campiNecessari,
@@ -32,6 +32,7 @@ function regolaAdi(id: string, campiNecessari: Regola['campiNecessari'], condizi
       tipo: 'economico',
       importoMese: { min: 0, max: 845 },
       descrizione,
+      breve,
       direzione: 'positivo'
     },
     timeline: TIMELINE_STRUTTURALE,
@@ -70,7 +71,8 @@ export const assegnoInclusione: Legge = {
         { campo: 'figli', op: 'almeno', valore: 1 }
       ],
       'Con un ISEE sotto i 9.360 euro e figli nel nucleo puoi chiedere l\'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.',
-      'Serve che almeno un figlio sia minorenne (o che nel nucleo ci sia un\'altra persona tra quelle previste).'
+      'Serve che almeno un figlio sia minorenne (o che nel nucleo ci sia un\'altra persona tra quelle previste).',
+      'Con ISEE basso e figli nel nucleo puoi chiedere l\'assegno: fino a 542 €/mese più 303 di affitto.'
     ),
     regolaAdi(
       'adi-isee-over60',
@@ -80,7 +82,8 @@ export const assegnoInclusione: Legge = {
         { campo: 'eta', op: 'almeno', valore: 60 }
       ],
       'Con un ISEE sotto i 9.360 euro e almeno 60 anni puoi chiedere l\'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.',
-      'Il requisito dell\'età (60 anni) è soddisfatto dal tuo profilo.'
+      'Il requisito dell\'età (60 anni) è soddisfatto dal tuo profilo.',
+      'Con ISEE basso e almeno 60 anni puoi chiedere l\'assegno: fino a 542 €/mese più 303 di affitto.'
     ),
     regolaAdi(
       'adi-isee-disabilita',
@@ -90,14 +93,16 @@ export const assegnoInclusione: Legge = {
         { campo: 'disabilita', op: 'in', valore: ['motoria', 'visiva', 'uditiva', 'intellettiva', 'malattia-cronica'] }
       ],
       'Con un ISEE sotto i 9.360 euro e una disabilità o malattia cronica certificata puoi chiedere l\'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.',
-      'Serve che la disabilità sia certificata dalle commissioni mediche; le condizioni non ancora riconosciute ufficialmente purtroppo non bastano.'
+      'Serve che la disabilità sia certificata dalle commissioni mediche; le condizioni non ancora riconosciute ufficialmente purtroppo non bastano.',
+      'Con ISEE basso e una disabilità certificata puoi chiedere l\'assegno: fino a 542 €/mese più 303 di affitto.'
     ),
     regolaAdi(
       'adi-soglia-vicina',
       ['fasciaIsee'],
       [{ campo: 'fasciaIsee', op: 'eq', valore: 'da9360a15k' }],
       'La soglia ISEE per l\'Assegno di inclusione è 10.140 euro: se il tuo ISEE è tra 9.360 e 10.140 puoi rientrare; sopra, no.',
-      'Il tuo ISEE è nella fascia 9.360-15.000: solo la parte fino a 10.140 dà diritto all\'assegno, e serve comunque un minorenne, una persona con disabilità o un over 60 nel nucleo.'
+      'Il tuo ISEE è nella fascia 9.360-15.000: solo la parte fino a 10.140 dà diritto all\'assegno, e serve comunque un minorenne, una persona con disabilità o un over 60 nel nucleo.',
+      'Sei al limite: l\'assegno spetta solo con ISEE fino a 10.140 euro, sopra no.'
     ),
     {
       id: 'adi-dati-condizionalita',
@@ -106,6 +111,7 @@ export const assegnoInclusione: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sui tuoi dati: per ricevere l\'assegno devi consegnare allo Stato un quadro molto dettagliato della tua vita (reddito, patrimonio, immobili, conti, composizione del nucleo) e iscriverti alla piattaforma SIISL, firmando un patto di attivazione con controlli e obblighi periodici. Sono dati sensibili sulla tua condizione economica concentrati in mano pubblica, con il rischio che servano anche a profilarti o a incrociare informazioni.',
+        breve: 'Effetto indiretto: per averlo consegni allo Stato un quadro dettagliato della tua vita, con controlli periodici.',
         direzione: 'misto',
         indiretto: true,
         dirittoToccato: {

@@ -63,6 +63,7 @@ export const dlMigrazioneAsilo: Legge = {
       effetto: {
         tipo: 'servizio',
         descrizione: 'Se sei (o se in futuro fossi) un cittadino extra-UE che chiede asilo in Italia, cambia la procedura: per molti casi la domanda viene esaminata direttamente alla frontiera, con una decisione più rapida (entro 12 settimane al massimo) e con un primo controllo di identificazione all\'arrivo. Durante la procedura ti può essere chiesto di restare in un luogo specifico. Più veloce, ma con più vincoli su dove stai mentre aspetti la risposta.',
+        breve: 'Asilo: per molti la domanda si esamina alla frontiera in max 12 settimane, ma con vincoli su dove stai nell\'attesa.',
         direzione: 'misto'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -77,6 +78,7 @@ export const dlMigrazioneAsilo: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sul diritto d\'asilo: decisioni più rapide alla frontiera, con la possibilità di doverti trattenere in un luogo determinato durante l\'esame, comprimono i tempi e i margini per preparare la tua domanda e per fare ricorso. Per chi lo sostiene è un modo per gestire meglio gli arrivi; per chi lo critica è il rischio che la protezione di chi fugge davvero diventi più difficile da ottenere.',
+        breve: 'Effetto indiretto: procedure più rapide lasciano meno tempo e margini per preparare la domanda d\'asilo e il ricorso.',
         direzione: 'negativo',
         indiretto: true,
         dirittoToccato: {
@@ -99,6 +101,7 @@ export const dlMigrazioneAsilo: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sui tuoi dati: il decreto attiva il nuovo Eurodac, la banca dati europea che raccoglie dati biometrici (impronte digitali e immagine del volto) di chi chiede asilo o si trova in posizione irregolare. Questi dati possono essere confrontati anche dalle forze di polizia e da Europol. Più strumenti di identificazione e controllo, ma anche una traccia biometrica di te conservata e condivisa tra più Paesi.',
+        breve: 'Effetto indiretto: i tuoi dati biometrici finiscono nel nuovo Eurodac, accessibile anche a polizia ed Europol.',
         direzione: 'misto',
         indiretto: true,
         dirittoToccato: {
@@ -121,6 +124,7 @@ export const dlMigrazioneAsilo: Legge = {
       effetto: {
         tipo: 'servizio',
         descrizione: 'Se sei laureato in giurisprudenza e punti a diventare avvocato, cambia l\'esame di Stato: una sola sessione all\'anno, due prove scritte (un parere e un atto, su una materia che scegli tra civile, penale e amministrativo) da svolgere in presenza con i soli codici annotati e senza strumenti elettronici, più una prova orale. La tassa d\'esame è di 62 euro; per chi ha un disturbo specifico dell\'apprendimento sono previsti strumenti e tempi aggiuntivi.',
+        breve: 'Esame da avvocato rifatto: una sola sessione l\'anno, due scritti più l\'orale, tassa di 62 euro.',
         direzione: 'misto'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },

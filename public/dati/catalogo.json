@@ -1,5 +1,5 @@
 {
-  "versione": 17,
+  "versione": 18,
   "generatoIl": "2026-06-15",
   "leggi": [
     {
@@ -330,6 +330,7 @@
           "effetto": {
             "tipo": "economico",
             "descrizione": "Se il tuo CCNL non è tra quelli \"maggiormente applicati\", o se il tuo contratto prevede paghe sotto il minimo che il Governo stabilirà, potresti ricevere un aumento. L'importo dipende dal tuo contratto collettivo attuale.",
+            "breve": "Se il tuo contratto paga sotto il minimo che il Governo fisserà, potresti avere un aumento.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -407,6 +408,7 @@
           "effetto": {
             "tipo": "dovere",
             "descrizione": "L'età della pensione di vecchiaia sale: +1 mese dal 2027 e altri +2 mesi dal 2028 (in totale 67 anni e 3 mesi). Lavorerai fino a 3 mesi in più rispetto alle regole del 2026. Sono esclusi i lavori gravosi e usuranti.",
+            "breve": "L'età della pensione di vecchiaia sale fino a 3 mesi: andrai in pensione un po' più tardi.",
             "direzione": "negativo"
           },
           "timeline": {
@@ -453,6 +455,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Con l'Ape sociale puoi chiedere un'indennità ponte e uscire dal lavoro a 63 anni e 5 mesi, prima della pensione di vecchiaia.",
+            "breve": "Con l'Ape sociale potresti uscire dal lavoro a 63 anni e 5 mesi, prima della pensione di vecchiaia.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -511,6 +514,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Hai già raggiunto (o stai per raggiungere) i 67 anni: se hai almeno 20 anni di contributi, la pensione di vecchiaia è a portata di mano.",
+            "breve": "A un passo dalla pensione di vecchiaia: con 20 anni di contributi è a portata di mano.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -569,6 +573,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Raggiungerai l'età della pensione di vecchiaia (67 anni e 3 mesi dal 2028) entro i prossimi 5 anni.",
+            "breve": "Raggiungerai l'età della pensione di vecchiaia entro circa 5 anni.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -627,6 +632,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Raggiungerai l'età della pensione di vecchiaia (67 anni e 3 mesi dal 2028) entro i prossimi 10 anni.",
+            "breve": "Raggiungerai l'età della pensione di vecchiaia entro circa 10 anni.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -695,6 +701,7 @@
               "max": 845
             },
             "descrizione": "Con un ISEE sotto i 9.360 euro e figli nel nucleo puoi chiedere l'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.",
+            "breve": "Con ISEE basso e figli nel nucleo puoi chiedere l'assegno: fino a 542 €/mese più 303 di affitto.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -735,6 +742,7 @@
               "max": 845
             },
             "descrizione": "Con un ISEE sotto i 9.360 euro e almeno 60 anni puoi chiedere l'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.",
+            "breve": "Con ISEE basso e almeno 60 anni puoi chiedere l'assegno: fino a 542 €/mese più 303 di affitto.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -781,6 +789,7 @@
               "max": 845
             },
             "descrizione": "Con un ISEE sotto i 9.360 euro e una disabilità o malattia cronica certificata puoi chiedere l'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.",
+            "breve": "Con ISEE basso e una disabilità certificata puoi chiedere l'assegno: fino a 542 €/mese più 303 di affitto.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -815,6 +824,7 @@
               "max": 845
             },
             "descrizione": "La soglia ISEE per l'Assegno di inclusione è 10.140 euro: se il tuo ISEE è tra 9.360 e 10.140 puoi rientrare; sopra, no.",
+            "breve": "Sei al limite: l'assegno spetta solo con ISEE fino a 10.140 euro, sopra no.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -848,6 +858,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sui tuoi dati: per ricevere l'assegno devi consegnare allo Stato un quadro molto dettagliato della tua vita (reddito, patrimonio, immobili, conti, composizione del nucleo) e iscriverti alla piattaforma SIISL, firmando un patto di attivazione con controlli e obblighi periodici. Sono dati sensibili sulla tua condizione economica concentrati in mano pubblica, con il rischio che servano anche a profilarti o a incrociare informazioni.",
+            "breve": "Effetto indiretto: per averlo consegni allo Stato un quadro dettagliato della tua vita, con controlli periodici.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
@@ -908,6 +919,7 @@
           "effetto": {
             "tipo": "servizio",
             "descrizione": "Se devi sostituire la caldaia, quelle solo a gas o gasolio non hanno più nessun bonus statale dal 2025: la paghi a prezzo pieno. Gli incentivi restano per pompe di calore e sistemi ibridi.",
+            "breve": "Le caldaie solo a gas o gasolio non hanno più bonus: le paghi piene. Incentivi solo per pompe di calore e ibridi.",
             "direzione": "negativo"
           },
           "timeline": {
@@ -938,6 +950,7 @@
           "effetto": {
             "tipo": "dovere",
             "descrizione": "In futuro potrebbero arrivare requisiti o spinte a ristrutturare le case che consumano di più (e chi ristruttura risparmia in bolletta e rivaluta la casa). Ma oggi non esiste nessun obbligo per la tua singola casa.",
+            "breve": "Oggi nessun obbligo sulla tua casa; in futuro potrebbero arrivare spinte a ristrutturare quelle più energivore.",
             "direzione": "misto"
           },
           "timeline": {
@@ -968,6 +981,7 @@
           "effetto": {
             "tipo": "qualita-vita",
             "descrizione": "Se la casa che affitti verrà ristrutturata, pagherai meno di bolletta e vivrai meglio; ma i lavori potrebbero riflettersi sul canone. Dipende dalle scelte del proprietario e dalle regole italiane in arrivo.",
+            "breve": "Effetto indiretto: se la casa in affitto viene ristrutturata, meno bolletta ma forse un canone più alto.",
             "direzione": "misto",
             "indiretto": true
           },
@@ -999,6 +1013,7 @@
           "effetto": {
             "tipo": "economico",
             "descrizione": "Possiedi più di un immobile: se l'Italia introdurrà requisiti o incentivi per ristrutturare, ogni immobile in più è un possibile cantiere (e una spesa) in più, ma anche un valore che sale dopo i lavori. Le case più energivore, spesso quelle affittate, potrebbero essere le prime chiamate in causa.",
+            "breve": "Effetto indiretto: con più immobili, ogni casa energivora è un possibile cantiere in più, ma anche valore che sale.",
             "direzione": "misto",
             "indiretto": true
           },
@@ -1054,6 +1069,7 @@
               "max": 400
             },
             "descrizione": "Se ristrutturi casa tua nel 2026 recuperi il 50% della spesa in 10 anni: fino a 400 euro al mese di tasse in meno (con il tetto massimo di 96.000 euro di lavori sull'abitazione principale).",
+            "breve": "Ristrutturi casa tua nel 2026: recuperi il 50% in 10 anni, fino a 400 euro al mese di tasse in meno.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1091,6 +1107,7 @@
               "max": 400
             },
             "descrizione": "Anche chi è in affitto o in comodato può usare il bonus, se paga i lavori con il consenso del proprietario: 50% di detrazione se è la tua abitazione principale.",
+            "breve": "Anche in affitto o comodato puoi usare il bonus, col consenso del proprietario: 50% sulla casa principale.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1152,6 +1169,7 @@
           "effetto": {
             "tipo": "servizio",
             "descrizione": "Meno burocrazia: una sola visita INPS per il riconoscimento, avviata dal certificato del tuo medico, al posto delle vecchie commissioni multiple e delle visite di rinnovo ripetute.",
+            "breve": "Meno burocrazia: una sola visita INPS per il riconoscimento, al posto delle vecchie commissioni e dei rinnovi.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1188,6 +1206,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Diritto al \"progetto di vita\": un piano costruito con te (scuola, lavoro, casa, tempo libero) con un budget di progetto che puoi contribuire a gestire.",
+            "breve": "Diritto al \"progetto di vita\": un piano costruito con te su scuola, lavoro e casa, con un budget dedicato.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1220,6 +1239,7 @@
           "effetto": {
             "tipo": "servizio",
             "descrizione": "La riforma cambia il come si accerta la disabilità, non l'elenco delle condizioni riconosciute: se la tua condizione non è ancora riconosciuta, questa legge da sola non basta. Se nel catalogo c'è una proposta dedicata alla tua condizione, la trovi tra le leggi su salute e diritti.",
+            "breve": "Cambia come si accerta la disabilità, non l'elenco delle condizioni: se la tua non è riconosciuta, non basta.",
             "direzione": "neutro"
           },
           "timeline": {
@@ -1251,6 +1271,7 @@
           "effetto": {
             "tipo": "qualita-vita",
             "descrizione": "Se assisti una persona con disabilità, il progetto di vita coinvolge anche la famiglia: la valutazione considera i bisogni di chi assiste e coordina i servizi in un piano unico.",
+            "breve": "Se sei caregiver, il progetto di vita considera anche i tuoi bisogni e coordina i servizi in un piano unico.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1287,6 +1308,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sui tuoi dati sanitari: la valutazione unica e il \"progetto di vita\" raccolgono in un solo fascicolo digitale, gestito dall'INPS e condiviso tra i servizi, informazioni molto intime sulla tua salute, autonomia e vita quotidiana. È più comodo (una visita sola), ma concentra dati sensibili che prima erano sparsi, aumentando il peso di un eventuale uso improprio o di un accesso non autorizzato.",
+            "breve": "Effetto indiretto: dati intimi su salute e autonomia concentrati in un solo fascicolo digitale gestito dall'INPS.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
@@ -1350,6 +1372,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Se la tua condizione è la fibromialgia in forma molto severa, avrai un codice di esenzione dal ticket (valido almeno 2 anni), una visita specialistica, 10 sedute riabilitative e una visita psichiatrica a carico del servizio sanitario.",
+            "breve": "Fibromialgia molto severa: esenzione dal ticket, visite e sedute riabilitative a carico del servizio sanitario.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1382,6 +1405,7 @@
           "effetto": {
             "tipo": "servizio",
             "descrizione": "Se la tua forma non è classificata come molto severa, questo aggiornamento non ti dà ancora esenzioni: il riconoscimento pieno della fibromialgia resta affidato ai disegni di legge in discussione al Senato.",
+            "breve": "Se la forma non è molto severa, ancora nessuna esenzione: il riconoscimento pieno è fermo in Parlamento.",
             "direzione": "neutro"
           },
           "timeline": {
@@ -1434,6 +1458,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Nessuno può usare l'IA per darti un \"punteggio sociale\", leggerti le emozioni a scuola o al lavoro, o manipolarti con tecniche ingannevoli: sono pratiche vietate in tutta Europa, con multe fino a 35 milioni di euro.",
+            "breve": "Vietati in Europa il \"punteggio sociale\", il riconoscimento delle emozioni a scuola o al lavoro e l'IA manipolatoria.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1464,6 +1489,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Quando parli con un'IA (chatbot) deve dirtelo, e le immagini o i video creati dall'IA (deepfake) devono essere dichiarati come tali.",
+            "breve": "I chatbot devono dichiararsi e i contenuti creati dall'IA (deepfake) vanno segnalati come tali.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1498,6 +1524,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Se un'IA viene usata per decidere su di te — selezionarti per un lavoro, valutarti a scuola, concederti un prestito — dal 2 agosto 2026 servono supervisione umana, dati di qualità e hai diritto a una spiegazione e al reclamo.",
+            "breve": "Se un'IA decide su lavoro, scuola o prestiti, dal 2 agosto 2026 hai diritto a controllo umano, spiegazione e reclamo.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1528,6 +1555,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sulla tua privacy: l'AI Act ti protegge, ma lascia delle porte aperte. Il riconoscimento facciale in tempo reale negli spazi pubblici resta vietato \"salvo eccezioni\" per le forze dell'ordine, e le autorità pubbliche possono comunque usare sistemi che ti profilano. In più, la proposta \"digital omnibus\" potrebbe rinviare alcune tutele: la rete di protezione c'è, ma con maglie più larghe di quanto sembri.",
+            "breve": "Effetto indiretto: tutele sulla privacy, ma con eccezioni per il volto in pubblico e la profilazione pubblica.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
@@ -1586,6 +1614,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Se qualcuno occupa abusivamente la tua casa, ora è un reato specifico (fino a 7 anni se è il tuo domicilio) e c'è una procedura veloce per farti riavere l'immobile.",
+            "breve": "Occupare la tua casa è ora un reato specifico (fino a 7 anni) con una procedura veloce per riaverla.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1615,6 +1644,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Le truffe contro le persone anziane sono punite più severamente: una tutela in più contro raggiri al telefono, alla porta o online.",
+            "breve": "Truffe agli anziani punite più severamente: una tutela in più contro i raggiri.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1644,6 +1674,7 @@
           "effetto": {
             "tipo": "qualita-vita",
             "descrizione": "Più telecamere nelle città e bodycam addosso agli agenti: più protezione negli spazi pubblici, ma anche più occhi puntati sulla vita di tutti. Le immagini sono comunque soggette alle regole sulla privacy.",
+            "breve": "Più telecamere e bodycam: più protezione negli spazi pubblici, ma anche più occhi sulla vita di tutti.",
             "direzione": "misto"
           },
           "timeline": {
@@ -1673,6 +1704,7 @@
           "effetto": {
             "tipo": "dovere",
             "descrizione": "Bloccare una strada o una ferrovia durante una manifestazione è diventato reato (prima era una multa): se partecipi a proteste, il rischio legale è più alto.",
+            "breve": "Bloccare strada o ferrovia in una protesta è ora reato (prima multa): più rischio legale per chi manifesta.",
             "direzione": "misto"
           },
           "timeline": {
@@ -1703,6 +1735,7 @@
           "effetto": {
             "tipo": "dovere",
             "descrizione": "Per comprare una SIM telefonica devi mostrare un documento di riconoscimento valido (passaporto, carta d'identità o documento equipollente). Il permesso di soggiorno NON è richiesto: era nella proposta iniziale, ma è stato tolto dalla legge definitiva. Se un negozio te lo chiede come obbligo, sta sbagliando.",
+            "breve": "Per la SIM basta un documento valido: il permesso di soggiorno NON è richiesto (è stato tolto dal testo finale).",
             "direzione": "misto",
             "indiretto": true
           },
@@ -1734,6 +1767,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sulla tua libertà di protesta: trasformare in reato il blocco stradale o ferroviario (prima era un illecito amministrativo) alza il rischio penale di forme di protesta finora tollerate, come i sit-in sulla strada. Anche se non hai mai manifestato, è il margine della libertà di tutti che si restringe: chi protesta tende ad autocensurarsi per paura della fedina penale.",
+            "breve": "Effetto indiretto: col blocco stradale ora reato, si restringe il margine di protesta tollerato per tutti.",
             "direzione": "negativo",
             "indiretto": true,
             "dirittoToccato": {
@@ -1772,6 +1806,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sulla tua riservatezza: più telecamere in città e bodycam sugli agenti significano più momenti della tua giornata ripresi e archiviati, anche se non hai fatto nulla. È una protezione in più contro i reati, ma anche più dati sui movimenti di tutti in mani pubbliche, con il rischio che vengano usati per scopi diversi da quelli iniziali.",
+            "breve": "Effetto indiretto: più momenti della tua giornata ripresi e archiviati, anche se non hai fatto nulla.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
@@ -1834,6 +1869,7 @@
           "effetto": {
             "tipo": "dovere",
             "descrizione": "Se guidi: cellulare in mano = multa da 250 a 1.500 euro, fino a 10 punti e sospensione della patente; con tasso alcolico oltre 0,8 scatta il divieto assoluto di alcol alla guida per 2-3 anni con obbligo di alcolock. In cambio, strade più sicure per tutti.",
+            "breve": "Pene più dure per cellulare alla guida e alcol; in cambio, strade più sicure per tutti.",
             "direzione": "misto"
           },
           "timeline": {
@@ -1868,6 +1904,7 @@
           "effetto": {
             "tipo": "dovere",
             "descrizione": "Per chi ha la patente da meno di 3 anni: zero alcol assoluto alla guida e limiti sulla potenza delle auto estesi a 3 anni.",
+            "breve": "Neopatentati: zero alcol assoluto e limiti sulla potenza dell'auto estesi a 3 anni.",
             "direzione": "misto"
           },
           "timeline": {
@@ -1898,6 +1935,7 @@
           "effetto": {
             "tipo": "dovere",
             "descrizione": "Se usi un monopattino elettrico: casco obbligatorio per tutti, si circola solo su strade urbane fino a 50 km/h, e sono in arrivo targa e assicurazione obbligatorie.",
+            "breve": "Monopattini elettrici: casco obbligatorio e, in arrivo, targa e assicurazione.",
             "direzione": "misto"
           },
           "timeline": {
@@ -1928,6 +1966,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sulla libertà personale: la nuova norma sulle droghe punisce la semplice positività al test, anche senza guida alterata. Significa che puoi perdere la patente per una sostanza assunta giorni prima, quando non eri più sotto effetto. Tocca soprattutto chi usa cannabis terapeutica o ha consumato nel tempo libero lontano dalla guida.",
+            "breve": "Effetto indiretto: puoi perdere la patente per la sola positività al test, anche senza aver guidato alterato.",
             "direzione": "negativo",
             "indiretto": true,
             "dirittoToccato": {
@@ -1993,6 +2032,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "SE la proposta venisse approvata: i tuoi figli nati in Italia (o arrivati entro i 5 anni) potrebbero diventare cittadini italiani a 16 anni dopo aver completato 10 anni di scuola qui.",
+            "breve": "I tuoi figli cresciuti e scolarizzati in Italia potrebbero diventare cittadini a 16 anni, dopo 10 anni di scuola.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -2029,6 +2069,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "SE la proposta venisse approvata e sei cresciuto a scuola in Italia: percorso più chiaro verso la cittadinanza, senza aspettare i 18 anni con la trafila attuale.",
+            "breve": "Se sei cresciuto a scuola in Italia: via più chiara alla cittadinanza, senza aspettare i 18 anni.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -2096,6 +2137,7 @@
           "effetto": {
             "tipo": "qualita-vita",
             "descrizione": "Hai meno di 35 anni e cerchi lavoro: chi ti assume a tempo indeterminato non paga i contributi (esonero fino a 500 euro al mese per 24 mesi, 650 al Sud). Non sono soldi in busta paga per te, ma ti rendono molto più conveniente da assumere stabilmente.",
+            "breve": "Under 35 in cerca di lavoro: chi ti assume stabile non paga i contributi, così sei più conveniente da assumere.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -2134,6 +2176,7 @@
           "effetto": {
             "tipo": "qualita-vita",
             "descrizione": "Sei una donna in cerca di lavoro: se sei disoccupata da molto tempo o in una categoria svantaggiata, chi ti assume ha l'esonero totale dei contributi fino a 650 euro al mese per 24 mesi (800 nelle Zone Economiche Speciali del Sud). Un incentivo pensato per farti assumere prima.",
+            "breve": "Donna in cerca di lavoro: chi ti assume ha l'esonero totale dei contributi, un incentivo per farti assumere prima.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -2166,6 +2209,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Arriva il principio del \"salario giusto\": per ottenere i bonus, la tua azienda deve pagarti almeno quanto prevede il contratto collettivo del tuo settore (il trattamento economico complessivo). I contratti \"pirata\" che pagano meno perdono gli incentivi: una spinta verso stipendi più equi, soprattutto se oggi sei sotto i minimi dei contratti maggiori.",
+            "breve": "\"Salario giusto\": per avere i bonus l'azienda deve pagarti almeno il contratto del settore, stop ai contratti pirata.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -2199,6 +2243,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Se lavori tramite piattaforme digitali (rider, consegne, lavoretti gestiti da un'app): quando è l'algoritmo a comandare scatta la presunzione che tu sia un lavoratore subordinato (con le relative tutele), hai diritto a una spiegazione delle decisioni automatizzate che ti riguardano, a una formazione sulla sicurezza entro 30 giorni e a un account protetto con SPID o CIE.",
+            "breve": "Lavori con un'app (rider, consegne): se comanda l'algoritmo sei presunto dipendente, con le relative tutele.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -2232,6 +2277,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sui tuoi dati: la stessa legge che ti tutela impone alle piattaforme di conservare per 5 anni ogni tuo accesso, incarico, rifiuto e compenso, e regola la gestione fatta dall'algoritmo. Più trasparenza, sì, ma anche un registro dettagliato e duraturo del tuo comportamento lavorativo in mano all'azienda, e una vita lavorativa governata da un software.",
+            "breve": "Effetto indiretto: più trasparenza, ma la piattaforma tiene 5 anni di accessi, incarichi, rifiuti e compensi.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
@@ -2289,6 +2335,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Se la proposta diventa legge, cambia come voti: niente più collegi uninominali (non scegli più un singolo candidato del tuo territorio), torna il sistema proporzionale e non ci sono voti di preferenza, quindi scegli la lista ma non la persona. Le coalizioni devono indicare in anticipo il nome che propongono come Presidente del Consiglio.",
+            "breve": "Cambia come voti: sistema proporzionale, niente preferenze (scegli la lista, non la persona) né collegi uninominali.",
             "direzione": "misto"
           },
           "timeline": {
@@ -2319,6 +2366,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sul peso del tuo voto: il \"premio di governabilità\" assegna 70 seggi in più alla Camera e 35 al Senato alla coalizione che arriva prima, se supera il 42% dei voti in entrambe le Camere. Serve a dare governi più stabili, ma vuol dire che chi vince ottiene molti più seggi della sua percentuale di voti, e chi vota per gli altri pesa di meno. C'è un tetto: la maggioranza non può superare circa il 60% dei seggi.",
+            "breve": "Effetto indiretto: il premio di governabilità dà più seggi a chi vince, così il voto per gli altri pesa di meno.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
@@ -2376,6 +2424,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Se la riforma viene approvata e confermata dal referendum, potrai eleggere direttamente il Presidente del Consiglio insieme alle Camere, con un mandato di 5 anni. Oggi invece il Presidente del Consiglio non lo scegli col voto: lo nomina il Presidente della Repubblica dopo le elezioni. Avresti quindi più voce diretta su chi guida il governo.",
+            "breve": "Potresti eleggere direttamente il Presidente del Consiglio: più voce diretta su chi guida il governo.",
             "direzione": "misto"
           },
           "timeline": {
@@ -2406,6 +2455,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sulle garanzie costituzionali: insieme all'elezione diretta, la riforma dà al premier una maggioranza garantita, riduce i poteri del Presidente della Repubblica (per esempio sullo scioglimento delle Camere e sulla nomina del governo) e abolisce i senatori a vita di nomina presidenziale. Per chi la sostiene è più stabilità e una scelta più chiara; per chi la critica sono meno contrappesi a chi governa.",
+            "breve": "Effetto indiretto: più potere al premier e meno al Presidente della Repubblica: per i critici, meno contrappesi.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
@@ -2470,6 +2520,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "SE la proposta diventasse legge: viene abrogato il \"decreto flussi\", cioè la programmazione annuale degli ingressi per lavoro. L'ingresso di lavoratori extra-UE sarebbe consentito solo in casi \"residuali\" e documentati, con priorità ai lavoratori europei. Per chi è extra-UE diventerebbe più difficile entrare per lavoro o far entrare familiari dall'estero.",
+            "breve": "Stop al decreto flussi: per gli extra-UE entrare per lavoro o far venire la famiglia diventa molto più difficile.",
             "direzione": "negativo"
           },
           "timeline": {
@@ -2509,6 +2560,7 @@
           "effetto": {
             "tipo": "servizio",
             "descrizione": "SE la proposta diventasse legge: per chi è in Italia regolarmente nasce un programma di \"remigrazione\", cioè rientro volontario assistito nel Paese di origine, con un incentivo economico, formazione e supporto. In cambio si firma un \"Patto\" che vieta di rientrare in Italia (salvo permessi temporanei) e prevede la restituzione dei fondi e sanzioni penali in caso di rientro non autorizzato. Per chi la sostiene è un aiuto a chi vuole tornare; per chi la critica è una spinta a far andare via gli stranieri.",
+            "breve": "Rientro volontario nel Paese d'origine con un incentivo, ma legato a un \"Patto\" che vieta di tornare in Italia.",
             "direzione": "misto"
           },
           "timeline": {
@@ -2545,6 +2597,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "SE la proposta diventasse legge: chi è in Italia senza un permesso di soggiorno valido sarebbe nella posizione più esposta. La proposta chiude le vie per mettersi in regola — stop al \"decreto flussi\", abolizione della protezione speciale, esclusione di chi si era regolarizzato con una sanatoria — e il programma di rientro volontario con incentivo è riservato a chi è regolare. Resterebbe quindi soggetto al rimpatrio, senza un percorso assistito né l'incentivo economico.",
+            "breve": "Chi è senza permesso resta esposto al rimpatrio: niente incentivo al rientro e vie per regolarizzarsi chiuse.",
             "direzione": "negativo"
           },
           "timeline": {
@@ -2575,6 +2628,7 @@
           "effetto": {
             "tipo": "economico",
             "descrizione": "SE la proposta diventasse legge: chi invia denaro (rimesse) verso l'estero pagherebbe una tassa del 3% su quanto manda, per finanziare il Fondo per la Remigrazione. Se mandi soldi alla tua famiglia nel Paese di origine, ti costerebbe il 3% in più ogni volta.",
+            "breve": "Una tassa del 3% su ogni invio di denaro all'estero: mandare soldi alla famiglia costerebbe di più.",
             "direzione": "negativo"
           },
           "timeline": {
@@ -2605,6 +2659,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sul diritto d'asilo e sulla vita familiare: la proposta abolisce la \"protezione speciale\" (un permesso per chi non può essere rimpatriato senza rischi) e restringe il ricongiungimento familiare, escludendo chi si è regolarizzato con una sanatoria e introducendo nuove verifiche. Per chi è extra-UE significa meno strade per restare in Italia o per ricongiungersi con i familiari.",
+            "breve": "Effetto indiretto: niente più protezione speciale, ricongiungimento ristretto, meno vie per restare in Italia.",
             "direzione": "negativo",
             "indiretto": true,
             "dirittoToccato": {
@@ -2643,6 +2698,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sul diritto alla cittadinanza: se in futuro ottenessi la cittadinanza italiana per naturalizzazione, la proposta prevede che possa esserti revocata in caso di condanna definitiva per reati gravi (terrorismo, criminalità organizzata, reati puniti fino a 5 anni o più), con espulsione e divieto di rientro. La cittadinanza acquisita diventerebbe quindi più \"fragile\" di quella di chi è italiano dalla nascita.",
+            "breve": "Effetto indiretto: la cittadinanza presa da adulto potrebbe essere revocata dopo condanne gravi, con espulsione.",
             "direzione": "negativo",
             "indiretto": true,
             "dirittoToccato": {
@@ -2681,6 +2737,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sull'uguaglianza di trattamento: diverse misure distinguono in base alla nazionalità. La tassa del 3% colpisce solo le rimesse verso l'estero; il bonus nascita, gli asili nido gratuiti e gli aiuti per la casa del Fondo Natalità sono riservati in via prioritaria alle famiglie con genitori entrambi italiani. Per chi è straniero significa contribuire alle tasse ma con meno accesso ad alcuni aiuti.",
+            "breve": "Effetto indiretto: più misure distinguono per nazionalità, così lo straniero paga le tasse ma accede a meno aiuti.",
             "direzione": "negativo",
             "indiretto": true,
             "dirittoToccato": {
@@ -2725,6 +2782,7 @@
           "effetto": {
             "tipo": "economico",
             "descrizione": "SE la proposta diventasse legge: nasce il Fondo per la Natalità Italiana, con bonus nascita fino a 3.000 euro per figlio, contributi fino a 10.000 euro dal terzo figlio in poi, asili nido gratuiti e mutui o affitti calmierati, riservati in via prioritaria alle famiglie con genitori entrambi cittadini italiani. Se hai (o avrai) figli, potresti riceverne un aiuto economico.",
+            "breve": "Bonus nascita, asili gratis e aiuti casa per le famiglie con entrambi i genitori italiani (se i fondi arriveranno).",
             "direzione": "positivo"
           },
           "timeline": {
@@ -2757,6 +2815,7 @@
           "effetto": {
             "tipo": "dovere",
             "descrizione": "SE la proposta diventasse legge: per le imprese aumentano molto i rischi se impiegano lavoratori stranieri irregolari (reclusione, multe fino a 1 milione, confisca dei beni, blocco dei conti, revoca delle licenze). Allo stesso tempo sono previsti incentivi e premi per le aziende che assumono solo lavoratori regolari. Se hai dipendenti, conviene avere tutto in regola.",
+            "breve": "Per le imprese: pene durissime per chi impiega irregolari, premi a chi assume solo lavoratori in regola.",
             "direzione": "misto"
           },
           "timeline": {
@@ -2816,6 +2875,7 @@
           "effetto": {
             "tipo": "servizio",
             "descrizione": "Se sei (o se in futuro fossi) un cittadino extra-UE che chiede asilo in Italia, cambia la procedura: per molti casi la domanda viene esaminata direttamente alla frontiera, con una decisione più rapida (entro 12 settimane al massimo) e con un primo controllo di identificazione all'arrivo. Durante la procedura ti può essere chiesto di restare in un luogo specifico. Più veloce, ma con più vincoli su dove stai mentre aspetti la risposta.",
+            "breve": "Asilo: per molti la domanda si esamina alla frontiera in max 12 settimane, ma con vincoli su dove stai nell'attesa.",
             "direzione": "misto"
           },
           "timeline": {
@@ -2846,6 +2906,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sul diritto d'asilo: decisioni più rapide alla frontiera, con la possibilità di doverti trattenere in un luogo determinato durante l'esame, comprimono i tempi e i margini per preparare la tua domanda e per fare ricorso. Per chi lo sostiene è un modo per gestire meglio gli arrivi; per chi lo critica è il rischio che la protezione di chi fugge davvero diventi più difficile da ottenere.",
+            "breve": "Effetto indiretto: procedure più rapide lasciano meno tempo e margini per preparare la domanda d'asilo e il ricorso.",
             "direzione": "negativo",
             "indiretto": true,
             "dirittoToccato": {
@@ -2884,6 +2945,7 @@
           "effetto": {
             "tipo": "diritto",
             "descrizione": "Effetto indiretto sui tuoi dati: il decreto attiva il nuovo Eurodac, la banca dati europea che raccoglie dati biometrici (impronte digitali e immagine del volto) di chi chiede asilo o si trova in posizione irregolare. Questi dati possono essere confrontati anche dalle forze di polizia e da Europol. Più strumenti di identificazione e controllo, ma anche una traccia biometrica di te conservata e condivisa tra più Paesi.",
+            "breve": "Effetto indiretto: i tuoi dati biometrici finiscono nel nuovo Eurodac, accessibile anche a polizia ed Europol.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
@@ -2922,6 +2984,7 @@
           "effetto": {
             "tipo": "servizio",
             "descrizione": "Se sei laureato in giurisprudenza e punti a diventare avvocato, cambia l'esame di Stato: una sola sessione all'anno, due prove scritte (un parere e un atto, su una materia che scegli tra civile, penale e amministrativo) da svolgere in presenza con i soli codici annotati e senza strumenti elettronici, più una prova orale. La tassa d'esame è di 62 euro; per chi ha un disturbo specifico dell'apprendimento sono previsti strumenti e tempi aggiuntivi.",
+            "breve": "Esame da avvocato rifatto: una sola sessione l'anno, due scritti più l'orale, tassa di 62 euro.",
             "direzione": "misto"
           },
           "timeline": {

@@ -37,6 +37,7 @@ export const fibromialgiaLea: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Se la tua condizione è la fibromialgia in forma molto severa, avrai un codice di esenzione dal ticket (valido almeno 2 anni), una visita specialistica, 10 sedute riabilitative e una visita psichiatrica a carico del servizio sanitario.',
+        breve: 'Fibromialgia molto severa: esenzione dal ticket, visite e sedute riabilitative a carico del servizio sanitario.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -51,6 +52,7 @@ export const fibromialgiaLea: Legge = {
       effetto: {
         tipo: 'servizio',
         descrizione: 'Se la tua forma non è classificata come molto severa, questo aggiornamento non ti dà ancora esenzioni: il riconoscimento pieno della fibromialgia resta affidato ai disegni di legge in discussione al Senato.',
+        breve: 'Se la forma non è molto severa, ancora nessuna esenzione: il riconoscimento pieno è fermo in Parlamento.',
         direzione: 'neutro'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'incerto', anno10: 'incerto' },

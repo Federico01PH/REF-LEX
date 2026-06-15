@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Legge, Profilo, RisultatoSimulazione } from '../engine/types';
+import type { Legge, Profilo, Regola, RisultatoSimulazione } from '../engine/types';
 import { PERSONAGGI } from '../data/personas';
 import { simula } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
@@ -10,6 +10,29 @@ const CONFIDENZA = {
   probabile: { classe: 'badge-probabile', parola: 'Probabile' },
   dipende: { classe: 'badge-dipende', parola: 'Dipende' }
 } as const;
+
+// una riga-effetto in "E per gli altri?": frase CORTA (effetto.breve) per capire subito
+// l'impatto; se c'è una spiegazione più lunga, "Spiega meglio" apre la descrizione completa.
+function EffettoRiga({ e }: { e: Regola }) {
+  const [aperto, setAperto] = useState(false);
+  const conf = CONFIDENZA[e.confidenza];
+  const haPiu = !!e.effetto.breve;
+  const testo = haPiu && !aperto ? e.effetto.breve! : e.effetto.descrizione;
+  return (
+    <p style={{ margin: '8px 0 0' }}>
+      <span className={`badge ${conf.classe}`}>{conf.parola}</span>{' '}
+      {descrizioneConEnfasi(testo)}
+      {haPiu && (
+        <>{' '}
+          <button onClick={() => setAperto(!aperto)} aria-expanded={aperto} className="testo-piccolo"
+            style={{ background: 'none', border: 'none', textDecoration: 'underline', color: 'var(--accento)', cursor: 'pointer', padding: 0 }}>
+            {aperto ? 'Mostra meno' : 'Spiega meglio'}
+          </button>
+        </>
+      )}
+    </p>
+  );
+}
 
 // il report del singolo profilo, mostrato solo quando si apre la sua scheda
 function DettaglioPersona({ r, legge }: { r: RisultatoSimulazione; legge: Legge }) {
@@ -26,12 +49,7 @@ function DettaglioPersona({ r, legge }: { r: RisultatoSimulazione; legge: Legge 
           <span className="testo-piccolo" style={{ fontWeight: 600 }}>(stima al 1° anno)</span>
         </p>
       ) : (
-        r.effetti.map((e) => (
-          <p key={e.id} style={{ margin: '8px 0 0' }}>
-            <span className={`badge ${CONFIDENZA[e.confidenza].classe}`}>{CONFIDENZA[e.confidenza].parola}</span>{' '}
-            {descrizioneConEnfasi(e.effetto.descrizione)}
-          </p>
-        ))
+        r.effetti.map((e) => <EffettoRiga key={e.id} e={e} />)
       )}
       <p className="testo-piccolo" style={{ margin: '8px 0 0' }}>
         Fonti:{' '}

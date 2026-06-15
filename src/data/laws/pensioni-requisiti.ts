@@ -24,7 +24,7 @@ const LAVORATORI: Condizione = {
 // anche se accanto alla pensione ha ancora un lavoro: per lui vale solo "già pensionato".
 const NON_PENSIONATO: Condizione = { campo: 'condizioneLavorativa', op: 'nonContiene', valore: ['pensionato'] };
 
-function regolaVecchiaia(id: string, etaMin: number, etaMax: number, orizzonte: 'anno1' | 'anno5' | 'anno10', descrizione: string): Regola {
+function regolaVecchiaia(id: string, etaMin: number, etaMax: number, orizzonte: 'anno1' | 'anno5' | 'anno10', descrizione: string, breve: string): Regola {
   return {
     id,
     campiNecessari: ['eta', 'condizioneLavorativa'],
@@ -34,7 +34,7 @@ function regolaVecchiaia(id: string, etaMin: number, etaMax: number, orizzonte: 
       { campo: 'eta', op: 'almeno', valore: etaMin },
       { campo: 'eta', op: 'alPiu', valore: etaMax }
     ],
-    effetto: { tipo: 'diritto', descrizione, direzione: 'positivo' },
+    effetto: { tipo: 'diritto', descrizione, breve, direzione: 'positivo' },
     timeline: {
       anno1: orizzonte === 'anno1' ? 'attivo' : 'nullo',
       anno2: orizzonte === 'anno1' ? 'attivo' : 'nullo',
@@ -75,6 +75,7 @@ export const pensioniRequisiti: Legge = {
       effetto: {
         tipo: 'dovere',
         descrizione: 'L\'età della pensione di vecchiaia sale: +1 mese dal 2027 e altri +2 mesi dal 2028 (in totale 67 anni e 3 mesi). Lavorerai fino a 3 mesi in più rispetto alle regole del 2026. Sono esclusi i lavori gravosi e usuranti.',
+        breve: 'L\'età della pensione di vecchiaia sale fino a 3 mesi: andrai in pensione un po\' più tardi.',
         direzione: 'negativo'
       },
       timeline: { anno1: 'nullo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -93,6 +94,7 @@ export const pensioniRequisiti: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Con l\'Ape sociale puoi chiedere un\'indennità ponte e uscire dal lavoro a 63 anni e 5 mesi, prima della pensione di vecchiaia.',
+        breve: 'Con l\'Ape sociale potresti uscire dal lavoro a 63 anni e 5 mesi, prima della pensione di vecchiaia.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
@@ -101,10 +103,13 @@ export const pensioniRequisiti: Legge = {
       fonteRegola: FONTE
     },
     regolaVecchiaia('pensioni-vecchiaia-66', 66, 120, 'anno1',
-      'Hai già raggiunto (o stai per raggiungere) i 67 anni: se hai almeno 20 anni di contributi, la pensione di vecchiaia è a portata di mano.'),
+      'Hai già raggiunto (o stai per raggiungere) i 67 anni: se hai almeno 20 anni di contributi, la pensione di vecchiaia è a portata di mano.',
+      'A un passo dalla pensione di vecchiaia: con 20 anni di contributi è a portata di mano.'),
     regolaVecchiaia('pensioni-vecchiaia-62-65', 62, 65, 'anno5',
-      'Raggiungerai l\'età della pensione di vecchiaia (67 anni e 3 mesi dal 2028) entro i prossimi 5 anni.'),
+      'Raggiungerai l\'età della pensione di vecchiaia (67 anni e 3 mesi dal 2028) entro i prossimi 5 anni.',
+      'Raggiungerai l\'età della pensione di vecchiaia entro circa 5 anni.'),
     regolaVecchiaia('pensioni-vecchiaia-57-61', 57, 61, 'anno10',
-      'Raggiungerai l\'età della pensione di vecchiaia (67 anni e 3 mesi dal 2028) entro i prossimi 10 anni.')
+      'Raggiungerai l\'età della pensione di vecchiaia (67 anni e 3 mesi dal 2028) entro i prossimi 10 anni.',
+      'Raggiungerai l\'età della pensione di vecchiaia entro circa 10 anni.')
   ]
 };

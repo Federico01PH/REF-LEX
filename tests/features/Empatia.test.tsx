@@ -4,6 +4,7 @@ import { Empatia } from '../../src/features/Empatia';
 import { cuneoFiscale } from '../../src/data/laws/cuneo-fiscale';
 import { salarioMinimo } from '../../src/data/laws/salario-minimo';
 import { pensioniRequisiti } from '../../src/data/laws/pensioni-requisiti';
+import { remigrazione } from '../../src/data/laws/remigrazione';
 import type { Profilo } from '../../src/engine/types';
 
 test('mostra solo i profili a cui la legge cambia qualcosa', () => {
@@ -40,6 +41,15 @@ test('con un profilo, mostra solo chi cambia in modo DIVERSO dall\'utente, non c
   expect(screen.queryByText(/marco, 52 anni/i)).not.toBeInTheDocument();
   // Anna (74, pensionata) non è toccata da questa legge → non compare
   expect(screen.queryByText(/anna, 74 anni/i)).not.toBeInTheDocument();
+});
+
+test('gli effetti mostrano la frase corta con "Spiega meglio" che apre quella completa', async () => {
+  render(<Empatia legge={remigrazione} onCreaIpotetico={vi.fn()} onIndietro={vi.fn()} />);
+  await userEvent.click(screen.getByRole('button', { name: /karim/i }));
+  const espandi = screen.getAllByRole('button', { name: /spiega meglio/i });
+  expect(espandi.length).toBeGreaterThan(0);
+  await userEvent.click(espandi[0]);
+  expect(screen.getByRole('button', { name: /mostra meno/i })).toBeInTheDocument();
 });
 
 test('il bottone crea profilo ipotetico chiama onCreaIpotetico', async () => {

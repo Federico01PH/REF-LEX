@@ -39,6 +39,7 @@ export const decretoSicurezza: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Se qualcuno occupa abusivamente la tua casa, ora è un reato specifico (fino a 7 anni se è il tuo domicilio) e c\'è una procedura veloce per farti riavere l\'immobile.',
+        breve: 'Occupare la tua casa è ora un reato specifico (fino a 7 anni) con una procedura veloce per riaverla.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -52,6 +53,7 @@ export const decretoSicurezza: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Le truffe contro le persone anziane sono punite più severamente: una tutela in più contro raggiri al telefono, alla porta o online.',
+        breve: 'Truffe agli anziani punite più severamente: una tutela in più contro i raggiri.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -65,6 +67,7 @@ export const decretoSicurezza: Legge = {
       effetto: {
         tipo: 'qualita-vita',
         descrizione: 'Più telecamere nelle città e bodycam addosso agli agenti: più protezione negli spazi pubblici, ma anche più occhi puntati sulla vita di tutti. Le immagini sono comunque soggette alle regole sulla privacy.',
+        breve: 'Più telecamere e bodycam: più protezione negli spazi pubblici, ma anche più occhi sulla vita di tutti.',
         direzione: 'misto'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -78,6 +81,7 @@ export const decretoSicurezza: Legge = {
       effetto: {
         tipo: 'dovere',
         descrizione: 'Bloccare una strada o una ferrovia durante una manifestazione è diventato reato (prima era una multa): se partecipi a proteste, il rischio legale è più alto.',
+        breve: 'Bloccare strada o ferrovia in una protesta è ora reato (prima multa): più rischio legale per chi manifesta.',
         direzione: 'misto'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
@@ -92,6 +96,7 @@ export const decretoSicurezza: Legge = {
       effetto: {
         tipo: 'dovere',
         descrizione: 'Per comprare una SIM telefonica devi mostrare un documento di riconoscimento valido (passaporto, carta d\'identità o documento equipollente). Il permesso di soggiorno NON è richiesto: era nella proposta iniziale, ma è stato tolto dalla legge definitiva. Se un negozio te lo chiede come obbligo, sta sbagliando.',
+        breve: 'Per la SIM basta un documento valido: il permesso di soggiorno NON è richiesto (è stato tolto dal testo finale).',
         direzione: 'misto',
         indiretto: true
       },
@@ -107,6 +112,7 @@ export const decretoSicurezza: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sulla tua libertà di protesta: trasformare in reato il blocco stradale o ferroviario (prima era un illecito amministrativo) alza il rischio penale di forme di protesta finora tollerate, come i sit-in sulla strada. Anche se non hai mai manifestato, è il margine della libertà di tutti che si restringe: chi protesta tende ad autocensurarsi per paura della fedina penale.',
+        breve: 'Effetto indiretto: col blocco stradale ora reato, si restringe il margine di protesta tollerato per tutti.',
         direzione: 'negativo',
         indiretto: true,
         dirittoToccato: {
@@ -129,6 +135,7 @@ export const decretoSicurezza: Legge = {
       effetto: {
         tipo: 'diritto',
         descrizione: 'Effetto indiretto sulla tua riservatezza: più telecamere in città e bodycam sugli agenti significano più momenti della tua giornata ripresi e archiviati, anche se non hai fatto nulla. È una protezione in più contro i reati, ma anche più dati sui movimenti di tutti in mani pubbliche, con il rischio che vengano usati per scopi diversi da quelli iniziali.',
+        breve: 'Effetto indiretto: più momenti della tua giornata ripresi e archiviati, anche se non hai fatto nulla.',
         direzione: 'misto',
         indiretto: true,
         dirittoToccato: {

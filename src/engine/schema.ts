@@ -104,6 +104,7 @@ const SchemaEffetto = z.object({
   importoMese: z.object({ min: z.number(), max: z.number() })
     .refine((i) => i.min <= i.max, 'min deve essere <= max').optional(),
   descrizione: z.string().min(1),
+  breve: z.string().min(1).max(120).optional(),
   direzione: z.enum(['positivo', 'negativo', 'neutro', 'misto']),
   indiretto: z.boolean().optional(),
   dirittoToccato: SchemaDirittoToccato.optional()

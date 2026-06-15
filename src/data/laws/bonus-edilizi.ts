@@ -39,6 +39,7 @@ export const bonusEdilizi: Legge = {
         tipo: 'economico',
         importoMese: { min: 0, max: 400 },
         descrizione: 'Se ristrutturi casa tua nel 2026 recuperi il 50% della spesa in 10 anni: fino a 400 euro al mese di tasse in meno (con il tetto massimo di 96.000 euro di lavori sull\'abitazione principale).',
+        breve: 'Ristrutturi casa tua nel 2026: recuperi il 50% in 10 anni, fino a 400 euro al mese di tasse in meno.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'incerto', anno10: 'incerto' },
@@ -54,6 +55,7 @@ export const bonusEdilizi: Legge = {
         tipo: 'economico',
         importoMese: { min: 0, max: 400 },
         descrizione: 'Anche chi è in affitto o in comodato può usare il bonus, se paga i lavori con il consenso del proprietario: 50% di detrazione se è la tua abitazione principale.',
+        breve: 'Anche in affitto o comodato puoi usare il bonus, col consenso del proprietario: 50% sulla casa principale.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'incerto', anno10: 'incerto' },

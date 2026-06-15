@@ -39,6 +39,7 @@ export const salarioMinimo: Legge = {
       effetto: {
         tipo: 'economico',
         descrizione: 'Se il tuo CCNL non è tra quelli "maggiormente applicati", o se il tuo contratto prevede paghe sotto il minimo che il Governo stabilirà, potresti ricevere un aumento. L\'importo dipende dal tuo contratto collettivo attuale.',
+        breve: 'Se il tuo contratto paga sotto il minimo che il Governo fisserà, potresti avere un aumento.',
         direzione: 'positivo'
       },
       timeline: { anno1: 'incerto', anno2: 'incerto', anno5: 'incerto', anno10: 'incerto' },
