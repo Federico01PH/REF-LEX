@@ -23,6 +23,7 @@ export const riformaDisabilita: Legge = {
   id: 'riforma-disabilita-2024',
   titoloDivulgativo: 'Riforma della disabilità: una sola visita e un progetto di vita',
   titoloUfficiale: 'Decreto legislativo 3 maggio 2024, n. 62 (attuazione della legge delega 227/2021)',
+  meseAnno: 'maggio 2024',
   stato: 'approvata',
   ambiti: ['diritti-salute', 'scuola-universita-ricerca'],
   fonti: [FONTE, FONTE_GOVERNO],

@@ -23,17 +23,17 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
   const listaRef = useRef<HTMLUListElement>(null);
 
   const sceltaCorrente = leggi.find((l) => l.id === valoreId) ?? null;
-  // mostriamo il titolo UFFICIALE (reale) della legge; la ricerca però guarda sia il
-  // titolo ufficiale sia quello divulgativo, così si trova una legge anche scrivendo il
-  // nome semplice (es. "premierato", che nel titolo ufficiale non compare).
+  // mostriamo il titolo in PAROLE (titoloDivulgativo), senza numeri: la citazione ufficiale
+  // con numeri e date compare solo nella scheda, una volta scelta la legge. La ricerca però
+  // guarda anche il titolo ufficiale, così si trova una legge anche scrivendo il nome reale.
   const query = normalizza(testo);
   const filtrate = aperta && query
-    ? leggi.filter((l) => normalizza(l.titoloUfficiale).includes(query) || normalizza(l.titoloDivulgativo).includes(query))
+    ? leggi.filter((l) => normalizza(l.titoloDivulgativo).includes(query) || normalizza(l.titoloUfficiale).includes(query))
     : leggi;
 
   // se il filtro per argomento cambia la legge scelta, riallineo il testo mostrato
   useEffect(() => {
-    if (!aperta) setTesto(sceltaCorrente ? sceltaCorrente.titoloUfficiale : '');
+    if (!aperta) setTesto(sceltaCorrente ? sceltaCorrente.titoloDivulgativo : '');
   }, [valoreId, aperta, sceltaCorrente]);
 
   // tiene l'opzione evidenziata dentro la vista mentre si scorre con la tastiera
@@ -54,7 +54,7 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
 
   function scegli(l: Legge) {
     onScegli(l.id);
-    setTesto(l.titoloUfficiale);
+    setTesto(l.titoloDivulgativo);
     setAperta(false);
   }
 
@@ -122,7 +122,7 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
                 onMouseEnter={() => setAttivo(i)}
                 onMouseDown={(e) => { e.preventDefault(); scegli(l); }}
               >
-                {l.titoloUfficiale} <span className="combobox-stato">— {etichettaStato(l)}</span>
+                {l.titoloDivulgativo} <span className="combobox-stato">— {etichettaStato(l)}</span>
               </li>
             ))
           )}

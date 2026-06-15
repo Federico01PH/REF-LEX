@@ -84,19 +84,19 @@ test('Tab chiude l\'elenco', async () => {
   expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
 });
 
-test('mostra il titolo ufficiale reale, non quello divulgativo', async () => {
-  const l: Legge = { ...legge('x', 'Nome semplice'), titoloUfficiale: 'Legge 1 gennaio 2026, n. 1 — Nome ufficiale lungo' };
+test('mostra il titolo in parole (divulgativo), non la citazione ufficiale con numeri', async () => {
+  const l: Legge = { ...legge('x', 'Nome in parole'), titoloUfficiale: 'Legge 1 gennaio 2026, n. 1 — citazione tecnica' };
   render(<ComboboxLeggi leggi={[l]} valoreId="" onScegli={vi.fn()} etichettaStato={() => 'In vigore'} />);
   await userEvent.click(screen.getByRole('combobox'));
-  expect(screen.getByRole('option', { name: /Legge 1 gennaio 2026, n\. 1/i })).toBeInTheDocument();
-  expect(screen.queryByRole('option', { name: /Nome semplice/i })).not.toBeInTheDocument();
+  expect(screen.getByRole('option', { name: /Nome in parole/i })).toBeInTheDocument();
+  expect(screen.queryByRole('option', { name: /Legge 1 gennaio 2026/i })).not.toBeInTheDocument();
 });
 
-test('si può cercare anche col nome semplice (divulgativo), pur mostrando il titolo ufficiale', async () => {
+test('si può cercare anche con parole del titolo ufficiale, pur mostrando il titolo in parole', async () => {
   const l: Legge = { ...legge('x', 'Premierato'), titoloUfficiale: 'Disegno di legge costituzionale S. 935' };
   render(<ComboboxLeggi leggi={[l]} valoreId="" onScegli={vi.fn()} etichettaStato={() => 'In vigore'} />);
-  await userEvent.type(screen.getByRole('combobox'), 'premier');
-  expect(screen.getByRole('option', { name: /Disegno di legge costituzionale/i })).toBeInTheDocument();
+  await userEvent.type(screen.getByRole('combobox'), 'costituzionale');
+  expect(screen.getByRole('option', { name: /Premierato/i })).toBeInTheDocument();
 });
 
 test('scorrendo con le frecce l\'opzione attiva entra nella vista', async () => {

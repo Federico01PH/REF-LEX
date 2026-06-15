@@ -49,6 +49,7 @@ export const dlMigrazioneAsilo: Legge = {
   id: 'dl-migrazione-asilo-2026',
   titoloDivulgativo: 'Decreto giustizia e migrazione: asilo alla frontiera e nuovo esame da avvocato',
   titoloUfficiale: 'Decreto-legge 12 giugno 2026, n. 100 — Misure urgenti in materia di giustizia e per l\'attuazione del Patto dell\'Unione europea sulla migrazione e l\'asilo del 14 maggio 2024',
+  meseAnno: 'giugno 2026',
   stato: 'vigore',
   ambiti: ['sicurezza-privacy', 'scuola-universita-ricerca'],
   fonti: [FONTE, FONTE_GU, FONTE_SENATO],

@@ -44,6 +44,7 @@ export const decretoLavoro: Legge = {
   id: 'decreto-lavoro-2026',
   titoloDivulgativo: 'Decreto Lavoro "salario giusto": bonus assunzioni e tutele per chi lavora con le app',
   titoloUfficiale: 'Decreto-legge 30 aprile 2026, n. 62 - Disposizioni urgenti in materia di salario giusto, di incentivi all\'occupazione e di contrasto del caporalato digitale',
+  meseAnno: 'aprile 2026',
   stato: 'vigore',
   ambiti: ['fisco-lavoro'],
   fonti: [FONTE, FONTE_GU, FONTE_SALARIO],

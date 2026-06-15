@@ -98,7 +98,7 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
             leggi={visibili}
             valoreId={sceltaId}
             onScegli={(id) => setSceltaId(id)}
-            etichettaStato={(l) => STATI[l.stato].etichetta}
+            etichettaStato={(l) => l.meseAnno ?? STATI[l.stato].etichetta}
           />
           {visibili.length === 0 && (
             <p className="testo-piccolo" style={{ marginBottom: 0 }}>

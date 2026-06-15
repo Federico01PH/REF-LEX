@@ -25,6 +25,7 @@ export const decretoSicurezza: Legge = {
   id: 'decreto-sicurezza-2025',
   titoloDivulgativo: 'Decreto sicurezza: nuovi reati, sgomberi rapidi e telecamere',
   titoloUfficiale: 'Legge 9 giugno 2025, n. 80 — Disposizioni urgenti in materia di sicurezza pubblica',
+  meseAnno: 'giugno 2025',
   stato: 'vigore',
   ambiti: ['sicurezza-privacy'],
   fonti: [FONTE],

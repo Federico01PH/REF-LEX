@@ -23,7 +23,8 @@ const NOTA_2027 =
 export const bonusEdilizi: Legge = {
   id: 'bonus-edilizi-2026',
   titoloDivulgativo: 'Bonus ristrutturazioni: metà dei lavori di casa scaricata dalle tasse',
-  titoloUfficiale: 'Art. 16-bis del TUIR (DPR 917/1986), aggiornato dalla L. 207/2024 e dalla L. 199/2025',
+  titoloUfficiale: 'Detrazione IRPEF per il recupero del patrimonio edilizio (art. 16-bis del TUIR — DPR 917/1986, aggiornato dalle leggi di bilancio: L. 207/2024 e L. 199/2025)',
+  meseAnno: 'dicembre 2024',
   stato: 'vigore',
   ambiti: ['casa'],
   fonti: [FONTE],

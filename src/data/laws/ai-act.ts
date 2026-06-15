@@ -21,6 +21,7 @@ export const aiAct: Legge = {
   id: 'ai-act-2024',
   titoloDivulgativo: 'AI Act: le regole europee che ti proteggono dall\'intelligenza artificiale',
   titoloUfficiale: 'Regolamento (UE) 2024/1689 che stabilisce regole armonizzate sull\'intelligenza artificiale',
+  meseAnno: 'giugno 2024',
   stato: 'approvata',
   ambiti: ['sicurezza-privacy', 'scuola-universita-ricerca'],
   origine: 'europea',

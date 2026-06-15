@@ -88,6 +88,7 @@ export interface Legge {
   id: string;
   titoloDivulgativo: string;
   titoloUfficiale: string;
+  meseAnno?: string; // es. "maggio 2023": mostrato di fianco al titolo nella scelta, SOLO per le leggi già in vigore/approvate; le proposte mostrano lo stato
   stato: StatoLegge;
   ambiti: Ambito[]; // una legge può toccare più argomenti (almeno uno)
   origine?: 'italiana' | 'europea'; // assente = italiana

@@ -1,11 +1,12 @@
 {
-  "versione": 11,
-  "generatoIl": "2026-06-14",
+  "versione": 12,
+  "generatoIl": "2026-06-15",
   "leggi": [
     {
       "id": "cuneo-fiscale-2025",
       "titoloDivulgativo": "Taglio del cuneo fiscale per i dipendenti",
       "titoloUfficiale": "Legge 30 dicembre 2024, n. 207, art. 1, commi 4-9 (Bilancio 2025)",
+      "meseAnno": "dicembre 2024",
       "stato": "vigore",
       "ambiti": [
         "fisco-lavoro"
@@ -287,6 +288,7 @@
       "id": "salario-minimo-l144-2025",
       "titoloDivulgativo": "Salario minimo: la legge delega sui contratti collettivi",
       "titoloUfficiale": "Legge 26 settembre 2025, n. 144 — Delega al Governo in materia di retribuzione dei lavoratori e di contrattazione collettiva",
+      "meseAnno": "settembre 2025",
       "stato": "approvata",
       "ambiti": [
         "fisco-lavoro"
@@ -349,6 +351,7 @@
       "id": "pensioni-requisiti-2026",
       "titoloDivulgativo": "Quando potrai andare in pensione: i requisiti aggiornati",
       "titoloUfficiale": "Legge 30 dicembre 2025, n. 199 (Bilancio 2026), disposizioni su requisiti pensionistici e Ape sociale",
+      "meseAnno": "dicembre 2025",
       "stato": "vigore",
       "ambiti": [
         "pensioni-welfare"
@@ -638,7 +641,8 @@
     {
       "id": "assegno-inclusione-2026",
       "titoloDivulgativo": "Assegno di inclusione: il sostegno per le famiglie con pochi soldi",
-      "titoloUfficiale": "Decreto-legge 4 maggio 2023, n. 48, artt. 1-13 (convertito in L. 85/2023), aggiornato dalla L. 199/2025",
+      "titoloUfficiale": "Decreto-legge 4 maggio 2023, n. 48 — Misure urgenti per l'inclusione sociale e l'accesso al mondo del lavoro (artt. 1-13, convertito in L. 85/2023, aggiornato dalla L. 199/2025)",
+      "meseAnno": "maggio 2023",
       "stato": "vigore",
       "ambiti": [
         "pensioni-welfare"
@@ -867,6 +871,7 @@
       "id": "case-green-epbd",
       "titoloDivulgativo": "Case green: le regole europee sull'efficienza delle case",
       "titoloUfficiale": "Direttiva (UE) 2024/1275 sulla prestazione energetica nell'edilizia (EPBD IV)",
+      "meseAnno": "aprile 2024",
       "stato": "approvata",
       "ambiti": [
         "casa",
@@ -1009,7 +1014,8 @@
     {
       "id": "bonus-edilizi-2026",
       "titoloDivulgativo": "Bonus ristrutturazioni: metà dei lavori di casa scaricata dalle tasse",
-      "titoloUfficiale": "Art. 16-bis del TUIR (DPR 917/1986), aggiornato dalla L. 207/2024 e dalla L. 199/2025",
+      "titoloUfficiale": "Detrazione IRPEF per il recupero del patrimonio edilizio (art. 16-bis del TUIR — DPR 917/1986, aggiornato dalle leggi di bilancio: L. 207/2024 e L. 199/2025)",
+      "meseAnno": "dicembre 2024",
       "stato": "vigore",
       "ambiti": [
         "casa"
@@ -1100,6 +1106,7 @@
       "id": "riforma-disabilita-2024",
       "titoloDivulgativo": "Riforma della disabilità: una sola visita e un progetto di vita",
       "titoloUfficiale": "Decreto legislativo 3 maggio 2024, n. 62 (attuazione della legge delega 227/2021)",
+      "meseAnno": "maggio 2024",
       "stato": "approvata",
       "ambiti": [
         "diritti-salute",
@@ -1388,6 +1395,7 @@
       "id": "ai-act-2024",
       "titoloDivulgativo": "AI Act: le regole europee che ti proteggono dall'intelligenza artificiale",
       "titoloUfficiale": "Regolamento (UE) 2024/1689 che stabilisce regole armonizzate sull'intelligenza artificiale",
+      "meseAnno": "giugno 2024",
       "stato": "approvata",
       "ambiti": [
         "sicurezza-privacy",
@@ -1541,6 +1549,7 @@
       "id": "decreto-sicurezza-2025",
       "titoloDivulgativo": "Decreto sicurezza: nuovi reati, sgomberi rapidi e telecamere",
       "titoloUfficiale": "Legge 9 giugno 2025, n. 80 — Disposizioni urgenti in materia di sicurezza pubblica",
+      "meseAnno": "giugno 2025",
       "stato": "vigore",
       "ambiti": [
         "sicurezza-privacy"
@@ -1784,6 +1793,7 @@
       "id": "codice-strada-2024",
       "titoloDivulgativo": "Nuovo Codice della strada: multe più dure e regole nuove",
       "titoloUfficiale": "Legge 25 novembre 2024, n. 177 — Interventi in materia di sicurezza stradale e delega per la revisione del Codice della strada",
+      "meseAnno": "novembre 2024",
       "stato": "vigore",
       "ambiti": [
         "doveri"
@@ -2032,6 +2042,7 @@
       "id": "decreto-lavoro-2026",
       "titoloDivulgativo": "Decreto Lavoro \"salario giusto\": bonus assunzioni e tutele per chi lavora con le app",
       "titoloUfficiale": "Decreto-legge 30 aprile 2026, n. 62 - Disposizioni urgenti in materia di salario giusto, di incentivi all'occupazione e di contrasto del caporalato digitale",
+      "meseAnno": "aprile 2026",
       "stato": "vigore",
       "ambiti": [
         "fisco-lavoro"
@@ -2708,6 +2719,7 @@
       "id": "dl-migrazione-asilo-2026",
       "titoloDivulgativo": "Decreto giustizia e migrazione: asilo alla frontiera e nuovo esame da avvocato",
       "titoloUfficiale": "Decreto-legge 12 giugno 2026, n. 100 — Misure urgenti in materia di giustizia e per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
+      "meseAnno": "giugno 2026",
       "stato": "vigore",
       "ambiti": [
         "sicurezza-privacy",

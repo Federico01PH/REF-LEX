@@ -44,7 +44,8 @@ function regolaAdi(id: string, campiNecessari: Regola['campiNecessari'], condizi
 export const assegnoInclusione: Legge = {
   id: 'assegno-inclusione-2026',
   titoloDivulgativo: 'Assegno di inclusione: il sostegno per le famiglie con pochi soldi',
-  titoloUfficiale: 'Decreto-legge 4 maggio 2023, n. 48, artt. 1-13 (convertito in L. 85/2023), aggiornato dalla L. 199/2025',
+  titoloUfficiale: 'Decreto-legge 4 maggio 2023, n. 48 — Misure urgenti per l\'inclusione sociale e l\'accesso al mondo del lavoro (artt. 1-13, convertito in L. 85/2023, aggiornato dalla L. 199/2025)',
+  meseAnno: 'maggio 2023',
   stato: 'vigore',
   ambiti: ['pensioni-welfare'],
   fonti: [

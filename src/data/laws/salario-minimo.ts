@@ -22,6 +22,7 @@ export const salarioMinimo: Legge = {
   id: 'salario-minimo-l144-2025',
   titoloDivulgativo: 'Salario minimo: la legge delega sui contratti collettivi',
   titoloUfficiale: 'Legge 26 settembre 2025, n. 144 — Delega al Governo in materia di retribuzione dei lavoratori e di contrattazione collettiva',
+  meseAnno: 'settembre 2025',
   stato: 'approvata',
   ambiti: ['fisco-lavoro'],
   fonti: [FONTE_LEGGE, FONTE_AC],

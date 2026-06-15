@@ -31,19 +31,25 @@ test('la scelta della legge ha un titolo in evidenza che la fa risaltare', () =>
   expect(screen.getByRole('heading', { name: /scegli la legge e misura l.impatto sulla tua vita/i })).toBeInTheDocument();
 });
 
-test('aprendo la tendina ricercabile si vedono i titoli ufficiali con lo stato', async () => {
+test('aprendo la tendina si vedono i titoli in parole con il mese e anno (leggi in vigore)', async () => {
   renderCatalogo();
   await apriElenco();
-  expect(screen.getByRole('option', { name: /legge 30 dicembre 2024, n\. 207.*in vigore/i })).toBeInTheDocument();
-  expect(screen.getByRole('option', { name: /legge 26 settembre 2025, n\. 144.*appena approvata/i })).toBeInTheDocument();
+  expect(screen.getByRole('option', { name: /taglio del cuneo fiscale.*dicembre 2024/i })).toBeInTheDocument();
+  expect(screen.getByRole('option', { name: /salario minimo.*settembre 2025/i })).toBeInTheDocument();
+});
+
+test('le proposte mostrano lo stato, non una data', async () => {
+  renderCatalogo();
+  await apriElenco();
+  expect(screen.getByRole('option', { name: /premierato.*in discussione/i })).toBeInTheDocument();
 });
 
 test('scrivendo le prime lettere del titolo le leggi si filtrano', async () => {
   renderCatalogo();
   const cb = screen.getByRole('combobox', { name: /scegli la legge/i });
   await userEvent.type(cb, 'pension');
-  expect(screen.getByRole('option', { name: /pensionistici/i })).toBeInTheDocument();
-  expect(screen.queryByRole('option', { name: /n\. 207/i })).not.toBeInTheDocument();
+  expect(screen.getByRole('option', { name: /pensione/i })).toBeInTheDocument();
+  expect(screen.queryByRole('option', { name: /taglio del cuneo/i })).not.toBeInTheDocument();
 });
 
 test('scegliendo una legge compare la scheda con nome ufficiale, spiegazione e rilevanza', async () => {
@@ -65,7 +71,7 @@ test('il filtro per ambito toglie dall\'elenco le leggi degli altri ambiti', asy
   renderCatalogo();
   await userEvent.click(screen.getByRole('button', { name: /^casa$/i }));
   await apriElenco();
-  expect(screen.queryByRole('option', { name: /n\. 207/i })).not.toBeInTheDocument();
+  expect(screen.queryByRole('option', { name: /taglio del cuneo/i })).not.toBeInTheDocument();
 });
 
 test('il filtro "Scuola, università e ricerca" mostra le leggi con quell\'ambito e nasconde le altre', async () => {
@@ -73,7 +79,7 @@ test('il filtro "Scuola, università e ricerca" mostra le leggi con quell\'ambit
   await userEvent.click(screen.getByRole('button', { name: /scuola, università e ricerca/i }));
   await apriElenco();
   expect(screen.getByRole('option', { name: /intelligenza artificiale/i })).toBeInTheDocument();
-  expect(screen.queryByRole('option', { name: /n\. 207/i })).not.toBeInTheDocument();
+  expect(screen.queryByRole('option', { name: /taglio del cuneo/i })).not.toBeInTheDocument();
 });
 
 test('cambiare ambito chiude la scheda della legge non più visibile', async () => {
