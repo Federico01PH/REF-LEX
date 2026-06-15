@@ -20,12 +20,17 @@ const LAVORATORI: Condizione = {
   valore: ['dipendente-privato', 'dipendente-pubblico', 'autonomo-ordinario', 'forfettario', 'imprenditore', 'disoccupato', 'caregiver', 'casalingo', 'altro']
 };
 
+// chi è GIÀ in pensione non è toccato dalle regole sull'età FUTURA di pensionamento,
+// anche se accanto alla pensione ha ancora un lavoro: per lui vale solo "già pensionato".
+const NON_PENSIONATO: Condizione = { campo: 'condizioneLavorativa', op: 'nonContiene', valore: ['pensionato'] };
+
 function regolaVecchiaia(id: string, etaMin: number, etaMax: number, orizzonte: 'anno1' | 'anno5' | 'anno10', descrizione: string): Regola {
   return {
     id,
     campiNecessari: ['eta', 'condizioneLavorativa'],
     condizioni: [
       LAVORATORI,
+      NON_PENSIONATO,
       { campo: 'eta', op: 'almeno', valore: etaMin },
       { campo: 'eta', op: 'alPiu', valore: etaMax }
     ],
@@ -75,7 +80,7 @@ export const pensioniRequisiti: Legge = {
     {
       id: 'pensioni-adeguamento-speranza-vita',
       campiNecessari: ['eta', 'condizioneLavorativa'],
-      condizioni: [LAVORATORI, { campo: 'eta', op: 'alPiu', valore: 66 }],
+      condizioni: [LAVORATORI, NON_PENSIONATO, { campo: 'eta', op: 'alPiu', valore: 66 }],
       effetto: {
         tipo: 'dovere',
         descrizione: 'L\'età della pensione di vecchiaia sale: +1 mese dal 2027 e altri +2 mesi dal 2028 (in totale 67 anni e 3 mesi). Lavorerai fino a 3 mesi in più rispetto alle regole del 2026. Sono esclusi i lavori gravosi e usuranti.',
@@ -91,7 +96,8 @@ export const pensioniRequisiti: Legge = {
       campiNecessari: ['eta', 'condizioneLavorativa'],
       condizioni: [
         { campo: 'eta', op: 'almeno', valore: 63 },
-        { campo: 'condizioneLavorativa', op: 'in', valore: ['disoccupato', 'caregiver'] }
+        { campo: 'condizioneLavorativa', op: 'in', valore: ['disoccupato', 'caregiver'] },
+        NON_PENSIONATO
       ],
       effetto: {
         tipo: 'diritto',

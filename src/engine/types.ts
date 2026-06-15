@@ -45,7 +45,7 @@ export interface Profilo {
   religione?: 'nessuna' | 'cattolica' | 'altra-cristiana' | 'musulmana' | 'ebraica' | 'altra' | 'preferisco-non-dirlo';
 }
 
-export type Operatore = 'eq' | 'in' | 'almeno' | 'alPiu';
+export type Operatore = 'eq' | 'in' | 'nonContiene' | 'almeno' | 'alPiu';
 export interface Condizione { campo: keyof Profilo; op: Operatore; valore: unknown; }
 
 export type Confidenza = 'certa' | 'probabile' | 'dipende';

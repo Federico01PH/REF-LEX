@@ -27,6 +27,15 @@ test('condizione lavorativa multipla: in vale se una delle occupazioni è nella 
   expect(valutaCondizioni(studenteLavoratore, [{ campo: 'condizioneLavorativa', op: 'in', valore: ['pensionato'] }])).toBe(false);
 });
 
+test('nonContiene: vero se nessuna delle voci è tra i valori del campo', () => {
+  const studenteLavoratore: Profilo = { schemaVersion: 1, eta: 20, condizioneLavorativa: ['studente', 'dipendente-privato'] };
+  // non è pensionato → la condizione "non contiene pensionato" è vera
+  expect(valutaCondizioni(studenteLavoratore, [{ campo: 'condizioneLavorativa', op: 'nonContiene', valore: ['pensionato'] }])).toBe(true);
+  const pensionatoCheLavora: Profilo = { schemaVersion: 1, eta: 68, condizioneLavorativa: ['pensionato', 'dipendente-privato'] };
+  // è anche pensionato → falsa
+  expect(valutaCondizioni(pensionatoCheLavora, [{ campo: 'condizioneLavorativa', op: 'nonContiene', valore: ['pensionato'] }])).toBe(false);
+});
+
 test('almeno/alPiu funzionano sui numeri (età)', () => {
   expect(valutaCondizioni(profilo, [{ campo: 'eta', op: 'almeno', valore: 18 }])).toBe(true);
   expect(valutaCondizioni(profilo, [{ campo: 'eta', op: 'alPiu', valore: 30 }])).toBe(false);

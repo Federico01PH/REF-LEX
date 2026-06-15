@@ -1,5 +1,5 @@
 {
-  "versione": 14,
+  "versione": 15,
   "generatoIl": "2026-06-15",
   "leggi": [
     {
@@ -423,6 +423,13 @@
               ]
             },
             {
+              "campo": "condizioneLavorativa",
+              "op": "nonContiene",
+              "valore": [
+                "pensionato"
+              ]
+            },
+            {
               "campo": "eta",
               "op": "alPiu",
               "valore": 66
@@ -465,6 +472,13 @@
                 "disoccupato",
                 "caregiver"
               ]
+            },
+            {
+              "campo": "condizioneLavorativa",
+              "op": "nonContiene",
+              "valore": [
+                "pensionato"
+              ]
             }
           ],
           "effetto": {
@@ -505,6 +519,13 @@
                 "caregiver",
                 "casalingo",
                 "altro"
+              ]
+            },
+            {
+              "campo": "condizioneLavorativa",
+              "op": "nonContiene",
+              "valore": [
+                "pensionato"
               ]
             },
             {
@@ -559,6 +580,13 @@
               ]
             },
             {
+              "campo": "condizioneLavorativa",
+              "op": "nonContiene",
+              "valore": [
+                "pensionato"
+              ]
+            },
+            {
               "campo": "eta",
               "op": "almeno",
               "valore": 62
@@ -607,6 +635,13 @@
                 "caregiver",
                 "casalingo",
                 "altro"
+              ]
+            },
+            {
+              "campo": "condizioneLavorativa",
+              "op": "nonContiene",
+              "valore": [
+                "pensionato"
               ]
             },
             {

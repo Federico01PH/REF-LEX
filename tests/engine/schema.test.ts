@@ -44,6 +44,24 @@ test("rifiuta op 'in' con valore non-array", () => {
   expect(SchemaLegge.safeParse(rotta).success).toBe(false);
 });
 
+test("accetta 'nonContiene' con array di voci valide", () => {
+  const ok = structuredClone(leggeValida);
+  ok.regole[0].condizioni = [{ campo: 'condizioneLavorativa', op: 'nonContiene', valore: ['pensionato'] }] as never;
+  expect(SchemaLegge.safeParse(ok).success).toBe(true);
+});
+
+test("rifiuta 'nonContiene' con valore non-array", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'condizioneLavorativa', op: 'nonContiene', valore: 'pensionato' }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test("rifiuta 'nonContiene' con una voce fuori dall'enum del campo (typo)", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'condizioneLavorativa', op: 'nonContiene', valore: ['astronauta'] }] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
 test("rifiuta 'almeno' su campo non ordinale", () => {
   const rotta = structuredClone(leggeValida);
   rotta.regole[0].condizioni = [{ campo: 'abitazione', op: 'almeno', valore: 'affitto' }] as never;

@@ -28,6 +28,12 @@ test('pensionato: solo la regola neutra "non ti tocca"', () => {
   expect(r.effetti[0].effetto.direzione).toBe('neutro');
 });
 
+test('pensionato che lavora ancora (più occupazioni): solo "già pensionato", niente regole sull\'età futura', () => {
+  const p: Profilo = { schemaVersion: 1, eta: 64, condizioneLavorativa: ['pensionato', 'dipendente-privato'] };
+  const r = simula(p, pensioniRequisiti);
+  expect(r.effetti.map((e) => e.id)).toEqual(['pensioni-gia-pensionato']);
+});
+
 // Verified from L. 199/2025: Ape sociale 63 anni e 5 mesi, prorogata SOLO per il 2026 → anno2+ incerto
 test('caregiver di 64 anni: Ape sociale possibile (dipende), proroga incerta dopo il 2026', () => {
   const p: Profilo = { schemaVersion: 1, eta: 64, condizioneLavorativa: ['caregiver'] };

@@ -65,11 +65,11 @@ const SchemaFonte = z.object({ etichetta: z.string().min(1), url: SchemaUrlSicur
 
 const SchemaCondizione = z.object({
   campo: z.enum(CAMPI_PROFILO),
-  op: z.enum(['eq', 'in', 'almeno', 'alPiu']),
+  op: z.enum(['eq', 'in', 'nonContiene', 'almeno', 'alPiu']),
   valore: z.unknown()
 }).superRefine((c, ctx) => {
-  if (c.op === 'in' && !Array.isArray(c.valore)) {
-    ctx.addIssue({ code: z.ZodIssueCode.custom, message: `op 'in' richiede un array come valore (campo ${c.campo})` });
+  if ((c.op === 'in' || c.op === 'nonContiene') && !Array.isArray(c.valore)) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, message: `op '${c.op}' richiede un array come valore (campo ${c.campo})` });
   }
   if ((c.op === 'almeno' || c.op === 'alPiu') && !CAMPI_ORDINALI.includes(c.campo)) {
     ctx.addIssue({ code: z.ZodIssueCode.custom, message: `op '${c.op}' è valido solo su campi ordinali (${CAMPI_ORDINALI.join(', ')}), non su ${c.campo}` });
@@ -78,7 +78,7 @@ const SchemaCondizione = z.object({
     ctx.addIssue({ code: z.ZodIssueCode.custom, message: `il campo ${c.campo} è una lista: usa l'operatore 'in' invece di 'eq'` });
   }
   // valida il valore contro il dominio del campo (intercetta i typo)
-  if (c.op === 'in') {
+  if (c.op === 'in' || c.op === 'nonContiene') {
     if (Array.isArray(c.valore)) {
       for (const x of c.valore) {
         const errore = valoreNonValido(c.campo, c.op, x);

@@ -26,6 +26,12 @@ export function valutaCondizioni(profilo: Profilo, condizioni: Condizione[]): bo
         if (Array.isArray(v)) return v.some((x) => lista.includes(x));
         return lista.includes(v);
       }
+      case 'nonContiene': {
+        // negazione di 'in': vero se NESSUNA delle voci elencate è tra i valori del campo
+        const lista = c.valore as unknown[];
+        if (Array.isArray(v)) return !v.some((x) => lista.includes(x));
+        return !lista.includes(v);
+      }
       case 'almeno':
         return ordinale(c.campo, v) >= ordinale(c.campo, c.valore);
       case 'alPiu':
