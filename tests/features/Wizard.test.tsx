@@ -16,8 +16,9 @@ test('percorso minimo: si salta il nome, l\'età è obbligatoria, poi si saltano
   await userEvent.type(screen.getByRole('spinbutton'), '34');
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
 
-  // 15 domande facoltative dopo l'età (il permesso di soggiorno non compare senza cittadinanza extra-UE)
-  for (let i = 0; i < 15; i++) {
+  // 16 domande facoltative dopo l'età (permesso di soggiorno e "chi dipende da te"
+  // non compaiono finché non si risponde, rispettivamente, extra-UE e "ho persone a carico")
+  for (let i = 0; i < 16; i++) {
     await userEvent.click(screen.getByRole('button', { name: /salta/i }));
   }
   expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ schemaVersion: 1, eta: 34 }));
@@ -30,7 +31,7 @@ test('il nome (o nickname) scelto finisce nel profilo', async () => {
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
   await userEvent.type(screen.getByRole('spinbutton'), '40');
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 16; i++) {
     await userEvent.click(screen.getByRole('button', { name: /salta/i }));
   }
   expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ nome: 'Giulia', eta: 40 }));
@@ -44,7 +45,7 @@ test('risposta a scelta: la pillola selezionata finisce nel profilo', async () =
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
   await userEvent.click(screen.getByRole('button', { name: /in pensione/i }));
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
-  for (let i = 0; i < 14; i++) {
+  for (let i = 0; i < 15; i++) {
     await userEvent.click(screen.getByRole('button', { name: /salta/i }));
   }
   expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ eta: 70, condizioneLavorativa: 'pensionato' }));
@@ -70,6 +71,35 @@ test('la domanda sul permesso di soggiorno compare solo con cittadinanza fuori d
     await userEvent.click(screen.getByRole('button', { name: /salta/i }));
   }
   expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ cittadinanza: 'extra-ue', permessoSoggiorno: 'no' }));
+});
+
+test('la domanda "chi dipende da te" compare solo dopo aver detto di avere persone a carico', async () => {
+  const onFine = vi.fn();
+  render(<Wizard iniziale={null} esploratore={false} onFine={onFine} onAnnulla={vi.fn()} />);
+  await userEvent.click(screen.getByRole('button', { name: /salta/i })); // salto il nome
+  await userEvent.type(screen.getByRole('spinbutton'), '38');
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  // salto fino al cancello "persone a carico"
+  while (!screen.queryByRole('heading', { name: /persone a tuo carico/i })) {
+    await userEvent.click(screen.getByRole('button', { name: /salta/i }));
+  }
+  // finché non rispondo, la domanda di dettaglio non c'è
+  expect(screen.queryByRole('heading', { name: /chi dipende da te/i })).not.toBeInTheDocument();
+  await userEvent.click(screen.getByRole('button', { name: 'Sì' }));
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  // ora compare e posso scegliere le categorie
+  expect(screen.getByRole('heading', { name: /chi dipende da te/i })).toBeInTheDocument();
+  await userEvent.click(screen.getByRole('button', { name: /figli minorenni/i }));
+  await userEvent.click(screen.getByRole('button', { name: /genitori o anziani/i }));
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  // salto tutte le domande rimanenti fino alla fine
+  while (onFine.mock.calls.length === 0) {
+    await userEvent.click(screen.getByRole('button', { name: /salta/i }));
+  }
+  expect(onFine).toHaveBeenCalledWith(expect.objectContaining({
+    personeACarico: true,
+    tipiACarico: expect.arrayContaining(['figli-minorenni', 'genitori-anziani'])
+  }));
 });
 
 test('si può tornare indietro alla domanda precedente senza perdere le risposte', async () => {

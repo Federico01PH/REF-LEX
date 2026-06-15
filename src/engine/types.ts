@@ -17,6 +17,10 @@ export type Disabilita =
 // ordinale: ogni titolo include quelli precedenti (chi è laureato ha anche il diploma)
 export type TitoloStudio = 'nessuno' | 'medie' | 'diploma' | 'laurea';
 
+// chi dipende economicamente dalla persona: molte leggi distinguono i casi
+// (assegno unico, congedi, L.104, caregiver). Chiesto solo se personeACarico è true.
+export type TipoACarico = 'figli-minorenni' | 'figli-maggiorenni' | 'familiare-disabile' | 'genitori-anziani';
+
 export interface Profilo {
   schemaVersion: 1;
   nome?: string; // nome o nickname scelto dall'utente, solo per rivolgersi a lui; resta sul dispositivo
@@ -30,6 +34,8 @@ export interface Profilo {
   fasciaReddito?: FasciaReddito;
   fasciaIsee?: FasciaIsee;
   figli?: 0 | 1 | 2 | 3; // 3 = tre o più
+  personeACarico?: boolean; // ha familiari che dipendono economicamente da lei/lui
+  tipiACarico?: TipoACarico[]; // chi dipende, chiesto solo se personeACarico è true
   abitazione?: 'proprieta' | 'affitto' | 'comodato' | 'altro';
   numeroProprieta?: 0 | 1 | 2 | 3; // immobili posseduti, 3 = tre o più
   titoloStudio?: TitoloStudio;

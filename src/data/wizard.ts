@@ -55,6 +55,18 @@ export const DOMANDE: Domanda[] = [
     opzioni: [
       { valore: 0, etichetta: 'No' }, { valore: 1, etichetta: 'Uno' },
       { valore: 2, etichetta: 'Due' }, { valore: 3, etichetta: 'Tre o più' }] },
+  { campo: 'personeACarico', titolo: 'Hai persone a tuo carico?', tipo: 'scelta',
+    perche: 'Persone a carico sono i familiari che dipendono economicamente da te (figli, ma anche un genitore anziano o un familiare con disabilità). Molte leggi cambiano se hai qualcuno a carico: assegni, detrazioni, permessi di cura.',
+    opzioni: [
+      { valore: true, etichetta: 'Sì' }, { valore: false, etichetta: 'No' }] },
+  { campo: 'tipiACarico', titolo: 'Chi dipende da te?', tipo: 'multi',
+    mostraSe: (bozza) => bozza.personeACarico === true,
+    perche: 'Le tutele cambiano molto a seconda di chi hai a carico: per i figli minorenni valgono assegni e congedi, per un familiare con disabilità i permessi della legge 104, per un genitore anziano gli aiuti ai caregiver. Puoi indicare più di una voce.',
+    opzioni: [
+      { valore: 'figli-minorenni', etichetta: 'Figli minorenni' },
+      { valore: 'figli-maggiorenni', etichetta: 'Figli maggiorenni ancora a carico' },
+      { valore: 'familiare-disabile', etichetta: 'Un familiare con disabilità' },
+      { valore: 'genitori-anziani', etichetta: 'Genitori o anziani non autosufficienti' }] },
   { campo: 'statoCivile', titolo: 'Qual è il tuo stato civile?', tipo: 'scelta',
     perche: 'Matrimonio e unione civile cambiano tasse, pensioni di reversibilità ed eredità.',
     opzioni: [

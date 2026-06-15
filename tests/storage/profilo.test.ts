@@ -59,6 +59,20 @@ test('accetta un profilo completo con campi validi', () => {
   expect(caricaProfilo()).toEqual(completo);
 });
 
+test('accetta un profilo con persone a carico e le categorie scelte', () => {
+  const p: Profilo = {
+    schemaVersion: 1, eta: 38, personeACarico: true,
+    tipiACarico: ['figli-minorenni', 'genitori-anziani']
+  };
+  salvaProfilo(p);
+  expect(caricaProfilo()).toEqual(p);
+});
+
+test('restituisce null se una categoria di persone a carico non è valida', () => {
+  localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 30, tipiACarico: ['gatto'] }));
+  expect(caricaProfilo()).toBeNull();
+});
+
 test('cancellaTutto rimuove ogni chiave reflex', () => {
   salvaProfilo(profilo);
   localStorage.setItem('reflex.tema', 'dark');

@@ -149,6 +149,8 @@ export const SchemaProfilo = z.object({
   fasciaReddito: z.enum(['nessuno', 'fino9k', 'da9a15k', 'da15a20k', 'da20a28k', 'da28a35k', 'da35a50k', 'oltre50k']).optional(),
   fasciaIsee: z.enum(['fino9360', 'da9360a15k', 'da15a25k', 'da25a40k', 'oltre40k', 'nonLoSo']).optional(),
   figli: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)]).optional(),
+  personeACarico: z.boolean().optional(),
+  tipiACarico: z.array(z.enum(['figli-minorenni', 'figli-maggiorenni', 'familiare-disabile', 'genitori-anziani'])).optional(),
   abitazione: z.enum(['proprieta', 'affitto', 'comodato', 'altro']).optional(),
   numeroProprieta: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)]).optional(),
   titoloStudio: z.enum(['nessuno', 'medie', 'diploma', 'laurea']).optional(),

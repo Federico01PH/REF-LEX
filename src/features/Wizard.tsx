@@ -44,6 +44,8 @@ export function Wizard({ iniziale, esploratore, onFine, onAnnulla }: {
       const nuova: Partial<Profilo> = { ...bozza, [domanda.campo]: v };
       // se la cittadinanza non è più extra-UE, la risposta sul permesso di soggiorno non ha più senso
       if (domanda.campo === 'cittadinanza' && v !== 'extra-ue') delete nuova.permessoSoggiorno;
+      // se non ci sono persone a carico, le categorie scelte prima non hanno più senso
+      if (domanda.campo === 'personeACarico' && v !== true) delete nuova.tipiACarico;
       setBozza(nuova);
     }
   }
