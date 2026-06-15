@@ -3,6 +3,7 @@ import type { Legge, RisultatoSimulazione } from '../engine/types';
 import { PERSONAGGI } from '../data/personas';
 import { simula } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
+import { descrizioneConEnfasi } from '../ui/enfasi';
 
 const CONFIDENZA = {
   certa: { classe: 'badge-certa', parola: 'Certo' },
@@ -26,9 +27,9 @@ function DettaglioPersona({ r, legge }: { r: RisultatoSimulazione; legge: Legge 
         </p>
       ) : (
         r.effetti.map((e) => (
-          <p key={e.id} style={{ fontWeight: 700, margin: '8px 0 0' }}>
+          <p key={e.id} style={{ margin: '8px 0 0' }}>
             <span className={`badge ${CONFIDENZA[e.confidenza].classe}`}>{CONFIDENZA[e.confidenza].parola}</span>{' '}
-            {e.effetto.descrizione}
+            {descrizioneConEnfasi(e.effetto.descrizione)}
           </p>
         ))
       )}

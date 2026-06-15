@@ -3,6 +3,13 @@ import type { Legge, Orizzonte, Profilo, Regola } from '../engine/types';
 import { ORIZZONTI } from '../engine/types';
 import { orizzonteEtichetta, simula } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
+import { descrizioneConEnfasi } from '../ui/enfasi';
+
+// i risultati spiccano sul resto della pagina: un bordo a sinistra colorato secondo
+// il verso dell'effetto (bene/male/misto/neutro), come già fa il riquadro del totale
+const COLORE_DIREZIONE = {
+  positivo: 'var(--verde)', negativo: 'var(--rosso)', misto: 'var(--arancio)', neutro: 'var(--accento)'
+} as const;
 
 const ETICHETTA_CAMPO: Partial<Record<keyof Profilo, string>> = {
   fasciaReddito: 'il tuo reddito', fasciaIsee: 'il tuo ISEE', figli: 'quanti figli hai',
@@ -26,22 +33,11 @@ function formattaIntervallo(min: number, max: number): string {
   return min === max ? `${segno(min)} €` : `da ${segno(min)} a ${segno(max)} €`;
 }
 
-// Alleggerisce il testo: niente più paragrafi interamente in grassetto. Se l'osservazione
-// inizia con un "titolo:" breve (il modo in cui le regole introducono la parte chiave),
-// resta in grassetto solo quello; il resto torna a peso normale di lettura.
-function descrizioneConEnfasi(testo: string) {
-  const duePunti = testo.indexOf(':');
-  if (duePunti > 0 && duePunti <= 60 && duePunti < testo.length - 1) {
-    return <><strong style={{ fontWeight: 600 }}>{testo.slice(0, duePunti + 1)}</strong>{testo.slice(duePunti + 1)}</>;
-  }
-  return <>{testo}</>;
-}
-
 function RigaEffetto({ regola }: { regola: Regola }) {
   const [aperta, setAperta] = useState(false);
   const conf = CONFIDENZA[regola.confidenza];
   return (
-    <div className="card spazio">
+    <div className="card spazio risultato" style={{ borderLeft: `5px solid ${COLORE_DIREZIONE[regola.effetto.direzione]}` }}>
       <span className={`badge ${conf.classe}`}>{conf.parola}</span>
       <p style={{ margin: '8px 0' }}>{descrizioneConEnfasi(regola.effetto.descrizione)}</p>
       {regola.effetto.importoMese && (
@@ -158,6 +154,9 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
               <li><span className="badge badge-sensibile">Compressione</span> Quanto la legge limita un tuo diritto: lieve, sensibile o grave.</li>
             </ul>
           </details>
+          {r.effetti.some((e) => !e.effetto.indiretto) && (
+            <h2 style={{ fontSize: 19, margin: '4px 0 2px' }}>Cosa cambia per te</h2>
+          )}
           {r.effetti.filter((e) => !e.effetto.indiretto).map((regola) => <RigaEffetto key={regola.id} regola={regola} />)}
           {r.effetti.some((e) => e.effetto.indiretto) && (
             <section aria-label="Effetti indiretti" className="spazio">
