@@ -1,5 +1,5 @@
 {
-  "versione": 13,
+  "versione": 14,
   "generatoIl": "2026-06-15",
   "leggi": [
     {
@@ -377,8 +377,10 @@
           "condizioni": [
             {
               "campo": "condizioneLavorativa",
-              "op": "eq",
-              "valore": "pensionato"
+              "op": "in",
+              "valore": [
+                "pensionato"
+              ]
             }
           ],
           "effetto": {
@@ -1236,8 +1238,10 @@
           "condizioni": [
             {
               "campo": "condizioneLavorativa",
-              "op": "eq",
-              "valore": "caregiver"
+              "op": "in",
+              "valore": [
+                "caregiver"
+              ]
             }
           ],
           "effetto": {
@@ -2117,8 +2121,10 @@
             },
             {
               "campo": "condizioneLavorativa",
-              "op": "eq",
-              "valore": "disoccupato"
+              "op": "in",
+              "valore": [
+                "disoccupato"
+              ]
             }
           ],
           "effetto": {
@@ -2147,8 +2153,10 @@
           "condizioni": [
             {
               "campo": "condizioneLavorativa",
-              "op": "eq",
-              "valore": "dipendente-privato"
+              "op": "in",
+              "valore": [
+                "dipendente-privato"
+              ]
             }
           ],
           "effetto": {
@@ -2736,8 +2744,10 @@
           "condizioni": [
             {
               "campo": "condizioneLavorativa",
-              "op": "eq",
-              "valore": "imprenditore"
+              "op": "in",
+              "valore": [
+                "imprenditore"
+              ]
             }
           ],
           "effetto": {

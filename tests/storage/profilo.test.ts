@@ -1,7 +1,7 @@
 import { caricaProfilo, caricaTema, salvaProfilo, salvaTema, cancellaTutto, storageDisponibile } from '../../src/storage/profilo';
 import type { Profilo } from '../../src/engine/types';
 
-const profilo: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: 'studente' };
+const profilo: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: ['studente'] };
 
 beforeEach(() => localStorage.clear());
 
@@ -50,7 +50,7 @@ test('restituisce null se un campo lista contiene un valore non valido', () => {
 
 test('accetta un profilo completo con campi validi', () => {
   const completo: Profilo = {
-    schemaVersion: 1, nome: 'Ada', eta: 41, genere: 'donna', condizioneLavorativa: 'dipendente-privato',
+    schemaVersion: 1, nome: 'Ada', eta: 41, genere: 'donna', condizioneLavorativa: ['dipendente-privato'],
     fasciaReddito: 'da28a35k', fasciaIsee: 'da15a25k', figli: 2, abitazione: 'affitto',
     numeroProprieta: 0, titoloStudio: 'laurea', disabilita: ['nessuna'], cittadinanza: 'italiana',
     religione: 'nessuna'
@@ -70,6 +70,22 @@ test('accetta un profilo con persone a carico e le categorie scelte', () => {
 
 test('restituisce null se una categoria di persone a carico non è valida', () => {
   localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 30, tipiACarico: ['gatto'] }));
+  expect(caricaProfilo()).toBeNull();
+});
+
+test('accetta e ricarica una condizione lavorativa multipla (studente che lavora)', () => {
+  const p: Profilo = { schemaVersion: 1, eta: 22, condizioneLavorativa: ['studente', 'dipendente-privato'] };
+  salvaProfilo(p);
+  expect(caricaProfilo()).toEqual(p);
+});
+
+test('migra una condizione lavorativa salvata come stringa singola (vecchio formato) in un array', () => {
+  localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 30, condizioneLavorativa: 'studente' }));
+  expect(caricaProfilo()?.condizioneLavorativa).toEqual(['studente']);
+});
+
+test('restituisce null se la condizione lavorativa contiene una voce non valida', () => {
+  localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 30, condizioneLavorativa: ['studente', 'astronauta'] }));
   expect(caricaProfilo()).toBeNull();
 });
 

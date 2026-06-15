@@ -16,8 +16,8 @@ export const DOMANDE: Domanda[] = [
     perche: 'Solo per darti del tu e rivolgerci a te per nome. Va bene anche un nome di fantasia o un soprannome, e puoi saltare questa domanda. Come tutto il resto, resta sul tuo dispositivo.' },
   { campo: 'eta', titolo: 'Quanti anni hai?', tipo: 'numero', obbligatoria: true,
     perche: 'Molte leggi valgono solo per certe età: pensioni, scuola, patente, agevolazioni giovani.' },
-  { campo: 'condizioneLavorativa', titolo: 'Di cosa ti occupi?', tipo: 'scelta',
-    perche: 'Tasse, bonus e tutele cambiano molto tra dipendenti, autonomi, studenti e pensionati.',
+  { campo: 'condizioneLavorativa', titolo: 'Di cosa ti occupi?', tipo: 'multi',
+    perche: 'Tasse, bonus e tutele cambiano molto tra dipendenti, autonomi, studenti e pensionati. Puoi indicare più di una voce: per esempio uno studente che lavora, o chi ha la partita IVA ed è anche dipendente.',
     opzioni: [
       { valore: 'dipendente-privato', etichetta: 'Dipendente (azienda privata)' },
       { valore: 'dipendente-pubblico', etichetta: 'Dipendente pubblico' },

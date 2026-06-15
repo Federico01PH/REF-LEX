@@ -62,7 +62,7 @@ export const pensioniRequisiti: Legge = {
     {
       id: 'pensioni-gia-pensionato',
       campiNecessari: ['condizioneLavorativa'],
-      condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'pensionato' }],
+      condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['pensionato'] }],
       effetto: {
         tipo: 'servizio',
         descrizione: 'Sei già in pensione: i nuovi requisiti non ti toccano. La tua pensione non cambia per effetto di questa legge.',

@@ -14,14 +14,14 @@ const legge: Legge = {
   verificataIl: '2026-06-10', riassunto: 'Legge di prova.',
   regole: [
     { ...regolaBase, id: 'r-bonus', confidenza: 'certa',
-      condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'dipendente-privato' }],
+      condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['dipendente-privato'] }],
       effetto: { tipo: 'economico', importoMese: { min: 60, max: 80 }, descrizione: 'Bonus', direzione: 'positivo' } },
     { ...regolaBase, id: 'r-tassa', confidenza: 'probabile',
-      condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'dipendente-privato' }],
+      condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['dipendente-privato'] }],
       effetto: { tipo: 'economico', importoMese: { min: 10, max: 10 }, descrizione: 'Costo', direzione: 'negativo' },
       timeline: { anno1: 'nullo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' } },
     { ...regolaBase, id: 'r-forse', confidenza: 'dipende',
-      condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'dipendente-privato' }],
+      condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['dipendente-privato'] }],
       effetto: { tipo: 'economico', importoMese: { min: 100, max: 100 }, descrizione: 'Forse', direzione: 'positivo' } },
     { ...regolaBase, id: 'r-isee', confidenza: 'certa', campiNecessari: ['fasciaIsee'],
       condizioni: [{ campo: 'fasciaIsee', op: 'alPiu', valore: 'da9360a15k' }],
@@ -31,7 +31,7 @@ const legge: Legge = {
 
 const dipendente: Profilo = {
   schemaVersion: 1, eta: 34,
-  condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'da15a20k'
+  condizioneLavorativa: ['dipendente-privato'], fasciaReddito: 'da15a20k'
 };
 
 test('applica le regole con condizioni vere', () => {
@@ -52,7 +52,7 @@ test('totale: somma certa+probabile attive, esclude dipende, rispetta direzione 
 });
 
 test('profilo non toccato: nessun effetto', () => {
-  const pensionato: Profilo = { schemaVersion: 1, eta: 70, condizioneLavorativa: 'pensionato', fasciaReddito: 'da9a15k', fasciaIsee: 'oltre40k' };
+  const pensionato: Profilo = { schemaVersion: 1, eta: 70, condizioneLavorativa: ['pensionato'], fasciaReddito: 'da9a15k', fasciaIsee: 'oltre40k' };
   const r = simula(pensionato, legge);
   expect(r.effetti).toHaveLength(0);
   expect(r.nonCalcolabili).toHaveLength(0);
@@ -60,9 +60,9 @@ test('profilo non toccato: nessun effetto', () => {
 
 test('rilevanza: alta con effetti certi/probabili, media con soli dipende o non calcolabili, bassa altrimenti', () => {
   expect(rilevanza(dipendente, legge)).toBe('alta');
-  const soloIseeMancante: Profilo = { schemaVersion: 1, eta: 50, condizioneLavorativa: 'pensionato', fasciaReddito: 'da9a15k' };
+  const soloIseeMancante: Profilo = { schemaVersion: 1, eta: 50, condizioneLavorativa: ['pensionato'], fasciaReddito: 'da9a15k' };
   expect(rilevanza(soloIseeMancante, legge)).toBe('media');
-  const fuori: Profilo = { schemaVersion: 1, eta: 70, condizioneLavorativa: 'pensionato', fasciaReddito: 'da9a15k', fasciaIsee: 'oltre40k' };
+  const fuori: Profilo = { schemaVersion: 1, eta: 70, condizioneLavorativa: ['pensionato'], fasciaReddito: 'da9a15k', fasciaIsee: 'oltre40k' };
   expect(rilevanza(fuori, legge)).toBe('bassa');
 });
 
@@ -71,7 +71,7 @@ test('effetti misti o neutri con importo non entrano mai nei totali (difesa in p
     ...legge,
     regole: [
       { ...regolaBase, id: 'r-misto', confidenza: 'certa',
-        condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'dipendente-privato' }],
+        condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['dipendente-privato'] }],
         effetto: { tipo: 'economico', importoMese: { min: 30, max: 50 }, descrizione: 'Misto', direzione: 'misto' } }
     ]
   };

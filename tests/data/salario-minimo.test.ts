@@ -15,7 +15,7 @@ test('rispetta lo schema ed e in stato approvata', () => {
 });
 
 test('dipendente a basso reddito: effetto con confidenza dipende, escluso dal totale', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 22, condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'fino9k' };
+  const p: Profilo = { schemaVersion: 1, eta: 22, condizioneLavorativa: ['dipendente-privato'], fasciaReddito: 'fino9k' };
   const r = simula(p, salarioMinimo);
   expect(r.effetti).toHaveLength(1);
   expect(r.effetti[0].confidenza).toBe('dipende');
@@ -23,6 +23,6 @@ test('dipendente a basso reddito: effetto con confidenza dipende, escluso dal to
 });
 
 test('autonomo: nessun effetto', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 45, condizioneLavorativa: 'autonomo-ordinario', fasciaReddito: 'da20a28k' };
+  const p: Profilo = { schemaVersion: 1, eta: 45, condizioneLavorativa: ['autonomo-ordinario'], fasciaReddito: 'da20a28k' };
   expect(simula(p, salarioMinimo).effetti).toHaveLength(0);
 });

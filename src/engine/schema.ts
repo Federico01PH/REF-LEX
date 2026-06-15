@@ -9,7 +9,7 @@ const CAMPI_PROFILO = [
 // campi su cui hanno senso i confronti ordinali (almeno/alPiu)
 const CAMPI_ORDINALI: readonly string[] = ['eta', 'fasciaReddito', 'fasciaIsee', 'figli', 'numeroProprieta', 'titoloStudio'];
 // campi il cui valore nel profilo è un array: gli autori devono usare 'in', mai 'eq'
-const CAMPI_ARRAY: readonly string[] = ['disabilita'];
+const CAMPI_ARRAY: readonly string[] = ['disabilita', 'condizioneLavorativa'];
 // campi a testo libero: il valore è una stringa qualsiasi (nessun enum da validare)
 const CAMPI_TESTO: readonly string[] = ['regione'];
 // campi numerici: il valore deve essere un numero (eta è libera; figli/numeroProprieta hanno anche un dominio sotto)
@@ -145,7 +145,11 @@ export const SchemaProfilo = z.object({
   orientamento: z.enum(['eterosessuale', 'omosessuale', 'bisessuale', 'altro', 'preferisco-non-dirlo']).optional(),
   statoCivile: z.enum(['non-sposato', 'sposato', 'unione-civile', 'separato', 'vedovo']).optional(),
   regione: z.string().optional(),
-  condizioneLavorativa: z.enum(['dipendente-privato', 'dipendente-pubblico', 'autonomo-ordinario', 'forfettario', 'imprenditore', 'studente', 'pensionato', 'disoccupato', 'caregiver', 'casalingo', 'altro']).optional(),
+  // migrazione: i profili vecchi salvavano una sola occupazione come stringa; la avvolgiamo in un array
+  condizioneLavorativa: z.preprocess(
+    (v) => (typeof v === 'string' ? [v] : v),
+    z.array(z.enum(['dipendente-privato', 'dipendente-pubblico', 'autonomo-ordinario', 'forfettario', 'imprenditore', 'studente', 'pensionato', 'disoccupato', 'caregiver', 'casalingo', 'altro'])).optional()
+  ),
   fasciaReddito: z.enum(['nessuno', 'fino9k', 'da9a15k', 'da15a20k', 'da20a28k', 'da28a35k', 'da35a50k', 'oltre50k']).optional(),
   fasciaIsee: z.enum(['fino9360', 'da9360a15k', 'da15a25k', 'da25a40k', 'oltre40k', 'nonLoSo']).optional(),
   figli: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)]).optional(),

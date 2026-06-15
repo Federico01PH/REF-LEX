@@ -30,7 +30,7 @@ export interface Profilo {
   orientamento?: 'eterosessuale' | 'omosessuale' | 'bisessuale' | 'altro' | 'preferisco-non-dirlo';
   statoCivile?: 'non-sposato' | 'sposato' | 'unione-civile' | 'separato' | 'vedovo';
   regione?: string;
-  condizioneLavorativa?: CondizioneLavorativa;
+  condizioneLavorativa?: CondizioneLavorativa[]; // più occupazioni insieme (es. studente che lavora, P.IVA anche dipendente)
   fasciaReddito?: FasciaReddito;
   fasciaIsee?: FasciaIsee;
   figli?: 0 | 1 | 2 | 3; // 3 = tre o più

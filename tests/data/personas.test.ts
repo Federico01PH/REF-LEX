@@ -35,10 +35,11 @@ test('copre le minoranze citate: senza permesso, transgender, omosessuale, malat
 });
 
 test('copre i profili di maggioranza: dipendente pubblico, partita IVA, pensionato, studente, ricco', () => {
-  const pubblico = PERSONAGGI.some((p) => p.profilo.condizioneLavorativa === 'dipendente-pubblico');
-  const partitaIva = PERSONAGGI.some((p) => p.profilo.condizioneLavorativa === 'autonomo-ordinario' || p.profilo.condizioneLavorativa === 'forfettario');
-  const pensionato = PERSONAGGI.some((p) => p.profilo.condizioneLavorativa === 'pensionato');
-  const studente = PERSONAGGI.some((p) => p.profilo.condizioneLavorativa === 'studente' || p.profilo.condizioneLavorativa === 'dipendente-privato');
+  const occ = (p: typeof PERSONAGGI[number]) => p.profilo.condizioneLavorativa ?? [];
+  const pubblico = PERSONAGGI.some((p) => occ(p).includes('dipendente-pubblico'));
+  const partitaIva = PERSONAGGI.some((p) => occ(p).includes('autonomo-ordinario') || occ(p).includes('forfettario'));
+  const pensionato = PERSONAGGI.some((p) => occ(p).includes('pensionato'));
+  const studente = PERSONAGGI.some((p) => occ(p).includes('studente') || occ(p).includes('dipendente-privato'));
   const ricco = PERSONAGGI.some((p) => p.profilo.fasciaReddito === 'oltre50k');
   expect(pubblico).toBe(true);
   expect(partitaIva).toBe(true);

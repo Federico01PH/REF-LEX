@@ -57,7 +57,7 @@ test('cittadino italiano con figli: riceve il fondo natalità, non le regole sug
 });
 
 test('imprenditore: riceve la regola su sanzioni e incentivi alle imprese', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 50, condizioneLavorativa: 'imprenditore' };
+  const p: Profilo = { schemaVersion: 1, eta: 50, condizioneLavorativa: ['imprenditore'] };
   const r = simula(p, remigrazione);
   expect(r.effetti.map((e) => e.id)).toContain('remigrazione-imprese');
 });

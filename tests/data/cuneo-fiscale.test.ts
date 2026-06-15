@@ -13,7 +13,7 @@ test('rispetta lo schema del catalogo', () => {
 // max = 4.8% × 20.000 / 12 = 80 €/mese
 // (the plan's max of 88 was wrong; 4.8% × 20.000 / 12 = 80)
 test('dipendente 15-20k: somma integrativa 4,8% → 60-80 €/mese, certo al 1° anno', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'da15a20k' };
+  const p: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: ['dipendente-privato'], fasciaReddito: 'da15a20k' };
   const r = simula(p, cuneoFiscale);
   expect(r.effetti).toHaveLength(1);
   expect(r.effetti[0].effetto.importoMese).toEqual({ min: 60, max: 80 });
@@ -24,19 +24,19 @@ test('dipendente 15-20k: somma integrativa 4,8% → 60-80 €/mese, certo al 1°
 // Verified: detrazione fissa 1.000 €/anno per redditi 20.001-32.000 €
 // 1.000 / 12 = 83.33 → 83 €/mese (arrotondato al €)
 test('dipendente 20-28k: detrazione 1.000 €/anno → 83 €/mese', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 40, condizioneLavorativa: 'dipendente-pubblico', fasciaReddito: 'da20a28k' };
+  const p: Profilo = { schemaVersion: 1, eta: 40, condizioneLavorativa: ['dipendente-pubblico'], fasciaReddito: 'da20a28k' };
   const r = simula(p, cuneoFiscale);
   expect(r.effetti[0].effetto.importoMese).toEqual({ min: 83, max: 83 });
 });
 
 test('pensionato: nessun effetto', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 70, condizioneLavorativa: 'pensionato', fasciaReddito: 'da9a15k' };
+  const p: Profilo = { schemaVersion: 1, eta: 70, condizioneLavorativa: ['pensionato'], fasciaReddito: 'da9a15k' };
   const r = simula(p, cuneoFiscale);
   expect(r.effetti).toHaveLength(0);
 });
 
 test('dipendente senza fascia reddito: effetto non calcolabile', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 30, condizioneLavorativa: 'dipendente-privato' };
+  const p: Profilo = { schemaVersion: 1, eta: 30, condizioneLavorativa: ['dipendente-privato'] };
   const r = simula(p, cuneoFiscale);
   expect(r.effetti).toHaveLength(0);
   expect(r.nonCalcolabili.length).toBeGreaterThan(0);

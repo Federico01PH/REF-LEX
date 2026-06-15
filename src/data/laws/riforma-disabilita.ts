@@ -74,7 +74,7 @@ export const riformaDisabilita: Legge = {
     {
       id: 'disabilita-caregiver',
       campiNecessari: ['condizioneLavorativa'],
-      condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'caregiver' }],
+      condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['caregiver'] }],
       effetto: {
         tipo: 'qualita-vita',
         descrizione: 'Se assisti una persona con disabilità, il progetto di vita coinvolge anche la famiglia: la valutazione considera i bisogni di chi assiste e coordina i servizi in un piano unico.',

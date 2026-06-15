@@ -48,7 +48,26 @@ test('risposta a scelta: la pillola selezionata finisce nel profilo', async () =
   for (let i = 0; i < 15; i++) {
     await userEvent.click(screen.getByRole('button', { name: /salta/i }));
   }
-  expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ eta: 70, condizioneLavorativa: 'pensionato' }));
+  expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ eta: 70, condizioneLavorativa: ['pensionato'] }));
+});
+
+test('"di cosa ti occupi": si possono scegliere più occupazioni (studente che lavora)', async () => {
+  const onFine = vi.fn();
+  render(<Wizard iniziale={null} esploratore={false} onFine={onFine} onAnnulla={vi.fn()} />);
+  await userEvent.click(screen.getByRole('button', { name: /salta/i })); // salto il nome
+  await userEvent.type(screen.getByRole('spinbutton'), '22');
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  // ora sono su "di cosa ti occupi": ne seleziono due
+  await userEvent.click(screen.getByRole('button', { name: /studente/i }));
+  await userEvent.click(screen.getByRole('button', { name: /azienda privata/i }));
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  for (let i = 0; i < 15; i++) {
+    await userEvent.click(screen.getByRole('button', { name: /salta/i }));
+  }
+  expect(onFine).toHaveBeenCalledWith(expect.objectContaining({
+    eta: 22,
+    condizioneLavorativa: expect.arrayContaining(['studente', 'dipendente-privato'])
+  }));
 });
 
 test('la domanda sul permesso di soggiorno compare solo con cittadinanza fuori dall\'UE', async () => {

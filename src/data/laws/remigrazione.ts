@@ -199,7 +199,7 @@ export const remigrazione: Legge = {
     {
       id: 'remigrazione-imprese',
       campiNecessari: ['condizioneLavorativa'],
-      condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'imprenditore' }],
+      condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['imprenditore'] }],
       effetto: {
         tipo: 'dovere',
         descrizione: 'SE la proposta diventasse legge: per le imprese aumentano molto i rischi se impiegano lavoratori stranieri irregolari (reclusione, multe fino a 1 milione, confisca dei beni, blocco dei conti, revoca delle licenze). Allo stesso tempo sono previsti incentivi e premi per le aziende che assumono solo lavoratori regolari. Se hai dipendenti, conviene avere tutto in regola.',

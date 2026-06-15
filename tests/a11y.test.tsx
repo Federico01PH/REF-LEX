@@ -10,7 +10,7 @@ import { cuneoFiscale } from '../src/data/laws/cuneo-fiscale';
 import { CATALOGO } from '../src/data/laws';
 import type { Profilo } from '../src/engine/types';
 
-const profilo: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'da15a20k' };
+const profilo: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: ['dipendente-privato'], fasciaReddito: 'da15a20k' };
 
 async function verificaAccessibilita(elemento: React.ReactElement, nome: string) {
   const { container } = render(elemento);

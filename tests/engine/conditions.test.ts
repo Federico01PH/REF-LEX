@@ -2,19 +2,29 @@ import { valutaCondizioni, campiMancanti } from '../../src/engine/conditions';
 import type { Profilo, Condizione } from '../../src/engine/types';
 
 const profilo: Profilo = {
-  schemaVersion: 1, eta: 34, condizioneLavorativa: 'dipendente-privato',
+  schemaVersion: 1, eta: 34, condizioneLavorativa: ['dipendente-privato'],
   fasciaReddito: 'da15a20k', disabilita: ['nessuna'],
   titoloStudio: 'laurea', numeroProprieta: 2
 };
 
-test('eq vale per valore uguale', () => {
-  const c: Condizione[] = [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'dipendente-privato' }];
+test('eq vale per valore uguale (campo a valore singolo)', () => {
+  const c: Condizione[] = [{ campo: 'titoloStudio', op: 'eq', valore: 'laurea' }];
   expect(valutaCondizioni(profilo, c)).toBe(true);
 });
 
 test('in vale se il valore è nella lista', () => {
   const c: Condizione[] = [{ campo: 'condizioneLavorativa', op: 'in', valore: ['dipendente-privato', 'dipendente-pubblico'] }];
   expect(valutaCondizioni(profilo, c)).toBe(true);
+});
+
+test('condizione lavorativa multipla: in vale se una delle occupazioni è nella lista', () => {
+  const studenteLavoratore: Profilo = { schemaVersion: 1, eta: 22, condizioneLavorativa: ['studente', 'dipendente-privato'] };
+  // matcha una regola pensata per gli studenti...
+  expect(valutaCondizioni(studenteLavoratore, [{ campo: 'condizioneLavorativa', op: 'in', valore: ['studente'] }])).toBe(true);
+  // ...e anche una pensata per i dipendenti
+  expect(valutaCondizioni(studenteLavoratore, [{ campo: 'condizioneLavorativa', op: 'in', valore: ['dipendente-privato'] }])).toBe(true);
+  // ma non una per chi non è fra le sue occupazioni
+  expect(valutaCondizioni(studenteLavoratore, [{ campo: 'condizioneLavorativa', op: 'in', valore: ['pensionato'] }])).toBe(false);
 });
 
 test('almeno/alPiu funzionano sui numeri (età)', () => {
@@ -45,7 +55,7 @@ test('in su campo array (disabilita) vale se almeno un elemento coincide', () =>
 test('condizioni multiple sono in AND', () => {
   const c: Condizione[] = [
     { campo: 'eta', op: 'almeno', valore: 18 },
-    { campo: 'condizioneLavorativa', op: 'eq', valore: 'pensionato' }
+    { campo: 'condizioneLavorativa', op: 'in', valore: ['pensionato'] }
   ];
   expect(valutaCondizioni(profilo, c)).toBe(false);
 });

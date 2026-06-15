@@ -29,13 +29,13 @@ test('condizione non riconosciuta (es. fibromialgia): messaggio onesto, neutro',
 });
 
 test('caregiver senza disabilità propria: coinvolto dal progetto di vita', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 50, condizioneLavorativa: 'caregiver', disabilita: ['nessuna'] };
+  const p: Profilo = { schemaVersion: 1, eta: 50, condizioneLavorativa: ['caregiver'], disabilita: ['nessuna'] };
   const r = simula(p, riformaDisabilita);
   expect(r.effetti.map((e) => e.id)).toEqual(['disabilita-caregiver']);
 });
 
 test('nessuna disabilità e non caregiver: nessun effetto applicabile', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 30, condizioneLavorativa: 'studente', disabilita: ['nessuna'] };
+  const p: Profilo = { schemaVersion: 1, eta: 30, condizioneLavorativa: ['studente'], disabilita: ['nessuna'] };
   const r = simula(p, riformaDisabilita);
   expect(r.effetti).toHaveLength(0);
 });

@@ -7,7 +7,7 @@ import { decretoSicurezza } from '../../src/data/laws/decreto-sicurezza';
 import { decretoLavoro } from '../../src/data/laws/decreto-lavoro-2026';
 import type { Profilo } from '../../src/engine/types';
 
-const dipendente: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'da15a20k' };
+const dipendente: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: ['dipendente-privato'], fasciaReddito: 'da15a20k' };
 
 test('mostra il totale del primo anno, il badge di confidenza e la fonte', () => {
   render(<Report profilo={dipendente} legge={cuneoFiscale} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
@@ -19,7 +19,7 @@ test('mostra il totale del primo anno, il badge di confidenza e la fonte', () =>
 });
 
 test('quando la legge evolve nel tempo la timeline c\'è e cambia orizzonte', async () => {
-  const p: Profilo = { schemaVersion: 1, eta: 28, condizioneLavorativa: 'disoccupato' };
+  const p: Profilo = { schemaVersion: 1, eta: 28, condizioneLavorativa: ['disoccupato'] };
   render(<Report profilo={p} legge={decretoLavoro} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
   await userEvent.click(screen.getByRole('button', { name: /10 anni/i }));
   expect(screen.getByRole('button', { name: /10 anni/i })).toHaveAttribute('aria-pressed', 'true');
@@ -31,19 +31,19 @@ test('senza evoluzione nel tempo la timeline non compare', () => {
 });
 
 test('legge non in vigore (delega in attuazione): avviso ben visibile', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 22, condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'fino9k' };
+  const p: Profilo = { schemaVersion: 1, eta: 22, condizioneLavorativa: ['dipendente-privato'], fasciaReddito: 'fino9k' };
   render(<Report profilo={p} legge={salarioMinimo} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
   expect(screen.getByText(/effetti non ancora attivi/i)).toBeInTheDocument();
 });
 
 test('legge che non tocca il profilo: messaggio chiaro e invito a vedere gli altri', () => {
-  const pensionato: Profilo = { schemaVersion: 1, eta: 70, condizioneLavorativa: 'pensionato', fasciaReddito: 'da9a15k' };
+  const pensionato: Profilo = { schemaVersion: 1, eta: 70, condizioneLavorativa: ['pensionato'], fasciaReddito: 'da9a15k' };
   render(<Report profilo={pensionato} legge={cuneoFiscale} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
   expect(screen.getByText(/non cambia nulla per te/i)).toBeInTheDocument();
 });
 
 test('campo mancante: invito ad aggiungere il dato', () => {
-  const senzaReddito: Profilo = { schemaVersion: 1, eta: 30, condizioneLavorativa: 'dipendente-privato' };
+  const senzaReddito: Profilo = { schemaVersion: 1, eta: 30, condizioneLavorativa: ['dipendente-privato'] };
   render(<Report profilo={senzaReddito} legge={cuneoFiscale} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
   expect(screen.getByText(/aggiungi questo dato al profilo/i)).toBeInTheDocument();
 });
@@ -62,7 +62,7 @@ test('senza effetti indiretti la sezione non compare', () => {
 });
 
 test('orizzonte con effetti incerti: avviso visibile', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 22, condizioneLavorativa: 'dipendente-privato', fasciaReddito: 'fino9k' };
+  const p: Profilo = { schemaVersion: 1, eta: 22, condizioneLavorativa: ['dipendente-privato'], fasciaReddito: 'fino9k' };
   render(<Report profilo={p} legge={salarioMinimo} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
   expect(screen.getByText(/effetti sono incerti in questo orizzonte/i)).toBeInTheDocument();
 });

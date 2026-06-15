@@ -73,7 +73,7 @@ export const decretoLavoro: Legge = {
       campiNecessari: ['genere', 'condizioneLavorativa'],
       condizioni: [
         { campo: 'genere', op: 'eq', valore: 'donna' },
-        { campo: 'condizioneLavorativa', op: 'eq', valore: 'disoccupato' }
+        { campo: 'condizioneLavorativa', op: 'in', valore: ['disoccupato'] }
       ],
       effetto: {
         tipo: 'qualita-vita',
@@ -88,7 +88,7 @@ export const decretoLavoro: Legge = {
     {
       id: 'lavoro-salario-giusto',
       campiNecessari: ['condizioneLavorativa'],
-      condizioni: [{ campo: 'condizioneLavorativa', op: 'eq', valore: 'dipendente-privato' }],
+      condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['dipendente-privato'] }],
       effetto: {
         tipo: 'diritto',
         descrizione: 'Arriva il principio del "salario giusto": per ottenere i bonus, la tua azienda deve pagarti almeno quanto prevede il contratto collettivo del tuo settore (il trattamento economico complessivo). I contratti "pirata" che pagano meno perdono gli incentivi: una spinta verso stipendi più equi, soprattutto se oggi sei sotto i minimi dei contratti maggiori.',
