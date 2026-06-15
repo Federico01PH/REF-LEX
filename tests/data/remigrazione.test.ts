@@ -15,8 +15,8 @@ test('è dichiarata in discussione, non in vigore né come referendum', () => {
   expect(remigrazione.stato).toBe('discussione');
 });
 
-test('cittadino extra-UE: riceve le regole che lo riguardano, tutte incerte e "dipende"', () => {
-  const p: Profilo = { schemaVersion: 1, eta: 35, cittadinanza: 'extra-ue' };
+test('cittadino extra-UE regolare: riceve le regole che lo riguardano, tutte incerte e "dipende"', () => {
+  const p: Profilo = { schemaVersion: 1, eta: 35, cittadinanza: 'extra-ue', permessoSoggiorno: 'si' };
   const r = simula(p, remigrazione);
   const id = r.effetti.map((e) => e.id);
   expect(id).toContain('remigrazione-ingresso-flussi');
@@ -27,6 +27,24 @@ test('cittadino extra-UE: riceve le regole che lo riguardano, tutte incerte e "d
   expect(id).toContain('remigrazione-uguaglianza');
   expect(r.effetti.every((e) => e.confidenza === 'dipende')).toBe(true);
   expect(r.effetti.every((e) => e.timeline.anno1 === 'incerto' && e.timeline.anno10 === 'incerto')).toBe(true);
+});
+
+// il punto chiave: chi è senza permesso (Omar) e chi è regolare da anni (Karim) NON devono
+// ricevere gli stessi effetti. Il rientro volontario incentivato è riservato ai regolari;
+// chi è irregolare è nella posizione più esposta (rimpatrio, niente vie di regolarizzazione).
+test('extra-UE regolare e senza permesso hanno effetti diversi', () => {
+  const regolare: Profilo = { schemaVersion: 1, eta: 45, cittadinanza: 'extra-ue', permessoSoggiorno: 'si' };
+  const senzaPermesso: Profilo = { schemaVersion: 1, eta: 28, cittadinanza: 'extra-ue', permessoSoggiorno: 'no' };
+  const idReg = simula(regolare, remigrazione).effetti.map((e) => e.id);
+  const idIrr = simula(senzaPermesso, remigrazione).effetti.map((e) => e.id);
+  // il programma di rientro volontario con incentivo è solo per chi è regolare
+  expect(idReg).toContain('remigrazione-programma-rientro');
+  expect(idIrr).not.toContain('remigrazione-programma-rientro');
+  // chi è senza permesso ha invece la regola sulla posizione irregolare
+  expect(idIrr).toContain('remigrazione-irregolari');
+  expect(idReg).not.toContain('remigrazione-irregolari');
+  // i due insiemi di effetti non coincidono
+  expect(idReg.sort()).not.toEqual(idIrr.sort());
 });
 
 test('cittadino italiano con figli: riceve il fondo natalità, non le regole sugli stranieri', () => {
