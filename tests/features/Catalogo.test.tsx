@@ -18,9 +18,12 @@ function renderCatalogo(extra: Partial<Parameters<typeof Catalogo>[0]> = {}) {
 async function apriElenco() {
   await userEvent.click(screen.getByRole('combobox', { name: /scegli la legge/i }));
 }
-async function scegliLegge(nome: RegExp) {
+// si cerca col nome semplice (la tendina filtra anche sul titolo divulgativo) e si
+// clicca l'opzione filtrata, che però è etichettata col titolo UFFICIALE della legge
+async function scegliLegge(ricerca: string) {
   await apriElenco();
-  await userEvent.click(screen.getByRole('option', { name: nome }));
+  await userEvent.type(screen.getByRole('combobox', { name: /scegli la legge/i }), ricerca);
+  await userEvent.click(screen.getAllByRole('option')[0]);
 }
 
 test('la scelta della legge ha un titolo in evidenza che la fa risaltare', () => {
@@ -28,24 +31,24 @@ test('la scelta della legge ha un titolo in evidenza che la fa risaltare', () =>
   expect(screen.getByRole('heading', { name: /scegli la legge e misura l.impatto sulla tua vita/i })).toBeInTheDocument();
 });
 
-test('aprendo la tendina ricercabile si vedono i titoli semplici con lo stato', async () => {
+test('aprendo la tendina ricercabile si vedono i titoli ufficiali con lo stato', async () => {
   renderCatalogo();
   await apriElenco();
-  expect(screen.getByRole('option', { name: /taglio del cuneo fiscale.*in vigore/i })).toBeInTheDocument();
-  expect(screen.getByRole('option', { name: /salario minimo.*appena approvata/i })).toBeInTheDocument();
+  expect(screen.getByRole('option', { name: /legge 30 dicembre 2024, n\. 207.*in vigore/i })).toBeInTheDocument();
+  expect(screen.getByRole('option', { name: /legge 26 settembre 2025, n\. 144.*appena approvata/i })).toBeInTheDocument();
 });
 
 test('scrivendo le prime lettere del titolo le leggi si filtrano', async () => {
   renderCatalogo();
   const cb = screen.getByRole('combobox', { name: /scegli la legge/i });
   await userEvent.type(cb, 'pension');
-  expect(screen.getByRole('option', { name: /pensione/i })).toBeInTheDocument();
-  expect(screen.queryByRole('option', { name: /taglio del cuneo/i })).not.toBeInTheDocument();
+  expect(screen.getByRole('option', { name: /pensionistici/i })).toBeInTheDocument();
+  expect(screen.queryByRole('option', { name: /n\. 207/i })).not.toBeInTheDocument();
 });
 
 test('scegliendo una legge compare la scheda con nome ufficiale, spiegazione e rilevanza', async () => {
   renderCatalogo();
-  await scegliLegge(/taglio del cuneo/i);
+  await scegliLegge('taglio del cuneo');
   expect(screen.getByText(/nome ufficiale/i)).toBeInTheDocument();
   expect(screen.getByText(/ti riguarda quasi sicuramente/i)).toBeInTheDocument();
 });
@@ -53,7 +56,7 @@ test('scegliendo una legge compare la scheda con nome ufficiale, spiegazione e r
 test('il bottone della scheda apre il report con l\'id giusto', async () => {
   const onScegli = vi.fn();
   renderCatalogo({ onScegli });
-  await scegliLegge(/taglio del cuneo/i);
+  await scegliLegge('taglio del cuneo');
   await userEvent.click(screen.getByRole('button', { name: /vedi come ti tocca/i }));
   expect(onScegli).toHaveBeenCalledWith('cuneo-fiscale-2025');
 });
@@ -62,7 +65,7 @@ test('il filtro per ambito toglie dall\'elenco le leggi degli altri ambiti', asy
   renderCatalogo();
   await userEvent.click(screen.getByRole('button', { name: /^casa$/i }));
   await apriElenco();
-  expect(screen.queryByRole('option', { name: /taglio del cuneo/i })).not.toBeInTheDocument();
+  expect(screen.queryByRole('option', { name: /n\. 207/i })).not.toBeInTheDocument();
 });
 
 test('il filtro "Scuola, università e ricerca" mostra le leggi con quell\'ambito e nasconde le altre', async () => {
@@ -70,12 +73,12 @@ test('il filtro "Scuola, università e ricerca" mostra le leggi con quell\'ambit
   await userEvent.click(screen.getByRole('button', { name: /scuola, università e ricerca/i }));
   await apriElenco();
   expect(screen.getByRole('option', { name: /intelligenza artificiale/i })).toBeInTheDocument();
-  expect(screen.queryByRole('option', { name: /taglio del cuneo/i })).not.toBeInTheDocument();
+  expect(screen.queryByRole('option', { name: /n\. 207/i })).not.toBeInTheDocument();
 });
 
 test('cambiare ambito chiude la scheda della legge non più visibile', async () => {
   renderCatalogo();
-  await scegliLegge(/taglio del cuneo/i);
+  await scegliLegge('taglio del cuneo');
   await userEvent.click(screen.getByRole('button', { name: /^casa$/i }));
   expect(screen.queryByText(/nome ufficiale:/i)).not.toBeInTheDocument();
 });
@@ -95,13 +98,13 @@ test('in cima ci sono il marchio e il bottone per tornare alla home', async () =
 
 test('le norme europee sono etichettate nella scheda', async () => {
   renderCatalogo();
-  await scegliLegge(/case green/i);
+  await scegliLegge('case green');
   expect(screen.getByText(/norma europea — vale anche in italia/i)).toBeInTheDocument();
 });
 
 test('le leggi italiane non hanno l\'etichetta europea', async () => {
   renderCatalogo();
-  await scegliLegge(/taglio del cuneo/i);
+  await scegliLegge('taglio del cuneo');
   expect(screen.queryByText(/norma europea/i)).not.toBeInTheDocument();
 });
 

@@ -23,15 +23,17 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
   const listaRef = useRef<HTMLUListElement>(null);
 
   const sceltaCorrente = leggi.find((l) => l.id === valoreId) ?? null;
-  // mentre l'utente scrive si filtra; appena scelta, l'input mostra il titolo scelto
+  // mostriamo il titolo UFFICIALE (reale) della legge; la ricerca però guarda sia il
+  // titolo ufficiale sia quello divulgativo, così si trova una legge anche scrivendo il
+  // nome semplice (es. "premierato", che nel titolo ufficiale non compare).
   const query = normalizza(testo);
   const filtrate = aperta && query
-    ? leggi.filter((l) => normalizza(l.titoloDivulgativo).includes(query))
+    ? leggi.filter((l) => normalizza(l.titoloUfficiale).includes(query) || normalizza(l.titoloDivulgativo).includes(query))
     : leggi;
 
   // se il filtro per argomento cambia la legge scelta, riallineo il testo mostrato
   useEffect(() => {
-    if (!aperta) setTesto(sceltaCorrente ? sceltaCorrente.titoloDivulgativo : '');
+    if (!aperta) setTesto(sceltaCorrente ? sceltaCorrente.titoloUfficiale : '');
   }, [valoreId, aperta, sceltaCorrente]);
 
   // tiene l'opzione evidenziata dentro la vista mentre si scorre con la tastiera
@@ -52,7 +54,7 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
 
   function scegli(l: Legge) {
     onScegli(l.id);
-    setTesto(l.titoloDivulgativo);
+    setTesto(l.titoloUfficiale);
     setAperta(false);
   }
 
@@ -120,7 +122,7 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
                 onMouseEnter={() => setAttivo(i)}
                 onMouseDown={(e) => { e.preventDefault(); scegli(l); }}
               >
-                {l.titoloDivulgativo} <span className="combobox-stato">— {etichettaStato(l)}</span>
+                {l.titoloUfficiale} <span className="combobox-stato">— {etichettaStato(l)}</span>
               </li>
             ))
           )}

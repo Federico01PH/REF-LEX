@@ -84,6 +84,21 @@ test('Tab chiude l\'elenco', async () => {
   expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
 });
 
+test('mostra il titolo ufficiale reale, non quello divulgativo', async () => {
+  const l: Legge = { ...legge('x', 'Nome semplice'), titoloUfficiale: 'Legge 1 gennaio 2026, n. 1 — Nome ufficiale lungo' };
+  render(<ComboboxLeggi leggi={[l]} valoreId="" onScegli={vi.fn()} etichettaStato={() => 'In vigore'} />);
+  await userEvent.click(screen.getByRole('combobox'));
+  expect(screen.getByRole('option', { name: /Legge 1 gennaio 2026, n\. 1/i })).toBeInTheDocument();
+  expect(screen.queryByRole('option', { name: /Nome semplice/i })).not.toBeInTheDocument();
+});
+
+test('si può cercare anche col nome semplice (divulgativo), pur mostrando il titolo ufficiale', async () => {
+  const l: Legge = { ...legge('x', 'Premierato'), titoloUfficiale: 'Disegno di legge costituzionale S. 935' };
+  render(<ComboboxLeggi leggi={[l]} valoreId="" onScegli={vi.fn()} etichettaStato={() => 'In vigore'} />);
+  await userEvent.type(screen.getByRole('combobox'), 'premier');
+  expect(screen.getByRole('option', { name: /Disegno di legge costituzionale/i })).toBeInTheDocument();
+});
+
 test('scorrendo con le frecce l\'opzione attiva entra nella vista', async () => {
   const spy = vi.fn();
   Element.prototype.scrollIntoView = spy; // jsdom non lo implementa
