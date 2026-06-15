@@ -90,7 +90,7 @@ export const assegnoInclusione: Legge = {
         { campo: 'disabilita', op: 'in', valore: ['motoria', 'visiva', 'uditiva', 'intellettiva', 'malattia-cronica'] }
       ],
       'Con un ISEE sotto i 9.360 euro e una disabilità o malattia cronica certificata puoi chiedere l\'Assegno di inclusione: fino a 542 euro al mese più 303 di contributo affitto.',
-      'Serve che la disabilità sia certificata dalle commissioni mediche; le condizioni non ancora riconosciute (come la fibromialgia) purtroppo non bastano.'
+      'Serve che la disabilità sia certificata dalle commissioni mediche; le condizioni non ancora riconosciute ufficialmente purtroppo non bastano.'
     ),
     regolaAdi(
       'adi-soglia-vicina',

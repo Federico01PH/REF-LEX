@@ -76,7 +76,7 @@ export const PERSONAGGI: Personaggio[] = [
   {
     id: 'sara',
     nome: 'Sara, 29 anni',
-    descrizione: 'Neoassunta in città, single, in affitto, convive con la fibromialgia',
+    descrizione: 'Neoassunta in città, single, in affitto, convive con una condizione cronica non ancora riconosciuta',
     profilo: {
       ...base, eta: 29, genere: 'donna',
       condizioneLavorativa: ['dipendente-privato'],

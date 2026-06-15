@@ -64,7 +64,7 @@ export const riformaDisabilita: Legge = {
       condizioni: [{ campo: 'disabilita', op: 'in', valore: ['condizione-non-riconosciuta'] }],
       effetto: {
         tipo: 'servizio',
-        descrizione: 'La riforma cambia il come si accerta la disabilità, non l\'elenco delle condizioni riconosciute: se la tua condizione (per esempio la fibromialgia) non è riconosciuta, questa legge da sola non basta. Se ne occupa la proposta sulla fibromialgia, che trovi in questo catalogo.',
+        descrizione: 'La riforma cambia il come si accerta la disabilità, non l\'elenco delle condizioni riconosciute: se la tua condizione non è ancora riconosciuta, questa legge da sola non basta. Se nel catalogo c\'è una proposta dedicata alla tua condizione, la trovi tra le leggi su salute e diritti.',
         direzione: 'neutro'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },

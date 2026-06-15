@@ -90,13 +90,13 @@ export const DOMANDE: Domanda[] = [
       'Trentino-Alto Adige', 'Umbria', "Valle d'Aosta", 'Veneto', 'Vivo all\'estero']
       .map((r) => ({ valore: r, etichetta: r })) },
   { campo: 'disabilita', titolo: 'Convivi con una disabilità o una malattia?', tipo: 'multi',
-    perche: 'Molte leggi riguardano diritti, aiuti e accessibilità. Contano anche le condizioni non ancora riconosciute ufficialmente in Italia, come la fibromialgia.',
+    perche: 'Molte leggi riguardano diritti, aiuti e accessibilità. Contano anche le condizioni croniche non ancora riconosciute ufficialmente in Italia.',
     opzioni: [
       { valore: 'nessuna', etichetta: 'No' }, { valore: 'motoria', etichetta: 'Disabilità motoria' },
       { valore: 'visiva', etichetta: 'Disabilità visiva' }, { valore: 'uditiva', etichetta: 'Disabilità uditiva' },
       { valore: 'intellettiva', etichetta: 'Disabilità intellettiva o psichica' },
       { valore: 'malattia-cronica', etichetta: 'Malattia cronica riconosciuta' },
-      { valore: 'condizione-non-riconosciuta', etichetta: 'Condizione non ancora riconosciuta (es. fibromialgia)' }] },
+      { valore: 'condizione-non-riconosciuta', etichetta: 'Condizione cronica non ancora riconosciuta ufficialmente' }] },
   { campo: 'cittadinanza', titolo: 'Qual è la tua cittadinanza?', tipo: 'scelta',
     perche: 'Permessi, voto e accesso ad alcuni aiuti dipendono dalla cittadinanza.',
     opzioni: [

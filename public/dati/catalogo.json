@@ -1,5 +1,5 @@
 {
-  "versione": 15,
+  "versione": 16,
   "generatoIl": "2026-06-15",
   "leggi": [
     {
@@ -821,7 +821,7 @@
             "anno10": "attivo"
           },
           "confidenza": "dipende",
-          "noteConfidenza": "Serve che la disabilità sia certificata dalle commissioni mediche; le condizioni non ancora riconosciute (come la fibromialgia) purtroppo non bastano. L'importo esatto dipende dal reddito familiare e dalla composizione del nucleo (scala di equivalenza), dati che non ti chiediamo. Contano anche i requisiti su casa e risparmi (patrimonio immobiliare e mobiliare).",
+          "noteConfidenza": "Serve che la disabilità sia certificata dalle commissioni mediche; le condizioni non ancora riconosciute ufficialmente purtroppo non bastano. L'importo esatto dipende dal reddito familiare e dalla composizione del nucleo (scala di equivalenza), dati che non ti chiediamo. Contano anche i requisiti su casa e risparmi (patrimonio immobiliare e mobiliare).",
           "fonteRegola": {
             "etichetta": "DL 48/2023, art. 1-13 (conv. L. 85/2023) e L. 199/2025 (Normattiva)",
             "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-05-04;48"
@@ -1250,7 +1250,7 @@
           ],
           "effetto": {
             "tipo": "servizio",
-            "descrizione": "La riforma cambia il come si accerta la disabilità, non l'elenco delle condizioni riconosciute: se la tua condizione (per esempio la fibromialgia) non è riconosciuta, questa legge da sola non basta. Se ne occupa la proposta sulla fibromialgia, che trovi in questo catalogo.",
+            "descrizione": "La riforma cambia il come si accerta la disabilità, non l'elenco delle condizioni riconosciute: se la tua condizione non è ancora riconosciuta, questa legge da sola non basta. Se nel catalogo c'è una proposta dedicata alla tua condizione, la trovi tra le leggi su salute e diritti.",
             "direzione": "neutro"
           },
           "timeline": {

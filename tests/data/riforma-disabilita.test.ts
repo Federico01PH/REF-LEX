@@ -21,7 +21,7 @@ test('disabilità certificata: accertamento unico e progetto di vita, incerti ne
   expect(unico.confidenza).toBe('probabile');
 });
 
-test('condizione non riconosciuta (es. fibromialgia): messaggio onesto, neutro', () => {
+test('condizione non ancora riconosciuta: messaggio onesto, neutro', () => {
   const p: Profilo = { schemaVersion: 1, eta: 40, disabilita: ['condizione-non-riconosciuta'] };
   const r = simula(p, riformaDisabilita);
   expect(r.effetti.map((e) => e.id)).toEqual(['disabilita-condizione-non-riconosciuta']);
