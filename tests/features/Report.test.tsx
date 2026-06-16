@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Report } from '../../src/features/Report';
 import { cuneoFiscale } from '../../src/data/laws/cuneo-fiscale';
@@ -53,7 +53,19 @@ test('gli effetti indiretti hanno una sezione separata con spiegazione', () => {
   render(<Report profilo={extraUe} legge={decretoSicurezza} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
   expect(screen.getByRole('heading', { name: /effetti indiretti/i })).toBeInTheDocument();
   expect(screen.getByText(/ti tocca di riflesso/i)).toBeInTheDocument();
-  expect(screen.getByText(/comprare una SIM/i)).toBeInTheDocument();
+  // di default si vede la frase breve; la descrizione completa è dietro "Spiega meglio"
+  expect(screen.getByText(/per la SIM basta un documento valido/i)).toBeInTheDocument();
+});
+
+test('un effetto con frase breve mostra "Spiega meglio" e apre la descrizione completa', async () => {
+  const extraUe: Profilo = { schemaVersion: 1, eta: 30, cittadinanza: 'extra-ue', abitazione: 'affitto' };
+  render(<Report profilo={extraUe} legge={decretoSicurezza} esploratore={false} onAltri={vi.fn()} onIndietro={vi.fn()} />);
+  // collassato: si vede la frase breve, non la descrizione completa
+  const card = screen.getByText(/per la SIM basta un documento valido/i).closest('.risultato') as HTMLElement;
+  expect(within(card).queryByText(/Per comprare una SIM telefonica/i)).not.toBeInTheDocument();
+  await userEvent.click(within(card).getByRole('button', { name: /spiega meglio/i }));
+  // espanso: compare la descrizione completa
+  expect(within(card).getByText(/Per comprare una SIM telefonica/i)).toBeInTheDocument();
 });
 
 test('senza effetti indiretti la sezione non compare', () => {

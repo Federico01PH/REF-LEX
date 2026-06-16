@@ -36,10 +36,14 @@ function formattaIntervallo(min: number, max: number): string {
 function RigaEffetto({ regola }: { regola: Regola }) {
   const [aperta, setAperta] = useState(false);
   const conf = CONFIDENZA[regola.confidenza];
+  // testo corto di default (campo breve), con "Spiega meglio" che apre la descrizione
+  // completa + note + fonte. Senza breve resta il testo intero e il toggle "Dettagli e fonte".
+  const haBreve = !!regola.effetto.breve;
+  const testo = haBreve && !aperta ? regola.effetto.breve! : regola.effetto.descrizione;
   return (
     <div className="card spazio risultato" style={{ borderLeft: `5px solid ${COLORE_DIREZIONE[regola.effetto.direzione]}` }}>
       <span className={`badge ${conf.classe}`}>{conf.parola}</span>
-      <p style={{ margin: '8px 0' }}>{descrizioneConEnfasi(regola.effetto.descrizione)}</p>
+      <p style={{ margin: '8px 0' }}>{descrizioneConEnfasi(testo)}</p>
       {regola.effetto.importoMese && (
         <p style={{ margin: '4px 0', fontWeight: 900, fontSize: 20 }}>
           {formattaIntervallo(
@@ -65,7 +69,7 @@ function RigaEffetto({ regola }: { regola: Regola }) {
       })()}
       <button className="testo-piccolo" onClick={() => setAperta(!aperta)} aria-expanded={aperta}
         style={{ background: 'none', border: 'none', textDecoration: 'underline', color: 'var(--accento)', cursor: 'pointer', padding: 0 }}>
-        {aperta ? 'Nascondi dettagli' : 'Dettagli e fonte'}
+        {aperta ? (haBreve ? 'Mostra meno' : 'Nascondi dettagli') : (haBreve ? 'Spiega meglio' : 'Dettagli e fonte')}
       </button>
       {aperta && (
         <div className="testo-piccolo spazio">
