@@ -90,11 +90,11 @@ a { color: var(--accento); }
   color: var(--testo); width: fit-content; }
 .marchio-trattino { color: var(--oro); }
 .marchio-riga { display: flex; align-items: center; gap: 10px; margin: 0; }
-/* item 1: tessera navy piena; ritaglio del keyline chiaro del PNG (in tema scuro sembrava un bordo bianco) */
+/* item 1: tessera navy piena. Il PNG è ora full-bleed (blu fino agli angoli, niente
+   keyline chiara): basta arrotondare gli angoli via CSS, senza più ingrandire l'immagine */
 .marchio-logo { width: 42px; height: 42px; flex: none; display: block;
   border-radius: 23%; overflow: hidden; box-shadow: var(--ombra); }
-.marchio-logo img { width: 100%; height: 100%; display: block;
-  object-fit: cover; transform: scale(1.13); }
+.marchio-logo img { width: 100%; height: 100%; display: block; object-fit: cover; }
 .riga-testata { display: flex; align-items: center; justify-content: space-between;
   gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
 .motto { margin: 2px 0 0; font-size: 16px; color: var(--testo-2); max-width: 720px; }
