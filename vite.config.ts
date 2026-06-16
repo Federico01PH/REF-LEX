@@ -19,10 +19,14 @@ export default defineConfig({
         theme_color: '#0E2433',
         background_color: '#FFFFFF',
         display: 'standalone',
+        // ?v=2: le icone sono diventate full-bleed (blu fino agli angoli). Cambiare solo
+        // il contenuto del file NON forza l'aggiornamento dell'icona su Android (WebAPK),
+        // iOS e Google, che la tengono in cache per URL. Versionando l'URL la rivedono come
+        // nuova e la riscaricano. Bump a ?v=3 al prossimo cambio di icona.
         icons: [
-          { src: 'icona-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
-          { src: 'icona-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
-          { src: 'icona-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
+          { src: 'icona-192.png?v=2', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: 'icona-512.png?v=2', sizes: '512x512', type: 'image/png', purpose: 'any' },
+          { src: 'icona-512.png?v=2', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
         ]
       }
     })
