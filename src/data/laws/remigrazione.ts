@@ -188,10 +188,13 @@ export const remigrazione: Legge = {
     },
     {
       id: 'remigrazione-fondo-natalita',
-      campiNecessari: ['cittadinanza', 'figli'],
+      campiNecessari: ['cittadinanza', 'figli', 'eta'],
       condizioni: [
         { campo: 'cittadinanza', op: 'eq', valore: 'italiana' },
-        { campo: 'figli', op: 'almeno', valore: 1 }
+        { campo: 'figli', op: 'almeno', valore: 1 },
+        // il fondo è natalità: bonus nascita e asili nido. Riguarda chi può avere o crescere
+        // figli piccoli, non chi ha figli ormai adulti: niente effetto oltre i 50 anni.
+        { campo: 'eta', op: 'alPiu', valore: 50 }
       ],
       effetto: {
         tipo: 'economico',

@@ -56,6 +56,14 @@ test('cittadino italiano con figli: riceve il fondo natalità, non le regole sug
   expect(id).not.toContain('remigrazione-asilo-famiglia');
 });
 
+// Il Fondo natalità (bonus nascita, asili nido) riguarda chi può avere o crescere figli
+// piccoli: a un* 74enne con figli ormai adulti non interessa. Niente effetto fuori età.
+test('anziano italiano con figli adulti: NON riceve il fondo natalità (bonus nascita non lo riguarda)', () => {
+  const p: Profilo = { schemaVersion: 1, eta: 74, cittadinanza: 'italiana', figli: 2 };
+  const r = simula(p, remigrazione);
+  expect(r.effetti.map((e) => e.id)).not.toContain('remigrazione-fondo-natalita');
+});
+
 test('imprenditore: riceve la regola su sanzioni e incentivi alle imprese', () => {
   const p: Profilo = { schemaVersion: 1, eta: 50, condizioneLavorativa: ['imprenditore'] };
   const r = simula(p, remigrazione);

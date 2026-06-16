@@ -1,6 +1,6 @@
 {
-  "versione": 18,
-  "generatoIl": "2026-06-15",
+  "versione": 19,
+  "generatoIl": "2026-06-16",
   "leggi": [
     {
       "id": "cuneo-fiscale-2025",
@@ -2765,7 +2765,8 @@
           "id": "remigrazione-fondo-natalita",
           "campiNecessari": [
             "cittadinanza",
-            "figli"
+            "figli",
+            "eta"
           ],
           "condizioni": [
             {
@@ -2777,6 +2778,11 @@
               "campo": "figli",
               "op": "almeno",
               "valore": 1
+            },
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 50
             }
           ],
           "effetto": {
