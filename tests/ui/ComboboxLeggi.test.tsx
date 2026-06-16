@@ -99,6 +99,20 @@ test('si può cercare anche con parole del titolo ufficiale, pur mostrando il ti
   expect(screen.getByRole('option', { name: /Premierato/i })).toBeInTheDocument();
 });
 
+test('le leggi sono in ordine cronologico: la più recente in cima, la più vecchia in fondo', async () => {
+  const leggiData: Legge[] = [
+    { ...legge('vecchia', 'Legge del 2023'), meseAnno: 'maggio 2023' },
+    { ...legge('nuova', 'Legge del 2026'), meseAnno: 'giugno 2026' },
+    { ...legge('media', 'Legge del 2024'), meseAnno: 'aprile 2024' }
+  ];
+  render(<ComboboxLeggi leggi={leggiData} valoreId="" onScegli={vi.fn()} etichettaStato={() => 'In vigore'} />);
+  await userEvent.click(screen.getByRole('combobox'));
+  const opzioni = screen.getAllByRole('option').map((o) => o.textContent);
+  expect(opzioni[0]).toMatch(/2026/);
+  expect(opzioni[1]).toMatch(/2024/);
+  expect(opzioni[2]).toMatch(/2023/);
+});
+
 test('scorrendo con le frecce l\'opzione attiva entra nella vista', async () => {
   const spy = vi.fn();
   Element.prototype.scrollIntoView = spy; // jsdom non lo implementa

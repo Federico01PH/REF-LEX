@@ -21,6 +21,25 @@ export function titoloNovitaBreve(titolo: string): string {
   return titolo;
 }
 
+const MESI_IT = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno',
+  'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
+
+// Chiave cronologica (anno*12 + mese) per ordinare le leggi dalla più recente alla più
+// vecchia. Per le leggi in vigore/approvate usa meseAnno (es. "giugno 2025"); per le
+// proposte, che non hanno meseAnno, ricade sulla data di verifica (quando le abbiamo
+// modellate, sempre recente) così restano in cima tra le novità.
+export function chiaveCronologica(l: { meseAnno?: string; verificataIl: string }): number {
+  if (l.meseAnno) {
+    const m = l.meseAnno.toLowerCase().match(/([a-zà-ú]+)\s+((?:19|20)\d{2})/);
+    if (m) {
+      const mese = MESI_IT.indexOf(m[1]);
+      if (mese >= 0) return Number(m[2]) * 12 + mese;
+    }
+  }
+  const [anno, mese] = l.verificataIl.split('-').map(Number);
+  return (anno || 0) * 12 + ((mese || 1) - 1);
+}
+
 // Converte una data ISO (yyyy-mm-dd) in italiano leggibile, senza sorprese di fuso orario.
 export function dataLeggibile(iso: string): string {
   const [anno, mese, giorno] = iso.split('-').map(Number);

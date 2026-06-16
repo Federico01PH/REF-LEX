@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import type { Legge } from '../engine/types';
+import { chiaveCronologica } from './formato';
 
 // minuscolo + senza accenti, per cercare "citta" e trovare "città"
 function normalizza(s: string): string {
@@ -23,13 +24,15 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
   const listaRef = useRef<HTMLUListElement>(null);
 
   const sceltaCorrente = leggi.find((l) => l.id === valoreId) ?? null;
+  // ordine cronologico: la legge più recente in cima, la più vecchia in fondo
+  const ordinate = [...leggi].sort((a, b) => chiaveCronologica(b) - chiaveCronologica(a));
   // mostriamo il titolo in PAROLE (titoloDivulgativo), senza numeri: la citazione ufficiale
   // con numeri e date compare solo nella scheda, una volta scelta la legge. La ricerca però
   // guarda anche il titolo ufficiale, così si trova una legge anche scrivendo il nome reale.
   const query = normalizza(testo);
   const filtrate = aperta && query
-    ? leggi.filter((l) => normalizza(l.titoloDivulgativo).includes(query) || normalizza(l.titoloUfficiale).includes(query))
-    : leggi;
+    ? ordinate.filter((l) => normalizza(l.titoloDivulgativo).includes(query) || normalizza(l.titoloUfficiale).includes(query))
+    : ordinate;
 
   // se il filtro per argomento cambia la legge scelta, riallineo il testo mostrato
   useEffect(() => {
