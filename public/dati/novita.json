@@ -1,13 +1,37 @@
 {
-  "generatoIl": "2026-06-15",
+  "generatoIl": "2026-06-16",
   "voci": [
     {
+      "id": "gazzetta-26A02947",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 19 febbraio 2026: Concessione di un assegno straordinario vitalizio in favore del sig",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-06-15",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/15/26A02947/SG"
+    },
+    {
       "id": "senato-60214",
-      "titolo": "Conversione in legge del decreto-legge 12 giugno 2026, n. 100, recante misure urgenti in materia di giustizia per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
+      "titolo": "Conversione in legge del decreto-legge 12 giugno 2026, n. 100, recante misure urgenti in materia di giustizia e per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-06-12",
       "url": "https://dati.senato.it/ddl/60214"
+    },
+    {
+      "id": "senato-60217",
+      "titolo": "Modifiche alla legge 21 aprile 2011, n. 62",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-12",
+      "url": "https://dati.senato.it/ddl/60217"
+    },
+    {
+      "id": "senato-60218",
+      "titolo": "Disposizioni in materia di prospetto paga e indicazione del codice identificativo del contratto collettivo nazionale di lavoro applicato",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-12",
+      "url": "https://dati.senato.it/ddl/60218"
     },
     {
       "id": "senato-60201",
@@ -18,12 +42,28 @@
       "url": "https://dati.senato.it/ddl/60201"
     },
     {
+      "id": "senato-60215",
+      "titolo": "Disposizioni concernenti la stipulazione di convenzioni tra i comuni e le istituzioni scolastiche per lo svolgimento di attività didattiche extracurricolari presso biblioteche e altri spazi pubblici di proprietà comunale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-11",
+      "url": "https://dati.senato.it/ddl/60215"
+    },
+    {
       "id": "senato-60202",
       "titolo": "Istituzione delle sezioni specializzate in materia digitale e modifiche al decreto legislativo 27 giugno 2003, n. 168",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-06-11",
       "url": "https://dati.senato.it/ddl/60202"
+    },
+    {
+      "id": "senato-60216",
+      "titolo": "Modifiche alla legge 28 febbraio 2020, n. 17, in materia di estensione delle aree cedibili a privati nella fascia lagunare di Sottomarina, nel comune di Chioggia, e di sospensione dei procedimenti di ingiunzione, di rilascio o di riscossione dei proventi relativi alle medesime",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-11",
+      "url": "https://dati.senato.it/ddl/60216"
     },
     {
       "id": "senato-60204",
@@ -88,38 +128,6 @@
       "stato": "discussione",
       "data": "2026-06-10",
       "url": "https://dati.senato.it/ddl/60213"
-    },
-    {
-      "id": "senato-60210",
-      "titolo": "Ratifica ed esecuzione dei Trattati di estradizione, trasferimento delle persone condannate e assistenza giudiziaria in materia penale tra la Repubblica italiana e la Repubblica Socialista del Vietnam, fatti a Roma il 18 e il 26 luglio 2023",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-10",
-      "url": "https://dati.senato.it/ddl/60210"
-    },
-    {
-      "id": "senato-60208",
-      "titolo": "Ratifica ed esecuzione dell'Accordo di partenariato economico interinale tra la Costa D'Avorio, da una parte, e la Comunità europea e i suoi Stati membri, dall'altra, con Allegati, fatto ad Abidjan, il ventisei novembre 2008, e a Bruxelles, il ventidue gennaio 2009, rispettivamente",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-10",
-      "url": "https://dati.senato.it/ddl/60208"
-    },
-    {
-      "id": "senato-60211",
-      "titolo": "Ratifica ed esecuzione del Trattato sul trasferimento delle persone condannate tra la Repubblica italiana e la Repubblica del Paraguay, fatto ad Assunzione il 7 luglio 2023",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-10",
-      "url": "https://dati.senato.it/ddl/60211"
-    },
-    {
-      "id": "senato-60200",
-      "titolo": "Modifiche alla legge 4 agosto 1984, n. 464, concernenti l'obbligo di trasmissione delle informazioni e della documentazione relative a cavità sotterranee naturali o artificiali all'Istituto superiore per la protezione e la ricerca ambientale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-09",
-      "url": "https://dati.senato.it/ddl/60200"
     }
   ]
 }
