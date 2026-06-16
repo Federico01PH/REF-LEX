@@ -188,5 +188,18 @@ export const PERSONAGGI: Personaggio[] = [
       statoCivile: 'separato',
       disabilita: ['malattia-cronica'], cittadinanza: 'italiana'
     }
+  },
+  {
+    id: 'miriam',
+    nome: 'Miriam, 34 anni',
+    descrizione: 'Impiegata, italiana di religione ebraica, frequenta la sinagoga della sua città',
+    profilo: {
+      ...base, eta: 34, genere: 'donna',
+      condizioneLavorativa: ['dipendente-privato'],
+      fasciaReddito: 'da28a35k', fasciaIsee: 'da15a25k',
+      abitazione: 'affitto', figli: 0,
+      statoCivile: 'non-sposato',
+      disabilita: ['nessuna'], cittadinanza: 'italiana', religione: 'ebraica'
+    }
   }
 ];

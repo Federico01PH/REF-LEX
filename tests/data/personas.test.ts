@@ -1,7 +1,7 @@
 import { PERSONAGGI } from '../../src/data/personas';
 
-test('ci sono 14 personaggi con nome, descrizione e profilo completo dei campi chiave', () => {
-  expect(PERSONAGGI).toHaveLength(14);
+test('ci sono 15 personaggi con nome, descrizione e profilo completo dei campi chiave', () => {
+  expect(PERSONAGGI).toHaveLength(15);
   for (const p of PERSONAGGI) {
     expect(p.nome.length).toBeGreaterThan(0);
     expect(p.descrizione.length).toBeGreaterThan(0);

@@ -16,10 +16,11 @@ import { leggeElettorale } from './legge-elettorale-2026';
 import { premierato } from './premierato-2026';
 import { remigrazione } from './remigrazione';
 import { dlMigrazioneAsilo } from './dl-migrazione-asilo-2026';
+import { ddlAntisemitismo } from './ddl-antisemitismo';
 
 export const CATALOGO: Legge[] = [
   cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione,
   caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea, aiAct, decretoSicurezza,
   codiceStrada, iusItaliae, decretoLavoro, leggeElettorale, premierato, remigrazione,
-  dlMigrazioneAsilo
+  dlMigrazioneAsilo, ddlAntisemitismo
 ];
