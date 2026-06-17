@@ -1,13 +1,21 @@
 {
-  "generatoIl": "2026-06-16",
+  "generatoIl": "2026-06-17",
   "voci": [
     {
-      "id": "gazzetta-26A02947",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 19 febbraio 2026: Concessione di un assegno straordinario vitalizio in favore del sig",
+      "id": "gazzetta-26G00118",
+      "titolo": "LEGGE 8 giugno 2026, n.101: Istituzione della Giornata nazionale in memoria delle vittime della",
       "tipo": "gazzetta",
       "stato": "approvata",
+      "data": "2026-06-16",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/16/26G00118/SG"
+    },
+    {
+      "id": "senato-60219",
+      "titolo": "Istituzione di un fondo per l'organizzazione, da parte delle scuole secondarie di primo e di secondo grado, di viaggi di istruzione nei luoghi della Resistenza e della liberazione dall'occupazione nazista e dal fascismo",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-06-15",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/15/26A02947/SG"
+      "url": "https://dati.senato.it/ddl/60219"
     },
     {
       "id": "senato-60214",
@@ -120,14 +128,6 @@
       "stato": "discussione",
       "data": "2026-06-10",
       "url": "https://dati.senato.it/ddl/60212"
-    },
-    {
-      "id": "senato-60213",
-      "titolo": "Disposizioni in materia di detenzione domiciliare per il recupero dei detenuti tossicodipendenti o alcoldipendenti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-10",
-      "url": "https://dati.senato.it/ddl/60213"
     }
   ]
 }
