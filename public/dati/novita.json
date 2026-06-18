@@ -1,13 +1,53 @@
 {
-  "generatoIl": "2026-06-17",
+  "generatoIl": "2026-06-18",
   "voci": [
     {
-      "id": "gazzetta-26G00118",
-      "titolo": "LEGGE 8 giugno 2026, n.101: Istituzione della Giornata nazionale in memoria delle vittime della",
+      "id": "gazzetta-26G00120",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 13 aprile 2026, n.102: Regolamento recante modifiche al Testo unico delle disposizioni",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-06-16",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/16/26G00118/SG"
+      "data": "2026-06-17",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26G00120/SG"
+    },
+    {
+      "id": "gazzetta-26A03009",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Cavaliere di Gran Croce dell'Ordine",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-06-17",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03009/SG"
+    },
+    {
+      "id": "gazzetta-26A03010",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Grande Ufficiale dell'Ordine della",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-06-17",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03010/SG"
+    },
+    {
+      "id": "gazzetta-26A03011",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Commendatore dell'Ordine della",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-06-17",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03011/SG"
+    },
+    {
+      "id": "gazzetta-26A03012",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Ufficiale dell'Ordine della «Stella",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-06-17",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03012/SG"
+    },
+    {
+      "id": "gazzetta-26A03013",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Cavaliere dell'Ordine della «Stella",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-06-17",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03013/SG"
     },
     {
       "id": "senato-60219",
@@ -120,14 +160,6 @@
       "stato": "discussione",
       "data": "2026-06-10",
       "url": "https://dati.senato.it/ddl/60209"
-    },
-    {
-      "id": "senato-60212",
-      "titolo": "Ratifica ed esecuzione dello Scambio di Note verbali, fatto al Cairo il 3 agosto ed il 10 settembre 2025, concernenti la proroga di validità del Memorandum d'intesa tra il Ministero della difesa della Repubblica italiana ed il Ministero della difesa della Repubblica Araba d'Egitto sulla cooperazione nel settore della difesa, fatto a Roma il 23 marzo 1998",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-10",
-      "url": "https://dati.senato.it/ddl/60212"
     }
   ]
 }
