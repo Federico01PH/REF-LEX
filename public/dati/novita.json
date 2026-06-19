@@ -1,53 +1,69 @@
 {
-  "generatoIl": "2026-06-18",
+  "generatoIl": "2026-06-19",
   "voci": [
     {
-      "id": "gazzetta-26G00120",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 13 aprile 2026, n.102: Regolamento recante modifiche al Testo unico delle disposizioni",
+      "id": "gazzetta-26A03018",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 4 giugno 2026: Scioglimento del consiglio comunale di Rossano Veneto e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-06-17",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26G00120/SG"
+      "data": "2026-06-18",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/18/26A03018/SG"
     },
     {
-      "id": "gazzetta-26A03009",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Cavaliere di Gran Croce dell'Ordine",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-06-17",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03009/SG"
+      "id": "senato-60223",
+      "titolo": "Modifiche alla legge 21 aprile 2011, n. 62",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-18",
+      "url": "https://dati.senato.it/ddl/60223"
     },
     {
-      "id": "gazzetta-26A03010",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Grande Ufficiale dell'Ordine della",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-06-17",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03010/SG"
+      "id": "senato-60224",
+      "titolo": "Disposizioni in materia di prospetto paga e indicazione del codice identificativo del contratto collettivo nazionale di lavoro applicato",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-18",
+      "url": "https://dati.senato.it/ddl/60224"
     },
     {
-      "id": "gazzetta-26A03011",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Commendatore dell'Ordine della",
-      "tipo": "gazzetta",
-      "stato": "approvata",
+      "id": "senato-60220",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 aprile 2026, n. 63, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della crisi dei mercati internazionali",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-06-17",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03011/SG"
+      "url": "https://dati.senato.it/ddl/60220"
     },
     {
-      "id": "gazzetta-26A03012",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Ufficiale dell'Ordine della «Stella",
-      "tipo": "gazzetta",
-      "stato": "approvata",
+      "id": "senato-60225",
+      "titolo": "Disposizioni in materia economica, fiscale, nonché in materia di tutela dei consumatori",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-06-17",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03012/SG"
+      "url": "https://dati.senato.it/ddl/60225"
     },
     {
-      "id": "gazzetta-26A03013",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 maggio 2026: Conferimento dell'onorificenza di Cavaliere dell'Ordine della «Stella",
-      "tipo": "gazzetta",
-      "stato": "approvata",
+      "id": "senato-60226",
+      "titolo": "Disposizioni per il riconoscimento dello status di passeggero e della facoltà di trasporto degli animali da compagnia nelle cabine degli aeromobili, su tutti i mezzi di trasporto e per la tutela del benessere animale",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-06-17",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/17/26A03013/SG"
+      "url": "https://dati.senato.it/ddl/60226"
+    },
+    {
+      "id": "senato-60222",
+      "titolo": "Delega al Governo per la revisione e il riordino della disciplina del settore cinematografico e audiovisivo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-16",
+      "url": "https://dati.senato.it/ddl/60222"
+    },
+    {
+      "id": "senato-60221",
+      "titolo": "Istituzione di una Commissione parlamentare di inchiesta sulla gestione del servizio sanitario regionale e delle risorse a esso destinate nella Regione siciliana",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-16",
+      "url": "https://dati.senato.it/ddl/60221"
     },
     {
       "id": "senato-60219",
@@ -112,54 +128,6 @@
       "stato": "discussione",
       "data": "2026-06-11",
       "url": "https://dati.senato.it/ddl/60216"
-    },
-    {
-      "id": "senato-60204",
-      "titolo": "Disciplina dell'educazione permanente e della formazione degli adulti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-11",
-      "url": "https://dati.senato.it/ddl/60204"
-    },
-    {
-      "id": "senato-60205",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 aprile 2026, n. 63, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della crisi dei mercati internazionali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-11",
-      "url": "https://dati.senato.it/ddl/60205"
-    },
-    {
-      "id": "senato-60207",
-      "titolo": "Ratifica ed esecuzione della Dichiarazione congiunta relativa all'Accordo di cooperazione nel settore della difesa tra il Governo della Repubblica Italiana e il Governo della Repubblica Algerina Democratica e Popolare, fatto a Roma il 15 maggio 2003, fatta a Roma il 23 luglio 2025",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-11",
-      "url": "https://dati.senato.it/ddl/60207"
-    },
-    {
-      "id": "senato-60199",
-      "titolo": "Disposizioni in materia di contratto di affidamento fiduciario",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-10",
-      "url": "https://dati.senato.it/ddl/60199"
-    },
-    {
-      "id": "senato-60206",
-      "titolo": "Disposizioni in materia di corresponsione della retribuzione su conto corrente intestato al lavoratore",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-10",
-      "url": "https://dati.senato.it/ddl/60206"
-    },
-    {
-      "id": "senato-60209",
-      "titolo": "Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica italiana e il Governo dello Stato del Kuwait sulla cooperazione nel settore della difesa, fatto a Roma il 13 gennaio 2026",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-10",
-      "url": "https://dati.senato.it/ddl/60209"
     }
   ]
 }
