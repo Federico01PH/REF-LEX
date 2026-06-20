@@ -1,14 +1,6 @@
 {
-  "generatoIl": "2026-06-19",
+  "generatoIl": "2026-06-20",
   "voci": [
-    {
-      "id": "gazzetta-26A03018",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 4 giugno 2026: Scioglimento del consiglio comunale di Rossano Veneto e nomina del",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-06-18",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/18/26A03018/SG"
-    },
     {
       "id": "senato-60223",
       "titolo": "Modifiche alla legge 21 aprile 2011, n. 62",
@@ -34,6 +26,22 @@
       "url": "https://dati.senato.it/ddl/60220"
     },
     {
+      "id": "senato-60228",
+      "titolo": "Disposizioni per la regolamentazione delle piattaforme digitali di distribuzione di contenuti audio, video e multimediali mediante la rete internet",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-17",
+      "url": "https://dati.senato.it/ddl/60228"
+    },
+    {
+      "id": "senato-60227",
+      "titolo": "Disposizioni concernenti l'istituzione di punti per l'accoglienza dei neonati abbandonati, denominati \"culle per la vita\"",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-17",
+      "url": "https://dati.senato.it/ddl/60227"
+    },
+    {
       "id": "senato-60225",
       "titolo": "Disposizioni in materia economica, fiscale, nonché in materia di tutela dei consumatori",
       "tipo": "senato",
@@ -48,6 +56,22 @@
       "stato": "discussione",
       "data": "2026-06-17",
       "url": "https://dati.senato.it/ddl/60226"
+    },
+    {
+      "id": "senato-60229",
+      "titolo": "Agevolazione fiscale per l'avvio di nuove imprese o lo svolgimento di antichi mestieri e lavori tradizionali in Italia da parte di cittadini iscritti nell'Anagrafe degli italiani residenti all'estero",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-17",
+      "url": "https://dati.senato.it/ddl/60229"
+    },
+    {
+      "id": "senato-60230",
+      "titolo": "Adozione del Piano triennale di prevenzione e promozione della salute nelle scuole nonché istituzione della Giornata nazionale della prevenzione e della promozione della salute e dei corretti stili di vita in memoria di Umberto Veronesi",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-17",
+      "url": "https://dati.senato.it/ddl/60230"
     },
     {
       "id": "senato-60222",
@@ -96,38 +120,6 @@
       "stato": "discussione",
       "data": "2026-06-12",
       "url": "https://dati.senato.it/ddl/60218"
-    },
-    {
-      "id": "senato-60201",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 aprile 2026, n. 62, recante disposizioni urgenti in materia di salario giusto, di incentivi all'occupazione e di contrasto del caporalato digitale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-11",
-      "url": "https://dati.senato.it/ddl/60201"
-    },
-    {
-      "id": "senato-60215",
-      "titolo": "Disposizioni concernenti la stipulazione di convenzioni tra i comuni e le istituzioni scolastiche per lo svolgimento di attività didattiche extracurricolari presso biblioteche e altri spazi pubblici di proprietà comunale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-11",
-      "url": "https://dati.senato.it/ddl/60215"
-    },
-    {
-      "id": "senato-60202",
-      "titolo": "Istituzione delle sezioni specializzate in materia digitale e modifiche al decreto legislativo 27 giugno 2003, n. 168",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-11",
-      "url": "https://dati.senato.it/ddl/60202"
-    },
-    {
-      "id": "senato-60216",
-      "titolo": "Modifiche alla legge 28 febbraio 2020, n. 17, in materia di estensione delle aree cedibili a privati nella fascia lagunare di Sottomarina, nel comune di Chioggia, e di sospensione dei procedimenti di ingiunzione, di rilascio o di riscossione dei proventi relativi alle medesime",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-11",
-      "url": "https://dati.senato.it/ddl/60216"
     }
   ]
 }
