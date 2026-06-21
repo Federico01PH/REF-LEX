@@ -1,6 +1,22 @@
 {
-  "generatoIl": "2026-06-20",
+  "generatoIl": "2026-06-21",
   "voci": [
+    {
+      "id": "gazzetta-26G00123",
+      "titolo": "LEGGE 19 giugno 2026, n.103: Conversione in legge del decreto-legge 24 aprile 2026, n",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-06-20",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/20/26G00123/SG"
+    },
+    {
+      "id": "gazzetta-26A03072",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 7 maggio 2026: Nomina del dott",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-06-20",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/20/26A03072/SG"
+    },
     {
       "id": "senato-60223",
       "titolo": "Modifiche alla legge 21 aprile 2011, n. 62",
