@@ -1,13 +1,37 @@
 {
-  "generatoIl": "2026-06-23",
+  "generatoIl": "2026-06-24",
   "voci": [
     {
-      "id": "gazzetta-26G00121",
-      "titolo": "LEGGE 9 giugno 2026, n.104: Disposizioni in materia di consenso informato in ambito scolastico",
+      "id": "gazzetta-26G00122",
+      "titolo": "LEGGE 9 giugno 2026, n.105: Proroga di termini per l'esercizio di deleghe legislative di",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-06-22",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/22/26G00121/SG"
+      "data": "2026-06-23",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/23/26G00122/SG"
+    },
+    {
+      "id": "senato-60233",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 7 maggio 2026, n. 66, recante disposizioni urgenti per il Piano Casa",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-23",
+      "url": "https://dati.senato.it/ddl/60233"
+    },
+    {
+      "id": "senato-60231",
+      "titolo": "Istituzione del servizio civile per persone anziane attive",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-19",
+      "url": "https://dati.senato.it/ddl/60231"
+    },
+    {
+      "id": "senato-60232",
+      "titolo": "Modifiche agli articoli 132-ter e 133 del codice delle assicurazioni private, di cui al decreto legislativo 7 settembre 2005, n. 209, in materia di applicazione del premio medio su base nazionale, ai fini dell'assicurazione obbligatoria per la responsabilità civile derivante dalla circolazione dei veicoli, in mancanza di sinistri negli ultimi dieci anni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-19",
+      "url": "https://dati.senato.it/ddl/60232"
     },
     {
       "id": "senato-60223",
@@ -104,30 +128,6 @@
       "stato": "discussione",
       "data": "2026-06-15",
       "url": "https://dati.senato.it/ddl/60219"
-    },
-    {
-      "id": "senato-60214",
-      "titolo": "Conversione in legge del decreto-legge 12 giugno 2026, n. 100, recante misure urgenti in materia di giustizia e per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-12",
-      "url": "https://dati.senato.it/ddl/60214"
-    },
-    {
-      "id": "senato-60217",
-      "titolo": "Modifiche alla legge 21 aprile 2011, n. 62",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-12",
-      "url": "https://dati.senato.it/ddl/60217"
-    },
-    {
-      "id": "senato-60218",
-      "titolo": "Disposizioni in materia di prospetto paga e indicazione del codice identificativo del contratto collettivo nazionale di lavoro applicato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-12",
-      "url": "https://dati.senato.it/ddl/60218"
     }
   ]
 }
