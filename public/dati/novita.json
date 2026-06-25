@@ -1,13 +1,13 @@
 {
-  "generatoIl": "2026-06-24",
+  "generatoIl": "2026-06-25",
   "voci": [
     {
-      "id": "gazzetta-26G00122",
-      "titolo": "LEGGE 9 giugno 2026, n.105: Proroga di termini per l'esercizio di deleghe legislative di",
+      "id": "gazzetta-26A03163",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 23 aprile 2026: Modifica del decreto del Presidente della Repubblica 30 dicembre",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-06-23",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/23/26G00122/SG"
+      "data": "2026-06-24",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/24/26A03163/SG"
     },
     {
       "id": "senato-60233",
@@ -16,6 +16,22 @@
       "stato": "discussione",
       "data": "2026-06-23",
       "url": "https://dati.senato.it/ddl/60233"
+    },
+    {
+      "id": "senato-60235",
+      "titolo": "Abolizione del fermo amministrativo di beni mobili registrati",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-23",
+      "url": "https://dati.senato.it/ddl/60235"
+    },
+    {
+      "id": "senato-60234",
+      "titolo": "Ratifica ed esecuzione dell'Accordo economico e commerciale globale tra il Canada, da una parte, e l'Unione europea e i suoi Stati membri, dall'altra, con Allegati e Protocolli, fatto a Bruxelles il 30 ottobre 2016, e del relativo strumento interpretativo comune",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-22",
+      "url": "https://dati.senato.it/ddl/60234"
     },
     {
       "id": "senato-60231",
@@ -112,22 +128,6 @@
       "stato": "discussione",
       "data": "2026-06-16",
       "url": "https://dati.senato.it/ddl/60222"
-    },
-    {
-      "id": "senato-60221",
-      "titolo": "Istituzione di una Commissione parlamentare di inchiesta sulla gestione del servizio sanitario regionale e delle risorse a esso destinate nella Regione siciliana",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-16",
-      "url": "https://dati.senato.it/ddl/60221"
-    },
-    {
-      "id": "senato-60219",
-      "titolo": "Istituzione di un fondo per l'organizzazione, da parte delle scuole secondarie di primo e di secondo grado, di viaggi di istruzione nei luoghi della Resistenza e della liberazione dall'occupazione nazista e dal fascismo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-15",
-      "url": "https://dati.senato.it/ddl/60219"
     }
   ]
 }
