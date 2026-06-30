@@ -1,45 +1,29 @@
 {
-  "generatoIl": "2026-06-29",
+  "generatoIl": "2026-06-30",
   "voci": [
     {
-      "id": "gazzetta-26G00127",
-      "titolo": "LEGGE 12 giugno 2026, n.111: Modifica all'articolo 19 della legge 23 dicembre 1978, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-06-27",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/27/26G00127/SG"
+      "id": "senato-60246",
+      "titolo": "Conversione in legge del decreto-legge 26 giugno 2026, n. 108, recante disposizioni urgenti in materia di sport, per lo svolgimento di grandi eventi e l'efficacia del documento di identità",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-26",
+      "url": "https://dati.senato.it/ddl/60246"
     },
     {
-      "id": "gazzetta-26G00128",
-      "titolo": "LEGGE 25 giugno 2026, n.112: Conversione in legge, con modificazioni, del decreto-legge 30 aprile",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-06-27",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/27/26G00128/SG"
+      "id": "senato-60245",
+      "titolo": "Istituzione della Giornata nazionale per la prevenzione della ludopatia e delle conseguenze patologiche del gioco d'azzardo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-25",
+      "url": "https://dati.senato.it/ddl/60245"
     },
     {
-      "id": "gazzetta-26G00129",
-      "titolo": "LEGGE 25 giugno 2026, n.113: Conversione in legge, con modificazioni, del decreto-legge 30 aprile",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-06-27",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/27/26G00129/SG"
-    },
-    {
-      "id": "gazzetta-26A03291",
-      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 30 aprile 2026, n.62: Testo del decreto-legge 30 aprile 2026, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-06-27",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/27/26A03291/SG"
-    },
-    {
-      "id": "gazzetta-26A03280",
-      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 30 aprile 2026, n.63: Testo del decreto-legge 30 aprile 2026, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-06-27",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/06/27/26A03280/SG"
+      "id": "senato-60244",
+      "titolo": "Istituzione di un fondo nazionale per la sicurezza nei luoghi di lavoro, destinato al sostegno degli investimenti delle imprese per la formazione dei lavoratori, la prevenzione degli infortuni, l'acquisto di dispositivi di protezione e gli interventi di innovazione tecnologica finalizzati alla tutela dei lavoratori",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-25",
+      "url": "https://dati.senato.it/ddl/60244"
     },
     {
       "id": "senato-60236",
@@ -48,6 +32,62 @@
       "stato": "discussione",
       "data": "2026-06-24",
       "url": "https://dati.senato.it/ddl/60236"
+    },
+    {
+      "id": "senato-60243",
+      "titolo": "Disposizioni concernenti l'istituzione di presìdi socio-educativi nelle aree urbane caratterizzate da disagio educativo e socio-economico per il potenziamento dell'offerta culturale, sociale, sportiva e ricreativa nei riguardi dei minorenni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-24",
+      "url": "https://dati.senato.it/ddl/60243"
+    },
+    {
+      "id": "senato-60240",
+      "titolo": "Disposizioni per il finanziamento e la perequazione pubblica dei servizi ecosistemici e ambientali comunali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-24",
+      "url": "https://dati.senato.it/ddl/60240"
+    },
+    {
+      "id": "senato-60242",
+      "titolo": "Istituzione di un programma nazionale di interventi per il contrasto dell'erosione delle coste e per l'adattamento ai cambiamenti climatici nelle aree costiere",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-24",
+      "url": "https://dati.senato.it/ddl/60242"
+    },
+    {
+      "id": "senato-60241",
+      "titolo": "Introduzione del giuramento dei membri del Parlamento",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-24",
+      "url": "https://dati.senato.it/ddl/60241"
+    },
+    {
+      "id": "senato-60239",
+      "titolo": "Disposizioni concernenti la trasparenza dell'informazione al contraente sui piani di ammortamento dei contratti di mutuo e di finanziamento e l'addebito degli interessi nonché modifiche alle leggi 7 marzo 1996, n. 108, e 28 dicembre 2005, n. 262, in materia di rilevazione e vigilanza sull'applicazione dei tassi d'interesse",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-23",
+      "url": "https://dati.senato.it/ddl/60239"
+    },
+    {
+      "id": "senato-60238",
+      "titolo": "Disposizioni per assicurare la presenza di uffici operativi delle camere di commercio, industria, artigianato e agricoltura nelle zone montane e periferiche nonché modifica all'articolo 14 della legge 29 dicembre 1993, n. 580, in materia di rappresentanza territoriale nella composizione delle giunte delle medesime",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-23",
+      "url": "https://dati.senato.it/ddl/60238"
+    },
+    {
+      "id": "senato-60237",
+      "titolo": "Disposizioni concernenti l'introduzione dell'opzione alimentare vegetale ed ecosostenibile nei luoghi di ristorazione pubblici e la promozione di pratiche alimentari sostenibili",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-23",
+      "url": "https://dati.senato.it/ddl/60237"
     },
     {
       "id": "senato-60233",
@@ -80,86 +120,6 @@
       "stato": "discussione",
       "data": "2026-06-19",
       "url": "https://dati.senato.it/ddl/60231"
-    },
-    {
-      "id": "senato-60232",
-      "titolo": "Modifiche agli articoli 132-ter e 133 del codice delle assicurazioni private, di cui al decreto legislativo 7 settembre 2005, n. 209, in materia di applicazione del premio medio su base nazionale, ai fini dell'assicurazione obbligatoria per la responsabilità civile derivante dalla circolazione dei veicoli, in mancanza di sinistri negli ultimi dieci anni",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-19",
-      "url": "https://dati.senato.it/ddl/60232"
-    },
-    {
-      "id": "senato-60223",
-      "titolo": "Modifiche alla legge 21 aprile 2011, n. 62",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-18",
-      "url": "https://dati.senato.it/ddl/60223"
-    },
-    {
-      "id": "senato-60224",
-      "titolo": "Disposizioni in materia di prospetto paga e indicazione del codice identificativo del contratto collettivo nazionale di lavoro applicato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-18",
-      "url": "https://dati.senato.it/ddl/60224"
-    },
-    {
-      "id": "senato-60220",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 aprile 2026, n. 63, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della crisi dei mercati internazionali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-17",
-      "url": "https://dati.senato.it/ddl/60220"
-    },
-    {
-      "id": "senato-60228",
-      "titolo": "Disposizioni per la regolamentazione delle piattaforme digitali di distribuzione di contenuti audio, video e multimediali mediante la rete internet",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-17",
-      "url": "https://dati.senato.it/ddl/60228"
-    },
-    {
-      "id": "senato-60227",
-      "titolo": "Disposizioni concernenti l'istituzione di punti per l'accoglienza dei neonati abbandonati, denominati \"culle per la vita\"",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-17",
-      "url": "https://dati.senato.it/ddl/60227"
-    },
-    {
-      "id": "senato-60225",
-      "titolo": "Disposizioni in materia economica, fiscale, nonché in materia di tutela dei consumatori",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-17",
-      "url": "https://dati.senato.it/ddl/60225"
-    },
-    {
-      "id": "senato-60226",
-      "titolo": "Disposizioni per il riconoscimento dello status di passeggero e della facoltà di trasporto degli animali da compagnia nelle cabine degli aeromobili, su tutti i mezzi di trasporto e per la tutela del benessere animale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-17",
-      "url": "https://dati.senato.it/ddl/60226"
-    },
-    {
-      "id": "senato-60229",
-      "titolo": "Agevolazione fiscale per l'avvio di nuove imprese o lo svolgimento di antichi mestieri e lavori tradizionali in Italia da parte di cittadini iscritti nell'Anagrafe degli italiani residenti all'estero",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-17",
-      "url": "https://dati.senato.it/ddl/60229"
-    },
-    {
-      "id": "senato-60230",
-      "titolo": "Adozione del Piano triennale di prevenzione e promozione della salute nelle scuole nonché istituzione della Giornata nazionale della prevenzione e della promozione della salute e dei corretti stili di vita in memoria di Umberto Veronesi",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-17",
-      "url": "https://dati.senato.it/ddl/60230"
     }
   ]
 }
