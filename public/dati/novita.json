@@ -1,5 +1,5 @@
 {
-  "generatoIl": "2026-06-30",
+  "generatoIl": "2026-07-01",
   "voci": [
     {
       "id": "senato-60246",
@@ -8,6 +8,14 @@
       "stato": "discussione",
       "data": "2026-06-26",
       "url": "https://dati.senato.it/ddl/60246"
+    },
+    {
+      "id": "senato-60247",
+      "titolo": "Accisa generale sui prodotti da fumo e nicotina per la tutela della salute pubblica e il rafforzamento del Servizio Sanitario Nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-26",
+      "url": "https://dati.senato.it/ddl/60247"
     },
     {
       "id": "senato-60245",
@@ -24,6 +32,14 @@
       "stato": "discussione",
       "data": "2026-06-25",
       "url": "https://dati.senato.it/ddl/60244"
+    },
+    {
+      "id": "senato-60248",
+      "titolo": "Disposizioni in materia di riconoscimento della figura professionale di Autista Soccorritore del Servizio di Urgenza Emergenza Sanitaria del 118",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-25",
+      "url": "https://dati.senato.it/ddl/60248"
     },
     {
       "id": "senato-60236",
@@ -104,22 +120,6 @@
       "stato": "discussione",
       "data": "2026-06-23",
       "url": "https://dati.senato.it/ddl/60235"
-    },
-    {
-      "id": "senato-60234",
-      "titolo": "Ratifica ed esecuzione dell'Accordo economico e commerciale globale tra il Canada, da una parte, e l'Unione europea e i suoi Stati membri, dall'altra, con Allegati e Protocolli, fatto a Bruxelles il 30 ottobre 2016, e del relativo strumento interpretativo comune",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-22",
-      "url": "https://dati.senato.it/ddl/60234"
-    },
-    {
-      "id": "senato-60231",
-      "titolo": "Istituzione del servizio civile per persone anziane attive",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-19",
-      "url": "https://dati.senato.it/ddl/60231"
     }
   ]
 }
