@@ -1,6 +1,70 @@
 {
-  "generatoIl": "2026-07-01",
+  "generatoIl": "2026-07-02",
   "voci": [
+    {
+      "id": "gazzetta-26G00130",
+      "titolo": "DECRETO LEGISLATIVO 12 giugno 2026, n.115: Attuazione della direttiva (UE) 2024/1712 del Parlamento europeo e",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-01",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/01/26G00130/SG"
+    },
+    {
+      "id": "senato-60254",
+      "titolo": "Disposizioni concernenti il concorso statale al finanziamento della spesa per la partecipazione a viaggi di istruzione e la fornitura gratuita dei libri di testo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-29",
+      "url": "https://dati.senato.it/ddl/60254"
+    },
+    {
+      "id": "senato-60252",
+      "titolo": "Disposizioni concernenti l'istituzione di percorsi didattici interdisciplinari nelle scuole secondarie di primo e di secondo grado per promuovere la conoscenza e l'uso consapevole dei sistemi di intelligenza artificiale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-29",
+      "url": "https://dati.senato.it/ddl/60252"
+    },
+    {
+      "id": "senato-60253",
+      "titolo": "Concessione di agevolazioni previdenziali per la maternità e per la prestazione di assistenza continuativa a familiari disabili",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-29",
+      "url": "https://dati.senato.it/ddl/60253"
+    },
+    {
+      "id": "senato-60255",
+      "titolo": "Istituzione di un Comitato interministeriale per l'approccio integrato, coordinato e interdisciplinare nella definizione delle politiche pubbliche in materia di salute umana e animale, di tutela dell'ambiente, di agricoltura e di sicurezza alimentare",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-29",
+      "url": "https://dati.senato.it/ddl/60255"
+    },
+    {
+      "id": "senato-60250",
+      "titolo": "Modifiche al decreto legislativo 3 aprile 2006, n. 152, concernenti l'istituzione di un sistema nazionale armonizzato di identificazione ai fini della raccolta differenziata dei rifiuti urbani",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-26",
+      "url": "https://dati.senato.it/ddl/60250"
+    },
+    {
+      "id": "senato-60249",
+      "titolo": "Conversione in legge del decreto-legge 26 giugno 2026, n. 107, recante disposizioni urgenti per interventi infrastrutturali e per l'attuazione del Piano nazionale di ripresa e resilienza (PNRR), nonché ulteriori disposizioni finanziarie urgenti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-26",
+      "url": "https://dati.senato.it/ddl/60249"
+    },
+    {
+      "id": "senato-60256",
+      "titolo": "Istituzione della Giornata nazionale del merito pubblico",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-26",
+      "url": "https://dati.senato.it/ddl/60256"
+    },
     {
       "id": "senato-60246",
       "titolo": "Conversione in legge del decreto-legge 26 giugno 2026, n. 108, recante disposizioni urgenti in materia di sport, per lo svolgimento di grandi eventi e l'efficacia del documento di identità",
@@ -8,6 +72,14 @@
       "stato": "discussione",
       "data": "2026-06-26",
       "url": "https://dati.senato.it/ddl/60246"
+    },
+    {
+      "id": "senato-60251",
+      "titolo": "Modifiche al decreto legislativo 3 aprile 2006, n. 152, concernenti l'introduzione della valutazione del ciclo di vita dei prodotti, servizi e processi nell'ambito dei procedimenti delle amministrazioni pubbliche in materia ambientale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-26",
+      "url": "https://dati.senato.it/ddl/60251"
     },
     {
       "id": "senato-60247",
@@ -56,70 +128,6 @@
       "stato": "discussione",
       "data": "2026-06-24",
       "url": "https://dati.senato.it/ddl/60243"
-    },
-    {
-      "id": "senato-60240",
-      "titolo": "Disposizioni per il finanziamento e la perequazione pubblica dei servizi ecosistemici e ambientali comunali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-24",
-      "url": "https://dati.senato.it/ddl/60240"
-    },
-    {
-      "id": "senato-60242",
-      "titolo": "Istituzione di un programma nazionale di interventi per il contrasto dell'erosione delle coste e per l'adattamento ai cambiamenti climatici nelle aree costiere",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-24",
-      "url": "https://dati.senato.it/ddl/60242"
-    },
-    {
-      "id": "senato-60241",
-      "titolo": "Introduzione del giuramento dei membri del Parlamento",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-24",
-      "url": "https://dati.senato.it/ddl/60241"
-    },
-    {
-      "id": "senato-60239",
-      "titolo": "Disposizioni concernenti la trasparenza dell'informazione al contraente sui piani di ammortamento dei contratti di mutuo e di finanziamento e l'addebito degli interessi nonché modifiche alle leggi 7 marzo 1996, n. 108, e 28 dicembre 2005, n. 262, in materia di rilevazione e vigilanza sull'applicazione dei tassi d'interesse",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-23",
-      "url": "https://dati.senato.it/ddl/60239"
-    },
-    {
-      "id": "senato-60238",
-      "titolo": "Disposizioni per assicurare la presenza di uffici operativi delle camere di commercio, industria, artigianato e agricoltura nelle zone montane e periferiche nonché modifica all'articolo 14 della legge 29 dicembre 1993, n. 580, in materia di rappresentanza territoriale nella composizione delle giunte delle medesime",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-23",
-      "url": "https://dati.senato.it/ddl/60238"
-    },
-    {
-      "id": "senato-60237",
-      "titolo": "Disposizioni concernenti l'introduzione dell'opzione alimentare vegetale ed ecosostenibile nei luoghi di ristorazione pubblici e la promozione di pratiche alimentari sostenibili",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-23",
-      "url": "https://dati.senato.it/ddl/60237"
-    },
-    {
-      "id": "senato-60233",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 7 maggio 2026, n. 66, recante disposizioni urgenti per il Piano Casa",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-23",
-      "url": "https://dati.senato.it/ddl/60233"
-    },
-    {
-      "id": "senato-60235",
-      "titolo": "Abolizione del fermo amministrativo di beni mobili registrati",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-23",
-      "url": "https://dati.senato.it/ddl/60235"
     }
   ]
 }
