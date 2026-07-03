@@ -1,13 +1,53 @@
 {
-  "generatoIl": "2026-07-02",
+  "generatoIl": "2026-07-03",
   "voci": [
     {
-      "id": "gazzetta-26G00130",
-      "titolo": "DECRETO LEGISLATIVO 12 giugno 2026, n.115: Attuazione della direttiva (UE) 2024/1712 del Parlamento europeo e",
-      "tipo": "gazzetta",
-      "stato": "approvata",
+      "id": "senato-60260",
+      "titolo": "Disposizioni per la regolamentazione dell'esposizione ai dispositivi digitali nei bambini e nelle bambine da zero a tre anni a tutela del loro sviluppo neuro cognitivo fisico e relazionale e per la promozione di un graduale accesso al loro utilizzo durante la minore età",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-02",
+      "url": "https://dati.senato.it/ddl/60260"
+    },
+    {
+      "id": "senato-60262",
+      "titolo": "Misure per la protezione e l'assistenza dei minorenni e degli adulti di riferimento nei contesti di criminalità organizzata («Liberi di scegliere»)",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-02",
+      "url": "https://dati.senato.it/ddl/60262"
+    },
+    {
+      "id": "senato-60261",
+      "titolo": "Modifiche alla legge 23 dicembre 2010, n. 240, in materia di controllo a campione sulla regolarità delle procedure di valutazione e reclutamento del personale docente e ricercatore in ambito universitario",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-02",
+      "url": "https://dati.senato.it/ddl/60261"
+    },
+    {
+      "id": "senato-60259",
+      "titolo": "Modifiche al codice civile in materia di risarcimento del danno",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-07-01",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/01/26G00130/SG"
+      "url": "https://dati.senato.it/ddl/60259"
+    },
+    {
+      "id": "senato-60257",
+      "titolo": "Introduzione del capo III-bis del decreto-legge 19 settembre 2023, n. 124, convertito, con modificazioni, dalla legge 13 novembre 2023, n. 162, concernente l'istituzione della Zona economica speciale per le aree transfrontaliere dell'Italia settentrionale - ZES Nord",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-30",
+      "url": "https://dati.senato.it/ddl/60257"
+    },
+    {
+      "id": "senato-60258",
+      "titolo": "Remigrazione e riconquista: Disposizioni in materia di governo dei flussi migratori, istituzione del programma nazionale di remigrazione e di un fondo per la natalità italiana",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-06-30",
+      "url": "https://dati.senato.it/ddl/60258"
     },
     {
       "id": "senato-60254",
@@ -80,54 +120,6 @@
       "stato": "discussione",
       "data": "2026-06-26",
       "url": "https://dati.senato.it/ddl/60251"
-    },
-    {
-      "id": "senato-60247",
-      "titolo": "Accisa generale sui prodotti da fumo e nicotina per la tutela della salute pubblica e il rafforzamento del Servizio Sanitario Nazionale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-26",
-      "url": "https://dati.senato.it/ddl/60247"
-    },
-    {
-      "id": "senato-60245",
-      "titolo": "Istituzione della Giornata nazionale per la prevenzione della ludopatia e delle conseguenze patologiche del gioco d'azzardo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-25",
-      "url": "https://dati.senato.it/ddl/60245"
-    },
-    {
-      "id": "senato-60244",
-      "titolo": "Istituzione di un fondo nazionale per la sicurezza nei luoghi di lavoro, destinato al sostegno degli investimenti delle imprese per la formazione dei lavoratori, la prevenzione degli infortuni, l'acquisto di dispositivi di protezione e gli interventi di innovazione tecnologica finalizzati alla tutela dei lavoratori",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-25",
-      "url": "https://dati.senato.it/ddl/60244"
-    },
-    {
-      "id": "senato-60248",
-      "titolo": "Disposizioni in materia di riconoscimento della figura professionale di Autista Soccorritore del Servizio di Urgenza Emergenza Sanitaria del 118",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-25",
-      "url": "https://dati.senato.it/ddl/60248"
-    },
-    {
-      "id": "senato-60236",
-      "titolo": "Modifiche alla legge 11 febbraio 1992, n. 157, recante norme per la protezione della fauna selvatica omeoterma e per il prelievo venatorio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-24",
-      "url": "https://dati.senato.it/ddl/60236"
-    },
-    {
-      "id": "senato-60243",
-      "titolo": "Disposizioni concernenti l'istituzione di presìdi socio-educativi nelle aree urbane caratterizzate da disagio educativo e socio-economico per il potenziamento dell'offerta culturale, sociale, sportiva e ricreativa nei riguardi dei minorenni",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-24",
-      "url": "https://dati.senato.it/ddl/60243"
     }
   ]
 }
