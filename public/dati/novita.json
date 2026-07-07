@@ -1,13 +1,29 @@
 {
-  "generatoIl": "2026-07-06",
+  "generatoIl": "2026-07-07",
   "voci": [
     {
-      "id": "gazzetta-26G00139",
-      "titolo": "LEGGE 2 luglio 2026, n.119: Disposizioni in materia di sviluppo della carriera dirigenziale e",
+      "id": "gazzetta-26G00136",
+      "titolo": "LEGGE 19 giugno 2026, n.120: Disposizioni in materia di destinazione di proventi derivanti dalla",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-07-04",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/04/26G00139/SG"
+      "data": "2026-07-06",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/06/26G00136/SG"
+    },
+    {
+      "id": "senato-60266",
+      "titolo": "Modifica dell'intesa tra il Governo della Repubblica italiana e l'Unione Buddhista Italiana, in attuazione dell'articolo 8, terzo comma, della Costituzione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-02",
+      "url": "https://dati.senato.it/ddl/60266"
+    },
+    {
+      "id": "senato-60265",
+      "titolo": "Istituzione del Fondo nazionale per l'accoglienza abitativa delle persone senza dimora",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-02",
+      "url": "https://dati.senato.it/ddl/60265"
     },
     {
       "id": "senato-60260",
@@ -32,6 +48,22 @@
       "stato": "discussione",
       "data": "2026-07-02",
       "url": "https://dati.senato.it/ddl/60261"
+    },
+    {
+      "id": "senato-60263",
+      "titolo": "Istituzione di una Commissione parlamentare di inchiesta sulla strage di Vergarolla del 18 agosto 1946, sulle relative responsabilità e sulle circostanze che impedirono il completo accertamento dei fatti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-01",
+      "url": "https://dati.senato.it/ddl/60263"
+    },
+    {
+      "id": "senato-60264",
+      "titolo": "Istituzione della Giornata nazionale in memoria delle vittime degli incidenti ferroviari",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-01",
+      "url": "https://dati.senato.it/ddl/60264"
     },
     {
       "id": "senato-60259",
@@ -96,38 +128,6 @@
       "stato": "discussione",
       "data": "2026-06-26",
       "url": "https://dati.senato.it/ddl/60250"
-    },
-    {
-      "id": "senato-60249",
-      "titolo": "Conversione in legge del decreto-legge 26 giugno 2026, n. 107, recante disposizioni urgenti per interventi infrastrutturali e per l'attuazione del Piano nazionale di ripresa e resilienza (PNRR), nonché ulteriori disposizioni finanziarie urgenti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-26",
-      "url": "https://dati.senato.it/ddl/60249"
-    },
-    {
-      "id": "senato-60256",
-      "titolo": "Istituzione della Giornata nazionale del merito pubblico",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-26",
-      "url": "https://dati.senato.it/ddl/60256"
-    },
-    {
-      "id": "senato-60246",
-      "titolo": "Conversione in legge del decreto-legge 26 giugno 2026, n. 108, recante disposizioni urgenti in materia di sport, per lo svolgimento di grandi eventi e l'efficacia del documento di identità",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-26",
-      "url": "https://dati.senato.it/ddl/60246"
-    },
-    {
-      "id": "senato-60251",
-      "titolo": "Modifiche al decreto legislativo 3 aprile 2006, n. 152, concernenti l'introduzione della valutazione del ciclo di vita dei prodotti, servizi e processi nell'ambito dei procedimenti delle amministrazioni pubbliche in materia ambientale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-26",
-      "url": "https://dati.senato.it/ddl/60251"
     }
   ]
 }
