@@ -201,5 +201,33 @@ export const PERSONAGGI: Personaggio[] = [
       statoCivile: 'non-sposato',
       disabilita: ['nessuna'], cittadinanza: 'italiana', religione: 'ebraica'
     }
+  },
+  {
+    id: 'bruno',
+    nome: 'Bruno, 58 anni',
+    descrizione: 'Agricoltore e allevatore, azienda di famiglia in collina, danni della fauna sui campi',
+    profilo: {
+      ...base, eta: 58, genere: 'uomo',
+      condizioneLavorativa: ['autonomo-ordinario'],
+      professione: 'agricoltore e allevatore', settoriProfessionali: ['agricoltura'],
+      fasciaReddito: 'da20a28k', fasciaIsee: 'da15a25k',
+      abitazione: 'proprieta', numeroProprieta: 2, figli: 2,
+      statoCivile: 'sposato',
+      disabilita: ['nessuna'], cittadinanza: 'italiana'
+    }
+  },
+  {
+    id: 'gianni',
+    nome: 'Gianni, 62 anni',
+    descrizione: 'Cacciatore da una vita, vive in un piccolo paese di collina',
+    profilo: {
+      ...base, eta: 62, genere: 'uomo',
+      condizioneLavorativa: ['pensionato'],
+      professione: 'cacciatore', settoriProfessionali: ['caccia'],
+      fasciaReddito: 'da15a20k', fasciaIsee: 'da9360a15k',
+      abitazione: 'proprieta', numeroProprieta: 1, figli: 2,
+      statoCivile: 'sposato',
+      disabilita: ['nessuna'], cittadinanza: 'italiana'
+    }
   }
 ];

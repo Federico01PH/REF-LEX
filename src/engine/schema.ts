@@ -3,15 +3,18 @@ import { ORDINE_REDDITO, ORDINE_ISEE, ORDINE_TITOLO } from './conditions';
 
 const CAMPI_PROFILO = [
   'eta', 'genere', 'identitaGenere', 'orientamento', 'statoCivile', 'regione',
-  'condizioneLavorativa', 'fasciaReddito', 'fasciaIsee', 'figli', 'abitazione',
-  'numeroProprieta', 'titoloStudio', 'disabilita', 'cittadinanza', 'permessoSoggiorno', 'religione'
+  'condizioneLavorativa', 'settoriProfessionali', 'fasciaReddito', 'fasciaIsee', 'figli',
+  'personeACarico', 'tipiACarico', 'abitazione', 'numeroProprieta', 'titoloStudio', 'disabilita',
+  'cittadinanza', 'permessoSoggiorno', 'religione'
 ] as const;
 // campi su cui hanno senso i confronti ordinali (almeno/alPiu)
 const CAMPI_ORDINALI: readonly string[] = ['eta', 'fasciaReddito', 'fasciaIsee', 'figli', 'numeroProprieta', 'titoloStudio'];
 // campi il cui valore nel profilo è un array: gli autori devono usare 'in', mai 'eq'
-const CAMPI_ARRAY: readonly string[] = ['disabilita', 'condizioneLavorativa'];
+const CAMPI_ARRAY: readonly string[] = ['disabilita', 'condizioneLavorativa', 'settoriProfessionali', 'tipiACarico'];
 // campi a testo libero: il valore è una stringa qualsiasi (nessun enum da validare)
 const CAMPI_TESTO: readonly string[] = ['regione'];
+// campi booleani: il valore dev'essere true/false (si condizionano con 'eq')
+const CAMPI_BOOLEANI: readonly string[] = ['personeACarico'];
 // campi numerici: il valore deve essere un numero (eta è libera; figli/numeroProprieta hanno anche un dominio sotto)
 const CAMPI_NUMERICI: readonly string[] = ['eta', 'figli', 'numeroProprieta'];
 
@@ -23,6 +26,8 @@ const VALORI_CAMPO: Record<string, readonly (string | number)[]> = {
   orientamento: ['eterosessuale', 'omosessuale', 'bisessuale', 'altro', 'preferisco-non-dirlo'],
   statoCivile: ['non-sposato', 'sposato', 'unione-civile', 'separato', 'vedovo'],
   condizioneLavorativa: ['dipendente-privato', 'dipendente-pubblico', 'autonomo-ordinario', 'forfettario', 'imprenditore', 'studente', 'pensionato', 'disoccupato', 'caregiver', 'casalingo', 'altro'],
+  settoriProfessionali: ['agricoltura', 'caccia', 'sanita', 'scuola', 'forze-ordine', 'altro'],
+  tipiACarico: ['figli-minorenni', 'figli-maggiorenni', 'familiare-disabile', 'genitori-anziani'],
   fasciaReddito: ORDINE_REDDITO,
   fasciaIsee: [...ORDINE_ISEE, 'nonLoSo'],
   figli: [0, 1, 2, 3],
@@ -46,6 +51,9 @@ const ORDINE_CAMPO: Record<string, readonly (string | number)[]> = {
 function valoreNonValido(campo: string, op: string, v: unknown): string | null {
   if (CAMPI_TESTO.includes(campo)) {
     return typeof v === 'string' && v.length > 0 ? null : `il campo ${campo} vuole una stringa di testo`;
+  }
+  if (CAMPI_BOOLEANI.includes(campo)) {
+    return typeof v === 'boolean' ? null : `il campo ${campo} vuole un valore vero/falso`;
   }
   if (CAMPI_NUMERICI.includes(campo)) {
     if (typeof v !== 'number') return `il campo ${campo} vuole un numero, non ${JSON.stringify(v)}`;
@@ -151,6 +159,8 @@ export const SchemaProfilo = z.object({
     (v) => (typeof v === 'string' ? [v] : v),
     z.array(z.enum(['dipendente-privato', 'dipendente-pubblico', 'autonomo-ordinario', 'forfettario', 'imprenditore', 'studente', 'pensionato', 'disoccupato', 'caregiver', 'casalingo', 'altro'])).optional()
   ),
+  professione: z.string().optional(),
+  settoriProfessionali: z.array(z.enum(['agricoltura', 'caccia', 'sanita', 'scuola', 'forze-ordine', 'altro'])).optional(),
   fasciaReddito: z.enum(['nessuno', 'fino9k', 'da9a15k', 'da15a20k', 'da20a28k', 'da28a35k', 'da35a50k', 'oltre50k']).optional(),
   fasciaIsee: z.enum(['fino9360', 'da9360a15k', 'da15a25k', 'da25a40k', 'oltre40k', 'nonLoSo']).optional(),
   figli: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)]).optional(),

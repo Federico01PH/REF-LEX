@@ -1,5 +1,6 @@
 import type { Profilo } from '../engine/types';
 import { SchemaProfilo } from '../engine/schema';
+import { conSettoriProfessionali } from '../engine/professioni';
 
 const CHIAVE = 'reflex.profilo.v1';
 
@@ -22,7 +23,9 @@ export function caricaProfilo(): Profilo | null {
       localStorage.removeItem(CHIAVE);
       return null;
     }
-    return esito.data as Profilo;
+    // ricava i settori dal mestiere: così anche i profili salvati "grezzi" (o prima
+    // che il classificatore esistesse) restano coerenti al caricamento
+    return conSettoriProfessionali(esito.data as Profilo);
   } catch {
     try { localStorage.removeItem(CHIAVE); } catch { /* storage non disponibile */ }
     return null;

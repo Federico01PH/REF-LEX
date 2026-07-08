@@ -61,13 +61,34 @@ test('"di cosa ti occupi": si possono scegliere più occupazioni (studente che l
   await userEvent.click(screen.getByRole('button', { name: /studente/i }));
   await userEvent.click(screen.getByRole('button', { name: /azienda privata/i }));
   await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
-  for (let i = 0; i < 15; i++) {
+  // avendo un'occupazione lavorativa, compare "che lavoro fai" (facoltativa)
+  expect(screen.getByRole('heading', { name: /che lavoro fai/i })).toBeInTheDocument();
+  // salto tutte le domande rimanenti fino alla fine (robusto al numero di domande)
+  while (onFine.mock.calls.length === 0) {
     await userEvent.click(screen.getByRole('button', { name: /salta/i }));
   }
   expect(onFine).toHaveBeenCalledWith(expect.objectContaining({
     eta: 22,
     condizioneLavorativa: expect.arrayContaining(['studente', 'dipendente-privato'])
   }));
+});
+
+test('il mestiere scritto in chiaro finisce nel profilo', async () => {
+  const onFine = vi.fn();
+  render(<Wizard iniziale={null} esploratore={false} onFine={onFine} onAnnulla={vi.fn()} />);
+  await userEvent.click(screen.getByRole('button', { name: /salta/i })); // salto il nome
+  await userEvent.type(screen.getByRole('spinbutton'), '45');
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  // occupazione lavorativa, così compare la domanda sul mestiere
+  await userEvent.click(screen.getByRole('button', { name: 'Partita IVA' }));
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  expect(screen.getByRole('heading', { name: /che lavoro fai/i })).toBeInTheDocument();
+  await userEvent.type(screen.getByRole('textbox'), 'agricoltore');
+  await userEvent.click(screen.getByRole('button', { name: /avanti/i }));
+  while (onFine.mock.calls.length === 0) {
+    await userEvent.click(screen.getByRole('button', { name: /salta/i }));
+  }
+  expect(onFine).toHaveBeenCalledWith(expect.objectContaining({ eta: 45, professione: 'agricoltore' }));
 });
 
 test('la domanda sul permesso di soggiorno compare solo con cittadinanza fuori dall\'UE', async () => {

@@ -5,6 +5,7 @@ import { CATALOGO } from './data/laws';
 import { VERSIONE_CATALOGO } from './data/laws/versione';
 import { caricaCatalogoRemoto, caricaNovita } from './storage/datiRemoti';
 import { caricaProfilo, caricaTema, salvaProfilo, salvaTema } from './storage/profilo';
+import { conSettoriProfessionali } from './engine/professioni';
 import { Home } from './features/Home';
 import { Wizard } from './features/Wizard';
 import { Catalogo } from './features/Catalogo';
@@ -64,7 +65,9 @@ export default function App() {
         <Wizard
           iniziale={vista.esploratore ? null : profilo}
           esploratore={vista.esploratore}
-          onFine={(p) => {
+          onFine={(grezzo) => {
+            // dal mestiere scritto in chiaro ricaviamo i settori usati dalle regole
+            const p = conSettoriProfessionali(grezzo);
             if (vista.esploratore) { setProfiloEsploratore(p); }
             else { setProfilo(p); salvaProfilo(p); setProfiloEsploratore(null); }
             setVista({ nome: 'catalogo' });

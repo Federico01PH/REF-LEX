@@ -10,7 +10,7 @@ import type { Legge, Profilo } from '../../src/engine/types';
 // ai campi che quella legge legge davvero (gli altri campi non possono cambiarne l'esito).
 // Su tutto lo spazio verifica gli invarianti di correttezza e completezza del motore.
 
-const CAMPI_ARRAY = new Set(['disabilita', 'condizioneLavorativa', 'tipiACarico']);
+const CAMPI_ARRAY = new Set(['disabilita', 'condizioneLavorativa', 'tipiACarico', 'settoriProfessionali']);
 
 // valori che le risposte del wizard possono produrre per un campo (le "opzioni raccoglibili")
 function opzioniWizard(campo: string): unknown[] | null {

@@ -1,4 +1,4 @@
-import { SchemaLegge } from '../../src/engine/schema';
+import { SchemaLegge, SchemaProfilo } from '../../src/engine/schema';
 
 const leggeValida = {
   id: 'x', titoloDivulgativo: 'X', titoloUfficiale: 'X', stato: 'vigore', ambiti: ['casa'],
@@ -161,6 +161,38 @@ test('accetta valore stringa libera su campo testuale (regione)', () => {
   const ok = structuredClone(leggeValida);
   ok.regole[0].condizioni = [{ campo: 'regione', op: 'eq', valore: 'Lombardia' }] as never;
   expect(SchemaLegge.safeParse(ok).success).toBe(true);
+});
+
+test("accetta 'in' su settoriProfessionali con settori validi", () => {
+  const ok = structuredClone(leggeValida);
+  ok.regole[0].condizioni = [{ campo: 'settoriProfessionali', op: 'in', valore: ['agricoltura', 'caccia'] }] as never;
+  ok.regole[0].campiNecessari = ['settoriProfessionali'] as never;
+  expect(SchemaLegge.safeParse(ok).success).toBe(true);
+});
+
+test("rifiuta 'eq' sul campo lista settoriProfessionali", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'settoriProfessionali', op: 'eq', valore: 'agricoltura' }] as never;
+  rotta.regole[0].campiNecessari = ['settoriProfessionali'] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test("rifiuta 'in' su settoriProfessionali con un settore inventato (typo)", () => {
+  const rotta = structuredClone(leggeValida);
+  rotta.regole[0].condizioni = [{ campo: 'settoriProfessionali', op: 'in', valore: ['pesca'] }] as never;
+  rotta.regole[0].campiNecessari = ['settoriProfessionali'] as never;
+  expect(SchemaLegge.safeParse(rotta).success).toBe(false);
+});
+
+test('SchemaProfilo conserva professione (testo libero) e settoriProfessionali (derivato)', () => {
+  const esito = SchemaProfilo.safeParse({
+    schemaVersion: 1, eta: 40, professione: 'agricoltore', settoriProfessionali: ['agricoltura']
+  });
+  expect(esito.success).toBe(true);
+  if (esito.success) {
+    expect(esito.data.professione).toBe('agricoltore');
+    expect(esito.data.settoriProfessionali).toEqual(['agricoltura']);
+  }
 });
 
 test('rifiuta dirittoToccato con intensita fuori scala', () => {

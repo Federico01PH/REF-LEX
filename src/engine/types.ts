@@ -21,6 +21,12 @@ export type TitoloStudio = 'nessuno' | 'medie' | 'diploma' | 'laurea';
 // (assegno unico, congedi, L.104, caregiver). Chiesto solo se personeACarico è true.
 export type TipoACarico = 'figli-minorenni' | 'figli-maggiorenni' | 'familiare-disabile' | 'genitori-anziani';
 
+// settore ricavato dal mestiere scritto in chiaro (campo 'professione'): alcune leggi
+// toccano mestieri precisi (agricoltori per la caccia, forze dell'ordine per gli alloggi
+// di servizio del Piano Casa). 'altro' = mestiere indicato ma non tra quelli mappati.
+export type SettoreProfessionale =
+  | 'agricoltura' | 'caccia' | 'sanita' | 'scuola' | 'forze-ordine' | 'altro';
+
 export interface Profilo {
   schemaVersion: 1;
   nome?: string; // nome o nickname scelto dall'utente, solo per rivolgersi a lui; resta sul dispositivo
@@ -31,6 +37,8 @@ export interface Profilo {
   statoCivile?: 'non-sposato' | 'sposato' | 'unione-civile' | 'separato' | 'vedovo';
   regione?: string;
   condizioneLavorativa?: CondizioneLavorativa[]; // più occupazioni insieme (es. studente che lavora, P.IVA anche dipendente)
+  professione?: string; // mestiere scritto in chiaro (facoltativo); resta sul dispositivo, come il nome
+  settoriProfessionali?: SettoreProfessionale[]; // ricavato da 'professione' dal classificatore, non chiesto direttamente
   fasciaReddito?: FasciaReddito;
   fasciaIsee?: FasciaIsee;
   figli?: 0 | 1 | 2 | 3; // 3 = tre o più

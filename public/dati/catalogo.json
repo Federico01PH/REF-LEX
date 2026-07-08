@@ -1,6 +1,6 @@
 {
-  "versione": 20,
-  "generatoIl": "2026-06-16",
+  "versione": 21,
+  "generatoIl": "2026-07-08",
   "leggi": [
     {
       "id": "cuneo-fiscale-2025",
@@ -3174,6 +3174,485 @@
           "fonteRegola": {
             "etichetta": "Scheda DDL S. 1627 (Senato della Repubblica)",
             "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=59493"
+          }
+        }
+      ]
+    },
+    {
+      "id": "piano-casa-2026",
+      "titoloDivulgativo": "Piano Casa: alloggi popolari, riscatto, aiuti a studenti, disabili e giovani",
+      "titoloUfficiale": "Decreto-legge 7 maggio 2026, n. 66 «Disposizioni urgenti per il Piano Casa» (convertito dalla L. 2 luglio 2026, n. 116)",
+      "meseAnno": "maggio 2026",
+      "stato": "vigore",
+      "ambiti": [
+        "casa",
+        "pensioni-welfare"
+      ],
+      "fonti": [
+        {
+          "etichetta": "Decreto-legge 7 maggio 2026, n. 66 «Piano Casa» (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026;66"
+        },
+        {
+          "etichetta": "Testo pubblicato in Gazzetta Ufficiale n. 104 del 7 maggio 2026",
+          "url": "https://www.gazzettaufficiale.it/eli/id/2026/05/07/26G00090/sg"
+        },
+        {
+          "etichetta": "Legge di conversione 2 luglio 2026, n. 116 (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026;116"
+        }
+      ],
+      "verificataIl": "2026-07-08",
+      "riassunto": "Un decreto già in vigore (maggio 2026) sulla casa. Recupera alloggi popolari sfitti; protegge chi vive in una casa popolare e non riesce a pagare l'affitto per cause non sue, e gli permette di riscattarla. Aiuta studenti fuori sede, persone con disabilità grave e famiglie con un disabile a trovare o comprare casa, e crea abitazioni a prezzo calmierato per giovani, genitori separati e redditi medi. Molte misure partono davvero solo con i decreti attuativi.",
+      "regole": [
+        {
+          "id": "pc-erp-inquilini",
+          "campiNecessari": [
+            "abitazione",
+            "fasciaIsee"
+          ],
+          "condizioni": [
+            {
+              "campo": "abitazione",
+              "op": "eq",
+              "valore": "affitto"
+            },
+            {
+              "campo": "fasciaIsee",
+              "op": "in",
+              "valore": [
+                "fino9360",
+                "da9360a15k",
+                "da15a25k"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se abiti in una casa popolare (edilizia residenziale pubblica), il decreto ti dà due tutele. La prima: un Fondo di garanzia contro la morosità incolpevole (art. 4) copre l'affitto e la cauzione se non riesci a pagare per cause non tue, come la perdita del lavoro o una malattia; così è più difficile finire sotto sfratto per un periodo difficile. La seconda: un diritto di opzione all'acquisto (art. 5) ti permette, se sei in regola con i pagamenti e non possiedi già un'altra casa, di riscattare l'alloggio in cui vivi e diventarne proprietario. Sono misure pensate per gli alloggi pubblici: se sei in un affitto privato non valgono, e i dettagli (quote, prezzi, tempi) arriveranno con i decreti attuativi.",
+            "breve": "Se sei in una casa popolare: scudo contro la morosità incolpevole e diritto a riscattare l'alloggio.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Vale per gli assegnatari di edilizia residenziale pubblica (casa popolare); il riscatto richiede di essere non morosi e di non possedere un'altra abitazione. Le regole operative sono rinviate a un decreto interministeriale (art. 4 e art. 5).",
+          "fonteRegola": {
+            "etichetta": "Art. 4 e 5 del D.L. 66/2026 (morosità incolpevole e riscatto ERP)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026;66"
+          }
+        },
+        {
+          "id": "pc-studenti-fuorisede",
+          "campiNecessari": [
+            "condizioneLavorativa",
+            "abitazione"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "studente"
+              ]
+            },
+            {
+              "campo": "abitazione",
+              "op": "eq",
+              "valore": "affitto"
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "descrizione": "Se sei uno studente universitario fuori sede (studi in una città diversa da quella dove risiedi) e vivi in affitto, il decreto aumenta di 8,5 milioni di euro per il 2026 il fondo che rimborsa una parte delle spese di affitto. Non è un assegno automatico: si ottiene facendo domanda al bando, di solito in base all'ISEE e alla graduatoria. Se non sei fuori sede, questa misura non ti riguarda.",
+            "breve": "Se studi fuori sede e sei in affitto, più fondi per il contributo sulle spese di affitto.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "L'incremento è per l'anno 2026 e riguarda solo gli studenti universitari fuori sede in affitto; il contributo si ottiene tramite bando e graduatoria per ISEE, quindi non è garantito a tutti.",
+          "fonteRegola": {
+            "etichetta": "Art. 4-ter del D.L. 66/2026 (contributo affitto studenti fuori sede)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026;66"
+          }
+        },
+        {
+          "id": "pc-disabilita-primacasa",
+          "campiNecessari": [
+            "disabilita"
+          ],
+          "condizioni": [
+            {
+              "campo": "disabilita",
+              "op": "in",
+              "valore": [
+                "motoria",
+                "visiva",
+                "uditiva",
+                "intellettiva",
+                "malattia-cronica"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se hai una disabilità grave riconosciuta (ai sensi della legge 104/1992), il decreto ti mette tra le categorie prioritarie del Fondo di garanzia per la prima casa: lo Stato fa da garante con la banca per una parte del mutuo, così è più facile ottenerlo. La garanzia copre il 50% della quota capitale, che sale fino all'80% se il tuo ISEE non supera i 40.000 euro all'anno. Serve comunque avere i requisiti della banca per il mutuo.",
+            "breve": "Con una disabilità grave, priorità sul Fondo garanzia mutuo prima casa (fino all'80% se ISEE ≤ 40.000).",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "La priorità riguarda la disabilità grave accertata ai sensi della legge 104/1992; opera attraverso il Fondo di garanzia per la prima casa già esistente, con dotazione incrementata (art. 4-bis).",
+          "fonteRegola": {
+            "etichetta": "Art. 4-bis del D.L. 66/2026 (priorità Fondo prima casa, disabilità grave)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026;66"
+          }
+        },
+        {
+          "id": "pc-familiare-disabile-primacasa",
+          "campiNecessari": [
+            "personeACarico",
+            "tipiACarico"
+          ],
+          "condizioni": [
+            {
+              "campo": "personeACarico",
+              "op": "eq",
+              "valore": true
+            },
+            {
+              "campo": "tipiACarico",
+              "op": "in",
+              "valore": [
+                "familiare-disabile"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se nella tua famiglia convive una persona con disabilità, il decreto vi include tra le categorie prioritarie del Fondo di garanzia per la prima casa: lo Stato garantisce alla banca una parte del mutuo (il 50% della quota capitale, fino all'80% se l'ISEE non supera i 40.000 euro), rendendo più facile ottenerlo per comprare casa.",
+            "breve": "Se convivi con un familiare disabile, priorità sul Fondo garanzia mutuo prima casa.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "La misura cita espressamente i nuclei familiari con un convivente disabile; opera tramite il Fondo di garanzia per la prima casa (art. 4-bis).",
+          "fonteRegola": {
+            "etichetta": "Art. 4-bis del D.L. 66/2026 (priorità Fondo prima casa, nuclei con disabile)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026;66"
+          }
+        },
+        {
+          "id": "pc-giovani-casa",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 35
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se sei giovane, il decreto punta a creare nuove case di edilizia sociale: alloggi in affitto di lunga durata a canone calmierato, con la possibilità di riscattarli poco alla volta fino a diventarne proprietario (art. 6). La priorità è per giovani, giovani coppie e genitori separati. È un modello nuovo: quanti alloggi e dove dipenderà dalle convenzioni con i Comuni e dai fondi disponibili, quindi si vedrà soprattutto negli anni.",
+            "breve": "Se sei giovane, nuove case sociali in affitto lungo con possibilità di riscattarle nel tempo.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "L'edilizia sociale con riscatto (art. 6) è una cornice: la disponibilità reale dipende dalle convenzioni con i Comuni e dalle risorse. Priorità a giovani, giovani coppie e genitori separati.",
+          "fonteRegola": {
+            "etichetta": "Art. 6 del D.L. 66/2026 (locazione sociale con riscatto)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026;66"
+          }
+        },
+        {
+          "id": "pc-separati-casa",
+          "campiNecessari": [
+            "statoCivile",
+            "figli",
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "statoCivile",
+              "op": "eq",
+              "valore": "separato"
+            },
+            {
+              "campo": "figli",
+              "op": "almeno",
+              "valore": 1
+            },
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 36
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Da genitore separato con figli, dopo una separazione trovare casa è spesso la difficoltà più grande. Il decreto ti mette tra le categorie prioritarie della nuova edilizia sociale in affitto di lunga durata con riscatto (art. 6): alloggi a canone calmierato che puoi arrivare a comprare un po' alla volta. Come per i giovani, la disponibilità concreta dipenderà dalle convenzioni con i Comuni.",
+            "breve": "Da genitore separato, priorità per le nuove case sociali in affitto con riscatto.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Stessa misura dell'art. 6: i genitori separati sono una categoria prioritaria esplicita. Qui la mostriamo a chi ha più di 35 anni per non ripetere l'effetto già visto dai più giovani.",
+          "fonteRegola": {
+            "etichetta": "Art. 6 del D.L. 66/2026 (locazione sociale con riscatto, genitori separati)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026;66"
+          }
+        },
+        {
+          "id": "pc-isee-medio-integrata",
+          "campiNecessari": [
+            "fasciaIsee"
+          ],
+          "condizioni": [
+            {
+              "campo": "fasciaIsee",
+              "op": "in",
+              "valore": [
+                "da25a40k"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Con un ISEE medio sei in una zona scomoda: troppo \"ricco\" per la casa popolare, ma con prezzi di mercato spesso fuori portata. Il decreto crea i programmi di edilizia integrata (art. 9): nuovi quartieri in cui almeno il 70% degli alloggi è convenzionato, con prezzi di vendita o canoni di affitto calmierati di almeno il 33% sotto le quotazioni di mercato dell'Agenzia delle entrate, e un vincolo di trent'anni che li mantiene accessibili. È rivolto proprio a chi ha redditi medi.",
+            "breve": "Con ISEE medio, case a prezzo o affitto calmierato di almeno il 33% sotto il mercato (edilizia integrata).",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "L'edilizia integrata (art. 9) è rivolta a chi ha ISEE sopra i limiti dell'edilizia pubblica ma non accede al mercato libero; la realizzazione dipende dai programmi presentati dai privati e dalle convenzioni con i Comuni.",
+          "fonteRegola": {
+            "etichetta": "Art. 9 del D.L. 66/2026 (programmi di edilizia integrata)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026;66"
+          }
+        },
+        {
+          "id": "pc-forze-ordine-alloggi",
+          "campiNecessari": [
+            "settoriProfessionali"
+          ],
+          "condizioni": [
+            {
+              "campo": "settoriProfessionali",
+              "op": "in",
+              "valore": [
+                "forze-ordine"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se lavori nelle forze dell'ordine o nelle Forze armate, il decreto interviene anche sugli alloggi di servizio: nuove regole e risorse per gli alloggi dell'Arma dei carabinieri (art. 9-bis) e per il potenziamento del patrimonio immobiliare della Difesa, utile a chi presta servizio lontano da casa (Forze armate e Guardia di finanza). Le condizioni e le rette dipenderanno dai regolamenti attuativi.",
+            "breve": "Nelle forze dell'ordine o armate: nuovi alloggi di servizio (Arma dei carabinieri, Difesa).",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Riguarda in particolare Carabinieri, Forze armate e Guardia di finanza (alloggi di servizio); criteri di concessione e rette sono rinviati a un regolamento (art. 9-bis).",
+          "fonteRegola": {
+            "etichetta": "Art. 9-bis del D.L. 66/2026 (alloggi di servizio e patrimonio della Difesa)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026;66"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ddl-caccia-1552",
+      "titoloDivulgativo": "Riforma della caccia: più specie, aree e periodi, meno peso all'ISPRA",
+      "titoloUfficiale": "DDL S. 1552 (XIX Leg.) — Modifiche alla legge 11 febbraio 1992, n. 157 sulla protezione della fauna selvatica e sul prelievo venatorio",
+      "stato": "discussione",
+      "ambiti": [
+        "ambiente",
+        "doveri"
+      ],
+      "fonti": [
+        {
+          "etichetta": "Disegno di legge S. 1552 (Senato della Repubblica)",
+          "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=59294"
+        },
+        {
+          "etichetta": "Nota tecnica ISPRA sul DDL S. 1552 (audizione, parlamento.it)",
+          "url": "https://www.parlamento.it/application/xmanager/projects/leg19/attachments/documento_evento_procedura_commissione/files/000/433/935/Contributo_ISPRA.pdf"
+        },
+        {
+          "etichetta": "Direttiva 2009/147/CE «Uccelli» (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32009L0147"
+        },
+        {
+          "etichetta": "Legge 11 febbraio 1992, n. 157 (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-11;157"
+        }
+      ],
+      "verificataIl": "2026-07-08",
+      "riassunto": "Una proposta (DDL S.1552) che riscrive la legge sulla caccia del 1992. È stata approvata dal Senato a giugno 2026 ed è ora all'esame della Camera: non è ancora legge. Amplia le specie, le aree e i periodi in cui si può cacciare, definisce la caccia utile alla biodiversità e dà più poteri alle Regioni, riducendo il peso dell'ISPRA. Tocca l'ambiente e la sicurezza di tutti, e in modo diverso gli agricoltori e i cacciatori.",
+      "regole": [
+        {
+          "id": "caccia-ambiente-animali",
+          "campiNecessari": [],
+          "condizioni": [],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "La riforma riscrive la legge del 1992 e definisce la caccia un'attività che \"concorre alla tutela della biodiversità e dell'ecosistema\", trasformando i cacciatori in \"bioregolatori\". In concreto amplia le specie cacciabili (tra cui il piccione di città e l'oca selvatica; il lupo esce dalle specie particolarmente protette, in linea con la Direttiva UE 2025/1237), estende le aree (demani forestali e valichi montani, con i parchi già esistenti conteggiati nella quota di territorio protetto) e allunga i calendari, arrivando a toccare la migrazione degli uccelli. Riduce inoltre il peso dei pareri scientifici dell'ISPRA, che le Regioni possono superare. La proposta la presenta come gestione della fauna e dei danni (cinghiali e ungulati in aumento); l'ISPRA e le associazioni ambientaliste avvertono che abbassa la tutela di fauna ed ecosistemi. Riguarda l'ambiente di tutti, anche di chi non caccia.",
+            "breve": "Riforma caccia: più specie, aree e periodi di prelievo e meno peso all'ISPRA. Tocca l'ambiente di tutti.",
+            "direzione": "misto",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 9",
+              "diritto": "tutela dell'ambiente, della biodiversità e degli ecosistemi, anche nell'interesse delle future generazioni",
+              "intensita": "sensibile",
+              "url": "https://www.senato.it/istituzione/la-costituzione/principi-fondamentali/articolo-9"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Effetto valido SE la proposta diventa legge con questo testo (approvata dal Senato, ora alla Camera). L'intensità è \"sensibile\" e non \"grave\" perché resta un impianto di tutela e i vincoli europei (Direttiva Uccelli) continuano ad applicarsi; ma l'ISPRA ha segnalato criticità su calendari, specie migratrici e riduzione del proprio ruolo tecnico.",
+          "fonteRegola": {
+            "etichetta": "Direttiva 2009/147/CE «Uccelli» (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32009L0147"
+          }
+        },
+        {
+          "id": "caccia-sicurezza",
+          "campiNecessari": [],
+          "condizioni": [],
+          "effetto": {
+            "tipo": "qualita-vita",
+            "descrizione": "Con più aree aperte alla caccia (compresi demani forestali e valichi montani, e i parchi conteggiati nella quota protetta) e con calendari più lunghi, che tolgono il limite della prima decade di febbraio e ammettono la braccata sulla neve, aumentano le zone e i mesi in cui si spara. La proposta consente anche di cacciare in Italia a chi ha una licenza di un altro Paese UE, senza formazione sul territorio locale. Per chi va per boschi e sentieri, va a funghi, corre o porta a spasso il cane, questo significa meno spazi e meno periodi sicuri; per chi caccia, invece, è più libertà di movimento.",
+            "breve": "Più aree e mesi aperti alla caccia: per chi va per boschi e sentieri, meno spazi e tempi sicuri.",
+            "direzione": "misto",
+            "indiretto": true
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Effetto valido SE la proposta diventa legge con questo testo. La caccia resta regolata (giorni, orari, distanze di sicurezza), ma l'ampliamento di aree e periodi riduce gli spazi naturali fruibili in sicurezza dai cittadini.",
+          "fonteRegola": {
+            "etichetta": "Disegno di legge S. 1552 (Senato della Repubblica)",
+            "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=59294"
+          }
+        },
+        {
+          "id": "caccia-agricoltori",
+          "campiNecessari": [
+            "settoriProfessionali"
+          ],
+          "condizioni": [
+            {
+              "campo": "settoriProfessionali",
+              "op": "in",
+              "valore": [
+                "agricoltura"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se lavori in agricoltura, i danni della fauna selvatica (cinghiali e ungulati che devastano i campi) sono un problema concreto, e la riforma nasce anche per rispondervi: più prelievo e cacciatori come \"bioregolatori\" dovrebbero contenere le popolazioni vicino ai coltivi. C'è però un rovescio segnalato dall'ISPRA: il controllo della fauna viene concentrato sui soli cacciatori, escludendo le ditte professionali di pest control a cui molte amministrazioni si affidano per cinghiali, piccioni o nutrie; e la riforma non aggiunge strumenti strutturali di prevenzione dei danni o di indennizzo rapido. L'effetto reale dipenderà molto da come le Regioni la applicheranno.",
+            "breve": "Da agricoltore: punta a contenere i danni della fauna, ma affida il controllo ai soli cacciatori.",
+            "direzione": "misto",
+            "indiretto": true
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "L'effetto dipende dal territorio e dall'attuazione regionale. L'ISPRA segnala che escludere i professionisti del controllo faunistico può ridurre l'efficacia degli interventi; la proposta non introduce nuovi strumenti di prevenzione o indennizzo dei danni.",
+          "fonteRegola": {
+            "etichetta": "Nota tecnica ISPRA sul DDL S. 1552 (audizione, parlamento.it)",
+            "url": "https://www.parlamento.it/application/xmanager/projects/leg19/attachments/documento_evento_procedura_commissione/files/000/433/935/Contributo_ISPRA.pdf"
+          }
+        },
+        {
+          "id": "caccia-cacciatori",
+          "campiNecessari": [
+            "settoriProfessionali"
+          ],
+          "condizioni": [
+            {
+              "campo": "settoriProfessionali",
+              "op": "in",
+              "valore": [
+                "caccia"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Se pratichi la caccia, la riforma allarga molto ciò che puoi fare: più specie cacciabili, più aree (demani forestali, valichi montani), calendari più lunghi, e la possibilità di usare strumenti ottici e optoelettronici per la caccia di selezione agli ungulati. Cade l'obbligo di scegliere un'unica forma di caccia, vengono riconosciute le licenze rilasciate da altri Paesi UE e le aziende faunistico-venatorie possono operare con scopo di lucro. Restano alcuni limiti (per esempio un tetto ai richiami vivi, dieci per specie e quaranta in tutto). È comunque una proposta ancora all'esame della Camera: il testo può cambiare.",
+            "breve": "Da cacciatore: più specie, aree, periodi e strumenti (mirini ottici per gli ungulati): più opportunità.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Effetto valido SE la proposta diventa legge con questo testo. Alcune facoltà (aree, calendari, specie) restano soggette alle scelte delle Regioni e ai vincoli europei; permangono limiti come il tetto ai richiami vivi.",
+          "fonteRegola": {
+            "etichetta": "Disegno di legge S. 1552 (Senato della Repubblica)",
+            "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=59294"
           }
         }
       ]

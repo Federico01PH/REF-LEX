@@ -30,6 +30,12 @@ export const DOMANDE: Domanda[] = [
       { valore: 'caregiver', etichetta: 'Mi prendo cura di un familiare' },
       { valore: 'casalingo', etichetta: 'Mi occupo della casa' },
       { valore: 'altro', etichetta: 'Altro' }] },
+  { campo: 'professione', titolo: 'Che lavoro fai, di preciso?', tipo: 'testo',
+    // compare solo per chi ha indicato un'occupazione lavorativa: non chiediamo il
+    // mestiere a chi è solo in pensione, studente, in cerca di lavoro o a casa
+    mostraSe: (bozza) => Array.isArray(bozza.condizioneLavorativa) && bozza.condizioneLavorativa.some(
+      (c) => ['dipendente-privato', 'dipendente-pubblico', 'autonomo-ordinario', 'forfettario', 'imprenditore', 'altro'].includes(c)),
+    perche: 'Alcune leggi toccano mestieri precisi: agricoltori, sanitari, forze dell\'ordine, insegnanti. Scrivi in poche parole che lavoro fai (per esempio "infermiera" o "agricoltore"): serve solo a capire se una legge riguarda proprio il tuo mestiere. Puoi saltare. Come tutto il resto, resta sul tuo dispositivo.' },
   { campo: 'titoloStudio', titolo: 'Qual è il tuo titolo di studio più alto?', tipo: 'scelta',
     perche: 'Alcune leggi su lavoro, concorsi e contratti valgono solo per chi ha certi titoli. Indica solo il più alto: la laurea include il diploma e la licenza media.',
     opzioni: [

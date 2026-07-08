@@ -1,7 +1,7 @@
 import { PERSONAGGI } from '../../src/data/personas';
 
-test('ci sono 15 personaggi con nome, descrizione e profilo completo dei campi chiave', () => {
-  expect(PERSONAGGI).toHaveLength(15);
+test('ci sono 17 personaggi con nome, descrizione e profilo completo dei campi chiave', () => {
+  expect(PERSONAGGI).toHaveLength(17);
   for (const p of PERSONAGGI) {
     expect(p.nome.length).toBeGreaterThan(0);
     expect(p.descrizione.length).toBeGreaterThan(0);
@@ -10,6 +10,15 @@ test('ci sono 15 personaggi con nome, descrizione e profilo completo dei campi c
     expect(p.profilo.fasciaReddito).toBeDefined();
     expect(p.profilo.fasciaIsee).toBeDefined();
   }
+});
+
+// i protagonisti della riforma caccia: un profilo agricolo e uno di cacciatore, così
+// la galleria "E per gli altri?" mostra chi ci guadagna e chi ci perde
+test('copre i settori professionali della caccia: un agricoltore e un cacciatore', () => {
+  const agricoltore = PERSONAGGI.some((p) => (p.profilo.settoriProfessionali ?? []).includes('agricoltura'));
+  const cacciatore = PERSONAGGI.some((p) => (p.profilo.settoriProfessionali ?? []).includes('caccia'));
+  expect(agricoltore).toBe(true);
+  expect(cacciatore).toBe(true);
 });
 
 test('gli id dei personaggi sono unici', () => {

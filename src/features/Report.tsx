@@ -15,7 +15,9 @@ const ETICHETTA_CAMPO: Partial<Record<keyof Profilo, string>> = {
   fasciaReddito: 'il tuo reddito', fasciaIsee: 'il tuo ISEE', figli: 'quanti figli hai',
   abitazione: 'dove vivi', regione: 'la tua regione', condizioneLavorativa: 'di cosa ti occupi',
   titoloStudio: 'il tuo titolo di studio', numeroProprieta: 'quanti immobili possiedi',
-  cittadinanza: 'la tua cittadinanza', permessoSoggiorno: 'se hai il permesso di soggiorno'
+  cittadinanza: 'la tua cittadinanza', permessoSoggiorno: 'se hai il permesso di soggiorno',
+  settoriProfessionali: 'che lavoro fai', personeACarico: 'se hai persone a carico',
+  tipiACarico: 'chi hai a carico'
 };
 const CONFIDENZA = {
   certa: { classe: 'badge-certa', parola: 'Certo' },

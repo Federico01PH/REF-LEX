@@ -5,9 +5,9 @@ const profilo: Profilo = { schemaVersion: 1, eta: 34, condizioneLavorativa: ['st
 
 beforeEach(() => localStorage.clear());
 
-test('salva e ricarica il profilo', () => {
+test('salva e ricarica il profilo (settoriProfessionali derivato al caricamento)', () => {
   salvaProfilo(profilo);
-  expect(caricaProfilo()).toEqual(profilo);
+  expect(caricaProfilo()).toMatchObject(profilo);
 });
 
 test('il tema si salva, si ricarica e di default è auto', () => {
@@ -56,7 +56,7 @@ test('accetta un profilo completo con campi validi', () => {
     religione: 'nessuna'
   };
   salvaProfilo(completo);
-  expect(caricaProfilo()).toEqual(completo);
+  expect(caricaProfilo()).toMatchObject(completo);
 });
 
 test('accetta un profilo con persone a carico e le categorie scelte', () => {
@@ -65,7 +65,7 @@ test('accetta un profilo con persone a carico e le categorie scelte', () => {
     tipiACarico: ['figli-minorenni', 'genitori-anziani']
   };
   salvaProfilo(p);
-  expect(caricaProfilo()).toEqual(p);
+  expect(caricaProfilo()).toMatchObject(p);
 });
 
 test('restituisce null se una categoria di persone a carico non è valida', () => {
@@ -76,7 +76,7 @@ test('restituisce null se una categoria di persone a carico non è valida', () =
 test('accetta e ricarica una condizione lavorativa multipla (studente che lavora)', () => {
   const p: Profilo = { schemaVersion: 1, eta: 22, condizioneLavorativa: ['studente', 'dipendente-privato'] };
   salvaProfilo(p);
-  expect(caricaProfilo()).toEqual(p);
+  expect(caricaProfilo()).toMatchObject(p);
 });
 
 test('migra una condizione lavorativa salvata come stringa singola (vecchio formato) in un array', () => {
@@ -87,6 +87,18 @@ test('migra una condizione lavorativa salvata come stringa singola (vecchio form
 test('restituisce null se la condizione lavorativa contiene una voce non valida', () => {
   localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 30, condizioneLavorativa: ['studente', 'astronauta'] }));
   expect(caricaProfilo()).toBeNull();
+});
+
+test('al caricamento ricava i settori professionali dal mestiere scritto in chiaro', () => {
+  localStorage.setItem('reflex.profilo.v1', JSON.stringify({ schemaVersion: 1, eta: 50, professione: 'agricoltore' }));
+  const p = caricaProfilo();
+  expect(p?.professione).toBe('agricoltore');
+  expect(p?.settoriProfessionali).toEqual(['agricoltura']);
+});
+
+test('senza mestiere il settore è quello neutro ["altro"] (mai un dato mancante)', () => {
+  salvaProfilo({ schemaVersion: 1, eta: 40 });
+  expect(caricaProfilo()?.settoriProfessionali).toEqual(['altro']);
 });
 
 test('cancellaTutto rimuove ogni chiave reflex', () => {
