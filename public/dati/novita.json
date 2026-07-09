@@ -1,21 +1,61 @@
 {
-  "generatoIl": "2026-07-08",
+  "generatoIl": "2026-07-09",
   "voci": [
     {
-      "id": "gazzetta-26A03268",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 8 giugno 2026: Scioglimento del consiglio comunale di Torre Annunziata e nomina",
+      "id": "gazzetta-26G00140",
+      "titolo": "DECRETO LEGISLATIVO 10 giugno 2026, n.122: Recepimento degli articoli 11, 12, 13 e 15 della direttiva (UE)",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-07-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/07/26A03268/SG"
+      "data": "2026-07-08",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/08/26G00140/SG"
     },
     {
-      "id": "gazzetta-26A03269",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 8 giugno 2026: Scioglimento del consiglio comunale di Sarno e nomina della",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-07-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/07/26A03269/SG"
+      "id": "senato-60270",
+      "titolo": "Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2025",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-06",
+      "url": "https://dati.senato.it/ddl/60270"
+    },
+    {
+      "id": "senato-60269",
+      "titolo": "Disposizioni concernenti l'istituzione e l'obbligo di possesso della certificazione nazionale per la gestione degli allergeni nelle attività di preparazione, vendita e somministrazione di prodotti alimentari",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-06",
+      "url": "https://dati.senato.it/ddl/60269"
+    },
+    {
+      "id": "senato-60271",
+      "titolo": "Disposizioni per l'assestamento del bilancio dello Stato per l'anno finanziario 2026",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-06",
+      "url": "https://dati.senato.it/ddl/60271"
+    },
+    {
+      "id": "senato-60272",
+      "titolo": "Modifiche all'articolo 25-quater del decreto-legge 23 ottobre 2018, n. 119, convertito con modificazioni dalla legge 17 dicembre 2018, n. 136, in materia di rafforzamento del Tavolo operativo e degli strumenti di contrasto al caporalato e allo sfruttamento lavorativo in agricoltura",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-06",
+      "url": "https://dati.senato.it/ddl/60272"
+    },
+    {
+      "id": "senato-60267",
+      "titolo": "Istituzione della certificazione di qualità della ristorazione italiana \"Carlo Petrini\"",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-03",
+      "url": "https://dati.senato.it/ddl/60267"
+    },
+    {
+      "id": "senato-60268",
+      "titolo": "Modifiche alla legge 4 maggio 1983, n. 184, in materia di adozione dei minori da parte delle persone dello stesso sesso unite in unione civile, delle persone conviventi di fatto e delle persone singole",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-03",
+      "url": "https://dati.senato.it/ddl/60268"
     },
     {
       "id": "senato-60266",
@@ -88,54 +128,6 @@
       "stato": "discussione",
       "data": "2026-06-30",
       "url": "https://dati.senato.it/ddl/60257"
-    },
-    {
-      "id": "senato-60258",
-      "titolo": "Remigrazione e riconquista: Disposizioni in materia di governo dei flussi migratori, istituzione del programma nazionale di remigrazione e di un fondo per la natalità italiana",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-30",
-      "url": "https://dati.senato.it/ddl/60258"
-    },
-    {
-      "id": "senato-60254",
-      "titolo": "Disposizioni concernenti il concorso statale al finanziamento della spesa per la partecipazione a viaggi di istruzione e la fornitura gratuita dei libri di testo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-29",
-      "url": "https://dati.senato.it/ddl/60254"
-    },
-    {
-      "id": "senato-60252",
-      "titolo": "Disposizioni concernenti l'istituzione di percorsi didattici interdisciplinari nelle scuole secondarie di primo e di secondo grado per promuovere la conoscenza e l'uso consapevole dei sistemi di intelligenza artificiale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-29",
-      "url": "https://dati.senato.it/ddl/60252"
-    },
-    {
-      "id": "senato-60253",
-      "titolo": "Concessione di agevolazioni previdenziali per la maternità e per la prestazione di assistenza continuativa a familiari disabili",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-29",
-      "url": "https://dati.senato.it/ddl/60253"
-    },
-    {
-      "id": "senato-60255",
-      "titolo": "Istituzione di un Comitato interministeriale per l'approccio integrato, coordinato e interdisciplinare nella definizione delle politiche pubbliche in materia di salute umana e animale, di tutela dell'ambiente, di agricoltura e di sicurezza alimentare",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-29",
-      "url": "https://dati.senato.it/ddl/60255"
-    },
-    {
-      "id": "senato-60250",
-      "titolo": "Modifiche al decreto legislativo 3 aprile 2006, n. 152, concernenti l'istituzione di un sistema nazionale armonizzato di identificazione ai fini della raccolta differenziata dei rifiuti urbani",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-26",
-      "url": "https://dati.senato.it/ddl/60250"
     }
   ]
 }
