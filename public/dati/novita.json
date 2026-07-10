@@ -1,13 +1,45 @@
 {
-  "generatoIl": "2026-07-09",
+  "generatoIl": "2026-07-10",
   "voci": [
     {
-      "id": "gazzetta-26G00140",
-      "titolo": "DECRETO LEGISLATIVO 10 giugno 2026, n.122: Recepimento degli articoli 11, 12, 13 e 15 della direttiva (UE)",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-07-08",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/08/26G00140/SG"
+      "id": "senato-60275",
+      "titolo": "Disposizioni in materia di giovani e servizio civile universale e deleghe al Governo per il riordino della materia",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-09",
+      "url": "https://dati.senato.it/ddl/60275"
+    },
+    {
+      "id": "senato-60277",
+      "titolo": "Disposizioni a tutela dei consumatori dalle variazioni contrattuali unilaterali, nonché modifiche al codice del consumo di cui al decreto legislativo 6 settembre 2005, n. 206",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-07",
+      "url": "https://dati.senato.it/ddl/60277"
+    },
+    {
+      "id": "senato-60276",
+      "titolo": "Disposizioni in materia di reddito di merito e di incentivo all'eccellenza per studenti meritevoli",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-07",
+      "url": "https://dati.senato.it/ddl/60276"
+    },
+    {
+      "id": "senato-60273",
+      "titolo": "Modifiche al codice dei contratti pubblici, di cui al decreto legislativo 31 marzo 2023, n. 36, e al decreto legislativo 3 aprile 2006, n. 152, concernenti la disciplina del dibattito pubblico sui progetti di opere e la presa in considerazione degli esiti di esso nei procedimenti di valutazione ambientale strategica e di valutazione di impatto ambientale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-07",
+      "url": "https://dati.senato.it/ddl/60273"
+    },
+    {
+      "id": "senato-60274",
+      "titolo": "Modifiche all'articolo 25-quater del decreto-legge 23 ottobre 2018, n. 119, convertito, con modificazioni, dalla legge 17 dicembre 2018, n. 136, in materia di rafforzamento del Tavolo operativo e degli strumenti per il contrasto del caporalato e dello sfruttamento lavorativo nell'agricoltura",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-07",
+      "url": "https://dati.senato.it/ddl/60274"
     },
     {
       "id": "senato-60270",
@@ -88,46 +120,6 @@
       "stato": "discussione",
       "data": "2026-07-02",
       "url": "https://dati.senato.it/ddl/60262"
-    },
-    {
-      "id": "senato-60261",
-      "titolo": "Modifiche alla legge 23 dicembre 2010, n. 240, in materia di controllo a campione sulla regolarità delle procedure di valutazione e reclutamento del personale docente e ricercatore in ambito universitario",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-02",
-      "url": "https://dati.senato.it/ddl/60261"
-    },
-    {
-      "id": "senato-60263",
-      "titolo": "Istituzione di una Commissione parlamentare di inchiesta sulla strage di Vergarolla del 18 agosto 1946, sulle relative responsabilità e sulle circostanze che impedirono il completo accertamento dei fatti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-01",
-      "url": "https://dati.senato.it/ddl/60263"
-    },
-    {
-      "id": "senato-60264",
-      "titolo": "Istituzione della Giornata nazionale in memoria delle vittime degli incidenti ferroviari",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-01",
-      "url": "https://dati.senato.it/ddl/60264"
-    },
-    {
-      "id": "senato-60259",
-      "titolo": "Modifiche al codice civile in materia di risarcimento del danno",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-01",
-      "url": "https://dati.senato.it/ddl/60259"
-    },
-    {
-      "id": "senato-60257",
-      "titolo": "Introduzione del capo III-bis del decreto-legge 19 settembre 2023, n. 124, convertito, con modificazioni, dalla legge 13 novembre 2023, n. 162, concernente l'istituzione della Zona economica speciale per le aree transfrontaliere dell'Italia settentrionale - ZES Nord",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-06-30",
-      "url": "https://dati.senato.it/ddl/60257"
     }
   ]
 }
