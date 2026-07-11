@@ -1,6 +1,14 @@
 {
-  "generatoIl": "2026-07-10",
+  "generatoIl": "2026-07-11",
   "voci": [
+    {
+      "id": "gazzetta-26A03531",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 21 maggio 2026: Votazioni per l'elezione dei componenti magistrati del Consiglio",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-10",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/10/26A03531/SG"
+    },
     {
       "id": "senato-60275",
       "titolo": "Disposizioni in materia di giovani e servizio civile universale e deleghe al Governo per il riordino della materia",
