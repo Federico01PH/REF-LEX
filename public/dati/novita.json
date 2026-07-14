@@ -1,5 +1,5 @@
 {
-  "generatoIl": "2026-07-13",
+  "generatoIl": "2026-07-14",
   "voci": [
     {
       "id": "senato-60275",
@@ -8,6 +8,62 @@
       "stato": "discussione",
       "data": "2026-07-09",
       "url": "https://dati.senato.it/ddl/60275"
+    },
+    {
+      "id": "senato-60282",
+      "titolo": "Modifiche al testo unico di cui al decreto legislativo 26 marzo 2001, n. 151, e al decreto legislativo 15 giugno 2015, n. 81, in materia di proroga del termine dei contratti di lavoro a tempo determinato in caso di maternità",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-09",
+      "url": "https://dati.senato.it/ddl/60282"
+    },
+    {
+      "id": "senato-60280",
+      "titolo": "Modifiche all'articolo 26 del testo unico delle disposizioni legislative in materia di tutela e sostegno della maternità e della paternità, di cui al decreto legislativo 26 marzo 2001, n. 151, concernenti il congedo di maternità per le lavoratrici nei casi di adozione, affidamento familiare o preadottivo e collocamento temporaneo di minori",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-09",
+      "url": "https://dati.senato.it/ddl/60280"
+    },
+    {
+      "id": "senato-60283",
+      "titolo": "Disposizioni per il rafforzamento dell'autonomia amministrativa del comune e della città metropolitana di Milano",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-09",
+      "url": "https://dati.senato.it/ddl/60283"
+    },
+    {
+      "id": "senato-60284",
+      "titolo": "Disposizioni concernenti la promozione della comunità educante per l'organizzazione di attività extrascolastiche e di partecipazione civica rivolte ai giovani",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-09",
+      "url": "https://dati.senato.it/ddl/60284"
+    },
+    {
+      "id": "senato-60281",
+      "titolo": "Disposizioni concernenti il rimpatrio dei cittadini di Stati non appartenenti all'Unione europea condannati in Italia e modifiche alla legge 5 febbraio 1992, n. 91, in materia di revoca della cittadinanza",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-09",
+      "url": "https://dati.senato.it/ddl/60281"
+    },
+    {
+      "id": "senato-60279",
+      "titolo": "Modifiche al codice del consumo, di cui al decreto legislativo 6 settembre 2005, n. 206, e altre disposizioni per la tutela dei consumatori dalle variazioni contrattuali unilaterali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-08",
+      "url": "https://dati.senato.it/ddl/60279"
+    },
+    {
+      "id": "senato-60278",
+      "titolo": "Disposizioni di attuazione dell'articolo 2-septies, paragrafo 1, del regolamento (UE) n. 833/2014 del Consiglio, del 31 luglio 2014, concernente il regime sanzionatorio per il contrasto della diffusione dei contenuti della propaganda russa di guerra e l'individuazione delle autorità competenti per la sua applicazione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-08",
+      "url": "https://dati.senato.it/ddl/60278"
     },
     {
       "id": "senato-60277",
@@ -64,62 +120,6 @@
       "stato": "discussione",
       "data": "2026-07-06",
       "url": "https://dati.senato.it/ddl/60271"
-    },
-    {
-      "id": "senato-60272",
-      "titolo": "Modifiche all'articolo 25-quater del decreto-legge 23 ottobre 2018, n. 119, convertito con modificazioni dalla legge 17 dicembre 2018, n. 136, in materia di rafforzamento del Tavolo operativo e degli strumenti di contrasto al caporalato e allo sfruttamento lavorativo in agricoltura",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-06",
-      "url": "https://dati.senato.it/ddl/60272"
-    },
-    {
-      "id": "senato-60267",
-      "titolo": "Istituzione della certificazione di qualità della ristorazione italiana \"Carlo Petrini\"",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-03",
-      "url": "https://dati.senato.it/ddl/60267"
-    },
-    {
-      "id": "senato-60268",
-      "titolo": "Modifiche alla legge 4 maggio 1983, n. 184, in materia di adozione dei minori da parte delle persone dello stesso sesso unite in unione civile, delle persone conviventi di fatto e delle persone singole",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-03",
-      "url": "https://dati.senato.it/ddl/60268"
-    },
-    {
-      "id": "senato-60266",
-      "titolo": "Modifica dell'intesa tra il Governo della Repubblica italiana e l'Unione Buddhista Italiana, in attuazione dell'articolo 8, terzo comma, della Costituzione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-02",
-      "url": "https://dati.senato.it/ddl/60266"
-    },
-    {
-      "id": "senato-60265",
-      "titolo": "Istituzione del Fondo nazionale per l'accoglienza abitativa delle persone senza dimora",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-02",
-      "url": "https://dati.senato.it/ddl/60265"
-    },
-    {
-      "id": "senato-60260",
-      "titolo": "Disposizioni per la regolamentazione dell'esposizione ai dispositivi digitali nei bambini e nelle bambine da zero a tre anni a tutela del loro sviluppo neuro cognitivo fisico e relazionale e per la promozione di un graduale accesso al loro utilizzo durante la minore età",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-02",
-      "url": "https://dati.senato.it/ddl/60260"
-    },
-    {
-      "id": "senato-60262",
-      "titolo": "Misure per la protezione e l'assistenza dei minorenni e degli adulti di riferimento nei contesti di criminalità organizzata («Liberi di scegliere»)",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-02",
-      "url": "https://dati.senato.it/ddl/60262"
     }
   ]
 }
