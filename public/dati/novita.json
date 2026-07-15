@@ -1,6 +1,62 @@
 {
-  "generatoIl": "2026-07-14",
+  "generatoIl": "2026-07-15",
   "voci": [
+    {
+      "id": "senato-60290",
+      "titolo": "Modifiche all'articolo 270 del codice di procedura penale in materia di utilizzo delle intercettazioni in altri procedimenti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-14",
+      "url": "https://dati.senato.it/ddl/60290"
+    },
+    {
+      "id": "senato-60288",
+      "titolo": "Modifica dell'articolo 81 del codice penale e 438 del codice di procedura penale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-14",
+      "url": "https://dati.senato.it/ddl/60288"
+    },
+    {
+      "id": "senato-60289",
+      "titolo": "Istituzione dell'Anagrafe Informatica Centralizzata dei Detenuti ad Alta Sicurezza in permesso premio o misura alternativa (AIC-AS) e modifiche all'articolo 4-bis della legge 26 luglio 1975, n. 354, in materia di tracciabilità telematica obbligatoria",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-14",
+      "url": "https://dati.senato.it/ddl/60289"
+    },
+    {
+      "id": "senato-60285",
+      "titolo": "Disposizioni per la gestione e l'utilizzazione sostenibili delle risorse idriche",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-14",
+      "url": "https://dati.senato.it/ddl/60285"
+    },
+    {
+      "id": "senato-60286",
+      "titolo": "Modifiche all'articolo 4-bis della legge 26 luglio 1975, n. 354 e al decreto-legge 13 maggio 1991, n. 152, in materia di inasprimento dei criteri per la concessione di benefici penitenziari ai condannati non collaboranti per delitti di criminalità organizzata e di prescrizioni territoriali di prevenzione connesse alla concessione dei benefici penitenziari",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-14",
+      "url": "https://dati.senato.it/ddl/60286"
+    },
+    {
+      "id": "senato-60287",
+      "titolo": "Disposizioni per il rafforzamento della sicurezza penitenziaria e per la prevenzione del ripristino dei collegamenti con la criminalità organizzata durante l'esecuzione della pena",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-14",
+      "url": "https://dati.senato.it/ddl/60287"
+    },
+    {
+      "id": "senato-60291",
+      "titolo": "Modifica all'articolo 114 della Costituzione, concernente il riconoscimento dell'area metropolitana di Milano quale ente territoriale autonomo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-13",
+      "url": "https://dati.senato.it/ddl/60291"
+    },
     {
       "id": "senato-60275",
       "titolo": "Disposizioni in materia di giovani e servizio civile universale e deleghe al Governo per il riordino della materia",
@@ -64,62 +120,6 @@
       "stato": "discussione",
       "data": "2026-07-08",
       "url": "https://dati.senato.it/ddl/60278"
-    },
-    {
-      "id": "senato-60277",
-      "titolo": "Disposizioni a tutela dei consumatori dalle variazioni contrattuali unilaterali, nonché modifiche al codice del consumo di cui al decreto legislativo 6 settembre 2005, n. 206",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-07",
-      "url": "https://dati.senato.it/ddl/60277"
-    },
-    {
-      "id": "senato-60276",
-      "titolo": "Disposizioni in materia di reddito di merito e di incentivo all'eccellenza per studenti meritevoli",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-07",
-      "url": "https://dati.senato.it/ddl/60276"
-    },
-    {
-      "id": "senato-60273",
-      "titolo": "Modifiche al codice dei contratti pubblici, di cui al decreto legislativo 31 marzo 2023, n. 36, e al decreto legislativo 3 aprile 2006, n. 152, concernenti la disciplina del dibattito pubblico sui progetti di opere e la presa in considerazione degli esiti di esso nei procedimenti di valutazione ambientale strategica e di valutazione di impatto ambientale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-07",
-      "url": "https://dati.senato.it/ddl/60273"
-    },
-    {
-      "id": "senato-60274",
-      "titolo": "Modifiche all'articolo 25-quater del decreto-legge 23 ottobre 2018, n. 119, convertito, con modificazioni, dalla legge 17 dicembre 2018, n. 136, in materia di rafforzamento del Tavolo operativo e degli strumenti per il contrasto del caporalato e dello sfruttamento lavorativo nell'agricoltura",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-07",
-      "url": "https://dati.senato.it/ddl/60274"
-    },
-    {
-      "id": "senato-60270",
-      "titolo": "Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2025",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-06",
-      "url": "https://dati.senato.it/ddl/60270"
-    },
-    {
-      "id": "senato-60269",
-      "titolo": "Disposizioni concernenti l'istituzione e l'obbligo di possesso della certificazione nazionale per la gestione degli allergeni nelle attività di preparazione, vendita e somministrazione di prodotti alimentari",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-06",
-      "url": "https://dati.senato.it/ddl/60269"
-    },
-    {
-      "id": "senato-60271",
-      "titolo": "Disposizioni per l'assestamento del bilancio dello Stato per l'anno finanziario 2026",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-06",
-      "url": "https://dati.senato.it/ddl/60271"
     }
   ]
 }
