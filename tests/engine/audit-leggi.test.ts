@@ -207,3 +207,24 @@ test('la simulazione è deterministica (stesso soggetto → stesso risultato)', 
     }
   }
 });
+
+// "E per gli altri?" mostra una scheda sola per ogni insieme di regole che scatta, e nomina
+// gli altri del gruppo senza aprire una scheda per ciascuno. Regge solo se le stesse regole
+// danno anche gli stessi euro: se un giorno l'importo dipendesse dal soggetto invece che
+// dalla regola, raggruppare nasconderebbe report davvero diversi.
+test('stesse regole → stessi euro: chi ha la stessa firma vede lo stesso identico report', () => {
+  for (const legge of CATALOGO) {
+    const totalePerFirma = new Map<string, string>();
+    let n = 0;
+    for (const p of soggetti(legge, 400)) {
+      if (n++ >= 400) break;
+      const r = simula(p, legge);
+      if (r.effetti.length === 0) continue;
+      const firma = r.effetti.map((e) => e.id).sort().join('|');
+      const totale = JSON.stringify(r.totaleMese);
+      const visto = totalePerFirma.get(firma);
+      if (visto === undefined) totalePerFirma.set(firma, totale);
+      else expect(`${legge.id} [${firma}]: ${totale}`).toBe(`${legge.id} [${firma}]: ${visto}`);
+    }
+  }
+});

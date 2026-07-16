@@ -5,6 +5,8 @@ import { cuneoFiscale } from '../../src/data/laws/cuneo-fiscale';
 import { salarioMinimo } from '../../src/data/laws/salario-minimo';
 import { pensioniRequisiti } from '../../src/data/laws/pensioni-requisiti';
 import { remigrazione } from '../../src/data/laws/remigrazione';
+import { aiAct } from '../../src/data/laws/ai-act';
+import { pianoCasa } from '../../src/data/laws/piano-casa';
 import type { Profilo } from '../../src/engine/types';
 
 test('mostra solo i profili a cui la legge cambia qualcosa', () => {
@@ -50,6 +52,56 @@ test('gli effetti mostrano la frase corta con "Spiega meglio" che apre quella co
   expect(espandi.length).toBeGreaterThan(0);
   await userEvent.click(espandi[0]);
   expect(screen.getByRole('button', { name: /mostra meno/i })).toBeInTheDocument();
+});
+
+test('i profili con lo stesso identico report diventano una scheda sola', () => {
+  render(<Empatia legge={aiAct} onCreaIpotetico={vi.fn()} onIndietro={vi.fn()} />);
+  // Anna, Karim, Elena, Pavel, Omar, Martina, Bruno e Gianni hanno lo stesso identico report:
+  // una scheda sola, intestata alla prima del gruppo.
+  expect(screen.getByRole('button', { name: /anna, 74 anni/i })).toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: /karim/i })).not.toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: /gianni/i })).not.toBeInTheDocument();
+});
+
+test('la scheda di gruppo dice a quali altre categorie di persone la legge fa lo stesso', () => {
+  render(<Empatia legge={cuneoFiscale} onCreaIpotetico={vi.fn()} onIndietro={vi.fn()} />);
+  // Giulia intesta il gruppo; Daniela e Miriam sono nominate per categoria, non per nome
+  const cardGiulia = screen.getByText(/giulia, 38 anni/i).closest('li')!;
+  expect(cardGiulia).toHaveTextContent(
+    /Stesso effetto anche per un'insegnante e un'impiegata di religione ebraica\./i
+  );
+});
+
+test('chi non ha nessun altro con lo stesso report non ha la riga di gruppo', () => {
+  render(<Empatia legge={cuneoFiscale} onCreaIpotetico={vi.fn()} onIndietro={vi.fn()} />);
+  // Luca è l'unico con il suo report: niente riga "Stesso effetto anche per"
+  const cardLuca = screen.getByText(/luca, 22 anni/i).closest('li')!;
+  expect(cardLuca).not.toHaveTextContent(/stesso effetto anche per/i);
+});
+
+test('fino a quattro categorie la riga le elenca tutte', () => {
+  render(<Empatia legge={pianoCasa} onCreaIpotetico={vi.fn()} onIndietro={vi.fn()} />);
+  // Sara intesta un gruppo di 5: le altre 4 categorie ci stanno tutte, senza "e altre N persone"
+  const cardSara = screen.getByText(/sara, 29 anni/i).closest('li')!;
+  expect(cardSara).toHaveTextContent(
+    /Stesso effetto anche per un caregiver, una persona transgender, una libera professionista e un'impiegata di religione ebraica\./i
+  );
+  expect(cardSara).not.toHaveTextContent(/altre \d+ persone/i);
+});
+
+test('nei gruppi grandi la riga si ferma a tre categorie e "Chi sono?" apre le altre', async () => {
+  render(<Empatia legge={aiAct} onCreaIpotetico={vi.fn()} onIndietro={vi.fn()} />);
+  const cardAnna = screen.getByText(/anna, 74 anni/i).closest('li')!;
+  // 7 altri: tre nominati, gli altri quattro contati
+  expect(cardAnna).toHaveTextContent(/e altre 4 persone\./i);
+  // la categoria dice il mestiere e la condizione, non il nome proprio
+  expect(cardAnna).toHaveTextContent(/un artigiano con permesso di soggiorno/i);
+  expect(cardAnna).not.toHaveTextContent(/karim/i);
+  expect(cardAnna).not.toHaveTextContent(/un cacciatore in pensione/i);
+  await userEvent.click(screen.getAllByRole('button', { name: /chi sono/i })[0]);
+  // aperta, la riga elenca tutte e sette le categorie
+  expect(cardAnna).toHaveTextContent(/un cacciatore in pensione/i);
+  expect(cardAnna).not.toHaveTextContent(/e altre 4 persone/i);
 });
 
 test('il bottone crea profilo ipotetico chiama onCreaIpotetico', async () => {

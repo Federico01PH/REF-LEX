@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Legge, Profilo, Regola, RisultatoSimulazione } from '../engine/types';
-import { PERSONAGGI } from '../data/personas';
+import { PERSONAGGI, type Personaggio } from '../data/personas';
 import { simula } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
 import { descrizioneConEnfasi } from '../ui/enfasi';
@@ -9,6 +9,11 @@ const CONFIDENZA = {
   certa: { classe: 'badge-certa', parola: 'Certo' },
   probabile: { classe: 'badge-probabile', parola: 'Probabile' },
   dipende: { classe: 'badge-dipende', parola: 'Dipende' }
+} as const;
+
+const stileBottoneTesto = {
+  background: 'none', border: 'none', textDecoration: 'underline',
+  color: 'var(--accento)', cursor: 'pointer', padding: 0
 } as const;
 
 // una riga-effetto in "E per gli altri?": frase CORTA (effetto.breve) per capire subito
@@ -25,7 +30,7 @@ function EffettoRiga({ e }: { e: Regola }) {
       {haPiu && (
         <>{' '}
           <button onClick={() => setAperto(!aperto)} aria-expanded={aperto} className="testo-piccolo"
-            style={{ background: 'none', border: 'none', textDecoration: 'underline', color: 'var(--accento)', cursor: 'pointer', padding: 0 }}>
+            style={stileBottoneTesto}>
             {aperto ? 'Mostra meno' : 'Spiega meglio'}
           </button>
         </>
@@ -68,15 +73,66 @@ function firmaEffetti(r: RisultatoSimulazione): string {
   return r.effetti.map((e) => e.id).sort().join('|');
 }
 
+interface Gruppo {
+  p: Personaggio;
+  r: RisultatoSimulazione;
+  altri: Personaggio[];
+}
+
+// una scheda per ogni report diverso: la intesta il primo del gruppo nell'ordine di PERSONAGGI,
+// gli altri restano nel gruppo e vengono nominati per categoria nella riga sotto.
+function raggruppaPerFirma(rilevanti: { p: Personaggio; r: RisultatoSimulazione }[]): Gruppo[] {
+  const gruppi = new Map<string, Gruppo>();
+  for (const { p, r } of rilevanti) {
+    const gruppo = gruppi.get(firmaEffetti(r));
+    if (gruppo) gruppo.altri.push(p);
+    else gruppi.set(firmaEffetti(r), { p, r, altri: [] });
+  }
+  return [...gruppi.values()];
+}
+
+// "a" | "a e b" | "a, b e c"
+function elenco(voci: string[]): string {
+  if (voci.length < 2) return voci.join('');
+  return `${voci.slice(0, -1).join(', ')} e ${voci[voci.length - 1]}`;
+}
+
+// oltre questo numero di categorie la riga diventa un muro di testo: ne restano tre e le
+// altre si contano, con "Chi sono?" per chi vuole vederle tutte.
+const CATEGORIE_VISIBILI = 3;
+
+// dice a quali ALTRE categorie di persone la legge fa esattamente la stessa cosa. Il nome
+// proprio non servirebbe a niente qui: non dice quale pezzo di società la legge tratta uguale.
+function RigaGruppo({ altri }: { altri: Personaggio[] }) {
+  const [aperto, setAperto] = useState(false);
+  const categorie = altri.map((a) => a.categoria);
+  const taglia = categorie.length > CATEGORIE_VISIBILI + 1 && !aperto;
+  const testo = taglia
+    ? `${categorie.slice(0, CATEGORIE_VISIBILI).join(', ')} e altre ${categorie.length - CATEGORIE_VISIBILI} persone`
+    : elenco(categorie);
+  return (
+    <p className="testo-piccolo" style={{ margin: '6px 0 0' }}>
+      Stesso effetto anche per {testo}.{' '}
+      {categorie.length > CATEGORIE_VISIBILI + 1 && (
+        <button onClick={() => setAperto(!aperto)} aria-expanded={aperto} className="testo-piccolo"
+          style={stileBottoneTesto}>
+          {aperto ? 'Mostra meno' : 'Chi sono?'}
+        </button>
+      )}
+    </p>
+  );
+}
+
 export function Empatia({ profilo, legge, onCreaIpotetico, onIndietro }: {
   profilo?: Profilo; legge: Legge; onCreaIpotetico: () => void; onIndietro: () => void;
 }) {
   // a chi fa la simulazione mostriamo solo gli ALTRI casi: profili a cui questa legge cambia
   // qualcosa (niente schede vuote) e in modo diverso da come cambia a lui (niente doppioni).
+  // Poi una scheda per report: chi ha lo stesso report di un altro non ne apre una seconda.
   const miaFirma = profilo ? firmaEffetti(simula(profilo, legge)) : null;
-  const rilevanti = PERSONAGGI
+  const rilevanti = raggruppaPerFirma(PERSONAGGI
     .map((p) => ({ p, r: simula(p.profilo, legge) }))
-    .filter((x) => x.r.effetti.length > 0 && (miaFirma === null || firmaEffetti(x.r) !== miaFirma));
+    .filter((x) => x.r.effetti.length > 0 && (miaFirma === null || firmaEffetti(x.r) !== miaFirma)));
   const [aperto, setAperto] = useState<string | null>(null);
 
   return (
@@ -99,7 +155,7 @@ export function Empatia({ profilo, legge, onCreaIpotetico, onIndietro }: {
               : 'Persone a cui questa legge cambia le cose in modo diverso da te. Tocca un profilo per vedere il suo report.'}
           </p>
           <ul className="lista-profili">
-            {rilevanti.map(({ p, r }) => {
+            {rilevanti.map(({ p, r, altri }) => {
               const espanso = aperto === p.id;
               return (
                 <li key={p.id} className="card">
@@ -112,6 +168,7 @@ export function Empatia({ profilo, legge, onCreaIpotetico, onIndietro }: {
                     </span>
                     <span className="profilo-freccia" aria-hidden="true"><Icona nome="freccia" dimensione={18} /></span>
                   </button>
+                  {altri.length > 0 && <RigaGruppo altri={altri} />}
                   {espanso && <DettaglioPersona r={r} legge={legge} />}
                 </li>
               );
