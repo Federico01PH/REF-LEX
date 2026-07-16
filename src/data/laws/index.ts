@@ -19,10 +19,11 @@ import { dlMigrazioneAsilo } from './dl-migrazione-asilo-2026';
 import { ddlAntisemitismo } from './ddl-antisemitismo';
 import { pianoCasa } from './piano-casa';
 import { caccia } from './caccia';
+import { trasparenzaProgrammi } from './trasparenza-programmi-elettorali';
 
 export const CATALOGO: Legge[] = [
   cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione,
   caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea, aiAct, decretoSicurezza,
   codiceStrada, iusItaliae, decretoLavoro, leggeElettorale, premierato, remigrazione,
-  dlMigrazioneAsilo, ddlAntisemitismo, pianoCasa, caccia
+  dlMigrazioneAsilo, ddlAntisemitismo, pianoCasa, caccia, trasparenzaProgrammi
 ];
