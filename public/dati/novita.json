@@ -1,6 +1,22 @@
 {
-  "generatoIl": "2026-07-15",
+  "generatoIl": "2026-07-16",
   "voci": [
+    {
+      "id": "gazzetta-26G00143",
+      "titolo": "LEGGE 8 luglio 2026, n.125: Modifica della legge 22 novembre 1988, n",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-15",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/15/26G00143/SG"
+    },
+    {
+      "id": "gazzetta-26A03500",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 2 luglio 2026: Concessione della Bandiera di guerra al Reparto supporto tecnico",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-15",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/15/26A03500/SG"
+    },
     {
       "id": "senato-60290",
       "titolo": "Modifiche all'articolo 270 del codice di procedura penale in materia di utilizzo delle intercettazioni in altri procedimenti",
@@ -35,7 +51,7 @@
     },
     {
       "id": "senato-60286",
-      "titolo": "Modifiche all'articolo 4-bis della legge 26 luglio 1975, n. 354 e al decreto-legge 13 maggio 1991, n. 152, in materia di inasprimento dei criteri per la concessione di benefici penitenziari ai condannati non collaboranti per delitti di criminalità organizzata e di prescrizioni territoriali di prevenzione connesse alla concessione dei benefici penitenziari",
+      "titolo": "Modifiche all'articolo 4-bis della legge 26 luglio 1975, n. 354, e al decreto-legge 13 maggio 1991, n. 152, in materia di inasprimento dei criteri per la concessione di benefici penitenziari ai condannati non collaboranti per delitti di criminalità organizzata e di prescrizioni territoriali di prevenzione connesse alla concessione dei benefici penitenziari",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-07-14",
@@ -50,12 +66,52 @@
       "url": "https://dati.senato.it/ddl/60287"
     },
     {
+      "id": "senato-60293",
+      "titolo": "Disposizioni per il riconoscimento automatico delle prestazioni assistenziali di invalidità civile e disabilità in favore delle persone affette da mesotelioma maligno",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-13",
+      "url": "https://dati.senato.it/ddl/60293"
+    },
+    {
       "id": "senato-60291",
       "titolo": "Modifica all'articolo 114 della Costituzione, concernente il riconoscimento dell'area metropolitana di Milano quale ente territoriale autonomo",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-07-13",
       "url": "https://dati.senato.it/ddl/60291"
+    },
+    {
+      "id": "senato-60294",
+      "titolo": "Modifiche all'articolo 1129 del codice civile, concernenti l'obbligo di assicurazione per l'assunzione dell'incarico di amministratore di condominio, e introduzione del capo V-bis del titolo XVII del codice delle assicurazioni private, di cui al decreto legislativo 7 settembre 2005, n. 209, in materia di istituzione di un fondo di garanzia per l'indennizzo dei danni cagionati nell'esercizio dell'attività di amministrazione condominiale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-13",
+      "url": "https://dati.senato.it/ddl/60294"
+    },
+    {
+      "id": "senato-60296",
+      "titolo": "Disposizioni in materia di rimpatrio per i cittadini di Stati non appartenenti all'Unione europea condannati in Italia e modifiche alla legge 5 febbraio 1992, n. 91 in materia di revoca della cittadinanza",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-13",
+      "url": "https://dati.senato.it/ddl/60296"
+    },
+    {
+      "id": "senato-60295",
+      "titolo": "Istituzione dell'ente territoriale Milano Metropolitana, soppressione della Città metropolitana di Milano e del Comune di Milano, istituzione dei Comuni cittadini e riassetto delle funzioni nell'area metropolitana milanese, e delega al Governo per la loro attuazione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-13",
+      "url": "https://dati.senato.it/ddl/60295"
+    },
+    {
+      "id": "senato-60292",
+      "titolo": "Disposizioni concernenti il divieto di fruizione dei servizi di reti sociali telematiche da parte dei minori di quindici anni e l'obbligo di verifica dell'età degli utenti, nonché modifica all'articolo 2-quinquies del codice di cui al decreto legislativo 30 giugno 2003, n. 196, in materia di consenso del minore al trattamento dei propri dati personali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-10",
+      "url": "https://dati.senato.it/ddl/60292"
     },
     {
       "id": "senato-60275",
@@ -80,46 +136,6 @@
       "stato": "discussione",
       "data": "2026-07-09",
       "url": "https://dati.senato.it/ddl/60280"
-    },
-    {
-      "id": "senato-60283",
-      "titolo": "Disposizioni per il rafforzamento dell'autonomia amministrativa del comune e della città metropolitana di Milano",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-09",
-      "url": "https://dati.senato.it/ddl/60283"
-    },
-    {
-      "id": "senato-60284",
-      "titolo": "Disposizioni concernenti la promozione della comunità educante per l'organizzazione di attività extrascolastiche e di partecipazione civica rivolte ai giovani",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-09",
-      "url": "https://dati.senato.it/ddl/60284"
-    },
-    {
-      "id": "senato-60281",
-      "titolo": "Disposizioni concernenti il rimpatrio dei cittadini di Stati non appartenenti all'Unione europea condannati in Italia e modifiche alla legge 5 febbraio 1992, n. 91, in materia di revoca della cittadinanza",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-09",
-      "url": "https://dati.senato.it/ddl/60281"
-    },
-    {
-      "id": "senato-60279",
-      "titolo": "Modifiche al codice del consumo, di cui al decreto legislativo 6 settembre 2005, n. 206, e altre disposizioni per la tutela dei consumatori dalle variazioni contrattuali unilaterali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-08",
-      "url": "https://dati.senato.it/ddl/60279"
-    },
-    {
-      "id": "senato-60278",
-      "titolo": "Disposizioni di attuazione dell'articolo 2-septies, paragrafo 1, del regolamento (UE) n. 833/2014 del Consiglio, del 31 luglio 2014, concernente il regime sanzionatorio per il contrasto della diffusione dei contenuti della propaganda russa di guerra e l'individuazione delle autorità competenti per la sua applicazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-08",
-      "url": "https://dati.senato.it/ddl/60278"
     }
   ]
 }
