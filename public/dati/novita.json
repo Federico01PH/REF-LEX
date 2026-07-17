@@ -1,21 +1,61 @@
 {
-  "generatoIl": "2026-07-16",
+  "generatoIl": "2026-07-17",
   "voci": [
     {
-      "id": "gazzetta-26G00143",
-      "titolo": "LEGGE 8 luglio 2026, n.125: Modifica della legge 22 novembre 1988, n",
+      "id": "gazzetta-26A03461",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 23 aprile 2026: Conferimento della decorazione della «Stella al merito del lavoro» ai",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-07-15",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/15/26G00143/SG"
+      "data": "2026-07-16",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/16/26A03461/SG"
     },
     {
-      "id": "gazzetta-26A03500",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 2 luglio 2026: Concessione della Bandiera di guerra al Reparto supporto tecnico",
-      "tipo": "gazzetta",
-      "stato": "approvata",
+      "id": "senato-60305",
+      "titolo": "Disposizioni in materia di raccolta periodica dei dati relativi ai vincitori delle procedure di valutazione di cui alla legge 30 dicembre 2010, n. 240",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-16",
+      "url": "https://dati.senato.it/ddl/60305"
+    },
+    {
+      "id": "senato-60301",
+      "titolo": "Disposizioni per il riconoscimento del diritto alla cittadinanza economica e per il rafforzamento dell'accesso ai servizi bancari essenziali",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-07-15",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/15/26A03500/SG"
+      "url": "https://dati.senato.it/ddl/60301"
+    },
+    {
+      "id": "senato-60304",
+      "titolo": "Disposizioni in materia di attività di toelettatura degli animali di affezione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-15",
+      "url": "https://dati.senato.it/ddl/60304"
+    },
+    {
+      "id": "senato-60303",
+      "titolo": "Disposizioni in materia di affrancazione dei livelli e delle enfiteusi e di semplificazione della circolazione dei beni immobili gravati da diritti reali di godimento perpetui",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-15",
+      "url": "https://dati.senato.it/ddl/60303"
+    },
+    {
+      "id": "senato-60302",
+      "titolo": "Misure per la promozione della finanza etica",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-15",
+      "url": "https://dati.senato.it/ddl/60302"
+    },
+    {
+      "id": "senato-60299",
+      "titolo": "Disposizioni di riforma del trattamento fiscale e del regime previdenziale dei lavoratori autonomi",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-14",
+      "url": "https://dati.senato.it/ddl/60299"
     },
     {
       "id": "senato-60290",
@@ -32,6 +72,14 @@
       "stato": "discussione",
       "data": "2026-07-14",
       "url": "https://dati.senato.it/ddl/60288"
+    },
+    {
+      "id": "senato-60298",
+      "titolo": "Disposizioni concernenti la riserva di quote generazionali in favore di giovani nella composizione degli organi di amministrazione e controllo delle società a partecipazione pubblica",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-14",
+      "url": "https://dati.senato.it/ddl/60298"
     },
     {
       "id": "senato-60289",
@@ -66,76 +114,20 @@
       "url": "https://dati.senato.it/ddl/60287"
     },
     {
+      "id": "senato-60300",
+      "titolo": "Dichiarazione di monumento nazionale della miniera di Montecatini Val di Cecina e disposizioni per il riconoscimento dei siti minerari di interesse storico e identitario",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-14",
+      "url": "https://dati.senato.it/ddl/60300"
+    },
+    {
       "id": "senato-60293",
       "titolo": "Disposizioni per il riconoscimento automatico delle prestazioni assistenziali di invalidità civile e disabilità in favore delle persone affette da mesotelioma maligno",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-07-13",
       "url": "https://dati.senato.it/ddl/60293"
-    },
-    {
-      "id": "senato-60291",
-      "titolo": "Modifica all'articolo 114 della Costituzione, concernente il riconoscimento dell'area metropolitana di Milano quale ente territoriale autonomo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-13",
-      "url": "https://dati.senato.it/ddl/60291"
-    },
-    {
-      "id": "senato-60294",
-      "titolo": "Modifiche all'articolo 1129 del codice civile, concernenti l'obbligo di assicurazione per l'assunzione dell'incarico di amministratore di condominio, e introduzione del capo V-bis del titolo XVII del codice delle assicurazioni private, di cui al decreto legislativo 7 settembre 2005, n. 209, in materia di istituzione di un fondo di garanzia per l'indennizzo dei danni cagionati nell'esercizio dell'attività di amministrazione condominiale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-13",
-      "url": "https://dati.senato.it/ddl/60294"
-    },
-    {
-      "id": "senato-60296",
-      "titolo": "Disposizioni in materia di rimpatrio per i cittadini di Stati non appartenenti all'Unione europea condannati in Italia e modifiche alla legge 5 febbraio 1992, n. 91 in materia di revoca della cittadinanza",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-13",
-      "url": "https://dati.senato.it/ddl/60296"
-    },
-    {
-      "id": "senato-60295",
-      "titolo": "Istituzione dell'ente territoriale Milano Metropolitana, soppressione della Città metropolitana di Milano e del Comune di Milano, istituzione dei Comuni cittadini e riassetto delle funzioni nell'area metropolitana milanese, e delega al Governo per la loro attuazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-13",
-      "url": "https://dati.senato.it/ddl/60295"
-    },
-    {
-      "id": "senato-60292",
-      "titolo": "Disposizioni concernenti il divieto di fruizione dei servizi di reti sociali telematiche da parte dei minori di quindici anni e l'obbligo di verifica dell'età degli utenti, nonché modifica all'articolo 2-quinquies del codice di cui al decreto legislativo 30 giugno 2003, n. 196, in materia di consenso del minore al trattamento dei propri dati personali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-10",
-      "url": "https://dati.senato.it/ddl/60292"
-    },
-    {
-      "id": "senato-60275",
-      "titolo": "Disposizioni in materia di giovani e servizio civile universale e deleghe al Governo per il riordino della materia",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-09",
-      "url": "https://dati.senato.it/ddl/60275"
-    },
-    {
-      "id": "senato-60282",
-      "titolo": "Modifiche al testo unico di cui al decreto legislativo 26 marzo 2001, n. 151, e al decreto legislativo 15 giugno 2015, n. 81, in materia di proroga del termine dei contratti di lavoro a tempo determinato in caso di maternità",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-09",
-      "url": "https://dati.senato.it/ddl/60282"
-    },
-    {
-      "id": "senato-60280",
-      "titolo": "Modifiche all'articolo 26 del testo unico delle disposizioni legislative in materia di tutela e sostegno della maternità e della paternità, di cui al decreto legislativo 26 marzo 2001, n. 151, concernenti il congedo di maternità per le lavoratrici nei casi di adozione, affidamento familiare o preadottivo e collocamento temporaneo di minori",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-09",
-      "url": "https://dati.senato.it/ddl/60280"
     }
   ]
 }
