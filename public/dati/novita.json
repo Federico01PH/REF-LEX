@@ -1,6 +1,14 @@
 {
-  "generatoIl": "2026-07-20",
+  "generatoIl": "2026-07-21",
   "voci": [
+    {
+      "id": "gazzetta-26A03604",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 23 giugno 2026: Conferma del Prefetto dott",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-20",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/20/26A03604/SG"
+    },
     {
       "id": "senato-60317",
       "titolo": "Disposizioni in materia di elezioni della Camera dei deputati e del Senato della Repubblica",
@@ -8,6 +16,30 @@
       "stato": "discussione",
       "data": "2026-07-17",
       "url": "https://dati.senato.it/ddl/60317"
+    },
+    {
+      "id": "senato-60318",
+      "titolo": "Disposizioni concernenti l'impiego di materiali ambientalmente sostenibili e aventi proprietà di riduzione degli inquinanti atmosferici per la costruzione e la ristrutturazione degli edifici pubblici statali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-16",
+      "url": "https://dati.senato.it/ddl/60318"
+    },
+    {
+      "id": "senato-60319",
+      "titolo": "Modifiche alla legge 13 luglio 1967, n. 584, in materia di benefìci fiscali sostitutivi in favore dei donatori di sangue titolari di redditi di lavoro autonomo che non fruiscono delle agevolazioni previste dalla medesima legge",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-16",
+      "url": "https://dati.senato.it/ddl/60319"
+    },
+    {
+      "id": "senato-60320",
+      "titolo": "Abrogazione del comma 3 dell'articolo 8 della legge 23 marzo 2001, n. 93, concernente l'istituzione del Parco nazionale \"Costa dei Trabocchi e Teatina\"",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-16",
+      "url": "https://dati.senato.it/ddl/60320"
     },
     {
       "id": "senato-60305",
@@ -96,30 +128,6 @@
       "stato": "discussione",
       "data": "2026-07-15",
       "url": "https://dati.senato.it/ddl/60312"
-    },
-    {
-      "id": "senato-60301",
-      "titolo": "Disposizioni per il riconoscimento del diritto alla cittadinanza economica e per il rafforzamento dell'accesso ai servizi bancari essenziali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60301"
-    },
-    {
-      "id": "senato-60304",
-      "titolo": "Disposizioni in materia di attività di toelettatura degli animali di affezione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60304"
-    },
-    {
-      "id": "senato-60303",
-      "titolo": "Disposizioni in materia di affrancazione dei livelli e delle enfiteusi e di semplificazione della circolazione dei beni immobili gravati da diritti reali di godimento perpetui",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60303"
     }
   ]
 }
