@@ -1,13 +1,29 @@
 {
-  "generatoIl": "2026-07-21",
+  "generatoIl": "2026-07-22",
   "voci": [
     {
-      "id": "gazzetta-26A03604",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 23 giugno 2026: Conferma del Prefetto dott",
-      "tipo": "gazzetta",
-      "stato": "approvata",
+      "id": "senato-60323",
+      "titolo": "Disposizioni per il rilancio del sistema sportivo italiano",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-07-20",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/20/26A03604/SG"
+      "url": "https://dati.senato.it/ddl/60323"
+    },
+    {
+      "id": "senato-60322",
+      "titolo": "Modifiche al codice penale in materia di legittima difesa",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-20",
+      "url": "https://dati.senato.it/ddl/60322"
+    },
+    {
+      "id": "senato-60321",
+      "titolo": "Istituzione di un fondo per l'indennizzo delle vittime dei fatti accaduti presso la comunità \"Il Forteto\"",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-17",
+      "url": "https://dati.senato.it/ddl/60321"
     },
     {
       "id": "senato-60317",
@@ -104,30 +120,6 @@
       "stato": "discussione",
       "data": "2026-07-15",
       "url": "https://dati.senato.it/ddl/60309"
-    },
-    {
-      "id": "senato-60310",
-      "titolo": "Modifiche agli articoli 81 del codice penale, in materia di concorso formale di reati e di reato continuato, e 438 del codice di procedura penale, in materia di giudizio abbreviato nei procedimenti per delitti di criminalità organizzata",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60310"
-    },
-    {
-      "id": "senato-60311",
-      "titolo": "Istituzione dell'Anagrafe informatica centralizzata dei detenuti soggetti a regime di alta sicurezza assegnati al lavoro all'esterno o beneficiari di permesso premio o di misure alternative alla detenzione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60311"
-    },
-    {
-      "id": "senato-60312",
-      "titolo": "Disposizioni per la stabilizzazione della sede di servizio del personale militare delle Forze armate che abbia ricoperto incarichi elettivi negli enti locali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60312"
     }
   ]
 }
