@@ -1,6 +1,14 @@
 {
-  "generatoIl": "2026-07-22",
+  "generatoIl": "2026-07-23",
   "voci": [
+    {
+      "id": "senato-60327",
+      "titolo": "Misure per il riordino delle specializzazioni, in rete \"università, IRCCS, strutture ospedaliere e territoriali di formazione\", in linea con il PNRR Missione 6 e il principio di Salute Unica",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-22",
+      "url": "https://dati.senato.it/ddl/60327"
+    },
     {
       "id": "senato-60323",
       "titolo": "Disposizioni per il rilancio del sistema sportivo italiano",
@@ -8,6 +16,30 @@
       "stato": "discussione",
       "data": "2026-07-20",
       "url": "https://dati.senato.it/ddl/60323"
+    },
+    {
+      "id": "senato-60325",
+      "titolo": "Abrogazione dell'articolo 70 del codice della strada, di cui al decreto legislativo 30 aprile 1992, n. 285, e altre disposizioni concernenti il divieto dell'utilizzazione di animali per la trazione di veicoli per il servizio di piazza, il trasporto pubblico non di linea nonché per fini turistici, ricreativi e di rappresentanza",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-20",
+      "url": "https://dati.senato.it/ddl/60325"
+    },
+    {
+      "id": "senato-60326",
+      "titolo": "Modifiche all'articolo 335-quinquies del codice di procedura penale, in materia di attività di indagine e archiviazione accelerata in presenza di cause di giustificazione, e all'articolo 53 del codice penale, in materia di uso legittimo delle armi e di altri mezzi di coazione fisica",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-20",
+      "url": "https://dati.senato.it/ddl/60326"
+    },
+    {
+      "id": "senato-60324",
+      "titolo": "Modifiche agli articoli 52 e 55 del codice penale, in materia di legittima difesa, eccesso colposo della medesima ed esclusione della responsabilità civile e patrimoniale, nonché all'articolo 47-ter della legge 26 luglio 1975, n. 354, in materia di applicabilità della detenzione domiciliare ai condannati ultrasettantenni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-20",
+      "url": "https://dati.senato.it/ddl/60324"
     },
     {
       "id": "senato-60322",
@@ -88,38 +120,6 @@
       "stato": "discussione",
       "data": "2026-07-15",
       "url": "https://dati.senato.it/ddl/60314"
-    },
-    {
-      "id": "senato-60306",
-      "titolo": "Modifiche alla legge 14 gennaio 2013, n. 10, e altre disposizioni per la tutela e lo sviluppo della vegetazione negli spazi urbani pubblici e privati",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60306"
-    },
-    {
-      "id": "senato-60308",
-      "titolo": "Introduzione dell'articolo 41-ter della legge 26 luglio 1975, n. 354, e altre disposizioni per il rafforzamento della sicurezza negli istituti penitenziari e la prevenzione del ripristino di collegamenti con organizzazioni criminali durante l'esecuzione della pena",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60308"
-    },
-    {
-      "id": "senato-60313",
-      "titolo": "Disposizioni per la stabilizzazione della sede di servizio del personale militare delle Forze armate fruitore dei benefìci di cui alla legge 5 febbraio 1992, n. 104, per l'assistenza a familiari con disabilità grave",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60313"
-    },
-    {
-      "id": "senato-60309",
-      "titolo": "Modifica all'articolo 270 del codice di procedura penale in materia di utilizzo dei risultati delle intercettazioni in altri procedimenti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60309"
     }
   ]
 }
