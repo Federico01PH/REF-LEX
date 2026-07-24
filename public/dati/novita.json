@@ -1,6 +1,62 @@
 {
-  "generatoIl": "2026-07-23",
+  "generatoIl": "2026-07-24",
   "voci": [
+    {
+      "id": "gazzetta-26G00151",
+      "titolo": "DECRETO-LEGGE 23 luglio 2026, n.127: Misure urgenti e indifferibili per lo svolgimento dei procedimenti",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-23",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/23/26G00151/SG"
+    },
+    {
+      "id": "gazzetta-26G00145",
+      "titolo": "DECRETO LEGISLATIVO 25 giugno 2026, n.128: Attuazione della delega di cui all'articolo 19-bis della legge 5",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-23",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/23/26G00145/SG"
+    },
+    {
+      "id": "senato-60330",
+      "titolo": "Norme in materia di usi e disposizioni per la raccolta, redazione e aggiornamento degli usi generali e locali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-23",
+      "url": "https://dati.senato.it/ddl/60330"
+    },
+    {
+      "id": "senato-60335",
+      "titolo": "Disposizioni per la protezione dai rischi derivanti dall'uso dei social media, per la prevenzione della dipendenza digitale e algoritmica, della manipolazione selettiva e per la diffusione della consapevolezza digitale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-23",
+      "url": "https://dati.senato.it/ddl/60335"
+    },
+    {
+      "id": "senato-60333",
+      "titolo": "Disposizioni in materia di accesso ai corsi di laurea magistrale a ciclo unico in Medicina e Chirurgia, in Odontoiatria e Protesi Dentaria e Medicina veterinaria presso le Università non statali legalmente riconosciute",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-23",
+      "url": "https://dati.senato.it/ddl/60333"
+    },
+    {
+      "id": "senato-60332",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 26 giugno 2026, n. 108, recante disposizioni urgenti in materia di sport, per lo svolgimento di grandi eventi e l'efficacia del documento di identità",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-23",
+      "url": "https://dati.senato.it/ddl/60332"
+    },
+    {
+      "id": "senato-60334",
+      "titolo": "Disposizioni in materia di riforma del calcio italiano e delega al Governo per il riordino normativo di settore",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-23",
+      "url": "https://dati.senato.it/ddl/60334"
+    },
     {
       "id": "senato-60327",
       "titolo": "Misure per il riordino delle specializzazioni, in rete \"università, IRCCS, strutture ospedaliere e territoriali di formazione\", in linea con il PNRR Missione 6 e il principio di Salute Unica",
@@ -8,6 +64,30 @@
       "stato": "discussione",
       "data": "2026-07-22",
       "url": "https://dati.senato.it/ddl/60327"
+    },
+    {
+      "id": "senato-60329",
+      "titolo": "Disposizioni per la prevenzione, la cura e l'inclusione delle persone in condizioni di disagio mentale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-22",
+      "url": "https://dati.senato.it/ddl/60329"
+    },
+    {
+      "id": "senato-60328",
+      "titolo": "Modifiche al decreto legislativo 21 aprile 2011, n. 67, ai fini dell'introduzione del personale marittimo imbarcato a bordo tra le categorie usuranti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-22",
+      "url": "https://dati.senato.it/ddl/60328"
+    },
+    {
+      "id": "senato-60331",
+      "titolo": "Ratifica ed esecuzione dell'Accordo concernente l'interpretazione e l'applicazione del Trattato sulla Carta dell'energia, fatto a Bruxelles il 18 febbraio 2026",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-21",
+      "url": "https://dati.senato.it/ddl/60331"
     },
     {
       "id": "senato-60323",
@@ -56,70 +136,6 @@
       "stato": "discussione",
       "data": "2026-07-17",
       "url": "https://dati.senato.it/ddl/60321"
-    },
-    {
-      "id": "senato-60317",
-      "titolo": "Disposizioni in materia di elezioni della Camera dei deputati e del Senato della Repubblica",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-17",
-      "url": "https://dati.senato.it/ddl/60317"
-    },
-    {
-      "id": "senato-60318",
-      "titolo": "Disposizioni concernenti l'impiego di materiali ambientalmente sostenibili e aventi proprietà di riduzione degli inquinanti atmosferici per la costruzione e la ristrutturazione degli edifici pubblici statali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-16",
-      "url": "https://dati.senato.it/ddl/60318"
-    },
-    {
-      "id": "senato-60319",
-      "titolo": "Modifiche alla legge 13 luglio 1967, n. 584, in materia di benefìci fiscali sostitutivi in favore dei donatori di sangue titolari di redditi di lavoro autonomo che non fruiscono delle agevolazioni previste dalla medesima legge",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-16",
-      "url": "https://dati.senato.it/ddl/60319"
-    },
-    {
-      "id": "senato-60320",
-      "titolo": "Abrogazione del comma 3 dell'articolo 8 della legge 23 marzo 2001, n. 93, concernente l'istituzione del Parco nazionale \"Costa dei Trabocchi e Teatina\"",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-16",
-      "url": "https://dati.senato.it/ddl/60320"
-    },
-    {
-      "id": "senato-60305",
-      "titolo": "Disposizioni in materia di raccolta periodica dei dati relativi ai vincitori delle procedure di valutazione di cui alla legge 30 dicembre 2010, n. 240",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-16",
-      "url": "https://dati.senato.it/ddl/60305"
-    },
-    {
-      "id": "senato-60315",
-      "titolo": "Modifiche all'articolo 132 del codice in materia di protezione dei dati personali, di cui al decreto legislativo 30 giugno 2003, n. 196, concernenti l'acquisizione di dati relativi al traffico telefonico e telematico per esigenze di tutela della vita e dell'integrità fisica del soggetto interessato, nonché istituzione della Giornata nazionale dedicata alle persone scomparse",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60315"
-    },
-    {
-      "id": "senato-60307",
-      "titolo": "Modifiche all'articolo 4-bis della legge 26 luglio 1975, n. 354, e all'articolo 2 del decreto-legge 13 maggio 1991, n. 152, convertito, con modificazioni, dalla legge 12 luglio 1991, n. 203, in materia di limiti alla concessione e misure di controllo e prevenzione nell'applicazione di benefìci penitenziari ai condannati per delitti di criminalità organizzata non collaboranti con la giustizia",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60307"
-    },
-    {
-      "id": "senato-60314",
-      "titolo": "Istituzione del Piano nazionale per la climatizzazione, la ventilazione e la sostenibilità energetica degli edifici scolastici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-15",
-      "url": "https://dati.senato.it/ddl/60314"
     }
   ]
 }
