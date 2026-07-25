@@ -1,21 +1,29 @@
 {
-  "generatoIl": "2026-07-24",
+  "generatoIl": "2026-07-25",
   "voci": [
     {
-      "id": "gazzetta-26G00151",
-      "titolo": "DECRETO-LEGGE 23 luglio 2026, n.127: Misure urgenti e indifferibili per lo svolgimento dei procedimenti",
+      "id": "gazzetta-26G00146",
+      "titolo": "LEGGE 16 luglio 2026, n.129: Revisione delle modalita' di accesso, valutazione e reclutamento del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-07-23",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/23/26G00151/SG"
+      "data": "2026-07-24",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/24/26G00146/SG"
     },
     {
-      "id": "gazzetta-26G00145",
-      "titolo": "DECRETO LEGISLATIVO 25 giugno 2026, n.128: Attuazione della delega di cui all'articolo 19-bis della legge 5",
+      "id": "gazzetta-26A03683",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 6 luglio 2026: Scioglimento del consiglio comunale di San Severo e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-07-23",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/23/26G00145/SG"
+      "data": "2026-07-24",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/24/26A03683/SG"
+    },
+    {
+      "id": "gazzetta-26A03684",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 6 luglio 2026: Scioglimento del consiglio comunale di Santa Marina e nomina del",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-24",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/24/26A03684/SG"
     },
     {
       "id": "senato-60330",
@@ -58,8 +66,24 @@
       "url": "https://dati.senato.it/ddl/60334"
     },
     {
+      "id": "senato-60342",
+      "titolo": "Proroga del termine per l'esercizio della delega prevista dall'articolo 35 della legge 25 novembre 2024, n. 177",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-23",
+      "url": "https://dati.senato.it/ddl/60342"
+    },
+    {
+      "id": "senato-60341",
+      "titolo": "Conversione in legge del decreto-legge 23 luglio 2026, n. 127, recante misure urgenti e indifferibili per lo svolgimento dei procedimenti civili e penali a seguito del crollo dell'immobile degli uffici giudiziari di Bolzano",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-23",
+      "url": "https://dati.senato.it/ddl/60341"
+    },
+    {
       "id": "senato-60327",
-      "titolo": "Misure per il riordino delle specializzazioni, in rete \"università, IRCCS, strutture ospedaliere e territoriali di formazione\", in linea con il PNRR Missione 6 e il principio di Salute Unica",
+      "titolo": "Misure per il riordino delle specializzazioni, in rete «università, IRCCS, strutture ospedaliere e territoriali di formazione», in linea con il Piano nazionale di ripresa e resilienza Missione 6 «Salute» e il principio di Salute Unica",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-07-22",
@@ -82,60 +106,44 @@
       "url": "https://dati.senato.it/ddl/60328"
     },
     {
+      "id": "senato-60338",
+      "titolo": "Disposizioni per la semplificazione e il potenziamento della filiera nazionale di gestione dei moduli fotovoltaici dismessi e per lo sviluppo del riciclo avanzato delle materie prime critiche",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-22",
+      "url": "https://dati.senato.it/ddl/60338"
+    },
+    {
+      "id": "senato-60336",
+      "titolo": "Disposizioni concernenti la prescrizione di misure organizzative per prevenire e ridurre il rischio di disordini e di danneggiamenti in occasione di manifestazioni pubbliche nonché la prestazione di garanzie per il risarcimento dei danni eventualmente arrecati",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-22",
+      "url": "https://dati.senato.it/ddl/60336"
+    },
+    {
+      "id": "senato-60337",
+      "titolo": "Disposizioni per la realizzazione e la riqualificazione dei parchi pubblici secondo criteri di accessibilità universale, inclusione sociale, adattamento ai cambiamenti climatici e tutela della salute",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-22",
+      "url": "https://dati.senato.it/ddl/60337"
+    },
+    {
+      "id": "senato-60339",
+      "titolo": "Modifica all'articolo 79 del testo unico delle disposizioni legislative e regolamentari in materia di spese di giustizia, di cui al decreto del Presidente della Repubblica 30 maggio 2002, n. 115, in materia di comunicazione delle variazioni di reddito rilevanti ai fini dell'ammissione al patrocinio a spese dello Stato",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-22",
+      "url": "https://dati.senato.it/ddl/60339"
+    },
+    {
       "id": "senato-60331",
       "titolo": "Ratifica ed esecuzione dell'Accordo concernente l'interpretazione e l'applicazione del Trattato sulla Carta dell'energia, fatto a Bruxelles il 18 febbraio 2026",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-07-21",
       "url": "https://dati.senato.it/ddl/60331"
-    },
-    {
-      "id": "senato-60323",
-      "titolo": "Disposizioni per il rilancio del sistema sportivo italiano",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-20",
-      "url": "https://dati.senato.it/ddl/60323"
-    },
-    {
-      "id": "senato-60325",
-      "titolo": "Abrogazione dell'articolo 70 del codice della strada, di cui al decreto legislativo 30 aprile 1992, n. 285, e altre disposizioni concernenti il divieto dell'utilizzazione di animali per la trazione di veicoli per il servizio di piazza, il trasporto pubblico non di linea nonché per fini turistici, ricreativi e di rappresentanza",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-20",
-      "url": "https://dati.senato.it/ddl/60325"
-    },
-    {
-      "id": "senato-60326",
-      "titolo": "Modifiche all'articolo 335-quinquies del codice di procedura penale, in materia di attività di indagine e archiviazione accelerata in presenza di cause di giustificazione, e all'articolo 53 del codice penale, in materia di uso legittimo delle armi e di altri mezzi di coazione fisica",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-20",
-      "url": "https://dati.senato.it/ddl/60326"
-    },
-    {
-      "id": "senato-60324",
-      "titolo": "Modifiche agli articoli 52 e 55 del codice penale, in materia di legittima difesa, eccesso colposo della medesima ed esclusione della responsabilità civile e patrimoniale, nonché all'articolo 47-ter della legge 26 luglio 1975, n. 354, in materia di applicabilità della detenzione domiciliare ai condannati ultrasettantenni",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-20",
-      "url": "https://dati.senato.it/ddl/60324"
-    },
-    {
-      "id": "senato-60322",
-      "titolo": "Modifiche al codice penale in materia di legittima difesa",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-20",
-      "url": "https://dati.senato.it/ddl/60322"
-    },
-    {
-      "id": "senato-60321",
-      "titolo": "Istituzione di un fondo per l'indennizzo delle vittime dei fatti accaduti presso la comunità \"Il Forteto\"",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-17",
-      "url": "https://dati.senato.it/ddl/60321"
     }
   ]
 }
