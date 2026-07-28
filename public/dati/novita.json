@@ -1,13 +1,29 @@
 {
-  "generatoIl": "2026-07-27",
+  "generatoIl": "2026-07-28",
   "voci": [
     {
-      "id": "gazzetta-26G00147",
-      "titolo": "LEGGE 17 luglio 2026, n.131: Misure per la protezione e l'assistenza dei minorenni e degli adulti",
+      "id": "gazzetta-26G00148",
+      "titolo": "LEGGE 16 luglio 2026, n.132: Istituzione della Giornata nazionale in memoria di 446 italiani",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-07-25",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/25/26G00147/SG"
+      "data": "2026-07-27",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/27/26G00148/SG"
+    },
+    {
+      "id": "gazzetta-26G00155",
+      "titolo": "DECRETO-LEGGE 27 luglio 2026, n.133: Disposizioni urgenti in materia di prezzi petroliferi connessi alla",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-27",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/27/26G00155/SG"
+    },
+    {
+      "id": "gazzetta-26A03698",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 12 giugno 2026: Nomina della commissione straordinaria per la provvisoria gestione",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-27",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/27/26A03698/SG"
     },
     {
       "id": "senato-60330",
