@@ -1,29 +1,21 @@
 {
-  "generatoIl": "2026-07-28",
+  "generatoIl": "2026-07-29",
   "voci": [
     {
-      "id": "gazzetta-26G00148",
-      "titolo": "LEGGE 16 luglio 2026, n.132: Istituzione della Giornata nazionale in memoria di 446 italiani",
+      "id": "gazzetta-26G00150",
+      "titolo": "LEGGE 16 luglio 2026, n.134: Disposizioni in materia di insequestrabilita' delle opere d'arte",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-07-27",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/27/26G00148/SG"
+      "data": "2026-07-28",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/28/26G00150/SG"
     },
     {
-      "id": "gazzetta-26G00155",
-      "titolo": "DECRETO-LEGGE 27 luglio 2026, n.133: Disposizioni urgenti in materia di prezzi petroliferi connessi alla",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-07-27",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/27/26G00155/SG"
-    },
-    {
-      "id": "gazzetta-26A03698",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 12 giugno 2026: Nomina della commissione straordinaria per la provvisoria gestione",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-07-27",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/27/26A03698/SG"
+      "id": "senato-60343",
+      "titolo": "Introduzione di percorsi didattici di educazione al mare presso le scuole del primo e del secondo ciclo di istruzione situate nei comuni costieri e istituzione della patente del mare per studenti delle scuole secondarie di primo e di secondo grado",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-24",
+      "url": "https://dati.senato.it/ddl/60343"
     },
     {
       "id": "senato-60330",
@@ -136,14 +128,6 @@
       "stato": "discussione",
       "data": "2026-07-22",
       "url": "https://dati.senato.it/ddl/60339"
-    },
-    {
-      "id": "senato-60331",
-      "titolo": "Ratifica ed esecuzione dell'Accordo concernente l'interpretazione e l'applicazione del Trattato sulla Carta dell'energia, fatto a Bruxelles il 18 febbraio 2026",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-21",
-      "url": "https://dati.senato.it/ddl/60331"
     }
   ]
 }
