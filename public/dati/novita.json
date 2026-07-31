@@ -1,133 +1,125 @@
 {
-  "generatoIl": "2026-07-30",
+  "generatoIl": "2026-07-31",
   "voci": [
     {
-      "id": "gazzetta-26G00154",
-      "titolo": "LEGGE 23 luglio 2026, n.135: Delega al Governo per il sostegno delle attivita' educative e",
-      "tipo": "gazzetta",
-      "stato": "approvata",
+      "id": "senato-60355",
+      "titolo": "Conversione in legge del decreto-legge 12 giugno 2026, n. 100, recante misure urgenti in materia di giustizia e per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-30",
+      "url": "https://dati.senato.it/ddl/60355"
+    },
+    {
+      "id": "senato-60362",
+      "titolo": "Disposizioni per la promozione dell'abitare agricolo dignitoso e la prevenzione dello sfruttamento lavorativo nel settore agricolo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-30",
+      "url": "https://dati.senato.it/ddl/60362"
+    },
+    {
+      "id": "senato-60363",
+      "titolo": "Disposizioni per il contenimento del consumo di suolo, la rigenerazione territoriale e la tutela del suolo agricolo e delle aree interne",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-30",
+      "url": "https://dati.senato.it/ddl/60363"
+    },
+    {
+      "id": "senato-60360",
+      "titolo": "Disposizioni in materia di agevolazioni fiscali per le dimore storiche ubicate nelle aree interne e riconoscimento della funzione culturale territoriale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-30",
+      "url": "https://dati.senato.it/ddl/60360"
+    },
+    {
+      "id": "senato-60357",
+      "titolo": "Disposizioni in materia di sicurezza e per la prevenzione del disagio giovanile, nonché di ordinamento, organizzazione e funzionamento delle Forze di polizia e del Ministero dell'interno",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-30",
+      "url": "https://dati.senato.it/ddl/60357"
+    },
+    {
+      "id": "senato-60354",
+      "titolo": "Modifiche al codice penale in materia di vincolo associativo coordinato",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-30",
+      "url": "https://dati.senato.it/ddl/60354"
+    },
+    {
+      "id": "senato-60361",
+      "titolo": "Istituzione della Piattaforma nazionale delle competenze delle persone sottoposte a misura penale e disposizioni in materia di interoperabilità e gestione dei dati",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-30",
+      "url": "https://dati.senato.it/ddl/60361"
+    },
+    {
+      "id": "senato-60356",
+      "titolo": "Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica italiana e il Governo della Repubblica del Senegal sulla cooperazione in materia di sicurezza, fatto a Dakar il 29 ottobre 2025",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-30",
+      "url": "https://dati.senato.it/ddl/60356"
+    },
+    {
+      "id": "senato-60359",
+      "titolo": "Modifiche all'art. 20, comma 13, della legge 26 luglio 1975, n. 354",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-07-29",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/29/26G00154/SG"
+      "url": "https://dati.senato.it/ddl/60359"
     },
     {
-      "id": "senato-60343",
-      "titolo": "Introduzione di percorsi didattici di educazione al mare presso le scuole del primo e del secondo ciclo di istruzione situate nei comuni costieri e istituzione della patente del mare per studenti delle scuole secondarie di primo e di secondo grado",
+      "id": "senato-60352",
+      "titolo": "Modifiche alla legge 4 agosto 2021, n. 116, in materia di formazione obbligatoria di primo soccorso",
       "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-07-24",
-      "url": "https://dati.senato.it/ddl/60343"
+      "data": "2026-07-29",
+      "url": "https://dati.senato.it/ddl/60352"
     },
     {
-      "id": "senato-60330",
-      "titolo": "Norme in materia di usi e disposizioni per la raccolta, redazione e aggiornamento degli usi generali e locali",
+      "id": "senato-60358",
+      "titolo": "Modifiche alla legge 27 dicembre 2006, n. 296",
       "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-07-23",
-      "url": "https://dati.senato.it/ddl/60330"
+      "data": "2026-07-29",
+      "url": "https://dati.senato.it/ddl/60358"
     },
     {
-      "id": "senato-60335",
-      "titolo": "Disposizioni per la protezione dai rischi derivanti dall'uso dei social media, per la prevenzione della dipendenza digitale e algoritmica, della manipolazione selettiva e per la diffusione della consapevolezza digitale",
+      "id": "senato-60353",
+      "titolo": "Istituzione del percorso formativo per i caregiver di cani e disposizioni per la prevenzione e la promozione del possesso responsabile degli animali d'affezione",
       "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-07-23",
-      "url": "https://dati.senato.it/ddl/60335"
+      "data": "2026-07-29",
+      "url": "https://dati.senato.it/ddl/60353"
     },
     {
-      "id": "senato-60333",
-      "titolo": "Disposizioni in materia di accesso ai corsi di laurea magistrale a ciclo unico in Medicina e Chirurgia, in Odontoiatria e Protesi Dentaria e Medicina veterinaria presso le Università non statali legalmente riconosciute",
+      "id": "senato-60351",
+      "titolo": "Disposizioni in materia di attività libero-professionale delle professioni sanitarie",
       "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-07-23",
-      "url": "https://dati.senato.it/ddl/60333"
+      "data": "2026-07-29",
+      "url": "https://dati.senato.it/ddl/60351"
     },
     {
-      "id": "senato-60332",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 26 giugno 2026, n. 108, recante disposizioni urgenti in materia di sport, per lo svolgimento di grandi eventi e l'efficacia del documento di identità",
+      "id": "senato-60349",
+      "titolo": "Istituzione del Fondo di Sviluppo per l'Economia, le Infrastrutture e l'Innovazione",
       "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-07-23",
-      "url": "https://dati.senato.it/ddl/60332"
+      "data": "2026-07-28",
+      "url": "https://dati.senato.it/ddl/60349"
     },
     {
-      "id": "senato-60334",
-      "titolo": "Disposizioni in materia di riforma del calcio italiano e delega al Governo per il riordino normativo di settore",
+      "id": "senato-60350",
+      "titolo": "Modifica all'articolo 948 del codice civile in materia di ripartizione dell'onere della prova nell'azione di rivendicazione",
       "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-07-23",
-      "url": "https://dati.senato.it/ddl/60334"
-    },
-    {
-      "id": "senato-60342",
-      "titolo": "Proroga del termine per l'esercizio della delega prevista dall'articolo 35 della legge 25 novembre 2024, n. 177",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-23",
-      "url": "https://dati.senato.it/ddl/60342"
-    },
-    {
-      "id": "senato-60341",
-      "titolo": "Conversione in legge del decreto-legge 23 luglio 2026, n. 127, recante misure urgenti e indifferibili per lo svolgimento dei procedimenti civili e penali a seguito del crollo dell'immobile degli uffici giudiziari di Bolzano",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-23",
-      "url": "https://dati.senato.it/ddl/60341"
-    },
-    {
-      "id": "senato-60327",
-      "titolo": "Misure per il riordino delle specializzazioni, in rete «università, IRCCS, strutture ospedaliere e territoriali di formazione», in linea con il Piano nazionale di ripresa e resilienza Missione 6 «Salute» e il principio di Salute Unica",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-22",
-      "url": "https://dati.senato.it/ddl/60327"
-    },
-    {
-      "id": "senato-60329",
-      "titolo": "Disposizioni per la prevenzione, la cura e l'inclusione delle persone in condizioni di disagio mentale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-22",
-      "url": "https://dati.senato.it/ddl/60329"
-    },
-    {
-      "id": "senato-60328",
-      "titolo": "Modifiche al decreto legislativo 21 aprile 2011, n. 67, ai fini dell'introduzione del personale marittimo imbarcato a bordo tra le categorie usuranti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-22",
-      "url": "https://dati.senato.it/ddl/60328"
-    },
-    {
-      "id": "senato-60338",
-      "titolo": "Disposizioni per la semplificazione e il potenziamento della filiera nazionale di gestione dei moduli fotovoltaici dismessi e per lo sviluppo del riciclo avanzato delle materie prime critiche",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-22",
-      "url": "https://dati.senato.it/ddl/60338"
-    },
-    {
-      "id": "senato-60336",
-      "titolo": "Disposizioni concernenti la prescrizione di misure organizzative per prevenire e ridurre il rischio di disordini e di danneggiamenti in occasione di manifestazioni pubbliche nonché la prestazione di garanzie per il risarcimento dei danni eventualmente arrecati",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-22",
-      "url": "https://dati.senato.it/ddl/60336"
-    },
-    {
-      "id": "senato-60337",
-      "titolo": "Disposizioni per la realizzazione e la riqualificazione dei parchi pubblici secondo criteri di accessibilità universale, inclusione sociale, adattamento ai cambiamenti climatici e tutela della salute",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-22",
-      "url": "https://dati.senato.it/ddl/60337"
-    },
-    {
-      "id": "senato-60339",
-      "titolo": "Modifica all'articolo 79 del testo unico delle disposizioni legislative e regolamentari in materia di spese di giustizia, di cui al decreto del Presidente della Repubblica 30 maggio 2002, n. 115, in materia di comunicazione delle variazioni di reddito rilevanti ai fini dell'ammissione al patrocinio a spese dello Stato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-22",
-      "url": "https://dati.senato.it/ddl/60339"
+      "data": "2026-07-28",
+      "url": "https://dati.senato.it/ddl/60350"
     }
   ]
 }
