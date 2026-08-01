@@ -1,6 +1,38 @@
 {
-  "generatoIl": "2026-07-31",
+  "generatoIl": "2026-08-01",
   "voci": [
+    {
+      "id": "gazzetta-26G00152",
+      "titolo": "DECRETO LEGISLATIVO 3 luglio 2026, n.136: Attuazione della direttiva (UE) 2024/1788 del Parlamento europeo e",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-07-31",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/07/31/26G00152/SG"
+    },
+    {
+      "id": "camera-1687",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-07-31",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
+    },
+    {
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-07-31",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+    },
+    {
+      "id": "senato-60368",
+      "titolo": "Disposizioni per l'istituzione di spazi adibiti all'allattamento e alla cura dei neonati presso istituti e luoghi della cultura",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-31",
+      "url": "https://dati.senato.it/ddl/60368"
+    },
     {
       "id": "senato-60355",
       "titolo": "Conversione in legge del decreto-legge 12 giugno 2026, n. 100, recante misure urgenti in materia di giustizia e per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
@@ -82,44 +114,36 @@
       "url": "https://dati.senato.it/ddl/60352"
     },
     {
+      "id": "senato-60364",
+      "titolo": "Disposizioni per il rilancio del sistema italiano del calcio",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-29",
+      "url": "https://dati.senato.it/ddl/60364"
+    },
+    {
+      "id": "senato-60367",
+      "titolo": "Disposizioni per la celebrazione del quindicesimo centenario della fondazione dell'abbazia di Montecassino",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-29",
+      "url": "https://dati.senato.it/ddl/60367"
+    },
+    {
+      "id": "senato-60365",
+      "titolo": "Disposizioni concernenti l'introduzione dell'insegnamento dell'educazione motoria nella scuola dell'infanzia e nei primi tre anni dei corsi della scuola primaria, l'istituzione di un fondo nazionale per i gruppi sportivi scolastici e la realizzazione di strutture sportive leggere nelle pertinenze esterne degli edifici scolastici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-07-29",
+      "url": "https://dati.senato.it/ddl/60365"
+    },
+    {
       "id": "senato-60358",
       "titolo": "Modifiche alla legge 27 dicembre 2006, n. 296",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-07-29",
       "url": "https://dati.senato.it/ddl/60358"
-    },
-    {
-      "id": "senato-60353",
-      "titolo": "Istituzione del percorso formativo per i caregiver di cani e disposizioni per la prevenzione e la promozione del possesso responsabile degli animali d'affezione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-29",
-      "url": "https://dati.senato.it/ddl/60353"
-    },
-    {
-      "id": "senato-60351",
-      "titolo": "Disposizioni in materia di attività libero-professionale delle professioni sanitarie",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-29",
-      "url": "https://dati.senato.it/ddl/60351"
-    },
-    {
-      "id": "senato-60349",
-      "titolo": "Istituzione del Fondo di Sviluppo per l'Economia, le Infrastrutture e l'Innovazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-28",
-      "url": "https://dati.senato.it/ddl/60349"
-    },
-    {
-      "id": "senato-60350",
-      "titolo": "Modifica all'articolo 948 del codice civile in materia di ripartizione dell'onere della prova nell'azione di rivendicazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-28",
-      "url": "https://dati.senato.it/ddl/60350"
     }
   ]
 }
