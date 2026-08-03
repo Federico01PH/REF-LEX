@@ -1,21 +1,29 @@
 {
-  "generatoIl": "2026-08-02",
+  "generatoIl": "2026-08-03",
   "voci": [
+    {
+      "id": "camera-1555",
+      "titolo": "S. 795. - \"Legge annuale per il mercato e la concorrenza 2022\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-08-02",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1555"
+    },
     {
       "id": "camera-1686",
       "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-01",
+      "data": "2026-08-02",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
     },
     {
-      "id": "camera-1687",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
-      "tipo": "camera",
-      "stato": "discussione",
+      "id": "gazzetta-26G00153",
+      "titolo": "LEGGE 28 luglio 2026, n.137: Delega al Governo per la riforma dell'ordinamento forense",
+      "tipo": "gazzetta",
+      "stato": "approvata",
       "data": "2026-08-01",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/01/26G00153/SG"
     },
     {
       "id": "senato-60368",
