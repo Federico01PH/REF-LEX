@@ -1,29 +1,53 @@
 {
-  "generatoIl": "2026-08-03",
+  "generatoIl": "2026-08-04",
   "voci": [
     {
-      "id": "camera-1555",
-      "titolo": "S. 795. - \"Legge annuale per il mercato e la concorrenza 2022\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-02",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1555"
+      "id": "gazzetta-26G00156",
+      "titolo": "DECRETO LEGISLATIVO 26 giugno 2026, n.138: Revisione del sistema degli incentivi, in attuazione dell'articolo 3,",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-03",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/03/26G00156/SG"
     },
     {
       "id": "camera-1686",
       "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-02",
+      "data": "2026-08-03",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
     },
     {
-      "id": "gazzetta-26G00153",
-      "titolo": "LEGGE 28 luglio 2026, n.137: Delega al Governo per la riforma dell'ordinamento forense",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-01",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/01/26G00153/SG"
+      "id": "camera-1790",
+      "titolo": "S. 1014. - \"Conversione in legge, con modificazioni, del decreto-legge 5 febbraio 2024, n. 10, recante disposizioni urgenti sulla governance e sugli interventi di competenza della Società «Infrastrutture Milano Cortina 2020-2026 S.p.A.»\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-08-03",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1790"
+    },
+    {
+      "id": "senato-60370",
+      "titolo": "Disposizioni per la tutela dei minori dell'ambiente",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-03",
+      "url": "https://dati.senato.it/ddl/60370"
+    },
+    {
+      "id": "senato-60369",
+      "titolo": "Introduzione degli articoli 613-quater e 613-quinquies del codice penale, concernenti il delitto di terrorismo tramite la piazza, e modifica all'articolo 382-bis del codice di procedura penale, in materia di arresto in flagranza differita",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-03",
+      "url": "https://dati.senato.it/ddl/60369"
+    },
+    {
+      "id": "senato-60371",
+      "titolo": "Istituzione dell'infrastruttura di interoperabilità telematica per il rafforzamento del sistema di condizionalità e la tutela della Nuova Assicurazione Sociale per l'Impiego (NASpI)",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-03",
+      "url": "https://dati.senato.it/ddl/60371"
     },
     {
       "id": "senato-60368",
@@ -120,30 +144,6 @@
       "stato": "discussione",
       "data": "2026-07-29",
       "url": "https://dati.senato.it/ddl/60364"
-    },
-    {
-      "id": "senato-60367",
-      "titolo": "Disposizioni per la celebrazione del quindicesimo centenario della fondazione dell'abbazia di Montecassino",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-29",
-      "url": "https://dati.senato.it/ddl/60367"
-    },
-    {
-      "id": "senato-60365",
-      "titolo": "Disposizioni concernenti l'introduzione dell'insegnamento dell'educazione motoria nella scuola dell'infanzia e nei primi tre anni dei corsi della scuola primaria, l'istituzione di un fondo nazionale per i gruppi sportivi scolastici e la realizzazione di strutture sportive leggere nelle pertinenze esterne degli edifici scolastici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-29",
-      "url": "https://dati.senato.it/ddl/60365"
-    },
-    {
-      "id": "senato-60358",
-      "titolo": "Modifiche alla legge 27 dicembre 2006, n. 296",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-29",
-      "url": "https://dati.senato.it/ddl/60358"
     }
   ]
 }
