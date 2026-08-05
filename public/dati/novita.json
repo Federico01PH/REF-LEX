@@ -1,37 +1,109 @@
 {
-  "generatoIl": "2026-08-04",
+  "generatoIl": "2026-08-05",
   "voci": [
     {
-      "id": "gazzetta-26G00156",
-      "titolo": "DECRETO LEGISLATIVO 26 giugno 2026, n.138: Revisione del sistema degli incentivi, in attuazione dell'articolo 3,",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-03",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/03/26G00156/SG"
-    },
-    {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "id": "camera-2528",
+      "titolo": "S. 1433. - \"Introduzione del delitto di femminicidio e altri interventi normativi per il contrasto alla violenza nei confronti delle donne e per la tutela delle vittime\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-03",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "data": "2026-08-04",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2528"
     },
     {
-      "id": "camera-1790",
-      "titolo": "S. 1014. - \"Conversione in legge, con modificazioni, del decreto-legge 5 febbraio 2024, n. 10, recante disposizioni urgenti sulla governance e sugli interventi di competenza della Società «Infrastrutture Milano Cortina 2020-2026 S.p.A.»\" (approvato dal Senato)",
+      "id": "camera-2577",
+      "titolo": "\"Delega al Governo per la riforma delle amministrazioni straordinarie e per la riforma della vigilanza sugli enti cooperativi e mutualistici\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-03",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1790"
+      "data": "2026-08-04",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2577"
+    },
+    {
+      "id": "camera-2575",
+      "titolo": "\"Disposizioni per l’appropriatezza prescrittiva e il corretto utilizzo dei farmaci per la disforia di genere\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2575"
+    },
+    {
+      "id": "camera-2576",
+      "titolo": "\"Legge quadro per la salute e la sicurezza nelle piscine\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2576"
+    },
+    {
+      "id": "senato-60389",
+      "titolo": "Esenzione delle addizioni comunali e regionali per i pensionati delle pubbliche amministrazioni iscritti all'AIRE",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://dati.senato.it/ddl/60389"
+    },
+    {
+      "id": "senato-60385",
+      "titolo": "Disposizioni in materia e disciplina urbanistica e di localizzazione di infrastrutture di calcolo ad alta densità (data center e hyperscale data center)",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://dati.senato.it/ddl/60385"
+    },
+    {
+      "id": "senato-60383",
+      "titolo": "Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica Italiana e il Consiglio dei Ministri della Repubblica di Albania in materia di cooperazione strategica nei settori dell'assistenza sanitaria, dell'energia, dell'ambiente, della sicurezza e dell'industria della difesa, della gestione delle migrazioni, dell'educazione, dell'innovazione, della diaspora, della trasformazione economica e della crescita intelligente, fatto a Roma il 13 novembre 2025",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://dati.senato.it/ddl/60383"
+    },
+    {
+      "id": "senato-60388",
+      "titolo": "Modifiche alla legge 28 febbraio 2020, n. 17, in materia di estensione delle aree cedibili a privati nella fascia lagunare di Sottomarina, nel comune di Chioggia, e di sospensione dei procedimenti di ingiunzione, di rilascio o di riscossione dei proventi relativi alle medesime",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://dati.senato.it/ddl/60388"
+    },
+    {
+      "id": "senato-60384",
+      "titolo": "Istituzione della Giornata nazionale \"Enzo Tortora e vittime di errori giudiziari\"",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://dati.senato.it/ddl/60384"
+    },
+    {
+      "id": "senato-60387",
+      "titolo": "Disposizioni in materia di incentivi all'occupazione giovanile",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://dati.senato.it/ddl/60387"
+    },
+    {
+      "id": "senato-60386",
+      "titolo": "Norme per prevenire il consumo e l'impermeabilizzazione di nuovo suolo e per favorire il ripristino del suolo degradato",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://dati.senato.it/ddl/60386"
     },
     {
       "id": "senato-60370",
-      "titolo": "Disposizioni per la tutela dei minori dell'ambiente",
+      "titolo": "Disposizioni per la tutela dei minori nell'ambiente",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-08-03",
       "url": "https://dati.senato.it/ddl/60370"
+    },
+    {
+      "id": "senato-60372",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 26 giugno 2026, n. 107, recante disposizioni urgenti per interventi infrastrutturali e per l'attuazione del Piano nazionale di ripresa e resilienza (PNRR), nonché ulteriori disposizioni finanziarie urgenti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-03",
+      "url": "https://dati.senato.it/ddl/60372"
     },
     {
       "id": "senato-60369",
@@ -58,92 +130,28 @@
       "url": "https://dati.senato.it/ddl/60368"
     },
     {
-      "id": "senato-60355",
-      "titolo": "Conversione in legge del decreto-legge 12 giugno 2026, n. 100, recante misure urgenti in materia di giustizia e per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
+      "id": "senato-60379",
+      "titolo": "Istituzione della Rete nazionale delle strade della cultura",
       "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-07-30",
-      "url": "https://dati.senato.it/ddl/60355"
+      "data": "2026-07-31",
+      "url": "https://dati.senato.it/ddl/60379"
     },
     {
-      "id": "senato-60362",
-      "titolo": "Disposizioni per la promozione dell'abitare agricolo dignitoso e la prevenzione dello sfruttamento lavorativo nel settore agricolo",
+      "id": "senato-60378",
+      "titolo": "Modifica all'articolo 100 del codice della strada, di cui al decreto legislativo 30 aprile 1992, n. 285, in materia di inserimento della bandiera della regione e della sigla della provincia di immatricolazione nelle targhe degli autoveicoli, dei motoveicoli e dei rimorchi",
       "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-07-30",
-      "url": "https://dati.senato.it/ddl/60362"
+      "data": "2026-07-31",
+      "url": "https://dati.senato.it/ddl/60378"
     },
     {
-      "id": "senato-60363",
-      "titolo": "Disposizioni per il contenimento del consumo di suolo, la rigenerazione territoriale e la tutela del suolo agricolo e delle aree interne",
+      "id": "senato-60377",
+      "titolo": "Modifiche all'articolo 474 del codice penale e altre disposizioni per il contrasto del commercio abusivo e dello spaccio di merce contraffatta",
       "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-07-30",
-      "url": "https://dati.senato.it/ddl/60363"
-    },
-    {
-      "id": "senato-60360",
-      "titolo": "Disposizioni in materia di agevolazioni fiscali per le dimore storiche ubicate nelle aree interne e riconoscimento della funzione culturale territoriale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-30",
-      "url": "https://dati.senato.it/ddl/60360"
-    },
-    {
-      "id": "senato-60357",
-      "titolo": "Disposizioni in materia di sicurezza e per la prevenzione del disagio giovanile, nonché di ordinamento, organizzazione e funzionamento delle Forze di polizia e del Ministero dell'interno",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-30",
-      "url": "https://dati.senato.it/ddl/60357"
-    },
-    {
-      "id": "senato-60354",
-      "titolo": "Modifiche al codice penale in materia di vincolo associativo coordinato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-30",
-      "url": "https://dati.senato.it/ddl/60354"
-    },
-    {
-      "id": "senato-60361",
-      "titolo": "Istituzione della Piattaforma nazionale delle competenze delle persone sottoposte a misura penale e disposizioni in materia di interoperabilità e gestione dei dati",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-30",
-      "url": "https://dati.senato.it/ddl/60361"
-    },
-    {
-      "id": "senato-60356",
-      "titolo": "Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica italiana e il Governo della Repubblica del Senegal sulla cooperazione in materia di sicurezza, fatto a Dakar il 29 ottobre 2025",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-30",
-      "url": "https://dati.senato.it/ddl/60356"
-    },
-    {
-      "id": "senato-60359",
-      "titolo": "Modifiche all'art. 20, comma 13, della legge 26 luglio 1975, n. 354",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-29",
-      "url": "https://dati.senato.it/ddl/60359"
-    },
-    {
-      "id": "senato-60352",
-      "titolo": "Modifiche alla legge 4 agosto 2021, n. 116, in materia di formazione obbligatoria di primo soccorso",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-29",
-      "url": "https://dati.senato.it/ddl/60352"
-    },
-    {
-      "id": "senato-60364",
-      "titolo": "Disposizioni per il rilancio del sistema italiano del calcio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-29",
-      "url": "https://dati.senato.it/ddl/60364"
+      "data": "2026-07-31",
+      "url": "https://dati.senato.it/ddl/60377"
     }
   ]
 }
