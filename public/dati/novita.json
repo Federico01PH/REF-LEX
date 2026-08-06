@@ -1,37 +1,61 @@
 {
-  "generatoIl": "2026-08-05",
+  "generatoIl": "2026-08-06",
   "voci": [
     {
-      "id": "camera-2528",
-      "titolo": "S. 1433. - \"Introduzione del delitto di femminicidio e altri interventi normativi per il contrasto alla violenza nei confronti delle donne e per la tutela delle vittime\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2528"
+      "id": "gazzetta-26G00162",
+      "titolo": "DECRETO-LEGGE 5 agosto 2026, n.139: Disposizioni urgenti in materia di prezzi petroliferi connessi al",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-05",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/05/26G00162/SG"
     },
     {
-      "id": "camera-2577",
-      "titolo": "\"Delega al Governo per la riforma delle amministrazioni straordinarie e per la riforma della vigilanza sugli enti cooperativi e mutualistici\"",
-      "tipo": "camera",
+      "id": "senato-60403",
+      "titolo": "Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2025",
+      "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2577"
+      "data": "2026-08-05",
+      "url": "https://dati.senato.it/ddl/60403"
     },
     {
-      "id": "camera-2575",
-      "titolo": "\"Disposizioni per l’appropriatezza prescrittiva e il corretto utilizzo dei farmaci per la disforia di genere\"",
-      "tipo": "camera",
+      "id": "senato-60405",
+      "titolo": "Introduzione dell'educazione alla legalità digitale nell'ambito del piano triennale dell'offerta formativa",
+      "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2575"
+      "data": "2026-08-05",
+      "url": "https://dati.senato.it/ddl/60405"
     },
     {
-      "id": "camera-2576",
-      "titolo": "\"Legge quadro per la salute e la sicurezza nelle piscine\"",
-      "tipo": "camera",
+      "id": "senato-60401",
+      "titolo": "Disposizoni in materia di cartolarizzazione sociale dei crediti deteriorati, a tutela dell'abitazione principale del debitore sovraindebitato e per la prevenzione del disagio abitativo",
+      "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2576"
+      "data": "2026-08-05",
+      "url": "https://dati.senato.it/ddl/60401"
+    },
+    {
+      "id": "senato-60402",
+      "titolo": "Istituzione della Giornata nazionale della memoria dei militari italiani prigionieri di guerra delle Forze alleate durante la Seconda guerra mondiale e disposizioni per la tutela della memoria storica",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-05",
+      "url": "https://dati.senato.it/ddl/60402"
+    },
+    {
+      "id": "senato-60404",
+      "titolo": "Disposizioni per l'assestamento del bilancio dello Stato per l'anno finanziario 2026",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-05",
+      "url": "https://dati.senato.it/ddl/60404"
+    },
+    {
+      "id": "senato-60406",
+      "titolo": "Disposizioni per il contrasto del fenomeno dei reati di atti persecutori in ambito condominiale e di vicinato",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-05",
+      "url": "https://dati.senato.it/ddl/60406"
     },
     {
       "id": "senato-60389",
@@ -56,6 +80,14 @@
       "stato": "discussione",
       "data": "2026-08-04",
       "url": "https://dati.senato.it/ddl/60383"
+    },
+    {
+      "id": "senato-60400",
+      "titolo": "Disposizioni in materia di protezione civile",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-04",
+      "url": "https://dati.senato.it/ddl/60400"
     },
     {
       "id": "senato-60388",
@@ -96,62 +128,6 @@
       "stato": "discussione",
       "data": "2026-08-03",
       "url": "https://dati.senato.it/ddl/60370"
-    },
-    {
-      "id": "senato-60372",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 26 giugno 2026, n. 107, recante disposizioni urgenti per interventi infrastrutturali e per l'attuazione del Piano nazionale di ripresa e resilienza (PNRR), nonché ulteriori disposizioni finanziarie urgenti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-03",
-      "url": "https://dati.senato.it/ddl/60372"
-    },
-    {
-      "id": "senato-60369",
-      "titolo": "Introduzione degli articoli 613-quater e 613-quinquies del codice penale, concernenti il delitto di terrorismo tramite la piazza, e modifica all'articolo 382-bis del codice di procedura penale, in materia di arresto in flagranza differita",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-03",
-      "url": "https://dati.senato.it/ddl/60369"
-    },
-    {
-      "id": "senato-60371",
-      "titolo": "Istituzione dell'infrastruttura di interoperabilità telematica per il rafforzamento del sistema di condizionalità e la tutela della Nuova Assicurazione Sociale per l'Impiego (NASpI)",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-03",
-      "url": "https://dati.senato.it/ddl/60371"
-    },
-    {
-      "id": "senato-60368",
-      "titolo": "Disposizioni per l'istituzione di spazi adibiti all'allattamento e alla cura dei neonati presso istituti e luoghi della cultura",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-31",
-      "url": "https://dati.senato.it/ddl/60368"
-    },
-    {
-      "id": "senato-60379",
-      "titolo": "Istituzione della Rete nazionale delle strade della cultura",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-31",
-      "url": "https://dati.senato.it/ddl/60379"
-    },
-    {
-      "id": "senato-60378",
-      "titolo": "Modifica all'articolo 100 del codice della strada, di cui al decreto legislativo 30 aprile 1992, n. 285, in materia di inserimento della bandiera della regione e della sigla della provincia di immatricolazione nelle targhe degli autoveicoli, dei motoveicoli e dei rimorchi",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-31",
-      "url": "https://dati.senato.it/ddl/60378"
-    },
-    {
-      "id": "senato-60377",
-      "titolo": "Modifiche all'articolo 474 del codice penale e altre disposizioni per il contrasto del commercio abusivo e dello spaccio di merce contraffatta",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-07-31",
-      "url": "https://dati.senato.it/ddl/60377"
     }
   ]
 }
