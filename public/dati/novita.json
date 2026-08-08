@@ -1,37 +1,141 @@
 {
-  "generatoIl": "2026-08-07",
+  "generatoIl": "2026-08-08",
   "voci": [
     {
-      "id": "gazzetta-26G00157",
-      "titolo": "LEGGE 5 agosto 2026, n.140: Disposizioni in materia di detenzione domiciliare per il recupero dei",
+      "id": "gazzetta-26G00163",
+      "titolo": "LEGGE 4 agosto 2026, n.142: Conversione in legge, con modificazioni, del decreto-legge 26 giugno",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-08-06",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/06/26G00157/SG"
+      "data": "2026-08-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26G00163/SG"
     },
     {
-      "id": "gazzetta-26G00160",
-      "titolo": "DECRETO LEGISLATIVO 5 agosto 2026, n.141: Approvazione del testo unico delle disposizioni legislative in",
+      "id": "gazzetta-26G00166",
+      "titolo": "DECRETO-LEGGE 7 agosto 2026, n.143: Disposizioni urgenti in materia di obbligo di compostabilita' di",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-08-06",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/06/26G00160/SG"
+      "data": "2026-08-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26G00166/SG"
     },
     {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-06",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "id": "gazzetta-26G00167",
+      "titolo": "DECRETO-LEGGE 7 agosto 2026, n.144: Disposizioni urgenti per la funzionalita' della pubblica",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26G00167/SG"
     },
     {
-      "id": "camera-1632",
-      "titolo": "\"Legge quadro in materia di ricostruzione post-calamità\"",
+      "id": "gazzetta-26A04132",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 6 agosto 2026: Indizione dei comizi per l'elezione suppletiva della Camera dei",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26A04132/SG"
+    },
+    {
+      "id": "gazzetta-26A04071",
+      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 26 giugno 2026, n.108: Testo del decreto-legge 26 giugno 2026, n",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26A04071/SG"
+    },
+    {
+      "id": "camera-1687",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
+      "data": "2026-08-07",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
+    },
+    {
+      "id": "camera-1620",
+      "titolo": "\"Ratifica ed esecuzione del Protocollo tra il Governo della Repubblica italiana e il Consiglio dei ministri della Repubblica di Albania per il rafforzamento della collaborazione in materia migratoria, fatto a Roma il 6 novembre 2023, nonché norme di coordinamento con l’ordinamento interno\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-08-07",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1620"
+    },
+    {
+      "id": "senato-60420",
+      "titolo": "Disposizioni per la tutela del mercato immobiliare",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-07",
+      "url": "https://dati.senato.it/ddl/60420"
+    },
+    {
+      "id": "senato-60421",
+      "titolo": "Conversione in legge del decreto-legge 7 agosto 2026, n. 143, recante disposizioni urgenti in materia di obbligo di compostabilità di determinate tipologie di imballaggi",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-07",
+      "url": "https://dati.senato.it/ddl/60421"
+    },
+    {
+      "id": "senato-60419",
+      "titolo": "Disposizioni in materia di successioni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-07",
+      "url": "https://dati.senato.it/ddl/60419"
+    },
+    {
+      "id": "senato-60422",
+      "titolo": "Conversione in legge del decreto-legge 7 agosto 2026, n. 144, recante disposizioni urgenti per la funzionalità della pubblica amministrazione e degli enti territoriali, nonché in materia di protezione civile",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-07",
+      "url": "https://dati.senato.it/ddl/60422"
+    },
+    {
+      "id": "senato-60414",
+      "titolo": "Disposizioni in materia di riscatto, ai fini previdenziali, del periodo di mandato elettivo dei sindaci",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-08-06",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1632"
+      "url": "https://dati.senato.it/ddl/60414"
+    },
+    {
+      "id": "senato-60413",
+      "titolo": "Modifica all'articolo 253 del codice dell'ordinamento militare, di cui al decreto legislativo 15 marzo 2010, n. 66, concernente la delimitazione della zona monumentale di guerra del monte Pasubio, e dichiarazione di monumento nazionale della Strada delle 52 gallerie del monte Pasubio o Strada della Prima Armata",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-06",
+      "url": "https://dati.senato.it/ddl/60413"
+    },
+    {
+      "id": "senato-60416",
+      "titolo": "Istituzione della Giornata nazionale per il diritto al divertimento in sicurezza",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-06",
+      "url": "https://dati.senato.it/ddl/60416"
+    },
+    {
+      "id": "senato-60418",
+      "titolo": "Modifiche al decreto legislativo 15 marzo 2024, n. 29, in materia di cura e assistenza domiciliare a favore delle persone anziane non autosufficienti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-06",
+      "url": "https://dati.senato.it/ddl/60418"
+    },
+    {
+      "id": "senato-60417",
+      "titolo": "Disposizioni in favore dei tirocinanti di inclusione sociale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-06",
+      "url": "https://dati.senato.it/ddl/60417"
+    },
+    {
+      "id": "senato-60415",
+      "titolo": "Misure di consolidamento e sviluppo del settore agricolo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-06",
+      "url": "https://dati.senato.it/ddl/60415"
     },
     {
       "id": "senato-60403",
@@ -50,108 +154,12 @@
       "url": "https://dati.senato.it/ddl/60405"
     },
     {
-      "id": "senato-60401",
-      "titolo": "Disposizoni in materia di cartolarizzazione sociale dei crediti deteriorati, a tutela dell'abitazione principale del debitore sovraindebitato e per la prevenzione del disagio abitativo",
+      "id": "senato-60407",
+      "titolo": "Conversione in legge del decreto-legge 05 agosto 2026, n. 139, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-08-05",
-      "url": "https://dati.senato.it/ddl/60401"
-    },
-    {
-      "id": "senato-60402",
-      "titolo": "Istituzione della Giornata nazionale della memoria dei militari italiani prigionieri di guerra delle Forze alleate durante la Seconda guerra mondiale e disposizioni per la tutela della memoria storica",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-05",
-      "url": "https://dati.senato.it/ddl/60402"
-    },
-    {
-      "id": "senato-60404",
-      "titolo": "Disposizioni per l'assestamento del bilancio dello Stato per l'anno finanziario 2026",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-05",
-      "url": "https://dati.senato.it/ddl/60404"
-    },
-    {
-      "id": "senato-60406",
-      "titolo": "Disposizioni per il contrasto del fenomeno dei reati di atti persecutori in ambito condominiale e di vicinato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-05",
-      "url": "https://dati.senato.it/ddl/60406"
-    },
-    {
-      "id": "senato-60389",
-      "titolo": "Esenzione delle addizioni comunali e regionali per i pensionati delle pubbliche amministrazioni iscritti all'AIRE",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://dati.senato.it/ddl/60389"
-    },
-    {
-      "id": "senato-60385",
-      "titolo": "Disposizioni in materia e disciplina urbanistica e di localizzazione di infrastrutture di calcolo ad alta densità (data center e hyperscale data center)",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://dati.senato.it/ddl/60385"
-    },
-    {
-      "id": "senato-60383",
-      "titolo": "Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica Italiana e il Consiglio dei Ministri della Repubblica di Albania in materia di cooperazione strategica nei settori dell'assistenza sanitaria, dell'energia, dell'ambiente, della sicurezza e dell'industria della difesa, della gestione delle migrazioni, dell'educazione, dell'innovazione, della diaspora, della trasformazione economica e della crescita intelligente, fatto a Roma il 13 novembre 2025",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://dati.senato.it/ddl/60383"
-    },
-    {
-      "id": "senato-60400",
-      "titolo": "Disposizioni in materia di protezione civile",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://dati.senato.it/ddl/60400"
-    },
-    {
-      "id": "senato-60388",
-      "titolo": "Modifiche alla legge 28 febbraio 2020, n. 17, in materia di estensione delle aree cedibili a privati nella fascia lagunare di Sottomarina, nel comune di Chioggia, e di sospensione dei procedimenti di ingiunzione, di rilascio o di riscossione dei proventi relativi alle medesime",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://dati.senato.it/ddl/60388"
-    },
-    {
-      "id": "senato-60384",
-      "titolo": "Istituzione della Giornata nazionale \"Enzo Tortora e vittime di errori giudiziari\"",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://dati.senato.it/ddl/60384"
-    },
-    {
-      "id": "senato-60387",
-      "titolo": "Disposizioni in materia di incentivi all'occupazione giovanile",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://dati.senato.it/ddl/60387"
-    },
-    {
-      "id": "senato-60386",
-      "titolo": "Norme per prevenire il consumo e l'impermeabilizzazione di nuovo suolo e per favorire il ripristino del suolo degradato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-04",
-      "url": "https://dati.senato.it/ddl/60386"
-    },
-    {
-      "id": "senato-60370",
-      "titolo": "Disposizioni per la tutela dei minori nell'ambiente",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-03",
-      "url": "https://dati.senato.it/ddl/60370"
+      "url": "https://dati.senato.it/ddl/60407"
     }
   ]
 }
