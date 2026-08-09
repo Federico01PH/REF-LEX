@@ -1,61 +1,21 @@
 {
-  "generatoIl": "2026-08-08",
+  "generatoIl": "2026-08-09",
   "voci": [
-    {
-      "id": "gazzetta-26G00163",
-      "titolo": "LEGGE 4 agosto 2026, n.142: Conversione in legge, con modificazioni, del decreto-legge 26 giugno",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26G00163/SG"
-    },
-    {
-      "id": "gazzetta-26G00166",
-      "titolo": "DECRETO-LEGGE 7 agosto 2026, n.143: Disposizioni urgenti in materia di obbligo di compostabilita' di",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26G00166/SG"
-    },
-    {
-      "id": "gazzetta-26G00167",
-      "titolo": "DECRETO-LEGGE 7 agosto 2026, n.144: Disposizioni urgenti per la funzionalita' della pubblica",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26G00167/SG"
-    },
-    {
-      "id": "gazzetta-26A04132",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 6 agosto 2026: Indizione dei comizi per l'elezione suppletiva della Camera dei",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26A04132/SG"
-    },
-    {
-      "id": "gazzetta-26A04071",
-      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 26 giugno 2026, n.108: Testo del decreto-legge 26 giugno 2026, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/07/26A04071/SG"
-    },
     {
       "id": "camera-1687",
       "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-07",
+      "data": "2026-08-08",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
     },
     {
-      "id": "camera-1620",
-      "titolo": "\"Ratifica ed esecuzione del Protocollo tra il Governo della Repubblica italiana e il Consiglio dei ministri della Repubblica di Albania per il rafforzamento della collaborazione in materia migratoria, fatto a Roma il 6 novembre 2023, nonché norme di coordinamento con l’ordinamento interno\"",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-07",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1620"
+      "data": "2026-08-08",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
       "id": "senato-60420",
@@ -160,6 +120,22 @@
       "stato": "discussione",
       "data": "2026-08-05",
       "url": "https://dati.senato.it/ddl/60407"
+    },
+    {
+      "id": "senato-60411",
+      "titolo": "Disposizioni per la promozione della salute digitale dei minori e la prevenzione della dipendenza da strumenti e piattaforme digitali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-05",
+      "url": "https://dati.senato.it/ddl/60411"
+    },
+    {
+      "id": "senato-60412",
+      "titolo": "Modifiche in materia di imputabilità del minore",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-05",
+      "url": "https://dati.senato.it/ddl/60412"
     }
   ]
 }
