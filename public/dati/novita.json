@@ -1,45 +1,29 @@
 {
-  "generatoIl": "2026-08-12",
+  "generatoIl": "2026-08-13",
   "voci": [
     {
-      "id": "gazzetta-26G00168",
-      "titolo": "DECRETO LEGISLATIVO 7 agosto 2026, n.147: Disposizioni in materia di tributi regionali e locali e di",
+      "id": "gazzetta-26G00161",
+      "titolo": "DECRETO LEGISLATIVO 30 luglio 2026, n.151: Disposizioni in materia di coltivazione, promozione,",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-08-11",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/11/26G00168/SG"
+      "data": "2026-08-12",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/12/26G00161/SG"
     },
     {
-      "id": "gazzetta-26G00169",
-      "titolo": "DECRETO LEGISLATIVO 7 agosto 2026, n.148: Disposizioni integrative e correttive in materia di imposte sui",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-11",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/11/26G00169/SG"
-    },
-    {
-      "id": "gazzetta-26G00170",
-      "titolo": "DECRETO LEGISLATIVO 7 agosto 2026, n.149: Disposizioni in materia di ordinamento della giurisdizione",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-11",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/11/26G00170/SG"
-    },
-    {
-      "id": "camera-1665",
-      "titolo": "S. 615. - \"Disposizioni per l’attuazione dell’autonomia differenziata delle Regioni a statuto ordinario ai sensi dell’articolo 116, terzo comma, della Costituzione\" (approvato dal Senato)",
+      "id": "camera-1540",
+      "titolo": "\"Ratifica ed esecuzione del Protocollo su acqua e salute della Convenzione del 1992 sulla protezione e l’utilizzazione dei corsi d’acqua transfrontalieri e dei laghi internazionali, fatto a Londra il 17 giugno 1999\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-11",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1665"
+      "data": "2026-08-12",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1540"
     },
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "id": "camera-1194",
+      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-11",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+      "data": "2026-08-12",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
     },
     {
       "id": "senato-60420",
