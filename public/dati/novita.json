@@ -1,29 +1,29 @@
 {
-  "generatoIl": "2026-08-13",
+  "generatoIl": "2026-08-14",
   "voci": [
     {
-      "id": "gazzetta-26G00161",
-      "titolo": "DECRETO LEGISLATIVO 30 luglio 2026, n.151: Disposizioni in materia di coltivazione, promozione,",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-12",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/12/26G00161/SG"
-    },
-    {
-      "id": "camera-1540",
-      "titolo": "\"Ratifica ed esecuzione del Protocollo su acqua e salute della Convenzione del 1992 sulla protezione e l’utilizzazione dei corsi d’acqua transfrontalieri e dei laghi internazionali, fatto a Londra il 17 giugno 1999\"",
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-12",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1540"
+      "data": "2026-08-13",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
     },
     {
-      "id": "camera-1194",
-      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "id": "camera-1687",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-12",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+      "data": "2026-08-13",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
+    },
+    {
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-08-13",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
       "id": "senato-60420",
