@@ -1,29 +1,21 @@
 {
-  "generatoIl": "2026-08-14",
+  "generatoIl": "2026-08-15",
   "voci": [
-    {
-      "id": "camera-1660",
-      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-13",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
-    },
-    {
-      "id": "camera-1687",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-13",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
-    },
     {
       "id": "camera-1752",
       "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-13",
+      "data": "2026-08-14",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+    },
+    {
+      "id": "camera-1624",
+      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-08-14",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
     },
     {
       "id": "senato-60420",
