@@ -1,22 +1,6 @@
 {
-  "generatoIl": "2026-08-15",
+  "generatoIl": "2026-08-16",
   "voci": [
-    {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-14",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
-    },
-    {
-      "id": "camera-1624",
-      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-14",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
-    },
     {
       "id": "senato-60420",
       "titolo": "Disposizioni per la tutela del mercato immobiliare",
