@@ -1,22 +1,6 @@
 {
-  "generatoIl": "2026-08-18",
+  "generatoIl": "2026-08-19",
   "voci": [
-    {
-      "id": "camera-1717",
-      "titolo": "\"Disposizioni in materia di rafforzamento della cybersicurezza nazionale e di reati informatici\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-17",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1717"
-    },
-    {
-      "id": "camera-1624",
-      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-17",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
-    },
     {
       "id": "senato-60420",
       "titolo": "Disposizioni per la tutela del mercato immobiliare",
