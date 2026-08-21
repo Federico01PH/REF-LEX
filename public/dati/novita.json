@@ -1,21 +1,37 @@
 {
-  "generatoIl": "2026-08-20",
+  "generatoIl": "2026-08-21",
   "voci": [
     {
-      "id": "camera-1703",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo tra il Governo della Repubblica italiana e il Sovrano Militare Ordine Ospedaliero di San Giovanni di Gerusalemme di Rodi e di Malta, detto Sovrano Militare Ordine di Malta – SMOM, fatto a Roma il 23 ottobre 2023\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-19",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1703"
+      "id": "gazzetta-26G00165",
+      "titolo": "LEGGE 7 agosto 2026, n.152: Conversione in legge, con modificazioni, del decreto-legge 26 giugno",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-20",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/20/26G00165/SG"
+    },
+    {
+      "id": "gazzetta-26A04179",
+      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 26 giugno 2026, n.107: Testo del decreto-legge 26 giugno 2026, n",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-20",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/20/26A04179/SG"
     },
     {
       "id": "camera-1704",
       "titolo": "\"Disposizioni in materia di destinazione di proventi derivanti dalla vendita di prodotti\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-19",
+      "data": "2026-08-20",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1704"
+    },
+    {
+      "id": "camera-1703",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo tra il Governo della Repubblica italiana e il Sovrano Militare Ordine Ospedaliero di San Giovanni di Gerusalemme di Rodi e di Malta, detto Sovrano Militare Ordine di Malta – SMOM, fatto a Roma il 23 ottobre 2023\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-08-20",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1703"
     },
     {
       "id": "senato-60420",
