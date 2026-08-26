@@ -1,29 +1,21 @@
 {
-  "generatoIl": "2026-08-25",
+  "generatoIl": "2026-08-26",
   "voci": [
-    {
-      "id": "gazzetta-26A04265",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 27 luglio 2026: Conferimento della decorazione della «Stella al merito del lavoro» ai",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-24",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/24/26A04265/SG"
-    },
-    {
-      "id": "camera-1803",
-      "titolo": "S. 982. - \"Ratifica ed esecuzione del Protocollo sulla gestione integrata delle zone costiere del Mediterraneo, fatto a Madrid il 21 gennaio 2008\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-08-24",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1803"
-    },
     {
       "id": "camera-1686",
       "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-24",
+      "data": "2026-08-25",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+    },
+    {
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-08-25",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
       "id": "senato-60420",
