@@ -1,21 +1,37 @@
 {
-  "generatoIl": "2026-08-26",
+  "generatoIl": "2026-08-27",
   "voci": [
     {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "id": "camera-1687",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-25",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "data": "2026-08-27",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
     },
     {
       "id": "camera-1752",
       "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-25",
+      "data": "2026-08-27",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+    },
+    {
+      "id": "gazzetta-26G00173",
+      "titolo": "DECRETO-LEGGE 26 agosto 2026, n.153: Disposizioni urgenti in materia di prezzi petroliferi connessi al",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-26",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/26/26G00173/SG"
+    },
+    {
+      "id": "senato-60424",
+      "titolo": "Conversione in legge del decreto-legge 26 agosto 2026, n. 153, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-26",
+      "url": "https://dati.senato.it/ddl/60424"
     },
     {
       "id": "senato-60420",
@@ -128,14 +144,6 @@
       "stato": "discussione",
       "data": "2026-08-05",
       "url": "https://dati.senato.it/ddl/60407"
-    },
-    {
-      "id": "senato-60411",
-      "titolo": "Disposizioni per la promozione della salute digitale dei minori e la prevenzione della dipendenza da strumenti e piattaforme digitali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-05",
-      "url": "https://dati.senato.it/ddl/60411"
     }
   ]
 }
