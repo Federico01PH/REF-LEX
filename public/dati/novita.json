@@ -1,45 +1,29 @@
 {
-  "generatoIl": "2026-08-29",
+  "generatoIl": "2026-08-30",
   "voci": [
     {
-      "id": "gazzetta-26G00174",
-      "titolo": "DECRETO-LEGGE 28 agosto 2026, n.154: Misure urgenti per assicurare la continuita' operativa di impianti di",
+      "id": "gazzetta-26A04297",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 28 luglio 2026: Proroga dell'affidamento della gestione del consiglio comunale di",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-08-28",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/28/26G00174/SG"
-    },
-    {
-      "id": "gazzetta-26A04294",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 16 luglio 2026: Proroga dello scioglimento del consiglio comunale di Tremestieri",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-28",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/28/26A04294/SG"
-    },
-    {
-      "id": "gazzetta-26A04293",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 28 luglio 2026: Proroga dello scioglimento del consiglio comunale di Caserta",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-08-28",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/28/26A04293/SG"
+      "data": "2026-08-29",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/29/26A04297/SG"
     },
     {
       "id": "camera-1752",
       "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-28",
+      "data": "2026-08-29",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
-      "id": "camera-1606",
-      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "id": "camera-1588",
+      "titolo": "S. 861. - \"Ratifica ed esecuzione dell’Accordo di sede tra la Repubblica italiana e l’Ufficio europeo per il sostegno all’asilo relativo allo stabilimento di un ufficio operativo in Roma, fatto a Roma il 22 novembre 2017, con Dichiarazione interpretativa congiunta fatta a Roma il 1&deg; luglio 2021 e a La Valletta il 13 luglio 2021\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-08-28",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+      "data": "2026-08-29",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1588"
     },
     {
       "id": "senato-60424",
