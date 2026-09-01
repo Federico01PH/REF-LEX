@@ -1,13 +1,29 @@
 {
-  "generatoIl": "2026-08-31",
+  "generatoIl": "2026-09-01",
   "voci": [
     {
-      "id": "gazzetta-26A04297",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 28 luglio 2026: Proroga dell'affidamento della gestione del consiglio comunale di",
+      "id": "gazzetta-26G00171",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 19 giugno 2026, n.155: Regolamento recante modifica dei limiti territoriali della",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-08-29",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/29/26A04297/SG"
+      "data": "2026-08-31",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/31/26G00171/SG"
+    },
+    {
+      "id": "gazzetta-26A04300",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 16 luglio 2026: Proroga dell'affidamento della gestione del consiglio comunale di San",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-31",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/31/26A04300/SG"
+    },
+    {
+      "id": "gazzetta-26A04301",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 16 luglio 2026: Proroga dell'affidamento della gestione del consiglio comunale di",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-08-31",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/31/26A04301/SG"
     },
     {
       "id": "senato-60424",
