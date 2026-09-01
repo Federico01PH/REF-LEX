@@ -11,6 +11,7 @@
   --grad-positivo: linear-gradient(135deg, #0BBF7D, #06A8C9);
   --grad-incerto: linear-gradient(135deg, #FFB547, #FF8A3D);
   --ombra: 0 2px 10px rgba(14, 36, 51, 0.07);
+  --alone: rgba(20, 48, 79, 0.45);
   --raggio: 16px; --raggio-pillola: 999px;
 }
 [data-theme='dark'] {
@@ -23,6 +24,7 @@
   --grad-azione: linear-gradient(135deg, #1F3F61, #356199);
   --grad-marchio: linear-gradient(135deg, #13293D, #1F3F61);
   --ombra: 0 4px 16px rgba(0, 0, 0, 0.55);
+  --alone: rgba(143, 180, 230, 0.5);
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }

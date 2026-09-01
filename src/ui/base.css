@@ -16,6 +16,14 @@ a { color: var(--accento); }
 .btn-secondario { background: none; border: 2px solid var(--accento);
   color: var(--accento); font-weight: 700; }
 .btn-pericolo { background: var(--rosso); color: #fff; }
+/* il bottone che apre la simulazione: piu' alto, con la freccia, e all'apparire della
+   scheda pulsa due volte. Senza, la gente sceglieva la legge e restava ferma li' */
+.btn-richiamo { display: flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 56px; font-size: 18px; animation: richiamo 1.4s ease-out 2; }
+@keyframes richiamo {
+  from { box-shadow: 0 0 0 0 var(--alone); }
+  to { box-shadow: 0 0 0 16px transparent; }
+}
 .pill { display: inline-block; min-height: 44px; padding: 10px 16px; margin: 4px;
   border-radius: var(--raggio-pillola); border: 1.5px solid var(--bordo);
   background: var(--superficie); color: var(--testo); font-size: 16px; cursor: pointer; }

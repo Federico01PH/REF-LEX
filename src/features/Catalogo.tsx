@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { Ambito, Legge, Profilo, StatoLegge } from '../engine/types';
 import { rilevanza } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
@@ -50,6 +50,13 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
   const visibili = leggi.filter((l) => ambito === 'tutte' || l.ambiti.includes(ambito));
   const scelta = visibili.find((l) => l.id === sceltaId) ?? null;
 
+  // scelta la legge, la scheda nasce spesso sotto il bordo dello schermo e il bottone
+  // per aprire la simulazione non si vede: la portiamo noi in vista, dall'inizio
+  const schedaRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (sceltaId) schedaRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'start' });
+  }, [sceltaId]);
+
   return (
     <div>
       <header className="riga-testata">
@@ -98,7 +105,7 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
         </div>
       </section>
       {scelta && (
-        <article className="card spazio" style={{ borderLeft: `4px solid ${STATI[scelta.stato].colore}` }}>
+        <article ref={schedaRef} className="card spazio" style={{ borderLeft: `4px solid ${STATI[scelta.stato].colore}` }}>
           <span className="testo-piccolo" style={{ fontWeight: 800, color: STATI[scelta.stato].colore }}>
             {STATI[scelta.stato].etichetta}
           </span>
@@ -109,7 +116,9 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
           <p className="testo-piccolo" style={{ marginTop: 0 }}>Nome ufficiale: {scelta.titoloUfficiale}</p>
           <p style={{ marginTop: 8 }}>{scelta.riassunto}</p>
           <p className="testo-piccolo">{RILEVANZA[rilevanza(profilo, scelta)]} · il report richiede 2 minuti</p>
-          <button className="btn" onClick={() => onScegli(scelta.id)}>Vedi come ti tocca</button>
+          <button className="btn btn-richiamo" onClick={() => onScegli(scelta.id)}>
+            Guarda la simulazione <Icona nome="freccia" dimensione={20} />
+          </button>
         </article>
       )}
       {novita && novita.voci.length > 0 && (

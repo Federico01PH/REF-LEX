@@ -63,7 +63,7 @@ test('il bottone della scheda apre il report con l\'id giusto', async () => {
   const onScegli = vi.fn();
   renderCatalogo({ onScegli });
   await scegliLegge('taglio del cuneo');
-  await userEvent.click(screen.getByRole('button', { name: /vedi come ti tocca/i }));
+  await userEvent.click(screen.getByRole('button', { name: /guarda la simulazione/i }));
   expect(onScegli).toHaveBeenCalledWith('cuneo-fiscale-2025');
 });
 
@@ -176,4 +176,27 @@ test('sopra la barra basta il titolo: l\'etichetta del campo resta solo per chi 
 test('l\'etichetta dei filtri dice solo "Restringi per argomento"', () => {
   renderCatalogo();
   expect(screen.getByText(/^restringi per argomento$/i)).toBeInTheDocument();
+});
+
+// --- il bottone della scheda deve gridare "cliccami" ---
+// Scelta la legge, la scheda può nascere sotto il bordo dello schermo: la gente non
+// vedeva il bottone e restava ferma. Ora la scheda si porta in vista da sola e il
+// bottone ha la freccia e il richiamo visivo.
+
+test('scegliendo una legge la scheda si porta in vista, così il bottone si vede', async () => {
+  // la tendina scorre già la sua opzione attiva: qui conta la chiamata sulla SCHEDA,
+  // riconoscibile perché è l'unica che porta il suo inizio in cima allo schermo
+  const portaInVista = vi.fn();
+  Element.prototype.scrollIntoView = portaInVista;
+  renderCatalogo();
+  await scegliLegge('taglio del cuneo');
+  expect(portaInVista).toHaveBeenCalledWith(expect.objectContaining({ block: 'start' }));
+});
+
+test('il bottone dice "Guarda la simulazione" e si vede che è da toccare', async () => {
+  renderCatalogo();
+  await scegliLegge('taglio del cuneo');
+  const bottone = screen.getByRole('button', { name: /guarda la simulazione/i });
+  expect(bottone).toHaveClass('btn-richiamo');
+  expect(within(bottone).getByTestId('icona-freccia')).toBeInTheDocument();
 });
