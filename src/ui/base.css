@@ -41,6 +41,11 @@ a { color: var(--accento); }
 .diritto-toccato { display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
   margin: 8px 0; padding: 8px 10px; border-radius: 10px; font-size: 14px;
   background: var(--superficie); border: 1px solid var(--bordo); }
+/* effetto spento nell'anno scelto: la timeline dice 'nullo', qui si vede */
+.risultato.spento { background: var(--superficie-2); }
+.effetto-spento { display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin: 8px 0 0; font-size: 14px; color: var(--testo-2); }
+.badge-spento { background: var(--bordo); color: var(--testo); }
 .progress { display: flex; gap: 4px; margin: 12px 0; }
 .progress > span { flex: 1; height: 6px; border-radius: 3px; background: var(--bordo); }
 .progress > span.fatto { background: var(--verde); }
@@ -55,6 +60,13 @@ a { color: var(--accento); }
   font-size: 17px; font-family: inherit; color: var(--testo);
   background: var(--superficie); border: 2px solid var(--accento);
   border-radius: var(--raggio); cursor: pointer; }
+.tendina-grande { min-height: 62px; padding: 10px 44px 10px 46px; font-size: 18px; font-weight: 600; }
+.tendina-grande::placeholder { color: var(--testo-2); font-weight: 600; opacity: 1; }
+.combobox-campo { position: relative; }
+.combobox-lente, .combobox-giu { position: absolute; top: 50%; transform: translateY(-50%);
+  display: inline-flex; color: var(--accento); pointer-events: none; }
+.combobox-lente { left: 14px; }
+.combobox-giu { right: 14px; }
 [data-theme='dark'] .tendina { border-color: var(--accento); }
 /* item 5: tendina ricercabile (combobox con typeahead) */
 .combobox { position: relative; }
@@ -144,19 +156,38 @@ a { color: var(--accento); }
 .griglia-due { display: grid; grid-template-columns: 1fr; gap: 12px; }
 @media (min-width: 900px) { .griglia-due { grid-template-columns: 1fr 1fr; } }
 .testo-piccolo { font-size: 13px; color: var(--testo-2); }
-/* item 4: rende chiaro che le pillole filtrano (la gente le ignorava) */
-.etichetta-filtri { font-weight: 800; margin: 0 0 6px; }
-/* item 7: il bottone "per gli altri" si stacca dal resto del report */
-.invito-altri { padding-top: 16px; border-top: 1px solid var(--bordo); }
+/* item 4: rende chiaro che le pillole filtrano (la gente le ignorava). Ora stanno
+   SOTTO la barra e su una riga sola che scorre: prima il blocco a capo riempiva
+   mezzo schermo e sembrava che le pillole fossero le leggi da scegliere */
+.filtri { margin-top: 18px; }
+.etichetta-filtri { font-weight: 700; font-size: 14px; color: var(--testo-2); margin: 0 0 6px; }
+.filtri-scorrevoli { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 8px;
+  scrollbar-width: thin; }
+.filtri-scorrevoli > .pill { flex: none; margin: 0; white-space: nowrap; }
+/* due viste della stessa legge, sotto il titolo: prima "per gli altri" era un bottone
+   in fondo alla pagina, dopo le fonti, e non lo notava nessuno */
+.schede { display: flex; gap: 6px; margin: 12px 0 4px; padding: 4px;
+  background: var(--superficie-2); border: 1px solid var(--bordo);
+  border-radius: var(--raggio-pillola); }
+.scheda { flex: 1; display: inline-flex; align-items: center; justify-content: center;
+  gap: 8px; min-height: 46px; padding: 8px 10px; border: none;
+  border-radius: var(--raggio-pillola); background: none; color: var(--testo-2);
+  font: inherit; font-weight: 700; font-size: 14px; line-height: 1.25;
+  cursor: pointer; text-align: center; }
+@media (min-width: 420px) { .scheda { font-size: 15px; } }
+.scheda[aria-current='page'] { background: var(--accento); color: #fff;
+  box-shadow: var(--ombra); cursor: default; }
+[data-theme='dark'] .scheda[aria-current='page'] { color: #0E2433; }
 /* item 3: disclaimer AI breve, si espande al clic */
 .disclaimer-ai { font-size: 13px; color: var(--testo); border: 2px solid var(--rosso);
   border-radius: 12px; padding: 10px 12px; background: #FBE4E4; }
 [data-theme='dark'] .disclaimer-ai { background: #3A1416; }
 .disclaimer-ai > summary { cursor: pointer; font-weight: 700; color: var(--rosso); }
 .disclaimer-ai > p { margin: 8px 0 0; }
-/* legenda dei badge di confidenza nel report */
-.legenda { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 8px; font-size: 14px; }
-.legenda > li { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+/* legenda dei badge: una riga sola, sempre sotto gli occhi, appena sopra gli effetti */
+.legenda-riga { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center;
+  margin: 14px 0 2px; font-size: 13px; color: var(--testo-2); }
+.legenda-voce { display: inline-flex; align-items: center; gap: 6px; }
 /* item 8: sezioni del report che si aprono a tendina per accorciare la lettura */
 .dettaglio-sezione > summary { cursor: pointer; font-weight: 700; color: var(--testo);
   font-family: 'Fraunces Variable', Georgia, 'Times New Roman', serif; font-size: 18px; }

@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import type { Legge } from '../engine/types';
+import { Icona } from './Icona';
 import { chiaveCronologica } from './formato';
 
 // minuscolo + senza accenti, per cercare "citta" e trovare "città"
@@ -88,26 +89,34 @@ export function ComboboxLeggi({ leggi, valoreId, onScegli, etichettaStato }: {
 
   return (
     <div className="combobox" ref={boxRef}>
-      <label id={labelId} htmlFor={`${listaId}-input`} style={{ display: 'block', fontWeight: 800, marginBottom: 8 }}>
+      {/* sopra la barra c'e' gia' il titolo della sezione: l'etichetta resta solo per
+          chi naviga con lo screen reader, che ha bisogno del nome del campo */}
+      <label id={labelId} htmlFor={`${listaId}-input`} className="visually-hidden">
         Scegli la legge da simulare
       </label>
-      <input
-        id={`${listaId}-input`}
-        className="tendina"
-        type="text"
-        role="combobox"
-        aria-expanded={aperta}
-        aria-controls={aperta ? listaId : undefined}
-        aria-autocomplete="list"
-        aria-activedescendant={aperta && filtrate[attivo] ? `${listaId}-opt-${filtrate[attivo].id}` : undefined}
-        placeholder="Scrivi le prime lettere o apri l'elenco…"
-        value={testo}
-        onChange={(e) => { setTesto(e.target.value); setAperta(true); setAttivo(0); }}
-        onFocus={apri}
-        onClick={apri}
-        onKeyDown={suTasto}
-        onBlur={() => setAperta(false)}
-      />
+      {/* il campo dice da solo che si tocca e quante leggi ci sono dentro: prima era un
+          riquadro grigio con un testo sbiadito, e la gente non capiva che si apriva */}
+      <div className="combobox-campo">
+        <span className="combobox-lente" aria-hidden="true"><Icona nome="lente" dimensione={20} /></span>
+        <input
+          id={`${listaId}-input`}
+          className="tendina tendina-grande"
+          type="text"
+          role="combobox"
+          aria-expanded={aperta}
+          aria-controls={aperta ? listaId : undefined}
+          aria-autocomplete="list"
+          aria-activedescendant={aperta && filtrate[attivo] ? `${listaId}-opt-${filtrate[attivo].id}` : undefined}
+          placeholder={`Tocca qui: ${leggi.length} legg${leggi.length === 1 ? 'e' : 'i'}`}
+          value={testo}
+          onChange={(e) => { setTesto(e.target.value); setAperta(true); setAttivo(0); }}
+          onFocus={apri}
+          onClick={apri}
+          onKeyDown={suTasto}
+          onBlur={() => setAperta(false)}
+        />
+        <span className="combobox-giu" aria-hidden="true"><Icona nome="giu" dimensione={20} /></span>
+      </div>
       {aperta && (
         <ul className="combobox-lista" id={listaId} role="listbox" aria-labelledby={labelId} ref={listaRef}>
           {filtrate.length === 0 ? (

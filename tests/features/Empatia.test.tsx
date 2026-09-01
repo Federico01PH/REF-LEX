@@ -110,3 +110,18 @@ test('il bottone crea profilo ipotetico chiama onCreaIpotetico', async () => {
   await userEvent.click(screen.getByRole('button', { name: /crea un profilo ipotetico/i }));
   expect(onCrea).toHaveBeenCalled();
 });
+
+// --- le stesse due schede del report: le due viste sono una pagina sola ---
+
+test('anche qui ci sono le due schede, e "come tocca a te" torna al report', async () => {
+  const onIndietro = vi.fn();
+  render(<Empatia legge={cuneoFiscale} onCreaIpotetico={vi.fn()} onIndietro={onIndietro} />);
+  expect(screen.getByRole('button', { name: /come tocca agli altri/i })).toHaveAttribute('aria-current', 'page');
+  await userEvent.click(screen.getByRole('button', { name: /come tocca a te/i }));
+  expect(onIndietro).toHaveBeenCalled();
+});
+
+test('il titolo della legge c\'è anche nella vista degli altri', () => {
+  render(<Empatia legge={cuneoFiscale} onCreaIpotetico={vi.fn()} onIndietro={vi.fn()} />);
+  expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/cuneo fiscale/i);
+});

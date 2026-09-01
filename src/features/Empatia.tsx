@@ -4,12 +4,8 @@ import { PERSONAGGI, type Personaggio } from '../data/personas';
 import { simula } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
 import { descrizioneConEnfasi } from '../ui/enfasi';
-
-const CONFIDENZA = {
-  certa: { classe: 'badge-certa', parola: 'Certo' },
-  probabile: { classe: 'badge-probabile', parola: 'Probabile' },
-  dipende: { classe: 'badge-dipende', parola: 'Dipende' }
-} as const;
+import { CONFIDENZA } from '../ui/confidenza';
+import { SchedeReport } from '../ui/SchedeReport';
 
 const stileBottoneTesto = {
   background: 'none', border: 'none', textDecoration: 'underline',
@@ -137,10 +133,10 @@ export function Empatia({ profilo, legge, onCreaIpotetico, onIndietro }: {
 
   return (
     <div>
-      <button className="btn btn-secondario" onClick={onIndietro} style={{ width: 'auto', display: 'inline-flex', gap: 6 }}>
-        <Icona nome="indietro" dimensione={16} /> Il mio report
-      </button>
-      <h1 style={{ fontSize: 24 }}>E per gli altri?</h1>
+      {/* stesso titolo e stesse schede del report: le due viste sono una pagina sola,
+          e la scheda "Come tocca a te" fa il lavoro del vecchio bottone "Il mio report" */}
+      <h1 style={{ fontSize: 24 }}>{legge.titoloDivulgativo}</h1>
+      <SchedeReport attiva="altri" onTe={onIndietro} onAltri={() => {}} />
       {rilevanti.length === 0 ? (
         <p>
           {miaFirma === null

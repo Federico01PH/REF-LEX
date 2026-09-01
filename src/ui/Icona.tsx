@@ -8,7 +8,9 @@ const TRACCIATI = {
   spunta: 'M5 13l4 4L19 7',
   cestino: 'M9 3h6l1 2h4v2H4V5h4l1-2Zm-3 6h12l-1 12H7L6 9Z',
   occhio: 'M12 5C5 5 2 12 2 12s3 7 10 7 10-7 10-7-3-7-10-7Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z',
-  documento: 'M6 2h9l5 5v15H6V2Zm8 1v5h5'
+  documento: 'M6 2h9l5 5v15H6V2Zm8 1v5h5',
+  lente: 'M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm5.5 11.5L21 20',
+  giu: 'm6 9 6 6 6-6'
 };
 
 export type NomeIcona = keyof typeof TRACCIATI;

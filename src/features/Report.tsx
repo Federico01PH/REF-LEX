@@ -4,6 +4,9 @@ import { ORIZZONTI } from '../engine/types';
 import { orizzonteEtichetta, simula } from '../engine/simulate';
 import { Icona } from '../ui/Icona';
 import { descrizioneConEnfasi } from '../ui/enfasi';
+import { CONFIDENZA } from '../ui/confidenza';
+import { LegendaBadge } from '../ui/LegendaBadge';
+import { SchedeReport } from '../ui/SchedeReport';
 
 // i risultati spiccano sul resto della pagina: un bordo a sinistra colorato secondo
 // il verso dell'effetto (bene/male/misto/neutro), come già fa il riquadro del totale
@@ -19,11 +22,6 @@ const ETICHETTA_CAMPO: Partial<Record<keyof Profilo, string>> = {
   settoriProfessionali: 'che lavoro fai', personeACarico: 'se hai persone a carico',
   tipiACarico: 'chi hai a carico'
 };
-const CONFIDENZA = {
-  certa: { classe: 'badge-certa', parola: 'Certo' },
-  probabile: { classe: 'badge-probabile', parola: 'Probabile' },
-  dipende: { classe: 'badge-dipende', parola: 'Dipende' }
-} as const;
 const INTENSITA = {
   lieve: { classe: 'badge-lieve', parola: 'Compressione lieve' },
   sensibile: { classe: 'badge-sensibile', parola: 'Compressione sensibile' },
@@ -35,18 +33,33 @@ function formattaIntervallo(min: number, max: number): string {
   return min === max ? `${segno(min)} €` : `da ${segno(min)} a ${segno(max)} €`;
 }
 
-function RigaEffetto({ regola }: { regola: Regola }) {
+function RigaEffetto({ regola, orizzonte }: { regola: Regola; orizzonte: Orizzonte }) {
   const [aperta, setAperta] = useState(false);
   const conf = CONFIDENZA[regola.confidenza];
   // testo corto di default (campo breve), con "Spiega meglio" che apre la descrizione
   // completa + note + fonte. Senza breve resta il testo intero e il toggle "Dettagli e fonte".
   const haBreve = !!regola.effetto.breve;
   const testo = haBreve && !aperta ? regola.effetto.breve! : regola.effetto.descrizione;
+  // nell'anno scelto l'effetto può essere spento (timeline 'nullo'): va detto, altrimenti
+  // il selettore degli orizzonti non cambierebbe niente a schermo per le leggi senza euro.
+  // Due ragioni diverse: o è già finito, o non è ancora partito.
+  const spento = regola.timeline[orizzonte] === 'nullo';
+  const giaFinito = spento &&
+    ORIZZONTI.slice(0, ORIZZONTI.indexOf(orizzonte)).some((o) => regola.timeline[o] !== 'nullo');
   return (
-    <div className="card spazio risultato" style={{ borderLeft: `5px solid ${COLORE_DIREZIONE[regola.effetto.direzione]}` }}>
+    <div className={`card spazio risultato${spento ? ' spento' : ''}`}
+      style={{ borderLeft: `5px solid ${spento ? 'var(--bordo)' : COLORE_DIREZIONE[regola.effetto.direzione]}` }}>
       <span className={`badge ${conf.classe}`}>{conf.parola}</span>
       <p style={{ margin: '8px 0' }}>{descrizioneConEnfasi(testo)}</p>
-      {regola.effetto.importoMese && (
+      {spento && (
+        <p className="effetto-spento">
+          <span className="badge badge-spento">{giaFinito ? 'Non vale più' : 'Non ancora'}</span>
+          {giaFinito
+            ? `Tra ${orizzonteEtichetta(orizzonte)} questo effetto è finito.`
+            : `Tra ${orizzonteEtichetta(orizzonte)} questo effetto non è ancora partito.`}
+        </p>
+      )}
+      {!spento && regola.effetto.importoMese && (
         <p style={{ margin: '4px 0', fontWeight: 900, fontSize: 20 }}>
           {formattaIntervallo(
             regola.effetto.direzione === 'negativo' ? -regola.effetto.importoMese.max : regola.effetto.importoMese.min,
@@ -109,15 +122,8 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
         <Icona nome="indietro" dimensione={16} /> Catalogo
       </button>
       <h1 style={{ fontSize: 24 }}>{legge.titoloDivulgativo}</h1>
+      <SchedeReport attiva="te" onTe={() => {}} onAltri={onAltri} />
       {esploratore && <p className="badge badge-dipende">Stai guardando con gli occhi di un profilo ipotetico</p>}
-      {nonInVigore && (
-        <p className="card" style={{ borderLeft: '4px solid var(--arancio)' }}>
-          <b>Attenzione: effetti non ancora attivi.</b>{' '}
-          {legge.stato === 'approvata'
-            ? 'Approvata, ma gli effetti concreti dipendono dai prossimi passi (i decreti attuativi).'
-            : 'Non è ancora in vigore: vedi cosa succederebbe se passasse il testo di oggi.'}
-        </p>
-      )}
       <details className="dettaglio-sezione spazio">
         <summary>Cosa prevede questa legge</summary>
         <p style={{ margin: '8px 0 0' }}>{legge.riassunto}</p>
@@ -151,26 +157,18 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
               <div>al mese{evoluzioneTemporale ? ` tra ${orizzonteEtichetta(orizzonte)}` : ''} (effetti certi e probabili)</div>
             </div>
           )}
-          <details className="dettaglio-sezione spazio">
-            <summary>Cosa vogliono dire le etichette</summary>
-            <ul className="legenda">
-              <li><span className="badge badge-certa">Certo</span> L'effetto è scritto chiaro nella legge già in vigore.</li>
-              <li><span className="badge badge-probabile">Probabile</span> Molto verosimile, ma manca ancora un passaggio (decreti o conferme).</li>
-              <li><span className="badge badge-dipende">Dipende</span> Cambia in base alla tua situazione o a scelte ancora aperte.</li>
-              <li><span className="badge badge-sensibile">Compressione</span> Quanto la legge limita un tuo diritto: lieve, sensibile o grave.</li>
-            </ul>
-          </details>
+          <LegendaBadge conDiritti={r.effetti.some((e) => e.effetto.dirittoToccato)} />
           {r.effetti.some((e) => !e.effetto.indiretto) && (
             <h2 style={{ fontSize: 19, margin: '4px 0 2px' }}>Cosa cambia per te</h2>
           )}
-          {r.effetti.filter((e) => !e.effetto.indiretto).map((regola) => <RigaEffetto key={regola.id} regola={regola} />)}
+          {r.effetti.filter((e) => !e.effetto.indiretto).map((regola) => <RigaEffetto key={regola.id} regola={regola} orizzonte={orizzonte} />)}
           {r.effetti.some((e) => e.effetto.indiretto) && (
             <section aria-label="Effetti indiretti" className="spazio">
               <h2 style={{ fontSize: 19, marginBottom: 2 }}>Effetti indiretti</h2>
               <p className="testo-piccolo" style={{ marginTop: 0 }}>
                 Qui la legge non parla di te, ma ti tocca di riflesso: di solito è la parte che nessuno racconta.
               </p>
-              {r.effetti.filter((e) => e.effetto.indiretto).map((regola) => <RigaEffetto key={regola.id} regola={regola} />)}
+              {r.effetti.filter((e) => e.effetto.indiretto).map((regola) => <RigaEffetto key={regola.id} regola={regola} orizzonte={orizzonte} />)}
             </section>
           )}
           {r.effetti.some((e) => e.timeline[orizzonte] === 'incerto') && (
@@ -189,6 +187,15 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
         </>
       )}
 
+      {nonInVigore && (
+        <p className="card spazio" style={{ borderLeft: '4px solid var(--arancio)' }}>
+          <b>Attenzione: effetti non ancora attivi.</b>{' '}
+          {legge.stato === 'approvata'
+            ? 'Approvata, ma gli effetti concreti dipendono dai prossimi passi (i decreti attuativi).'
+            : 'Non è ancora in vigore: vedi cosa succederebbe se passasse il testo di oggi.'}
+        </p>
+      )}
+
       <p className="testo-piccolo spazio">
         Simulazione a parità di tutte le altre leggi, con i dati di oggi. Catalogo aggiornato al {legge.verificataIl}.
         {' '}Fonti:{' '}
@@ -196,15 +203,6 @@ export function Report({ profilo, legge, esploratore, onAltri, onIndietro }: {
           <span key={f.url}>{i > 0 && ' · '}<a href={f.url} target="_blank" rel="noopener noreferrer">{f.etichetta}</a></span>
         ))}
       </p>
-      <div className="invito-altri spazio">
-        <p style={{ margin: '0 0 10px', fontWeight: 700 }}>
-          Questa legge non tocca tutti allo stesso modo.
-        </p>
-        <button className="btn" onClick={onAltri}
-          style={{ display: 'inline-flex', width: 'auto', gap: 8, alignItems: 'center' }}>
-          <Icona nome="persone" dimensione={18} /> Vedi com'è per gli altri
-        </button>
-      </div>
 
       <details className="disclaimer-ai spazio">
         <summary>

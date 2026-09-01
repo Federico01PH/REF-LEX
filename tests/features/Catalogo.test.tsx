@@ -132,3 +132,48 @@ test('le sezioni per chiedere simulazioni e segnalare problemi ci sono sempre', 
   expect(screen.getByRole('heading', { name: /chiedi una simulazione/i })).toBeInTheDocument();
   expect(screen.getByRole('heading', { name: /qualcosa non va/i })).toBeInTheDocument();
 });
+
+// --- l'azione principale deve saltare all'occhio ---
+// Le persone non capivano cosa fare per primo: credevano che le pillole degli argomenti
+// fossero le scelte e non vedevano la barra. Ora la barra viene prima, i filtri dopo e
+// presentati come restringimento facoltativo, e "I tuoi dati" scende in fondo.
+
+function vienePrima(a: HTMLElement, b: HTMLElement) {
+  return Boolean(a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING);
+}
+
+test('la barra per scegliere la legge viene prima dei filtri', () => {
+  renderCatalogo();
+  const barra = screen.getByRole('combobox', { name: /scegli la legge/i });
+  const filtri = screen.getByRole('group', { name: /filtra per argomento/i });
+  expect(vienePrima(barra, filtri)).toBe(true);
+});
+
+test('la barra dice quante leggi si possono scegliere', () => {
+  renderCatalogo();
+  expect(screen.getByRole('combobox', { name: /scegli la legge/i }))
+    .toHaveAttribute('placeholder', expect.stringContaining(`${CATALOGO.length} leggi`));
+});
+
+test('i filtri sono presentati come restringimento, non come primo passo obbligatorio', () => {
+  renderCatalogo();
+  expect(screen.getByText(/restringi per argomento/i)).toBeInTheDocument();
+  expect(screen.queryByText(/filtra per argomento, poi scegli la legge/i)).not.toBeInTheDocument();
+});
+
+test('"I tuoi dati" sta dopo la scelta della legge, non prima', () => {
+  renderCatalogo();
+  const scelta = screen.getByRole('region', { name: /scegli una legge da simulare/i });
+  const dati = screen.getByRole('region', { name: /profilo e dati/i });
+  expect(vienePrima(scelta, dati)).toBe(true);
+});
+
+test('sopra la barra basta il titolo: l\'etichetta del campo resta solo per chi usa lo screen reader', () => {
+  renderCatalogo();
+  expect(screen.getByText('Scegli la legge da simulare')).toHaveClass('visually-hidden');
+});
+
+test('l\'etichetta dei filtri dice solo "Restringi per argomento"', () => {
+  renderCatalogo();
+  expect(screen.getByText(/^restringi per argomento$/i)).toBeInTheDocument();
+});

@@ -70,29 +70,10 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
           </button>
         </p>
       )}
-      <section aria-label="Profilo e dati" className="card spazio">
-        <h2 style={{ fontSize: 17, marginTop: 0, marginBottom: 2 }}>I tuoi dati</h2>
-        <p className="testo-piccolo" style={{ marginTop: 0 }}>
-          Le simulazioni partono dal tuo profilo. Resta sul tuo dispositivo: puoi cambiarlo o cancellarlo quando vuoi.
-        </p>
-        <div className="riga-azioni">
-          <button className="btn btn-secondario" onClick={onModificaProfilo}>
-            <Icona nome="persona" dimensione={16} /> Modifica profilo
-          </button>
-          <button className="btn btn-secondario" onClick={onPrivacy}>
-            <Icona nome="lucchetto" dimensione={16} /> Privacy e cancellazione
-          </button>
-        </div>
-      </section>
       <section className="scelta-legge spazio" aria-label="Scegli una legge da simulare">
         <h2 className="scelta-legge-titolo">Scegli la legge e misura l'impatto sulla tua vita</h2>
-        <p className="etichetta-filtri">Filtra per argomento, poi scegli la legge:</p>
-        <div role="group" aria-label="Filtra per argomento">
-          {AMBITI.map((a) => (
-            <button key={a.valore} className="pill" aria-pressed={ambito === a.valore}
-              onClick={() => { setAmbito(a.valore); setSceltaId(''); }}>{a.etichetta}</button>
-          ))}
-        </div>
+        {/* la barra viene per prima: e' l'azione. Il filtro e' un aiuto, e sta sotto:
+            scritto al contrario, la gente credeva che le pillole fossero le scelte */}
         <div className="scelta-legge-campo">
           <ComboboxLeggi
             leggi={visibili}
@@ -105,6 +86,15 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
               Per questo argomento non abbiamo ancora leggi nel catalogo: stanno arrivando.
             </p>
           )}
+        </div>
+        <div className="filtri">
+          <p className="etichetta-filtri">Restringi per argomento</p>
+          <div className="filtri-scorrevoli" role="group" aria-label="Filtra per argomento">
+            {AMBITI.map((a) => (
+              <button key={a.valore} className="pill" aria-pressed={ambito === a.valore}
+                onClick={() => { setAmbito(a.valore); setSceltaId(''); }}>{a.etichetta}</button>
+            ))}
+          </div>
         </div>
       </section>
       {scelta && (
@@ -130,6 +120,20 @@ export function Catalogo({ profilo, esploratore, leggi, novita, infoCatalogo, on
       )}
       <div className="sezione-minore">
         <hr className="divisore" />
+        <section aria-label="Profilo e dati" className="card spazio">
+          <h2 style={{ fontSize: 16, marginTop: 0, marginBottom: 2 }}>I tuoi dati</h2>
+          <p className="testo-piccolo" style={{ marginTop: 0 }}>
+            Restano sul tuo dispositivo.
+          </p>
+          <div className="riga-azioni">
+            <button className="btn btn-secondario" onClick={onModificaProfilo}>
+              <Icona nome="persona" dimensione={16} /> Modifica profilo
+            </button>
+            <button className="btn btn-secondario" onClick={onPrivacy}>
+              <Icona nome="lucchetto" dimensione={16} /> Privacy e cancellazione
+            </button>
+          </div>
+        </section>
         <p className="testo-piccolo" style={{ marginTop: 14, marginBottom: 0 }}>
           Aiutaci a migliorare REF-LEX:
         </p>
