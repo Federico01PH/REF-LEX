@@ -24,8 +24,14 @@ import type { Legge } from '../../engine/types';
 //   UE: screening alle frontiere fino a 7 giorni, procedura accelerata per chi proviene da
 //   Paesi sicuri o con tasso di riconoscimento sotto il 20% o con documenti falsi.
 //
-// È un DECRETO-LEGGE: in vigore subito, ma da convertire entro ~60 giorni (entro ~agosto 2026),
-// e può essere modificato in conversione → confidenza "probabile". Le norme migrazione/asilo
+// CONVERTITO: la LEGGE 7 agosto 2026, n. 145 (26G00164, GU n. 183 dell'8 agosto 2026, in
+// vigore dal 9 agosto 2026) ha convertito il decreto SENZA MODIFICAZIONI — l'art. 1, comma 1
+// dice «È convertito in legge il decreto-legge 12 giugno 2026, n. 100», senza la formula
+// "con modificazioni", e la Gazzetta ripubblica il testo del decreto corredato delle sole
+// note. Testo verificato su Normattiva il 2026-09-01:
+// https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-08-07;145
+// Di conseguenza il contenuto è definitivo: le confidenze che erano "probabile" solo perché
+// il decreto poteva cambiare in conversione diventano "certa". Le norme migrazione/asilo
 // recepiscono regolamenti UE direttamente applicabili: struttura stabile, timeline attiva.
 // TONO NEUTRO: REF-LEX segnala cosa cambia e quali diritti tocca, non dice se è giusto o no.
 
@@ -41,6 +47,10 @@ const FONTE_SENATO = {
   etichetta: 'Senato della Repubblica — DDL di conversione del DL 100/2026',
   url: 'https://dati.senato.it/ddl/60214'
 };
+const FONTE_CONVERSIONE = {
+  etichetta: 'Legge 7 agosto 2026, n. 145 — conversione senza modificazioni del DL 100/2026 (Normattiva)',
+  url: 'https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-08-07;145'
+};
 
 const ART10_COST = 'https://www.senato.it/istituzione/la-costituzione/principi-fondamentali/articolo-10';
 const CARTA_UE = 'https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:12012P/TXT';
@@ -48,13 +58,13 @@ const CARTA_UE = 'https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:1201
 export const dlMigrazioneAsilo: Legge = {
   id: 'dl-migrazione-asilo-2026',
   titoloDivulgativo: 'Decreto giustizia e migrazione: asilo alla frontiera e nuovo esame da avvocato',
-  titoloUfficiale: 'Decreto-legge 12 giugno 2026, n. 100 — Misure urgenti in materia di giustizia e per l\'attuazione del Patto dell\'Unione europea sulla migrazione e l\'asilo del 14 maggio 2024',
+  titoloUfficiale: 'Decreto-legge 12 giugno 2026, n. 100, convertito senza modificazioni dalla legge 7 agosto 2026, n. 145 — Misure urgenti in materia di giustizia e per l\'attuazione del Patto dell\'Unione europea sulla migrazione e l\'asilo del 14 maggio 2024',
   meseAnno: 'giugno 2026',
   stato: 'vigore',
   ambiti: ['sicurezza-privacy', 'scuola-universita-ricerca'],
-  fonti: [FONTE, FONTE_GU, FONTE_SENATO],
-  verificataIl: '2026-06-15',
-  riassunto: 'Un decreto-legge in vigore dal 12 giugno 2026 che fa due cose diverse. Sul fronte migrazione attua il Patto europeo su migrazione e asilo: procedure di asilo accelerate alla frontiera (massimo 12 settimane), controlli e identificazione all\'arrivo, banca dati europea Eurodac con impronte e foto. Sul fronte giustizia cambia l\'esame di Stato per diventare avvocato: una sola sessione l\'anno, due prove scritte e un orale. È un decreto-legge: per restare in vigore va convertito in legge dal Parlamento entro circa due mesi.',
+  fonti: [FONTE, FONTE_GU, FONTE_SENATO, FONTE_CONVERSIONE],
+  verificataIl: '2026-09-01',
+  riassunto: 'Un decreto-legge in vigore dal 12 giugno 2026 che fa due cose diverse. Sul fronte migrazione attua il Patto europeo su migrazione e asilo: procedure di asilo accelerate alla frontiera (massimo 12 settimane), controlli e identificazione all\'arrivo, banca dati europea Eurodac con impronte e foto. Sul fronte giustizia cambia l\'esame di Stato per diventare avvocato: una sola sessione l\'anno, due prove scritte e un orale. Il Parlamento lo ha convertito in legge il 7 agosto 2026 senza cambiare una virgola: quindi ora è definitivo.',
   regole: [
     {
       id: 'dl100-procedura-frontiera',
@@ -67,8 +77,8 @@ export const dlMigrazioneAsilo: Legge = {
         direzione: 'misto'
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
-      confidenza: 'probabile',
-      noteConfidenza: 'Attua i Regolamenti UE 2024/1348 e 2024/1356. La procedura di frontiera si applica soprattutto a chi proviene da Paesi considerati sicuri o con basso tasso di riconoscimento della protezione, o in caso di documenti falsi. È un decreto-legge da convertire entro circa due mesi: alcuni dettagli possono cambiare.',
+      confidenza: 'certa',
+      noteConfidenza: 'Attua i Regolamenti UE 2024/1348 e 2024/1356. La procedura di frontiera si applica soprattutto a chi proviene da Paesi considerati sicuri o con basso tasso di riconoscimento della protezione, o in caso di documenti falsi. Il decreto è stato convertito in legge il 7 agosto 2026 senza modificazioni: il testo è definitivo.',
       fonteRegola: FONTE
     },
     {
@@ -90,8 +100,8 @@ export const dlMigrazioneAsilo: Legge = {
         }
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
-      confidenza: 'probabile',
-      noteConfidenza: 'Il diritto d\'asilo resta garantito dall\'art. 10 della Costituzione, dalla Convenzione di Ginevra e dal diritto UE, con possibilità di ricorso al giudice. Intensità "sensibile": cambiano tempi e modalità della procedura, non l\'esistenza del diritto. Decreto-legge da convertire.',
+      confidenza: 'certa',
+      noteConfidenza: 'Il diritto d\'asilo resta garantito dall\'art. 10 della Costituzione, dalla Convenzione di Ginevra e dal diritto UE, con possibilità di ricorso al giudice. Intensità "sensibile": cambiano tempi e modalità della procedura, non l\'esistenza del diritto. Il decreto è stato convertito in legge il 7 agosto 2026 senza modificazioni.',
       fonteRegola: FONTE
     },
     {
@@ -113,8 +123,8 @@ export const dlMigrazioneAsilo: Legge = {
         }
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
-      confidenza: 'probabile',
-      noteConfidenza: 'Attua il Regolamento UE 2024/1358 (Eurodac). I dati biometrici restano soggetti al GDPR e alle garanzie UE, con limiti d\'uso e tempi di conservazione. Intensità "sensibile" perché si tratta di dati biometrici accessibili anche a fini di contrasto. Decreto-legge da convertire.',
+      confidenza: 'certa',
+      noteConfidenza: 'Attua il Regolamento UE 2024/1358 (Eurodac). I dati biometrici restano soggetti al GDPR e alle garanzie UE, con limiti d\'uso e tempi di conservazione. Intensità "sensibile" perché si tratta di dati biometrici accessibili anche a fini di contrasto. Il decreto è stato convertito in legge il 7 agosto 2026 senza modificazioni.',
       fonteRegola: FONTE
     },
     {
@@ -129,7 +139,7 @@ export const dlMigrazioneAsilo: Legge = {
       },
       timeline: { anno1: 'attivo', anno2: 'attivo', anno5: 'attivo', anno10: 'attivo' },
       confidenza: 'dipende',
-      noteConfidenza: 'Vale solo se sei laureato in giurisprudenza e intendi sostenere l\'esame di abilitazione forense: un dato che non ti chiediamo, per questo la mostriamo a chi ha una laurea. Le nuove regole (art. 1 del decreto) si applicano dalla prima sessione dopo l\'entrata in vigore e abrogano gli artt. 46, 47 e 49 della L. 247/2012. Decreto-legge da convertire.',
+      noteConfidenza: 'Vale solo se sei laureato in giurisprudenza e intendi sostenere l\'esame di abilitazione forense: un dato che non ti chiediamo, per questo la mostriamo a chi ha una laurea. Le nuove regole (art. 1 del decreto) si applicano dalla prima sessione dopo l\'entrata in vigore e abrogano gli artt. 46, 47 e 49 della L. 247/2012. Il decreto è stato convertito in legge il 7 agosto 2026 senza modificazioni.',
       fonteRegola: FONTE
     }
   ]

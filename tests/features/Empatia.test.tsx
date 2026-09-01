@@ -65,10 +65,10 @@ test('i profili con lo stesso identico report diventano una scheda sola', () => 
 
 test('la scheda di gruppo dice a quali altre categorie di persone la legge fa lo stesso', () => {
   render(<Empatia legge={cuneoFiscale} onCreaIpotetico={vi.fn()} onIndietro={vi.fn()} />);
-  // Giulia intesta il gruppo; Daniela e Miriam sono nominate per categoria, non per nome
+  // Giulia intesta il gruppo; Daniela, Miriam e Chiara sono nominate per categoria, non per nome
   const cardGiulia = screen.getByText(/giulia, 38 anni/i).closest('li')!;
   expect(cardGiulia).toHaveTextContent(
-    /Stesso effetto anche per un'insegnante e un'impiegata di religione ebraica\./i
+    /Stesso effetto anche per un'insegnante, un'impiegata di religione ebraica e un'infermiera\./i
   );
 });
 

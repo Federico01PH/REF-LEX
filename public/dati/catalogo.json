@@ -1,6 +1,6 @@
 {
-  "versione": 22,
-  "generatoIl": "2026-07-16",
+  "versione": 23,
+  "generatoIl": "2026-09-01",
   "leggi": [
     {
       "id": "cuneo-fiscale-2025",
@@ -1438,10 +1438,14 @@
         {
           "etichetta": "Regolamento (UE) 2024/1689 — AI Act (EUR-Lex)",
           "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689"
+        },
+        {
+          "etichetta": "Regolamento (UE) 2026/1744 — Omnibus digitale sull'IA, che ha spostato le date (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=OJ:L_202601744"
         }
       ],
-      "verificataIl": "2026-06-11",
-      "riassunto": "L'Europa ha messo dei paletti all'intelligenza artificiale. Già vietati: il punteggio sociale, il riconoscimento delle emozioni a scuola e al lavoro, gli inganni costruiti con l'IA. Dal 2 agosto 2026 scattano le tutele piene quando un'IA decide su di te (assunzioni, prestiti, scuola): supervisione umana e diritto di sapere e reclamare. Chatbot e deepfake devono dichiararsi.",
+      "verificataIl": "2026-09-01",
+      "riassunto": "L'Europa ha messo dei paletti all'intelligenza artificiale. Già vietati: il punteggio sociale, il riconoscimento delle emozioni a scuola e al lavoro, gli inganni costruiti con l'IA. Le tutele piene per quando un'IA decide su di te (assunzioni, prestiti, scuola) dovevano arrivare il 2 agosto 2026, ma l'Omnibus digitale del luglio 2026 le ha spostate al 2 dicembre 2027, e al 2 agosto 2028 per l'IA dentro i prodotti. Chatbot e deepfake devono comunque dichiararsi.",
       "regole": [
         {
           "id": "ai-act-divieti",
@@ -1523,8 +1527,8 @@
           ],
           "effetto": {
             "tipo": "diritto",
-            "descrizione": "Se un'IA viene usata per decidere su di te — selezionarti per un lavoro, valutarti a scuola, concederti un prestito — dal 2 agosto 2026 servono supervisione umana, dati di qualità e hai diritto a una spiegazione e al reclamo.",
-            "breve": "Se un'IA decide su lavoro, scuola o prestiti, dal 2 agosto 2026 hai diritto a controllo umano, spiegazione e reclamo.",
+            "descrizione": "Se un'IA viene usata per decidere su di te — selezionarti per un lavoro, valutarti a scuola, concederti un prestito — servono supervisione umana, dati di qualità, e hai diritto a una spiegazione e al reclamo. Queste tutele dovevano scattare il 2 agosto 2026: l'Omnibus digitale sull'IA, in vigore dal 27 luglio 2026, le ha spostate al 2 dicembre 2027 per i sistemi elencati nell'allegato III (fra cui lavoro, istruzione, credito e servizi essenziali) e al 2 agosto 2028 per l'IA incorporata nei prodotti.",
+            "breve": "Controllo umano, spiegazione e reclamo quando un'IA decide su di te: ma solo dal 2 dicembre 2027.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -1533,11 +1537,11 @@
             "anno5": "attivo",
             "anno10": "attivo"
           },
-          "confidenza": "probabile",
-          "noteConfidenza": "La data del 2 agosto 2026 è scritta nel regolamento, ma a Bruxelles si discute una proposta (\"digital omnibus\") che potrebbe rinviare una parte di questi obblighi: per questo segniamo \"probabile\" e non \"certo\".",
+          "confidenza": "certa",
+          "noteConfidenza": "Il rinvio non è più un'ipotesi: il \"digital omnibus\" è diventato il Regolamento (UE) 2026/1744, pubblicato il 24 luglio 2026 e in vigore dal 27, e ha riscritto le date dell'articolo 113 dell'AI Act. Le tutele restano scritte e arriveranno, ma più tardi: 2 dicembre 2027 per i sistemi dell'allegato III, 2 agosto 2028 per quelli dentro i prodotti, e fino al 2 agosto 2030 per i sistemi ad alto rischio già in uso presso le autorità pubbliche.",
           "fonteRegola": {
-            "etichetta": "Regolamento (UE) 2024/1689 — AI Act (EUR-Lex)",
-            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689"
+            "etichetta": "Regolamento (UE) 2026/1744 — Omnibus digitale sull'IA, che ha spostato le date (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=OJ:L_202601744"
           }
         },
         {
@@ -1554,7 +1558,7 @@
           ],
           "effetto": {
             "tipo": "diritto",
-            "descrizione": "Effetto indiretto sulla tua privacy: l'AI Act ti protegge, ma lascia delle porte aperte. Il riconoscimento facciale in tempo reale negli spazi pubblici resta vietato \"salvo eccezioni\" per le forze dell'ordine, e le autorità pubbliche possono comunque usare sistemi che ti profilano. In più, la proposta \"digital omnibus\" potrebbe rinviare alcune tutele: la rete di protezione c'è, ma con maglie più larghe di quanto sembri.",
+            "descrizione": "Effetto indiretto sulla tua privacy: l'AI Act ti protegge, ma lascia delle porte aperte. Il riconoscimento facciale in tempo reale negli spazi pubblici resta vietato \"salvo eccezioni\" per le forze dell'ordine, e le autorità pubbliche possono comunque usare sistemi che ti profilano. In più, l'Omnibus digitale del luglio 2026 ha rinviato di oltre un anno le tutele sui sistemi ad alto rischio: la rete di protezione c'è, ma con maglie più larghe di quanto sembri e con tempi più lunghi di quelli promessi.",
             "breve": "Effetto indiretto: tutele sulla privacy, ma con eccezioni per il volto in pubblico e la profilazione pubblica.",
             "direzione": "misto",
             "indiretto": true,
@@ -1572,11 +1576,218 @@
             "anno5": "attivo",
             "anno10": "attivo"
           },
-          "confidenza": "probabile",
-          "noteConfidenza": "Le eccezioni per l'identificazione biometrica a fini di sicurezza e l'uso pubblico di sistemi di profilazione sono nel testo del regolamento (artt. 5 e allegato III). Intensità \"lieve\" perché l'impianto generale è protettivo, ma le eccezioni e un possibile rinvio degli obblighi riducono la tutela reale rispetto a quella promessa.",
+          "confidenza": "certa",
+          "noteConfidenza": "Le eccezioni per l'identificazione biometrica a fini di sicurezza e l'uso pubblico di sistemi di profilazione sono nel testo del regolamento (artt. 5 e allegato III). Il rinvio degli obblighi non è più un'ipotesi: è stato deciso dal Regolamento (UE) 2026/1744. Intensità \"lieve\" perché l'impianto generale resta protettivo, ma le eccezioni e le nuove scadenze riducono la tutela reale rispetto a quella promessa.",
           "fonteRegola": {
             "etichetta": "Regolamento (UE) 2024/1689 — AI Act (EUR-Lex)",
             "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689"
+          }
+        }
+      ]
+    },
+    {
+      "id": "reg-ue-2026-1744-omnibus-ia",
+      "titoloDivulgativo": "Omnibus digitale sull'IA: vietati i deepfake intimi, rinviate le tutele su lavoro e scuola",
+      "titoloUfficiale": "Regolamento (UE) 2026/1744 — modifiche al regolamento (UE) 2024/1689 sull'intelligenza artificiale (Omnibus digitale sull'IA)",
+      "meseAnno": "luglio 2026",
+      "stato": "vigore",
+      "ambiti": [
+        "sicurezza-privacy",
+        "fisco-lavoro",
+        "scuola-universita-ricerca"
+      ],
+      "origine": "europea",
+      "fonti": [
+        {
+          "etichetta": "Regolamento (UE) 2026/1744 — Omnibus digitale sull'IA, testo integrale (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=OJ:L_202601744"
+        },
+        {
+          "etichetta": "Regolamento (UE) 2026/1744 — scheda dell'atto (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32026R1744"
+        },
+        {
+          "etichetta": "Regolamento (UE) 2024/1689 — AI Act, il testo modificato (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:32024R1689"
+        },
+        {
+          "etichetta": "Carta dei diritti fondamentali dell'Unione europea (EUR-Lex)",
+          "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:12012P/TXT"
+        }
+      ],
+      "verificataIl": "2026-09-01",
+      "riassunto": "L'Europa ha corretto l'AI Act. Da una parte aggiunge due divieti nuovi, in vigore dal 2 dicembre 2026: niente sistemi di IA fatti per creare immagini o video sessuali di una persona riconoscibile senza il suo consenso, né materiale pedopornografico. Dall'altra rinvia le tutele piene sui sistemi che decidono su di te — assunzioni, scuola, credito, servizi — dal 2 agosto 2026 al 2 dicembre 2027, e al 2 agosto 2028 per l'IA dentro i prodotti. In più: entro il 2 dicembre 2026 i contenuti creati dall'IA già sul mercato vanno marcati.",
+      "regole": [
+        {
+          "id": "omnibus-divieto-deepfake-intimi",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 13
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Dal 2 dicembre 2026 è vietato in tutta Europa mettere sul mercato, attivare o usare un sistema di intelligenza artificiale che genera o manipola immagini, video, audio o materiale simile delle parti intime di una persona riconoscibile, o che la mostra in atti sessualmente espliciti, senza un suo consenso libero, specifico, informato e inequivocabile. È vietato allo stesso modo un sistema che genera materiale pedopornografico. Il divieto colpisce chi costruisce e vende questi sistemi quando servono proprio a questo, o quando il risultato è prevedibile e ottenibile senza modifiche tecniche significative e mancano protezioni ragionevoli; e colpisce chi li usa per creare quel materiale. Non conta come manipolazione un ritocco che non aumenta l'esposizione delle parti intime e non cambia la natura degli atti ritratti.",
+            "breve": "Dal 2 dicembre 2026 vietata in Europa l'IA che crea immagini sessuali di te senza il tuo consenso.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "È un regolamento europeo già in vigore dal 27 luglio 2026: vale direttamente in Italia, senza bisogno di una legge italiana. La data del 2 dicembre 2026 è quella che il testo fissa per l'entrata in applicazione di questi due divieti. Attenzione a cosa il divieto NON copre: riguarda i sistemi di IA e chi li fornisce o li usa per generare quel materiale, non sostituisce i reati già previsti dal codice penale italiano per la diffusione di immagini sessuali senza consenso.",
+          "fonteRegola": {
+            "etichetta": "Regolamento (UE) 2026/1744 — Omnibus digitale sull'IA, testo integrale (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=OJ:L_202601744"
+          }
+        },
+        {
+          "id": "omnibus-marcatura-contenuti-ia",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 13
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Chi fornisce sistemi di intelligenza artificiale che producono audio, immagini, video o testi artificiali e li aveva già sul mercato prima del 2 agosto 2026 ha tempo fino al 2 dicembre 2026 per adeguarsi all'obbligo di marcare quei contenuti in un formato leggibile dalle macchine. In pratica è la regola che permette a piattaforme, motori di ricerca e strumenti di verifica di riconoscere che un contenuto è stato generato da un'IA anche quando a occhio non si vede. La Commissione europea deve favorire codici di buone pratiche su rilevazione, marcatura ed etichettatura, e se quei codici non bastano può imporre regole comuni con un proprio atto.",
+            "breve": "Entro il 2 dicembre 2026 anche i sistemi già esistenti devono marcare i contenuti creati dall'IA.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "La marcatura è pensata per essere letta dalle macchine: non garantisce da sola che tu veda un'etichetta visibile su ogni immagine o video. L'obbligo riguarda chi fornisce il sistema, non chi pubblica il contenuto.",
+          "fonteRegola": {
+            "etichetta": "Regolamento (UE) 2026/1744 — Omnibus digitale sull'IA, testo integrale (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=OJ:L_202601744"
+          }
+        },
+        {
+          "id": "omnibus-rinvio-tutele-alto-rischio",
+          "campiNecessari": [
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "dipendente-privato",
+                "dipendente-pubblico",
+                "disoccupato",
+                "studente"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Le tutele piene sull'intelligenza artificiale ad alto rischio — quella usata per selezionarti in un'assunzione, valutarti sul lavoro o a scuola, decidere su un prestito o sull'accesso a un servizio essenziale — dovevano scattare il 2 agosto 2026. Questo regolamento le sposta al 2 dicembre 2027, e al 2 agosto 2028 per l'IA incorporata nei prodotti. Fino ad allora restano validi solo i divieti già in vigore e gli obblighi di trasparenza: non sono ancora obbligatorie la supervisione umana, la qualità dei dati e le procedure di reclamo previste per questi sistemi. C'è anche un caso particolare: i sistemi ad alto rischio già sul mercato e destinati alle autorità pubbliche hanno tempo fino al 2 agosto 2030. Restano comunque validi i tuoi diritti sui dati personali, che vengono dal GDPR e non da questo regolamento.",
+            "breve": "Le tutele piene quando un'IA decide su lavoro, scuola o credito slittano dal 2026 al dicembre 2027.",
+            "direzione": "negativo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Il rinvio è scritto nel testo, non è un'ipotesi: il regolamento sostituisce le date dell'articolo 113 dell'AI Act. Le ragioni dichiarate nei considerando sono il ritardo nella preparazione delle norme tecniche e dei sistemi nazionali di controllo, e un onere di adeguamento risultato più pesante del previsto. Il testo afferma di non voler ridurre il livello di protezione: sposta le date, non cancella gli obblighi.",
+          "fonteRegola": {
+            "etichetta": "Regolamento (UE) 2026/1744 — Omnibus digitale sull'IA, testo integrale (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=OJ:L_202601744"
+          }
+        },
+        {
+          "id": "omnibus-semplificazioni-imprese",
+          "campiNecessari": [
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "autonomo-ordinario",
+                "forfettario",
+                "imprenditore"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "Se lavori in proprio o hai un'impresa e usi o sviluppi intelligenza artificiale, questo regolamento alleggerisce alcuni adempimenti. Le piccole e medie imprese senza imprese associate o collegate possono rispettare in modo semplificato una parte del sistema di gestione della qualità, e la Commissione europea deve pubblicare linee guida su quali elementi si semplificano. Viene creato uno spazio di sperimentazione a livello europeo con accesso prioritario per PMI, start-up e piccole imprese a media capitalizzazione, e ogni Stato deve averne uno nazionale operativo entro il 2 agosto 2027. Per le piccole imprese a media capitalizzazione le multe non possono superare il minore fra la percentuale del fatturato e l'importo fisso previsti. Resta l'obbligo di formare chi lavora con l'IA, ma il testo chiarisce che non devi garantire a nessuno un livello specifico di preparazione: la Commissione pubblicherà esempi pratici di come rispettarlo.",
+            "breve": "Se hai un'impresa: adempimenti più leggeri sull'IA, sperimentazione agevolata e multe con un tetto.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Le semplificazioni riguardano il modo di dimostrare la conformità, non il livello di protezione richiesto: gli obblighi restano, cambia quanto lavoro burocratico serve per rispettarli. Il tetto alle sanzioni vale per le piccole imprese a media capitalizzazione, categoria definita dalla raccomandazione (UE) 2025/1099, non per tutte le imprese.",
+          "fonteRegola": {
+            "etichetta": "Regolamento (UE) 2026/1744 — Omnibus digitale sull'IA, testo integrale (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=OJ:L_202601744"
+          }
+        },
+        {
+          "id": "omnibus-dati-e-tutele-indiretto",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 13
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto di riflesso sui tuoi dati e sulle tue tutele. Da un lato il regolamento allunga di oltre un anno il periodo in cui un sistema di IA può valutarti per un lavoro, un prestito o un percorso di studi senza che siano ancora obbligatorie la supervisione umana e le procedure di reclamo dell'AI Act. Dall'altro introduce un articolo nuovo che permette a chi sviluppa sistemi ad alto rischio di trattare, in via eccezionale, categorie particolari di dati personali — quelli su salute, origine etnica, opinioni, religione, vita sessuale — al solo scopo di scoprire e correggere le distorsioni dei sistemi. I paletti sono stretti e scritti nel testo: si può fare solo se dati sintetici o anonimizzati non bastano, con pseudonimizzazione, limiti tecnici al riutilizzo, accessi controllati e documentati, divieto di passare quei dati a terzi e cancellazione una volta corretta la distorsione.",
+            "breve": "Più tempo senza tutele piene, e dati sensibili trattabili per correggere le distorsioni dell'IA.",
+            "direzione": "misto",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Carta UE dei diritti fondamentali",
+              "articolo": "artt. 7 e 8",
+              "diritto": "vita privata e protezione dei dati personali",
+              "intensita": "lieve",
+              "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX:12012P/TXT"
+            }
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Intensità \"lieve\" e non di più per due motivi scritti nel testo: il trattamento dei dati sensibili è ammesso solo se strettamente necessario e con garanzie elencate una per una, e il regolamento lascia espressamente impregiudicati il GDPR e le altre norme europee sulla protezione dei dati. Il punto discutibile è soprattutto il tempo: fino al 2 dicembre 2027 le tutele piene sui sistemi ad alto rischio non sono ancora esigibili.",
+          "fonteRegola": {
+            "etichetta": "Regolamento (UE) 2026/1744 — Omnibus digitale sull'IA, testo integrale (EUR-Lex)",
+            "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=OJ:L_202601744"
           }
         }
       ]
@@ -2842,7 +3053,7 @@
     {
       "id": "dl-migrazione-asilo-2026",
       "titoloDivulgativo": "Decreto giustizia e migrazione: asilo alla frontiera e nuovo esame da avvocato",
-      "titoloUfficiale": "Decreto-legge 12 giugno 2026, n. 100 — Misure urgenti in materia di giustizia e per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
+      "titoloUfficiale": "Decreto-legge 12 giugno 2026, n. 100, convertito senza modificazioni dalla legge 7 agosto 2026, n. 145 — Misure urgenti in materia di giustizia e per l'attuazione del Patto dell'Unione europea sulla migrazione e l'asilo del 14 maggio 2024",
       "meseAnno": "giugno 2026",
       "stato": "vigore",
       "ambiti": [
@@ -2861,10 +3072,14 @@
         {
           "etichetta": "Senato della Repubblica — DDL di conversione del DL 100/2026",
           "url": "https://dati.senato.it/ddl/60214"
+        },
+        {
+          "etichetta": "Legge 7 agosto 2026, n. 145 — conversione senza modificazioni del DL 100/2026 (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-08-07;145"
         }
       ],
-      "verificataIl": "2026-06-15",
-      "riassunto": "Un decreto-legge in vigore dal 12 giugno 2026 che fa due cose diverse. Sul fronte migrazione attua il Patto europeo su migrazione e asilo: procedure di asilo accelerate alla frontiera (massimo 12 settimane), controlli e identificazione all'arrivo, banca dati europea Eurodac con impronte e foto. Sul fronte giustizia cambia l'esame di Stato per diventare avvocato: una sola sessione l'anno, due prove scritte e un orale. È un decreto-legge: per restare in vigore va convertito in legge dal Parlamento entro circa due mesi.",
+      "verificataIl": "2026-09-01",
+      "riassunto": "Un decreto-legge in vigore dal 12 giugno 2026 che fa due cose diverse. Sul fronte migrazione attua il Patto europeo su migrazione e asilo: procedure di asilo accelerate alla frontiera (massimo 12 settimane), controlli e identificazione all'arrivo, banca dati europea Eurodac con impronte e foto. Sul fronte giustizia cambia l'esame di Stato per diventare avvocato: una sola sessione l'anno, due prove scritte e un orale. Il Parlamento lo ha convertito in legge il 7 agosto 2026 senza cambiare una virgola: quindi ora è definitivo.",
       "regole": [
         {
           "id": "dl100-procedura-frontiera",
@@ -2890,8 +3105,8 @@
             "anno5": "attivo",
             "anno10": "attivo"
           },
-          "confidenza": "probabile",
-          "noteConfidenza": "Attua i Regolamenti UE 2024/1348 e 2024/1356. La procedura di frontiera si applica soprattutto a chi proviene da Paesi considerati sicuri o con basso tasso di riconoscimento della protezione, o in caso di documenti falsi. È un decreto-legge da convertire entro circa due mesi: alcuni dettagli possono cambiare.",
+          "confidenza": "certa",
+          "noteConfidenza": "Attua i Regolamenti UE 2024/1348 e 2024/1356. La procedura di frontiera si applica soprattutto a chi proviene da Paesi considerati sicuri o con basso tasso di riconoscimento della protezione, o in caso di documenti falsi. Il decreto è stato convertito in legge il 7 agosto 2026 senza modificazioni: il testo è definitivo.",
           "fonteRegola": {
             "etichetta": "DL 12 giugno 2026, n. 100 (Normattiva)",
             "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-06-12;100"
@@ -2929,8 +3144,8 @@
             "anno5": "attivo",
             "anno10": "attivo"
           },
-          "confidenza": "probabile",
-          "noteConfidenza": "Il diritto d'asilo resta garantito dall'art. 10 della Costituzione, dalla Convenzione di Ginevra e dal diritto UE, con possibilità di ricorso al giudice. Intensità \"sensibile\": cambiano tempi e modalità della procedura, non l'esistenza del diritto. Decreto-legge da convertire.",
+          "confidenza": "certa",
+          "noteConfidenza": "Il diritto d'asilo resta garantito dall'art. 10 della Costituzione, dalla Convenzione di Ginevra e dal diritto UE, con possibilità di ricorso al giudice. Intensità \"sensibile\": cambiano tempi e modalità della procedura, non l'esistenza del diritto. Il decreto è stato convertito in legge il 7 agosto 2026 senza modificazioni.",
           "fonteRegola": {
             "etichetta": "DL 12 giugno 2026, n. 100 (Normattiva)",
             "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-06-12;100"
@@ -2968,8 +3183,8 @@
             "anno5": "attivo",
             "anno10": "attivo"
           },
-          "confidenza": "probabile",
-          "noteConfidenza": "Attua il Regolamento UE 2024/1358 (Eurodac). I dati biometrici restano soggetti al GDPR e alle garanzie UE, con limiti d'uso e tempi di conservazione. Intensità \"sensibile\" perché si tratta di dati biometrici accessibili anche a fini di contrasto. Decreto-legge da convertire.",
+          "confidenza": "certa",
+          "noteConfidenza": "Attua il Regolamento UE 2024/1358 (Eurodac). I dati biometrici restano soggetti al GDPR e alle garanzie UE, con limiti d'uso e tempi di conservazione. Intensità \"sensibile\" perché si tratta di dati biometrici accessibili anche a fini di contrasto. Il decreto è stato convertito in legge il 7 agosto 2026 senza modificazioni.",
           "fonteRegola": {
             "etichetta": "DL 12 giugno 2026, n. 100 (Normattiva)",
             "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-06-12;100"
@@ -3000,7 +3215,7 @@
             "anno10": "attivo"
           },
           "confidenza": "dipende",
-          "noteConfidenza": "Vale solo se sei laureato in giurisprudenza e intendi sostenere l'esame di abilitazione forense: un dato che non ti chiediamo, per questo la mostriamo a chi ha una laurea. Le nuove regole (art. 1 del decreto) si applicano dalla prima sessione dopo l'entrata in vigore e abrogano gli artt. 46, 47 e 49 della L. 247/2012. Decreto-legge da convertire.",
+          "noteConfidenza": "Vale solo se sei laureato in giurisprudenza e intendi sostenere l'esame di abilitazione forense: un dato che non ti chiediamo, per questo la mostriamo a chi ha una laurea. Le nuove regole (art. 1 del decreto) si applicano dalla prima sessione dopo l'entrata in vigore e abrogano gli artt. 46, 47 e 49 della L. 247/2012. Il decreto è stato convertito in legge il 7 agosto 2026 senza modificazioni.",
           "fonteRegola": {
             "etichetta": "DL 12 giugno 2026, n. 100 (Normattiva)",
             "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-06-12;100"
@@ -3804,6 +4019,714 @@
           "fonteRegola": {
             "etichetta": "Costituzione italiana, art. 48 — il voto (Senato della Repubblica)",
             "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-iv/articolo-48"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ddl-imputabilita-minori-3080",
+      "titoloDivulgativo": "Dai 14 anni si è ritenuti capaci di intendere e di volere, salvo prova contraria",
+      "titoloUfficiale": "A.C. 3080 (XIX Leg.) — Modifiche in materia di imputabilità del minore",
+      "stato": "discussione",
+      "ambiti": [
+        "sicurezza-privacy",
+        "doveri"
+      ],
+      "fonti": [
+        {
+          "etichetta": "Atto Camera 3080 — testo integrale del disegno di legge (Camera dei deputati)",
+          "url": "https://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=19&codice=leg.19.pdl.camera.3080.19PDL0211840"
+        },
+        {
+          "etichetta": "Atto Camera 3080 — scheda e iter (Camera dei deputati)",
+          "url": "https://www.camera.it/leg19/126?idDocumento=3080&leg=19"
+        },
+        {
+          "etichetta": "Comunicato stampa del Consiglio dei ministri n. 182 del 23 luglio 2026 (Governo italiano)",
+          "url": "https://www.governo.it/it/articolo/comunicato-stampa-del-consiglio-dei-ministri-n-182/32393"
+        },
+        {
+          "etichetta": "DPR 22 settembre 1988, n. 448 — processo penale minorile, la norma che verrebbe modificata (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1988-09-22;448"
+        },
+        {
+          "etichetta": "Costituzione italiana, art. 27 — responsabilità penale e non colpevolezza (Senato della Repubblica)",
+          "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-27"
+        },
+        {
+          "etichetta": "Costituzione italiana, art. 31 — protezione della gioventù (Senato della Repubblica)",
+          "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-ii/articolo-31"
+        }
+      ],
+      "verificataIl": "2026-09-01",
+      "riassunto": "È il provvedimento che i giornali chiamano \"ddl anti maranza\": il nome ufficiale è \"Modifiche in materia di imputabilità del minore\". Oggi, se un ragazzo tra i 14 e i 18 anni commette un reato, il giudice deve verificare caso per caso se era capace di intendere e di volere; se quella prova non c'è, non è punibile. La proposta ribalta la regola: la capacità si presume, e tocca alla difesa dimostrare che mancava. L'età minima resta 14 anni e resta lo sconto di pena per i minori. Presentata alla Camera il 5 agosto 2026, non è ancora assegnata a una Commissione.",
+      "regole": [
+        {
+          "id": "imputabilita-minore-14-17",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 14
+            },
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 17
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "Hai tra i 14 e i 17 anni: sei l'unica età a cui questa proposta parla direttamente. Oggi, se sei accusato di un reato, il giudice deve accertare positivamente, caso per caso, che eri capace di intendere e di volere nel momento del fatto: se quella prova non c'è, non sei punibile. Con la modifica proposta all'articolo 98 del codice penale, quella capacità si presume, e sei considerato imputabile a meno che dal processo emerga che ne eri privo. Non cambia l'età minima, che resta 14 anni, e non cambia lo sconto di pena previsto per i minorenni imputabili. Cambia chi deve dimostrare cosa, e in un processo penale è una differenza che pesa.",
+            "breve": "Da 14 a 17 anni saresti imputabile per presunzione, salvo dimostrare che non capivi.",
+            "direzione": "negativo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "È solo una proposta: presentata alla Camera il 5 agosto 2026, risulta ancora \"da assegnare\" a una Commissione, quindi nessuna delle due Camere l'ha esaminata e il testo può cambiare o fermarsi. Attenzione a due cose che la proposta NON fa: non abbassa l'età dell'imputabilità, che resta a 14 anni compiuti (articolo 97 del codice penale), e non tocca la riduzione di pena prevista per i minorenni.",
+          "fonteRegola": {
+            "etichetta": "Atto Camera 3080 — testo integrale del disegno di legge (Camera dei deputati)",
+            "url": "https://documenti.camera.it/apps/commonServices/getDocumento.ashx?sezione=lavori&tipoDoc=testo_pdl&idlegislatura=19&codice=leg.19.pdl.camera.3080.19PDL0211840"
+          }
+        },
+        {
+          "id": "imputabilita-onere-della-prova",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 14
+            },
+            {
+              "campo": "eta",
+              "op": "alPiu",
+              "valore": 17
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto di riflesso sulle tue garanzie nel processo. Oggi l'articolo 9 del DPR 448/1988 obbliga il pubblico ministero e il giudice ad acquisire d'ufficio elementi sulla tua vita personale, familiare, sociale e ambientale anche per decidere sull'imputabilità: è lo Stato che deve andare a cercarli. La proposta cancella le parole \"l'imputabilità e\" da quell'obbligo e le sposta in un nuovo comma dove pubblico ministero e giudice \"possono\" acquisirli. Insieme alla presunzione di capacità, il risultato è che l'accertamento su quanto capivi non è più un passaggio dovuto: diventa qualcosa che la tua difesa deve sollevare e sostenere. L'obbligo di indagine resta per le altre finalità della norma, cioè conoscere la tua personalità e scegliere le misure da adottare.",
+            "breve": "L'accertamento su quanto capivi non sarebbe più un passaggio obbligato: lo solleva la difesa.",
+            "direzione": "negativo",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 27",
+              "diritto": "responsabilità penale personale e presunzione di non colpevolezza",
+              "intensita": "sensibile",
+              "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-27"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Qui ci sono due letture e vanno dette tutte e due. Quella del Governo, scritta nella relazione al disegno di legge: la presunzione è \"relativa\", non equipara il minore all'adulto e resta sempre possibile escludere l'imputabilità se dal processo emerge che il minore ne era privo; la relazione cita come precedente il Code de la justice pénale des mineurs francese, in vigore dal 2021, che presume il discernimento dai tredici anni. Quella di REF-LEX, che leggi qui sopra: spostare l'onere della prova e trasformare un obbligo di indagine in una facoltà tocca l'articolo 27 della Costituzione. Nessun ente si è ancora pronunciato: il disegno di legge non è stato assegnato a una Commissione, quindi non esistono audizioni, dossier del Servizio Studi né pareri ufficiali che diano ragione all'una o all'altra.",
+          "fonteRegola": {
+            "etichetta": "Costituzione italiana, art. 27 — responsabilità penale e non colpevolezza (Senato della Repubblica)",
+            "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-27"
+          }
+        },
+        {
+          "id": "imputabilita-genitori-di-minorenni",
+          "campiNecessari": [
+            "personeACarico",
+            "tipiACarico"
+          ],
+          "condizioni": [
+            {
+              "campo": "personeACarico",
+              "op": "eq",
+              "valore": true
+            },
+            {
+              "campo": "tipiACarico",
+              "op": "in",
+              "valore": [
+                "figli-minorenni"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Hai figli minorenni a carico: la proposta non parla di te, ma di loro. Se tuo figlio ha compiuto 14 anni e venisse accusato di un reato, oggi lo Stato deve accertare che fosse capace di intendere e di volere prima di poterlo punire, e per farlo deve raccogliere d'ufficio elementi sulla sua situazione personale, familiare, sociale e ambientale. Con questa modifica quella capacità si dà per presente, e diventa la difesa a dover dimostrare che mancava: può significare che tocca a voi come famiglia procurare relazioni, perizie e documenti che oggi il processo cerca da sé. Sotto i 14 anni non cambia nulla: il figlio non è imputabile in nessun caso.",
+            "breve": "Se tuo figlio ha 14 anni o più, le prove sulla sua capacità toccherebbero alla difesa.",
+            "direzione": "negativo",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 31",
+              "diritto": "protezione della gioventù e sostegno alla famiglia",
+              "intensita": "lieve",
+              "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-ii/articolo-31"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Proposta appena presentata e non ancora assegnata a una Commissione. Intensità \"lieve\" perché il testo non tocca né l'età minima dei 14 anni né la riduzione di pena per i minorenni, e perché l'obbligo per il giudice di conoscere la personalità del minore e di scegliere le misure adatte a lui resta scritto nell'articolo 9 del DPR 448/1988: cade solo per la parte sull'imputabilità.",
+          "fonteRegola": {
+            "etichetta": "DPR 22 settembre 1988, n. 448 — processo penale minorile, la norma che verrebbe modificata (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1988-09-22;448"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ddl-cost-roma-capitale-114",
+      "titoloDivulgativo": "Roma Capitale entra in Costituzione e potrebbe fare leggi sue su trasporti, casa e servizi",
+      "titoloUfficiale": "A.C. 2564 / A.S. 1888 (XIX Leg.) — Modifica dell'articolo 114 della Costituzione in materia di Roma Capitale",
+      "stato": "discussione",
+      "ambiti": [
+        "politica-voto",
+        "casa"
+      ],
+      "fonti": [
+        {
+          "etichetta": "A.S. 1888 — testo approvato dalla Camera il 29 aprile 2026 (Senato della Repubblica)",
+          "url": "https://www.senato.it/service/PDF/PDFServer/BGT/01505564.pdf"
+        },
+        {
+          "etichetta": "Atto Camera 2564 — scheda e iter completo (Camera dei deputati)",
+          "url": "https://www.camera.it/leg19/126?idDocumento=2564&leg=19"
+        },
+        {
+          "etichetta": "Atto Senato 1888 — scheda e stato dell'esame (Senato della Repubblica)",
+          "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=60105"
+        },
+        {
+          "etichetta": "Stampato Camera 2564-A — testo della Commissione e pareri delle Commissioni (Camera dei deputati)",
+          "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2564_A.19PDL0186660.pdf"
+        },
+        {
+          "etichetta": "Costituzione italiana, art. 114 — gli enti di cui si compone la Repubblica (Senato della Repubblica)",
+          "url": "https://www.senato.it/istituzione/la-costituzione/parte-ii/titolo-v/articolo-114"
+        },
+        {
+          "etichetta": "Costituzione italiana, art. 138 — come si cambia la Costituzione e quando si vota il referendum (Senato della Repubblica)",
+          "url": "https://www.senato.it/istituzione/la-costituzione/parte-ii/titolo-vi/sezione-ii/articolo-138"
+        },
+        {
+          "etichetta": "Costituzione italiana, art. 3 — uguaglianza davanti alla legge (Senato della Repubblica)",
+          "url": "https://www.senato.it/istituzione/la-costituzione/principi-fondamentali/articolo-3"
+        }
+      ],
+      "verificataIl": "2026-09-01",
+      "riassunto": "Una riforma della Costituzione che mette Roma Capitale accanto a Comuni, Province, Città metropolitane, Regioni e Stato, e le dà il potere di fare leggi proprie su undici materie: trasporto pubblico locale, polizia amministrativa, governo del territorio, commercio, beni culturali e ambientali, attività culturali, turismo, artigianato, servizi e politiche sociali, edilizia residenziale pubblica e la propria organizzazione. Le leggi del Lazio restano valide finché Roma non legifera. La Camera l'ha approvata in prima lettura il 29 aprile 2026; al Senato l'esame non è ancora iniziato. Servono quattro voti in tutto e può finire in referendum.",
+      "regole": [
+        {
+          "id": "roma-lazio-nuove-leggi",
+          "campiNecessari": [
+            "regione"
+          ],
+          "condizioni": [
+            {
+              "campo": "regione",
+              "op": "eq",
+              "valore": "Lazio"
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Vivi nel Lazio: sei nella regione dove questa riforma cambia davvero chi scrive le regole della tua vita quotidiana. Oggi trasporto pubblico locale, governo del territorio, commercio, turismo, artigianato, servizi e politiche sociali ed edilizia residenziale pubblica sono materie della Regione Lazio, e valgono uguali da Roma a Rieti. Con la riforma, dentro Roma Capitale quelle materie le regolerebbe Roma con leggi proprie, mentre nel resto del Lazio continuerebbero a valere le leggi regionali. Non succede subito: Roma potrà legiferare solo a partire dalle prime elezioni della sua Assemblea successive all'entrata in vigore della riforma, e fino a quando non fa una legge su una singola materia resta in vigore quella del Lazio. In concreto, con il tempo le graduatorie per la casa popolare, i servizi sociali, gli orari e le tariffe del trasporto locale potrebbero seguire regole diverse a seconda che tu viva dentro o fuori Roma.",
+            "breve": "Nel Lazio: dentro Roma le regole di trasporti, casa popolare e servizi le farebbe Roma, non la Regione.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Riforma costituzionale a metà strada: approvata dalla Camera in prima deliberazione il 29 aprile 2026, al Senato è assegnata alla 1ª Commissione dal 4 maggio 2026 ma l'esame non è ancora iniziato. Servono in tutto quattro deliberazioni (due per Camera, ad almeno tre mesi di distanza), e anche se venisse approvata l'effetto sarebbe ulteriormente rinviato: le funzioni legislative partono solo dalle prime elezioni dell'Assemblea di Roma Capitale successive all'entrata in vigore, e ogni materia passa a Roma solo quando Roma ci fa sopra una legge. Fino ad allora valgono le leggi della Regione Lazio.",
+          "fonteRegola": {
+            "etichetta": "A.S. 1888 — testo approvato dalla Camera il 29 aprile 2026 (Senato della Repubblica)",
+            "url": "https://www.senato.it/service/PDF/PDFServer/BGT/01505564.pdf"
+          }
+        },
+        {
+          "id": "roma-lazio-due-regole-nella-stessa-regione",
+          "campiNecessari": [
+            "regione"
+          ],
+          "condizioni": [
+            {
+              "campo": "regione",
+              "op": "eq",
+              "valore": "Lazio"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto di riflesso, e riguarda soprattutto chi nel Lazio vive fuori da Roma. Su undici materie che toccano la vita di tutti i giorni si creerebbero due legislatori nella stessa regione: Roma Capitale dentro il suo territorio, la Regione Lazio fuori. Su servizi e politiche sociali o su edilizia residenziale pubblica questo può voler dire requisiti, graduatorie e importi diversi per persone che stanno nella stessa condizione a pochi chilometri di distanza. Il testo prova a tenere insieme le cose: nelle materie di competenza concorrente Roma dovrà rispettare i princìpi fondamentali fissati dalle leggi dello Stato, e se un giorno il Lazio ottenesse l'autonomia differenziata l'intesa con lo Stato, sentita Roma Capitale, dovrà indicare come le due si coordinano. Resta che la differenziazione tra territori è il punto della riforma, non un suo incidente.",
+            "breve": "Nella stessa regione due legislatori: su casa popolare e servizi sociali le regole possono divergere.",
+            "direzione": "misto",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 3",
+              "diritto": "uguaglianza davanti alla legge",
+              "intensita": "lieve",
+              "url": "https://www.senato.it/istituzione/la-costituzione/principi-fondamentali/articolo-3"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Questa è una lettura di REF-LEX, non il parere di un ente: sul punto nessuna istituzione si è pronunciata. Alla Camera tutte le Commissioni chiamate a esprimersi (Finanze, Cultura, Ambiente, Trasporti, Attività produttive, Affari sociali) hanno dato parere FAVOREVOLE, e la Commissione Ambiente ha osservato che nelle materie concorrenti Roma dovrà comunque rispettare i princìpi fondamentali dello Stato ai sensi dell'art. 117 terzo comma. Il Senato non ha ancora iniziato l'esame, quindi non ci sono audizioni né dossier che valutino questo aspetto. Intensità \"lieve\" perché differenze tra territori esistono già oggi tra le Regioni e perché i princìpi fondamentali statali restano il pavimento comune.",
+          "fonteRegola": {
+            "etichetta": "Stampato Camera 2564-A — testo della Commissione e pareri delle Commissioni (Camera dei deputati)",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2564_A.19PDL0186660.pdf"
+          }
+        },
+        {
+          "id": "roma-referendum-confermativo",
+          "campiNecessari": [
+            "cittadinanza",
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "italiana"
+            },
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Sei cittadino italiano maggiorenne, quindi potresti ritrovarti a votare su questa riforma. Cambiare la Costituzione richiede quattro deliberazioni, due per ciascuna Camera, a non meno di tre mesi l'una dall'altra. Se nella seconda votazione il testo non raggiunge i due terzi dei componenti in entrambe le Camere, allora un quinto dei membri di una Camera, cinquecentomila elettori o cinque Consigli regionali possono chiedere un referendum confermativo, e a quel punto decidi tu con un sì o un no. Il conto, oggi, dice che quella strada è aperta: alla Camera il 29 aprile 2026 i sì sono stati 159 su 400 componenti, mentre i due terzi sarebbero 267. Nel referendum confermativo non c'è quorum di partecipanti: vince la maggioranza dei voti validi, quindi conta chi va a votare.",
+            "breve": "Potresti votarla in un referendum: alla Camera i sì (159 su 400) sono lontani dai due terzi.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Il referendum non è automatico: è possibile solo se il testo arriva in fondo alle quattro letture senza i due terzi e se qualcuno lo chiede entro tre mesi dalla pubblicazione. Oggi siamo alla prima delle quattro deliberazioni e il Senato non ha ancora iniziato l'esame, quindi la riforma potrebbe anche fermarsi prima. I numeri citati sono quelli verbalizzati dalla Camera il 29 aprile 2026: 159 favorevoli, 33 contrari, 55 astenuti.",
+          "fonteRegola": {
+            "etichetta": "Costituzione italiana, art. 138 — come si cambia la Costituzione e quando si vota il referendum (Senato della Repubblica)",
+            "url": "https://www.senato.it/istituzione/la-costituzione/parte-ii/titolo-vi/sezione-ii/articolo-138"
+          }
+        },
+        {
+          "id": "roma-altri-capoluoghi-metropolitani",
+          "campiNecessari": [
+            "regione"
+          ],
+          "condizioni": [
+            {
+              "campo": "regione",
+              "op": "in",
+              "valore": [
+                "Abruzzo",
+                "Basilicata",
+                "Calabria",
+                "Campania",
+                "Emilia-Romagna",
+                "Friuli-Venezia Giulia",
+                "Liguria",
+                "Lombardia",
+                "Marche",
+                "Molise",
+                "Piemonte",
+                "Puglia",
+                "Sardegna",
+                "Sicilia",
+                "Toscana",
+                "Trentino-Alto Adige",
+                "Umbria",
+                "Valle d'Aosta",
+                "Veneto"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Vivi fuori dal Lazio, ma la riforma non parla solo di Roma. Nel testo approvato dalla Camera c'è una frase aggiunta in Commissione: «La legge dello Stato può attribuire ai Comuni capoluogo delle Città metropolitane ulteriori e specifiche funzioni amministrative sulla base dei princìpi di sussidiarietà, differenziazione e adeguatezza». Riguarda i capoluoghi delle Città metropolitane — Milano, Torino, Genova, Venezia, Bologna, Firenze, Napoli, Bari, Reggio Calabria, Palermo, Catania, Messina, Cagliari — e apre la porta a dare anche a loro più poteri. Due differenze importanti rispetto a Roma: qui si parla di funzioni amministrative, non del potere di fare leggi, e non succede nulla in automatico, perché serve comunque una legge dello Stato che decida quali funzioni e a chi.",
+            "breve": "Fuori dal Lazio: lo Stato potrebbe dare più funzioni amministrative ai capoluoghi metropolitani.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "incerto",
+            "anno5": "incerto",
+            "anno10": "incerto"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Doppia incertezza. La prima: la riforma è alla prima di quattro deliberazioni e al Senato l'esame non è ancora iniziato. La seconda: anche se la riforma passasse, questa clausola è solo una possibilità aperta allo Stato, che dovrà approvare una legge ordinaria per attribuire davvero le funzioni. Se quella legge non arriva, per i capoluoghi metropolitani non cambia niente.",
+          "fonteRegola": {
+            "etichetta": "A.S. 1888 — testo approvato dalla Camera il 29 aprile 2026 (Senato della Repubblica)",
+            "url": "https://www.senato.it/service/PDF/PDFServer/BGT/01505564.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "legge-140-2026-detenzione-domiciliare",
+      "titoloDivulgativo": "Chi ha una dipendenza può scontare fino a otto anni in comunità invece che in carcere",
+      "titoloUfficiale": "Legge 5 agosto 2026, n. 140 — Disposizioni in materia di detenzione domiciliare per il recupero dei detenuti tossicodipendenti o alcoldipendenti",
+      "meseAnno": "agosto 2026",
+      "stato": "vigore",
+      "ambiti": [
+        "diritti-salute",
+        "doveri"
+      ],
+      "fonti": [
+        {
+          "etichetta": "Legge 5 agosto 2026, n. 140 — testo integrale (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-08-05;140"
+        },
+        {
+          "etichetta": "Gazzetta Ufficiale n. 181 del 6 agosto 2026 — Legge 140/2026",
+          "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/06/26G00157/SG"
+        },
+        {
+          "etichetta": "DPR 9 ottobre 1990, n. 309 — testo unico stupefacenti, la norma modificata (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1990-10-09;309"
+        },
+        {
+          "etichetta": "Costituzione italiana, art. 27 — le pene devono tendere alla rieducazione (Senato della Repubblica)",
+          "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-27"
+        },
+        {
+          "etichetta": "Costituzione italiana, art. 32 — diritto alla salute e consenso alle cure (Senato della Repubblica)",
+          "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-ii/articolo-32"
+        }
+      ],
+      "verificataIl": "2026-09-01",
+      "riassunto": "Dal 21 agosto 2026 chi ha una dipendenza da droghe o alcol e deve scontare una condanna fino a otto anni può chiedere, in qualsiasi momento, di scontarla in una comunità terapeutica accreditata o in una struttura pubblica, seguendo un programma di cura, invece che in carcere. Il limite scende a quattro anni per i reati più gravi. Decide il tribunale di sorveglianza, che valuta se il programma serve davvero al recupero e previene nuovi reati. Se il programma non va a buon fine, la misura viene revocata e la pena si sconta in carcere.",
+      "regole": [
+        {
+          "id": "l140-detenzione-domiciliare-terapeutica",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "Dal 21 agosto 2026 esiste una strada nuova che puoi attivare per te o per una persona vicina. Chi ha una dipendenza da sostanze o da alcol e deve scontare una pena, anche residua, fino a otto anni può chiedere in qualsiasi momento di scontarla in detenzione domiciliare, dentro una comunità terapeutica privata accreditata o in una struttura pubblica del Servizio sanitario specializzata, seguendo un programma di cura residenziale; con un programma semiresidenziale si può chiedere anche un luogo idoneo diverso. Il limite scende a quattro anni se la condanna comprende uno dei reati più gravi elencati dall'articolo 4-bis dell'ordinamento penitenziario, con l'eccezione di rapina ed estorsione aggravate, per cui restano otto anni. Alla domanda vanno allegati, pena l'inammissibilità, il collegamento tra la dipendenza e il reato, il programma terapeutico e la valutazione sulla dipendenza attuale. Decide il tribunale di sorveglianza. Chi è ancora imputato può chiedere già durante il processo di concordare una pena da eseguire in questo modo, con sessanta giorni per procurare i documenti.",
+            "breve": "Con una dipendenza si può chiedere di scontare fino a otto anni in comunità invece che in carcere.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "La legge è in vigore dal 21 agosto 2026 e la misura si può chiedere subito. Manca però un pezzo: entro centoventi giorni dall'entrata in vigore, quindi entro circa il 19 dicembre 2026, un decreto del Presidente del Consiglio deve istituire la commissione centrale che scriverà le linee guida nazionali su come si accerta la dipendenza e si valuta il programma. Finché quelle linee guida non ci sono, i criteri possono variare da un territorio all'altro. Non è un diritto automatico: il tribunale accoglie solo se ritiene che il programma serva al recupero e prevenga il pericolo di nuovi reati.",
+          "fonteRegola": {
+            "etichetta": "Legge 5 agosto 2026, n. 140 — testo integrale (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-08-05;140"
+          }
+        },
+        {
+          "id": "l140-controlli-e-revoca",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto di riflesso, ed è il prezzo della misura. Chi entra nel programma accetta un flusso costante di informazioni sulla propria salute verso la giustizia: il responsabile della struttura manda ogni sei mesi una relazione al servizio pubblico per le dipendenze e all'ufficio di esecuzione penale esterna, e segnala in ogni momento all'autorità giudiziaria qualsiasi violazione delle prescrizioni, anche ai fini della revoca. Alla fine del percorso l'ufficio di esecuzione penale esterna manda una relazione finale. Se il programma non si conclude positivamente il tribunale di sorveglianza revoca la misura entro cinque giorni e la pena residua si sconta in carcere, senza poter essere sostituita con un'altra misura; l'unica via d'uscita è che dalla relazione finale risulti in modo inequivoco che l'esito negativo non è accompagnato da violazioni, e in quel caso si può cambiare struttura, non più di due volte. Se invece va bene e si ottiene una misura più ampia, scattano verifiche periodiche sull'uso di sostanze e alcol, e una nuova dipendenza fa revocare tutto.",
+            "breve": "Il prezzo: relazioni semestrali, segnalazioni alla giustizia, controlli e revoca se il programma fallisce.",
+            "direzione": "misto",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 32",
+              "diritto": "salute e riservatezza sulle proprie cure",
+              "intensita": "lieve",
+              "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-ii/articolo-32"
+            }
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Intensità \"lieve\" perché nessuno viene obbligato: la misura si chiede, non viene imposta, e chi non la chiede resta al regime ordinario. Va però detto che il consenso si dà avendo come alternativa il carcere, e che gli obblighi di relazione e segnalazione sono scritti nella legge, non lasciati alla struttura. La legge va anche nella direzione opposta rispetto alla compressione: l'articolo 27 della Costituzione dice che le pene devono tendere alla rieducazione del condannato, e questa misura serve a questo.",
+          "fonteRegola": {
+            "etichetta": "Costituzione italiana, art. 32 — diritto alla salute e consenso alle cure (Senato della Repubblica)",
+            "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-ii/articolo-32"
+          }
+        },
+        {
+          "id": "l140-lavoro-nella-sanita",
+          "campiNecessari": [
+            "settoriProfessionali"
+          ],
+          "condizioni": [
+            {
+              "campo": "settoriProfessionali",
+              "op": "in",
+              "valore": [
+                "sanita"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "Lavori nella sanità: questa legge ti riguarda anche come professionista. I servizi pubblici per le dipendenze e le comunità accreditate diventano il perno di una misura penale: devono valutare l'effettiva e attuale condizione di dipendenza e l'idoneità del programma, e per farlo le unità competenti lavorano in composizione integrata con un componente dell'ufficio di esecuzione penale esterna e, dove serve, del provveditorato regionale dell'amministrazione penitenziaria. Chi dirige una struttura dove si svolge il programma deve mandare una relazione ogni sei mesi e segnalare subito all'autorità giudiziaria le violazioni. Entro circa il 19 dicembre 2026 una commissione centrale presso la Presidenza del Consiglio, con professionalità dei servizi pubblici e accreditati, dovrà fissare le linee guida nazionali sui metodi di accertamento. Le risorse ci sono: un fondo da 19.436.250 euro all'anno dal 2026 presso il Ministero della salute, ripartito con decreto e monitorato.",
+            "breve": "Nella sanità: valutazioni integrate con la giustizia, relazioni semestrali e un fondo da 19,4 milioni.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Il fondo è a importo fisso: 19.436.250 euro annui, con il Ministero della salute che monitora il rispetto del limite di spesa. Fuori da quel fondo la legge dice espressamente che le amministrazioni devono attuarla con le risorse umane e strumentali già disponibili, senza nuovi oneri: il carico organizzativo in più sui servizi non ha una copertura dedicata. La copertura del fondo viene per 5 milioni dall'abrogazione di una norma del decreto carceri del 2024 e per 14.436.250 dalla riduzione di un fondo della legge di stabilità 2015.",
+          "fonteRegola": {
+            "etichetta": "Legge 5 agosto 2026, n. 140 — testo integrale (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2026-08-05;140"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rottamazione-quinquies-2026",
+      "titoloDivulgativo": "Rottamazione-quinquies: cartelle senza sanzioni né interessi, ma il termine per aderire è scaduto",
+      "titoloUfficiale": "Legge 30 dicembre 2025, n. 199 (bilancio 2026), art. 1, commi 82-110 — definizione agevolata dei carichi affidati all'agente della riscossione",
+      "meseAnno": "dicembre 2025",
+      "stato": "vigore",
+      "ambiti": [
+        "fisco-lavoro"
+      ],
+      "fonti": [
+        {
+          "etichetta": "Legge 30 dicembre 2025, n. 199 (bilancio 2026), art. 1, commi 82-110 — testo integrale (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199"
+        },
+        {
+          "etichetta": "DL 27 febbraio 2026, n. 25, art. 2, comma 10 — proroga di tre mesi per le zone colpite dal maltempo (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-02-27;25"
+        },
+        {
+          "etichetta": "DPR 29 settembre 1973, n. 602 — riscossione delle imposte, le norme richiamate (Normattiva)",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1973-09-29;602"
+        },
+        {
+          "etichetta": "Costituzione italiana, art. 24 — diritto di agire e difendersi in giudizio (Senato della Repubblica)",
+          "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-24"
+        }
+      ],
+      "verificataIl": "2026-09-01",
+      "riassunto": "La legge di bilancio 2026 ha aperto la rottamazione-quinquies: chi aveva cartelle affidate alla riscossione tra il 2000 e il 2023 per imposte dichiarate e non versate o contributi INPS non versati poteva chiuderle pagando solo il capitale e le spese, senza sanzioni, interessi di mora e aggio, fino a 54 rate ogni due mesi. Il termine per aderire era il 30 aprile 2026 ed è passato. Chi ha aderito ha le prossime rate il 30 settembre e il 30 novembre 2026: saltarne due, anche non di seguito, fa perdere tutto.",
+      "regole": [
+        {
+          "id": "rottamazione-finestra-chiusa",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "La rottamazione-quinquies permetteva di chiudere le cartelle affidate all'agente della riscossione tra il 1° gennaio 2000 e il 31 dicembre 2023 pagando solo il capitale e il rimborso delle spese per le procedure e per la notifica: niente sanzioni, niente interessi, niente interessi di mora e niente aggio. Riguardava i debiti da imposte dichiarate ma non versate e da controlli automatici e formali, e i contributi INPS non versati, esclusi quelli chiesti dopo un accertamento. Per le multe stradali irrogate da amministrazioni dello Stato lo sconto valeva solo sugli interessi e sull'aggio, non sull'importo della multa. La domanda andava presentata solo per via telematica entro il 30 aprile 2026: quel termine è passato e non si può più aderire. Rientravano anche debiti di rottamazioni precedenti già decadute, ma non quelli per cui al 30 settembre 2025 risultavano pagate tutte le rate scadute.",
+            "breve": "Cartelle 2000-2023 senza sanzioni né interessi, ma il termine per aderire (30 aprile 2026) è passato.",
+            "direzione": "neutro"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "nullo",
+            "anno5": "nullo",
+            "anno10": "nullo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Un'unica eccezione al 30 aprile 2026, e riguarda pochissime persone: un decreto sul maltempo (DL 25/2026, convertito dalla legge 59/2026) ha spostato di tre mesi i termini solo per chi al 18 gennaio 2026 aveva la residenza o la sede in immobili sgomberati per inagibilità, nei comuni di Calabria, Sicilia e Sardegna coperti dallo stato di emergenza deliberato il 26 gennaio 2026. Per tutti gli altri il termine è rimasto quello ordinario. Se in futuro il Parlamento riaprisse i termini servirebbe una nuova legge: qui trovi solo quello che è scritto oggi.",
+          "fonteRegola": {
+            "etichetta": "Legge 30 dicembre 2025, n. 199 (bilancio 2026), art. 1, commi 82-110 — testo integrale (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199"
+          }
+        },
+        {
+          "id": "rottamazione-rate-e-decadenza",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "Se hai aderito, quello che conta adesso è il calendario. Le rate sono bimestrali, fino a un massimo di cinquantaquattro: dopo quella del 31 luglio 2026 vengono il 30 settembre e il 30 novembre 2026, poi dal 2027 il 31 gennaio, 31 marzo, 31 maggio, 31 luglio, 30 settembre e 30 novembre di ogni anno, fino alle ultime tre del 31 gennaio, 31 marzo e 31 maggio 2035. Dal 1° agosto 2026 sulle rate corrono interessi al 3 per cento annuo e nessuna rata può essere sotto i 100 euro. La definizione salta se non paghi o paghi meno del dovuto, e per l'unica rata anche se paghi con più di cinque giorni di ritardo; se sei a rate, salta se ne perdi due, anche non consecutive, oppure l'ultima. In quel caso tornano a correre prescrizione e decadenza, la riscossione riparte e quanto hai già versato vale solo come acconto sul debito pieno, sanzioni e interessi compresi. Attenzione anche a un effetto già scattato: al 31 luglio 2026 le vecchie dilazioni sui debiti inclusi sono state revocate in automatico e su quelli non se ne possono più ottenere di nuove.",
+            "breve": "Prossime rate 30 settembre e 30 novembre 2026: saltarne due, anche non di fila, fa perdere tutto.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "nullo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Il tasso è del 3 per cento annuo: è quello scritto nel comma 84, anche se in giro si è letto spesso 4 per cento. Il piano più lungo arriva al 31 maggio 2035, quindi entro dieci anni si chiude: per questo l'ultimo orizzonte è segnato come non più attivo. Le date qui sono quelle ordinarie; chi rientra nella proroga per le zone colpite dal maltempo ha i termini spostati di tre mesi.",
+          "fonteRegola": {
+            "etichetta": "Legge 30 dicembre 2025, n. 199 (bilancio 2026), art. 1, commi 82-110 — testo integrale (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199"
+          }
+        },
+        {
+          "id": "rottamazione-lavoro-autonomo",
+          "campiNecessari": [
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "autonomo-ordinario",
+                "forfettario",
+                "imprenditore"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "descrizione": "Lavori in proprio, quindi questa misura ti tocca su due fronti che per un dipendente non esistono. Il primo: nella rottamazione rientrano anche i contributi previdenziali INPS non versati, esclusi però quelli chiesti dopo un accertamento. Il secondo: finché il piano regge, chi ha presentato la domanda non risulta inadempiente ai fini dei pagamenti della pubblica amministrazione e il documento unico di regolarità contributiva, il DURC, può essere rilasciato — e senza DURC non si lavora con la pubblica amministrazione. Nel frattempo non si iscrivono nuovi fermi amministrativi sui veicoli né nuove ipoteche, non partono nuove procedure esecutive e quelle in corso si fermano, salvo che il primo incanto sia già andato a buon fine; con il pagamento della prima rata si estinguono. Il rovescio è pesante: dal 31 luglio 2026 le dilazioni che avevi sui debiti inclusi sono state revocate in automatico e su quei debiti non puoi più chiedere una rateizzazione ordinaria. Se salti due rate perdi tutto e ti ritrovi il debito pieno senza più il piano di prima.",
+            "breve": "Dentro anche i contributi INPS e il DURC resta valido, ma le vecchie dilazioni sono state revocate.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "nullo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Quanto risparmi dipende solo da quanto pesano sanzioni, interessi e aggio sul tuo debito: REF-LEX non ti chiede l'importo delle cartelle e non inventa una cifra. Il punto da non sottovalutare è la revoca automatica delle vecchie dilazioni: se il piano della rottamazione salta, quei debiti tornano esigibili per intero e la rateizzazione ordinaria su di essi non è più disponibile.",
+          "fonteRegola": {
+            "etichetta": "Legge 30 dicembre 2025, n. 199 (bilancio 2026), art. 1, commi 82-110 — testo integrale (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199"
+          }
+        },
+        {
+          "id": "rottamazione-tributi-locali",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "servizio",
+            "descrizione": "C'è una parte di questa legge che guarda avanti e vale anche se non hai aderito alla rottamazione statale. Regioni ed enti locali possono decidere da soli, con i propri atti, forme di definizione agevolata sui tributi di loro competenza — pensa a IMU, TARI, tributi regionali — escludendo però IRAP, addizionali e compartecipazioni ai tributi dello Stato, e possono farlo anche per le entrate patrimoniali e per i casi già finiti in accertamento o davanti al giudice tributario. Se il tuo Comune o la tua Regione ne apre una, deve darti almeno sessanta giorni di tempo dalla pubblicazione dell'atto sul proprio sito internet, e il regolamento diventa efficace proprio con quella pubblicazione. Vale la pena controllare ogni tanto il sito del Comune: sono finestre locali, ognuno decide per sé, e non c'è un annuncio nazionale che ti avvisa.",
+            "breve": "Comuni e Regioni possono aprire una loro rottamazione su IMU, TARI e tributi locali: guarda il loro sito.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "La legge dà la facoltà, non l'obbligo: dipende dal singolo Comune o dalla singola Regione, che decidono anche in base ai propri conti e alla propria capacità di riscuotere. Per questo è \"probabile\" e non \"certo\": la possibilità esiste ovunque, la finestra concreta no. I regolamenti degli enti locali diventano efficaci con la pubblicazione sul sito dell'ente e vanno trasmessi al Ministero dell'economia entro sessanta giorni, ma solo a fini statistici.",
+          "fonteRegola": {
+            "etichetta": "Legge 30 dicembre 2025, n. 199 (bilancio 2026), art. 1, commi 82-110 — testo integrale (Normattiva)",
+            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199"
+          }
+        },
+        {
+          "id": "rottamazione-rinuncia-ai-giudizi",
+          "campiNecessari": [
+            "eta"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto di riflesso sul diritto di farsi giudicare. Chi ha aderito ha dovuto dichiarare nella domanda i giudizi ancora aperti sui debiti inclusi e impegnarsi a rinunciarvi: il giudice li sospende, e quando arriva il pagamento della prima o unica rata ne dichiara l'estinzione. L'estinzione rende inefficaci le sentenze di merito e i provvedimenti presi durante il processo che non erano ancora definitivi. In pratica, se stavi contestando una cartella e avevi già vinto un grado di giudizio, aderendo hai rinunciato a quella vittoria in cambio dello sconto su sanzioni e interessi. Nessuno ti ha obbligato a scegliere: è il prezzo scritto della definizione agevolata, ed è utile saperlo prima, non dopo.",
+            "breve": "Per aderire si rinuncia ai ricorsi aperti: le sentenze non ancora definitive diventano inefficaci.",
+            "direzione": "misto",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 24",
+              "diritto": "diritto di agire e difendersi in giudizio",
+              "intensita": "lieve",
+              "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-24"
+            }
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "nullo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Intensità \"lieve\" perché la rinuncia è volontaria: nessuno era tenuto ad aderire e chi non ha aderito ha conservato per intero il proprio ricorso. Va però segnalato che la rinuncia si perfeziona con il pagamento della prima rata e che le somme già versate a qualsiasi titolo restano acquisite e non sono rimborsabili, anche se la definizione poi salta.",
+          "fonteRegola": {
+            "etichetta": "Costituzione italiana, art. 24 — diritto di agire e difendersi in giudizio (Senato della Repubblica)",
+            "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-24"
           }
         }
       ]

@@ -21,6 +21,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'una pensionata con la pensione minima',
     profilo: {
       ...base, eta: 74, genere: 'donna',
+      regione: 'Liguria',
       condizioneLavorativa: ['pensionato'],
       fasciaReddito: 'fino9k', fasciaIsee: 'fino9360',
       abitazione: 'affitto', figli: 2,
@@ -35,6 +36,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'uno studente che lavora part-time',
     profilo: {
       ...base, eta: 22, genere: 'uomo',
+      regione: 'Emilia-Romagna',
       condizioneLavorativa: ['studente', 'dipendente-privato'],
       fasciaReddito: 'fino9k', fasciaIsee: 'da9360a15k',
       abitazione: 'affitto', figli: 0,
@@ -48,9 +50,11 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'un artigiano con permesso di soggiorno',
     profilo: {
       ...base, eta: 45, genere: 'uomo',
+      regione: 'Lombardia',
       condizioneLavorativa: ['autonomo-ordinario'],
       fasciaReddito: 'da20a28k', fasciaIsee: 'da15a25k',
       abitazione: 'proprieta', figli: 2,
+      personeACarico: true, tipiACarico: ['figli-minorenni'],
       statoCivile: 'sposato',
       disabilita: ['nessuna'], cittadinanza: 'extra-ue', permessoSoggiorno: 'si'
     }
@@ -62,9 +66,11 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'una madre di tre figli con un solo stipendio in casa',
     profilo: {
       ...base, eta: 38, genere: 'donna',
+      regione: 'Veneto',
       condizioneLavorativa: ['dipendente-privato'],
       fasciaReddito: 'da28a35k', fasciaIsee: 'da15a25k',
       abitazione: 'proprieta', figli: 3,
+      personeACarico: true, tipiACarico: ['figli-minorenni'],
       statoCivile: 'sposato',
       disabilita: ['nessuna'], cittadinanza: 'italiana'
     }
@@ -76,6 +82,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'un operaio con disabilità',
     profilo: {
       ...base, eta: 52, genere: 'uomo',
+      regione: 'Piemonte',
       condizioneLavorativa: ['dipendente-privato'],
       fasciaReddito: 'da20a28k', fasciaIsee: 'da15a25k',
       abitazione: 'proprieta', figli: 1,
@@ -89,6 +96,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'una lavoratrice con una condizione non riconosciuta',
     profilo: {
       ...base, eta: 29, genere: 'donna',
+      regione: 'Lazio',
       condizioneLavorativa: ['dipendente-privato'],
       fasciaReddito: 'da15a20k', fasciaIsee: 'da9360a15k',
       abitazione: 'affitto', figli: 0,
@@ -103,6 +111,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'un\'imprenditrice',
     profilo: {
       ...base, eta: 61, genere: 'donna',
+      regione: 'Marche',
       condizioneLavorativa: ['imprenditore'],
       fasciaReddito: 'oltre50k', fasciaIsee: 'oltre40k',
       abitazione: 'proprieta', figli: 2,
@@ -117,6 +126,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'un caregiver',
     profilo: {
       ...base, eta: 35, genere: 'uomo',
+      regione: 'Lombardia',
       condizioneLavorativa: ['caregiver'],
       fasciaReddito: 'nessuno', fasciaIsee: 'fino9360',
       abitazione: 'affitto', figli: 0,
@@ -130,6 +140,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'uno straniero senza permesso di soggiorno',
     profilo: {
       ...base, eta: 28, genere: 'uomo',
+      regione: 'Campania',
       condizioneLavorativa: ['altro'],
       fasciaReddito: 'fino9k', fasciaIsee: 'fino9360',
       abitazione: 'altro', figli: 0,
@@ -144,9 +155,11 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'un\'insegnante',
     profilo: {
       ...base, eta: 47, genere: 'donna',
+      regione: 'Sicilia',
       condizioneLavorativa: ['dipendente-pubblico'],
       fasciaReddito: 'da28a35k', fasciaIsee: 'da15a25k',
       abitazione: 'proprieta', figli: 1,
+      personeACarico: true, tipiACarico: ['figli-minorenni'],
       statoCivile: 'sposato', titoloStudio: 'laurea',
       disabilita: ['nessuna'], cittadinanza: 'italiana'
     }
@@ -158,6 +171,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'una persona transgender',
     profilo: {
       ...base, eta: 26, genere: 'donna', identitaGenere: 'transgender',
+      regione: 'Toscana',
       condizioneLavorativa: ['dipendente-privato'],
       fasciaReddito: 'da15a20k', fasciaIsee: 'da9360a15k',
       abitazione: 'affitto', figli: 0,
@@ -172,6 +186,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'un uomo in unione civile',
     profilo: {
       ...base, eta: 41, genere: 'uomo', orientamento: 'omosessuale',
+      regione: 'Emilia-Romagna',
       condizioneLavorativa: ['dipendente-privato'],
       fasciaReddito: 'da35a50k', fasciaIsee: 'da25a40k',
       abitazione: 'proprieta', figli: 0,
@@ -186,6 +201,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'una libera professionista',
     profilo: {
       ...base, eta: 25, genere: 'donna',
+      regione: 'Puglia',
       condizioneLavorativa: ['forfettario'],
       fasciaReddito: 'da15a20k', fasciaIsee: 'da9360a15k',
       abitazione: 'affitto', figli: 0,
@@ -200,6 +216,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'una lavoratrice con una malattia cronica',
     profilo: {
       ...base, eta: 53, genere: 'donna',
+      regione: 'Calabria',
       condizioneLavorativa: ['dipendente-privato'],
       fasciaReddito: 'da15a20k', fasciaIsee: 'da9360a15k',
       abitazione: 'affitto', figli: 1,
@@ -214,6 +231,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'un\'impiegata di religione ebraica',
     profilo: {
       ...base, eta: 34, genere: 'donna',
+      regione: 'Lazio',
       condizioneLavorativa: ['dipendente-privato'],
       fasciaReddito: 'da28a35k', fasciaIsee: 'da15a25k',
       abitazione: 'affitto', figli: 0,
@@ -228,6 +246,7 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'un agricoltore',
     profilo: {
       ...base, eta: 58, genere: 'uomo',
+      regione: 'Umbria',
       condizioneLavorativa: ['autonomo-ordinario'],
       professione: 'agricoltore e allevatore', settoriProfessionali: ['agricoltura'],
       fasciaReddito: 'da20a28k', fasciaIsee: 'da15a25k',
@@ -243,11 +262,49 @@ export const PERSONAGGI: Personaggio[] = [
     categoria: 'un cacciatore in pensione',
     profilo: {
       ...base, eta: 62, genere: 'uomo',
+      regione: 'Abruzzo',
       condizioneLavorativa: ['pensionato'],
       professione: 'cacciatore', settoriProfessionali: ['caccia'],
       fasciaReddito: 'da15a20k', fasciaIsee: 'da9360a15k',
       abitazione: 'proprieta', numeroProprieta: 1, figli: 2,
       statoCivile: 'sposato',
+      disabilita: ['nessuna'], cittadinanza: 'italiana'
+    }
+  },
+  {
+    // la sanità è uno dei settori più grandi del Paese e diverse leggi le assegnano compiti
+    // nuovi (la legge 140/2026 sulla detenzione domiciliare terapeutica, per esempio)
+    id: 'chiara',
+    nome: 'Chiara, 43 anni',
+    descrizione: 'Infermiera in ospedale, turni anche di notte, vive in affitto con la figlia',
+    categoria: 'un\'infermiera',
+    profilo: {
+      ...base, eta: 43, genere: 'donna',
+      regione: 'Sardegna',
+      condizioneLavorativa: ['dipendente-pubblico'],
+      professione: 'infermiera', settoriProfessionali: ['sanita'],
+      fasciaReddito: 'da28a35k', fasciaIsee: 'da15a25k',
+      abitazione: 'affitto', figli: 1,
+      personeACarico: true, tipiACarico: ['figli-minorenni'],
+      statoCivile: 'separato', titoloStudio: 'laurea',
+      disabilita: ['nessuna'], cittadinanza: 'italiana'
+    }
+  },
+  {
+    // senza un minorenne in galleria le leggi che parlano ai ragazzi (imputabilità del
+    // minore, tutele sull'IA a scuola) non avrebbero nessuno a cui riferirsi
+    id: 'samuele',
+    nome: 'Samuele, 16 anni',
+    descrizione: 'Studente delle superiori, vive con i genitori in periferia',
+    categoria: 'uno studente minorenne',
+    profilo: {
+      ...base, eta: 16, genere: 'uomo',
+      regione: 'Lombardia',
+      condizioneLavorativa: ['studente'],
+      fasciaReddito: 'nessuno', fasciaIsee: 'da15a25k',
+      abitazione: 'affitto', figli: 0,
+      personeACarico: false,
+      statoCivile: 'non-sposato', titoloStudio: 'medie',
       disabilita: ['nessuna'], cittadinanza: 'italiana'
     }
   }

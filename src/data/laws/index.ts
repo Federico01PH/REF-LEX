@@ -8,6 +8,7 @@ import { bonusEdilizi } from './bonus-edilizi';
 import { riformaDisabilita } from './riforma-disabilita';
 import { fibromialgiaLea } from './fibromialgia-lea';
 import { aiAct } from './ai-act';
+import { digitalOmnibusAi } from './digital-omnibus-ai';
 import { decretoSicurezza } from './decreto-sicurezza';
 import { codiceStrada } from './codice-strada';
 import { iusItaliae } from './ius-italiae';
@@ -20,10 +21,15 @@ import { ddlAntisemitismo } from './ddl-antisemitismo';
 import { pianoCasa } from './piano-casa';
 import { caccia } from './caccia';
 import { trasparenzaProgrammi } from './trasparenza-programmi-elettorali';
+import { imputabilitaMinori } from './imputabilita-minori';
+import { romaCapitale } from './roma-capitale';
+import { detenzioneDomiciliareDipendenze } from './detenzione-domiciliare-dipendenze';
+import { rottamazioneQuinquies } from './rottamazione-quinquies';
 
 export const CATALOGO: Legge[] = [
   cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione,
-  caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea, aiAct, decretoSicurezza,
-  codiceStrada, iusItaliae, decretoLavoro, leggeElettorale, premierato, remigrazione,
-  dlMigrazioneAsilo, ddlAntisemitismo, pianoCasa, caccia, trasparenzaProgrammi
+  caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea, aiAct, digitalOmnibusAi,
+  decretoSicurezza, codiceStrada, iusItaliae, decretoLavoro, leggeElettorale, premierato,
+  remigrazione, dlMigrazioneAsilo, ddlAntisemitismo, pianoCasa, caccia, trasparenzaProgrammi,
+  imputabilitaMinori, romaCapitale, detenzioneDomiciliareDipendenze, rottamazioneQuinquies
 ];
