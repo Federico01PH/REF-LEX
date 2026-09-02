@@ -1,29 +1,77 @@
 {
-  "generatoIl": "2026-09-01",
+  "generatoIl": "2026-09-02",
   "voci": [
     {
-      "id": "gazzetta-26G00171",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 19 giugno 2026, n.155: Regolamento recante modifica dei limiti territoriali della",
+      "id": "gazzetta-26A04311",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Cibiana di Cadore e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-08-31",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/31/26G00171/SG"
+      "data": "2026-09-01",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04311/SG"
     },
     {
-      "id": "gazzetta-26A04300",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 16 luglio 2026: Proroga dell'affidamento della gestione del consiglio comunale di San",
+      "id": "gazzetta-26A04312",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Bovisio Masciago e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-08-31",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/31/26A04300/SG"
+      "data": "2026-09-01",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04312/SG"
     },
     {
-      "id": "gazzetta-26A04301",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 16 luglio 2026: Proroga dell'affidamento della gestione del consiglio comunale di",
+      "id": "gazzetta-26A04313",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Clavesana e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
+      "data": "2026-09-01",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04313/SG"
+    },
+    {
+      "id": "gazzetta-26A04314",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Oviglio",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-01",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04314/SG"
+    },
+    {
+      "id": "gazzetta-26A04315",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Castiglione del Genovesi e",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-01",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04315/SG"
+    },
+    {
+      "id": "camera-1606",
+      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-01",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+    },
+    {
+      "id": "camera-1194",
+      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-01",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+    },
+    {
+      "id": "senato-60426",
+      "titolo": "Delega al Governo in materia di semplificazione amministrativa e burocratica in favore delle micro, piccole e medie imprese",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-08-31",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/31/26A04301/SG"
+      "url": "https://dati.senato.it/ddl/60426"
+    },
+    {
+      "id": "senato-60425",
+      "titolo": "Conversione in legge del decreto-legge 28 agosto 2026, n. 154, recante misure urgenti per assicurare la continuità operativa di impianti di interesse strategico nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-28",
+      "url": "https://dati.senato.it/ddl/60425"
     },
     {
       "id": "senato-60424",
@@ -112,38 +160,6 @@
       "stato": "discussione",
       "data": "2026-08-06",
       "url": "https://dati.senato.it/ddl/60417"
-    },
-    {
-      "id": "senato-60415",
-      "titolo": "Misure di consolidamento e sviluppo del settore agricolo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-06",
-      "url": "https://dati.senato.it/ddl/60415"
-    },
-    {
-      "id": "senato-60403",
-      "titolo": "Rendiconto generale dell'Amministrazione dello Stato per l'esercizio finanziario 2025",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-05",
-      "url": "https://dati.senato.it/ddl/60403"
-    },
-    {
-      "id": "senato-60405",
-      "titolo": "Introduzione dell'educazione alla legalità digitale nell'ambito del piano triennale dell'offerta formativa",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-05",
-      "url": "https://dati.senato.it/ddl/60405"
-    },
-    {
-      "id": "senato-60407",
-      "titolo": "Conversione in legge del decreto-legge 05 agosto 2026, n. 139, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-05",
-      "url": "https://dati.senato.it/ddl/60407"
     }
   ]
 }
