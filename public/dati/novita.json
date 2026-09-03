@@ -1,61 +1,53 @@
 {
-  "generatoIl": "2026-09-02",
+  "generatoIl": "2026-09-03",
   "voci": [
     {
-      "id": "gazzetta-26A04311",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Cibiana di Cadore e nomina del",
+      "id": "gazzetta-26A04353",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 16 luglio 2026: Scioglimento del consiglio comunale di Castellammare di Stabia e",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-01",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04311/SG"
+      "data": "2026-09-02",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/02/26A04353/SG"
     },
     {
-      "id": "gazzetta-26A04312",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Bovisio Masciago e nomina del",
+      "id": "gazzetta-26A04619",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 21 agosto 2026: Scioglimento del consiglio comunale di San Donaci e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-01",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04312/SG"
+      "data": "2026-09-02",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/02/26A04619/SG"
     },
     {
-      "id": "gazzetta-26A04313",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Clavesana e nomina del",
+      "id": "gazzetta-26A04620",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 21 agosto 2026: Scioglimento del consiglio comunale di Marcellina e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-01",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04313/SG"
+      "data": "2026-09-02",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/02/26A04620/SG"
     },
     {
-      "id": "gazzetta-26A04314",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Oviglio",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-01",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04314/SG"
-    },
-    {
-      "id": "gazzetta-26A04315",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 29 luglio 2026: Scioglimento del consiglio comunale di Castiglione del Genovesi e",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-01",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/01/26A04315/SG"
-    },
-    {
-      "id": "camera-1606",
-      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "id": "camera-1686",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-01",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+      "data": "2026-09-02",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
     },
     {
-      "id": "camera-1194",
-      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-01",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+      "data": "2026-09-02",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+    },
+    {
+      "id": "senato-60427",
+      "titolo": "Delega al Governo per il recepimento delle direttive europee e l'attuazione di altri atti dell'Unione europea - Legge di delegazione europea 2026",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-02",
+      "url": "https://dati.senato.it/ddl/60427"
     },
     {
       "id": "senato-60426",
@@ -160,6 +152,14 @@
       "stato": "discussione",
       "data": "2026-08-06",
       "url": "https://dati.senato.it/ddl/60417"
+    },
+    {
+      "id": "senato-60415",
+      "titolo": "Misure di consolidamento e sviluppo del settore agricolo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-08-06",
+      "url": "https://dati.senato.it/ddl/60415"
     }
   ]
 }
