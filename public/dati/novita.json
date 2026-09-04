@@ -1,45 +1,53 @@
 {
-  "generatoIl": "2026-09-03",
+  "generatoIl": "2026-09-04",
   "voci": [
     {
-      "id": "gazzetta-26A04353",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 16 luglio 2026: Scioglimento del consiglio comunale di Castellammare di Stabia e",
+      "id": "gazzetta-26A04621",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 21 agosto 2026: Scioglimento del consiglio comunale di Longano",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-02",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/02/26A04353/SG"
+      "data": "2026-09-03",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/03/26A04621/SG"
     },
     {
-      "id": "gazzetta-26A04619",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 21 agosto 2026: Scioglimento del consiglio comunale di San Donaci e nomina del",
+      "id": "gazzetta-26A04622",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 21 agosto 2026: Scioglimento del consiglio comunale di Levice",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-02",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/02/26A04619/SG"
+      "data": "2026-09-03",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/03/26A04622/SG"
     },
     {
-      "id": "gazzetta-26A04620",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 21 agosto 2026: Scioglimento del consiglio comunale di Marcellina e nomina del",
+      "id": "gazzetta-26A04623",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 21 agosto 2026: Scioglimento del consiglio comunale di Maltignano",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-02",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/02/26A04620/SG"
+      "data": "2026-09-03",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/03/26A04623/SG"
     },
     {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-02",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "data": "2026-09-03",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
     },
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "id": "camera-1624",
+      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-02",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+      "data": "2026-09-03",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+    },
+    {
+      "id": "camera-1606",
+      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-03",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
     },
     {
       "id": "senato-60427",
@@ -48,6 +56,14 @@
       "stato": "discussione",
       "data": "2026-09-02",
       "url": "https://dati.senato.it/ddl/60427"
+    },
+    {
+      "id": "senato-60428",
+      "titolo": "Conversione in legge del decreto-legge 26 agosto 2026, n. 153, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-01",
+      "url": "https://dati.senato.it/ddl/60428"
     },
     {
       "id": "senato-60426",
@@ -144,22 +160,6 @@
       "stato": "discussione",
       "data": "2026-08-06",
       "url": "https://dati.senato.it/ddl/60418"
-    },
-    {
-      "id": "senato-60417",
-      "titolo": "Disposizioni in favore dei tirocinanti di inclusione sociale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-06",
-      "url": "https://dati.senato.it/ddl/60417"
-    },
-    {
-      "id": "senato-60415",
-      "titolo": "Misure di consolidamento e sviluppo del settore agricolo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-06",
-      "url": "https://dati.senato.it/ddl/60415"
     }
   ]
 }
