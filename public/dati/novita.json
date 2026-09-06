@@ -1,45 +1,29 @@
 {
-  "generatoIl": "2026-09-05",
+  "generatoIl": "2026-09-06",
   "voci": [
     {
-      "id": "gazzetta-26A04701",
-      "titolo": "DECRETO LEGISLATIVO 7 agosto 2026, n.147: Ripubblicazione del testo del decreto legislativo 7 agosto 2026, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-04",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/04/26A04701/SG"
-    },
-    {
-      "id": "gazzetta-26A04702",
-      "titolo": "DECRETO LEGISLATIVO 7 agosto 2026, n.148: Ripubblicazione del testo del decreto legislativo 7 agosto 2026, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-04",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/04/26A04702/SG"
-    },
-    {
-      "id": "gazzetta-26A04703",
-      "titolo": "DECRETO LEGISLATIVO 7 agosto 2026, n.149: Ripubblicazione del testo del decreto legislativo 7 agosto 2026, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-04",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/04/26A04703/SG"
-    },
-    {
-      "id": "camera-1658",
-      "titolo": "\"Conversione in legge del decreto-legge 19 gennaio 2024, n. 5, recante disposizioni urgenti per la realizzazione degli interventi infrastrutturali connessi con la presidenza italiana del G7\"",
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-04",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1658"
+      "data": "2026-09-05",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
     },
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "id": "camera-1687",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-04",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+      "data": "2026-09-05",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
+    },
+    {
+      "id": "camera-1588",
+      "titolo": "S. 861. - \"Ratifica ed esecuzione dell’Accordo di sede tra la Repubblica italiana e l’Ufficio europeo per il sostegno all’asilo relativo allo stabilimento di un ufficio operativo in Roma, fatto a Roma il 22 novembre 2017, con Dichiarazione interpretativa congiunta fatta a Roma il 1&deg; luglio 2021 e a La Valletta il 13 luglio 2021\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-05",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1588"
     },
     {
       "id": "senato-60427",
