@@ -1,6 +1,14 @@
 {
-  "generatoIl": "2026-09-09",
+  "generatoIl": "2026-09-10",
   "voci": [
+    {
+      "id": "gazzetta-26A04711",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 7 agosto 2026: Autorizzazione al Ministero dell'istruzione e del merito, per l'anno",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-09",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/09/26A04711/SG"
+    },
     {
       "id": "senato-60427",
       "titolo": "Delega al Governo per il recepimento delle direttive europee e l'attuazione di altri atti dell'Unione europea - Legge di delegazione europea 2026",
