@@ -1,13 +1,117 @@
 {
-  "generatoIl": "2026-09-10",
+  "generatoIl": "2026-09-11",
   "voci": [
     {
-      "id": "gazzetta-26A04711",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 7 agosto 2026: Autorizzazione al Ministero dell'istruzione e del merito, per l'anno",
+      "id": "gazzetta-26G00178",
+      "titolo": "DECRETO-LEGGE 10 settembre 2026, n.157: Disposizioni urgenti in materia di prezzi petroliferi connessi al",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-09",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/09/26A04711/SG"
+      "data": "2026-09-10",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/10/26G00178/SG"
+    },
+    {
+      "id": "gazzetta-26A04732",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 6 agosto 2026: Proroga dell'affidamento della gestione del consiglio comunale di",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-10",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/10/26A04732/SG"
+    },
+    {
+      "id": "camera-1606",
+      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-10",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+    },
+    {
+      "id": "camera-2362",
+      "titolo": "S. 1425. - \"Conversione in legge, con modificazioni, del decreto-legge 19 marzo 2025, n. 27, recante disposizioni urgenti per le consultazioni elettorali e referendarie dell’anno 2025\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-10",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2362"
+    },
+    {
+      "id": "senato-60441",
+      "titolo": "Disposizioni per il rafforzamento e l'adeguamento della capacità di difesa nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-10",
+      "url": "https://dati.senato.it/ddl/60441"
+    },
+    {
+      "id": "senato-60442",
+      "titolo": "Conversione in legge del decreto-legge 10 settembre 2026, n. 157, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali e di infrastrutture e attività energetiche strategiche",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-10",
+      "url": "https://dati.senato.it/ddl/60442"
+    },
+    {
+      "id": "senato-60440",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 23 luglio 2026, n. 127, recante misure urgenti e indifferibili per lo svolgimento dei procedimenti civili e penali a seguito del crollo dell'immobile degli uffici giudiziari di Bolzano",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-10",
+      "url": "https://dati.senato.it/ddl/60440"
+    },
+    {
+      "id": "senato-60439",
+      "titolo": "Modifiche all'articolo 2 della legge 23 dicembre 2009, n. 191, e all'articolo 17 del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, in materia di circoscrizioni di decentramento comunale nei comuni capoluogo di provincia",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-08",
+      "url": "https://dati.senato.it/ddl/60439"
+    },
+    {
+      "id": "senato-60438",
+      "titolo": "Disposizioni in materia di politiche per l'orientamento e per favorire l'inserimento lavorativo dei giovani",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-08",
+      "url": "https://dati.senato.it/ddl/60438"
+    },
+    {
+      "id": "senato-60437",
+      "titolo": "Istituzione della Giornata nazionale degli orfani a causa di femminicidio",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-07",
+      "url": "https://dati.senato.it/ddl/60437"
+    },
+    {
+      "id": "senato-60436",
+      "titolo": "Disposizioni in materia di reclutamento e stabilizzazione del personale docente",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-07",
+      "url": "https://dati.senato.it/ddl/60436"
+    },
+    {
+      "id": "senato-60434",
+      "titolo": "Disposizioni per favorire la tornanza, la rigenerazione ambientale e il ripopolamento delle zone montane",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-03",
+      "url": "https://dati.senato.it/ddl/60434"
+    },
+    {
+      "id": "senato-60435",
+      "titolo": "Modifica all'articolo 57 del codice di procedura penale, in materia di conferimento delle qualifiche di ufficiale o agente di polizia giudiziaria ai componenti delle compagnie barracellari nella regione Sardegna",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-03",
+      "url": "https://dati.senato.it/ddl/60435"
+    },
+    {
+      "id": "senato-60429",
+      "titolo": "Disposizioni in materia di livelli minimi d'invaso dei laghi della provincia di Belluno",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-02",
+      "url": "https://dati.senato.it/ddl/60429"
     },
     {
       "id": "senato-60427",
@@ -18,6 +122,22 @@
       "url": "https://dati.senato.it/ddl/60427"
     },
     {
+      "id": "senato-60433",
+      "titolo": "Disposizioni per la riforma del reclutamento e per la valorizzazione dell'esperienza professionale del personale docente nonché per la riduzione del precariato",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-02",
+      "url": "https://dati.senato.it/ddl/60433"
+    },
+    {
+      "id": "senato-60432",
+      "titolo": "Disposizioni per l'adattamento delle città ai cambiamenti climatici e per la protezione della popolazione dagli effetti delle ondate di calore",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-01",
+      "url": "https://dati.senato.it/ddl/60432"
+    },
+    {
       "id": "senato-60428",
       "titolo": "Conversione in legge del decreto-legge 26 agosto 2026, n. 153, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali",
       "tipo": "senato",
@@ -26,108 +146,12 @@
       "url": "https://dati.senato.it/ddl/60428"
     },
     {
-      "id": "senato-60426",
-      "titolo": "Delega al Governo in materia di semplificazione amministrativa e burocratica in favore delle micro, piccole e medie imprese",
+      "id": "senato-60431",
+      "titolo": "Istituzione della Giornata nazionale dell'artrogriposi multipla congenita",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-08-31",
-      "url": "https://dati.senato.it/ddl/60426"
-    },
-    {
-      "id": "senato-60425",
-      "titolo": "Conversione in legge del decreto-legge 28 agosto 2026, n. 154, recante misure urgenti per assicurare la continuità operativa di impianti di interesse strategico nazionale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-28",
-      "url": "https://dati.senato.it/ddl/60425"
-    },
-    {
-      "id": "senato-60424",
-      "titolo": "Conversione in legge del decreto-legge 26 agosto 2026, n. 153, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-26",
-      "url": "https://dati.senato.it/ddl/60424"
-    },
-    {
-      "id": "senato-60420",
-      "titolo": "Disposizioni per la tutela del mercato immobiliare",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-07",
-      "url": "https://dati.senato.it/ddl/60420"
-    },
-    {
-      "id": "senato-60421",
-      "titolo": "Conversione in legge del decreto-legge 7 agosto 2026, n. 143, recante disposizioni urgenti in materia di obbligo di compostabilità di determinate tipologie di imballaggi",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-07",
-      "url": "https://dati.senato.it/ddl/60421"
-    },
-    {
-      "id": "senato-60419",
-      "titolo": "Disposizioni in materia di successioni",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-07",
-      "url": "https://dati.senato.it/ddl/60419"
-    },
-    {
-      "id": "senato-60422",
-      "titolo": "Conversione in legge del decreto-legge 7 agosto 2026, n. 144, recante disposizioni urgenti per la funzionalità della pubblica amministrazione e degli enti territoriali, nonché in materia di protezione civile",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-07",
-      "url": "https://dati.senato.it/ddl/60422"
-    },
-    {
-      "id": "senato-60423",
-      "titolo": "Conversione in legge del decreto-legge 7 agosto 2026, n. 144, recante disposizioni urgenti per la funzionalità della pubblica amministrazione e degli enti territoriali, nonché in materia di protezione civile",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-07",
-      "url": "https://dati.senato.it/ddl/60423"
-    },
-    {
-      "id": "senato-60414",
-      "titolo": "Disposizioni in materia di riscatto, ai fini previdenziali, del periodo di mandato elettivo dei sindaci",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-06",
-      "url": "https://dati.senato.it/ddl/60414"
-    },
-    {
-      "id": "senato-60413",
-      "titolo": "Modifica all'articolo 253 del codice dell'ordinamento militare, di cui al decreto legislativo 15 marzo 2010, n. 66, concernente la delimitazione della zona monumentale di guerra del monte Pasubio, e dichiarazione di monumento nazionale della Strada delle 52 gallerie del monte Pasubio o Strada della Prima Armata",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-06",
-      "url": "https://dati.senato.it/ddl/60413"
-    },
-    {
-      "id": "senato-60416",
-      "titolo": "Istituzione della Giornata nazionale per il diritto al divertimento in sicurezza",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-06",
-      "url": "https://dati.senato.it/ddl/60416"
-    },
-    {
-      "id": "senato-60418",
-      "titolo": "Modifiche al decreto legislativo 15 marzo 2024, n. 29, in materia di cura e assistenza domiciliare a favore delle persone anziane non autosufficienti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-06",
-      "url": "https://dati.senato.it/ddl/60418"
-    },
-    {
-      "id": "senato-60417",
-      "titolo": "Disposizioni in favore dei tirocinanti di inclusione sociale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-06",
-      "url": "https://dati.senato.it/ddl/60417"
+      "url": "https://dati.senato.it/ddl/60431"
     }
   ]
 }
