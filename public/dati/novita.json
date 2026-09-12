@@ -1,37 +1,53 @@
 {
-  "generatoIl": "2026-09-11",
+  "generatoIl": "2026-09-12",
   "voci": [
     {
-      "id": "gazzetta-26G00178",
-      "titolo": "DECRETO-LEGGE 10 settembre 2026, n.157: Disposizioni urgenti in materia di prezzi petroliferi connessi al",
+      "id": "gazzetta-26G00175",
+      "titolo": "LEGGE 1 settembre 2026, n.158: Istituzione dell'area marina protetta «Isola di Capri»",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-10",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/10/26G00178/SG"
+      "data": "2026-09-11",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/11/26G00175/SG"
     },
     {
-      "id": "gazzetta-26A04732",
+      "id": "gazzetta-26A04725",
       "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 6 agosto 2026: Proroga dell'affidamento della gestione del consiglio comunale di",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-10",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/10/26A04732/SG"
+      "data": "2026-09-11",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/11/26A04725/SG"
     },
     {
-      "id": "camera-1606",
-      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "id": "camera-1633",
+      "titolo": "\"Conversione in legge del decreto-legge 30 dicembre 2023, n. 215, recante disposizioni urgenti in materia di termini normativi\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-10",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+      "data": "2026-09-11",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1633"
     },
     {
-      "id": "camera-2362",
-      "titolo": "S. 1425. - \"Conversione in legge, con modificazioni, del decreto-legge 19 marzo 2025, n. 27, recante disposizioni urgenti per le consultazioni elettorali e referendarie dell’anno 2025\" (approvato dal Senato)",
+      "id": "camera-1624",
+      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-10",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2362"
+      "data": "2026-09-11",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+    },
+    {
+      "id": "senato-60449",
+      "titolo": "Disposizioni per l'attribuzione ai comuni delle aree interne del gettito dell'Imposta Municipale Propria relativo agli immobili classificati nel gruppo catastale D e per il rafforzamento dell'autonomia finanziaria locale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-11",
+      "url": "https://dati.senato.it/ddl/60449"
+    },
+    {
+      "id": "senato-60448",
+      "titolo": "Disposizioni in materia di diritto degli utenti ad interagire con una persona fisica nell'ambito dei servizi di assistenza alla clientela",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-11",
+      "url": "https://dati.senato.it/ddl/60448"
     },
     {
       "id": "senato-60441",
@@ -56,6 +72,46 @@
       "stato": "discussione",
       "data": "2026-09-10",
       "url": "https://dati.senato.it/ddl/60440"
+    },
+    {
+      "id": "senato-60443",
+      "titolo": "Modifiche all'ordinamento penitenziario in materia di detenzione domiciliare",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-09",
+      "url": "https://dati.senato.it/ddl/60443"
+    },
+    {
+      "id": "senato-60447",
+      "titolo": "Modifiche agli articoli 415 e 595 del codice penale in materia di istigazione a disobbedire alle leggi e di diffamazione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-09",
+      "url": "https://dati.senato.it/ddl/60447"
+    },
+    {
+      "id": "senato-60444",
+      "titolo": "Introduzione dell'articolo 1084-ter del codice dell'ordinamento militare, di cui al decreto legislativo 15 marzo 2010, n. 66, in materia di avanzamento a titolo onorifico degli ufficiali di complemento delle Forze armate",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-09",
+      "url": "https://dati.senato.it/ddl/60444"
+    },
+    {
+      "id": "senato-60445",
+      "titolo": "Disposizioni per il sostegno abitativo dei lavoratori dipendenti e per la promozione degli alloggi aziendali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-09",
+      "url": "https://dati.senato.it/ddl/60445"
+    },
+    {
+      "id": "senato-60446",
+      "titolo": "Disposizioni in materia di videosorveglianza negli asili nido e nelle scuole dell'infanzia nonché presso le strutture socio assistenziali per anziani, disabili e minori in situazioni di disagio",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-09",
+      "url": "https://dati.senato.it/ddl/60446"
     },
     {
       "id": "senato-60439",
@@ -96,62 +152,6 @@
       "stato": "discussione",
       "data": "2026-09-03",
       "url": "https://dati.senato.it/ddl/60434"
-    },
-    {
-      "id": "senato-60435",
-      "titolo": "Modifica all'articolo 57 del codice di procedura penale, in materia di conferimento delle qualifiche di ufficiale o agente di polizia giudiziaria ai componenti delle compagnie barracellari nella regione Sardegna",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-03",
-      "url": "https://dati.senato.it/ddl/60435"
-    },
-    {
-      "id": "senato-60429",
-      "titolo": "Disposizioni in materia di livelli minimi d'invaso dei laghi della provincia di Belluno",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-02",
-      "url": "https://dati.senato.it/ddl/60429"
-    },
-    {
-      "id": "senato-60427",
-      "titolo": "Delega al Governo per il recepimento delle direttive europee e l'attuazione di altri atti dell'Unione europea - Legge di delegazione europea 2026",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-02",
-      "url": "https://dati.senato.it/ddl/60427"
-    },
-    {
-      "id": "senato-60433",
-      "titolo": "Disposizioni per la riforma del reclutamento e per la valorizzazione dell'esperienza professionale del personale docente nonché per la riduzione del precariato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-02",
-      "url": "https://dati.senato.it/ddl/60433"
-    },
-    {
-      "id": "senato-60432",
-      "titolo": "Disposizioni per l'adattamento delle città ai cambiamenti climatici e per la protezione della popolazione dagli effetti delle ondate di calore",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-01",
-      "url": "https://dati.senato.it/ddl/60432"
-    },
-    {
-      "id": "senato-60428",
-      "titolo": "Conversione in legge del decreto-legge 26 agosto 2026, n. 153, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-01",
-      "url": "https://dati.senato.it/ddl/60428"
-    },
-    {
-      "id": "senato-60431",
-      "titolo": "Istituzione della Giornata nazionale dell'artrogriposi multipla congenita",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-08-31",
-      "url": "https://dati.senato.it/ddl/60431"
     }
   ]
 }
