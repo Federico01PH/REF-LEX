@@ -1,37 +1,29 @@
 {
-  "generatoIl": "2026-09-12",
+  "generatoIl": "2026-09-13",
   "voci": [
     {
-      "id": "gazzetta-26G00175",
-      "titolo": "LEGGE 1 settembre 2026, n.158: Istituzione dell'area marina protetta «Isola di Capri»",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-11",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/11/26G00175/SG"
-    },
-    {
-      "id": "gazzetta-26A04725",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 6 agosto 2026: Proroga dell'affidamento della gestione del consiglio comunale di",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-11",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/11/26A04725/SG"
-    },
-    {
-      "id": "camera-1633",
-      "titolo": "\"Conversione in legge del decreto-legge 30 dicembre 2023, n. 215, recante disposizioni urgenti in materia di termini normativi\"",
+      "id": "camera-1556",
+      "titolo": "S. 833. - \"Disciplina della professione di guida turistica\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-11",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1633"
+      "data": "2026-09-12",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1556"
     },
     {
-      "id": "camera-1624",
-      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
+      "id": "camera-2196",
+      "titolo": "S. 1315. - \"Conversione in legge, con modificazioni, del decreto-legge 29 novembre 2024, n. 178, recante misure urgenti in materia di giustizia\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-11",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+      "data": "2026-09-12",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2196"
+    },
+    {
+      "id": "camera-2184",
+      "titolo": "\"Conversione in legge del decreto-legge 31 dicembre 2024, n. 208, recante misure organizzative urgenti per fronteggiare situazioni di particolare emergenza, nonché per l’attuazione del Piano nazionale di ripresa e resilienza\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-12",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2184"
     },
     {
       "id": "senato-60449",
