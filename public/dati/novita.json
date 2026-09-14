@@ -1,149 +1,21 @@
 {
-  "generatoIl": "2026-09-13",
+  "generatoIl": "2026-09-14",
   "voci": [
     {
-      "id": "camera-1556",
-      "titolo": "S. 833. - \"Disciplina della professione di guida turistica\" (approvato dal Senato)",
+      "id": "camera-1686",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-12",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1556"
+      "data": "2026-09-13",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
     },
     {
-      "id": "camera-2196",
-      "titolo": "S. 1315. - \"Conversione in legge, con modificazioni, del decreto-legge 29 novembre 2024, n. 178, recante misure urgenti in materia di giustizia\" (approvato dal Senato)",
+      "id": "camera-1624",
+      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-12",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2196"
-    },
-    {
-      "id": "camera-2184",
-      "titolo": "\"Conversione in legge del decreto-legge 31 dicembre 2024, n. 208, recante misure organizzative urgenti per fronteggiare situazioni di particolare emergenza, nonché per l’attuazione del Piano nazionale di ripresa e resilienza\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-09-12",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2184"
-    },
-    {
-      "id": "senato-60449",
-      "titolo": "Disposizioni per l'attribuzione ai comuni delle aree interne del gettito dell'Imposta Municipale Propria relativo agli immobili classificati nel gruppo catastale D e per il rafforzamento dell'autonomia finanziaria locale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-11",
-      "url": "https://dati.senato.it/ddl/60449"
-    },
-    {
-      "id": "senato-60448",
-      "titolo": "Disposizioni in materia di diritto degli utenti ad interagire con una persona fisica nell'ambito dei servizi di assistenza alla clientela",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-11",
-      "url": "https://dati.senato.it/ddl/60448"
-    },
-    {
-      "id": "senato-60441",
-      "titolo": "Disposizioni per il rafforzamento e l'adeguamento della capacità di difesa nazionale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-10",
-      "url": "https://dati.senato.it/ddl/60441"
-    },
-    {
-      "id": "senato-60442",
-      "titolo": "Conversione in legge del decreto-legge 10 settembre 2026, n. 157, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali e di infrastrutture e attività energetiche strategiche",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-10",
-      "url": "https://dati.senato.it/ddl/60442"
-    },
-    {
-      "id": "senato-60440",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 23 luglio 2026, n. 127, recante misure urgenti e indifferibili per lo svolgimento dei procedimenti civili e penali a seguito del crollo dell'immobile degli uffici giudiziari di Bolzano",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-10",
-      "url": "https://dati.senato.it/ddl/60440"
-    },
-    {
-      "id": "senato-60443",
-      "titolo": "Modifiche all'ordinamento penitenziario in materia di detenzione domiciliare",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60443"
-    },
-    {
-      "id": "senato-60447",
-      "titolo": "Modifiche agli articoli 415 e 595 del codice penale in materia di istigazione a disobbedire alle leggi e di diffamazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60447"
-    },
-    {
-      "id": "senato-60444",
-      "titolo": "Introduzione dell'articolo 1084-ter del codice dell'ordinamento militare, di cui al decreto legislativo 15 marzo 2010, n. 66, in materia di avanzamento a titolo onorifico degli ufficiali di complemento delle Forze armate",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60444"
-    },
-    {
-      "id": "senato-60445",
-      "titolo": "Disposizioni per il sostegno abitativo dei lavoratori dipendenti e per la promozione degli alloggi aziendali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60445"
-    },
-    {
-      "id": "senato-60446",
-      "titolo": "Disposizioni in materia di videosorveglianza negli asili nido e nelle scuole dell'infanzia nonché presso le strutture socio assistenziali per anziani, disabili e minori in situazioni di disagio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60446"
-    },
-    {
-      "id": "senato-60439",
-      "titolo": "Modifiche all'articolo 2 della legge 23 dicembre 2009, n. 191, e all'articolo 17 del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, in materia di circoscrizioni di decentramento comunale nei comuni capoluogo di provincia",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-08",
-      "url": "https://dati.senato.it/ddl/60439"
-    },
-    {
-      "id": "senato-60438",
-      "titolo": "Disposizioni in materia di politiche per l'orientamento e per favorire l'inserimento lavorativo dei giovani",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-08",
-      "url": "https://dati.senato.it/ddl/60438"
-    },
-    {
-      "id": "senato-60437",
-      "titolo": "Istituzione della Giornata nazionale degli orfani a causa di femminicidio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-07",
-      "url": "https://dati.senato.it/ddl/60437"
-    },
-    {
-      "id": "senato-60436",
-      "titolo": "Disposizioni in materia di reclutamento e stabilizzazione del personale docente",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-07",
-      "url": "https://dati.senato.it/ddl/60436"
-    },
-    {
-      "id": "senato-60434",
-      "titolo": "Disposizioni per favorire la tornanza, la rigenerazione ambientale e il ripopolamento delle zone montane",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-03",
-      "url": "https://dati.senato.it/ddl/60434"
+      "data": "2026-09-13",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
     }
   ]
 }
