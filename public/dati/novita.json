@@ -1,45 +1,53 @@
 {
-  "generatoIl": "2026-09-15",
+  "generatoIl": "2026-09-16",
   "voci": [
     {
-      "id": "gazzetta-26G00176",
-      "titolo": "LEGGE 1 settembre 2026, n.159: Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica",
+      "id": "gazzetta-26G00179",
+      "titolo": "DECRETO LEGISLATIVO 9 settembre 2026, n.160: Adeguamento della normativa nazionale alle disposizioni del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-14",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/14/26G00176/SG"
+      "data": "2026-09-15",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/15/26G00179/SG"
     },
     {
-      "id": "gazzetta-26A04760",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 6 agosto 2026: Scioglimento del consiglio comunale di Mazzarra' Sant'Andrea e nomina",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-14",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/14/26A04760/SG"
-    },
-    {
-      "id": "camera-1738",
-      "titolo": "AMENDOLA: \"Dichiarazione di monumento nazionale del Palazzo Fortunato in Rionero in Vulture, nella provincia di Potenza\"",
+      "id": "camera-1809",
+      "titolo": "\"Conversione in legge del decreto-legge 29 marzo 2024, n. 39, recante misure urgenti in materia di agevolazioni fiscali di cui agli articoli 119 e 119-ter del decreto-legge 19 maggio 2020, n. 34, convertito, con modificazioni, dalla legge 17 luglio 2020, n. 77, altre misure urgenti in materia fiscale e connesse a eventi eccezionali, nonché relative all’amministrazione finanziaria\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1738"
+      "data": "2026-09-15",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1809"
     },
     {
-      "id": "camera-2393",
-      "titolo": "S. 1192. - \"Misure per la semplificazione normativa e il miglioramento della qualità della normazione e deleghe al Governo per la semplificazione, il riordino e il riassetto in determinate materie\" (approvato dal Senato)",
+      "id": "camera-1686",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2393"
+      "data": "2026-09-15",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
     },
     {
-      "id": "camera-2184",
-      "titolo": "\"Conversione in legge del decreto-legge 31 dicembre 2024, n. 208, recante misure organizzative urgenti per fronteggiare situazioni di particolare emergenza, nonché per l’attuazione del Piano nazionale di ripresa e resilienza\"",
+      "id": "camera-1633",
+      "titolo": "\"Conversione in legge del decreto-legge 30 dicembre 2023, n. 215, recante disposizioni urgenti in materia di termini normativi\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2184"
+      "data": "2026-09-15",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1633"
+    },
+    {
+      "id": "senato-60452",
+      "titolo": "Disposizioni in materia di sostegno alla cultura e di tutela del patrimonio culturale ed artistico nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-15",
+      "url": "https://dati.senato.it/ddl/60452"
+    },
+    {
+      "id": "senato-60453",
+      "titolo": "Disposizioni in materia di cinema",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-15",
+      "url": "https://dati.senato.it/ddl/60453"
     },
     {
       "id": "senato-60450",
@@ -48,6 +56,14 @@
       "stato": "discussione",
       "data": "2026-09-14",
       "url": "https://dati.senato.it/ddl/60450"
+    },
+    {
+      "id": "senato-60451",
+      "titolo": "Disposizioni in materia di condizioni di accesso al regime forfettario",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-14",
+      "url": "https://dati.senato.it/ddl/60451"
     },
     {
       "id": "senato-60449",
@@ -136,30 +152,6 @@
       "stato": "discussione",
       "data": "2026-09-08",
       "url": "https://dati.senato.it/ddl/60439"
-    },
-    {
-      "id": "senato-60438",
-      "titolo": "Disposizioni in materia di politiche per l'orientamento e per favorire l'inserimento lavorativo dei giovani",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-08",
-      "url": "https://dati.senato.it/ddl/60438"
-    },
-    {
-      "id": "senato-60437",
-      "titolo": "Istituzione della Giornata nazionale degli orfani a causa di femminicidio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-07",
-      "url": "https://dati.senato.it/ddl/60437"
-    },
-    {
-      "id": "senato-60436",
-      "titolo": "Disposizioni in materia di reclutamento e stabilizzazione del personale docente",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-07",
-      "url": "https://dati.senato.it/ddl/60436"
     }
   ]
 }
