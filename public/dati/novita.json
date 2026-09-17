@@ -1,37 +1,37 @@
 {
-  "generatoIl": "2026-09-16",
+  "generatoIl": "2026-09-17",
   "voci": [
     {
-      "id": "gazzetta-26G00179",
-      "titolo": "DECRETO LEGISLATIVO 9 settembre 2026, n.160: Adeguamento della normativa nazionale alle disposizioni del",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-15",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/15/26G00179/SG"
-    },
-    {
-      "id": "camera-1809",
-      "titolo": "\"Conversione in legge del decreto-legge 29 marzo 2024, n. 39, recante misure urgenti in materia di agevolazioni fiscali di cui agli articoli 119 e 119-ter del decreto-legge 19 maggio 2020, n. 34, convertito, con modificazioni, dalla legge 17 luglio 2020, n. 77, altre misure urgenti in materia fiscale e connesse a eventi eccezionali, nonché relative all’amministrazione finanziaria\"",
+      "id": "camera-1790",
+      "titolo": "S. 1014. - \"Conversione in legge, con modificazioni, del decreto-legge 5 febbraio 2024, n. 10, recante disposizioni urgenti sulla governance e sugli interventi di competenza della Società «Infrastrutture Milano Cortina 2020-2026 S.p.A.»\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-15",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1809"
+      "data": "2026-09-16",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1790"
     },
     {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "id": "camera-1738",
+      "titolo": "AMENDOLA: \"Dichiarazione di monumento nazionale del Palazzo Fortunato in Rionero in Vulture, nella provincia di Potenza\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-15",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "data": "2026-09-16",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1738"
     },
     {
-      "id": "camera-1633",
-      "titolo": "\"Conversione in legge del decreto-legge 30 dicembre 2023, n. 215, recante disposizioni urgenti in materia di termini normativi\"",
+      "id": "camera-1194",
+      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-15",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1633"
+      "data": "2026-09-16",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+    },
+    {
+      "id": "senato-60460",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 27 luglio 2026, n. 133, recante disposizioni urgenti in materia di prezzi petroliferi connessi alla ulteriore crisi dei mercati internazionali e disposizioni in materia di ILVA S.p.A. in amministrazione straordinaria",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-16",
+      "url": "https://dati.senato.it/ddl/60460"
     },
     {
       "id": "senato-60452",
@@ -50,6 +50,38 @@
       "url": "https://dati.senato.it/ddl/60453"
     },
     {
+      "id": "senato-60459",
+      "titolo": "Disposizioni in materia di elezioni della Camera dei deputati e del Senato della Repubblica",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-15",
+      "url": "https://dati.senato.it/ddl/60459"
+    },
+    {
+      "id": "senato-60457",
+      "titolo": "Disposizioni per favorire l'occupazione giovanile, la trasmissione intergenerazionale delle competenze e la salvaguardia dei negozi, delle botteghe artigiane e degli esercizi pubblici storici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-14",
+      "url": "https://dati.senato.it/ddl/60457"
+    },
+    {
+      "id": "senato-60456",
+      "titolo": "Modifica all'articolo 35 della legge 22 ottobre 1971, n. 865, e introduzione dell'articolo 18-bis del testo unico di cui al decreto del Presidente della Repubblica 6 giugno 2001, n. 380, in materia di riserva di quote delle aree destinate all'edilizia residenziale convenzionata in favore delle cooperative edilizie, e altre disposizioni per favorire l'accesso alla prima casa di abitazione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-14",
+      "url": "https://dati.senato.it/ddl/60456"
+    },
+    {
+      "id": "senato-60458",
+      "titolo": "Agevolazione fiscale per il recupero e la valorizzazione delle architetture rurali tradizionali da adibire ad abitazione principale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-14",
+      "url": "https://dati.senato.it/ddl/60458"
+    },
+    {
       "id": "senato-60450",
       "titolo": "Istituzione del congedo straordinario per l'assistenza ai figli colpiti da eventi traumatici o da patologie acute temporaneamente invalidanti",
       "tipo": "senato",
@@ -59,11 +91,27 @@
     },
     {
       "id": "senato-60451",
-      "titolo": "Disposizioni in materia di condizioni di accesso al regime forfettario",
+      "titolo": "Disposizioni in materia di condizioni di accesso al regime forfetario",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-09-14",
       "url": "https://dati.senato.it/ddl/60451"
+    },
+    {
+      "id": "senato-60455",
+      "titolo": "Modifica agli articoli 6-ter del decreto-legge 27 giugno 2003, n. 151, convertito, con modificazioni, dalla legge 1° agosto 2003, n. 214, e 126-bis del codice della strada, di cui al decreto legislativo 30 aprile 1992, n. 285, in materia di recupero dei punti della patente di guida rilasciata da uno Stato estero",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-14",
+      "url": "https://dati.senato.it/ddl/60455"
+    },
+    {
+      "id": "senato-60454",
+      "titolo": "Deleghe al Governo per la semplificazione degli adempimenti fiscali e amministrativi in favore dei piccoli birrifici indipendenti nonché disposizioni in materia di riduzione dell'aliquota di accisa sulla birra",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-14",
+      "url": "https://dati.senato.it/ddl/60454"
     },
     {
       "id": "senato-60449",
@@ -96,62 +144,6 @@
       "stato": "discussione",
       "data": "2026-09-10",
       "url": "https://dati.senato.it/ddl/60442"
-    },
-    {
-      "id": "senato-60440",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 23 luglio 2026, n. 127, recante misure urgenti e indifferibili per lo svolgimento dei procedimenti civili e penali a seguito del crollo dell'immobile degli uffici giudiziari di Bolzano",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-10",
-      "url": "https://dati.senato.it/ddl/60440"
-    },
-    {
-      "id": "senato-60443",
-      "titolo": "Modifiche all'ordinamento penitenziario in materia di detenzione domiciliare",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60443"
-    },
-    {
-      "id": "senato-60447",
-      "titolo": "Modifiche agli articoli 415 e 595 del codice penale in materia di istigazione a disobbedire alle leggi e di diffamazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60447"
-    },
-    {
-      "id": "senato-60444",
-      "titolo": "Introduzione dell'articolo 1084-ter del codice dell'ordinamento militare, di cui al decreto legislativo 15 marzo 2010, n. 66, in materia di avanzamento a titolo onorifico degli ufficiali di complemento delle Forze armate",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60444"
-    },
-    {
-      "id": "senato-60445",
-      "titolo": "Disposizioni per il sostegno abitativo dei lavoratori dipendenti e per la promozione degli alloggi aziendali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60445"
-    },
-    {
-      "id": "senato-60446",
-      "titolo": "Disposizioni in materia di videosorveglianza negli asili nido e nelle scuole dell'infanzia nonché presso le strutture socio assistenziali per anziani, disabili e minori in situazioni di disagio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-09",
-      "url": "https://dati.senato.it/ddl/60446"
-    },
-    {
-      "id": "senato-60439",
-      "titolo": "Modifiche all'articolo 2 della legge 23 dicembre 2009, n. 191, e all'articolo 17 del testo unico delle leggi sull'ordinamento degli enti locali, di cui al decreto legislativo 18 agosto 2000, n. 267, in materia di circoscrizioni di decentramento comunale nei comuni capoluogo di provincia",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-08",
-      "url": "https://dati.senato.it/ddl/60439"
     }
   ]
 }
