@@ -1,29 +1,29 @@
 {
-  "generatoIl": "2026-09-17",
+  "generatoIl": "2026-09-18",
   "voci": [
     {
-      "id": "camera-1790",
-      "titolo": "S. 1014. - \"Conversione in legge, con modificazioni, del decreto-legge 5 febbraio 2024, n. 10, recante disposizioni urgenti sulla governance e sugli interventi di competenza della Società «Infrastrutture Milano Cortina 2020-2026 S.p.A.»\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-09-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1790"
+      "id": "gazzetta-26G00181",
+      "titolo": "DECRETO-LEGGE 17 settembre 2026, n.162: Disposizioni urgenti per il sostegno economico e il contenimento",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-17",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/17/26G00181/SG"
     },
     {
-      "id": "camera-1738",
-      "titolo": "AMENDOLA: \"Dichiarazione di monumento nazionale del Palazzo Fortunato in Rionero in Vulture, nella provincia di Potenza\"",
+      "id": "camera-1687",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1738"
+      "data": "2026-09-17",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
     },
     {
-      "id": "camera-1194",
-      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+      "data": "2026-09-17",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
       "id": "senato-60460",
@@ -32,6 +32,22 @@
       "stato": "discussione",
       "data": "2026-09-16",
       "url": "https://dati.senato.it/ddl/60460"
+    },
+    {
+      "id": "senato-60463",
+      "titolo": "Modifica dell'articolo 110 del testo unico delle leggi di pubblica sicurezza, di cui al regio decreto 18 giugno 1931, n. 773, in materia di apparecchi da intrattenimento storici, vintage o di interesse culturale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-16",
+      "url": "https://dati.senato.it/ddl/60463"
+    },
+    {
+      "id": "senato-60462",
+      "titolo": "Disposizioni in materia di sicurezza degli impianti ludici negli spazi pubblici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-16",
+      "url": "https://dati.senato.it/ddl/60462"
     },
     {
       "id": "senato-60452",
@@ -48,6 +64,14 @@
       "stato": "discussione",
       "data": "2026-09-15",
       "url": "https://dati.senato.it/ddl/60453"
+    },
+    {
+      "id": "senato-60461",
+      "titolo": "Disposizioni per agevolare l'accesso alle prestazioni sanitarie di crioconservazione degli ovociti a scopo precauzionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-15",
+      "url": "https://dati.senato.it/ddl/60461"
     },
     {
       "id": "senato-60459",
@@ -120,30 +144,6 @@
       "stato": "discussione",
       "data": "2026-09-11",
       "url": "https://dati.senato.it/ddl/60449"
-    },
-    {
-      "id": "senato-60448",
-      "titolo": "Disposizioni in materia di diritto degli utenti ad interagire con una persona fisica nell'ambito dei servizi di assistenza alla clientela",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-11",
-      "url": "https://dati.senato.it/ddl/60448"
-    },
-    {
-      "id": "senato-60441",
-      "titolo": "Disposizioni per il rafforzamento e l'adeguamento della capacità di difesa nazionale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-10",
-      "url": "https://dati.senato.it/ddl/60441"
-    },
-    {
-      "id": "senato-60442",
-      "titolo": "Conversione in legge del decreto-legge 10 settembre 2026, n. 157, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali e di infrastrutture e attività energetiche strategiche",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-10",
-      "url": "https://dati.senato.it/ddl/60442"
     }
   ]
 }
