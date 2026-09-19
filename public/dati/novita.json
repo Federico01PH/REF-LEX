@@ -1,29 +1,37 @@
 {
-  "generatoIl": "2026-09-18",
+  "generatoIl": "2026-09-19",
   "voci": [
     {
-      "id": "gazzetta-26G00181",
-      "titolo": "DECRETO-LEGGE 17 settembre 2026, n.162: Disposizioni urgenti per il sostegno economico e il contenimento",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-17",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/17/26G00181/SG"
-    },
-    {
-      "id": "camera-1687",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-17",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
+      "data": "2026-09-18",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
     },
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "id": "camera-1665",
+      "titolo": "S. 615. - \"Disposizioni per l’attuazione dell’autonomia differenziata delle Regioni a statuto ordinario ai sensi dell’articolo 116, terzo comma, della Costituzione\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-17",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+      "data": "2026-09-18",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1665"
+    },
+    {
+      "id": "camera-1686",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-18",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+    },
+    {
+      "id": "senato-60464",
+      "titolo": "Conversione in legge del decreto-legge 17 settembre 2026, n. 162, recante disposizioni urgenti per il sostegno economico e il contenimento degli effetti derivanti dal perdurante aumento del costo dei carburanti, nonché in materia fiscale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-18",
+      "url": "https://dati.senato.it/ddl/60464"
     },
     {
       "id": "senato-60460",
@@ -136,14 +144,6 @@
       "stato": "discussione",
       "data": "2026-09-14",
       "url": "https://dati.senato.it/ddl/60454"
-    },
-    {
-      "id": "senato-60449",
-      "titolo": "Disposizioni per l'attribuzione ai comuni delle aree interne del gettito dell'Imposta Municipale Propria relativo agli immobili classificati nel gruppo catastale D e per il rafforzamento dell'autonomia finanziaria locale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-11",
-      "url": "https://dati.senato.it/ddl/60449"
     }
   ]
 }
