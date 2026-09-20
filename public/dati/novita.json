@@ -1,6 +1,22 @@
 {
-  "generatoIl": "2026-09-19",
+  "generatoIl": "2026-09-20",
   "voci": [
+    {
+      "id": "gazzetta-26G00180",
+      "titolo": "LEGGE 17 settembre 2026, n.163: Conversione in legge, con modificazioni, del decreto-legge 23 luglio",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-19",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/19/26G00180/SG"
+    },
+    {
+      "id": "gazzetta-26A04941",
+      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 23 luglio 2026, n.127: Testo del decreto-legge 23 luglio 2026, n",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-19",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/19/26A04941/SG"
+    },
     {
       "id": "camera-1660",
       "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
