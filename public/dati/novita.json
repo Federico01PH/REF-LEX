@@ -1,38 +1,6 @@
 {
-  "generatoIl": "2026-09-21",
+  "generatoIl": "2026-09-22",
   "voci": [
-    {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-09-20",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
-    },
-    {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-09-20",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
-    },
-    {
-      "id": "gazzetta-26G00180",
-      "titolo": "LEGGE 17 settembre 2026, n.163: Conversione in legge, con modificazioni, del decreto-legge 23 luglio",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-19",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/19/26G00180/SG"
-    },
-    {
-      "id": "gazzetta-26A04941",
-      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 23 luglio 2026, n.127: Testo del decreto-legge 23 luglio 2026, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-19",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/19/26A04941/SG"
-    },
     {
       "id": "senato-60464",
       "titolo": "Conversione in legge del decreto-legge 17 settembre 2026, n. 162, recante disposizioni urgenti per il sostegno economico e il contenimento degli effetti derivanti dal perdurante aumento del costo dei carburanti, nonché in materia fiscale",
@@ -40,6 +8,62 @@
       "stato": "discussione",
       "data": "2026-09-18",
       "url": "https://dati.senato.it/ddl/60464"
+    },
+    {
+      "id": "senato-60465",
+      "titolo": "Istituzione della Giornata nazionale per l'informazione sulla demenza frontotemporale nonché disposizioni per promuovere la diagnosi della malattia, l'assistenza delle persone che ne sono affette e il sostegno dei familiari che ne prendono cura",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-17",
+      "url": "https://dati.senato.it/ddl/60465"
+    },
+    {
+      "id": "senato-60467",
+      "titolo": "Modifica all'articolo 1 della legge 13 luglio 2015, n. 107, e altre disposizioni in materia di formazione sulle tecniche di primo soccorso per gli studenti e il personale delle scuole secondarie di primo e di secondo grado",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-17",
+      "url": "https://dati.senato.it/ddl/60467"
+    },
+    {
+      "id": "senato-60469",
+      "titolo": "Modifiche agli articoli 42 e 47 della Costituzione in materia di diritto all'abitazione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-17",
+      "url": "https://dati.senato.it/ddl/60469"
+    },
+    {
+      "id": "senato-60471",
+      "titolo": "Ratifica ed esecuzione della Dichiarazione congiunta relativa all'Accordo di cooperazione nel settore della difesa tra il Governo della Repubblica italiana e il Governo della Repubblica algerina democratica e popolare, fatto a Roma il 15 maggio 2003, fatta a Roma il 23 luglio 2025",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-17",
+      "url": "https://dati.senato.it/ddl/60471"
+    },
+    {
+      "id": "senato-60468",
+      "titolo": "Modifiche al decreto legislativo 3 aprile 2006, n. 152, in materia di procedure di pronto intervento in caso di eventi comportanti rischio ambientale, e delega al Governo per il coordinamento normativo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-17",
+      "url": "https://dati.senato.it/ddl/60468"
+    },
+    {
+      "id": "senato-60470",
+      "titolo": "Ratifica ed esecuzione dei Trattati di estradizione, di mutua assistenza in materia penale e sul trasferimento delle persone condannate tra la Repubblica Italiana e la Repubblica dell'Uzbekistan, fatti a Roma l'8 giugno 2023",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-17",
+      "url": "https://dati.senato.it/ddl/60470"
+    },
+    {
+      "id": "senato-60466",
+      "titolo": "Modifica all'articolo 19 del decreto legislativo 5 aprile 2006, n. 160, in materia di permanenza presso il medesimo ufficio dei magistrati addetti alla trattazione delle controversie concernenti la proprietà industriale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-17",
+      "url": "https://dati.senato.it/ddl/60466"
     },
     {
       "id": "senato-60460",
@@ -96,62 +120,6 @@
       "stato": "discussione",
       "data": "2026-09-15",
       "url": "https://dati.senato.it/ddl/60459"
-    },
-    {
-      "id": "senato-60457",
-      "titolo": "Disposizioni per favorire l'occupazione giovanile, la trasmissione intergenerazionale delle competenze e la salvaguardia dei negozi, delle botteghe artigiane e degli esercizi pubblici storici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://dati.senato.it/ddl/60457"
-    },
-    {
-      "id": "senato-60456",
-      "titolo": "Modifica all'articolo 35 della legge 22 ottobre 1971, n. 865, e introduzione dell'articolo 18-bis del testo unico di cui al decreto del Presidente della Repubblica 6 giugno 2001, n. 380, in materia di riserva di quote delle aree destinate all'edilizia residenziale convenzionata in favore delle cooperative edilizie, e altre disposizioni per favorire l'accesso alla prima casa di abitazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://dati.senato.it/ddl/60456"
-    },
-    {
-      "id": "senato-60458",
-      "titolo": "Agevolazione fiscale per il recupero e la valorizzazione delle architetture rurali tradizionali da adibire ad abitazione principale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://dati.senato.it/ddl/60458"
-    },
-    {
-      "id": "senato-60450",
-      "titolo": "Istituzione del congedo straordinario per l'assistenza ai figli colpiti da eventi traumatici o da patologie acute temporaneamente invalidanti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://dati.senato.it/ddl/60450"
-    },
-    {
-      "id": "senato-60451",
-      "titolo": "Disposizioni in materia di condizioni di accesso al regime forfetario",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://dati.senato.it/ddl/60451"
-    },
-    {
-      "id": "senato-60455",
-      "titolo": "Modifica agli articoli 6-ter del decreto-legge 27 giugno 2003, n. 151, convertito, con modificazioni, dalla legge 1° agosto 2003, n. 214, e 126-bis del codice della strada, di cui al decreto legislativo 30 aprile 1992, n. 285, in materia di recupero dei punti della patente di guida rilasciata da uno Stato estero",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://dati.senato.it/ddl/60455"
-    },
-    {
-      "id": "senato-60454",
-      "titolo": "Deleghe al Governo per la semplificazione degli adempimenti fiscali e amministrativi in favore dei piccoli birrifici indipendenti nonché disposizioni in materia di riduzione dell'aliquota di accisa sulla birra",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-14",
-      "url": "https://dati.senato.it/ddl/60454"
     }
   ]
 }
