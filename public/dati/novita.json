@@ -1,6 +1,78 @@
 {
-  "generatoIl": "2026-09-22",
+  "generatoIl": "2026-09-23",
   "voci": [
+    {
+      "id": "gazzetta-26A04866",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 4 settembre 2026: Scioglimento del consiglio comunale di Castel Volturno e nomina del",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-22",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/22/26A04866/SG"
+    },
+    {
+      "id": "gazzetta-26A04867",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 4 settembre 2026: Scioglimento del consiglio comunale di Frignano",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-22",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/22/26A04867/SG"
+    },
+    {
+      "id": "camera-1686",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-22",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+    },
+    {
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-22",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+    },
+    {
+      "id": "senato-60478",
+      "titolo": "Disposizioni per la promozione della resilienza idrica e l'istituzione del Sistema Nazionale dei Crediti Idrici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-22",
+      "url": "https://dati.senato.it/ddl/60478"
+    },
+    {
+      "id": "senato-60477",
+      "titolo": "Disposizioni volte al rafforzamento dei servizi territoriali di salute mentale e valorizzazione del personale sanitario nel circuito penale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-21",
+      "url": "https://dati.senato.it/ddl/60477"
+    },
+    {
+      "id": "senato-60475",
+      "titolo": "Disposizioni per la responsabilizzazione genitoriale e per la disciplina dei benefici comunali nei casi di condotte penalmente rilevanti poste in essere da minorenni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-18",
+      "url": "https://dati.senato.it/ddl/60475"
+    },
+    {
+      "id": "senato-60472",
+      "titolo": "Modifiche alla legge 22 aprile 1941, n. 633, e altre disposizioni concernenti la protezione del diritto all'immagine e all'identità personale nonché del diritto all'utilizzo della voce e della prestazione artistica degli artisti interpreti ed esecutori e la riconoscibilità dei contenuti prodotti o modificati mediante sistemi di intelligenza artificiale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-18",
+      "url": "https://dati.senato.it/ddl/60472"
+    },
+    {
+      "id": "senato-60474",
+      "titolo": "Disposizioni per il riconoscimento delle funzioni di pubblico servizio degli assistenti bagnanti e per il rafforzamento della tutela della sicurezza della balneazione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-18",
+      "url": "https://dati.senato.it/ddl/60474"
+    },
     {
       "id": "senato-60464",
       "titolo": "Conversione in legge del decreto-legge 17 settembre 2026, n. 162, recante disposizioni urgenti per il sostegno economico e il contenimento degli effetti derivanti dal perdurante aumento del costo dei carburanti, nonché in materia fiscale",
@@ -8,6 +80,22 @@
       "stato": "discussione",
       "data": "2026-09-18",
       "url": "https://dati.senato.it/ddl/60464"
+    },
+    {
+      "id": "senato-60476",
+      "titolo": "Disposizioni per l'accesso alle cure palliative e alla terapia del dolore nei luoghi di vita e di cura",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-18",
+      "url": "https://dati.senato.it/ddl/60476"
+    },
+    {
+      "id": "senato-60473",
+      "titolo": "Disposizioni per il divieto progressivo delle gabbie negli allevamenti e la transizione a sistemi cage free",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-18",
+      "url": "https://dati.senato.it/ddl/60473"
     },
     {
       "id": "senato-60465",
@@ -64,62 +152,6 @@
       "stato": "discussione",
       "data": "2026-09-17",
       "url": "https://dati.senato.it/ddl/60466"
-    },
-    {
-      "id": "senato-60460",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 27 luglio 2026, n. 133, recante disposizioni urgenti in materia di prezzi petroliferi connessi alla ulteriore crisi dei mercati internazionali e disposizioni in materia di ILVA S.p.A. in amministrazione straordinaria",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-16",
-      "url": "https://dati.senato.it/ddl/60460"
-    },
-    {
-      "id": "senato-60463",
-      "titolo": "Modifica dell'articolo 110 del testo unico delle leggi di pubblica sicurezza, di cui al regio decreto 18 giugno 1931, n. 773, in materia di apparecchi da intrattenimento storici, vintage o di interesse culturale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-16",
-      "url": "https://dati.senato.it/ddl/60463"
-    },
-    {
-      "id": "senato-60462",
-      "titolo": "Disposizioni in materia di sicurezza degli impianti ludici negli spazi pubblici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-16",
-      "url": "https://dati.senato.it/ddl/60462"
-    },
-    {
-      "id": "senato-60452",
-      "titolo": "Disposizioni in materia di sostegno alla cultura e di tutela del patrimonio culturale ed artistico nazionale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-15",
-      "url": "https://dati.senato.it/ddl/60452"
-    },
-    {
-      "id": "senato-60453",
-      "titolo": "Disposizioni in materia di cinema",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-15",
-      "url": "https://dati.senato.it/ddl/60453"
-    },
-    {
-      "id": "senato-60461",
-      "titolo": "Disposizioni per agevolare l'accesso alle prestazioni sanitarie di crioconservazione degli ovociti a scopo precauzionale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-15",
-      "url": "https://dati.senato.it/ddl/60461"
-    },
-    {
-      "id": "senato-60459",
-      "titolo": "Disposizioni in materia di elezioni della Camera dei deputati e del Senato della Repubblica",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-15",
-      "url": "https://dati.senato.it/ddl/60459"
     }
   ]
 }
