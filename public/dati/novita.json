@@ -1,25 +1,65 @@
 {
-  "generatoIl": "2026-09-24",
+  "generatoIl": "2026-09-25",
   "voci": [
     {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-09-23",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "id": "gazzetta-26G00182",
+      "titolo": "LEGGE 18 settembre 2026, n.164: Rendiconto generale dell'Amministrazione dello Stato per l'esercizio",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-24",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/24/26G00182/SG"
     },
     {
-      "id": "camera-1717",
-      "titolo": "\"Disposizioni in materia di rafforzamento della cybersicurezza nazionale e di reati informatici\"",
+      "id": "gazzetta-26G00183",
+      "titolo": "LEGGE 18 settembre 2026, n.165: Disposizioni per l'assestamento del bilancio dello Stato per l'anno",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-24",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/24/26G00183/SG"
+    },
+    {
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-23",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1717"
+      "data": "2026-09-24",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+    },
+    {
+      "id": "camera-1665",
+      "titolo": "S. 615. - \"Disposizioni per l’attuazione dell’autonomia differenziata delle Regioni a statuto ordinario ai sensi dell’articolo 116, terzo comma, della Costituzione\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-24",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1665"
+    },
+    {
+      "id": "camera-1718",
+      "titolo": "S. 808. - \"Modifiche al codice penale, al codice di procedura penale, all’ordinamento giudiziario e al codice dell’ordinamento militare\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-24",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1718"
+    },
+    {
+      "id": "senato-60480",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 7 agosto 2026, n. 143, recante disposizioni urgenti in materia di obbligo di compostabilità di determinate tipologie di imballaggi",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-24",
+      "url": "https://dati.senato.it/ddl/60480"
+    },
+    {
+      "id": "senato-60481",
+      "titolo": "Delega al Governo per la riforma della disciplina dell'ordinamento della professione di dottore commercialista e di esperto contabile",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-24",
+      "url": "https://dati.senato.it/ddl/60481"
     },
     {
       "id": "senato-60478",
-      "titolo": "Disposizioni per la promozione della resilienza idrica e l'istituzione del Sistema Nazionale dei Crediti Idrici",
+      "titolo": "Disposizioni per la promozione della resilienza idrica e istituzione del Sistema nazionale dei crediti idrici",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-09-22",
@@ -120,22 +160,6 @@
       "stato": "discussione",
       "data": "2026-09-17",
       "url": "https://dati.senato.it/ddl/60471"
-    },
-    {
-      "id": "senato-60468",
-      "titolo": "Modifiche al decreto legislativo 3 aprile 2006, n. 152, in materia di procedure di pronto intervento in caso di eventi comportanti rischio ambientale, e delega al Governo per il coordinamento normativo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-17",
-      "url": "https://dati.senato.it/ddl/60468"
-    },
-    {
-      "id": "senato-60470",
-      "titolo": "Ratifica ed esecuzione dei Trattati di estradizione, di mutua assistenza in materia penale e sul trasferimento delle persone condannate tra la Repubblica Italiana e la Repubblica dell'Uzbekistan, fatti a Roma l'8 giugno 2023",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-17",
-      "url": "https://dati.senato.it/ddl/60470"
     }
   ]
 }
