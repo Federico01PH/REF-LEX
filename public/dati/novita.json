@@ -1,45 +1,29 @@
 {
-  "generatoIl": "2026-09-25",
+  "generatoIl": "2026-09-26",
   "voci": [
     {
-      "id": "gazzetta-26G00182",
-      "titolo": "LEGGE 18 settembre 2026, n.164: Rendiconto generale dell'Amministrazione dello Stato per l'esercizio",
+      "id": "gazzetta-26G00184",
+      "titolo": "LEGGE 25 settembre 2026, n.166: Conversione in legge, con modificazioni, del decreto-legge 27 luglio",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-24",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/24/26G00182/SG"
+      "data": "2026-09-25",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/25/26G00184/SG"
     },
     {
-      "id": "gazzetta-26G00183",
-      "titolo": "LEGGE 18 settembre 2026, n.165: Disposizioni per l'assestamento del bilancio dello Stato per l'anno",
+      "id": "gazzetta-26A05124",
+      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 27 luglio 2026, n.133: Testo del decreto-legge 27 luglio 2026, n",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-24",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/24/26G00183/SG"
+      "data": "2026-09-25",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/25/26A05124/SG"
     },
     {
-      "id": "camera-1660",
-      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
-      "tipo": "camera",
+      "id": "senato-60482",
+      "titolo": "Istituzione del Museo per la memoria del disastro ferroviario di Viareggio",
+      "tipo": "senato",
       "stato": "discussione",
       "data": "2026-09-24",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
-    },
-    {
-      "id": "camera-1665",
-      "titolo": "S. 615. - \"Disposizioni per l’attuazione dell’autonomia differenziata delle Regioni a statuto ordinario ai sensi dell’articolo 116, terzo comma, della Costituzione\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-09-24",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1665"
-    },
-    {
-      "id": "camera-1718",
-      "titolo": "S. 808. - \"Modifiche al codice penale, al codice di procedura penale, all’ordinamento giudiziario e al codice dell’ordinamento militare\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-09-24",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1718"
+      "url": "https://dati.senato.it/ddl/60482"
     },
     {
       "id": "senato-60480",
@@ -56,6 +40,22 @@
       "stato": "discussione",
       "data": "2026-09-24",
       "url": "https://dati.senato.it/ddl/60481"
+    },
+    {
+      "id": "senato-60484",
+      "titolo": "Istituzione della Giornata nazionale contro l'estorsione e l'usura",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-23",
+      "url": "https://dati.senato.it/ddl/60484"
+    },
+    {
+      "id": "senato-60483",
+      "titolo": "Incentivi per la sostituzione degli apparecchi alimentati a gas e la riduzione dell'impiego di bombole di gas di petrolio liquefatto nelle abitazioni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-23",
+      "url": "https://dati.senato.it/ddl/60483"
     },
     {
       "id": "senato-60478",
@@ -136,30 +136,6 @@
       "stato": "discussione",
       "data": "2026-09-17",
       "url": "https://dati.senato.it/ddl/60465"
-    },
-    {
-      "id": "senato-60467",
-      "titolo": "Modifica all'articolo 1 della legge 13 luglio 2015, n. 107, e altre disposizioni in materia di formazione sulle tecniche di primo soccorso per gli studenti e il personale delle scuole secondarie di primo e di secondo grado",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-17",
-      "url": "https://dati.senato.it/ddl/60467"
-    },
-    {
-      "id": "senato-60469",
-      "titolo": "Modifiche agli articoli 42 e 47 della Costituzione in materia di diritto all'abitazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-17",
-      "url": "https://dati.senato.it/ddl/60469"
-    },
-    {
-      "id": "senato-60471",
-      "titolo": "Ratifica ed esecuzione della Dichiarazione congiunta relativa all'Accordo di cooperazione nel settore della difesa tra il Governo della Repubblica italiana e il Governo della Repubblica algerina democratica e popolare, fatto a Roma il 15 maggio 2003, fatta a Roma il 23 luglio 2025",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-17",
-      "url": "https://dati.senato.it/ddl/60471"
     }
   ]
 }
