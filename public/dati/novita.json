@@ -1,29 +1,29 @@
 {
-  "generatoIl": "2026-09-28",
+  "generatoIl": "2026-09-29",
   "voci": [
     {
-      "id": "gazzetta-26A05027",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 28 luglio 2026: Concessione di un assegno straordinario vitalizio in favore del sig",
+      "id": "gazzetta-26G00186",
+      "titolo": "DECRETO-LEGGE 28 settembre 2026, n.167: Misure urgenti per la circolazione dei veicoli ad alimentazione",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-26",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/26/26A05027/SG"
+      "data": "2026-09-28",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/28/26G00186/SG"
     },
     {
-      "id": "gazzetta-26A05028",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 28 luglio 2026: Concessione di un assegno straordinario vitalizio in favore del sig",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-26",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/26/26A05028/SG"
+      "id": "camera-1686",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-28",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
     },
     {
-      "id": "gazzetta-26A05139",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 25 settembre 2026: Indizione dei comizi per l'elezione suppletiva della Camera dei",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-09-26",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/26/26A05139/SG"
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-28",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
       "id": "senato-60482",
