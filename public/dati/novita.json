@@ -1,29 +1,61 @@
 {
-  "generatoIl": "2026-09-29",
+  "generatoIl": "2026-09-30",
   "voci": [
     {
-      "id": "gazzetta-26G00186",
-      "titolo": "DECRETO-LEGGE 28 settembre 2026, n.167: Misure urgenti per la circolazione dei veicoli ad alimentazione",
+      "id": "gazzetta-26G00188",
+      "titolo": "DECRETO-LEGGE 29 settembre 2026, n.168: Misure urgenti in materia di giustizia, di funzionalita' del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-28",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/28/26G00186/SG"
+      "data": "2026-09-29",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/29/26G00188/SG"
+    },
+    {
+      "id": "camera-1803",
+      "titolo": "S. 982. - \"Ratifica ed esecuzione del Protocollo sulla gestione integrata delle zone costiere del Mediterraneo, fatto a Madrid il 21 gennaio 2008\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-29",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1803"
     },
     {
       "id": "camera-1686",
       "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-28",
+      "data": "2026-09-29",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
     },
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
-      "tipo": "camera",
+      "id": "senato-60487",
+      "titolo": "Inserimento della chirurgia senologica tra le specializzazioni di area chirurgica, all'interno della classe delle chirurgie cardio-toraco-vascolari",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-29",
+      "url": "https://dati.senato.it/ddl/60487"
+    },
+    {
+      "id": "senato-60486",
+      "titolo": "Conversione in legge del decreto-legge 28 settembre 2026, n. 167, recante misure urgenti per la circolazione dei veicoli ad alimentazione diesel appartenenti alla categoria ambientale «EURO 5»",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-29",
+      "url": "https://dati.senato.it/ddl/60486"
+    },
+    {
+      "id": "senato-60488",
+      "titolo": "Disposizioni sulla sicurezza e salubrità degli impianti aeraulici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-29",
+      "url": "https://dati.senato.it/ddl/60488"
+    },
+    {
+      "id": "senato-60485",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 7 agosto 2026, n. 144, recante disposizioni urgenti per la funzionalità della pubblica amministrazione e degli enti territoriali, nonché in materia di protezione civile",
+      "tipo": "senato",
       "stato": "discussione",
       "data": "2026-09-28",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+      "url": "https://dati.senato.it/ddl/60485"
     },
     {
       "id": "senato-60482",
@@ -112,38 +144,6 @@
       "stato": "discussione",
       "data": "2026-09-18",
       "url": "https://dati.senato.it/ddl/60474"
-    },
-    {
-      "id": "senato-60464",
-      "titolo": "Conversione in legge del decreto-legge 17 settembre 2026, n. 162, recante disposizioni urgenti per il sostegno economico e il contenimento degli effetti derivanti dal perdurante aumento del costo dei carburanti, nonché in materia fiscale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-18",
-      "url": "https://dati.senato.it/ddl/60464"
-    },
-    {
-      "id": "senato-60476",
-      "titolo": "Disposizioni per l'accesso alle cure palliative e alla terapia del dolore nei luoghi di vita e di cura",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-18",
-      "url": "https://dati.senato.it/ddl/60476"
-    },
-    {
-      "id": "senato-60473",
-      "titolo": "Disposizioni per il divieto progressivo delle gabbie negli allevamenti e la transizione a sistemi cage free",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-18",
-      "url": "https://dati.senato.it/ddl/60473"
-    },
-    {
-      "id": "senato-60465",
-      "titolo": "Istituzione della Giornata nazionale per l'informazione sulla demenza frontotemporale nonché disposizioni per promuovere la diagnosi della malattia, l'assistenza delle persone che ne sono affette e il sostegno dei familiari che ne prendono cura",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-17",
-      "url": "https://dati.senato.it/ddl/60465"
     }
   ]
 }
