@@ -1,29 +1,61 @@
 {
-  "generatoIl": "2026-09-30",
+  "generatoIl": "2026-10-01",
   "voci": [
     {
-      "id": "gazzetta-26G00188",
-      "titolo": "DECRETO-LEGGE 29 settembre 2026, n.168: Misure urgenti in materia di giustizia, di funzionalita' del",
+      "id": "gazzetta-26G00189",
+      "titolo": "LEGGE 29 settembre 2026, n.169: Delega al Governo in materia di energia nucleare sostenibile",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-09-29",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/29/26G00188/SG"
+      "data": "2026-09-30",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/30/26G00189/SG"
     },
     {
-      "id": "camera-1803",
-      "titolo": "S. 982. - \"Ratifica ed esecuzione del Protocollo sulla gestione integrata delle zone costiere del Mediterraneo, fatto a Madrid il 21 gennaio 2008\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-09-29",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1803"
+      "id": "gazzetta-26G00190",
+      "titolo": "DECRETO-LEGGE 30 settembre 2026, n.170: Misure urgenti per garantire il regolare avvio dell'anno scolastico",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-09-30",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/30/26G00190/SG"
     },
     {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "id": "camera-1718",
+      "titolo": "S. 808. - \"Modifiche al codice penale, al codice di procedura penale, all’ordinamento giudiziario e al codice dell’ordinamento militare\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-09-29",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "data": "2026-09-30",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1718"
+    },
+    {
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-09-30",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+    },
+    {
+      "id": "senato-60495",
+      "titolo": "Conversione in legge del decreto-legge 30 settembre 2026, n. 170, recante misure urgenti per garantire il regolare avvio dell'anno scolastico 2026/2027, per l'accompagnamento delle misure del Piano nazionale di ripresa e resilienza (PNRR) di competenza del Ministero dell'istruzione e del merito, per la promozione dell'integrazione degli studenti stranieri nell'ambito scolastico, nonché in materia di formazione superiore e ricerca",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-30",
+      "url": "https://dati.senato.it/ddl/60495"
+    },
+    {
+      "id": "senato-60490",
+      "titolo": "Abrograzione dell'istituto della turbatio sanguinis",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-30",
+      "url": "https://dati.senato.it/ddl/60490"
+    },
+    {
+      "id": "senato-60491",
+      "titolo": "Istituzione della Card del Caregiver e disposizioni in materia di contribuzione figurativa per i caregiver familiari conviventi",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-30",
+      "url": "https://dati.senato.it/ddl/60491"
     },
     {
       "id": "senato-60487",
@@ -34,14 +66,6 @@
       "url": "https://dati.senato.it/ddl/60487"
     },
     {
-      "id": "senato-60486",
-      "titolo": "Conversione in legge del decreto-legge 28 settembre 2026, n. 167, recante misure urgenti per la circolazione dei veicoli ad alimentazione diesel appartenenti alla categoria ambientale «EURO 5»",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-29",
-      "url": "https://dati.senato.it/ddl/60486"
-    },
-    {
       "id": "senato-60488",
       "titolo": "Disposizioni sulla sicurezza e salubrità degli impianti aeraulici",
       "tipo": "senato",
@@ -50,12 +74,52 @@
       "url": "https://dati.senato.it/ddl/60488"
     },
     {
+      "id": "senato-60493",
+      "titolo": "Disposizioni per la prevenzione e la repressione delle attività organizzate volte all'eversione dell'ordinamento costituzionale mediante l'applicazione di princìpi dell'islam politico, nonché modifica dell'articolo 5 della legge 22 maggio 1975, n. 152, in materia di divieto di travisamento nei luoghi pubblici e di salvaguardia della libertà individuale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-29",
+      "url": "https://dati.senato.it/ddl/60493"
+    },
+    {
+      "id": "senato-60492",
+      "titolo": "Conversione in legge del decreto-legge 29 settembre 2026, n. 168, recante misure urgenti in materia di giustizia, di funzionalità del Ministero dell'interno e di impianti di interesse strategico nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-29",
+      "url": "https://dati.senato.it/ddl/60492"
+    },
+    {
       "id": "senato-60485",
       "titolo": "Conversione in legge, con modificazioni, del decreto-legge 7 agosto 2026, n. 144, recante disposizioni urgenti per la funzionalità della pubblica amministrazione e degli enti territoriali, nonché in materia di protezione civile",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-09-28",
       "url": "https://dati.senato.it/ddl/60485"
+    },
+    {
+      "id": "senato-60486",
+      "titolo": "Conversione in legge del decreto-legge 28 settembre 2026, n. 167, recante misure urgenti per la circolazione dei veicoli ad alimentazione diesel appartenenti alla categoria ambientale «EURO 5»",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-28",
+      "url": "https://dati.senato.it/ddl/60486"
+    },
+    {
+      "id": "senato-60494",
+      "titolo": "Legge annuale per il mercato e la concorrenza 2026",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-28",
+      "url": "https://dati.senato.it/ddl/60494"
+    },
+    {
+      "id": "senato-60489",
+      "titolo": "Istituzione e modalità di finanziamento del Dipartimento della difesa civile, non armata e nonviolenta",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-09-25",
+      "url": "https://dati.senato.it/ddl/60489"
     },
     {
       "id": "senato-60482",
@@ -88,62 +152,6 @@
       "stato": "discussione",
       "data": "2026-09-23",
       "url": "https://dati.senato.it/ddl/60484"
-    },
-    {
-      "id": "senato-60483",
-      "titolo": "Incentivi per la sostituzione degli apparecchi alimentati a gas e la riduzione dell'impiego di bombole di gas di petrolio liquefatto nelle abitazioni",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-23",
-      "url": "https://dati.senato.it/ddl/60483"
-    },
-    {
-      "id": "senato-60478",
-      "titolo": "Disposizioni per la promozione della resilienza idrica e istituzione del Sistema nazionale dei crediti idrici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-22",
-      "url": "https://dati.senato.it/ddl/60478"
-    },
-    {
-      "id": "senato-60479",
-      "titolo": "Disposizioni per la promozione della ricerca sui disturbi del neurosviluppo, la diagnosi e cura di essi e l'assistenza delle persone che ne sono affette, nonché riconoscimento della disprassia quale disturbo del neurosviluppo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-21",
-      "url": "https://dati.senato.it/ddl/60479"
-    },
-    {
-      "id": "senato-60477",
-      "titolo": "Disposizioni volte al rafforzamento dei servizi territoriali di salute mentale e valorizzazione del personale sanitario nel circuito penale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-21",
-      "url": "https://dati.senato.it/ddl/60477"
-    },
-    {
-      "id": "senato-60475",
-      "titolo": "Disposizioni per la responsabilizzazione genitoriale e per la disciplina dei benefici comunali nei casi di condotte penalmente rilevanti poste in essere da minorenni",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-18",
-      "url": "https://dati.senato.it/ddl/60475"
-    },
-    {
-      "id": "senato-60472",
-      "titolo": "Modifiche alla legge 22 aprile 1941, n. 633, e altre disposizioni concernenti la protezione del diritto all'immagine e all'identità personale nonché del diritto all'utilizzo della voce e della prestazione artistica degli artisti interpreti ed esecutori e la riconoscibilità dei contenuti prodotti o modificati mediante sistemi di intelligenza artificiale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-18",
-      "url": "https://dati.senato.it/ddl/60472"
-    },
-    {
-      "id": "senato-60474",
-      "titolo": "Disposizioni per il riconoscimento delle funzioni di pubblico servizio degli assistenti bagnanti e per il rafforzamento della tutela della sicurezza della balneazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-18",
-      "url": "https://dati.senato.it/ddl/60474"
     }
   ]
 }
