@@ -1,21 +1,29 @@
 {
-  "generatoIl": "2026-10-04",
+  "generatoIl": "2026-10-05",
   "voci": [
     {
-      "id": "camera-1588",
-      "titolo": "S. 861. - \"Ratifica ed esecuzione dell’Accordo di sede tra la Repubblica italiana e l’Ufficio europeo per il sostegno all’asilo relativo allo stabilimento di un ufficio operativo in Roma, fatto a Roma il 22 novembre 2017, con Dichiarazione interpretativa congiunta fatta a Roma il 1&deg; luglio 2021 e a La Valletta il 13 luglio 2021\" (approvato dal Senato)",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-03",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1588"
+      "data": "2026-10-04",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
-      "id": "camera-1606",
-      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "id": "camera-1112",
+      "titolo": "S. 591. - \"Conversione in legge, con modificazioni, del decreto-legge 10 marzo 2023, n. 20, recante disposizioni urgenti in materia di flussi di ingresso legale dei lavoratori stranieri e di prevenzione e contrasto all'immigrazione irregolare\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-03",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+      "data": "2026-10-04",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1112"
+    },
+    {
+      "id": "camera-1114",
+      "titolo": "\"Conversione in legge del decreto-legge 22 aprile 2023, n. 44, recante disposizioni urgenti per il rafforzamento della capacità amministrativa delle amministrazioni pubbliche\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-04",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1114"
     },
     {
       "id": "senato-60497",
