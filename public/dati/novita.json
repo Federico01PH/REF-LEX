@@ -1,29 +1,21 @@
 {
-  "generatoIl": "2026-10-05",
+  "generatoIl": "2026-10-06",
   "voci": [
     {
       "id": "camera-1752",
       "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-04",
+      "data": "2026-10-05",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
-      "id": "camera-1112",
-      "titolo": "S. 591. - \"Conversione in legge, con modificazioni, del decreto-legge 10 marzo 2023, n. 20, recante disposizioni urgenti in materia di flussi di ingresso legale dei lavoratori stranieri e di prevenzione e contrasto all'immigrazione irregolare\" (approvato dal Senato)",
+      "id": "camera-1624",
+      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-04",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1112"
-    },
-    {
-      "id": "camera-1114",
-      "titolo": "\"Conversione in legge del decreto-legge 22 aprile 2023, n. 44, recante disposizioni urgenti per il rafforzamento della capacità amministrativa delle amministrazioni pubbliche\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-10-04",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1114"
+      "data": "2026-10-05",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
     },
     {
       "id": "senato-60497",
