@@ -1,7 +1,8 @@
 import { PERSONAGGI } from '../../src/data/personas';
+import { settoriDaProfessione } from '../../src/engine/professioni';
 
-test('ci sono 19 personaggi con nome, descrizione e profilo completo dei campi chiave', () => {
-  expect(PERSONAGGI).toHaveLength(19);
+test('ci sono 20 personaggi con nome, descrizione e profilo completo dei campi chiave', () => {
+  expect(PERSONAGGI).toHaveLength(20);
   for (const p of PERSONAGGI) {
     expect(p.nome.length).toBeGreaterThan(0);
     expect(p.descrizione.length).toBeGreaterThan(0);
@@ -38,6 +39,25 @@ test('copre un minorenne, un genitore di minorenni e chi lavora nella sanita', (
   expect(minorenne).toBe(true);
   expect(genitore).toBe(true);
   expect(sanita).toBe(true);
+});
+
+// la legge 166/2026 aiuta le imprese di autotrasporto; la legge sull'antisemitismo dà
+// compiti a chi insegna: senza questi mestieri in galleria nessuno li mostrerebbe
+test('copre un autotrasportatore con la sua impresa e un\'insegnante col mestiere scritto', () => {
+  const autotrasporto = PERSONAGGI.some((p) =>
+    (p.profilo.settoriProfessionali ?? []).includes('trasporti') &&
+    (p.profilo.condizioneLavorativa ?? []).includes('autonomo-ordinario'));
+  const insegnante = PERSONAGGI.some((p) => (p.profilo.settoriProfessionali ?? []).includes('scuola'));
+  expect(autotrasporto).toBe(true);
+  expect(insegnante).toBe(true);
+});
+
+// il settore va sempre d'accordo col mestiere scritto: il classificatore è la sola fonte
+test('chi ha un mestiere scritto ha i settori che il classificatore ricava da lì', () => {
+  for (const p of PERSONAGGI) {
+    if (!p.profilo.professione) continue;
+    expect(p.profilo.settoriProfessionali).toEqual(settoriDaProfessione(p.profilo.professione));
+  }
 });
 
 test('gli id dei personaggi sono unici', () => {

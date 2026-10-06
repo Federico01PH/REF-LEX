@@ -66,6 +66,30 @@ test('rilevanza: alta con effetti certi/probabili, media con soli dipende o non 
   expect(rilevanza(fuori, legge)).toBe('bassa');
 });
 
+// Un effetto neutro e sicuro informa ("non la paghi tu", "per ora non hai esenzioni"), ma non
+// cambia niente nella tua vita: da solo non può far dire "Ti riguarda quasi sicuramente".
+test('rilevanza: se gli unici effetti sono neutri e non "dipende", la legge non ti tocca direttamente', () => {
+  const informativa: Legge = {
+    ...legge, id: 'test-informativa',
+    regole: [
+      { ...regolaBase, id: 'r-info', confidenza: 'certa', campiNecessari: [], condizioni: [],
+        effetto: { tipo: 'economico', descrizione: 'Non la paghi tu', direzione: 'neutro' } },
+      { ...regolaBase, id: 'r-dovere', confidenza: 'dipende',
+        condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['dipendente-pubblico'] }],
+        effetto: { tipo: 'dovere', descrizione: 'Formazione', direzione: 'neutro' } },
+      { ...regolaBase, id: 'r-aiuto', confidenza: 'certa',
+        condizioni: [{ campo: 'condizioneLavorativa', op: 'in', valore: ['imprenditore'] }],
+        effetto: { tipo: 'servizio', descrizione: 'Aiuto', direzione: 'positivo' } }
+    ]
+  };
+  const qualunque: Profilo = { schemaVersion: 1, eta: 40, condizioneLavorativa: ['pensionato'], fasciaReddito: 'da9a15k' };
+  expect(rilevanza(qualunque, informativa)).toBe('bassa');
+  // un neutro "dipende" (un compito che forse ti tocca) resta "potrebbe riguardarti"
+  expect(rilevanza({ ...qualunque, condizioneLavorativa: ['dipendente-pubblico'] }, informativa)).toBe('media');
+  // un effetto vero e sicuro torna "quasi sicuramente", anche accanto a quello informativo
+  expect(rilevanza({ ...qualunque, condizioneLavorativa: ['imprenditore'] }, informativa)).toBe('alta');
+});
+
 test('effetti misti o neutri con importo non entrano mai nei totali (difesa in profondità)', () => {
   const conMisto: Legge = {
     ...legge,

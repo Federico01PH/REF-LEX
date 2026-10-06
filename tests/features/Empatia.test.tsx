@@ -92,16 +92,17 @@ test('fino a quattro categorie la riga le elenca tutte', () => {
 test('nei gruppi grandi la riga si ferma a tre categorie e "Chi sono?" apre le altre', async () => {
   render(<Empatia legge={aiAct} onCreaIpotetico={vi.fn()} onIndietro={vi.fn()} />);
   const cardAnna = screen.getByText(/anna, 74 anni/i).closest('li')!;
-  // 7 altri: tre nominati, gli altri quattro contati
-  expect(cardAnna).toHaveTextContent(/e altre 4 persone\./i);
+  // 8 altri: tre nominati, gli altri cinque contati
+  expect(cardAnna).toHaveTextContent(/e altre 5 persone\./i);
   // la categoria dice il mestiere e la condizione, non il nome proprio
   expect(cardAnna).toHaveTextContent(/un artigiano con permesso di soggiorno/i);
   expect(cardAnna).not.toHaveTextContent(/karim/i);
   expect(cardAnna).not.toHaveTextContent(/un cacciatore in pensione/i);
   await userEvent.click(screen.getAllByRole('button', { name: /chi sono/i })[0]);
-  // aperta, la riga elenca tutte e sette le categorie
+  // aperta, la riga elenca tutte e otto le categorie (anche l'autotrasportatore)
   expect(cardAnna).toHaveTextContent(/un cacciatore in pensione/i);
-  expect(cardAnna).not.toHaveTextContent(/e altre 4 persone/i);
+  expect(cardAnna).toHaveTextContent(/un autotrasportatore con un suo camion/i);
+  expect(cardAnna).not.toHaveTextContent(/e altre 5 persone/i);
 });
 
 test('il bottone crea profilo ipotetico chiama onCreaIpotetico', async () => {

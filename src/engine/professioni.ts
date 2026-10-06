@@ -30,6 +30,13 @@ const RADICI: Record<SettoreMappato, string[]> = {
     'polizi', 'carabinier', 'guardia di finanza', 'finanzier', 'vigile del fuoco',
     'vigil del fuoc', 'pompier', 'militar', 'esercito', 'marina militar',
     'aeronautica militar', 'guardia costiera', 'agente di polizia', 'vigile urban'
+  ],
+  // autotrasporto di merci e persone (credito sul gasolio della legge 166/2026). Niente
+  // 'tir' nudo (→ tirocinante) né 'autista' nudo (→ autista soccorritore, autista privato)
+  trasporti: [
+    'autotrasport', 'camion', 'trasportator', 'padroncin', 'noleggio autobus',
+    'noleggio pullman', 'autista di autobus', 'autista di pullman', 'autista bus',
+    'conducente di autobus', 'conducente di mezzi pesanti'
   ]
 };
 

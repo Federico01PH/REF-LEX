@@ -1,6 +1,6 @@
 {
-  "versione": 23,
-  "generatoIl": "2026-09-01",
+  "versione": 24,
+  "generatoIl": "2026-10-06",
   "leggi": [
     {
       "id": "cuneo-fiscale-2025",
@@ -2516,68 +2516,88 @@
     },
     {
       "id": "legge-elettorale-2026",
-      "titoloDivulgativo": "Nuova legge elettorale: proporzionale con premio di maggioranza",
-      "titoloUfficiale": "Proposta di legge A.C. 2822 (Bignami) - Disposizioni in materia di elezione della Camera dei deputati e del Senato della Repubblica (\"Bignami bis\"/\"Stabilicum\")",
+      "titoloDivulgativo": "Nuova legge elettorale: proporzionale con premio di maggioranza e preferenze",
+      "titoloUfficiale": "Proposta di legge A.C. 2822-B (Bignami e altri) - Disposizioni in materia di elezioni della Camera dei deputati e del Senato della Repubblica, approvata dalla Camera e modificata dal Senato",
       "stato": "discussione",
       "ambiti": [
         "politica-voto"
       ],
       "fonti": [
         {
-          "etichetta": "Camera dei deputati - A.C. 2822 (Bignami), iter e testo",
+          "etichetta": "Camera dei deputati - A.C. 2822-B, scheda e iter",
           "url": "https://www.camera.it/leg19/126?idDocumento=2822&leg=19"
+        },
+        {
+          "etichetta": "Camera dei deputati - A.C. 2822-B, testo approvato dalla Camera e modificato dal Senato",
+          "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2822.19PDL0213710.pdf"
+        },
+        {
+          "etichetta": "Camera dei deputati - Dossier n. 526 del 30/9/2026 sulle modifiche del Senato",
+          "url": "https://documenti.camera.it/leg19/dossier/Pdf/VQ2822B.pdf"
         }
       ],
-      "verificataIl": "2026-06-13",
-      "riassunto": "Una proposta di legge (non ancora approvata) per cambiare come si vota in Italia. Spariscono i collegi uninominali: si torna a un sistema proporzionale, senza voto di preferenza. Chi arriva primo, se supera il 42% in entrambe le Camere, riceve un premio di seggi (70 alla Camera, 35 al Senato) per avere una maggioranza stabile, con un tetto di circa il 60%. Le coalizioni indicano il nome del candidato premier. In discussione alla Camera dal 26 giugno 2026.",
+      "verificataIl": "2026-10-06",
+      "riassunto": "La nuova legge per eleggere Camera e Senato. È stata approvata dalla Camera il 16 luglio e, con modifiche, dal Senato il 15 settembre 2026: ora manca il voto finale della Camera, fissato per l'8 ottobre. Sistema proporzionale con un premio di seggi a chi supera il 42% in entrambe le Camere. Tornano le preferenze, fino a tre, ma il capolista resta bloccato. Si potrà votare dove si studia o si lavora fuori regione.",
       "regole": [
         {
           "id": "elettorale-come-voti",
           "campiNecessari": [
-            "eta"
+            "eta",
+            "cittadinanza"
           ],
           "condizioni": [
             {
               "campo": "eta",
               "op": "almeno",
               "valore": 18
+            },
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "italiana"
             }
           ],
           "effetto": {
             "tipo": "diritto",
-            "descrizione": "Se la proposta diventa legge, cambia come voti: niente più collegi uninominali (non scegli più un singolo candidato del tuo territorio), torna il sistema proporzionale e non ci sono voti di preferenza, quindi scegli la lista ma non la persona. Le coalizioni devono indicare in anticipo il nome che propongono come Presidente del Consiglio.",
-            "breve": "Cambia come voti: sistema proporzionale, niente preferenze (scegli la lista, non la persona) né collegi uninominali.",
+            "descrizione": "Alle prossime elezioni politiche voterai così. Il sistema è proporzionale: i seggi si dividono in base ai voti di ogni lista, e i collegi uninominali spariscono (restano solo in Valle d'Aosta e Trentino-Alto Adige). In ogni collegio ogni lista ha 7 candidati, alternati tra donne e uomini. Il primo, il capolista, è bloccato: se la lista prende almeno un seggio entra lui, senza bisogno di preferenze. Sugli altri sei puoi dare fino a tre preferenze, con una croce accanto al nome; se ne dai più di una devono essere di sesso diverso, altrimenti la seconda e la terza non valgono. Ogni lista o coalizione deve dichiarare chi propone come Presidente del Consiglio, altrimenti le sue liste non sono ammesse; la nomina resta però al Presidente della Repubblica. Resta la soglia del 3% per entrare in Parlamento.",
+            "breve": "Voti con il proporzionale: capolista bloccato, ma puoi dare fino a tre preferenze sugli altri candidati.",
             "direzione": "misto"
           },
           "timeline": {
             "anno1": "incerto",
-            "anno2": "incerto",
-            "anno5": "incerto",
-            "anno10": "incerto"
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
           },
-          "confidenza": "dipende",
-          "noteConfidenza": "È una proposta (A.C. 2822, testo base \"Bignami bis\"), non ancora legge: in discussione alla Camera dal 26 giugno 2026 e modificabile con gli emendamenti. Resta la soglia di sbarramento del 3% per entrare in Parlamento.",
+          "confidenza": "probabile",
+          "noteConfidenza": "Testo approvato dalla Camera e modificato dal Senato, blindato dalla fiducia: manca solo il voto finale della Camera, fissato per l'8 ottobre 2026. Le preferenze con capolista bloccato sono una modifica del Senato: il testo uscito dalla Camera a luglio aveva liste interamente bloccate.",
           "fonteRegola": {
-            "etichetta": "Camera dei deputati - A.C. 2822 (Bignami), iter e testo",
-            "url": "https://www.camera.it/leg19/126?idDocumento=2822&leg=19"
+            "etichetta": "Camera dei deputati - A.C. 2822-B, testo approvato dalla Camera e modificato dal Senato",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2822.19PDL0213710.pdf"
           }
         },
         {
           "id": "elettorale-premio-governabilita",
           "campiNecessari": [
-            "eta"
+            "eta",
+            "cittadinanza"
           ],
           "condizioni": [
             {
               "campo": "eta",
               "op": "almeno",
               "valore": 18
+            },
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "italiana"
             }
           ],
           "effetto": {
             "tipo": "diritto",
-            "descrizione": "Effetto indiretto sul peso del tuo voto: il \"premio di governabilità\" assegna 70 seggi in più alla Camera e 35 al Senato alla coalizione che arriva prima, se supera il 42% dei voti in entrambe le Camere. Serve a dare governi più stabili, ma vuol dire che chi vince ottiene molti più seggi della sua percentuale di voti, e chi vota per gli altri pesa di meno. C'è un tetto: la maggioranza non può superare circa il 60% dei seggi.",
-            "breve": "Effetto indiretto: il premio di governabilità dà più seggi a chi vince, così il voto per gli altri pesa di meno.",
+            "descrizione": "Effetto indiretto sul peso del tuo voto. La lista o la coalizione che arriva prima in entrambe le Camere e supera il 42% dei voti in ciascuna riceve un premio di governabilità: 70 seggi in più alla Camera e 35 al Senato. Serve a dare governi più stabili, ma vuol dire che chi vince ottiene molti più seggi della sua percentuale di voti, e chi vota per gli altri pesa di meno. C'è un tetto: chi vince non può superare 220 deputati su 400 e 113 senatori su 200, senza contare gli eletti all'estero. I seggi del premio vanno a candidati di liste a parte, scritte sulla scheda sotto il simbolo: per loro non si danno preferenze.",
+            "breve": "Effetto indiretto: il premio dà più seggi a chi vince col 42%, così il voto per gli altri pesa di meno.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
@@ -2590,15 +2610,250 @@
           },
           "timeline": {
             "anno1": "incerto",
-            "anno2": "incerto",
-            "anno5": "incerto",
-            "anno10": "incerto"
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "La Corte costituzionale ha già bocciato premi di maggioranza troppo sproporzionati: sentenza 1/2014 sul \"Porcellum\" e 35/2017 sull'\"Italicum\". Qui una soglia (42%) e un tetto ai seggi sono pensati per rispettarle, ma l'eguaglianza del voto (art. 48 Cost.) resta al centro del dibattito. Se nessuno arriva al 42% in entrambe le Camere il premio non scatta. Testo approvato dalla Camera e modificato dal Senato, blindato dalla fiducia: manca solo il voto finale della Camera, fissato per l'8 ottobre 2026.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati - A.C. 2822-B, testo approvato dalla Camera e modificato dal Senato",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2822.19PDL0213710.pdf"
+          }
+        },
+        {
+          "id": "elettorale-capilista-genere",
+          "campiNecessari": [
+            "eta",
+            "cittadinanza",
+            "genere"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            },
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "italiana"
+            },
+            {
+              "campo": "genere",
+              "op": "eq",
+              "valore": "donna"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto indiretto sulla presenza delle donne in Parlamento. Il capolista è l'unico posto con elezione quasi garantita, e il Senato ha tolto la regola per cui nessun genere poteva superare il 60% dei capilista di un partito. In pratica un partito può mettere solo uomini in testa a tutte le sue liste. Restano l'alternanza donna-uomo dentro ogni lista e l'obbligo di dare le preferenze a persone di sesso diverso, ma chi entra dopo il capolista dipende dalle preferenze, quindi il numero di donne elette non è più assicurato. Se pensi di candidarti, i posti sicuri non hanno più quote.",
+            "breve": "Effetto indiretto: sparisce il limite di genere sui capilista, i posti più sicuri possono andare tutti a uomini.",
+            "direzione": "negativo",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 51",
+              "diritto": "pari opportunità tra donne e uomini nell'accesso alle cariche elettive",
+              "intensita": "lieve",
+              "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-iv/articolo-51"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Intensità \"lieve\": la legge non esclude nessuno e mantiene l'alternanza di genere nelle liste; l'effetto reale dipende da come i partiti sceglieranno i capilista. Il tetto del 60% resta invece per le liste del premio di governabilità. Testo approvato dalla Camera e modificato dal Senato, blindato dalla fiducia: manca solo il voto finale della Camera, fissato per l'8 ottobre 2026.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati - A.C. 2822-B, testo approvato dalla Camera e modificato dal Senato",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2822.19PDL0213710.pdf"
+          }
+        },
+        {
+          "id": "elettorale-firme-nuovi-partiti",
+          "campiNecessari": [
+            "eta",
+            "cittadinanza"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            },
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "italiana"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Effetto indiretto sulla scelta che trovi sulla scheda. Per presentarsi, un partito che non ha già un gruppo in Parlamento deve raccogliere da 6.000 a 7.000 firme in ogni collegio, invece delle 1.500-2.000 di oggi, e presentare liste in almeno la metà delle circoscrizioni. Per chi ha già un gruppo parlamentare restano 1.500-2.000 firme, o nessuna. Per un movimento nuovo diventa molto più difficile arrivare al voto, quindi potresti trovare meno alternative ai partiti che ci sono già.",
+            "breve": "Effetto indiretto: per i partiti nuovi servono da 6.000 a 7.000 firme per collegio, quattro volte più di prima.",
+            "direzione": "negativo",
+            "indiretto": true,
+            "dirittoToccato": {
+              "carta": "Costituzione italiana",
+              "articolo": "art. 49",
+              "diritto": "libertà di associarsi in partiti per concorrere alla politica nazionale",
+              "intensita": "lieve",
+              "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-iv/articolo-49"
+            }
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Intensità \"lieve\": nessun partito è vietato, ma la soglia di ingresso per chi non è già in Parlamento quadruplica. Per le prime elezioni, chi vuole l'esenzione deve averne i requisiti già al 31 dicembre 2025 (art. 5). Testo approvato dalla Camera e modificato dal Senato, blindato dalla fiducia: manca solo il voto finale della Camera, fissato per l'8 ottobre 2026.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati - A.C. 2822-B, testo approvato dalla Camera e modificato dal Senato",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2822.19PDL0213710.pdf"
+          }
+        },
+        {
+          "id": "elettorale-fuori-sede",
+          "campiNecessari": [
+            "eta",
+            "cittadinanza",
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            },
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "italiana"
+            },
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "studente",
+                "dipendente-privato",
+                "dipendente-pubblico",
+                "autonomo-ordinario",
+                "forfettario",
+                "imprenditore",
+                "altro"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Se studi o lavori in una regione diversa da quella dove sei iscritto per votare, e ci resti almeno nove mesi, potrai votare lì invece di tornare a casa. Vale per le elezioni politiche, per le europee e per i referendum. Devi chiedere l'iscrizione all'elenco degli elettori fuori sede del comune dove vivi ora entro il 31 dicembre, per votare l'anno dopo; se diventi fuori sede dopo, hai 30 giorni (e comunque fino a 45 giorni prima del voto). La domanda si fa di persona o online, con un documento e un attestato di studio o lavoro. Voterai per i candidati del posto in cui ti trovi.",
+            "breve": "Se studi o lavori in un'altra regione per almeno nove mesi, potrai votare lì senza tornare a casa.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
           },
           "confidenza": "dipende",
-          "noteConfidenza": "La Corte costituzionale ha già bocciato premi di maggioranza troppo sproporzionati: sentenza 1/2014 sul \"Porcellum\" e 35/2017 sull'\"Italicum\". Qui una soglia (42%) e un tetto ai seggi sono pensati per rispettarle, ma l'eguaglianza del voto (art. 48 Cost.) resta al centro del dibattito; inoltre parte degli eletti col premio (\"listone\") potrebbe non essere riconoscibile sulla scheda. Proposta non ancora approvata.",
+          "noteConfidenza": "Vale solo se sei davvero fuori sede in un'altra regione per almeno nove mesi e chiedi l'iscrizione in tempo. Testo approvato dalla Camera e modificato dal Senato, blindato dalla fiducia: manca solo il voto finale della Camera, fissato per l'8 ottobre 2026.",
           "fonteRegola": {
-            "etichetta": "Camera dei deputati - A.C. 2822 (Bignami), iter e testo",
-            "url": "https://www.camera.it/leg19/126?idDocumento=2822&leg=19"
+            "etichetta": "Camera dei deputati - A.C. 2822-B, testo approvato dalla Camera e modificato dal Senato",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2822.19PDL0213710.pdf"
+          }
+        },
+        {
+          "id": "elettorale-fuori-sede-cura",
+          "campiNecessari": [
+            "eta",
+            "cittadinanza",
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            },
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "italiana"
+            },
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "caregiver"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Se assisti un familiare che per almeno tre mesi è in cura in una struttura sanitaria di un'altra regione, e in quel periodo cade un'elezione o un referendum, potrai votare nel comune dove lo stai assistendo. Lo stesso vale per i genitori che accompagnano un figlio minorenne in cura fuori regione, e per chi è in cura lui stesso. La domanda va fatta al comune entro 45 giorni prima del voto, con un documento e un certificato della struttura.",
+            "breve": "Se assisti un familiare in cura in un'altra regione per almeno tre mesi, potrai votare lì.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "L'estensione ai caregiver familiari (definiti dalla legge 205/2017) è una modifica del Senato. Vale solo se l'assistenza dura almeno tre mesi e comprende il giorno del voto. Testo approvato dalla Camera e modificato dal Senato, blindato dalla fiducia: manca solo il voto finale della Camera, fissato per l'8 ottobre 2026.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati - A.C. 2822-B, testo approvato dalla Camera e modificato dal Senato",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2822.19PDL0213710.pdf"
+          }
+        },
+        {
+          "id": "elettorale-estero",
+          "campiNecessari": [
+            "eta",
+            "cittadinanza",
+            "regione"
+          ],
+          "condizioni": [
+            {
+              "campo": "eta",
+              "op": "almeno",
+              "valore": 18
+            },
+            {
+              "campo": "cittadinanza",
+              "op": "eq",
+              "valore": "italiana"
+            },
+            {
+              "campo": "regione",
+              "op": "eq",
+              "valore": "Vivo all'estero"
+            }
+          ],
+          "effetto": {
+            "tipo": "diritto",
+            "descrizione": "Se vivi all'estero cambia il tuo voto per corrispondenza. Il certificato elettorale avrà un tagliando con un codice letto da una macchina, per controllare che ogni busta sia di un elettore vero e che nessuno voti due volte. Per le elezioni del 2027 il plico arriverà per raccomandata o con un mezzo altrettanto sicuro, e i consolati pubblicheranno quanti plichi hanno spedito e ricevuto. Le pene per alcuni reati legati al voto dall'estero salgono da 1-3 a 2-5 anni di carcere. Le zone del mondo per la Camera passano da quattro a due (Europa e resto del mondo), e per il Senato la circoscrizione Estero diventa unica.",
+            "breve": "Se vivi all'estero: voto per posta con codice di controllo, plico per raccomandata nel 2027, zone ridotte a due.",
+            "direzione": "misto"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "probabile",
+          "noteConfidenza": "Più controlli contro i brogli, ma zone più grandi: i candidati dovranno rappresentare territori molto più ampi. La raccomandata è prevista solo per il 2027. Testo approvato dalla Camera e modificato dal Senato, blindato dalla fiducia: manca solo il voto finale della Camera, fissato per l'8 ottobre 2026.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati - A.C. 2822-B, testo approvato dalla Camera e modificato dal Senato",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2822.19PDL0213710.pdf"
           }
         }
       ]
@@ -3225,8 +3480,8 @@
     },
     {
       "id": "ddl-antisemitismo-2025",
-      "titoloDivulgativo": "Contrasto all'antisemitismo: definizione IHRA, formazione e nuovo reato",
-      "titoloUfficiale": "DDL S. 1627 (XIX Leg.) — Disposizioni per il contrasto all'antisemitismo e per l'adozione della definizione operativa di antisemitismo",
+      "titoloDivulgativo": "Contrasto all'antisemitismo: definizione IHRA, Strategia nazionale e formazione",
+      "titoloUfficiale": "Proposta di legge A.C. 2830 (S. 1004, Romeo e altri), approvata dal Senato — Disposizioni per il contrasto all'antisemitismo e per l'adozione della definizione operativa di antisemitismo",
       "stato": "discussione",
       "ambiti": [
         "diritti-salute",
@@ -3235,24 +3490,28 @@
       ],
       "fonti": [
         {
-          "etichetta": "Scheda DDL S. 1627 (Senato della Repubblica)",
-          "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=59493"
+          "etichetta": "Camera dei deputati - A.C. 2830, scheda e iter",
+          "url": "https://www.camera.it/leg19/126?idDocumento=2830&leg=19"
+        },
+        {
+          "etichetta": "Camera dei deputati - A.C. 2830, testo approvato dal Senato il 4 marzo 2026",
+          "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2830.19PDL0185570.pdf"
+        },
+        {
+          "etichetta": "Camera dei deputati - Servizio Studi, dossier n. 603/1 del 1/10/2026",
+          "url": "https://documenti.camera.it/leg19/dossier/Pdf/AC0477a.pdf"
+        },
+        {
+          "etichetta": "Senato della Repubblica - Scheda DDL S. 1004",
+          "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=57902"
         },
         {
           "etichetta": "Definizione operativa di antisemitismo dell'IHRA",
           "url": "https://holocaustremembrance.com/resources/working-definition-antisemitism"
-        },
-        {
-          "etichetta": "Risoluzione del Parlamento europeo del 1° giugno 2017 sulla lotta contro l'antisemitismo (2017/2692(RSP))",
-          "url": "https://www.europarl.europa.eu/doceo/document/TA-8-2017-0243_IT.html"
-        },
-        {
-          "etichetta": "Art. 604-bis del codice penale (Normattiva)",
-          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1930-10-19;1398"
         }
       ],
-      "verificataIl": "2026-06-16",
-      "riassunto": "Una proposta del Senato (ddl 1627) per combattere l'antisemitismo, cioè l'odio verso gli ebrei. Fa adottare all'Italia la definizione internazionale dell'IHRA, prevede formazione per polizia, magistrati, militari e insegnanti, corsi nelle scuole e nuove sanzioni a scuola e università. Aggiunge un reato per la propaganda antisemita, il negazionismo della Shoah e la negazione del diritto di Israele a esistere. Non è ancora legge: è stata unita ad altre proposte (testo 1004) ed è in discussione.",
+      "verificataIl": "2026-10-06",
+      "riassunto": "La legge contro l'antisemitismo, cioè l'odio verso gli ebrei. Il Senato l'ha approvata il 4 marzo 2026; la Camera l'ha esaminata senza cambiarla e manca solo il suo voto finale. Adotta la definizione di antisemitismo dell'IHRA, crea una Strategia nazionale ogni tre anni e un Coordinatore, e promuove formazione per forze dell'ordine, magistrati e insegnanti, attività a scuola e misure contro l'odio online. Non crea nuovi reati e non stanzia soldi nuovi.",
       "regole": [
         {
           "id": "ddl-anti-liberta-espressione",
@@ -3268,15 +3527,15 @@
           ],
           "effetto": {
             "tipo": "diritto",
-            "descrizione": "La proposta aggiunge all'art. 604-bis del codice penale (la ex \"legge Mancino\") un nuovo reato: la propaganda, l'istigazione o l'incitamento fondati sull'ostilità verso gli ebrei, sulla negazione della Shoah o sulla negazione del diritto dello Stato di Israele a esistere. È previsto un aumento di pena fino alla metà se si usano simboli antisemiti. Da un lato è una tutela in più contro l'odio; dall'altro tocca la tua libertà di manifestare il pensiero. La stessa Commissione Giustizia del Senato ha avvertito che la formulazione è \"generica\" e rischia di violare i principi di tassatività e determinatezza penale: il confine tra criticare le scelte del governo israeliano (lecito) e negarne il diritto a esistere (reato) può risultare incerto e spingere all'autocensura.",
-            "breve": "Nuovo reato per propaganda antisemita e negazionismo: più tutela, ma anche più limiti a ciò che si può dire.",
+            "descrizione": "Questa legge non crea nuovi reati e non prevede multe: quello che oggi puoi dire resta lecito. Però adotta la definizione di antisemitismo dell'IHRA \"con i relativi indicatori\", cioè con una lista di esempi che comprende anche alcuni modi di parlare di Israele, come applicargli \"due pesi e due misure\" o paragonare la sua politica a quella dei nazisti. Questa definizione guiderà il monitoraggio degli episodi nella banca dati delle forze di polizia, le misure contro l'odio online decise sentita l'Autorità per le comunicazioni, le misure delle università e le campagne del servizio pubblico. La legge stessa dice che restano ferme la libertà di critica politica, di espressione, di riunione e di associazione. Ma nei casi dubbi il confine tra criticare lo Stato di Israele e l'antisemitismo lo tracceranno le persone che applicano la definizione, e questo può spingere qualcuno a parlare con più cautela.",
+            "breve": "Nessun nuovo reato, ma la definizione IHRA, con esempi su Israele, guiderà monitoraggi e controlli online.",
             "direzione": "misto",
             "indiretto": true,
             "dirittoToccato": {
               "carta": "Costituzione italiana",
               "articolo": "art. 21",
               "diritto": "libertà di manifestazione del pensiero",
-              "intensita": "sensibile",
+              "intensita": "lieve",
               "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-21"
             }
           },
@@ -3287,10 +3546,10 @@
             "anno10": "attivo"
           },
           "confidenza": "probabile",
-          "noteConfidenza": "Effetto valido SE la proposta diventa legge con questo testo. La libertà di espressione resta tutelata dall'art. 21 Cost. e dall'art. 10 CEDU. Intensità \"sensibile\" (non \"grave\") perché colpisce un perimetro definito di condotte d'odio, non l'opinione in sé; ma la Commissione Giustizia ha dato parere CONTRARIO alla novella per genericità (25/2/2026), quindi il testo può cambiare in Parlamento.",
+          "noteConfidenza": "Intensità \"lieve\": a giugno era \"sensibile\" perché la proposta del sen. Gasparri (S. 1627) aggiungeva un reato all'art. 604-bis del codice penale; quel reato nel testo approvato dal Senato non c'è. L'IHRA stessa definisce la sua definizione \"non giuridicamente vincolante\", e il dossier della Camera ricorda un'alternativa proposta da studiosi nel 2021, la Dichiarazione di Gerusalemme. La legge sulla banca dati delle forze di polizia (l. 121/1981, art. 7) vieta di raccogliere dati su una persona solo per la sua opinione politica o la sua fede. Il testo è quello approvato dal Senato il 4 marzo 2026; la Commissione della Camera non l'ha cambiato e manca solo il voto finale dell'Aula.",
           "fonteRegola": {
-            "etichetta": "Art. 604-bis del codice penale (Normattiva)",
-            "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1930-10-19;1398"
+            "etichetta": "Camera dei deputati - Servizio Studi, dossier n. 603/1 del 1/10/2026",
+            "url": "https://documenti.camera.it/leg19/dossier/Pdf/AC0477a.pdf"
           }
         },
         {
@@ -3307,8 +3566,8 @@
           ],
           "effetto": {
             "tipo": "diritto",
-            "descrizione": "La proposta è pensata soprattutto per proteggere chi, come te, è di religione ebraica. Adottare la definizione IHRA dà a giudici e forze dell'ordine un criterio chiaro per riconoscere un atto antisemita; le forze di polizia ricevono formazione apposita e una \"Guida pratica\" del Ministero dell'Interno per scrivere correttamente le denunce; la Conferenza unificata monitora il fenomeno ogni due anni. In concreto: più possibilità che un'offesa o un'aggressione antisemita, anche verso i luoghi di culto o le istituzioni della comunità, venga riconosciuta e perseguita. Quanto sia efficace dipenderà da come la legge verrà applicata.",
-            "breve": "Più tutela contro gli atti antisemiti: definizione chiara, polizia formata, monitoraggio ogni due anni.",
+            "descrizione": "La legge è pensata per proteggere chi, come te, è di religione ebraica. Il Governo dovrà adottare ogni tre anni una Strategia nazionale contro l'antisemitismo, preparata dal Coordinatore nazionale presso la Presidenza del Consiglio con un gruppo di lavoro di cui fanno parte anche l'Unione delle comunità ebraiche italiane e l'Unione giovani ebrei d'Italia. Tra gli obiettivi ci sono misure di sicurezza adeguate per le comunità ebraiche e i loro luoghi di ritrovo, il monitoraggio degli episodi nella banca dati delle forze di polizia, la formazione di forze dell'ordine e magistrati e la conoscenza della storia e della cultura ebraica. In concreto: più possibilità che un'offesa o un'aggressione antisemita venga riconosciuta e contata. La legge però non stanzia soldi nuovi: tutto si fa con le risorse che ci sono già.",
+            "breve": "Più tutela: Strategia nazionale ogni tre anni, sicurezza per le comunità, episodi monitorati dalla polizia.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -3318,10 +3577,10 @@
             "anno10": "attivo"
           },
           "confidenza": "probabile",
-          "noteConfidenza": "La definizione IHRA protegge dalle manifestazioni di antisemitismo dirette \"verso le persone ebree o non ebree, i loro beni, le istituzioni delle comunità ebraiche e i loro luoghi di culto\". Effetto condizionato all'approvazione e all'effettiva attuazione (i corsi sono previsti \"nei limiti delle risorse disponibili\").",
+          "noteConfidenza": "La definizione IHRA protegge dalle manifestazioni di odio \"dirette verso le persone ebree e non ebree, i loro beni, le istituzioni della comunità e i luoghi di culto ebraici\". Con la clausola di invarianza finanziaria (art. 5) quanto la legge funzionerà dipende dalle risorse che le amministrazioni useranno. Il testo è quello approvato dal Senato il 4 marzo 2026; la Commissione della Camera non l'ha cambiato e manca solo il voto finale dell'Aula.",
           "fonteRegola": {
-            "etichetta": "Definizione operativa di antisemitismo dell'IHRA",
-            "url": "https://holocaustremembrance.com/resources/working-definition-antisemitism"
+            "etichetta": "Camera dei deputati - A.C. 2830, testo approvato dal Senato il 4 marzo 2026",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2830.19PDL0185570.pdf"
           }
         },
         {
@@ -3340,8 +3599,8 @@
           ],
           "effetto": {
             "tipo": "servizio",
-            "descrizione": "Se sei a scuola, le scuole di ogni ordine e grado attiveranno corsi annuali per gli studenti, per favorire il dialogo tra generazioni, culture e religioni diverse e per contrastare l'antisemitismo (incluso l'antisionismo). Nelle università sono previste misure di prevenzione e segnalazione degli atti razzisti o antisemiti. Per te significa più ore dedicate a questi temi e ambienti scolastici e universitari in cui gli episodi di odio dovrebbero essere intercettati prima.",
-            "breve": "Corsi annui a scuola contro l'antisemitismo e per il dialogo tra culture; misure anche all'università.",
+            "descrizione": "Se vai a scuola, la legge promuove attività sull'antisemitismo e sulla storia della diaspora ebraica, anche in occasione del Giorno della Memoria (27 gennaio), per favorire il dialogo tra generazioni, culture e religioni diverse. Ogni scuola ha già un tavolo contro il bullismo e il cyberbullismo: dovrà comunicare cosa fa contro gli episodi di antisemitismo. Se sei all'università, l'ateneo dovrà adottare misure per prevenire, monitorare e contrastare gli atti antisemiti, e potrà nominare una persona che se ne occupa; sono previsti anche ricerche e seminari sul rispetto reciproco.",
+            "breve": "A scuola più attività sull'antisemitismo e sul Giorno della Memoria; all'università misure di prevenzione.",
             "direzione": "positivo"
           },
           "timeline": {
@@ -3350,33 +3609,32 @@
             "anno5": "attivo",
             "anno10": "attivo"
           },
-          "confidenza": "probabile",
-          "noteConfidenza": "\"Studente\" qui copre sia la scuola sia l'università: i corsi annuali riguardano le scuole (art. 2, comma 2), mentre per le università valgono le misure di prevenzione e segnalazione dell'art. 3. Effetto condizionato all'approvazione del ddl.",
+          "confidenza": "dipende",
+          "noteConfidenza": "Dipende dalla tua scuola o università: le attività si fanno \"nel rispetto dell'autonomia delle istituzioni scolastiche\" e con le risorse già disponibili, quindi non sono garantite allo stesso modo ovunque. Il testo è quello approvato dal Senato il 4 marzo 2026; la Commissione della Camera non l'ha cambiato e manca solo il voto finale dell'Aula.",
           "fonteRegola": {
-            "etichetta": "Scheda DDL S. 1627 (Senato della Repubblica)",
-            "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=59493"
+            "etichetta": "Camera dei deputati - A.C. 2830, testo approvato dal Senato il 4 marzo 2026",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2830.19PDL0185570.pdf"
           }
         },
         {
-          "id": "ddl-anti-personale-pubblico",
+          "id": "ddl-anti-forze-ordine",
           "campiNecessari": [
-            "condizioneLavorativa"
+            "settoriProfessionali"
           ],
           "condizioni": [
             {
-              "campo": "condizioneLavorativa",
+              "campo": "settoriProfessionali",
               "op": "in",
               "valore": [
-                "dipendente-pubblico"
+                "forze-ordine"
               ]
             }
           ],
           "effetto": {
             "tipo": "dovere",
-            "descrizione": "Se lavori nella scuola, nell'università, nelle forze di polizia, nella magistratura, nella difesa o nelle prefetture, sei tra le categorie coinvolte: sono previsti corsi di formazione obbligatori sulla cultura ebraica e sull'analisi dei casi di antisemitismo (per la polizia anche sulla corretta redazione delle denunce). In più, per il personale di scuola e università nasce un dovere specifico di prevenire e segnalare tempestivamente gli atti razzisti o antisemiti: chi lo viola rischia sanzioni disciplinari (art. 492 del testo unico scuola per il personale scolastico; art. 10 della legge 240/2010 per docenti e ricercatori universitari). Per gli altri ruoli pubblici, invece, cambia poco o nulla.",
-            "breve": "Formazione obbligatoria; a scuola e università nuovo obbligo di segnalare gli atti antisemiti, con sanzioni.",
-            "direzione": "misto",
-            "indiretto": true
+            "descrizione": "Se lavori nelle forze dell'ordine o nelle forze armate, la Strategia nazionale prevede iniziative di formazione e aggiornamento sull'antisemitismo (le stesse valgono per prefetti e magistrati). La banca dati delle forze di polizia sarà usata anche per monitorare gli episodi di antisemitismo, letti con la definizione dell'IHRA, per avere un quadro completo del fenomeno in Italia.",
+            "breve": "Formazione sull'antisemitismo per forze dell'ordine e armate; episodi monitorati nella banca dati della polizia.",
+            "direzione": "neutro"
           },
           "timeline": {
             "anno1": "incerto",
@@ -3385,10 +3643,43 @@
             "anno10": "attivo"
           },
           "confidenza": "dipende",
-          "noteConfidenza": "L'effetto dipende dal ruolo: riguarda chi lavora nella scuola, nell'università, nelle forze di polizia, nella magistratura, nella difesa o nelle prefetture. Un dipendente pubblico con altre mansioni non è toccato direttamente. Effetto condizionato all'approvazione del ddl.",
+          "noteConfidenza": "La formazione è \"promossa\" con le risorse già esistenti: quanta ne farai dipende dal tuo corpo e dal tuo ruolo. Il testo è quello approvato dal Senato il 4 marzo 2026; la Commissione della Camera non l'ha cambiato e manca solo il voto finale dell'Aula.",
           "fonteRegola": {
-            "etichetta": "Scheda DDL S. 1627 (Senato della Repubblica)",
-            "url": "https://www.senato.it/leggi-e-documenti/disegni-di-legge/scheda-ddl?did=59493"
+            "etichetta": "Camera dei deputati - A.C. 2830, testo approvato dal Senato il 4 marzo 2026",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2830.19PDL0185570.pdf"
+          }
+        },
+        {
+          "id": "ddl-anti-docenti",
+          "campiNecessari": [
+            "settoriProfessionali"
+          ],
+          "condizioni": [
+            {
+              "campo": "settoriProfessionali",
+              "op": "in",
+              "valore": [
+                "scuola"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "dovere",
+            "descrizione": "Se insegni, la legge promuove corsi di formazione per i docenti sull'antisemitismo e sulla diaspora ebraica, anche per preparare le attività con gli studenti nel Giorno della Memoria. La tua scuola, dopo gli episodi emersi dal tavolo che già controlla bullismo e cyberbullismo, dovrà comunicare le azioni fatte al tavolo tecnico nazionale e al Coordinatore nazionale per la lotta contro l'antisemitismo. Se lavori all'università, l'ateneo adotterà misure di prevenzione e monitoraggio degli atti antisemiti, secondo il suo codice etico.",
+            "breve": "Formazione per i docenti; la scuola comunica al Coordinatore nazionale cosa fa contro gli episodi antisemiti.",
+            "direzione": "neutro"
+          },
+          "timeline": {
+            "anno1": "incerto",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Nessuna sanzione per i docenti: c'era nella proposta del sen. Gasparri, non nel testo approvato dal Senato. I corsi si fanno \"nel rispetto dell'autonomia delle istituzioni scolastiche\" e con le risorse esistenti. Il testo è quello approvato dal Senato il 4 marzo 2026; la Commissione della Camera non l'ha cambiato e manca solo il voto finale dell'Aula.",
+          "fonteRegola": {
+            "etichetta": "Camera dei deputati - A.C. 2830, testo approvato dal Senato il 4 marzo 2026",
+            "url": "https://documenti.camera.it/leg19/pdl/pdf/leg.19.pdl.camera.2830.19PDL0185570.pdf"
           }
         }
       ]
@@ -4727,6 +5018,104 @@
           "fonteRegola": {
             "etichetta": "Costituzione italiana, art. 24 — diritto di agire e difendersi in giudizio (Senato della Repubblica)",
             "url": "https://www.senato.it/istituzione/la-costituzione/parte-i/titolo-i/articolo-24"
+          }
+        }
+      ]
+    },
+    {
+      "id": "extraprofitti-energia-2026",
+      "titoloDivulgativo": "Extraprofitti dell'energia: l'anticipo di tasse chiesto ai grandi gruppi",
+      "titoloUfficiale": "Legge 25 settembre 2026, n. 166 - Conversione del decreto-legge 27 luglio 2026, n. 133 (prezzi petroliferi e ILVA), art. 2-bis: versamento anticipato di somme commisurate alle ritenute su utili deliberati da grandi gruppi energetici",
+      "meseAnno": "settembre 2026",
+      "stato": "vigore",
+      "ambiti": [
+        "fisco-lavoro"
+      ],
+      "fonti": [
+        {
+          "etichetta": "Gazzetta Ufficiale - Legge 25 settembre 2026, n. 166",
+          "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/25/26G00184/SG"
+        },
+        {
+          "etichetta": "Gazzetta Ufficiale - Testo coordinato del DL 133/2026 con la legge 166/2026",
+          "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/25/26A05124/SG"
+        },
+        {
+          "etichetta": "Normattiva - Decreto-legge 27 luglio 2026, n. 133",
+          "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-07-27;133"
+        },
+        {
+          "etichetta": "Camera dei deputati - Dossier sul DL 162/2026 (autotrasporto fino a ottobre)",
+          "url": "https://documenti.camera.it/leg19/dossier/testi/D26162.htm"
+        }
+      ],
+      "verificataIl": "2026-10-06",
+      "riassunto": "La misura che sui giornali è chiamata \"tassa sugli extraprofitti\". In realtà non è una tassa nuova: i grandi gruppi italiani dell'energia, con più di 20 miliardi di ricavi, devono anticipare ogni anno allo Stato il 39% delle tasse sui dividendi che pagheranno l'anno dopo, e poi le recuperano tutte. Nel 2026 l'anticipo porta 130,3 milioni che, con tagli ai fondi dei ministeri, pagano lo sconto sul gasolio dal 30 luglio al 5 settembre e un aiuto all'autotrasporto.",
+      "regole": [
+        {
+          "id": "extraprofitti-chi-paga",
+          "campiNecessari": [],
+          "condizioni": [],
+          "effetto": {
+            "tipo": "economico",
+            "descrizione": "Questa è la misura che i giornali chiamano \"tassa sugli extraprofitti\", ma non è una tassa in più e non la paghi tu. Riguarda solo i grandi gruppi italiani dell'energia (petrolio, gas, elettricità) con più di 20 miliardi di euro di ricavi. Ogni anno, entro il 30 novembre, devono versare allo Stato in anticipo il 39% delle tasse sui dividendi già decisi, che verranno pagati agli azionisti l'anno dopo. Quando pagano davvero i dividendi, quei soldi tornano a loro per intero come credito d'imposta. Le aliquote non cambiano: se hai azioni di queste società, le tasse sul tuo dividendo restano le stesse. In pratica lo Stato incassa prima, non di più.",
+            "breve": "Non è una tassa nuova e non la paghi tu: i grandi gruppi dell'energia anticipano tasse che poi recuperano.",
+            "direzione": "neutro"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "attivo",
+            "anno5": "attivo",
+            "anno10": "attivo"
+          },
+          "confidenza": "certa",
+          "noteConfidenza": "Art. 2-bis del decreto-legge 133/2026, aggiunto dalla legge di conversione 166/2026: vale dal 2026 ed è un meccanismo stabile, ripreso dal nuovo testo unico su versamenti e riscossione (art. 55-bis). Il comma 9 dice che l'anticipo non cambia aliquote e regole delle ritenute, il comma 14 che chi riceve i dividendi è tassato come sempre. Per il 2026 vale solo per i dividendi decisi prima del 27 agosto e pagati dopo il 31 dicembre 2026. È diverso dal contributo di solidarietà europeo del 2022 (regolamento UE 2022/1854), che tassava la parte di utili sopra la media degli anni precedenti.",
+          "fonteRegola": {
+            "etichetta": "Gazzetta Ufficiale - Testo coordinato del DL 133/2026 con la legge 166/2026",
+            "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/25/26A05124/SG"
+          }
+        },
+        {
+          "id": "extraprofitti-autotrasporto",
+          "campiNecessari": [
+            "settoriProfessionali",
+            "condizioneLavorativa"
+          ],
+          "condizioni": [
+            {
+              "campo": "settoriProfessionali",
+              "op": "in",
+              "valore": [
+                "trasporti"
+              ]
+            },
+            {
+              "campo": "condizioneLavorativa",
+              "op": "in",
+              "valore": [
+                "autonomo-ordinario",
+                "forfettario",
+                "imprenditore"
+              ]
+            }
+          ],
+          "effetto": {
+            "tipo": "economico",
+            "descrizione": "Se hai un'impresa di autotrasporto, questa legge allunga fino ad agosto 2026 il credito d'imposta sul gasolio: ti viene riconosciuta una parte di quanto hai speso in più rispetto al prezzo di febbraio 2026, mese per mese da marzo ad agosto. Vale per il trasporto di merci con mezzi pesanti, per il trasporto di persone e per il noleggio di autobus con conducente con mezzi Euro V o VI. I fondi hanno un tetto (397,6 milioni in tutto per il 2026), la domanda segue le regole del decreto del Ministero delle infrastrutture e dei trasporti e il credito si usa entro il 31 dicembre 2026. Decreti successivi lo hanno esteso anche a settembre e ottobre.",
+            "breve": "Se hai un'impresa di autotrasporto: credito d'imposta sul gasolio pagato in più da marzo ad agosto 2026.",
+            "direzione": "positivo"
+          },
+          "timeline": {
+            "anno1": "attivo",
+            "anno2": "nullo",
+            "anno5": "nullo",
+            "anno10": "nullo"
+          },
+          "confidenza": "dipende",
+          "noteConfidenza": "Quanto ricevi dipende dal gasolio che hai consumato e dalle regole su domande e importi del decreto del Ministero delle infrastrutture del 23 maggio 2026. Va all'impresa, non a chi guida come dipendente. Art. 1, comma 4, del DL 133/2026 come convertito, che modifica l'art. 3 del DL 33/2026; le estensioni a settembre e ottobre sono nei decreti-legge 157 e 162 del 2026.",
+          "fonteRegola": {
+            "etichetta": "Gazzetta Ufficiale - Testo coordinato del DL 133/2026 con la legge 166/2026",
+            "url": "https://www.gazzettaufficiale.it/eli/id/2026/09/25/26A05124/SG"
           }
         }
       ]

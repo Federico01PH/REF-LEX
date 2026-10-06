@@ -26,7 +26,7 @@ const VALORI_CAMPO: Record<string, readonly (string | number)[]> = {
   orientamento: ['eterosessuale', 'omosessuale', 'bisessuale', 'altro', 'preferisco-non-dirlo'],
   statoCivile: ['non-sposato', 'sposato', 'unione-civile', 'separato', 'vedovo'],
   condizioneLavorativa: ['dipendente-privato', 'dipendente-pubblico', 'autonomo-ordinario', 'forfettario', 'imprenditore', 'studente', 'pensionato', 'disoccupato', 'caregiver', 'casalingo', 'altro'],
-  settoriProfessionali: ['agricoltura', 'caccia', 'sanita', 'scuola', 'forze-ordine', 'altro'],
+  settoriProfessionali: ['agricoltura', 'caccia', 'sanita', 'scuola', 'forze-ordine', 'trasporti', 'altro'],
   tipiACarico: ['figli-minorenni', 'figli-maggiorenni', 'familiare-disabile', 'genitori-anziani'],
   fasciaReddito: ORDINE_REDDITO,
   fasciaIsee: [...ORDINE_ISEE, 'nonLoSo'],
@@ -160,7 +160,7 @@ export const SchemaProfilo = z.object({
     z.array(z.enum(['dipendente-privato', 'dipendente-pubblico', 'autonomo-ordinario', 'forfettario', 'imprenditore', 'studente', 'pensionato', 'disoccupato', 'caregiver', 'casalingo', 'altro'])).optional()
   ),
   professione: z.string().optional(),
-  settoriProfessionali: z.array(z.enum(['agricoltura', 'caccia', 'sanita', 'scuola', 'forze-ordine', 'altro'])).optional(),
+  settoriProfessionali: z.array(z.enum(['agricoltura', 'caccia', 'sanita', 'scuola', 'forze-ordine', 'trasporti', 'altro'])).optional(),
   fasciaReddito: z.enum(['nessuno', 'fino9k', 'da9a15k', 'da15a20k', 'da20a28k', 'da28a35k', 'da35a50k', 'oltre50k']).optional(),
   fasciaIsee: z.enum(['fino9360', 'da9360a15k', 'da15a25k', 'da25a40k', 'oltre40k', 'nonLoSo']).optional(),
   figli: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)]).optional(),

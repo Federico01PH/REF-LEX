@@ -25,11 +25,13 @@ import { imputabilitaMinori } from './imputabilita-minori';
 import { romaCapitale } from './roma-capitale';
 import { detenzioneDomiciliareDipendenze } from './detenzione-domiciliare-dipendenze';
 import { rottamazioneQuinquies } from './rottamazione-quinquies';
+import { extraprofittiEnergia } from './extraprofitti-energia';
 
 export const CATALOGO: Legge[] = [
   cuneoFiscale, salarioMinimo, pensioniRequisiti, assegnoInclusione,
   caseGreen, bonusEdilizi, riformaDisabilita, fibromialgiaLea, aiAct, digitalOmnibusAi,
   decretoSicurezza, codiceStrada, iusItaliae, decretoLavoro, leggeElettorale, premierato,
   remigrazione, dlMigrazioneAsilo, ddlAntisemitismo, pianoCasa, caccia, trasparenzaProgrammi,
-  imputabilitaMinori, romaCapitale, detenzioneDomiciliareDipendenze, rottamazioneQuinquies
+  imputabilitaMinori, romaCapitale, detenzioneDomiciliareDipendenze, rottamazioneQuinquies,
+  extraprofittiEnergia
 ];

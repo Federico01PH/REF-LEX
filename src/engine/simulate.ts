@@ -38,8 +38,12 @@ export function simula(profilo: Profilo, legge: Legge): RisultatoSimulazione {
 
 export function rilevanza(profilo: Profilo, legge: Legge): Rilevanza {
   const r = simula(profilo, legge);
-  if (r.effetti.some((e) => e.confidenza !== 'dipende')) return 'alta';
-  if (r.effetti.length > 0 || r.nonCalcolabili.length > 0) return 'media';
+  // un effetto neutro e sicuro informa ("non la paghi tu") ma non cambia la tua vita:
+  // conta come se non ci fosse
+  const informativo = (e: (typeof r.effetti)[number]) => e.effetto.direzione === 'neutro' && e.confidenza !== 'dipende';
+  const effettivi = r.effetti.filter((e) => !informativo(e));
+  if (effettivi.some((e) => e.confidenza !== 'dipende')) return 'alta';
+  if (effettivi.length > 0 || r.nonCalcolabili.length > 0) return 'media';
   return 'bassa';
 }
 

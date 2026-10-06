@@ -23,9 +23,10 @@ export type TipoACarico = 'figli-minorenni' | 'figli-maggiorenni' | 'familiare-d
 
 // settore ricavato dal mestiere scritto in chiaro (campo 'professione'): alcune leggi
 // toccano mestieri precisi (agricoltori per la caccia, forze dell'ordine per gli alloggi
-// di servizio del Piano Casa). 'altro' = mestiere indicato ma non tra quelli mappati.
+// di servizio del Piano Casa, autotrasporto per il credito sul gasolio della legge 166/2026).
+// 'altro' = mestiere indicato ma non tra quelli mappati.
 export type SettoreProfessionale =
-  | 'agricoltura' | 'caccia' | 'sanita' | 'scuola' | 'forze-ordine' | 'altro';
+  | 'agricoltura' | 'caccia' | 'sanita' | 'scuola' | 'forze-ordine' | 'trasporti' | 'altro';
 
 export interface Profilo {
   schemaVersion: 1;

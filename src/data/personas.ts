@@ -157,6 +157,7 @@ export const PERSONAGGI: Personaggio[] = [
       ...base, eta: 47, genere: 'donna',
       regione: 'Sicilia',
       condizioneLavorativa: ['dipendente-pubblico'],
+      professione: 'insegnante', settoriProfessionali: ['scuola'],
       fasciaReddito: 'da28a35k', fasciaIsee: 'da15a25k',
       abitazione: 'proprieta', figli: 1,
       personeACarico: true, tipiACarico: ['figli-minorenni'],
@@ -305,6 +306,25 @@ export const PERSONAGGI: Personaggio[] = [
       abitazione: 'affitto', figli: 0,
       personeACarico: false,
       statoCivile: 'non-sposato', titoloStudio: 'medie',
+      disabilita: ['nessuna'], cittadinanza: 'italiana'
+    }
+  },
+  {
+    // la legge 166/2026 dà un credito sul gasolio alle imprese di autotrasporto: senza
+    // un padroncino in galleria "E per gli altri?" non mostrerebbe a chi va quell'aiuto
+    id: 'salvatore',
+    nome: 'Salvatore, 51 anni',
+    descrizione: 'Autotrasportatore con un suo camion, lavora in proprio per le aziende della zona',
+    categoria: 'un autotrasportatore con un suo camion',
+    profilo: {
+      ...base, eta: 51, genere: 'uomo',
+      regione: 'Basilicata',
+      condizioneLavorativa: ['autonomo-ordinario'],
+      professione: 'autotrasportatore', settoriProfessionali: ['trasporti'],
+      fasciaReddito: 'da28a35k', fasciaIsee: 'da15a25k',
+      abitazione: 'proprieta', numeroProprieta: 1, figli: 2,
+      personeACarico: true, tipiACarico: ['figli-maggiorenni'],
+      statoCivile: 'sposato', titoloStudio: 'diploma',
       disabilita: ['nessuna'], cittadinanza: 'italiana'
     }
   }

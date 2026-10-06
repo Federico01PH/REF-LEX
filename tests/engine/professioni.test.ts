@@ -25,6 +25,17 @@ test('riconosce sanità, scuola e forze dell\'ordine', () => {
   expect(settoriDaProfessione('poliziotto')).toEqual(['forze-ordine']);
 });
 
+// la legge 166/2026 (decreto carburanti) dà un credito d'imposta alle imprese di autotrasporto
+test('riconosce chi fa autotrasporto, senza cadere su autisti generici o tirocinanti', () => {
+  expect(settoriDaProfessione('autotrasportatore')).toEqual(['trasporti']);
+  expect(settoriDaProfessione('camionista')).toEqual(['trasporti']);
+  expect(settoriDaProfessione('padroncino con un camion')).toEqual(['trasporti']);
+  expect(settoriDaProfessione('noleggio autobus con conducente')).toEqual(['trasporti']);
+  // "tir" nudo cadrebbe su "tirocinante"; "autista" nudo su "autista soccorritore"
+  expect(settoriDaProfessione('tirocinante')).toEqual(['altro']);
+  expect(settoriDaProfessione('autista soccorritore')).toEqual(['altro']);
+});
+
 test('non confonde il libero professionista con la scuola', () => {
   // "professionista" contiene "profess" ma NON è un professore
   expect(settoriDaProfessione('libero professionista')).toEqual(['altro']);
