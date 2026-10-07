@@ -1,21 +1,101 @@
 {
-  "generatoIl": "2026-10-06",
+  "generatoIl": "2026-10-07",
   "voci": [
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-10-05",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+      "id": "gazzetta-26G00193",
+      "titolo": "LEGGE 5 ottobre 2026, n.173: Conversione in legge, con modificazioni, del decreto-legge 7 agosto",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-06",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26G00193/SG"
     },
     {
-      "id": "camera-1624",
-      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
-      "tipo": "camera",
+      "id": "gazzetta-26G00194",
+      "titolo": "LEGGE 5 ottobre 2026, n.174: Conversione in legge, con modificazioni, del decreto-legge 7 agosto",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-06",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26G00194/SG"
+    },
+    {
+      "id": "gazzetta-26A05153",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Eboli e nomina del commissario",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-06",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26A05153/SG"
+    },
+    {
+      "id": "gazzetta-26A05154",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Crespino e nomina del",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-06",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26A05154/SG"
+    },
+    {
+      "id": "gazzetta-26A05155",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Curino",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-06",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26A05155/SG"
+    },
+    {
+      "id": "senato-60504",
+      "titolo": "Disposizioni in materia di prevenzione dell'infertilità e di preservazione della fertilità femminile",
+      "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-10-05",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+      "data": "2026-10-06",
+      "url": "https://dati.senato.it/ddl/60504"
+    },
+    {
+      "id": "senato-60499",
+      "titolo": "Disposizioni concernenti l'impiego di sistemi di intelligenza artificiale per la prevenzione dei rischi e la tutela della salute e della sicurezza nei luoghi di lavoro",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-02",
+      "url": "https://dati.senato.it/ddl/60499"
+    },
+    {
+      "id": "senato-60501",
+      "titolo": "Revisione della disciplina della responsabilità amministrativa delle persone giuridiche di cui al decreto legislativo 8 giugno 2001, n. 231",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-02",
+      "url": "https://dati.senato.it/ddl/60501"
+    },
+    {
+      "id": "senato-60498",
+      "titolo": "Modifiche all'articolo 176 del decreto legislativo 9 aprile 2008, n. 81, concernenti l'introduzione dell'obbligo di visita oculistica biennale per i lavoratori addetti ad attività che comportano l'uso di attrezzature munite di videoterminali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-02",
+      "url": "https://dati.senato.it/ddl/60498"
+    },
+    {
+      "id": "senato-60500",
+      "titolo": "Disposizioni concernenti l'istituzione e la gestione di cimiteri per animali da compagnia nonché in materia di inumazione, tumulazione e cremazione dei medesimi animali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-02",
+      "url": "https://dati.senato.it/ddl/60500"
+    },
+    {
+      "id": "senato-60503",
+      "titolo": "Disposizioni in materia di specificità insulare nella determinazione dei premi dell'assicurazione obbligatoria della responsabilità civile derivante dalla circolazione dei veicoli e delle garanzie accessorie",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-01",
+      "url": "https://dati.senato.it/ddl/60503"
+    },
+    {
+      "id": "senato-60502",
+      "titolo": "Disposizioni per il contrasto all'accumulo illecito di rifiuti e per l'introduzione di sistemi di monitoraggio volumetrico e di adeguamento economico delle garanzie finanziarie negli impianti di stoccaggio anche in caso di incendio",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-01",
+      "url": "https://dati.senato.it/ddl/60502"
     },
     {
       "id": "senato-60497",
@@ -80,62 +160,6 @@
       "stato": "discussione",
       "data": "2026-09-29",
       "url": "https://dati.senato.it/ddl/60493"
-    },
-    {
-      "id": "senato-60492",
-      "titolo": "Conversione in legge del decreto-legge 29 settembre 2026, n. 168, recante misure urgenti in materia di giustizia, di funzionalità del Ministero dell'interno e di impianti di interesse strategico nazionale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-29",
-      "url": "https://dati.senato.it/ddl/60492"
-    },
-    {
-      "id": "senato-60485",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 7 agosto 2026, n. 144, recante disposizioni urgenti per la funzionalità della pubblica amministrazione e degli enti territoriali, nonché in materia di protezione civile",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-28",
-      "url": "https://dati.senato.it/ddl/60485"
-    },
-    {
-      "id": "senato-60486",
-      "titolo": "Conversione in legge del decreto-legge 28 settembre 2026, n. 167, recante misure urgenti per la circolazione dei veicoli ad alimentazione diesel appartenenti alla categoria ambientale «EURO 5»",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-28",
-      "url": "https://dati.senato.it/ddl/60486"
-    },
-    {
-      "id": "senato-60494",
-      "titolo": "Legge annuale per il mercato e la concorrenza 2026",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-28",
-      "url": "https://dati.senato.it/ddl/60494"
-    },
-    {
-      "id": "senato-60489",
-      "titolo": "Istituzione e modalità di finanziamento del Dipartimento della difesa civile, non armata e nonviolenta",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-25",
-      "url": "https://dati.senato.it/ddl/60489"
-    },
-    {
-      "id": "senato-60482",
-      "titolo": "Istituzione del Museo per la memoria del disastro ferroviario di Viareggio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-24",
-      "url": "https://dati.senato.it/ddl/60482"
-    },
-    {
-      "id": "senato-60480",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 7 agosto 2026, n. 143, recante disposizioni urgenti in materia di obbligo di compostabilità di determinate tipologie di imballaggi",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-24",
-      "url": "https://dati.senato.it/ddl/60480"
     }
   ]
 }
