@@ -1,45 +1,77 @@
 {
-  "generatoIl": "2026-10-07",
+  "generatoIl": "2026-10-08",
   "voci": [
     {
-      "id": "gazzetta-26G00193",
-      "titolo": "LEGGE 5 ottobre 2026, n.173: Conversione in legge, con modificazioni, del decreto-legge 7 agosto",
+      "id": "gazzetta-26G00195",
+      "titolo": "LEGGE 5 ottobre 2026, n.175: Istituzione della Giornata nazionale della meraviglia, al fine di",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-06",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26G00193/SG"
+      "data": "2026-10-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26G00195/SG"
     },
     {
-      "id": "gazzetta-26G00194",
-      "titolo": "LEGGE 5 ottobre 2026, n.174: Conversione in legge, con modificazioni, del decreto-legge 7 agosto",
+      "id": "gazzetta-26G00191",
+      "titolo": "DECRETO LEGISLATIVO 25 settembre 2026, n.176: Attuazione della direttiva (UE) 2024/1799 del Parlamento europeo e",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-06",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26G00194/SG"
+      "data": "2026-10-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26G00191/SG"
     },
     {
-      "id": "gazzetta-26A05153",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Eboli e nomina del commissario",
+      "id": "gazzetta-26A05158",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Ronco Biellese e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-06",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26A05153/SG"
+      "data": "2026-10-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26A05158/SG"
     },
     {
-      "id": "gazzetta-26A05154",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Crespino e nomina del",
+      "id": "gazzetta-26A05159",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Monte San Giovanni Campano e",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-06",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26A05154/SG"
+      "data": "2026-10-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26A05159/SG"
     },
     {
-      "id": "gazzetta-26A05155",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Curino",
+      "id": "gazzetta-26A05160",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Longone Sabino e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-06",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/06/26A05155/SG"
+      "data": "2026-10-07",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26A05160/SG"
+    },
+    {
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-07",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+    },
+    {
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-07",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+    },
+    {
+      "id": "camera-1624",
+      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-07",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+    },
+    {
+      "id": "senato-60505",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 28 agosto 2026, n. 154, recante misure urgenti per assicurare la continuità operativa di impianti di interesse strategico nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-07",
+      "url": "https://dati.senato.it/ddl/60505"
     },
     {
       "id": "senato-60504",
@@ -91,7 +123,7 @@
     },
     {
       "id": "senato-60502",
-      "titolo": "Disposizioni per il contrasto all'accumulo illecito di rifiuti e per l'introduzione di sistemi di monitoraggio volumetrico e di adeguamento economico delle garanzie finanziarie negli impianti di stoccaggio anche in caso di incendio",
+      "titolo": "Modifiche al decreto legislativo 3 aprile 2006, n. 152, per il contrasto all'accumulo illecito di rifiuti e per l'introduzione di sistemi di monitoraggio volumetrico e di adeguamento economico delle garanzie finanziarie negli impianti di stoccaggio anche in caso di incendio",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-01",
@@ -128,38 +160,6 @@
       "stato": "discussione",
       "data": "2026-09-30",
       "url": "https://dati.senato.it/ddl/60496"
-    },
-    {
-      "id": "senato-60491",
-      "titolo": "Istituzione della Card del Caregiver e disposizioni in materia di contribuzione figurativa per i caregiver familiari conviventi",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-30",
-      "url": "https://dati.senato.it/ddl/60491"
-    },
-    {
-      "id": "senato-60487",
-      "titolo": "Inserimento della chirurgia senologica tra le specializzazioni di area chirurgica, all'interno della classe delle chirurgie cardio-toraco-vascolari",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-29",
-      "url": "https://dati.senato.it/ddl/60487"
-    },
-    {
-      "id": "senato-60488",
-      "titolo": "Disposizioni sulla sicurezza e salubrità degli impianti aeraulici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-29",
-      "url": "https://dati.senato.it/ddl/60488"
-    },
-    {
-      "id": "senato-60493",
-      "titolo": "Disposizioni per la prevenzione e la repressione delle attività organizzate volte all'eversione dell'ordinamento costituzionale mediante l'applicazione di princìpi dell'islam politico, nonché modifica dell'articolo 5 della legge 22 maggio 1975, n. 152, in materia di divieto di travisamento nei luoghi pubblici e di salvaguardia della libertà individuale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-29",
-      "url": "https://dati.senato.it/ddl/60493"
     }
   ]
 }
