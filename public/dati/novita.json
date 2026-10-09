@@ -1,45 +1,53 @@
 {
-  "generatoIl": "2026-10-08",
+  "generatoIl": "2026-10-09",
   "voci": [
     {
-      "id": "gazzetta-26G00195",
-      "titolo": "LEGGE 5 ottobre 2026, n.175: Istituzione della Giornata nazionale della meraviglia, al fine di",
+      "id": "gazzetta-26G00199",
+      "titolo": "DECRETO-LEGGE 8 ottobre 2026, n.177: Disposizioni urgenti per il rafforzamento delle istruttorie",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26G00195/SG"
+      "data": "2026-10-08",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26G00199/SG"
     },
     {
-      "id": "gazzetta-26G00191",
-      "titolo": "DECRETO LEGISLATIVO 25 settembre 2026, n.176: Attuazione della direttiva (UE) 2024/1799 del Parlamento europeo e",
+      "id": "gazzetta-26G00192",
+      "titolo": "DECRETO LEGISLATIVO 25 settembre 2026, n.178: Adeguamento della normativa nazionale alle disposizioni del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26G00191/SG"
+      "data": "2026-10-08",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26G00192/SG"
     },
     {
-      "id": "gazzetta-26A05158",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Ronco Biellese e nomina del",
+      "id": "gazzetta-26G00200",
+      "titolo": "DECRETO LEGISLATIVO 7 ottobre 2026, n.179: Adeguamento della normativa nazionale alle disposizioni del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26A05158/SG"
+      "data": "2026-10-08",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26G00200/SG"
     },
     {
-      "id": "gazzetta-26A05159",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Monte San Giovanni Campano e",
+      "id": "gazzetta-26A05164",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Leonessa e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26A05159/SG"
+      "data": "2026-10-08",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26A05164/SG"
     },
     {
-      "id": "gazzetta-26A05160",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Longone Sabino e nomina del",
+      "id": "gazzetta-26A05165",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Gorgo al Monticano",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-07",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/07/26A05160/SG"
+      "data": "2026-10-08",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26A05165/SG"
+    },
+    {
+      "id": "senato-60509",
+      "titolo": "Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica Italiana e il Governo della Repubblica Algerina Democratica e Popolare sulla cooperazione in materia di sicurezza, fatto ad Algeri il 1° febbraio 2024 e dell'Accordo sulla cooperazione in materia di lotta al terrorismo tra il Governo della Repubblica Italiana e il Governo della Repubblica Algerina Democratica e Popolare, fatto a Roma il 23 luglio 2025",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-08",
+      "url": "https://dati.senato.it/ddl/60509"
     },
     {
       "id": "camera-1660",
@@ -74,12 +82,36 @@
       "url": "https://dati.senato.it/ddl/60505"
     },
     {
+      "id": "senato-60507",
+      "titolo": "Disposizioni per la prevenzione, la diagnosi precoce e la cura della malattia renale cronica nella popolazione adulta",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-06",
+      "url": "https://dati.senato.it/ddl/60507"
+    },
+    {
+      "id": "senato-60508",
+      "titolo": "Disposizioni concernenti la protezione del diritto all'identità vocale personale e la disciplina della realizzazione di manifestazioni vocali ad essa riconducibili mediante sistemi di intelligenza artificiale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-06",
+      "url": "https://dati.senato.it/ddl/60508"
+    },
+    {
       "id": "senato-60504",
       "titolo": "Disposizioni in materia di prevenzione dell'infertilità e di preservazione della fertilità femminile",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-06",
       "url": "https://dati.senato.it/ddl/60504"
+    },
+    {
+      "id": "senato-60506",
+      "titolo": "Disposizioni concernenti l'accreditamento di contributi previdenziali figurativi per periodi di interruzione dell'attività lavorativa dedicati alla cura e all'assistenza di figli minori di sei anni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-06",
+      "url": "https://dati.senato.it/ddl/60506"
     },
     {
       "id": "senato-60499",
@@ -128,38 +160,6 @@
       "stato": "discussione",
       "data": "2026-10-01",
       "url": "https://dati.senato.it/ddl/60502"
-    },
-    {
-      "id": "senato-60497",
-      "titolo": "Riordino e riorganizzazione del Consiglio universitario nazionale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-01",
-      "url": "https://dati.senato.it/ddl/60497"
-    },
-    {
-      "id": "senato-60495",
-      "titolo": "Conversione in legge del decreto-legge 30 settembre 2026, n. 170, recante misure urgenti per garantire il regolare avvio dell'anno scolastico 2026/2027, per l'accompagnamento delle misure del Piano nazionale di ripresa e resilienza (PNRR) di competenza del Ministero dell'istruzione e del merito, per la promozione dell'integrazione degli studenti stranieri nell'ambito scolastico, nonché in materia di formazione superiore e ricerca",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-30",
-      "url": "https://dati.senato.it/ddl/60495"
-    },
-    {
-      "id": "senato-60490",
-      "titolo": "Abrogazione dell'istituto della turbatio sanguinis",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-30",
-      "url": "https://dati.senato.it/ddl/60490"
-    },
-    {
-      "id": "senato-60496",
-      "titolo": "Disposizioni recanti l'istituzione del Ministero per le persone con disabilità e i caregiver familiari",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-09-30",
-      "url": "https://dati.senato.it/ddl/60496"
     }
   ]
 }
