@@ -1,45 +1,53 @@
 {
-  "generatoIl": "2026-10-09",
+  "generatoIl": "2026-10-10",
   "voci": [
     {
-      "id": "gazzetta-26G00199",
-      "titolo": "DECRETO-LEGGE 8 ottobre 2026, n.177: Disposizioni urgenti per il rafforzamento delle istruttorie",
+      "id": "gazzetta-26G00201",
+      "titolo": "LEGGE 9 ottobre 2026, n.180: Disposizioni in materia di elezioni della Camera dei deputati e del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-08",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26G00199/SG"
+      "data": "2026-10-09",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/09/26G00201/SG"
     },
     {
-      "id": "gazzetta-26G00192",
-      "titolo": "DECRETO LEGISLATIVO 25 settembre 2026, n.178: Adeguamento della normativa nazionale alle disposizioni del",
+      "id": "gazzetta-26G00196",
+      "titolo": "DECRETO LEGISLATIVO 25 settembre 2026, n.181: Attuazione della direttiva (UE) 2024/2839 del Parlamento europeo e",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-08",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26G00192/SG"
+      "data": "2026-10-09",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/09/26G00196/SG"
     },
     {
-      "id": "gazzetta-26G00200",
-      "titolo": "DECRETO LEGISLATIVO 7 ottobre 2026, n.179: Adeguamento della normativa nazionale alle disposizioni del",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-08",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26G00200/SG"
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-09",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
     },
     {
-      "id": "gazzetta-26A05164",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Leonessa e nomina del",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-08",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26A05164/SG"
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-09",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
-      "id": "gazzetta-26A05165",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 9 settembre 2026: Scioglimento del consiglio comunale di Gorgo al Monticano",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-08",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/08/26A05165/SG"
+      "id": "camera-1624",
+      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-09",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+    },
+    {
+      "id": "senato-60511",
+      "titolo": "Conversione in legge del decreto-legge 08 ottobre 2026, n. 177, recante disposizioni urgenti per il rafforzamento delle istruttorie ambientali, la gestione dei problemi climatici, l'economia circolare e le bonifiche",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-09",
+      "url": "https://dati.senato.it/ddl/60511"
     },
     {
       "id": "senato-60509",
@@ -50,28 +58,12 @@
       "url": "https://dati.senato.it/ddl/60509"
     },
     {
-      "id": "camera-1660",
-      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
-      "tipo": "camera",
+      "id": "senato-60510",
+      "titolo": "Introduzione degli articoli 10-bis del codice civile e 85-bis.1 della legge 22 aprile 1941, n. 633, e altre disposizioni concernenti la tutela della voce, dell'identità vocale e del marchio vocale della persona nonché la disciplina della produzione e utilizzazione di repliche vocali realizzate mediante sistemi di intelligenza artificiale",
+      "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-07",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
-    },
-    {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-10-07",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
-    },
-    {
-      "id": "camera-1624",
-      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-10-07",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+      "url": "https://dati.senato.it/ddl/60510"
     },
     {
       "id": "senato-60505",
@@ -160,6 +152,14 @@
       "stato": "discussione",
       "data": "2026-10-01",
       "url": "https://dati.senato.it/ddl/60502"
+    },
+    {
+      "id": "senato-60497",
+      "titolo": "Riordino e riorganizzazione del Consiglio universitario nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-01",
+      "url": "https://dati.senato.it/ddl/60497"
     }
   ]
 }
