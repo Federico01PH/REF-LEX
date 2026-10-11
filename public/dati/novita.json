@@ -1,45 +1,21 @@
 {
-  "generatoIl": "2026-10-10",
+  "generatoIl": "2026-10-11",
   "voci": [
     {
-      "id": "gazzetta-26G00201",
-      "titolo": "LEGGE 9 ottobre 2026, n.180: Disposizioni in materia di elezioni della Camera dei deputati e del",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-09",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/09/26G00201/SG"
-    },
-    {
-      "id": "gazzetta-26G00196",
-      "titolo": "DECRETO LEGISLATIVO 25 settembre 2026, n.181: Attuazione della direttiva (UE) 2024/2839 del Parlamento europeo e",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-09",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/09/26G00196/SG"
-    },
-    {
-      "id": "camera-1660",
-      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "id": "camera-1588",
+      "titolo": "S. 861. - \"Ratifica ed esecuzione dell’Accordo di sede tra la Repubblica italiana e l’Ufficio europeo per il sostegno all’asilo relativo allo stabilimento di un ufficio operativo in Roma, fatto a Roma il 22 novembre 2017, con Dichiarazione interpretativa congiunta fatta a Roma il 1&deg; luglio 2021 e a La Valletta il 13 luglio 2021\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-09",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+      "data": "2026-10-10",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1588"
     },
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "id": "camera-1633",
+      "titolo": "\"Conversione in legge del decreto-legge 30 dicembre 2023, n. 215, recante disposizioni urgenti in materia di termini normativi\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-09",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
-    },
-    {
-      "id": "camera-1624",
-      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-10-09",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+      "data": "2026-10-10",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1633"
     },
     {
       "id": "senato-60511",
