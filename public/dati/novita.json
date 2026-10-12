@@ -1,21 +1,21 @@
 {
-  "generatoIl": "2026-10-11",
+  "generatoIl": "2026-10-12",
   "voci": [
     {
-      "id": "camera-1588",
-      "titolo": "S. 861. - \"Ratifica ed esecuzione dell’Accordo di sede tra la Repubblica italiana e l’Ufficio europeo per il sostegno all’asilo relativo allo stabilimento di un ufficio operativo in Roma, fatto a Roma il 22 novembre 2017, con Dichiarazione interpretativa congiunta fatta a Roma il 1&deg; luglio 2021 e a La Valletta il 13 luglio 2021\" (approvato dal Senato)",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-10",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1588"
+      "data": "2026-10-11",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
-      "id": "camera-1633",
-      "titolo": "\"Conversione in legge del decreto-legge 30 dicembre 2023, n. 215, recante disposizioni urgenti in materia di termini normativi\"",
+      "id": "camera-1632",
+      "titolo": "\"Legge quadro in materia di ricostruzione post-calamità\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-10",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1633"
+      "data": "2026-10-11",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1632"
     },
     {
       "id": "senato-60511",
