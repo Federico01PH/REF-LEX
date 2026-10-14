@@ -1,29 +1,53 @@
 {
-  "generatoIl": "2026-10-13",
+  "generatoIl": "2026-10-14",
   "voci": [
     {
-      "id": "gazzetta-26G00197",
-      "titolo": "LEGGE 1 ottobre 2026, n.182: Ratifica ed esecuzione dell'Accordo tra il Governo della Repubblica",
+      "id": "gazzetta-26G00198",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 4 agosto 2026, n.183: Regolamento recante modifiche al decreto del Presidente della",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-12",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/12/26G00197/SG"
+      "data": "2026-10-13",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/13/26G00198/SG"
     },
     {
       "id": "camera-1687",
       "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-12",
+      "data": "2026-10-13",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
     },
     {
-      "id": "camera-1790",
-      "titolo": "S. 1014. - \"Conversione in legge, con modificazioni, del decreto-legge 5 febbraio 2024, n. 10, recante disposizioni urgenti sulla governance e sugli interventi di competenza della Società «Infrastrutture Milano Cortina 2020-2026 S.p.A.»\" (approvato dal Senato)",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
+      "data": "2026-10-13",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+    },
+    {
+      "id": "senato-60517",
+      "titolo": "Tutela del diritto alla libertà di pagamento in contanti: modifica all'articolo 1277 del codice civile",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-10-12",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1790"
+      "url": "https://dati.senato.it/ddl/60517"
+    },
+    {
+      "id": "senato-60516",
+      "titolo": "Modifica all'articolo 20 della legge 26 luglio 1975, n. 354, in materia di rapporti di lavoro dei detenuti e degli internati",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-12",
+      "url": "https://dati.senato.it/ddl/60516"
+    },
+    {
+      "id": "senato-60515",
+      "titolo": "Disposizioni in materia di dichiarazione di equivalenza delle tutele dei contratti collettivi negli appalti pubblici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-12",
+      "url": "https://dati.senato.it/ddl/60515"
     },
     {
       "id": "senato-60514",
@@ -120,30 +144,6 @@
       "stato": "discussione",
       "data": "2026-10-02",
       "url": "https://dati.senato.it/ddl/60499"
-    },
-    {
-      "id": "senato-60501",
-      "titolo": "Revisione della disciplina della responsabilità amministrativa delle persone giuridiche di cui al decreto legislativo 8 giugno 2001, n. 231",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-02",
-      "url": "https://dati.senato.it/ddl/60501"
-    },
-    {
-      "id": "senato-60498",
-      "titolo": "Modifiche all'articolo 176 del decreto legislativo 9 aprile 2008, n. 81, concernenti l'introduzione dell'obbligo di visita oculistica biennale per i lavoratori addetti ad attività che comportano l'uso di attrezzature munite di videoterminali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-02",
-      "url": "https://dati.senato.it/ddl/60498"
-    },
-    {
-      "id": "senato-60500",
-      "titolo": "Disposizioni concernenti l'istituzione e la gestione di cimiteri per animali da compagnia nonché in materia di inumazione, tumulazione e cremazione dei medesimi animali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-02",
-      "url": "https://dati.senato.it/ddl/60500"
     }
   ]
 }
