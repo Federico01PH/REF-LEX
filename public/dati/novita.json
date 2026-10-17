@@ -1,13 +1,165 @@
 {
-  "generatoIl": "2026-10-16",
+  "generatoIl": "2026-10-17",
   "voci": [
     {
-      "id": "gazzetta-26G00202",
-      "titolo": "DECRETO LEGISLATIVO 25 settembre 2026, n.184: Recepimento della direttiva (UE) 2023/2864 del Parlamento europeo e",
+      "id": "gazzetta-26G00208",
+      "titolo": "DECRETO-LEGGE 16 ottobre 2026, n.185: Misure urgenti a sostegno dei lavoratori dell'ex ILVA e dell'indotto",
       "tipo": "gazzetta",
       "stato": "approvata",
+      "data": "2026-10-16",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/16/26G00208/SG"
+    },
+    {
+      "id": "gazzetta-26G00203",
+      "titolo": "DECRETO LEGISLATIVO 25 settembre 2026, n.186: Attuazione della direttiva (UE) 2024/1260 del Parlamento europeo e",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-16",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/16/26G00203/SG"
+    },
+    {
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-16",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+    },
+    {
+      "id": "camera-1804",
+      "titolo": "S. 998. - \"Ratifica ed esecuzione del Protocollo di emendamento all’Accordo istitutivo dell’Organizzazione internazionale della vigna e del vino relativo alla localizzazione della sede, adottato a Parigi il 21 maggio 2022\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-16",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1804"
+    },
+    {
+      "id": "camera-1686",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-16",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+    },
+    {
+      "id": "senato-60529",
+      "titolo": "Riconoscimento e tutela delle persone che assistono e si prendono cura dei propri cari",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-16",
+      "url": "https://dati.senato.it/ddl/60529"
+    },
+    {
+      "id": "senato-60530",
+      "titolo": "Modifica all'articolo 7 del decreto legislativo 24 giugno 2003, n. 209, in materia di destinazione di veicoli fuori uso alle istituzioni scolastiche del sistema nazionale di istruzione e agli istituti tecnologici superiori (ITS Academy) per l'utilizzazione a fini didattici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-16",
+      "url": "https://dati.senato.it/ddl/60530"
+    },
+    {
+      "id": "senato-60531",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 10 settembre 2026, n. 157, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali e di infrastrutture e attività energetiche strategiche",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-10-15",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/15/26G00202/SG"
+      "url": "https://dati.senato.it/ddl/60531"
+    },
+    {
+      "id": "senato-60525",
+      "titolo": "Introduzione dell'articolo 656-bis del codice di procedura penale e altre disposizioni concernenti una modalità speciale di esecuzione non carceraria della pena detentiva per i condannati ultrasettantacinquenni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-13",
+      "url": "https://dati.senato.it/ddl/60525"
+    },
+    {
+      "id": "senato-60527",
+      "titolo": "Modifica all'articolo 94 della Costituzione in materia di divieto di apposizione della questione di fiducia su progetti di legge vertenti su materia costituzionale o elettorale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-13",
+      "url": "https://dati.senato.it/ddl/60527"
+    },
+    {
+      "id": "senato-60524",
+      "titolo": "Disposizioni in materia di percorsi formativi per il sostegno dell'esercizio delle competenze genitoriali nell'ambito del patto educativo di corresponsabilità tra le istituzioni scolastiche e le famiglie",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-13",
+      "url": "https://dati.senato.it/ddl/60524"
+    },
+    {
+      "id": "senato-60526",
+      "titolo": "Introduzione dell'articolo 47-septies della legge 26 luglio 1975, n. 354, in materia di detenzione domiciliare allargata nei casi di eccezionale distanza temporale tra la commissione del reato e l'esecuzione della pena",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-13",
+      "url": "https://dati.senato.it/ddl/60526"
+    },
+    {
+      "id": "senato-60528",
+      "titolo": "Modifica all'articolo 1277 del codice civile in materia di tutela del diritto alla libertà di pagamento in contanti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-13",
+      "url": "https://dati.senato.it/ddl/60528"
+    },
+    {
+      "id": "senato-60519",
+      "titolo": "Istituzione del Parco archeologico culturale di Tuscolo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-12",
+      "url": "https://dati.senato.it/ddl/60519"
+    },
+    {
+      "id": "senato-60520",
+      "titolo": "Disposizioni per la realizzazione di coperture fotovoltaiche, alberature e interventi di adattamento ai cambiamenti climatici nei parcheggi aperti al pubblico",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-12",
+      "url": "https://dati.senato.it/ddl/60520"
+    },
+    {
+      "id": "senato-60522",
+      "titolo": "Modifica all'articolo 20 della legge 26 luglio 1975, n. 354, in materia di rapporti di lavoro dei detenuti e degli internati",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-12",
+      "url": "https://dati.senato.it/ddl/60522"
+    },
+    {
+      "id": "senato-60521",
+      "titolo": "Disposizioni in materia di dichiarazione di equivalenza delle tutele dei contratti collettivi negli appalti pubblici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-12",
+      "url": "https://dati.senato.it/ddl/60521"
+    },
+    {
+      "id": "senato-60517",
+      "titolo": "Tutela del diritto alla libertà di pagamento in contanti: modifica dell'articolo 1277 del codice civile",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-12",
+      "url": "https://dati.senato.it/ddl/60517"
+    },
+    {
+      "id": "senato-60518",
+      "titolo": "Modifiche all'articolo 45 della legge 23 luglio 2009, n. 99, e altre disposizioni per la compensazione territoriale, sociale e ambientale e per la riduzione del prezzo dei carburanti nei territori in cui hanno sede impianti di raffinazione e stabilimenti petrolchimici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-12",
+      "url": "https://dati.senato.it/ddl/60518"
+    },
+    {
+      "id": "senato-60516",
+      "titolo": "Modifica all'articolo 20 della legge 26 luglio 1975, n. 354, in materia di rapporti di lavoro dei detenuti e degli internati",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-12",
+      "url": "https://dati.senato.it/ddl/60516"
     }
   ]
 }
