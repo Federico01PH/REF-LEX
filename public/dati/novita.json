@@ -1,45 +1,21 @@
 {
-  "generatoIl": "2026-10-17",
+  "generatoIl": "2026-10-18",
   "voci": [
     {
-      "id": "gazzetta-26G00208",
-      "titolo": "DECRETO-LEGGE 16 ottobre 2026, n.185: Misure urgenti a sostegno dei lavoratori dell'ex ILVA e dell'indotto",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-16",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/16/26G00208/SG"
-    },
-    {
-      "id": "gazzetta-26G00203",
-      "titolo": "DECRETO LEGISLATIVO 25 settembre 2026, n.186: Attuazione della direttiva (UE) 2024/1260 del Parlamento europeo e",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-16",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/16/26G00203/SG"
-    },
-    {
-      "id": "camera-1660",
-      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+      "data": "2026-10-17",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
-      "id": "camera-1804",
-      "titolo": "S. 998. - \"Ratifica ed esecuzione del Protocollo di emendamento all’Accordo istitutivo dell’Organizzazione internazionale della vigna e del vino relativo alla localizzazione della sede, adottato a Parigi il 21 maggio 2022\" (approvato dal Senato)",
+      "id": "camera-1633",
+      "titolo": "\"Conversione in legge del decreto-legge 30 dicembre 2023, n. 215, recante disposizioni urgenti in materia di termini normativi\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1804"
-    },
-    {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-10-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "data": "2026-10-17",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1633"
     },
     {
       "id": "senato-60529",
