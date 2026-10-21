@@ -1,28 +1,44 @@
 {
-  "generatoIl": "2026-10-20",
+  "generatoIl": "2026-10-21",
   "voci": [
     {
-      "id": "gazzetta-26G00204",
-      "titolo": "LEGGE 16 ottobre 2026, n.187: Delega al Governo per il riordino delle funzioni e dell'ordinamento",
+      "id": "gazzetta-26G00205",
+      "titolo": "DECRETO LEGISLATIVO 8 ottobre 2026, n.188: Completo adeguamento della normativa nazionale alle disposizioni del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-19",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/19/26G00204/SG"
+      "data": "2026-10-20",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/20/26G00205/SG"
     },
     {
-      "id": "camera-1660",
-      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-10-19",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+      "id": "gazzetta-26A05465",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 17 settembre 2026: Scioglimento del consiglio comunale di Cellino San Marco e nomina del",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-20",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/20/26A05465/SG"
+    },
+    {
+      "id": "gazzetta-26A05466",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 17 settembre 2026: Scioglimento del consiglio comunale di Capaccio Paestum e nomina del",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-20",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/20/26A05466/SG"
+    },
+    {
+      "id": "gazzetta-26A05467",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 30 settembre 2026: Scioglimento del consiglio comunale di Grumo Nevano e nomina del",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-20",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/20/26A05467/SG"
     },
     {
       "id": "camera-1686",
       "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-19",
+      "data": "2026-10-20",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
     },
     {
@@ -30,16 +46,8 @@
       "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-19",
+      "data": "2026-10-20",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
-    },
-    {
-      "id": "senato-60532",
-      "titolo": "Conversione in legge del decreto-legge 16 ottobre 2026, n. 185, recante misure urgenti a sostegno dei lavoratori dell'ex ILVA e dell'indotto e per il rilancio industriale del territorio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-19",
-      "url": "https://dati.senato.it/ddl/60532"
     },
     {
       "id": "senato-60533",
@@ -50,12 +58,36 @@
       "url": "https://dati.senato.it/ddl/60533"
     },
     {
+      "id": "senato-60538",
+      "titolo": "Disposizioni in materia di aggravanti penali, misure cautelari e esecuzione delle espulsioni per gli stranieri in condizione di soggiorno irregolare",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-19",
+      "url": "https://dati.senato.it/ddl/60538"
+    },
+    {
       "id": "senato-60534",
       "titolo": "Istituzione del Parco nazionale dell'Etna",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-19",
       "url": "https://dati.senato.it/ddl/60534"
+    },
+    {
+      "id": "senato-60539",
+      "titolo": "Istituzione del Piano straordinario nazionale per la sicurezza, la riqualificazione, l'accessibilità e la resilienza climatica dell'edilizia scolastica nonché disposizioni per favorire l'apertura delle scuole al territorio",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-19",
+      "url": "https://dati.senato.it/ddl/60539"
+    },
+    {
+      "id": "senato-60532",
+      "titolo": "Conversione in legge del decreto-legge 16 ottobre 2026, n. 185, recante misure urgenti a sostegno dei lavoratori dell'ex ILVA e dell'indotto e per il rilancio industriale del territorio",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-16",
+      "url": "https://dati.senato.it/ddl/60532"
     },
     {
       "id": "senato-60529",
@@ -74,12 +106,36 @@
       "url": "https://dati.senato.it/ddl/60530"
     },
     {
+      "id": "senato-60537",
+      "titolo": "Disposizioni in materia di etichettatura dei prodotti alimentari preimballati e di accesso dei consumatori alle informazioni relative alla loro origine, conservazione e scadenza, all¿impronta climatica e idrica e alla presenza di allergeni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-15",
+      "url": "https://dati.senato.it/ddl/60537"
+    },
+    {
+      "id": "senato-60536",
+      "titolo": "Disposizioni in materia di assistenza veterinaria gratuita per gli animali da compagnia appartenenti a persone in condizioni di vulnerabilità economica e sociale e per gli animali di affezione privi di proprietario",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-15",
+      "url": "https://dati.senato.it/ddl/60536"
+    },
+    {
       "id": "senato-60531",
       "titolo": "Conversione in legge, con modificazioni, del decreto-legge 10 settembre 2026, n. 157, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali e di infrastrutture e attività energetiche strategiche",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-15",
       "url": "https://dati.senato.it/ddl/60531"
+    },
+    {
+      "id": "senato-60535",
+      "titolo": "Disposizioni concernenti la sospensione della fruizione di benefìci erogati dai comuni in caso di violazione delle ordinanze comunali in materia di sicurezza e decoro urbano nonché in caso di condanna di un minorenne a pena detentiva di durata non inferiore a un anno",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-14",
+      "url": "https://dati.senato.it/ddl/60535"
     },
     {
       "id": "senato-60525",
@@ -104,54 +160,6 @@
       "stato": "discussione",
       "data": "2026-10-13",
       "url": "https://dati.senato.it/ddl/60524"
-    },
-    {
-      "id": "senato-60526",
-      "titolo": "Introduzione dell'articolo 47-septies della legge 26 luglio 1975, n. 354, in materia di detenzione domiciliare allargata nei casi di eccezionale distanza temporale tra la commissione del reato e l'esecuzione della pena",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-13",
-      "url": "https://dati.senato.it/ddl/60526"
-    },
-    {
-      "id": "senato-60528",
-      "titolo": "Modifica all'articolo 1277 del codice civile in materia di tutela del diritto alla libertà di pagamento in contanti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-13",
-      "url": "https://dati.senato.it/ddl/60528"
-    },
-    {
-      "id": "senato-60519",
-      "titolo": "Istituzione del Parco archeologico culturale di Tuscolo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-12",
-      "url": "https://dati.senato.it/ddl/60519"
-    },
-    {
-      "id": "senato-60520",
-      "titolo": "Disposizioni per la realizzazione di coperture fotovoltaiche, alberature e interventi di adattamento ai cambiamenti climatici nei parcheggi aperti al pubblico",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-12",
-      "url": "https://dati.senato.it/ddl/60520"
-    },
-    {
-      "id": "senato-60522",
-      "titolo": "Modifica all'articolo 20 della legge 26 luglio 1975, n. 354, in materia di rapporti di lavoro dei detenuti e degli internati",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-12",
-      "url": "https://dati.senato.it/ddl/60522"
-    },
-    {
-      "id": "senato-60521",
-      "titolo": "Disposizioni in materia di dichiarazione di equivalenza delle tutele dei contratti collettivi negli appalti pubblici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-12",
-      "url": "https://dati.senato.it/ddl/60521"
     }
   ]
 }
