@@ -1,37 +1,13 @@
 {
-  "generatoIl": "2026-10-21",
+  "generatoIl": "2026-10-22",
   "voci": [
     {
-      "id": "gazzetta-26G00205",
-      "titolo": "DECRETO LEGISLATIVO 8 ottobre 2026, n.188: Completo adeguamento della normativa nazionale alle disposizioni del",
+      "id": "gazzetta-26G00206",
+      "titolo": "DECRETO LEGISLATIVO 7 ottobre 2026, n.189: Recepimento della direttiva (UE) 2024/2810 del Parlamento europeo e",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-20",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/20/26G00205/SG"
-    },
-    {
-      "id": "gazzetta-26A05465",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 17 settembre 2026: Scioglimento del consiglio comunale di Cellino San Marco e nomina del",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-20",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/20/26A05465/SG"
-    },
-    {
-      "id": "gazzetta-26A05466",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 17 settembre 2026: Scioglimento del consiglio comunale di Capaccio Paestum e nomina del",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-20",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/20/26A05466/SG"
-    },
-    {
-      "id": "gazzetta-26A05467",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 30 settembre 2026: Scioglimento del consiglio comunale di Grumo Nevano e nomina del",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-20",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/20/26A05467/SG"
+      "data": "2026-10-21",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/21/26G00206/SG"
     },
     {
       "id": "camera-1686",
@@ -160,6 +136,14 @@
       "stato": "discussione",
       "data": "2026-10-13",
       "url": "https://dati.senato.it/ddl/60524"
+    },
+    {
+      "id": "senato-60526",
+      "titolo": "Introduzione dell'articolo 47-septies della legge 26 luglio 1975, n. 354, in materia di detenzione domiciliare allargata nei casi di eccezionale distanza temporale tra la commissione del reato e l'esecuzione della pena",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-13",
+      "url": "https://dati.senato.it/ddl/60526"
     }
   ]
 }
