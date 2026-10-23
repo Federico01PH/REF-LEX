@@ -1,13 +1,21 @@
 {
-  "generatoIl": "2026-10-22",
+  "generatoIl": "2026-10-23",
   "voci": [
     {
-      "id": "gazzetta-26G00206",
-      "titolo": "DECRETO LEGISLATIVO 7 ottobre 2026, n.189: Recepimento della direttiva (UE) 2024/2810 del Parlamento europeo e",
+      "id": "gazzetta-26G00214",
+      "titolo": "DECRETO-LEGGE 22 ottobre 2026, n.190: Disposizioni urgenti in materia di sicurezza pubblica e contrasto",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-21",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/21/26G00206/SG"
+      "data": "2026-10-22",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/22/26G00214/SG"
+    },
+    {
+      "id": "gazzetta-26G00207",
+      "titolo": "DECRETO LEGISLATIVO 1 ottobre 2026, n.191: Norme di adeguamento della normativa nazionale alle disposizioni del",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-22",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/22/26G00207/SG"
     },
     {
       "id": "camera-1686",
