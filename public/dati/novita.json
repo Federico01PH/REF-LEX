@@ -1,37 +1,133 @@
 {
-  "generatoIl": "2026-10-23",
+  "generatoIl": "2026-10-24",
   "voci": [
     {
-      "id": "gazzetta-26G00214",
-      "titolo": "DECRETO-LEGGE 22 ottobre 2026, n.190: Disposizioni urgenti in materia di sicurezza pubblica e contrasto",
+      "id": "gazzetta-26G00209",
+      "titolo": "LEGGE 13 ottobre 2026, n.192: Dichiarazione di monumento nazionale del Palazzo Fortunato in Rionero",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-22",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/22/26G00214/SG"
+      "data": "2026-10-23",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/23/26G00209/SG"
     },
     {
-      "id": "gazzetta-26G00207",
-      "titolo": "DECRETO LEGISLATIVO 1 ottobre 2026, n.191: Norme di adeguamento della normativa nazionale alle disposizioni del",
+      "id": "gazzetta-26G00216",
+      "titolo": "DECRETO-LEGGE 23 ottobre 2026, n.193: Disposizioni urgenti e misure di sostegno ai settori",
       "tipo": "gazzetta",
       "stato": "approvata",
+      "data": "2026-10-23",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/23/26G00216/SG"
+    },
+    {
+      "id": "gazzetta-26A05611",
+      "titolo": "LEGGE 9 ottobre 2026, n.180: Ripubblicazione del testo della legge 9 ottobre 2026, n",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-23",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/23/26A05611/SG"
+    },
+    {
+      "id": "senato-60551",
+      "titolo": "Disposizioni per la tutela e la valorizzazione delle attività commerciali e artigianali negli ambiti di interesse storico, culturale e paesaggistico dei centri storici",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-23",
+      "url": "https://dati.senato.it/ddl/60551"
+    },
+    {
+      "id": "senato-60550",
+      "titolo": "Modifica all'articolo 76 del testo unico di cui al decreto del Presidente della Repubblica 30 maggio 2002, n. 115, in materia di patrocinio a spese dello Stato in favore delle persone offese da reati commessi con violazione delle norme per la prevenzione degli infortuni sul lavoro, da cui consegua totale inabilità o decesso",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-23",
+      "url": "https://dati.senato.it/ddl/60550"
+    },
+    {
+      "id": "senato-60552",
+      "titolo": "Ratifica ed esecuzione del Protocollo modificativo tra il Governo della Repubblica italiana e l'Organizzazione Europea di Diritto Pubblico riguardante l'Accordo per lo stabilimento di un Ufficio in Italia, con Allegato, fatto ad Atene il 19 giugno 2025",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-23",
+      "url": "https://dati.senato.it/ddl/60552"
+    },
+    {
+      "id": "senato-60549",
+      "titolo": "Conversione in legge del decreto-legge 22 ottobre 2026, n. 190, recante disposizioni urgenti in materia di sicurezza pubblica e contrasto alla criminalità minorile",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-10-22",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/22/26G00207/SG"
+      "url": "https://dati.senato.it/ddl/60549"
     },
     {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
-      "tipo": "camera",
+      "id": "senato-60546",
+      "titolo": "Delega al Governo per la protezione del processo elettorale a livello locale, regionale, nazionale e dell'Unione europea",
+      "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-10-20",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "data": "2026-10-22",
+      "url": "https://dati.senato.it/ddl/60546"
     },
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
-      "tipo": "camera",
+      "id": "senato-60542",
+      "titolo": "Modifica all'articolo 14 del testo unico delle disposizioni concernenti la disciplina dell'immigrazione e norme sulla condizione dello straniero, di cui al decreto legislativo 25 luglio 1998, n. 286, in materia di sanzioni per inottemperanza all'ordine di lasciare il territorio dello Stato",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-21",
+      "url": "https://dati.senato.it/ddl/60542"
+    },
+    {
+      "id": "senato-60544",
+      "titolo": "Disposizioni per la celebrazione, nell'anno 2028, del centoventesimo anniversario della nascita e del sessantesimo anniversario della morte di Giovannino Guareschi",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-21",
+      "url": "https://dati.senato.it/ddl/60544"
+    },
+    {
+      "id": "senato-60548",
+      "titolo": "Modifiche al codice della strada in materia di contrasto al fenomeno dei parcheggiatori abusivi",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-21",
+      "url": "https://dati.senato.it/ddl/60548"
+    },
+    {
+      "id": "senato-60543",
+      "titolo": "Modifiche agli articoli 18 del testo unico di cui al regio decreto 18 giugno 1931, n. 773, in materia di riunioni pubbliche, 335-quinquies del codice di procedura penale, in materia di attività di indagine in presenza di cause di giustificazione, 53 del codice penale, in materia di uso legittimo delle armi e di altri mezzi di coazione fisica, e 10-bis della legge 5 febbraio 1992, n. 91, in materia di revoca della cittadinanza per delitti contro l'ordine pubblico, e altre disposizioni concernenti l'impiego delle Forze armate, delle unità cinofile e di mezzi di coazione fisica nei casi di pericolo per l'ordine e la sicurezza pubblica",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-21",
+      "url": "https://dati.senato.it/ddl/60543"
+    },
+    {
+      "id": "senato-60547",
+      "titolo": "Disposizioni in materia di valorizzazione e recupero del patrimonio edilizio dei centri storici urbani",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-21",
+      "url": "https://dati.senato.it/ddl/60547"
+    },
+    {
+      "id": "senato-60545",
+      "titolo": "Modifiche alla legge 13 aprile 1988, n. 117, al codice di procedura penale e alle norme di attuazione, di coordinamento e transitorie del medesimo codice, in materia di responsabilità disciplinare e amministrativa dei magistrati, di diritto del cittadino al risarcimento dei danni ingiusti cagionati nell'esercizio della funzione giudiziaria e di equa riparazione per l'applicazione di misure cautelari o l'esercizio palesemente infondato dell'azione penale in caso di proscioglimento",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-21",
+      "url": "https://dati.senato.it/ddl/60545"
+    },
+    {
+      "id": "senato-60540",
+      "titolo": "Modifiche al decreto legislativo 28 febbraio 2021, n. 36, in materia di attività sportiva delle persone con disabilità e di pari opportunità di accesso degli atleti con disabilità intellettive e del neurosviluppo ai gruppi sportivi militari e dei corpi civili dello Stato",
+      "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-20",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+      "url": "https://dati.senato.it/ddl/60540"
+    },
+    {
+      "id": "senato-60541",
+      "titolo": "Modifiche all'articolo 82 della legge 23 dicembre 2000, n. 388, in materia di perequazione degli importi della speciale elargizione in favore dei superstiti delle vittime della criminalità organizzata",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-20",
+      "url": "https://dati.senato.it/ddl/60541"
     },
     {
       "id": "senato-60533",
@@ -48,110 +144,6 @@
       "stato": "discussione",
       "data": "2026-10-19",
       "url": "https://dati.senato.it/ddl/60538"
-    },
-    {
-      "id": "senato-60534",
-      "titolo": "Istituzione del Parco nazionale dell'Etna",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-19",
-      "url": "https://dati.senato.it/ddl/60534"
-    },
-    {
-      "id": "senato-60539",
-      "titolo": "Istituzione del Piano straordinario nazionale per la sicurezza, la riqualificazione, l'accessibilità e la resilienza climatica dell'edilizia scolastica nonché disposizioni per favorire l'apertura delle scuole al territorio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-19",
-      "url": "https://dati.senato.it/ddl/60539"
-    },
-    {
-      "id": "senato-60532",
-      "titolo": "Conversione in legge del decreto-legge 16 ottobre 2026, n. 185, recante misure urgenti a sostegno dei lavoratori dell'ex ILVA e dell'indotto e per il rilancio industriale del territorio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-16",
-      "url": "https://dati.senato.it/ddl/60532"
-    },
-    {
-      "id": "senato-60529",
-      "titolo": "Riconoscimento e tutela delle persone che assistono e si prendono cura dei propri cari",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-16",
-      "url": "https://dati.senato.it/ddl/60529"
-    },
-    {
-      "id": "senato-60530",
-      "titolo": "Modifica all'articolo 7 del decreto legislativo 24 giugno 2003, n. 209, in materia di destinazione di veicoli fuori uso alle istituzioni scolastiche del sistema nazionale di istruzione e agli istituti tecnologici superiori (ITS Academy) per l'utilizzazione a fini didattici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-16",
-      "url": "https://dati.senato.it/ddl/60530"
-    },
-    {
-      "id": "senato-60537",
-      "titolo": "Disposizioni in materia di etichettatura dei prodotti alimentari preimballati e di accesso dei consumatori alle informazioni relative alla loro origine, conservazione e scadenza, all¿impronta climatica e idrica e alla presenza di allergeni",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-15",
-      "url": "https://dati.senato.it/ddl/60537"
-    },
-    {
-      "id": "senato-60536",
-      "titolo": "Disposizioni in materia di assistenza veterinaria gratuita per gli animali da compagnia appartenenti a persone in condizioni di vulnerabilità economica e sociale e per gli animali di affezione privi di proprietario",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-15",
-      "url": "https://dati.senato.it/ddl/60536"
-    },
-    {
-      "id": "senato-60531",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 10 settembre 2026, n. 157, recante disposizioni urgenti in materia di prezzi petroliferi connessi al protrarsi della nuova crisi dei mercati internazionali e di infrastrutture e attività energetiche strategiche",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-15",
-      "url": "https://dati.senato.it/ddl/60531"
-    },
-    {
-      "id": "senato-60535",
-      "titolo": "Disposizioni concernenti la sospensione della fruizione di benefìci erogati dai comuni in caso di violazione delle ordinanze comunali in materia di sicurezza e decoro urbano nonché in caso di condanna di un minorenne a pena detentiva di durata non inferiore a un anno",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-14",
-      "url": "https://dati.senato.it/ddl/60535"
-    },
-    {
-      "id": "senato-60525",
-      "titolo": "Introduzione dell'articolo 656-bis del codice di procedura penale e altre disposizioni concernenti una modalità speciale di esecuzione non carceraria della pena detentiva per i condannati ultrasettantacinquenni",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-13",
-      "url": "https://dati.senato.it/ddl/60525"
-    },
-    {
-      "id": "senato-60527",
-      "titolo": "Modifica all'articolo 94 della Costituzione in materia di divieto di apposizione della questione di fiducia su progetti di legge vertenti su materia costituzionale o elettorale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-13",
-      "url": "https://dati.senato.it/ddl/60527"
-    },
-    {
-      "id": "senato-60524",
-      "titolo": "Disposizioni in materia di percorsi formativi per il sostegno dell'esercizio delle competenze genitoriali nell'ambito del patto educativo di corresponsabilità tra le istituzioni scolastiche e le famiglie",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-13",
-      "url": "https://dati.senato.it/ddl/60524"
-    },
-    {
-      "id": "senato-60526",
-      "titolo": "Introduzione dell'articolo 47-septies della legge 26 luglio 1975, n. 354, in materia di detenzione domiciliare allargata nei casi di eccezionale distanza temporale tra la commissione del reato e l'esecuzione della pena",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-13",
-      "url": "https://dati.senato.it/ddl/60526"
     }
   ]
 }
