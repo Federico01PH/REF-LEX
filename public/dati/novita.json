@@ -1,29 +1,13 @@
 {
-  "generatoIl": "2026-10-24",
+  "generatoIl": "2026-10-25",
   "voci": [
     {
-      "id": "gazzetta-26G00209",
-      "titolo": "LEGGE 13 ottobre 2026, n.192: Dichiarazione di monumento nazionale del Palazzo Fortunato in Rionero",
+      "id": "gazzetta-26G00210",
+      "titolo": "DECRETO LEGISLATIVO 8 ottobre 2026, n.194: Attuazione della direttiva (UE) 2024/1069 del Parlamento europeo e",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-23",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/23/26G00209/SG"
-    },
-    {
-      "id": "gazzetta-26G00216",
-      "titolo": "DECRETO-LEGGE 23 ottobre 2026, n.193: Disposizioni urgenti e misure di sostegno ai settori",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-23",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/23/26G00216/SG"
-    },
-    {
-      "id": "gazzetta-26A05611",
-      "titolo": "LEGGE 9 ottobre 2026, n.180: Ripubblicazione del testo della legge 9 ottobre 2026, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-23",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/23/26A05611/SG"
+      "data": "2026-10-24",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/24/26G00210/SG"
     },
     {
       "id": "senato-60551",
@@ -112,6 +96,22 @@
       "stato": "discussione",
       "data": "2026-10-21",
       "url": "https://dati.senato.it/ddl/60545"
+    },
+    {
+      "id": "camera-1686",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-20",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+    },
+    {
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-20",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
       "id": "senato-60540",
