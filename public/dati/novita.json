@@ -1,13 +1,53 @@
 {
-  "generatoIl": "2026-10-26",
+  "generatoIl": "2026-10-27",
   "voci": [
     {
-      "id": "gazzetta-26G00210",
-      "titolo": "DECRETO LEGISLATIVO 8 ottobre 2026, n.194: Attuazione della direttiva (UE) 2024/1069 del Parlamento europeo e",
+      "id": "gazzetta-26G00211",
+      "titolo": "LEGGE 15 ottobre 2026, n.195: Istituzione della Giornata nazionale del riciclo della carta",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-10-24",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/24/26G00210/SG"
+      "data": "2026-10-26",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/26/26G00211/SG"
+    },
+    {
+      "id": "gazzetta-26G00212",
+      "titolo": "LEGGE 23 ottobre 2026, n.196: Conversione in legge, con modificazioni, del decreto-legge 28 agosto",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-26",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/26/26G00212/SG"
+    },
+    {
+      "id": "gazzetta-26A05664",
+      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 28 agosto 2026, n.154: Testo del decreto-legge 28 agosto 2026, n",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-26",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/26/26A05664/SG"
+    },
+    {
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-26",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+    },
+    {
+      "id": "camera-1686",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-26",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+    },
+    {
+      "id": "camera-1718",
+      "titolo": "S. 808. - \"Modifiche al codice penale, al codice di procedura penale, all’ordinamento giudiziario e al codice dell’ordinamento militare\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-26",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1718"
     },
     {
       "id": "senato-60551",
@@ -16,6 +56,14 @@
       "stato": "discussione",
       "data": "2026-10-23",
       "url": "https://dati.senato.it/ddl/60551"
+    },
+    {
+      "id": "senato-60553",
+      "titolo": "Conversione in legge del decreto-legge 23 ottobre 2026, n. 193, recante disposizioni urgenti e misure di sostegno ai settori dell'autotrasporto, dell'agricoltura e della pesca",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-23",
+      "url": "https://dati.senato.it/ddl/60553"
     },
     {
       "id": "senato-60550",
@@ -34,6 +82,30 @@
       "url": "https://dati.senato.it/ddl/60552"
     },
     {
+      "id": "senato-60555",
+      "titolo": "Attribuzione alla regione Liguria di ulteriori forme e condizioni particolari di autonomia, ai sensi dell'articolo 116, terzo comma, della Costituzione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-22",
+      "url": "https://dati.senato.it/ddl/60555"
+    },
+    {
+      "id": "senato-60557",
+      "titolo": "Attribuzione alla regione Piemonte di ulteriori forme e condizioni particolari di autonomia, ai sensi dell'articolo 116, terzo comma, della Costituzione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-22",
+      "url": "https://dati.senato.it/ddl/60557"
+    },
+    {
+      "id": "senato-60554",
+      "titolo": "Concessione di un'agevolazione contributiva in favore dei datori di lavoro che erogano mensilità aggiuntive ai lavoratori per ogni figlio nato o adottato, nonché modifica all'articolo 18 della legge 22 maggio 2017, n. 81, in materia di esecuzione del rapporto di lavoro in modalità agile da parte delle lavoratrici e dei lavoratori con figli fino a dodici anni di età o disabili",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-22",
+      "url": "https://dati.senato.it/ddl/60554"
+    },
+    {
       "id": "senato-60549",
       "titolo": "Conversione in legge del decreto-legge 22 ottobre 2026, n. 190, recante disposizioni urgenti in materia di sicurezza pubblica e contrasto alla criminalità minorile",
       "tipo": "senato",
@@ -42,12 +114,28 @@
       "url": "https://dati.senato.it/ddl/60549"
     },
     {
+      "id": "senato-60556",
+      "titolo": "Attribuzione alla regione Lombardia di ulteriori forme e condizioni particolari di autonomia, ai sensi dell'articolo 116, terzo comma, della Costituzione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-22",
+      "url": "https://dati.senato.it/ddl/60556"
+    },
+    {
       "id": "senato-60546",
       "titolo": "Delega al Governo per la protezione del processo elettorale a livello locale, regionale, nazionale e dell'Unione europea",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-22",
       "url": "https://dati.senato.it/ddl/60546"
+    },
+    {
+      "id": "senato-60558",
+      "titolo": "Attribuzione alla regione Veneto di ulteriori forme e condizioni particolari di autonomia, ai sensi dell'articolo 116, terzo comma, della Costituzione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-22",
+      "url": "https://dati.senato.it/ddl/60558"
     },
     {
       "id": "senato-60542",
@@ -72,62 +160,6 @@
       "stato": "discussione",
       "data": "2026-10-21",
       "url": "https://dati.senato.it/ddl/60548"
-    },
-    {
-      "id": "senato-60543",
-      "titolo": "Modifiche agli articoli 18 del testo unico di cui al regio decreto 18 giugno 1931, n. 773, in materia di riunioni pubbliche, 335-quinquies del codice di procedura penale, in materia di attività di indagine in presenza di cause di giustificazione, 53 del codice penale, in materia di uso legittimo delle armi e di altri mezzi di coazione fisica, e 10-bis della legge 5 febbraio 1992, n. 91, in materia di revoca della cittadinanza per delitti contro l'ordine pubblico, e altre disposizioni concernenti l'impiego delle Forze armate, delle unità cinofile e di mezzi di coazione fisica nei casi di pericolo per l'ordine e la sicurezza pubblica",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-21",
-      "url": "https://dati.senato.it/ddl/60543"
-    },
-    {
-      "id": "senato-60547",
-      "titolo": "Disposizioni in materia di valorizzazione e recupero del patrimonio edilizio dei centri storici urbani",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-21",
-      "url": "https://dati.senato.it/ddl/60547"
-    },
-    {
-      "id": "senato-60545",
-      "titolo": "Modifiche alla legge 13 aprile 1988, n. 117, al codice di procedura penale e alle norme di attuazione, di coordinamento e transitorie del medesimo codice, in materia di responsabilità disciplinare e amministrativa dei magistrati, di diritto del cittadino al risarcimento dei danni ingiusti cagionati nell'esercizio della funzione giudiziaria e di equa riparazione per l'applicazione di misure cautelari o l'esercizio palesemente infondato dell'azione penale in caso di proscioglimento",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-21",
-      "url": "https://dati.senato.it/ddl/60545"
-    },
-    {
-      "id": "senato-60540",
-      "titolo": "Modifiche al decreto legislativo 28 febbraio 2021, n. 36, in materia di attività sportiva delle persone con disabilità e di pari opportunità di accesso degli atleti con disabilità intellettive e del neurosviluppo ai gruppi sportivi militari e dei corpi civili dello Stato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-20",
-      "url": "https://dati.senato.it/ddl/60540"
-    },
-    {
-      "id": "senato-60541",
-      "titolo": "Modifiche all'articolo 82 della legge 23 dicembre 2000, n. 388, in materia di perequazione degli importi della speciale elargizione in favore dei superstiti delle vittime della criminalità organizzata",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-20",
-      "url": "https://dati.senato.it/ddl/60541"
-    },
-    {
-      "id": "senato-60533",
-      "titolo": "Conversione in legge del decreto-legge 16 ottobre 2026, n. 185, recante misure urgenti a sostegno dei lavoratori dell'ex ILVA e dell'indotto e per il rilancio industriale del territorio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-19",
-      "url": "https://dati.senato.it/ddl/60533"
-    },
-    {
-      "id": "senato-60538",
-      "titolo": "Disposizioni in materia di aggravanti penali, misure cautelari e esecuzione delle espulsioni per gli stranieri in condizione di soggiorno irregolare",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-19",
-      "url": "https://dati.senato.it/ddl/60538"
     }
   ]
 }
