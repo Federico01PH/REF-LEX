@@ -1,53 +1,45 @@
 {
-  "generatoIl": "2026-10-27",
+  "generatoIl": "2026-10-28",
   "voci": [
     {
-      "id": "gazzetta-26G00211",
-      "titolo": "LEGGE 15 ottobre 2026, n.195: Istituzione della Giornata nazionale del riciclo della carta",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-26",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/26/26G00211/SG"
-    },
-    {
-      "id": "gazzetta-26G00212",
-      "titolo": "LEGGE 23 ottobre 2026, n.196: Conversione in legge, con modificazioni, del decreto-legge 28 agosto",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-26",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/26/26G00212/SG"
-    },
-    {
-      "id": "gazzetta-26A05664",
-      "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 28 agosto 2026, n.154: Testo del decreto-legge 28 agosto 2026, n",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-10-26",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/26/26A05664/SG"
-    },
-    {
-      "id": "camera-1660",
-      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-26",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+      "data": "2026-10-27",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "id": "camera-1606",
+      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-26",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "data": "2026-10-27",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
     },
     {
-      "id": "camera-1718",
-      "titolo": "S. 808. - \"Modifiche al codice penale, al codice di procedura penale, all’ordinamento giudiziario e al codice dell’ordinamento militare\" (approvato dal Senato)",
-      "tipo": "camera",
+      "id": "senato-60560",
+      "titolo": "Riforma della fiscalità delle grandi attività finanziarie",
+      "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-10-26",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1718"
+      "data": "2026-10-27",
+      "url": "https://dati.senato.it/ddl/60560"
+    },
+    {
+      "id": "senato-60559",
+      "titolo": "Disposizioni per l'accelerazione degli investimenti produttivi e il sostegno alle aree di transizione industriale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-27",
+      "url": "https://dati.senato.it/ddl/60559"
+    },
+    {
+      "id": "senato-60561",
+      "titolo": "Delega al Governo in materia di valutazione, revisione e razionalizzazione dei sussidi e degli incentivi alle imprese, e destinazione delle risorse conseguite alla riduzione del costo del lavoro",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-27",
+      "url": "https://dati.senato.it/ddl/60561"
     },
     {
       "id": "senato-60551",
@@ -123,7 +115,7 @@
     },
     {
       "id": "senato-60546",
-      "titolo": "Delega al Governo per la protezione del processo elettorale a livello locale, regionale, nazionale e dell'Unione europea",
+      "titolo": "Delega al Governo per la protezione del processo elettorale a livello locale, regionale e nazionale nonché per l'elezione dei membri del Parlamento europeo spettanti all'Italia",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-22",
@@ -144,22 +136,6 @@
       "stato": "discussione",
       "data": "2026-10-21",
       "url": "https://dati.senato.it/ddl/60542"
-    },
-    {
-      "id": "senato-60544",
-      "titolo": "Disposizioni per la celebrazione, nell'anno 2028, del centoventesimo anniversario della nascita e del sessantesimo anniversario della morte di Giovannino Guareschi",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-21",
-      "url": "https://dati.senato.it/ddl/60544"
-    },
-    {
-      "id": "senato-60548",
-      "titolo": "Modifiche al codice della strada in materia di contrasto al fenomeno dei parcheggiatori abusivi",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-21",
-      "url": "https://dati.senato.it/ddl/60548"
     }
   ]
 }
