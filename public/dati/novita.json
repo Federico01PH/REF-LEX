@@ -1,6 +1,14 @@
 {
-  "generatoIl": "2026-10-28",
+  "generatoIl": "2026-10-29",
   "voci": [
+    {
+      "id": "gazzetta-26G00213",
+      "titolo": "DECRETO LEGISLATIVO 28 settembre 2026, n.197: Attuazione della direttiva (UE) 2024/1785 del Parlamento europeo e",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-28",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/28/26G00213/SG"
+    },
     {
       "id": "camera-1752",
       "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
@@ -40,6 +48,46 @@
       "stato": "discussione",
       "data": "2026-10-27",
       "url": "https://dati.senato.it/ddl/60561"
+    },
+    {
+      "id": "senato-60563",
+      "titolo": "Concessione di agevolazioni tributarie e contributive per l'erogazione di mensilità aggiuntive della retribuzione per ogni figlio nato o adottato, nonché modifica all'articolo 18 della legge 22 maggio 2017, n. 81, in materia di esecuzione del rapporto di lavoro in modalità agile da parte delle lavoratrici e dei lavoratori con figli fino a dodici anni di età o disabili",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-27",
+      "url": "https://dati.senato.it/ddl/60563"
+    },
+    {
+      "id": "senato-60565",
+      "titolo": "Modifica dell'articolo 15 del decreto-legge 25 giugno 2008, n. 112, convertito, con modificazioni, dalla legge 6 agosto 2008, n. 133, in materia di adozione di libri scolastici provvisti di versione digitale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-27",
+      "url": "https://dati.senato.it/ddl/60565"
+    },
+    {
+      "id": "senato-60564",
+      "titolo": "Introduzione dell'articolo 219-ter del decreto legislativo 3 aprile 2006, n. 152, e altre disposizioni concernenti il sistema nazionale di deposito cauzionale e restituzione degli imballaggi monouso per bevande, la tutela degli utilizzatori e la verifica indipendente dei dati",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-27",
+      "url": "https://dati.senato.it/ddl/60564"
+    },
+    {
+      "id": "senato-60566",
+      "titolo": "Istituzione del Servizio nazionale sportivo e disposizioni concernenti la determinazione dei livelli essenziali delle prestazioni volte a garantire il diritto di accesso alla pratica sportiva",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-27",
+      "url": "https://dati.senato.it/ddl/60566"
+    },
+    {
+      "id": "senato-60562",
+      "titolo": "Istituzione della Giornata nazionale del cane guida e del cane di assistenza",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-27",
+      "url": "https://dati.senato.it/ddl/60562"
     },
     {
       "id": "senato-60551",
@@ -96,46 +144,6 @@
       "stato": "discussione",
       "data": "2026-10-22",
       "url": "https://dati.senato.it/ddl/60554"
-    },
-    {
-      "id": "senato-60549",
-      "titolo": "Conversione in legge del decreto-legge 22 ottobre 2026, n. 190, recante disposizioni urgenti in materia di sicurezza pubblica e contrasto alla criminalità minorile",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-22",
-      "url": "https://dati.senato.it/ddl/60549"
-    },
-    {
-      "id": "senato-60556",
-      "titolo": "Attribuzione alla regione Lombardia di ulteriori forme e condizioni particolari di autonomia, ai sensi dell'articolo 116, terzo comma, della Costituzione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-22",
-      "url": "https://dati.senato.it/ddl/60556"
-    },
-    {
-      "id": "senato-60546",
-      "titolo": "Delega al Governo per la protezione del processo elettorale a livello locale, regionale e nazionale nonché per l'elezione dei membri del Parlamento europeo spettanti all'Italia",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-22",
-      "url": "https://dati.senato.it/ddl/60546"
-    },
-    {
-      "id": "senato-60558",
-      "titolo": "Attribuzione alla regione Veneto di ulteriori forme e condizioni particolari di autonomia, ai sensi dell'articolo 116, terzo comma, della Costituzione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-22",
-      "url": "https://dati.senato.it/ddl/60558"
-    },
-    {
-      "id": "senato-60542",
-      "titolo": "Modifica all'articolo 14 del testo unico delle disposizioni concernenti la disciplina dell'immigrazione e norme sulla condizione dello straniero, di cui al decreto legislativo 25 luglio 1998, n. 286, in materia di sanzioni per inottemperanza all'ordine di lasciare il territorio dello Stato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-21",
-      "url": "https://dati.senato.it/ddl/60542"
     }
   ]
 }
