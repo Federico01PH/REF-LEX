@@ -1,29 +1,45 @@
 {
-  "generatoIl": "2026-10-29",
+  "generatoIl": "2026-10-30",
   "voci": [
     {
-      "id": "gazzetta-26G00213",
-      "titolo": "DECRETO LEGISLATIVO 28 settembre 2026, n.197: Attuazione della direttiva (UE) 2024/1785 del Parlamento europeo e",
-      "tipo": "gazzetta",
-      "stato": "approvata",
+      "id": "senato-60569",
+      "titolo": "Modifiche al decreto-legge 4 luglio 2006, n. 223, convertito, con modificazioni, dalla legge 4 agosto 2006, n. 248, in materia di orari degli esercizi commerciali, e disposizioni per il contrasto delle pratiche elusive degli obblighi fiscali e contributivi mediante cessazione e riapertura di attività d'impresa",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-29",
+      "url": "https://dati.senato.it/ddl/60569"
+    },
+    {
+      "id": "senato-60570",
+      "titolo": "Modifiche agli articoli 56 e 57 della Costituzione, in materia di rappresentanza parlamentare della Sardegna e della Sicilia, in attuazione del principio di insularità",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-29",
+      "url": "https://dati.senato.it/ddl/60570"
+    },
+    {
+      "id": "senato-60571",
+      "titolo": "Delega al Governo in materia di professioni sanitarie e disposizioni relative alla responsabilità professionale degli esercenti le professioni sanitarie",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-29",
+      "url": "https://dati.senato.it/ddl/60571"
+    },
+    {
+      "id": "senato-60568",
+      "titolo": "Disposizioni in materia di disciplina intertemporale degli incentivi fiscali agli investimenti nelle start-up innovative",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-10-28",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/28/26G00213/SG"
+      "url": "https://dati.senato.it/ddl/60568"
     },
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
-      "tipo": "camera",
+      "id": "senato-60567",
+      "titolo": "Disposizioni concernenti l'obbligo di installazione dei defibrillatori semiautomatici e automatici esterni nelle farmacie e il potenziamento della rete nazionale di geolocalizzazione dei dispositivi salvavita",
+      "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
-    },
-    {
-      "id": "camera-1606",
-      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+      "data": "2026-10-28",
+      "url": "https://dati.senato.it/ddl/60567"
     },
     {
       "id": "senato-60560",
@@ -104,46 +120,6 @@
       "stato": "discussione",
       "data": "2026-10-23",
       "url": "https://dati.senato.it/ddl/60553"
-    },
-    {
-      "id": "senato-60550",
-      "titolo": "Modifica all'articolo 76 del testo unico di cui al decreto del Presidente della Repubblica 30 maggio 2002, n. 115, in materia di patrocinio a spese dello Stato in favore delle persone offese da reati commessi con violazione delle norme per la prevenzione degli infortuni sul lavoro, da cui consegua totale inabilità o decesso",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-23",
-      "url": "https://dati.senato.it/ddl/60550"
-    },
-    {
-      "id": "senato-60552",
-      "titolo": "Ratifica ed esecuzione del Protocollo modificativo tra il Governo della Repubblica italiana e l'Organizzazione Europea di Diritto Pubblico riguardante l'Accordo per lo stabilimento di un Ufficio in Italia, con Allegato, fatto ad Atene il 19 giugno 2025",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-23",
-      "url": "https://dati.senato.it/ddl/60552"
-    },
-    {
-      "id": "senato-60555",
-      "titolo": "Attribuzione alla regione Liguria di ulteriori forme e condizioni particolari di autonomia, ai sensi dell'articolo 116, terzo comma, della Costituzione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-22",
-      "url": "https://dati.senato.it/ddl/60555"
-    },
-    {
-      "id": "senato-60557",
-      "titolo": "Attribuzione alla regione Piemonte di ulteriori forme e condizioni particolari di autonomia, ai sensi dell'articolo 116, terzo comma, della Costituzione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-22",
-      "url": "https://dati.senato.it/ddl/60557"
-    },
-    {
-      "id": "senato-60554",
-      "titolo": "Concessione di un'agevolazione contributiva in favore dei datori di lavoro che erogano mensilità aggiuntive ai lavoratori per ogni figlio nato o adottato, nonché modifica all'articolo 18 della legge 22 maggio 2017, n. 81, in materia di esecuzione del rapporto di lavoro in modalità agile da parte delle lavoratrici e dei lavoratori con figli fino a dodici anni di età o disabili",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-22",
-      "url": "https://dati.senato.it/ddl/60554"
     }
   ]
 }
