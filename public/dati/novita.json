@@ -1,9 +1,65 @@
 {
-  "generatoIl": "2026-10-30",
+  "generatoIl": "2026-10-31",
   "voci": [
     {
+      "id": "gazzetta-26G00217",
+      "titolo": "DECRETO LEGISLATIVO 9 ottobre 2026, n.199: Disposizioni di attuazione dell'articolo 27 della legge 13 giugno",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-30",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/30/26G00217/SG"
+    },
+    {
+      "id": "gazzetta-26A05675",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 15 ottobre 2026: Scioglimento del consiglio comunale di Zambrone e nomina del",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-30",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/30/26A05675/SG"
+    },
+    {
+      "id": "gazzetta-26A05676",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 15 ottobre 2026: Sostituzione del commissario straordinario del consiglio comunale di",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-30",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/30/26A05676/SG"
+    },
+    {
+      "id": "gazzetta-26A05677",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 15 ottobre 2026: Scioglimento del consiglio comunale di Bisenti e nomina del",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-10-30",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/10/30/26A05677/SG"
+    },
+    {
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-30",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+    },
+    {
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-30",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
+    },
+    {
+      "id": "camera-1606",
+      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-10-30",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+    },
+    {
       "id": "senato-60569",
-      "titolo": "Modifiche al decreto-legge 4 luglio 2006, n. 223, convertito, con modificazioni, dalla legge 4 agosto 2006, n. 248, in materia di orari degli esercizi commerciali, e disposizioni per il contrasto delle pratiche elusive degli obblighi fiscali e contributivi mediante cessazione e riapertura di attività d'impresa",
+      "titolo": "Misure per la tutela del commercio di prossimità e per il contrasto alle pratiche elusive realizzate mediante il fenomeno delle partite IVA cosiddette «apri e chiudi»",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-29",
@@ -27,7 +83,7 @@
     },
     {
       "id": "senato-60568",
-      "titolo": "Disposizioni in materia di disciplina intertemporale degli incentivi fiscali agli investimenti nelle start-up innovative",
+      "titolo": "Interpretazione autentica e altre disposizioni in materia di disciplina intertemporale degli incentivi fiscali agli investimenti nelle start-up innovative",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-28",
@@ -104,22 +160,6 @@
       "stato": "discussione",
       "data": "2026-10-27",
       "url": "https://dati.senato.it/ddl/60562"
-    },
-    {
-      "id": "senato-60551",
-      "titolo": "Disposizioni per la tutela e la valorizzazione delle attività commerciali e artigianali negli ambiti di interesse storico, culturale e paesaggistico dei centri storici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-23",
-      "url": "https://dati.senato.it/ddl/60551"
-    },
-    {
-      "id": "senato-60553",
-      "titolo": "Conversione in legge del decreto-legge 23 ottobre 2026, n. 193, recante disposizioni urgenti e misure di sostegno ai settori dell'autotrasporto, dell'agricoltura e della pesca",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-23",
-      "url": "https://dati.senato.it/ddl/60553"
     }
   ]
 }
