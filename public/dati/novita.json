@@ -1,28 +1,20 @@
 {
-  "generatoIl": "2026-11-01",
+  "generatoIl": "2026-11-02",
   "voci": [
     {
-      "id": "camera-1660",
-      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-31",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
-    },
-    {
-      "id": "camera-1606",
-      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-10-31",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+      "data": "2026-11-01",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
       "id": "camera-2355",
       "titolo": "\"Conversione in legge del decreto-legge 11 aprile 2025, n. 48, recante disposizioni urgenti in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-10-31",
+      "data": "2026-11-01",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2355"
     },
     {
