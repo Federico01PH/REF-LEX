@@ -1,22 +1,6 @@
 {
-  "generatoIl": "2026-11-02",
+  "generatoIl": "2026-11-03",
   "voci": [
-    {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-01",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
-    },
-    {
-      "id": "camera-2355",
-      "titolo": "\"Conversione in legge del decreto-legge 11 aprile 2025, n. 48, recante disposizioni urgenti in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-01",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2355"
-    },
     {
       "id": "senato-60569",
       "titolo": "Misure per la tutela del commercio di prossimità e per il contrasto alle pratiche elusive realizzate mediante il fenomeno delle partite IVA cosiddette «apri e chiudi»",
@@ -34,6 +18,14 @@
       "url": "https://dati.senato.it/ddl/60570"
     },
     {
+      "id": "senato-60574",
+      "titolo": "Istituzione della Giornata nazionale del cane guida",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-29",
+      "url": "https://dati.senato.it/ddl/60574"
+    },
+    {
       "id": "senato-60571",
       "titolo": "Delega al Governo in materia di professioni sanitarie e disposizioni relative alla responsabilità professionale degli esercenti le professioni sanitarie",
       "tipo": "senato",
@@ -42,12 +34,36 @@
       "url": "https://dati.senato.it/ddl/60571"
     },
     {
+      "id": "senato-60573",
+      "titolo": "Modifica all'articolo 48 della Costituzione in materia di attribuzione del diritto di elettorato attivo ai cittadini che hanno compiuto il sedicesimo anno di età",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-28",
+      "url": "https://dati.senato.it/ddl/60573"
+    },
+    {
+      "id": "senato-60575",
+      "titolo": "Modifica all'articolo 24 della Costituzione in materia di tutela delle vittime di reato",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-28",
+      "url": "https://dati.senato.it/ddl/60575"
+    },
+    {
       "id": "senato-60568",
       "titolo": "Interpretazione autentica e altre disposizioni in materia di disciplina intertemporale degli incentivi fiscali agli investimenti nelle start-up innovative",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-28",
       "url": "https://dati.senato.it/ddl/60568"
+    },
+    {
+      "id": "senato-60572",
+      "titolo": "Modifica all'articolo 328 del codice penale, in materia di omissione di atti d'ufficio, nonché disposizioni concernenti l'accertamento delle responsabilità nell'ambito dei procedimenti amministrativi e delega al Governo per la razionalizzazione del regime sanzionatorio",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-28",
+      "url": "https://dati.senato.it/ddl/60572"
     },
     {
       "id": "senato-60567",
@@ -104,38 +120,6 @@
       "stato": "discussione",
       "data": "2026-10-27",
       "url": "https://dati.senato.it/ddl/60564"
-    },
-    {
-      "id": "senato-60566",
-      "titolo": "Istituzione del Servizio nazionale sportivo e disposizioni concernenti la determinazione dei livelli essenziali delle prestazioni volte a garantire il diritto di accesso alla pratica sportiva",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://dati.senato.it/ddl/60566"
-    },
-    {
-      "id": "senato-60562",
-      "titolo": "Istituzione della Giornata nazionale del cane guida e del cane di assistenza",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://dati.senato.it/ddl/60562"
-    },
-    {
-      "id": "senato-60551",
-      "titolo": "Disposizioni per la tutela e la valorizzazione delle attività commerciali e artigianali negli ambiti di interesse storico, culturale e paesaggistico dei centri storici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-23",
-      "url": "https://dati.senato.it/ddl/60551"
-    },
-    {
-      "id": "senato-60553",
-      "titolo": "Conversione in legge del decreto-legge 23 ottobre 2026, n. 193, recante disposizioni urgenti e misure di sostegno ai settori dell'autotrasporto, dell'agricoltura e della pesca",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-23",
-      "url": "https://dati.senato.it/ddl/60553"
     }
   ]
 }
