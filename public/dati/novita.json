@@ -1,6 +1,38 @@
 {
-  "generatoIl": "2026-11-03",
+  "generatoIl": "2026-11-04",
   "voci": [
+    {
+      "id": "camera-1687",
+      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-02",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
+    },
+    {
+      "id": "camera-1718",
+      "titolo": "S. 808. - \"Modifiche al codice penale, al codice di procedura penale, all’ordinamento giudiziario e al codice dell’ordinamento militare\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-02",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1718"
+    },
+    {
+      "id": "senato-60576",
+      "titolo": "Disposizioni per la prevenzione del burnout e per la tutela del benessere psico-fisico nella professione forense",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-02",
+      "url": "https://dati.senato.it/ddl/60576"
+    },
+    {
+      "id": "senato-60577",
+      "titolo": "Bilancio di previsione dello Stato per l'anno finanziario 2027 e bilancio pluriennale per il triennio 2027-2029",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-30",
+      "url": "https://dati.senato.it/ddl/60577"
+    },
     {
       "id": "senato-60569",
       "titolo": "Misure per la tutela del commercio di prossimità e per il contrasto alle pratiche elusive realizzate mediante il fenomeno delle partite IVA cosiddette «apri e chiudi»",
@@ -104,22 +136,6 @@
       "stato": "discussione",
       "data": "2026-10-27",
       "url": "https://dati.senato.it/ddl/60563"
-    },
-    {
-      "id": "senato-60565",
-      "titolo": "Modifica dell'articolo 15 del decreto-legge 25 giugno 2008, n. 112, convertito, con modificazioni, dalla legge 6 agosto 2008, n. 133, in materia di adozione di libri scolastici provvisti di versione digitale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://dati.senato.it/ddl/60565"
-    },
-    {
-      "id": "senato-60564",
-      "titolo": "Introduzione dell'articolo 219-ter del decreto legislativo 3 aprile 2006, n. 152, e altre disposizioni concernenti il sistema nazionale di deposito cauzionale e restituzione degli imballaggi monouso per bevande, la tutela degli utilizzatori e la verifica indipendente dei dati",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://dati.senato.it/ddl/60564"
     }
   ]
 }
