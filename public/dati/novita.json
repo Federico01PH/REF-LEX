@@ -1,21 +1,29 @@
 {
-  "generatoIl": "2026-11-04",
+  "generatoIl": "2026-11-05",
   "voci": [
     {
-      "id": "camera-1687",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Governo della Malaysia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "id": "camera-2355",
+      "titolo": "\"Conversione in legge del decreto-legge 11 aprile 2025, n. 48, recante disposizioni urgenti in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-02",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1687"
+      "data": "2026-11-04",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2355"
     },
     {
-      "id": "camera-1718",
-      "titolo": "S. 808. - \"Modifiche al codice penale, al codice di procedura penale, all’ordinamento giudiziario e al codice dell’ordinamento militare\" (approvato dal Senato)",
+      "id": "camera-2393",
+      "titolo": "S. 1192. - \"Misure per la semplificazione normativa e il miglioramento della qualità della normazione e deleghe al Governo per la semplificazione, il riordino e il riassetto in determinate materie\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-02",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1718"
+      "data": "2026-11-04",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2393"
+    },
+    {
+      "id": "senato-60579",
+      "titolo": "Delega al Governo per l'istituzione del Sistema nazionale per la resilienza democratica e per il contrasto alle manipolazioni informative e alle ingerenze straniere",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-03",
+      "url": "https://dati.senato.it/ddl/60579"
     },
     {
       "id": "senato-60576",
@@ -32,6 +40,14 @@
       "stato": "discussione",
       "data": "2026-10-30",
       "url": "https://dati.senato.it/ddl/60577"
+    },
+    {
+      "id": "senato-60578",
+      "titolo": "Istituzione del servizio civile volontario delle persone anziane",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-30",
+      "url": "https://dati.senato.it/ddl/60578"
     },
     {
       "id": "senato-60569",
@@ -107,7 +123,7 @@
     },
     {
       "id": "senato-60560",
-      "titolo": "Riforma della fiscalità delle grandi attività finanziarie",
+      "titolo": "Riforma della fiscalità delle grandi attività finanziarie e istituzione del Fondo taglia tasse su lavoro e imprese",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-10-27",
@@ -120,22 +136,6 @@
       "stato": "discussione",
       "data": "2026-10-27",
       "url": "https://dati.senato.it/ddl/60559"
-    },
-    {
-      "id": "senato-60561",
-      "titolo": "Delega al Governo in materia di valutazione, revisione e razionalizzazione dei sussidi e degli incentivi alle imprese, e destinazione delle risorse conseguite alla riduzione del costo del lavoro",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://dati.senato.it/ddl/60561"
-    },
-    {
-      "id": "senato-60563",
-      "titolo": "Concessione di agevolazioni tributarie e contributive per l'erogazione di mensilità aggiuntive della retribuzione per ogni figlio nato o adottato, nonché modifica all'articolo 18 della legge 22 maggio 2017, n. 81, in materia di esecuzione del rapporto di lavoro in modalità agile da parte delle lavoratrici e dei lavoratori con figli fino a dodici anni di età o disabili",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://dati.senato.it/ddl/60563"
     }
   ]
 }
