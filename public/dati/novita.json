@@ -1,21 +1,37 @@
 {
-  "generatoIl": "2026-11-05",
+  "generatoIl": "2026-11-06",
   "voci": [
     {
-      "id": "camera-2355",
-      "titolo": "\"Conversione in legge del decreto-legge 11 aprile 2025, n. 48, recante disposizioni urgenti in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "id": "camera-2196",
+      "titolo": "S. 1315. - \"Conversione in legge, con modificazioni, del decreto-legge 29 novembre 2024, n. 178, recante misure urgenti in materia di giustizia\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-04",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2355"
+      "data": "2026-11-05",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2196"
     },
     {
       "id": "camera-2393",
       "titolo": "S. 1192. - \"Misure per la semplificazione normativa e il miglioramento della qualità della normazione e deleghe al Governo per la semplificazione, il riordino e il riassetto in determinate materie\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-04",
+      "data": "2026-11-05",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2393"
+    },
+    {
+      "id": "camera-2416",
+      "titolo": "\"Conversione in legge del decreto-legge 21 maggio 2025, n. 73, recante misure urgenti per garantire la continuità nella realizzazione di infrastrutture strategiche e nella gestione di contratti pubblici, il corretto funzionamento del sistema di trasporti ferroviari e su strada, l’ordinata gestione del demanio portuale e marittimo, nonché l’attuazione di indifferibili adempimenti connessi al Piano nazionale di ripresa e resilienza e alla partecipazione all’Unione europea in materia di infrastrutture e trasporti\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-05",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2416"
+    },
+    {
+      "id": "senato-60580",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 17 settembre 2026, n. 162, recante disposizioni urgenti per il sostegno economico e il contenimento degli effetti derivanti dal perdurante aumento del costo dei carburanti, nonché in materia fiscale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-05",
+      "url": "https://dati.senato.it/ddl/60580"
     },
     {
       "id": "senato-60579",
@@ -128,14 +144,6 @@
       "stato": "discussione",
       "data": "2026-10-27",
       "url": "https://dati.senato.it/ddl/60560"
-    },
-    {
-      "id": "senato-60559",
-      "titolo": "Disposizioni per l'accelerazione degli investimenti produttivi e il sostegno alle aree di transizione industriale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://dati.senato.it/ddl/60559"
     }
   ]
 }
