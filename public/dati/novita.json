@@ -1,29 +1,37 @@
 {
-  "generatoIl": "2026-11-06",
+  "generatoIl": "2026-11-07",
   "voci": [
     {
-      "id": "camera-2196",
-      "titolo": "S. 1315. - \"Conversione in legge, con modificazioni, del decreto-legge 29 novembre 2024, n. 178, recante misure urgenti in materia di giustizia\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-05",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2196"
+      "id": "gazzetta-26G00223",
+      "titolo": "DECRETO-LEGGE 6 novembre 2026, n.200: Misure urgenti per assicurare la continuita' delle funzioni",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-11-06",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/06/26G00223/SG"
     },
     {
-      "id": "camera-2393",
-      "titolo": "S. 1192. - \"Misure per la semplificazione normativa e il miglioramento della qualità della normazione e deleghe al Governo per la semplificazione, il riordino e il riassetto in determinate materie\" (approvato dal Senato)",
+      "id": "camera-1606",
+      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-05",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2393"
+      "data": "2026-11-06",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
     },
     {
-      "id": "camera-2416",
-      "titolo": "\"Conversione in legge del decreto-legge 21 maggio 2025, n. 73, recante misure urgenti per garantire la continuità nella realizzazione di infrastrutture strategiche e nella gestione di contratti pubblici, il corretto funzionamento del sistema di trasporti ferroviari e su strada, l’ordinata gestione del demanio portuale e marittimo, nonché l’attuazione di indifferibili adempimenti connessi al Piano nazionale di ripresa e resilienza e alla partecipazione all’Unione europea in materia di infrastrutture e trasporti\"",
+      "id": "camera-1194",
+      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-05",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2416"
+      "data": "2026-11-06",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+    },
+    {
+      "id": "senato-60590",
+      "titolo": "Conversione in legge del decreto-legge 6 novembre 2026, n. 200, recante misure urgenti per assicurare la continuità delle funzioni dell'Autorità nazionale anticorruzione (ANAC)",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-06",
+      "url": "https://dati.senato.it/ddl/60590"
     },
     {
       "id": "senato-60580",
@@ -32,6 +40,38 @@
       "stato": "discussione",
       "data": "2026-11-05",
       "url": "https://dati.senato.it/ddl/60580"
+    },
+    {
+      "id": "senato-60587",
+      "titolo": "Riconoscimento dell'endometriosi come malattia cronica e invalidante nonché disposizioni per la diagnosi precoce e la cura, la tutela della fertilità e l'assistenza integrata delle donne che ne sono affette",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-04",
+      "url": "https://dati.senato.it/ddl/60587"
+    },
+    {
+      "id": "senato-60586",
+      "titolo": "Modifiche alla legge 2 aprile 1958, n. 339, in materia di tutela del lavoro domestico",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-04",
+      "url": "https://dati.senato.it/ddl/60586"
+    },
+    {
+      "id": "senato-60588",
+      "titolo": "\"Cieli blu\". Divieto di modifica delle condizioni meteorologiche (geoingegneria)",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-04",
+      "url": "https://dati.senato.it/ddl/60588"
+    },
+    {
+      "id": "senato-60589",
+      "titolo": "Modifiche all'articolo 38 della Costituzione in materia di diritti delle persone con disabilità",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-04",
+      "url": "https://dati.senato.it/ddl/60589"
     },
     {
       "id": "senato-60579",
@@ -48,6 +88,38 @@
       "stato": "discussione",
       "data": "2026-11-02",
       "url": "https://dati.senato.it/ddl/60576"
+    },
+    {
+      "id": "senato-60582",
+      "titolo": "Bilancio di previsione dello Stato per l'anno finanziario 2027 e bilancio pluriennale per il triennio 2027-2029",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-30",
+      "url": "https://dati.senato.it/ddl/60582"
+    },
+    {
+      "id": "senato-60583",
+      "titolo": "Disposizioni in materia di documento riepilogativo delle informazioni riguardanti le prestazioni sanitarie eseguite",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-30",
+      "url": "https://dati.senato.it/ddl/60583"
+    },
+    {
+      "id": "senato-60585",
+      "titolo": "Modifiche alla legge 18 marzo 2025, n. 40, in materia di ricostruzione post-calamità",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-30",
+      "url": "https://dati.senato.it/ddl/60585"
+    },
+    {
+      "id": "senato-60584",
+      "titolo": "Modifiche all'articolo 15 del decreto-legge 25 giugno 2008, n. 112, convertito, con modificazioni, dalla legge 6 agosto 2008, n. 133, e altre disposizioni in materia di versione digitale stampabile dei libri di testo scolastici e universitari",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-10-30",
+      "url": "https://dati.senato.it/ddl/60584"
     },
     {
       "id": "senato-60577",
@@ -72,78 +144,6 @@
       "stato": "discussione",
       "data": "2026-10-29",
       "url": "https://dati.senato.it/ddl/60569"
-    },
-    {
-      "id": "senato-60570",
-      "titolo": "Modifiche agli articoli 56 e 57 della Costituzione, in materia di rappresentanza parlamentare della Sardegna e della Sicilia, in attuazione del principio di insularità",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-29",
-      "url": "https://dati.senato.it/ddl/60570"
-    },
-    {
-      "id": "senato-60574",
-      "titolo": "Istituzione della Giornata nazionale del cane guida",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-29",
-      "url": "https://dati.senato.it/ddl/60574"
-    },
-    {
-      "id": "senato-60571",
-      "titolo": "Delega al Governo in materia di professioni sanitarie e disposizioni relative alla responsabilità professionale degli esercenti le professioni sanitarie",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-29",
-      "url": "https://dati.senato.it/ddl/60571"
-    },
-    {
-      "id": "senato-60573",
-      "titolo": "Modifica all'articolo 48 della Costituzione in materia di attribuzione del diritto di elettorato attivo ai cittadini che hanno compiuto il sedicesimo anno di età",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-28",
-      "url": "https://dati.senato.it/ddl/60573"
-    },
-    {
-      "id": "senato-60575",
-      "titolo": "Modifica all'articolo 24 della Costituzione in materia di tutela delle vittime di reato",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-28",
-      "url": "https://dati.senato.it/ddl/60575"
-    },
-    {
-      "id": "senato-60568",
-      "titolo": "Interpretazione autentica e altre disposizioni in materia di disciplina intertemporale degli incentivi fiscali agli investimenti nelle start-up innovative",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-28",
-      "url": "https://dati.senato.it/ddl/60568"
-    },
-    {
-      "id": "senato-60572",
-      "titolo": "Modifica all'articolo 328 del codice penale, in materia di omissione di atti d'ufficio, nonché disposizioni concernenti l'accertamento delle responsabilità nell'ambito dei procedimenti amministrativi e delega al Governo per la razionalizzazione del regime sanzionatorio",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-28",
-      "url": "https://dati.senato.it/ddl/60572"
-    },
-    {
-      "id": "senato-60567",
-      "titolo": "Disposizioni concernenti l'obbligo di installazione dei defibrillatori semiautomatici e automatici esterni nelle farmacie e il potenziamento della rete nazionale di geolocalizzazione dei dispositivi salvavita",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-28",
-      "url": "https://dati.senato.it/ddl/60567"
-    },
-    {
-      "id": "senato-60560",
-      "titolo": "Riforma della fiscalità delle grandi attività finanziarie e istituzione del Fondo taglia tasse su lavoro e imprese",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-27",
-      "url": "https://dati.senato.it/ddl/60560"
     }
   ]
 }
