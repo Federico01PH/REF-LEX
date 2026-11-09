@@ -1,37 +1,21 @@
 {
-  "generatoIl": "2026-11-08",
+  "generatoIl": "2026-11-09",
   "voci": [
-    {
-      "id": "camera-1747",
-      "titolo": "CARFAGNA ed altri: \"Disposizioni in favore delle donne vittime di violenza di genere\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-07",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1747"
-    },
-    {
-      "id": "camera-1598",
-      "titolo": "SERGIO COSTA: \"Disposizioni concernenti l’eliminazione di sussidi ambientalmente dannosi e delega al Governo per il riordino del sistema degli incentivi destinati al settore energetico\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-07",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1598"
-    },
-    {
-      "id": "camera-1601",
-      "titolo": "S. 912. - \"Conversione in legge, con modificazioni, del decreto-legge 18 ottobre 2023, n. 145, recante misure urgenti in materia economica e fiscale, in favore degli enti territoriali, a tutela del lavoro e per esigenze indifferibili\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-07",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1601"
-    },
     {
       "id": "camera-1194",
       "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-07",
+      "data": "2026-11-08",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+    },
+    {
+      "id": "camera-1238",
+      "titolo": "S. 685. - \"Conversione in legge, con modificazioni, del decreto-legge 4 maggio 2023, n. 48, recante misure urgenti per l’inclusione sociale e l’accesso al mondo del lavoro\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-08",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1238"
     },
     {
       "id": "senato-60590",
