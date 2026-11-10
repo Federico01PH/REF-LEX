@@ -1,21 +1,37 @@
 {
-  "generatoIl": "2026-11-09",
+  "generatoIl": "2026-11-10",
   "voci": [
     {
-      "id": "camera-1194",
-      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-08",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+      "id": "gazzetta-26G00218",
+      "titolo": "LEGGE 29 ottobre 2026, n.201: Modifica al codice di cui al decreto legislativo 30 giugno 2003, n",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-11-09",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/09/26G00218/SG"
     },
     {
-      "id": "camera-1238",
-      "titolo": "S. 685. - \"Conversione in legge, con modificazioni, del decreto-legge 4 maggio 2023, n. 48, recante misure urgenti per l’inclusione sociale e l’accesso al mondo del lavoro\" (approvato dal Senato)",
+      "id": "gazzetta-26G00222",
+      "titolo": "LEGGE 6 novembre 2026, n.202: Conversione in legge, con modificazioni, del decreto-legge 10",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-11-09",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/09/26G00222/SG"
+    },
+    {
+      "id": "camera-1606",
+      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-08",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1238"
+      "data": "2026-11-09",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+    },
+    {
+      "id": "camera-2416",
+      "titolo": "\"Conversione in legge del decreto-legge 21 maggio 2025, n. 73, recante misure urgenti per garantire la continuità nella realizzazione di infrastrutture strategiche e nella gestione di contratti pubblici, il corretto funzionamento del sistema di trasporti ferroviari e su strada, l’ordinata gestione del demanio portuale e marittimo, nonché l’attuazione di indifferibili adempimenti connessi al Piano nazionale di ripresa e resilienza e alla partecipazione all’Unione europea in materia di infrastrutture e trasporti\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-09",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2416"
     },
     {
       "id": "senato-60590",
