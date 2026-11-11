@@ -1,37 +1,69 @@
 {
-  "generatoIl": "2026-11-10",
+  "generatoIl": "2026-11-11",
   "voci": [
     {
-      "id": "gazzetta-26G00218",
-      "titolo": "LEGGE 29 ottobre 2026, n.201: Modifica al codice di cui al decreto legislativo 30 giugno 2003, n",
+      "id": "gazzetta-26G00219",
+      "titolo": "LEGGE 29 ottobre 2026, n.203: Modifiche al decreto del Presidente della Repubblica 30 settembre",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-11-09",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/09/26G00218/SG"
+      "data": "2026-11-10",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/10/26G00219/SG"
     },
     {
-      "id": "gazzetta-26G00222",
-      "titolo": "LEGGE 6 novembre 2026, n.202: Conversione in legge, con modificazioni, del decreto-legge 10",
+      "id": "gazzetta-26A05850",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 22 ottobre 2026: Scioglimento del consiglio comunale di Carolei e nomina del",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-11-09",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/09/26G00222/SG"
+      "data": "2026-11-10",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/10/26A05850/SG"
     },
     {
-      "id": "camera-1606",
-      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-09",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+      "id": "gazzetta-26A05851",
+      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 22 ottobre 2026: Scioglimento del consiglio comunale di Lusernetta",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-11-10",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/10/26A05851/SG"
     },
     {
-      "id": "camera-2416",
-      "titolo": "\"Conversione in legge del decreto-legge 21 maggio 2025, n. 73, recante misure urgenti per garantire la continuità nella realizzazione di infrastrutture strategiche e nella gestione di contratti pubblici, il corretto funzionamento del sistema di trasporti ferroviari e su strada, l’ordinata gestione del demanio portuale e marittimo, nonché l’attuazione di indifferibili adempimenti connessi al Piano nazionale di ripresa e resilienza e alla partecipazione all’Unione europea in materia di infrastrutture e trasporti\"",
+      "id": "camera-1194",
+      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
+      "data": "2026-11-10",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+    },
+    {
+      "id": "camera-1195",
+      "titolo": "S. 660. - \"Conversione in legge, con modificazioni, del decreto-legge 14 aprile 2023, n. 39, recante disposizioni urgenti per il contrasto della scarsità idrica e per il potenziamento e l'adeguamento delle infrastrutture idriche\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-10",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1195"
+    },
+    {
+      "id": "senato-60594",
+      "titolo": "Disposizioni fiscali in materia di negoziazioni algoritmiche ad alta frequenza (HFT) e riduzione delle imposte su lavoro e imprese",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-10",
+      "url": "https://dati.senato.it/ddl/60594"
+    },
+    {
+      "id": "senato-60595",
+      "titolo": "Disposizioni per maggiori tutele economiche e normative a favore dei lavoratori e lavoratrici in appalto e per più salute e sicurezza nei luoghi di lavoro",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-10",
+      "url": "https://dati.senato.it/ddl/60595"
+    },
+    {
+      "id": "senato-60593",
+      "titolo": "Disposizioni per rendere effettivo il diritto alla salute mediante il rafforzamento del Servizio Sanitario Nazionale e la valorizzazione del personale",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-11-09",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2416"
+      "url": "https://dati.senato.it/ddl/60593"
     },
     {
       "id": "senato-60590",
@@ -40,6 +72,22 @@
       "stato": "discussione",
       "data": "2026-11-06",
       "url": "https://dati.senato.it/ddl/60590"
+    },
+    {
+      "id": "senato-60591",
+      "titolo": "Modifiche al codice delle assicurazioni private, di cui al decreto legislativo 7 settembre 2005, n. 209, in materia di riequilibrio territoriale dei premi dell'assicurazione obbligatoria per la responsabilità civile derivante dalla circolazione dei veicoli a motore",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-06",
+      "url": "https://dati.senato.it/ddl/60591"
+    },
+    {
+      "id": "senato-60592",
+      "titolo": "Disposizioni per il rafforzamento del decoro urbano e il contrasto di trattenimenti illeciti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-05",
+      "url": "https://dati.senato.it/ddl/60592"
     },
     {
       "id": "senato-60580",
@@ -112,46 +160,6 @@
       "stato": "discussione",
       "data": "2026-10-30",
       "url": "https://dati.senato.it/ddl/60583"
-    },
-    {
-      "id": "senato-60585",
-      "titolo": "Modifiche alla legge 18 marzo 2025, n. 40, in materia di ricostruzione post-calamità",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-30",
-      "url": "https://dati.senato.it/ddl/60585"
-    },
-    {
-      "id": "senato-60584",
-      "titolo": "Modifiche all'articolo 15 del decreto-legge 25 giugno 2008, n. 112, convertito, con modificazioni, dalla legge 6 agosto 2008, n. 133, e altre disposizioni in materia di versione digitale stampabile dei libri di testo scolastici e universitari",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-30",
-      "url": "https://dati.senato.it/ddl/60584"
-    },
-    {
-      "id": "senato-60577",
-      "titolo": "Bilancio di previsione dello Stato per l'anno finanziario 2027 e bilancio pluriennale per il triennio 2027-2029",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-30",
-      "url": "https://dati.senato.it/ddl/60577"
-    },
-    {
-      "id": "senato-60578",
-      "titolo": "Istituzione del servizio civile volontario delle persone anziane",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-30",
-      "url": "https://dati.senato.it/ddl/60578"
-    },
-    {
-      "id": "senato-60569",
-      "titolo": "Misure per la tutela del commercio di prossimità e per il contrasto alle pratiche elusive realizzate mediante il fenomeno delle partite IVA cosiddette «apri e chiudi»",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-29",
-      "url": "https://dati.senato.it/ddl/60569"
     }
   ]
 }
