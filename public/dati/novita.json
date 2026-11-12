@@ -1,45 +1,45 @@
 {
-  "generatoIl": "2026-11-11",
+  "generatoIl": "2026-11-12",
   "voci": [
     {
-      "id": "gazzetta-26G00219",
-      "titolo": "LEGGE 29 ottobre 2026, n.203: Modifiche al decreto del Presidente della Repubblica 30 settembre",
+      "id": "gazzetta-26G00220",
+      "titolo": "LEGGE 29 ottobre 2026, n.204: Ratifica ed esecuzione dei Trattati di estradizione, trasferimento",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-11-10",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/10/26G00219/SG"
+      "data": "2026-11-11",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00220/SG"
     },
     {
-      "id": "gazzetta-26A05850",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 22 ottobre 2026: Scioglimento del consiglio comunale di Carolei e nomina del",
+      "id": "gazzetta-26G00225",
+      "titolo": "DECRETO-LEGGE 11 novembre 2026, n.205: Piano straordinario per i Campi Flegrei nonche' ulteriori",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-11-10",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/10/26A05850/SG"
+      "data": "2026-11-11",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
     },
     {
-      "id": "gazzetta-26A05851",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 22 ottobre 2026: Scioglimento del consiglio comunale di Lusernetta",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-11-10",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/10/26A05851/SG"
+      "id": "camera-1114",
+      "titolo": "\"Conversione in legge del decreto-legge 22 aprile 2023, n. 44, recante disposizioni urgenti per il rafforzamento della capacità amministrativa delle amministrazioni pubbliche\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-11",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1114"
     },
     {
       "id": "camera-1194",
       "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-10",
+      "data": "2026-11-11",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
     },
     {
-      "id": "camera-1195",
-      "titolo": "S. 660. - \"Conversione in legge, con modificazioni, del decreto-legge 14 aprile 2023, n. 39, recante disposizioni urgenti per il contrasto della scarsità idrica e per il potenziamento e l'adeguamento delle infrastrutture idriche\" (approvato dal Senato)",
-      "tipo": "camera",
+      "id": "senato-60596",
+      "titolo": "Conversione in legge del decreto-legge 28 settembre 2026, n. 167, recante misure urgenti per la circolazione dei veicoli ad alimentazione diesel appartenenti alla categoria ambientale «EURO 5»",
+      "tipo": "senato",
       "stato": "discussione",
-      "data": "2026-11-10",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1195"
+      "data": "2026-11-11",
+      "url": "https://dati.senato.it/ddl/60596"
     },
     {
       "id": "senato-60594",
@@ -152,14 +152,6 @@
       "stato": "discussione",
       "data": "2026-10-30",
       "url": "https://dati.senato.it/ddl/60582"
-    },
-    {
-      "id": "senato-60583",
-      "titolo": "Disposizioni in materia di documento riepilogativo delle informazioni riguardanti le prestazioni sanitarie eseguite",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-30",
-      "url": "https://dati.senato.it/ddl/60583"
     }
   ]
 }
