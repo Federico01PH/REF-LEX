@@ -1,37 +1,37 @@
 {
-  "generatoIl": "2026-11-12",
+  "generatoIl": "2026-11-13",
   "voci": [
     {
-      "id": "gazzetta-26G00220",
-      "titolo": "LEGGE 29 ottobre 2026, n.204: Ratifica ed esecuzione dei Trattati di estradizione, trasferimento",
+      "id": "gazzetta-26G00221",
+      "titolo": "LEGGE 29 ottobre 2026, n.206: Disposizioni in materia di giovani e servizio civile universale e",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-11-11",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00220/SG"
+      "data": "2026-11-12",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/12/26G00221/SG"
     },
     {
-      "id": "gazzetta-26G00225",
-      "titolo": "DECRETO-LEGGE 11 novembre 2026, n.205: Piano straordinario per i Campi Flegrei nonche' ulteriori",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-11-11",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/11/26G00225/SG"
-    },
-    {
-      "id": "camera-1114",
-      "titolo": "\"Conversione in legge del decreto-legge 22 aprile 2023, n. 44, recante disposizioni urgenti per il rafforzamento della capacità amministrativa delle amministrazioni pubbliche\"",
+      "id": "camera-2150",
+      "titolo": "S. 1274. - \"Conversione in legge, con modificazioni, del decreto-legge 19 ottobre 2024, n. 155, recante misure urgenti in materia economica e fiscale e in favore degli enti territoriali\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-11",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1114"
+      "data": "2026-11-12",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2150"
     },
     {
       "id": "camera-1194",
       "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-11",
+      "data": "2026-11-12",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+    },
+    {
+      "id": "senato-60599",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 29 settembre 2026, n. 168, recante misure urgenti in materia di giustizia, di funzionalità del Ministero dell'interno e di impianti di interesse strategico nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-12",
+      "url": "https://dati.senato.it/ddl/60599"
     },
     {
       "id": "senato-60596",
@@ -40,6 +40,14 @@
       "stato": "discussione",
       "data": "2026-11-11",
       "url": "https://dati.senato.it/ddl/60596"
+    },
+    {
+      "id": "senato-60598",
+      "titolo": "Conversione in legge del decreto-legge 11 novembre 2026, n. 205, recante piano straordinario per i Campi Flegrei nonché ulteriori disposizioni urgenti di protezione civile",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-11",
+      "url": "https://dati.senato.it/ddl/60598"
     },
     {
       "id": "senato-60594",
@@ -56,6 +64,14 @@
       "stato": "discussione",
       "data": "2026-11-10",
       "url": "https://dati.senato.it/ddl/60595"
+    },
+    {
+      "id": "senato-60597",
+      "titolo": "Modifiche al testo unico di cui al decreto del Presidente della Repubblica 30 maggio 2002, n. 115, e al decreto legislativo 1° settembre 2011, n. 150, in materia di termine per l'opposizione al decreto di pagamento delle spese di giustizia",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-10",
+      "url": "https://dati.senato.it/ddl/60597"
     },
     {
       "id": "senato-60593",
@@ -128,30 +144,6 @@
       "stato": "discussione",
       "data": "2026-11-04",
       "url": "https://dati.senato.it/ddl/60589"
-    },
-    {
-      "id": "senato-60579",
-      "titolo": "Delega al Governo per l'istituzione del Sistema nazionale per la resilienza democratica e per il contrasto alle manipolazioni informative e alle ingerenze straniere",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-03",
-      "url": "https://dati.senato.it/ddl/60579"
-    },
-    {
-      "id": "senato-60576",
-      "titolo": "Disposizioni per la prevenzione del burnout e per la tutela del benessere psico-fisico nella professione forense",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-02",
-      "url": "https://dati.senato.it/ddl/60576"
-    },
-    {
-      "id": "senato-60582",
-      "titolo": "Bilancio di previsione dello Stato per l'anno finanziario 2027 e bilancio pluriennale per il triennio 2027-2029",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-10-30",
-      "url": "https://dati.senato.it/ddl/60582"
     }
   ]
 }
