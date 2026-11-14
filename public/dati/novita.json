@@ -1,29 +1,45 @@
 {
-  "generatoIl": "2026-11-13",
+  "generatoIl": "2026-11-14",
   "voci": [
     {
-      "id": "gazzetta-26G00221",
-      "titolo": "LEGGE 29 ottobre 2026, n.206: Disposizioni in materia di giovani e servizio civile universale e",
+      "id": "gazzetta-26G00227",
+      "titolo": "DECRETO-LEGGE 13 novembre 2026, n.207: Disposizioni urgenti per la riduzione del costo dell'energia",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-11-12",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/12/26G00221/SG"
+      "data": "2026-11-13",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/13/26G00227/SG"
     },
     {
-      "id": "camera-2150",
-      "titolo": "S. 1274. - \"Conversione in legge, con modificazioni, del decreto-legge 19 ottobre 2024, n. 155, recante misure urgenti in materia economica e fiscale e in favore degli enti territoriali\" (approvato dal Senato)",
+      "id": "camera-3131",
+      "titolo": "S. 2023. - \"Conversione in legge, con modificazioni, del decreto-legge 28 agosto 2026, n. 154, recante misure urgenti per assicurare la continuità operativa di impianti di interesse strategico nazionale\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-12",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2150"
+      "data": "2026-11-13",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=3131"
     },
     {
-      "id": "camera-1194",
-      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "id": "camera-3121",
+      "titolo": "\"Conversione in legge del decreto-legge 29 settembre 2026, n. 168, recante misure urgenti in materia di giustizia, di funzionalità del Ministero dell’interno e di impianti di interesse strategico nazionale\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-12",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+      "data": "2026-11-13",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=3121"
+    },
+    {
+      "id": "camera-2900",
+      "titolo": "\"Ratifica ed esecuzione dei Trattati di estradizione e sul trasferimento di persone condannate tra la Repubblica italiana e la Repubblica kirghisa, fatti a Roma il 3 ottobre 2024\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-13",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2900"
+    },
+    {
+      "id": "senato-60604",
+      "titolo": "Conversione in legge del decreto-legge 13 novembre 2026, n. 207, recante disposizioni urgenti per la riduzione del costo dell'energia elettrica e del gas",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-13",
+      "url": "https://dati.senato.it/ddl/60604"
     },
     {
       "id": "senato-60599",
@@ -42,12 +58,36 @@
       "url": "https://dati.senato.it/ddl/60596"
     },
     {
+      "id": "senato-60601",
+      "titolo": "Disposizioni per la bonifica delle valanghe mediante distacco artificiale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-11",
+      "url": "https://dati.senato.it/ddl/60601"
+    },
+    {
       "id": "senato-60598",
       "titolo": "Conversione in legge del decreto-legge 11 novembre 2026, n. 205, recante piano straordinario per i Campi Flegrei nonché ulteriori disposizioni urgenti di protezione civile",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-11-11",
       "url": "https://dati.senato.it/ddl/60598"
+    },
+    {
+      "id": "senato-60600",
+      "titolo": "Disposizioni per la celebrazione del trentesimo anniversario della morte di Giuseppe Dossetti",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-11",
+      "url": "https://dati.senato.it/ddl/60600"
+    },
+    {
+      "id": "senato-60603",
+      "titolo": "Disposizioni per la bonifica delle valanghe mediante distacco artificiale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-11",
+      "url": "https://dati.senato.it/ddl/60603"
     },
     {
       "id": "senato-60594",
@@ -72,6 +112,14 @@
       "stato": "discussione",
       "data": "2026-11-10",
       "url": "https://dati.senato.it/ddl/60597"
+    },
+    {
+      "id": "senato-60602",
+      "titolo": "Disposizioni per il rafforzamento del Percorso Lilla per l'accoglienza e la presa in carico delle persone con disturbi della nutrizione e dell'alimentazione nei servizi di emergenza-urgenza e per la continuità assistenziale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-10",
+      "url": "https://dati.senato.it/ddl/60602"
     },
     {
       "id": "senato-60593",
@@ -104,46 +152,6 @@
       "stato": "discussione",
       "data": "2026-11-05",
       "url": "https://dati.senato.it/ddl/60592"
-    },
-    {
-      "id": "senato-60580",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 17 settembre 2026, n. 162, recante disposizioni urgenti per il sostegno economico e il contenimento degli effetti derivanti dal perdurante aumento del costo dei carburanti, nonché in materia fiscale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-05",
-      "url": "https://dati.senato.it/ddl/60580"
-    },
-    {
-      "id": "senato-60587",
-      "titolo": "Riconoscimento dell'endometriosi come malattia cronica e invalidante nonché disposizioni per la diagnosi precoce e la cura, la tutela della fertilità e l'assistenza integrata delle donne che ne sono affette",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-04",
-      "url": "https://dati.senato.it/ddl/60587"
-    },
-    {
-      "id": "senato-60586",
-      "titolo": "Modifiche alla legge 2 aprile 1958, n. 339, in materia di tutela del lavoro domestico",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-04",
-      "url": "https://dati.senato.it/ddl/60586"
-    },
-    {
-      "id": "senato-60588",
-      "titolo": "\"Cieli blu\". Divieto di modifica delle condizioni meteorologiche (geoingegneria)",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-04",
-      "url": "https://dati.senato.it/ddl/60588"
-    },
-    {
-      "id": "senato-60589",
-      "titolo": "Modifiche all'articolo 38 della Costituzione in materia di diritti delle persone con disabilità",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-04",
-      "url": "https://dati.senato.it/ddl/60589"
     }
   ]
 }
