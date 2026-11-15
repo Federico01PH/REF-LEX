@@ -1,37 +1,29 @@
 {
-  "generatoIl": "2026-11-14",
+  "generatoIl": "2026-11-15",
   "voci": [
     {
-      "id": "gazzetta-26G00227",
-      "titolo": "DECRETO-LEGGE 13 novembre 2026, n.207: Disposizioni urgenti per la riduzione del costo dell'energia",
+      "id": "gazzetta-26G00224",
+      "titolo": "DECRETO LEGISLATIVO 2 novembre 2026, n.208: Attuazione della direttiva (UE) 2024/2831 del Parlamento europeo e",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-11-13",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/13/26G00227/SG"
+      "data": "2026-11-14",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/14/26G00224/SG"
     },
     {
-      "id": "camera-3131",
-      "titolo": "S. 2023. - \"Conversione in legge, con modificazioni, del decreto-legge 28 agosto 2026, n. 154, recante misure urgenti per assicurare la continuità operativa di impianti di interesse strategico nazionale\" (approvato dal Senato)",
+      "id": "camera-1194",
+      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-13",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=3131"
+      "data": "2026-11-14",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
     },
     {
-      "id": "camera-3121",
-      "titolo": "\"Conversione in legge del decreto-legge 29 settembre 2026, n. 168, recante misure urgenti in materia di giustizia, di funzionalità del Ministero dell’interno e di impianti di interesse strategico nazionale\"",
+      "id": "camera-1239",
+      "titolo": "\"Conversione in legge del decreto-legge 22 giugno 2023, n. 75, recante disposizioni urgenti in materia di organizzazione delle pubbliche amministrazioni, di agricoltura, di sport, di lavoro e per l'organizzazione del Giubileo della Chiesa cattolica per l'anno 2025\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-13",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=3121"
-    },
-    {
-      "id": "camera-2900",
-      "titolo": "\"Ratifica ed esecuzione dei Trattati di estradizione e sul trasferimento di persone condannate tra la Repubblica italiana e la Repubblica kirghisa, fatti a Roma il 3 ottobre 2024\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-13",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2900"
+      "data": "2026-11-14",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1239"
     },
     {
       "id": "senato-60604",
