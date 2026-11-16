@@ -1,6 +1,22 @@
 {
-  "generatoIl": "2026-11-15",
+  "generatoIl": "2026-11-16",
   "voci": [
+    {
+      "id": "camera-1114",
+      "titolo": "\"Conversione in legge del decreto-legge 22 aprile 2023, n. 44, recante disposizioni urgenti per il rafforzamento della capacità amministrativa delle amministrazioni pubbliche\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-15",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1114"
+    },
+    {
+      "id": "camera-1194",
+      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-15",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
+    },
     {
       "id": "gazzetta-26G00224",
       "titolo": "DECRETO LEGISLATIVO 2 novembre 2026, n.208: Attuazione della direttiva (UE) 2024/2831 del Parlamento europeo e",
@@ -8,22 +24,6 @@
       "stato": "approvata",
       "data": "2026-11-14",
       "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/14/26G00224/SG"
-    },
-    {
-      "id": "camera-1194",
-      "titolo": "\"Conversione in legge del decreto-legge 1&deg; giugno 2023, n. 61, recante interventi urgenti per fronteggiare l’emergenza provocata dagli eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-14",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1194"
-    },
-    {
-      "id": "camera-1239",
-      "titolo": "\"Conversione in legge del decreto-legge 22 giugno 2023, n. 75, recante disposizioni urgenti in materia di organizzazione delle pubbliche amministrazioni, di agricoltura, di sport, di lavoro e per l'organizzazione del Giubileo della Chiesa cattolica per l'anno 2025\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-14",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1239"
     },
     {
       "id": "senato-60604",
