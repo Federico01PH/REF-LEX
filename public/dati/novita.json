@@ -1,57 +1,49 @@
 {
-  "generatoIl": "2026-11-18",
+  "generatoIl": "2026-11-19",
   "voci": [
     {
-      "id": "gazzetta-26A06012",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 25 settembre 2026: Nomina del dott",
-      "tipo": "gazzetta",
-      "stato": "approvata",
+      "id": "camera-1747",
+      "titolo": "CARFAGNA ed altri: \"Disposizioni in favore delle donne vittime di violenza di genere\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-18",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1747"
+    },
+    {
+      "id": "camera-1633",
+      "titolo": "\"Conversione in legge del decreto-legge 30 dicembre 2023, n. 215, recante disposizioni urgenti in materia di termini normativi\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-18",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1633"
+    },
+    {
+      "id": "camera-1598",
+      "titolo": "SERGIO COSTA: \"Disposizioni concernenti l’eliminazione di sussidi ambientalmente dannosi e delega al Governo per il riordino del sistema degli incentivi destinati al settore energetico\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-18",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1598"
+    },
+    {
+      "id": "camera-1606",
+      "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-18",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+    },
+    {
+      "id": "senato-60611",
+      "titolo": "Introduzione di una maggiorazione retributiva per le prestazioni lavorative svolte con orario giornaliero articolato in frazioni temporali separate da interruzioni di durata prolungata",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-11-17",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/17/26A06012/SG"
-    },
-    {
-      "id": "camera-1820",
-      "titolo": "MINARDO e SACCANI JOTTI: \"Modifiche al codice dell’ordinamento militare, di cui al decreto legislativo 15 marzo 2010, n. 66, in materia di potenziamento degli organici degli ufficiali del ruolo tecnico dell’Arma dei carabinieri\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1820"
-    },
-    {
-      "id": "camera-1640",
-      "titolo": "\"Delega per la semplificazione dei procedimenti amministrativi e misure in materia farmaceutica e sanitaria e di autorizzazioni di polizia\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1640"
-    },
-    {
-      "id": "camera-1643",
-      "titolo": "GATTA ed altri: \"Introduzione dell’obbligo di consentire l’asporto di cibi e bevande non consumati dal cliente negli esercizi di ristorazione\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1643"
-    },
-    {
-      "id": "camera-1790",
-      "titolo": "S. 1014. - \"Conversione in legge, con modificazioni, del decreto-legge 5 febbraio 2024, n. 10, recante disposizioni urgenti sulla governance e sugli interventi di competenza della Società «Infrastrutture Milano Cortina 2020-2026 S.p.A.»\" (approvato dal Senato)",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1790"
-    },
-    {
-      "id": "camera-1791",
-      "titolo": "MONTARULI: \"Disposizioni per la prevenzione degli atti di suicidio nonché per l’assistenza psicologica e il sostegno dei sopravvissuti\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-16",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1791"
+      "url": "https://dati.senato.it/ddl/60611"
     },
     {
       "id": "senato-60609",
-      "titolo": "Disposizioni per l'attuazione del principio di insularità nella classificazione dei comuni montani. Modifiche alla legge 12 settembre 2025, n.131",
+      "titolo": "Disposizioni per l'attuazione del principio di insularità nella classificazione dei comuni montani. Modifiche alla legge 12 settembre 2025, n. 131",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-11-16",
