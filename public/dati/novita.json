@@ -1,37 +1,29 @@
 {
-  "generatoIl": "2026-11-19",
+  "generatoIl": "2026-11-20",
   "voci": [
-    {
-      "id": "camera-1747",
-      "titolo": "CARFAGNA ed altri: \"Disposizioni in favore delle donne vittime di violenza di genere\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-18",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1747"
-    },
-    {
-      "id": "camera-1633",
-      "titolo": "\"Conversione in legge del decreto-legge 30 dicembre 2023, n. 215, recante disposizioni urgenti in materia di termini normativi\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-18",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1633"
-    },
-    {
-      "id": "camera-1598",
-      "titolo": "SERGIO COSTA: \"Disposizioni concernenti l’eliminazione di sussidi ambientalmente dannosi e delega al Governo per il riordino del sistema degli incentivi destinati al settore energetico\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-18",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1598"
-    },
     {
       "id": "camera-1606",
       "titolo": "\"Conversione in legge del decreto-legge 9 dicembre 2023, n. 181, recante disposizioni urgenti per la sicurezza energetica del Paese, la promozione del ricorso alle fonti rinnovabili di energia, il sostegno alle imprese a forte consumo di energia e in materia di ricostruzione nei territori colpiti dagli eccezionali eventi alluvionali verificatisi a partire dal 1&deg; maggio 2023\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-18",
+      "data": "2026-11-19",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1606"
+    },
+    {
+      "id": "camera-2150",
+      "titolo": "S. 1274. - \"Conversione in legge, con modificazioni, del decreto-legge 19 ottobre 2024, n. 155, recante misure urgenti in materia economica e fiscale e in favore degli enti territoriali\" (approvato dal Senato)",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-19",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2150"
+    },
+    {
+      "id": "senato-60612",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 settembre 2026, n. 170, recante misure urgenti per garantire il regolare avvio dell'anno scolastico 2026/2027, per l'accompagnamento delle misure del Piano nazionale di ripresa e resilienza (PNRR) di competenza del Ministero dell'istruzione e del merito, per la promozione dell'integrazione degli studenti stranieri nell'ambito scolastico, nonché in materia di formazione superiore e ricerca",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-19",
+      "url": "https://dati.senato.it/ddl/60612"
     },
     {
       "id": "senato-60611",
@@ -144,14 +136,6 @@
       "stato": "discussione",
       "data": "2026-11-11",
       "url": "https://dati.senato.it/ddl/60603"
-    },
-    {
-      "id": "senato-60594",
-      "titolo": "Disposizioni fiscali in materia di negoziazioni algoritmiche ad alta frequenza (HFT) e riduzione delle imposte su lavoro e imprese",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-10",
-      "url": "https://dati.senato.it/ddl/60594"
     }
   ]
 }
