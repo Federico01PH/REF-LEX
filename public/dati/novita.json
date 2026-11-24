@@ -1,37 +1,37 @@
 {
-  "generatoIl": "2026-11-23",
+  "generatoIl": "2026-11-24",
   "voci": [
     {
-      "id": "camera-1660",
-      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "id": "camera-2088",
+      "titolo": "\"Conversione in legge del decreto-legge 11 ottobre 2024, n. 145, recante disposizioni urgenti in materia di ingresso in Italia di lavoratori stranieri, di tutela e assistenza alle vittime di caporalato, di gestione dei flussi migratori e di protezione internazionale, nonché dei relativi procedimenti giurisdizionali\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-22",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
+      "data": "2026-11-24",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2088"
     },
     {
-      "id": "camera-1686",
-      "titolo": "\"Ratifica ed esecuzione dell’Accordo quadro di partenariato globale e cooperazione tra l’Unione europea e i suoi Stati membri, da una parte, e il Regno di Thailandia, dall’altra, fatto a Bruxelles il 14 dicembre 2022\"",
+      "id": "camera-1933",
+      "titolo": "S. 1133. - \"Conversione in legge, con modificazioni, del decreto-legge 7 maggio 2024, n. 60, recante ulteriori disposizioni urgenti in materia di politiche di coesione\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-22",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1686"
+      "data": "2026-11-24",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1933"
     },
     {
-      "id": "camera-1752",
-      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
-      "tipo": "camera",
-      "stato": "discussione",
-      "data": "2026-11-22",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
-    },
-    {
-      "id": "gazzetta-26G00231",
-      "titolo": "DECRETO LEGISLATIVO 6 novembre 2026, n.211: Attuazione della direttiva (UE) 2024/2853 del Parlamento europeo e",
+      "id": "gazzetta-26G00228",
+      "titolo": "LEGGE 12 novembre 2026, n.212: Disposizioni in materia di protezione civile",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-11-21",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/21/26G00231/SG"
+      "data": "2026-11-23",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/23/26G00228/SG"
+    },
+    {
+      "id": "gazzetta-26G00233",
+      "titolo": "LEGGE 19 novembre 2026, n.213: Delega al Governo per la riforma della disciplina dell'ordinamento",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-11-23",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/23/26G00233/SG"
     },
     {
       "id": "senato-60613",
@@ -42,6 +42,46 @@
       "url": "https://dati.senato.it/ddl/60613"
     },
     {
+      "id": "senato-60620",
+      "titolo": "Delega al Governo per il riordino della disciplina dei servizi e delle politiche sociali mediante l'adozione del testo unico delle disposizioni in materia di sistema integrato di interventi e servizi sociali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-20",
+      "url": "https://dati.senato.it/ddl/60620"
+    },
+    {
+      "id": "senato-60621",
+      "titolo": "Disposizioni per il contrasto delle diseguaglianze territoriali nell'assistenza pediatrica e per il sostegno delle famiglie nell'ambito delle politiche demografiche e sociali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-20",
+      "url": "https://dati.senato.it/ddl/60621"
+    },
+    {
+      "id": "senato-60619",
+      "titolo": "Modifica dell'articolo 111-bis del testo unico delle leggi in materia bancaria e creditizia, di cui al decreto legislativo 1° settembre 1993, n. 385",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-20",
+      "url": "https://dati.senato.it/ddl/60619"
+    },
+    {
+      "id": "senato-60618",
+      "titolo": "Misure per la rigenerazione urbana del commercio e dei servizi di prossimità",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-19",
+      "url": "https://dati.senato.it/ddl/60618"
+    },
+    {
+      "id": "senato-60622",
+      "titolo": "Disposizioni per la prevenzione e la cura delle patologie oculari cronico-degenerative, in particolare della maculopatia degenerativa miopica e senile",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-19",
+      "url": "https://dati.senato.it/ddl/60622"
+    },
+    {
       "id": "senato-60612",
       "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 settembre 2026, n. 170, recante misure urgenti per garantire il regolare avvio dell'anno scolastico 2026/2027, per l'accompagnamento delle misure del Piano nazionale di ripresa e resilienza (PNRR) di competenza del Ministero dell'istruzione e del merito, per la promozione dell'integrazione degli studenti stranieri nell'ambito scolastico, nonché in materia di formazione superiore e ricerca",
       "tipo": "senato",
@@ -50,12 +90,44 @@
       "url": "https://dati.senato.it/ddl/60612"
     },
     {
+      "id": "senato-60617",
+      "titolo": "Imposta grandi patrimoni",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-19",
+      "url": "https://dati.senato.it/ddl/60617"
+    },
+    {
+      "id": "senato-60615",
+      "titolo": "Modifica agli articoli 117 e 118 della Costituzione in materia di produzione, trasporto e distribuzione dell'energia per garantire il raggiungimento degli obiettivi di decarbonizzazione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-18",
+      "url": "https://dati.senato.it/ddl/60615"
+    },
+    {
+      "id": "senato-60614",
+      "titolo": "Disposizioni per la produzione di birra, per il sostegno del sistema industriale brassicolo, lo sviluppo della filiera brassicola nazionale e l'istituzione dei distretti del birraturismo",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-18",
+      "url": "https://dati.senato.it/ddl/60614"
+    },
+    {
       "id": "senato-60611",
       "titolo": "Introduzione di una maggiorazione retributiva per le prestazioni lavorative svolte con orario giornaliero articolato in frazioni temporali separate da interruzioni di durata prolungata",
       "tipo": "senato",
       "stato": "discussione",
       "data": "2026-11-17",
       "url": "https://dati.senato.it/ddl/60611"
+    },
+    {
+      "id": "senato-60616",
+      "titolo": "Modifiche alla legge 19 febbraio 2004, n. 40, in materia di accesso alle tecniche di procreazione medicalmente assistita",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-16",
+      "url": "https://dati.senato.it/ddl/60616"
     },
     {
       "id": "senato-60609",
@@ -80,78 +152,6 @@
       "stato": "discussione",
       "data": "2026-11-13",
       "url": "https://dati.senato.it/ddl/60606"
-    },
-    {
-      "id": "senato-60607",
-      "titolo": "Modifica all'articolo 1 della legge 7 ottobre 1969, n. 742, in materia di sospensione feriale dei termini processuali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-13",
-      "url": "https://dati.senato.it/ddl/60607"
-    },
-    {
-      "id": "senato-60608",
-      "titolo": "Disposizioni in materia di attività libero-professionale del personale delle professioni sanitarie",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-13",
-      "url": "https://dati.senato.it/ddl/60608"
-    },
-    {
-      "id": "senato-60604",
-      "titolo": "Conversione in legge del decreto-legge 13 novembre 2026, n. 207, recante disposizioni urgenti per la riduzione del costo dell'energia elettrica e del gas",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-13",
-      "url": "https://dati.senato.it/ddl/60604"
-    },
-    {
-      "id": "senato-60599",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 29 settembre 2026, n. 168, recante misure urgenti in materia di giustizia, di funzionalità del Ministero dell'interno e di impianti di interesse strategico nazionale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-12",
-      "url": "https://dati.senato.it/ddl/60599"
-    },
-    {
-      "id": "senato-60605",
-      "titolo": "Modifica all'articolo 1 della legge 7 ottobre 1969, n. 742, in materia di sospensione feriale dei termini processuali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-12",
-      "url": "https://dati.senato.it/ddl/60605"
-    },
-    {
-      "id": "senato-60596",
-      "titolo": "Conversione in legge del decreto-legge 28 settembre 2026, n. 167, recante misure urgenti per la circolazione dei veicoli ad alimentazione diesel appartenenti alla categoria ambientale «EURO 5»",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-11",
-      "url": "https://dati.senato.it/ddl/60596"
-    },
-    {
-      "id": "senato-60601",
-      "titolo": "Disposizioni per la bonifica delle valanghe mediante distacco artificiale",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-11",
-      "url": "https://dati.senato.it/ddl/60601"
-    },
-    {
-      "id": "senato-60598",
-      "titolo": "Conversione in legge del decreto-legge 11 novembre 2026, n. 205, recante piano straordinario per i Campi Flegrei nonché ulteriori disposizioni urgenti di protezione civile",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-11",
-      "url": "https://dati.senato.it/ddl/60598"
-    },
-    {
-      "id": "senato-60600",
-      "titolo": "Disposizioni per la celebrazione del trentesimo anniversario della morte di Giuseppe Dossetti",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-11",
-      "url": "https://dati.senato.it/ddl/60600"
     }
   ]
 }
