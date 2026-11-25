@@ -1,6 +1,22 @@
 {
-  "generatoIl": "2026-11-24",
+  "generatoIl": "2026-11-25",
   "voci": [
+    {
+      "id": "gazzetta-26G00230",
+      "titolo": "LEGGE 6 novembre 2026, n.214: Disposizioni in materia di cinema",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-11-24",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/24/26G00230/SG"
+    },
+    {
+      "id": "gazzetta-26G00235",
+      "titolo": "LEGGE 23 novembre 2026, n.215: Disposizioni per il contrasto all'antisemitismo e per l'adozione",
+      "tipo": "gazzetta",
+      "stato": "approvata",
+      "data": "2026-11-24",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/24/26G00235/SG"
+    },
     {
       "id": "camera-2088",
       "titolo": "\"Conversione in legge del decreto-legge 11 ottobre 2024, n. 145, recante disposizioni urgenti in materia di ingresso in Italia di lavoratori stranieri, di tutela e assistenza alle vittime di caporalato, di gestione dei flussi migratori e di protezione internazionale, nonché dei relativi procedimenti giurisdizionali\"",
@@ -16,22 +32,6 @@
       "stato": "discussione",
       "data": "2026-11-24",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1933"
-    },
-    {
-      "id": "gazzetta-26G00228",
-      "titolo": "LEGGE 12 novembre 2026, n.212: Disposizioni in materia di protezione civile",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-11-23",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/23/26G00228/SG"
-    },
-    {
-      "id": "gazzetta-26G00233",
-      "titolo": "LEGGE 19 novembre 2026, n.213: Delega al Governo per la riforma della disciplina dell'ordinamento",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-11-23",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/23/26G00233/SG"
     },
     {
       "id": "senato-60613",
