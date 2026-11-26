@@ -1,37 +1,69 @@
 {
-  "generatoIl": "2026-11-25",
+  "generatoIl": "2026-11-26",
   "voci": [
     {
-      "id": "gazzetta-26G00230",
-      "titolo": "LEGGE 6 novembre 2026, n.214: Disposizioni in materia di cinema",
+      "id": "gazzetta-26G00237",
+      "titolo": "DECRETO LEGISLATIVO 25 novembre 2026, n.216: Riforma dell'ordinamento forense in attuazione della legge 28 luglio",
       "tipo": "gazzetta",
       "stato": "approvata",
-      "data": "2026-11-24",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/24/26G00230/SG"
+      "data": "2026-11-25",
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/25/26G00237/SG"
     },
     {
-      "id": "gazzetta-26G00235",
-      "titolo": "LEGGE 23 novembre 2026, n.215: Disposizioni per il contrasto all'antisemitismo e per l'adozione",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-11-24",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/24/26G00235/SG"
-    },
-    {
-      "id": "camera-2088",
-      "titolo": "\"Conversione in legge del decreto-legge 11 ottobre 2024, n. 145, recante disposizioni urgenti in materia di ingresso in Italia di lavoratori stranieri, di tutela e assistenza alle vittime di caporalato, di gestione dei flussi migratori e di protezione internazionale, nonché dei relativi procedimenti giurisdizionali\"",
+      "id": "camera-1752",
+      "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-24",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=2088"
+      "data": "2026-11-25",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
-      "id": "camera-1933",
-      "titolo": "S. 1133. - \"Conversione in legge, con modificazioni, del decreto-legge 7 maggio 2024, n. 60, recante ulteriori disposizioni urgenti in materia di politiche di coesione\" (approvato dal Senato)",
+      "id": "camera-1620",
+      "titolo": "\"Ratifica ed esecuzione del Protocollo tra il Governo della Repubblica italiana e il Consiglio dei ministri della Repubblica di Albania per il rafforzamento della collaborazione in materia migratoria, fatto a Roma il 6 novembre 2023, nonché norme di coordinamento con l’ordinamento interno\"",
       "tipo": "camera",
       "stato": "discussione",
+      "data": "2026-11-25",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1620"
+    },
+    {
+      "id": "senato-60628",
+      "titolo": "Riconoscimento e tutela della minoranza linguistica ladino-retica della Val di Non o Anaunia",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-25",
+      "url": "https://dati.senato.it/ddl/60628"
+    },
+    {
+      "id": "senato-60630",
+      "titolo": "Disposizioni per il riconoscimento, la salvaguardia e la valorizzazione della Festa delle Fanove di Castellana Grotte quale espressione del patrimonio culturale immateriale nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-11-24",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1933"
+      "url": "https://dati.senato.it/ddl/60630"
+    },
+    {
+      "id": "senato-60629",
+      "titolo": "Modifica all'articolo 1 della legge 7 ottobre 1969, n. 742, in materia di sospensione feriale dei termini processuali",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-24",
+      "url": "https://dati.senato.it/ddl/60629"
+    },
+    {
+      "id": "senato-60623",
+      "titolo": "Disposizioni per lo sviluppo e il sostegno della filiera corilicola nazionale",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-24",
+      "url": "https://dati.senato.it/ddl/60623"
+    },
+    {
+      "id": "senato-60624",
+      "titolo": "Disposizioni per la perequazione automatica integrale dei trattamenti pensionistici rispetto all'andamento del costo della vita e per il rafforzamento della tutela fiscale dei redditi pensionistici più bassi",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-24",
+      "url": "https://dati.senato.it/ddl/60624"
     },
     {
       "id": "senato-60613",
@@ -112,46 +144,6 @@
       "stato": "discussione",
       "data": "2026-11-18",
       "url": "https://dati.senato.it/ddl/60614"
-    },
-    {
-      "id": "senato-60611",
-      "titolo": "Introduzione di una maggiorazione retributiva per le prestazioni lavorative svolte con orario giornaliero articolato in frazioni temporali separate da interruzioni di durata prolungata",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-17",
-      "url": "https://dati.senato.it/ddl/60611"
-    },
-    {
-      "id": "senato-60616",
-      "titolo": "Modifiche alla legge 19 febbraio 2004, n. 40, in materia di accesso alle tecniche di procreazione medicalmente assistita",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-16",
-      "url": "https://dati.senato.it/ddl/60616"
-    },
-    {
-      "id": "senato-60609",
-      "titolo": "Disposizioni per l'attuazione del principio di insularità nella classificazione dei comuni montani. Modifiche alla legge 12 settembre 2025, n. 131",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-16",
-      "url": "https://dati.senato.it/ddl/60609"
-    },
-    {
-      "id": "senato-60610",
-      "titolo": "Disposizioni in materia di dichiarazione di morte presunta delle persone scomparse in occasione di calamità naturali, disastri e altri eventi catastrofici",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-16",
-      "url": "https://dati.senato.it/ddl/60610"
-    },
-    {
-      "id": "senato-60606",
-      "titolo": "Modifica all'articolo 1 della legge 7 ottobre 1969, n. 742, in materia di sospensione feriale dei termini processuali",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-13",
-      "url": "https://dati.senato.it/ddl/60606"
     }
   ]
 }
