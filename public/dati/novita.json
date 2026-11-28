@@ -1,29 +1,61 @@
 {
-  "generatoIl": "2026-11-27",
+  "generatoIl": "2026-11-28",
   "voci": [
     {
-      "id": "gazzetta-26G00229",
-      "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 15 settembre 2026, n.217: Esecuzione dell'Intesa tra la Presidenza del Consiglio dei ministri e",
-      "tipo": "gazzetta",
-      "stato": "approvata",
-      "data": "2026-11-26",
-      "url": "https://www.gazzettaufficiale.it/eli/id/2026/11/26/26G00229/SG"
+      "id": "camera-1660",
+      "titolo": "\"Disposizioni in materia di sicurezza pubblica, di tutela del personale in servizio, nonché di vittime dell'usura e di ordinamento penitenziario\"",
+      "tipo": "camera",
+      "stato": "discussione",
+      "data": "2026-11-27",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1660"
     },
     {
       "id": "camera-1752",
       "titolo": "\"Conversione in legge del decreto-legge 2 marzo 2024, n. 19, recante ulteriori disposizioni urgenti per l’attuazione del Piano nazionale di ripresa e resilienza (PNRR)\"",
       "tipo": "camera",
       "stato": "discussione",
-      "data": "2026-11-26",
+      "data": "2026-11-27",
       "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1752"
     },
     {
-      "id": "camera-1588",
-      "titolo": "S. 861. - \"Ratifica ed esecuzione dell’Accordo di sede tra la Repubblica italiana e l’Ufficio europeo per il sostegno all’asilo relativo allo stabilimento di un ufficio operativo in Roma, fatto a Roma il 22 novembre 2017, con Dichiarazione interpretativa congiunta fatta a Roma il 1&deg; luglio 2021 e a La Valletta il 13 luglio 2021\" (approvato dal Senato)",
+      "id": "camera-1624",
+      "titolo": "S. 936. - \"Conversione in legge, con modificazioni, del decreto-legge 15 novembre 2023, n. 161, recante disposizioni urgenti per il “Piano Mattei” per lo sviluppo in Stati del Continente africano\" (approvato dal Senato)",
       "tipo": "camera",
       "stato": "discussione",
+      "data": "2026-11-27",
+      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1624"
+    },
+    {
+      "id": "senato-60634",
+      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 16 ottobre 2026, n. 185, recante misure urgenti a sostegno dei lavoratori dell'ex ILVA e dell'indotto e per il rilancio industriale del territorio",
+      "tipo": "senato",
+      "stato": "discussione",
       "data": "2026-11-26",
-      "url": "https://www.camera.it/leg19/126?leg=19&idDocumento=1588"
+      "url": "https://dati.senato.it/ddl/60634"
+    },
+    {
+      "id": "senato-60632",
+      "titolo": "Disposizioni in materia di trasparenza delle informazioni sull'accessibilità delle strutture ricettive e degli alloggi destinati a locazione turistica presenti sulle piattaforme digitali di prenotazione",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-26",
+      "url": "https://dati.senato.it/ddl/60632"
+    },
+    {
+      "id": "senato-60633",
+      "titolo": "Modifiche al testo unico delle disposizioni legislative in materia di imposta sul valore aggiunto, di cui al decreto legislativo 19 gennaio 2026, n. 10, in materia di costituzione di un gruppo IVA da parte degli enti del Servizio sanitario nazionale e delle società in house da essi interamente partecipate",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-26",
+      "url": "https://dati.senato.it/ddl/60633"
+    },
+    {
+      "id": "senato-60631",
+      "titolo": "Conversione in legge del decreto-legge 6 novembre 2026, n. 200, recante misure urgenti per assicurare la continuità delle funzioni dell'Autorità nazionale anticorruzione (ANAC)",
+      "tipo": "senato",
+      "stato": "discussione",
+      "data": "2026-11-25",
+      "url": "https://dati.senato.it/ddl/60631"
     },
     {
       "id": "senato-60628",
@@ -112,38 +144,6 @@
       "stato": "discussione",
       "data": "2026-11-19",
       "url": "https://dati.senato.it/ddl/60622"
-    },
-    {
-      "id": "senato-60612",
-      "titolo": "Conversione in legge, con modificazioni, del decreto-legge 30 settembre 2026, n. 170, recante misure urgenti per garantire il regolare avvio dell'anno scolastico 2026/2027, per l'accompagnamento delle misure del Piano nazionale di ripresa e resilienza (PNRR) di competenza del Ministero dell'istruzione e del merito, per la promozione dell'integrazione degli studenti stranieri nell'ambito scolastico, nonché in materia di formazione superiore e ricerca",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-19",
-      "url": "https://dati.senato.it/ddl/60612"
-    },
-    {
-      "id": "senato-60617",
-      "titolo": "Imposta grandi patrimoni",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-19",
-      "url": "https://dati.senato.it/ddl/60617"
-    },
-    {
-      "id": "senato-60615",
-      "titolo": "Modifica agli articoli 117 e 118 della Costituzione in materia di produzione, trasporto e distribuzione dell'energia per garantire il raggiungimento degli obiettivi di decarbonizzazione",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-18",
-      "url": "https://dati.senato.it/ddl/60615"
-    },
-    {
-      "id": "senato-60614",
-      "titolo": "Disposizioni per la produzione di birra, per il sostegno del sistema industriale brassicolo, lo sviluppo della filiera brassicola nazionale e l'istituzione dei distretti del birraturismo",
-      "tipo": "senato",
-      "stato": "discussione",
-      "data": "2026-11-18",
-      "url": "https://dati.senato.it/ddl/60614"
     }
   ]
 }
